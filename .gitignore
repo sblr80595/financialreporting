@@ -2,6 +2,12 @@
 node_modules/
 frontend/node_modules/
 
+#ignore virtual environments
+venv/
+.env/
+.venv/
+.logs/
+
 # Python
 __pycache__/
 *.py[cod]

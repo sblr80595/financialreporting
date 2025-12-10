@@ -1,13 +1,4 @@
-"""
-Unified FastAPI Backend for Financial Automation Platform
 
-This consolidated backend combines:
-1. Trial Balance Processing Suite (TB processing, validation, AI orchestration)
-2. Financial Note Generation API (JWT auth, company management, Ind AS note generation)
-3. P&L Statement Generation
-
-All functionality is now accessible through a single unified API.
-"""
 from pathlib import Path
 import json
 import logging
