@@ -1,0 +1,281 @@
+{
+  "id": "pl_ifrs",
+  "statementType": "PnL",
+  "framework": "IFRS",
+  "version": 1,
+  "meta": {
+    "title": "Statement of Profit or Loss and Other Comprehensive Income",
+    "subtitlePattern": "For the year ended {periodEnd}",
+    "currencyLabelDefault": "Functional currency"
+  },
+  "columns": [
+    {
+      "id": "particulars",
+      "label": "Particulars",
+      "type": "text",
+      "alignment": "left",
+      "width": "flex"
+    },
+    {
+      "id": "note",
+      "label": "Note",
+      "type": "noteRef",
+      "alignment": "center",
+      "width": 60
+    },
+    {
+      "id": "current",
+      "label": "Current Year",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    },
+    {
+      "id": "previous",
+      "label": "Previous Year",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    }
+  ],
+  "rows": [
+    {
+      "id": "REV_OPS",
+      "label": "Revenue",
+      "type": "lineItem",
+      "order": 10,
+      "style": {
+        "bold": true
+      },
+      "noteNumber": "5"
+    },
+    {
+      "id": "COST_SALES",
+      "label": "Cost of sales",
+      "type": "lineItem",
+      "order": 20,
+      "noteNumber": "6",
+      "sign": "invert"
+    },
+    {
+      "id": "GROSS_PROFIT",
+      "label": "Gross profit",
+      "type": "subtotal",
+      "order": 30,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.subtotal"
+      },
+      "calculation": {
+        "op": "diff",
+        "minuend": "REV_OPS",
+        "subtrahend": "COST_SALES"
+      }
+    },
+    {
+      "id": "OTHER_INC",
+      "label": "Other income",
+      "type": "lineItem",
+      "order": 40,
+      "noteNumber": "7"
+    },
+    {
+      "id": "DIST_COST",
+      "label": "Distribution costs",
+      "type": "lineItem",
+      "order": 50,
+      "noteNumber": "8",
+      "sign": "invert"
+    },
+    {
+      "id": "ADMIN_EXP",
+      "label": "Administrative expenses",
+      "type": "lineItem",
+      "order": 60,
+      "noteNumber": "9",
+      "sign": "invert"
+    },
+    {
+      "id": "OTHER_EXP",
+      "label": "Other expenses",
+      "type": "lineItem",
+      "order": 70,
+      "noteNumber": "10",
+      "sign": "invert"
+    },
+    {
+      "id": "FIN_COST",
+      "label": "Finance costs",
+      "type": "lineItem",
+      "order": 80,
+      "noteNumber": "11",
+      "sign": "invert"
+    },
+    {
+      "id": "SHARE_ASSOC",
+      "label": "Share of profit of associates and joint ventures",
+      "type": "lineItem",
+      "order": 85,
+      "noteNumber": "12"
+    },
+    {
+      "id": "PBT",
+      "label": "Profit before tax",
+      "type": "subtotal",
+      "order": 90,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.subtotal"
+      }
+    },
+    {
+      "id": "TAX_EXPENSE",
+      "label": "Income tax expense",
+      "type": "lineItem",
+      "order": 100,
+      "noteNumber": "13",
+      "sign": "invert"
+    },
+    {
+      "id": "PROFIT",
+      "label": "Profit for the year",
+      "type": "total",
+      "order": 110,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.total"
+      },
+      "calculation": {
+        "op": "diff",
+        "minuend": "PBT",
+        "subtrahend": "TAX_EXPENSE"
+      }
+    },
+    {
+      "id": "OCI_SECTION",
+      "label": "Other comprehensive income",
+      "type": "section",
+      "order": 120,
+      "style": {
+        "bold": true,
+        "collapsible": true,
+        "defaultExpanded": false
+      }
+    },
+    {
+      "id": "OCI_NOT_RECLASS",
+      "label": "Items that will not be reclassified to profit or loss:",
+      "type": "group",
+      "parentId": "OCI_SECTION",
+      "order": 130,
+      "style": {
+        "indentLevel": 1,
+        "italic": true
+      }
+    },
+    {
+      "id": "OCI_PROP_REVAL",
+      "label": "Revaluation of property, plant and equipment",
+      "type": "lineItem",
+      "parentId": "OCI_NOT_RECLASS",
+      "order": 135,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "OCI_ACTUARIAL",
+      "label": "Remeasurement of defined benefit plans",
+      "type": "lineItem",
+      "parentId": "OCI_NOT_RECLASS",
+      "order": 136,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "OCI_RECLASS",
+      "label": "Items that may be reclassified subsequently to profit or loss:",
+      "type": "group",
+      "parentId": "OCI_SECTION",
+      "order": 140,
+      "style": {
+        "indentLevel": 1,
+        "italic": true
+      }
+    },
+    {
+      "id": "OCI_FX",
+      "label": "Exchange differences on translating foreign operations",
+      "type": "lineItem",
+      "parentId": "OCI_RECLASS",
+      "order": 145,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "OCI_HEDGE",
+      "label": "Cash flow hedges",
+      "type": "lineItem",
+      "parentId": "OCI_RECLASS",
+      "order": 146,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "OCI_TAX",
+      "label": "Income tax relating to components of OCI",
+      "type": "lineItem",
+      "parentId": "OCI_SECTION",
+      "order": 150,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "TOTAL_OCI",
+      "label": "Total other comprehensive income for the year",
+      "type": "subtotal",
+      "parentId": "OCI_SECTION",
+      "order": 160,
+      "style": {
+        "bold": true
+      }
+    },
+    {
+      "id": "TOTAL_CI",
+      "label": "Total comprehensive income for the year",
+      "type": "total",
+      "order": 170,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.total"
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "PROFIT",
+          "TOTAL_OCI"
+        ]
+      }
+    },
+    {
+      "id": "EPS_BASIC",
+      "label": "Basic earnings per share (currency per share)",
+      "type": "lineItem",
+      "order": 180,
+      "noteNumber": "14"
+    },
+    {
+      "id": "EPS_DILUTED",
+      "label": "Diluted earnings per share (currency per share)",
+      "type": "lineItem",
+      "order": 190,
+      "noteNumber": "14"
+    }
+  ]
+}

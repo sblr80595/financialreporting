@@ -1,0 +1,174 @@
+{
+    "note_number": "NOTE 37",
+    "note_title": "Lease Related Disclosures (Analisa)",
+    "output_file": "company_note_37_lease_disclosures_analisa.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column: 30 June 2025. Use TB_FINAL_ANALISA_HOLDING.csv for P&L items. Liabilities (Credit) must be sign-flipped for reconciliation, but displayed positively in the Maturity Table.",
+    "categories": [
+        "Opening Balance",
+        "Additions",
+        "Accretion of interest",
+        "Payments",
+        " - Current ",
+        " - Non Current ",
+        "Lease payments",
+        "Interest expense",
+        "Net present values",
+        "Canon 1",
+        "Canon 2",
+        "IR-ADV DX C5860I",
+        "Office",
+        "IR-ADV DX C5860I SN 2XP13285"
+    ],
+    "output_format": [
+        {
+            "label": "(I) Reconciliation and Movement of Lease Liability",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Set out below are the carrying amounts of lease liabilities and the movements during the year:",
+            "ind_as_minor": null,
+            "is_subheading": true,
+            "bold": false
+        },
+        {
+            "label": "Opening Balance",
+            "ind_as_minor": ["Opening Balance"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Additions",
+            "ind_as_minor": ["Additions"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Accretion of interest",
+            "ind_as_minor": ["Accretion of interest"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Payments",
+            "ind_as_minor": ["Payments"],
+            "aggregation": "sum",
+            "is_deduction": true
+        },
+        {
+            "label": "Closing balance",
+            "ind_as_minor": ["Closing balance"],
+            "aggregation": "sum",
+            "is_total": true,
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "Closing balance - Current portion",
+            "ind_as_minor": [" - Current "],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Closing balance - Non-current portion",
+            "ind_as_minor": [" - Non Current "],
+            "aggregation": "sum"
+        },
+        
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(II) Maturity Analysis of Lease Liabilities",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "The lease liabilities are secured by the related underlying assets. Future minimum lease payments were as follows:",
+            "ind_as_minor": null,
+            "is_subheading": true,
+            "bold": false
+        },
+        {
+            "label": "Maturity of lease liabilities",
+            "ind_as_minor": ["Maturity of lease liabilities"],
+            "aggregation": "table_placeholder"
+        },
+        
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(III) Amounts Recognised in Statement of Profit and Loss",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Interest expense on lease liabilities",
+            "ind_as_minor": ["Interest expense"],
+            "aggregation": "sum"
+        },
+        
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(IV) Asset Categories and Qualitative Disclosures",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Specific Assets",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Canon 1 Asset",
+            "ind_as_minor": ["Canon 1"],
+            "aggregation": "value_lookup"
+        },
+        {
+            "label": "Canon 2 Asset",
+            "ind_as_minor": ["Canon 2"],
+            "aggregation": "value_lookup"
+        },
+        {
+            "label": "IR-ADV DX C5860I (Asset 1)",
+            "ind_as_minor": ["IR-ADV DX C5860I"],
+            "aggregation": "value_lookup"
+        },
+        {
+            "label": "Office Lease",
+            "ind_as_minor": ["Office"],
+            "aggregation": "value_lookup"
+        },
+        {
+            "label": "IR-ADV DX C5860I SN 2XP13285 (Asset 2)",
+            "ind_as_minor": ["IR-ADV DX C5860I SN 2XP13285"],
+            "aggregation": "value_lookup"
+        },
+        {
+            "label": "Total cash outflow for leases",
+            "ind_as_minor": ["Total cash outflow for leases for the year ended 30 June 2025 was MYR 79,833/- "],
+            "aggregation": "qualitative_text_or_value"
+        },
+        {
+            "label": "Short-term lease commitment",
+            "ind_as_minor": ["The Company has total commitment for short-term leases of Nil as at 30 June 2025"],
+            "aggregation": "qualitative_text_or_value"
+        },
+        {
+            "label": "Incremental Borrowing Rate disclosure",
+            "ind_as_minor": ["The incremental borrowing rate used for lease liability is 4.90% p.a for equipments "],
+            "aggregation": "qualitative_text_or_value"
+        }
+    ],
+    "additional_instructions": "This note requires detailed reconciliations, a maturity analysis, and specific qualitative disclosures as found in the input data. Use the specific line items extracted (e.g., 'Accretion of interest', 'Canon 1', etc.) for mapping. Data primarily comes from TB_FINAL_ANALISA_HOLDING.csv. Ensure amounts are appropriately handled for liability sign-flipping. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

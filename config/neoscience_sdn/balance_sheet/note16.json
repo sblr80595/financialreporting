@@ -1,0 +1,91 @@
+{
+  "note_number": "NOTE 16",
+  "note_title": "Revenue from Contracts with Customers",
+  "output_file": "Neoscience_Note_19_revenue_from_customers.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "The net revenue is calculated from the algebraic sum of five Revenue sub-categories (which must be sign-flipped to positive income) less the Deductions/Rebates (which must retain their negative revenue sign for algebraic reduction).",
+  "categories": [
+    "Revenue - Sale of Goods (Product A)",
+    "Revenue - Sale of Goods (Product B)",
+    "Revenue - Subscription Services",
+    "Revenue - Maintenance & Support",
+    "Revenue - Installation Services",
+    "Revenue - Deductions & Rebates"
+  ],
+  "output_format": [
+    {
+      "label": "**Revenue Disaggregated by Source**",
+      "is_header": true,
+      "is_indent": false
+    },
+    {
+      "label": "Sale of Goods (Product A)",
+      "ind_as_minor": "Revenue - Sale of Goods (Product A)",
+      "aggregation": "sum",
+      "sign_flip": true,
+      "is_indent": true
+    },
+    {
+      "label": "Sale of Goods (Product B)",
+      "ind_as_minor": "Revenue - Sale of Goods (Product B)",
+      "aggregation": "sum",
+      "sign_flip": true,
+      "is_indent": true
+    },
+    {
+      "label": "Subscription Services",
+      "ind_as_minor": "Revenue - Subscription Services",
+      "aggregation": "sum",
+      "sign_flip": true,
+      "is_indent": true
+    },
+    {
+      "label": "Maintenance & Support",
+      "ind_as_minor": "Revenue - Maintenance & Support",
+      "aggregation": "sum",
+      "sign_flip": true,
+      "is_indent": true
+    },
+    {
+      "label": "Installation Services",
+      "ind_as_minor": "Revenue - Installation Services",
+      "aggregation": "sum",
+      "sign_flip": true,
+      "is_indent": true
+    },
+    {
+      "label": "**Gross Contract Price**",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Sale of Goods (Product A)",
+        "Sale of Goods (Product B)",
+        "Subscription Services",
+        "Maintenance & Support",
+        "Installation Services"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "Less: discounts, rebates, credits etc.",
+      "ind_as_minor": "Revenue - Deductions & Rebates",
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total Revenue from Contracts",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "**Gross Contract Price**",
+        "Less: discounts, rebates, credits etc."
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Sum all accounts under the five revenue sub-categories and sign-flip them to make them positive gross income. They are now indented under 'Revenue Disaggregated by Source'. Calculate '**Gross Contract Price**' as the sum of these five sub-categories. The final 'Total Revenue from Contracts' is the algebraic sum of the 'Gross Contract Price' and the deductions/rebates."
+}

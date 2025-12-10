@@ -1,0 +1,289 @@
+{
+  "entities": {
+    "api_entities": [
+      {
+        "id": "TTL_TEST",
+        "name": "Translumina Therapeutics - Test Environment",
+        "connection_type": "api",
+        "service_layer_url": "https://vmsapb1han.centralindia.cloudapp.azure.com:50000/b1s/v1",
+        "database": "TTLNOVEMBER",
+        "username": "U0036",
+        "password": "Test@36",
+        "verify_ssl": false,
+        "reports_available": ["trial_balance", "sales_report", "profit_loss", "balance_sheet", "cash_flow"],
+        "description": "Translumina Therapeutics - Test Environment (TTLNOVEMBER)"
+      },
+      {
+        "id": "TTPL",
+        "name": "Translumina Therapeutics Pvt Ltd",
+        "connection_type": "api",
+        "service_layer_url": "https://vmsapb1han.centralindia.cloudapp.azure.com:50000/b1s/v1",
+        "database": "TTL MAIN",
+        "username": "U0036",
+        "password": "Ttrans@369",
+        "verify_ssl": false,
+        "reports_available": ["trial_balance", "sales_report", "profit_loss", "balance_sheet", "cash_flow"],
+        "description": "Translumina Therapeutics - API Connection (OFFLINE - DB Server Unreachable)",
+        "status": "offline"
+      },
+      {
+        "id": "THL",
+        "name": "Transhealth Pvt Ltd",
+        "connection_type": "api",
+        "service_layer_url": "https://vmsapb1han.centralindia.cloudapp.azure.com:50000/b1s/v1",
+        "database": "THLMAIN",
+        "username": "U0036",
+        "password": "Thl@369",
+        "verify_ssl": false,
+        "reports_available": ["trial_balance", "sales_report", "profit_loss", "balance_sheet", "cash_flow"],
+        "description": "Transhealth - API Connection"
+      },
+      {
+        "id": "IHL",
+        "name": "Integris Medtech Pvt Ltd",
+        "connection_type": "api",
+        "service_layer_url": "https://vmsapb1han.centralindia.cloudapp.azure.com:50000/b1s/v1",
+        "database": "IHLMAIN",
+        "username": "U0036",
+        "password": "Ihl@369",
+        "verify_ssl": false,
+        "reports_available": ["trial_balance", "sales_report", "profit_loss", "balance_sheet", "cash_flow"],
+        "description": "Integris Medtech - API Connection",
+        "api_field_config": {
+          "ChartOfAccounts": {
+            "select_fields": "Code,Name,AccountType,FatherAccountKey",
+            "note": "Levels field not supported in this entity"
+          }
+        }
+      },
+      {
+        "id": "TMDT",
+        "name": "Translumina Medtech-Dubai",
+        "connection_type": "api",
+        "service_layer_url": "https://vmsapb1han.centralindia.cloudapp.azure.com:50000/b1s/v1",
+        "database": "TMDT_MAIN",
+        "username": "U0036",
+        "password": "Tmd@369",
+        "verify_ssl": false,
+        "reports_available": ["trial_balance", "sales_report", "profit_loss", "balance_sheet", "cash_flow"],
+        "description": "Translumina Medtech Dubai - API Connection"
+      }
+    ],
+    "sql_entities": [
+      {
+        "id": "CPM_CHEMOPHARM",
+        "name": "Chemopharm Sdn. Bhd. (CPM) Malaysia",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "Chemopharmdb",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Chemopharm CPM - SQL Server Connection"
+      },
+      {
+        "id": "MEDIGENE",
+        "name": "Medigene Sdn. Bhd.",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "ChemoMedigene",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Medigene - SQL Server Connection"
+      },
+      {
+        "id": "RIM",
+        "name": "Research Instruments Sdn. Bhd. Malaysia",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "RIM",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Research Instruments Malaysia - SQL Server Connection"
+      },
+      {
+        "id": "CHEM_INFO",
+        "name": "ChemoInformatics Sdn. Bhd.",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "CIDB",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "ChemoInformatics - SQL Server Connection"
+      },
+      {
+        "id": "CHEM_RESOURCES",
+        "name": "Chemoresources Sdn. Bhd. Malaysia",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "CResourcesDB",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Chemoresources - SQL Server Connection"
+      },
+      {
+        "id": "CHEM_SCIENCE_MY",
+        "name": "Chemoscience Sdn. Bhd. Malaysia",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "Chemosciencedb",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Chemoscience Malaysia - SQL Server Connection"
+      },
+      {
+        "id": "CHEM_SCIENCE_TH",
+        "name": "Chemoscience Thailand",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "ChemoThailanddb",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Chemoscience Thailand - SQL Server Connection"
+      },
+      {
+        "id": "RIT",
+        "name": "RI Technologies Ltd. Thailand",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "RIT",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "RI Technologies Thailand - SQL Server Connection"
+      },
+      {
+        "id": "HB",
+        "name": "Hausen Bernstein Co. Ltd. Thailand",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "HB",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Hausen Bernstein Thailand - SQL Server Connection"
+      },
+      {
+        "id": "RIS",
+        "name": "Research Instruments Pte. Ltd. Singapore",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "RIS",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Research Instruments Singapore - SQL Server Connection"
+      },
+      {
+        "id": "BIOFRONTIER",
+        "name": "Biofrontier Technology Pte. Ltd. Singapore",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "BioFrontier",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Biofrontier Singapore - SQL Server Connection"
+      },
+      {
+        "id": "CHEM_SCIENCE_SG",
+        "name": "Chemoscience Pte. Ltd. Singapore",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "ChemoSingaporedb",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Chemoscience Singapore - SQL Server Connection"
+      },
+      {
+        "id": "BIOREV",
+        "name": "Bio-Rev Pte. Ltd. Singapore",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "BioSG_LIVE",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Bio-Rev Singapore - SQL Server Connection"
+      },
+      {
+        "id": "SCI_RESOURCES",
+        "name": "Scientific Resources Pte. Ltd. Singapore",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "ScientificResources",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Scientific Resources Singapore - SQL Server Connection"
+      },
+      {
+        "id": "RIV",
+        "name": "Research Instruments Vietnam Company Limited Vietnam",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "RIV",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Research Instruments Vietnam - SQL Server Connection"
+      },
+      {
+        "id": "CSI",
+        "name": "PT Chemoscience Indonesia",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "CSIDB",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Chemoscience Indonesia - SQL Server Connection"
+      },
+      {
+        "id": "CSP",
+        "name": "Chemoscience Phils. Inc. Philippines",
+        "connection_type": "sql",
+        "sql_server": "192.168.0.3",
+        "database": "CSPDB",
+        "username": "SAP_Reader",
+        "password": "sapb1",
+        "reports_available": ["trial_balance", "profit_loss", "balance_sheet"],
+        "description": "Chemoscience Philippines - SQL Server Connection"
+      }
+    ]
+  },
+  "date_range": {
+    "start_date": "2024-04-01",
+    "end_date": "2025-03-31",
+    "description": "Default fiscal year for financial reports"
+  },
+  "report_types": {
+    "trial_balance": {
+      "name": "Trial Balance",
+      "description": "List of all accounts with debits and credits"
+    },
+    "balance_sheet": {
+      "name": "Balance Sheet",
+      "description": "Assets, Liabilities, and Equity statement"
+    },
+    "profit_loss": {
+      "name": "Profit & Loss Statement",
+      "description": "Revenue and Expenses statement"
+    },
+    "cash_flow": {
+      "name": "Cash Flow Statement",
+      "description": "Operating, Investing, and Financing activities"
+    },
+    "sales_report": {
+      "name": "Sales Report",
+      "description": "Detailed sales transactions and summary"
+    }
+  }
+}

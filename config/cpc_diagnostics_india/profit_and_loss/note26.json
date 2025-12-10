@@ -1,0 +1,17 @@
+{
+  "note_number": "NOTE 26",
+  "note_title": "Purchase of stock-in-trade",
+  "output_file": "cpc_diagnostics_india_note_26_purchase_stock_in_trade.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Display as positive values in the final notes.",
+  "categories": [
+    "Stock-in-trade"
+  ],
+  "output_format": [
+    {
+      "label": "Stock-in-trade",
+      "ind_as_minor": "Stock-in-trade"
+    }
+  ],
+  "additional_instructions": "Note: Purchase of stock-in-trade consists of Stock-in-trade only. Handle the formatting accordingly to maintain Schedule III compliance."
+}

@@ -1,0 +1,61 @@
+{
+  "note_number": "NOTE 27",
+  "note_title": "Changes in Inventories of Traded Goods",
+  "output_file": "company_a_note_27_changes_in_inventories.txt",
+  "opening_balance_column": "Opening Balance",
+  "closing_balance_column": "Closing Balance",
+  "calculation_method": "simple",
+  "statement_type": "profit-loss",
+  "summation_rule": "Calculate net change as (Opening Inventory - Closing Inventory). Use Opening Balance and Closing Balance columns specifically. No provision calculation required.",
+  "categories": [
+    "Finished goods (Closing)",
+    "Finished goods",
+    "TG",
+    "Traded goods",
+    "Goods in Transit",
+    "Allowance for obsolete inventories"
+  ],
+  "inventory_categories": [
+    {
+      "label": "Finished goods",
+      "ind_as_minor_variants": [
+        "Finished goods (Closing)",
+        "Finished goods"
+      ]
+    },
+    {
+      "label": "Traded goods",
+      "ind_as_minor_variants": [
+        "TG",
+        "Traded goods"
+      ]
+    },
+    {
+      "label": "Goods in Transit",
+      "ind_as_minor_variants": [
+        "Goods in Transit"
+      ]
+    }
+  ],
+  "allowance_category": "Allowance for obsolete inventories",
+  "provision_category": null,
+  "output_format": [
+    {
+      "label": "**Inventories at the end of the period:**",
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "value_type": "closing_total"
+    },
+    {
+      "label": "**Inventories at the beginning of the period:**",
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "value_type": "opening_total"
+    }
+  ],
+  "additional_instructions": "IMPORTANT: This note uses Opening Balance and Closing Balance columns, NOT period totals.\n\nCalculation Formula:\n- Total Opening Inventory (B): Sum of opening balances minus opening allowance\n- Total Closing Inventory (A): Sum of closing balances minus closing allowance\n- Net Change = (B - A)\n\nProvide detailed calculation breakdown showing Opening Inventory and Closing Inventory separately before the final Schedule III table.\n\nNo provision calculation is needed for this company."
+}

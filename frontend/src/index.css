@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Satoshi Font is loaded via HTML link tag */
+
+@layer base {
+  html {
+    font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  :root {
+    --brand-red: rgb(139, 0, 16);
+    --brand-red-hover: rgb(110, 0, 13);
+    --brand-red-light: rgb(255, 235, 238);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--brand-red);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--brand-red-hover);
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-success {
+    @apply bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-danger {
+    background-color: var(--brand-red);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:border-transparent;
+  }
+  
+  .input-field:focus {
+    ring-color: var(--brand-red);
+  }
+  
+  .step-indicator {
+    @apply flex items-center justify-center w-8 h-8 rounded-full border-2 font-medium text-sm;
+  }
+  
+  .step-indicator.active {
+    background-color: var(--brand-red);
+    border-color: var(--brand-red);
+    @apply text-white;
+  }
+  
+  .step-indicator.completed {
+    @apply bg-green-600 border-green-600 text-white;
+  }
+  
+  .step-indicator.pending {
+    @apply bg-gray-200 border-gray-300 text-gray-500;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(to right, var(--brand-red), var(--brand-red-hover));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  }
+}

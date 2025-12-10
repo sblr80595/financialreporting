@@ -1,0 +1,263 @@
+{
+  "note_number": "NOTE 5",
+  "note_title": "Investments",
+  "output_file": "company_note_5_investments.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract investment values from trial balance. For equity investments, show gross investment amount and deduct impairment provision to arrive at net carrying amount. Sum values from specified GL codes.",
+  "categories": [
+    "13020030 - Chemoscience Malaysia",
+    "13020031 - Prov for diminution in value of investment-Chemoscience (M)",
+    "13020050 - Chemoresources Sdn Bhd",
+    "13020051 - Prov for diminution in value of investment-Chemoresources",
+    "13020060 - Chemoinformatics Sdn Bhd",
+    "13020061 - Prov for diminution in value of investment-Chemoinformatics Sdn Bhd",
+    "13020100 - PT CHEMOSCIENCE INDONESIA",
+    "13020101 - Prov for diminution in value of investment-PT Chemoscience",
+    "13020150 - Chemoscience Pte Ltd",
+    "13020160 - Chemoscience Phils Inc",
+    "13020161 - Medigene Sdn Bhd",
+    "13020175 - Research Instruments Pte. Ltd.",
+    "13020180 - Research Instruments Sdn Bhd",
+    "13020170 - Scientific Resources Pte Ltd",
+    "13020190 - Biofrontier Technology Pte Ltd",
+    "13020195 - Hausen Bernstein Co Ltd"
+  ],
+  "output_format": [
+    {
+      "label": "Investments",
+      "ind_as_minor": null,
+      "is_major_section": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "TABLE_HEADER",
+      "columns": [
+        "Particulars",
+        "As at 30 June 2025"
+      ],
+      "is_table_structure": true
+    },
+    {
+      "label": "Investment in subsidiaries",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "Non-current investments (Carried at cost):",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "italic": true
+    },
+    {
+      "label": "Investment in unquoted equity instruments \u2013 at cost.",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "5,00,000 equity shares of 1 RM each held in Chemoscience (Malaysia) Sdn. Bhd.",
+      "ind_as_minor": [
+        "13020030 - Chemoscience Malaysia"
+      ],
+      "aggregation": "sum",
+      "indent_level": 0
+    },
+    {
+      "label": "Less: Impairment in value of investments",
+      "ind_as_minor": [
+        "13020031 - Prov for diminution in value of investment-Chemoscience (M)"
+      ],
+      "aggregation": "sum",
+      "is_negative": true,
+      "indent_level": 1
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "2,00,000 equity shares of 1 RM each held in Chemoresources Sdn. Bhd.",
+      "ind_as_minor": [
+        "13020050 - Chemoresources Sdn Bhd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Less: Impairment in value of investments",
+      "ind_as_minor": [
+        "13020051 - Prov for diminution in value of investment-Chemoresources"
+      ],
+      "aggregation": "sum",
+      "is_negative": true,
+      "indent_level": 1
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "1,00,000 equity shares of 1 RM each held in Chemoinformatics Sdn. Bhd.",
+      "ind_as_minor": [
+        "13020060 - Chemoinformatics Sdn Bhd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Less: Impairment in value of investments",
+      "ind_as_minor": [
+        "13020061 - Prov for diminution in value of investment-Chemoinformatics Sdn Bhd"
+      ],
+      "aggregation": "sum",
+      "is_negative": true,
+      "indent_level": 1
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "2,989 equity shares of 1 IDR each held in Pt Chemoscience Indonesia",
+      "ind_as_minor": [
+        "13020100 - PT CHEMOSCIENCE INDONESIA"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Less: Impairment in value of investments",
+      "ind_as_minor": [
+        "13020101 - Prov for diminution in value of investment-PT Chemoscience"
+      ],
+      "aggregation": "sum",
+      "is_negative": true,
+      "indent_level": 1
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "52,15,143 equity shares of 1 SGD each held in Chemoscience Pte. Ltd.",
+      "ind_as_minor": [
+        "13020150 - Chemoscience Pte Ltd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "2,00,000 equity shares of 100 PHP each held in Chemoscience Phils. Inc.",
+      "ind_as_minor": [
+        "13020160 - Chemoscience Phils Inc"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "15,00,000 equity shares of 1 RM each held in Medigene Sdn. Bhd.",
+      "ind_as_minor": [
+        "13020161 - Medigene Sdn Bhd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "4,00,000 equity shares of 1 SGD each held in Research Instruments Pte. Ltd.",
+      "ind_as_minor": [
+        "13020175 - Research Instruments Pte. Ltd."
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "11,77,000 equity shares of 1 RM each held in Research Instruments Sdn. Bhd.",
+      "ind_as_minor": [
+        "13020180 - Research Instruments Sdn Bhd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "50,000 equity shares of 1 SGD each held in Scientific Resources Pte. Ltd.",
+      "ind_as_minor": [
+        "13020170 - Scientific Resources Pte Ltd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "1,00,000 equity shares of 1 SGD each held in Biofrontier Technology Pte. Ltd.",
+      "ind_as_minor": [
+        "13020190 - Biofrontier Technology Pte Ltd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "19,50,000 equity shares of 100 Baht each held in Hausen Bernstein Co. Ltd.",
+      "ind_as_minor": [
+        "13020195 - Hausen Bernstein Co Ltd"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "TOTAL_INVESTMENTS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "5,00,000 equity shares of 1 RM each held in Chemoscience (Malaysia) Sdn. Bhd.",
+        "Less: Impairment in value of investments",
+        "2,00,000 equity shares of 1 RM each held in Chemoresources Sdn. Bhd.",
+        "Less: Impairment in value of investments",
+        "1,00,000 equity shares of 1 RM each held in Chemoinformatics Sdn. Bhd.",
+        "Less: Impairment in value of investments",
+        "2,989 equity shares of 1 IDR each held in Pt Chemoscience Indonesia",
+        "Less: Impairment in value of investments",
+        "52,15,143 equity shares of 1 SGD each held in Chemoscience Pte. Ltd.",
+        "2,00,000 equity shares of 100 PHP each held in Chemoscience Phils. Inc.",
+        "15,00,000 equity shares of 1 RM each held in Medigene Sdn. Bhd.",
+        "4,00,000 equity shares of 1 SGD each held in Research Instruments Pte. Ltd.",
+        "11,77,000 equity shares of 1 RM each held in Research Instruments Sdn. Bhd.",
+        "50,000 equity shares of 1 SGD each held in Scientific Resources Pte. Ltd.",
+        "1,00,000 equity shares of 1 SGD each held in Biofrontier Technology Pte. Ltd.",
+        "19,50,000 equity shares of 100 Baht each held in Hausen Bernstein Co. Ltd."
+      ],
+      "show_line": true,
+      "display_label": "",
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\nThis note presents Investments in a two-column format with detailed descriptions:\n\nTABLE STRUCTURE:\n- Column headers: Particulars | As at 30 June 2025\n- All amounts in Indian numbering system without \u20b9 symbol\n- Values are dynamically calculated from trial balance GL codes, NOT hardcoded\n\nHEADER SECTION:\n1. Show 'Investments' as major section header\n2. Add blank row\n3. Show 'Investment in subsidiaries' as subsection header (bold, no amount)\n4. Show 'Non-current investments (Carried at cost):' as subheading (italic, no amount)\n5. Show 'Investment in unquoted equity instruments \u2013 at cost.' as subheading (bold, no amount)\n6. Add blank row\n\nINVESTMENT DETAILS:\nFor each investment, show:\n- Full description with number of shares, par value, currency, and company name\n- Gross investment amount from corresponding GL code\n- Less: Impairment (if applicable) - indented and shown as negative from impairment GL code\n- Blank row after each investment\n\nINVESTMENT LISTING WITH GL CODE MAPPING:\n\n1. '5,00,000 equity shares of 1 RM each held in Chemoscience (Malaysia) Sdn. Bhd.'\n   GL Code: 13020030 - Chemoscience Malaysia\n   'Less: Impairment in value of investments' [indented]\n   GL Code: 13020031 - Prov for diminution in value of investment-Chemoscience (M)\n\n2. '2,00,000 equity shares of 1 RM each held in Chemoresources Sdn. Bhd.'\n   GL Code: 13020050 - Chemoresources Sdn Bhd\n   'Less: Impairment in value of investments' [indented]\n   GL Code: 13020051 - Prov for diminution in value of investment-Chemoresources\n\n3. '1,00,000 equity shares of 1 RM each held in Chemoinformatics Sdn. Bhd.'\n   GL Code: 13020060 - Chemoinformatics Sdn Bhd\n   'Less: Impairment in value of investments' [indented]\n   GL Code: 13020061 - Prov for diminution in value of investment-Chemoinformatics Sdn Bhd\n\n4. '2,989 equity shares of 1 IDR each held in Pt Chemoscience Indonesia'\n   GL Code: 13020100 - PT CHEMOSCIENCE INDONESIA\n   'Less: Impairment in value of investments' [indented]\n   GL Code: 13020101 - Prov for diminution in value of investment-PT Chemoscience\n\n5. '52,15,143 equity shares of 1 SGD each held in Chemoscience Pte. Ltd.'\n   GL Code: 13020150 - Chemoscience Pte Ltd\n   (No impairment)\n\n6. '2,00,000 equity shares of 100 PHP each held in Chemoscience Phils. Inc.'\n   GL Code: 13020160 - Chemoscience Phils Inc\n   (No impairment)\n\n7. '15,00,000 equity shares of 1 RM each held in Medigene Sdn. Bhd.'\n   GL Code: 13020161 - Medigene Sdn Bhd\n   (No impairment)\n\n8. '4,00,000 equity shares of 1 SGD each held in Research Instruments Pte. Ltd.'\n   GL Code: 13020175 - Research Instruments Pte. Ltd.\n   (No impairment)\n\n9. '11,77,000 equity shares of 1 RM each held in Research Instruments Sdn. Bhd.'\n   GL Code: 13020180 - Research Instruments Sdn Bhd\n   (No impairment)\n\n10. '50,000 equity shares of 1 SGD each held in Scientific Resources Pte. Ltd.'\n    GL Code: 13020170 - Scientific Resources Pte Ltd\n    (No impairment)\n\n11. '1,00,000 equity shares of 1 SGD each held in Biofrontier Technology Pte. Ltd.'\n    GL Code: 13020190 - Biofrontier Technology Pte Ltd\n    (No impairment)\n\n12. '19,50,000 equity shares of 100 Baht each held in Hausen Bernstein Co. Ltd.'\n    GL Code: 13020195 - Hausen Bernstein Co Ltd\n    (No impairment)\n\nTOTAL CALCULATION:\n- System should sum ALL investment line items (both gross investments and impairments)\n- Impairment values are already negative in the trial balance, so direct summation will give net value\n- DO NOT hardcode the total value\n- Calculate total dynamically: Sum of all GL codes listed in categories\n- Net investment value = Sum(all gross investment GL codes) + Sum(all impairment GL codes, which are negative)\n\nFORMATTING NOTES:\n- Each investment description should include: number of shares, par value per share, currency, company name\n- Impairment lines should be indented and shown with 'Less: Impairment in value of investments'\n- Impairment values from trial balance are typically negative; display them as negative/in brackets\n- Bold the final total line\n- Double-underline the final total\n- Right-align all numbers\n- Maintain blank rows between investments for readability\n\nDATA EXTRACTION LOGIC:\n- For each GL code in categories, extract the closing balance from the period column\n- Investment GL codes (13020030, 13020050, etc.) typically have positive debit balances\n- Impairment provision GL codes (13020031, 13020051, etc.) typically have negative credit balances\n- Sum all values algebraically to get total net investment\n- Display impairment amounts with the negative sign or in brackets\n\nIMPORTANT:\n- NO hardcoded amounts should be used\n- ALL values must be filtered and summed from trial balance based on GL codes\n- The system should handle cases where:\n  * GL code exists with zero balance (show as blank or dash)\n  * GL code has negative balance for investment (unusual, but system should handle)\n  * Impairment GL code doesn't exist (skip the impairment line)\n- Total line must sum ALL preceding investment lines algebraically"
+}

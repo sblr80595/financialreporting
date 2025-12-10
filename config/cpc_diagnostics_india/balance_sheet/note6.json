@@ -1,0 +1,31 @@
+{
+  "note_number": "NOTE 6",
+  "note_title": "Deferred tax liabilities (net)",
+  "output_file": "company_note_6_deferred_tax_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. If credit balance (negative), present as liability (positive). If debit balance (positive), present as asset in parentheses or negative.",
+  "categories": [
+    "Deferred tax liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "Deferred tax liabilities",
+      "ind_as_minor": [
+        "Deferred tax liabilities"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Deferred tax liabilities (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Deferred tax liabilities"
+      ],
+      "show_line": true,
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 6: DEFERRED TAX LIABILITIES (NET)**\n\nPresentation Requirements:\n1. 'Deferred tax liabilities' - Sum of GL codes under category 'Deferred tax liabilities'.\n2. Show total (which is the same as the line item value since there is only one item).\n3. Format all amounts in Indian numbering system without \u20b9 symbol.\n4. If net position is a liability (credit balance in trial balance), show as positive amount.\n5. If net position is an asset (debit balance), show as negative/bracketed."
+}

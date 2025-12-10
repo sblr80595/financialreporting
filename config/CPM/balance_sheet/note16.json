@@ -1,0 +1,29 @@
+{
+  "note_number": "NOTE 16",
+  "note_title": "Contract liabilities",
+  "output_file": "company_a_note_16_contract_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For contract liabilities, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Contract liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "Contract liabilities",
+      "ind_as_minor": [
+        "Contract liabilities"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_CONTRACT_LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Contract liabilities"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Contract liabilities' - from category 'Contract liabilities'\n2. Show total (which is same as the line item value since there's only one item)\n3. Example: Contract liabilities: 29,04,326; Total: 29,04,326\n5. Format all amounts in Indian numbering system without \u20b9 symbol.\n6. Contract liabilities represent advance payments received from customers for which performance obligations are yet to be satisfied under Ind AS 115 (Revenue from Contracts with Customers).\n7. These are also referred to as 'Unearned revenue' or 'Deferred revenue'.\n8. Contract liabilities are credit balances (may appear negative in trial balance) - take absolute values for presentation.\n9. These are typically current liabilities unless the performance obligation extends beyond 12 months."
+}

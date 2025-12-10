@@ -1,0 +1,692 @@
+{
+  "id": "bs_indas",
+  "statementType": "BalanceSheet",
+  "framework": "IndAS",
+  "version": 1,
+  "meta": {
+    "title": "Balance Sheet",
+    "subtitlePattern": "As at {periodEnd}",
+    "currencyLabelDefault": "INR, in Lakhs"
+  },
+  "columns": [
+    {
+      "id": "particulars",
+      "label": "Particulars",
+      "type": "text",
+      "alignment": "left",
+      "width": "flex"
+    },
+    {
+      "id": "note",
+      "label": "Note",
+      "type": "noteRef",
+      "alignment": "center",
+      "width": 60
+    },
+    {
+      "id": "current",
+      "label": "As at {periodEnd}",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    },
+    {
+      "id": "previous",
+      "label": "As at {comparisonEnd}",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    }
+  ],
+  "rows": [
+    {
+      "id": "ASSETS_SECTION",
+      "label": "ASSETS",
+      "type": "section",
+      "section": "ASSETS",
+      "order": 10,
+      "style": {
+        "bold": true,
+        "uppercase": true,
+        "backgroundToken": "surface.sectionBlue"
+      }
+    },
+    {
+      "id": "NON_CURRENT_ASSETS",
+      "label": "Non-current assets",
+      "type": "group",
+      "section": "ASSETS",
+      "parentId": "ASSETS_SECTION",
+      "order": 20,
+      "style": {
+        "bold": true,
+        "indentLevel": 0,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "PPE",
+      "label": "Property, plant and equipment",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 30,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "1"
+    },
+    {
+      "id": "CWIP",
+      "label": "Capital work-in-progress",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 35,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "1A"
+    },
+    {
+      "id": "INV_PROP",
+      "label": "Investment property",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 40,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "2"
+    },
+    {
+      "id": "GOODWILL",
+      "label": "Goodwill",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 45,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "3"
+    },
+    {
+      "id": "INTANGIBLES",
+      "label": "Other intangible assets",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 50,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "4"
+    },
+    {
+      "id": "INTANGIBLES_UNDER_DEV",
+      "label": "Intangible assets under development",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 55,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "4A"
+    },
+    {
+      "id": "ROU_ASSETS",
+      "label": "Right-of-use assets",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 58,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "5"
+    },
+    {
+      "id": "FIN_ASSETS_NC",
+      "label": "Financial assets",
+      "type": "group",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 60,
+      "style": {
+        "indentLevel": 1,
+        "italic": true
+      }
+    },
+    {
+      "id": "INVESTMENTS_NC",
+      "label": "Investments",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_NC",
+      "order": 65,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "6"
+    },
+    {
+      "id": "TRADE_REC_NC",
+      "label": "Trade receivables",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_NC",
+      "order": 67,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "7"
+    },
+    {
+      "id": "LOANS_NC",
+      "label": "Loans",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_NC",
+      "order": 69,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "8"
+    },
+    {
+      "id": "OTHER_FIN_NC",
+      "label": "Others",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_NC",
+      "order": 71,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "9"
+    },
+    {
+      "id": "DEF_TAX_ASSETS",
+      "label": "Deferred tax assets (net)",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 73,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "10"
+    },
+    {
+      "id": "OTHER_NC_ASSETS",
+      "label": "Other non-current assets",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "NON_CURRENT_ASSETS",
+      "order": 75,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "11"
+    },
+    {
+      "id": "CURRENT_ASSETS",
+      "label": "Current assets",
+      "type": "group",
+      "section": "ASSETS",
+      "parentId": "ASSETS_SECTION",
+      "order": 80,
+      "style": {
+        "bold": true,
+        "indentLevel": 0,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "INVENTORIES",
+      "label": "Inventories",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "CURRENT_ASSETS",
+      "order": 90,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "12"
+    },
+    {
+      "id": "FIN_ASSETS_C",
+      "label": "Financial assets",
+      "type": "group",
+      "section": "ASSETS",
+      "parentId": "CURRENT_ASSETS",
+      "order": 95,
+      "style": {
+        "indentLevel": 1,
+        "italic": true
+      }
+    },
+    {
+      "id": "INVESTMENTS_C",
+      "label": "Investments",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_C",
+      "order": 97,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "13"
+    },
+    {
+      "id": "TRADE_REC_C",
+      "label": "Trade receivables",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_C",
+      "order": 99,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "14"
+    },
+    {
+      "id": "CASH_EQ",
+      "label": "Cash and cash equivalents",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_C",
+      "order": 101,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "15"
+    },
+    {
+      "id": "BANK_BAL",
+      "label": "Bank balances other than above",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_C",
+      "order": 103,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "16"
+    },
+    {
+      "id": "LOANS_C",
+      "label": "Loans",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_C",
+      "order": 105,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "17"
+    },
+    {
+      "id": "OTHER_FIN_C",
+      "label": "Others",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "FIN_ASSETS_C",
+      "order": 107,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "18"
+    },
+    {
+      "id": "CURR_TAX_ASSETS",
+      "label": "Current tax assets (net)",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "CURRENT_ASSETS",
+      "order": 109,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "19"
+    },
+    {
+      "id": "OTHER_C_ASSETS",
+      "label": "Other current assets",
+      "type": "lineItem",
+      "section": "ASSETS",
+      "parentId": "CURRENT_ASSETS",
+      "order": 111,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "20"
+    },
+    {
+      "id": "TOTAL_ASSETS",
+      "label": "TOTAL ASSETS",
+      "type": "total",
+      "section": "ASSETS",
+      "order": 120,
+      "style": {
+        "bold": true,
+        "uppercase": true,
+        "backgroundToken": "surface.total"
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "NON_CURRENT_ASSETS",
+          "CURRENT_ASSETS"
+        ]
+      }
+    },
+    {
+      "id": "EQUITY_LIAB_SECTION",
+      "label": "EQUITY AND LIABILITIES",
+      "type": "section",
+      "section": "EQUITY_LIAB",
+      "order": 130,
+      "style": {
+        "bold": true,
+        "uppercase": true,
+        "backgroundToken": "surface.sectionPurple"
+      }
+    },
+    {
+      "id": "EQUITY",
+      "label": "Equity",
+      "type": "group",
+      "section": "EQUITY_LIAB",
+      "parentId": "EQUITY_LIAB_SECTION",
+      "order": 140,
+      "style": {
+        "bold": true,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "SHARE_CAPITAL",
+      "label": "Equity share capital",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "EQUITY",
+      "order": 150,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "21"
+    },
+    {
+      "id": "OTHER_EQUITY",
+      "label": "Other equity",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "EQUITY",
+      "order": 160,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "22"
+    },
+    {
+      "id": "LIABILITIES",
+      "label": "Liabilities",
+      "type": "group",
+      "section": "EQUITY_LIAB",
+      "parentId": "EQUITY_LIAB_SECTION",
+      "order": 165,
+      "style": {
+        "bold": true
+      }
+    },
+    {
+      "id": "NON_CURRENT_LIAB",
+      "label": "Non-current liabilities",
+      "type": "group",
+      "section": "EQUITY_LIAB",
+      "parentId": "LIABILITIES",
+      "order": 170,
+      "style": {
+        "bold": true,
+        "indentLevel": 1,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "FIN_LIAB_NC",
+      "label": "Financial liabilities",
+      "type": "group",
+      "section": "EQUITY_LIAB",
+      "parentId": "NON_CURRENT_LIAB",
+      "order": 175,
+      "style": {
+        "indentLevel": 2,
+        "italic": true
+      }
+    },
+    {
+      "id": "BORROWINGS_NC",
+      "label": "Borrowings",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_NC",
+      "order": 177,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "23"
+    },
+    {
+      "id": "LEASE_LIAB_NC",
+      "label": "Lease liabilities",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_NC",
+      "order": 179,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "24"
+    },
+    {
+      "id": "OTHER_FIN_LIAB_NC",
+      "label": "Others",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_NC",
+      "order": 181,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "25"
+    },
+    {
+      "id": "PROVISIONS_NC",
+      "label": "Provisions",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "NON_CURRENT_LIAB",
+      "order": 183,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "26"
+    },
+    {
+      "id": "DEF_TAX_LIAB",
+      "label": "Deferred tax liabilities (net)",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "NON_CURRENT_LIAB",
+      "order": 185,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "27"
+    },
+    {
+      "id": "OTHER_NC_LIAB",
+      "label": "Other non-current liabilities",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "NON_CURRENT_LIAB",
+      "order": 187,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "28"
+    },
+    {
+      "id": "CURRENT_LIAB",
+      "label": "Current liabilities",
+      "type": "group",
+      "section": "EQUITY_LIAB",
+      "parentId": "LIABILITIES",
+      "order": 210,
+      "style": {
+        "bold": true,
+        "indentLevel": 1,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "FIN_LIAB_C",
+      "label": "Financial liabilities",
+      "type": "group",
+      "section": "EQUITY_LIAB",
+      "parentId": "CURRENT_LIAB",
+      "order": 215,
+      "style": {
+        "indentLevel": 2,
+        "italic": true
+      }
+    },
+    {
+      "id": "BORROWINGS_C",
+      "label": "Borrowings",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_C",
+      "order": 217,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "29"
+    },
+    {
+      "id": "TRADE_PAY_MSME",
+      "label": "Trade payables - MSME",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_C",
+      "order": 219,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "30"
+    },
+    {
+      "id": "TRADE_PAY_OTHER",
+      "label": "Trade payables - Others",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_C",
+      "order": 221,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "30"
+    },
+    {
+      "id": "LEASE_LIAB_C",
+      "label": "Lease liabilities",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_C",
+      "order": 223,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "31"
+    },
+    {
+      "id": "OTHER_FIN_LIAB_C",
+      "label": "Others",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "FIN_LIAB_C",
+      "order": 225,
+      "style": {
+        "indentLevel": 3
+      },
+      "noteNumber": "32"
+    },
+    {
+      "id": "OTHER_CURR_LIAB",
+      "label": "Other current liabilities",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "CURRENT_LIAB",
+      "order": 227,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "33"
+    },
+    {
+      "id": "PROVISIONS_C",
+      "label": "Provisions",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "CURRENT_LIAB",
+      "order": 229,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "34"
+    },
+    {
+      "id": "CURR_TAX_LIAB",
+      "label": "Current tax liabilities (net)",
+      "type": "lineItem",
+      "section": "EQUITY_LIAB",
+      "parentId": "CURRENT_LIAB",
+      "order": 231,
+      "style": {
+        "indentLevel": 2
+      },
+      "noteNumber": "35"
+    },
+    {
+      "id": "TOTAL_EQUITY_LIAB",
+      "label": "TOTAL EQUITY AND LIABILITIES",
+      "type": "total",
+      "section": "EQUITY_LIAB",
+      "order": 260,
+      "style": {
+        "bold": true,
+        "uppercase": true,
+        "backgroundToken": "surface.total"
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "EQUITY",
+          "NON_CURRENT_LIAB",
+          "CURRENT_LIAB"
+        ]
+      }
+    }
+  ]
+}

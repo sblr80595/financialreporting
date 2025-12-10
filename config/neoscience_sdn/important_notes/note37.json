@@ -1,0 +1,123 @@
+{
+  "note_number": "Note 37",
+  "note_title": "Financial Instruments",
+  "output_file": "Neoscience_Note_37_Financial_Instruments.txt",
+  "source_file": "TB_Neoscience_Final.csv",
+  "statement_type": "disclosure",
+  "summation_rule": "Sum all financial asset categories to find Total financial assets. Sum all financial liability categories to find Total financial liabilities. All values represent Carrying Amount (Amortised Cost).",
+  "categories": [
+    "Investments",
+    "Loans",
+    "Trade receivables",
+    "Cash and cash equivalents",
+    "Other bank balances",
+    "Other financial assets",
+    "Borrowings",
+    "Trade payables",
+    "Lease liabilities",
+    "Other financial liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "Financial assets",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Investments",
+      "ind_as_minor": ["Investments"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Loans",
+      "ind_as_minor": ["Loans"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Trade receivables",
+      "ind_as_minor": ["Trade receivables"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Cash and cash equivalents",
+      "ind_as_minor": ["Cash and cash equivalents"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Other bank balances",
+      "ind_as_minor": ["Other bank balances"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Other financial assets",
+      "ind_as_minor": ["Other financial assets"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total financial assets",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Investments",
+        "Loans",
+        "Trade receivables",
+        "Cash and cash equivalents",
+        "Other bank balances",
+        "Other financial assets"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "Financial liabilities",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Borrowings",
+      "ind_as_minor": ["Borrowings"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Trade payables",
+      "ind_as_minor": ["Trade payables"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Lease liabilities",
+      "ind_as_minor": ["Lease liabilities"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Other financial liabilities",
+      "ind_as_minor": ["Other financial liabilities"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total financial liabilities",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Borrowings",
+        "Trade payables",
+        "Lease liabilities",
+        "Other financial liabilities"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 30 June 2025 and As at 31 March 2025. All amounts must represent the Carrying Amount (Amortised Cost). Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

@@ -1,0 +1,62 @@
+{
+  "note_number": "NOTE 25",
+  "note_title": "Other Income",
+  "output_file": "cpc_diagnostics_india_note_25_other_income.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the final notes.",
+  "categories": [
+    "Interest income on fixed deposits",
+    "Net gain on account of foreign exchange fluctuations",
+    "Net gain on sale of property, plant and equipment",
+    "Interest income from financial assets at amortised cost, rental deposits",
+    "Recovery of Bad Debts",
+    "Freight Outward on Sales",
+    "Provisions no longer required written back",
+    "Profit share from joint venture",
+    "Revaluation gain on valuation of investments",
+    "Miscellaneous income"
+  ],
+  "output_format": [
+    {
+      "label": "Interest income on fixed deposits",
+      "ind_as_minor": "Interest income on fixed deposits"
+    },
+    {
+      "label": "Net gain on account of foreign exchange fluctuations",
+      "ind_as_minor": "Net gain on account of foreign exchange fluctuations"
+    },
+    {
+      "label": "Net gain on sale of property, plant and equipment",
+      "ind_as_minor": "Net gain on sale of property, plant and equipment"
+    },
+    {
+      "label": "Interest income from financial assets at amortised cost, rental deposits",
+      "ind_as_minor": "Interest income from financial assets at amortised cost, rental deposits"
+    },
+    {
+      "label": "Recovery of Bad Debts",
+      "ind_as_minor": "Recovery of Bad Debts"
+    },
+    {
+      "label": "Freight Outward on Sales",
+      "ind_as_minor": "Freight Outward on Sales"
+    },
+    {
+      "label": "Provisions no longer required written back",
+      "ind_as_minor": "Provisions no longer required written back"
+    },
+    {
+      "label": "Profit share from joint venture",
+      "ind_as_minor": "Profit share from joint venture"
+    },
+    {
+      "label": "Revaluation gain on valuation of investments",
+      "ind_as_minor": "Revaluation gain on valuation of investments"
+    },
+    {
+      "label": "Miscellaneous income",
+      "ind_as_minor": "Miscellaneous income"
+    }
+  ],
+  "additional_instructions": "Note: Other income includes various income items. Handle the formatting accordingly to maintain Schedule III compliance."
+}

@@ -1,0 +1,63 @@
+{
+  "note_number": "NOTE 19",
+  "note_title": "Trade payables",
+  "output_file": "company_a_note_19_trade_payables.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For trade payables, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation). Use negative formula: -(value) to convert credit balances to positive.",
+  "categories": [
+    "Due to others",
+    "Accrued expenses",
+    "Amounts due to related companies"
+  ],
+  "output_format": [
+    {
+      "label": "Total outstanding dues of micro enterprises and small enterprises",
+      "ind_as_minor": null,
+      "is_disclosure_line": true,
+      "show_value": false,
+      "note": "MSME disclosure line - typically shows '-' or specific amount if MSME dues exist"
+    },
+    {
+      "label": "Total outstanding dues of creditors other than micro enterprises and small enterprises*",
+      "ind_as_minor": [
+        "Due to others",
+        "Accrued expenses",
+        "Amounts due to related companies"
+      ],
+      "aggregation": "sum",
+      "is_disclosure_line": true,
+      "note": "This should equal the final total - shows total non-MSME payables"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Due to others",
+      "ind_as_minor": [
+        "Due to others",
+        "Accrued expenses"
+      ],
+      "aggregation": "sum",
+      "note": "Sum of 'Due to others' and 'Accrued expenses' categories"
+    },
+    {
+      "label": "Due to related companies",
+      "ind_as_minor": [
+        "Amounts due to related companies"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_TRADE_PAYABLES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Due to others",
+        "Due to related companies"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. MSME Disclosure Section (as per MSME Act requirements):\n   - 'Total outstanding dues of micro enterprises and small enterprises' - show '-' or specific amount if MSME dues exist\n   - 'Total outstanding dues of creditors other than micro enterprises and small enterprises*' - calculate as: -(SUMIF for 'Due to others' + 'Accrued expenses' + 'Amounts due to related companies')\n   - Add blank row for spacing\n\n2. Trade Payables Breakdown:\n   - 'Due to others' - calculate as: -(SUMIF for 'Due to others' + SUMIF for 'Accrued expenses')\n     Formula logic: =-(SUMIF(TB_final!$L:CC,'Due to others',TB_final!CC:CC) + SUMIF(TB_final!$L:CC,'Accrued expenses',TB_final!CC:CC))\n   - 'Due to related companies' - calculate as: -(SUMIF for 'Amounts due to related companies')\n     Formula logic: =-(SUMIF(TB_final!$L:CC,'Amounts due to related companies',TB_final!CC:CC))\n   - Show total = Due to others + Due to related companies\n\n3. Example values:\n   - MSME dues: - (dash if no MSME payables)\n   - Non-MSME dues*: 2,66,16,637\n   - Due to others: 2,66,16,637 (includes regular payables and accruals)\n   - Due to related companies: - (dash if no related party payables)\n   - Total: 2,66,16,637\n\n5. Format all amounts in Indian numbering system without \u20b9 symbol.\n6. The negative formula -(SUMIF) converts credit balances (negative in TB) to positive presentation values.\n7. MSME disclosure is mandatory as per Micro, Small and Medium Enterprises Development Act, 2006.\n8. The asterisk (*) on non-MSME line indicates it equals the final total when no MSME dues exist.\n9. Trade payables are liabilities with credit balances - use negative formula for conversion.\n10. Related party payables require separate disclosure as per Schedule III and Ind AS 24."
+}

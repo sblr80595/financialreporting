@@ -1,0 +1,152 @@
+{
+  "note_number": "35",
+  "note_title": "Capital Management",
+  "statement_type": "important-notes",
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+  "multi_source_integration": true,
+  "auxiliary_files": [
+    {
+
+      "label": "Balance_Sheet_XLSX", 
+      "file_path": "data/cpm/output/financial_statements/BS", 
+      "file_name": "Balance_Sheet_*.xlsx",
+      "description": "Generated Balance Sheet for Net Debt and Total Capital components, including historical data for Mar'24 and Mar'23."
+    }
+  ],
+  "periods": [
+    {
+      "period_name": "Mar'25",
+      "period_column": "Total Mar'25"
+    }
+  ],
+  "multi_source_rule": "GL Breakdown (Output 1) from CPM.csv (Trial Balance). Capital Management Components (Output 2) and Gearing Ratio (Output 3) from Balance_Sheet_XLSX, focusing on Mar'25, Mar'24, and Mar'23.",
+  "summation_rule": "Use algebraic summation. Net debt (A) = Total Debt Components - Cash. Total capital (B) = Total Equity Components. Capital and net debt (C) = A + B. Gearing ratio = C/A as percentage.",
+  "period_handling": "Generate all sections for Mar'25. Use historical data (Mar'24, Mar'23) from auxiliary files if available.",
+  "categories": [
+    "Borrowings",
+    "Lease liabilities",
+    "Cash and cash equivalents",
+    "Other bank balances",
+    "Equity share capital",
+    "Reserves and surplus",
+    "Retained earnings",
+    "Share Based Payment Reserve"
+  ],
+  "output_format": {
+    "gl_breakdown": [
+      {
+        "section": "NOTE 35: GL CODE BREAKDOWN (Capital Components - 31 March 2025)",
+        "categories": [
+          "Borrowings",
+          "Borrowings- current",
+          "Borrowings- non current",
+          "Borrowings from related party - Holding/Subsidiary",
+          "Borrowings from related party - Everlife group",
+          "Borrowings from related party - Associates",
+          "Loan from directors",
+          "Loan from shareholders",
+          "Lease liabilities",
+          "Lease liabilities - Current",
+          "Lease liabilities-Non Current",
+          "Cash and cash equivalents",
+          "Other bank balances",
+          "Equity share capital",
+          "Reserves and surplus",
+          "Retained earnings",
+          "Share Based Payment Reserve"
+        ],
+        "format": "GL Code | GL Code Description | Ind AS Major | Ind AS Minor | 31 March 2025 (MYR)",
+        "show_subtotal": true,
+        "subtotal_label": "Total Capital Components (Trial Balance)"
+      }
+    ],
+    "summary_table": [
+      {
+        "label": "**Net Debt Components (A)**",
+        "is_bold": true
+      },
+      {
+        "label": "Total Borrowings (Current & Non-Current)",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Lease Liabilities (Current & Non-Current)",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Related Party Borrowings/Loans",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Invoice Financing/Bankers Acceptance",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Less: Cash and cash equivalents",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Less: Other bank balances (Fixed deposits)",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "**Net debt (A)**",
+        "is_total": true
+      },
+      {
+        "label": "**Total Capital Components (B)**",
+        "is_bold": true
+      },
+      {
+        "label": "Equity share capital",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Reserves and surplus",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Retained earnings",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Share Based Payment Reserve",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "**Total capital (B)**",
+        "is_total": true
+      }
+    ],
+    "gearing_ratio_analysis": [
+      {
+        "section": "NOTE 35: GEARING RATIO CALCULATION",
+        "label": "**Gearing Ratio Analysis (31 March 2025)**",
+        "is_bold": true
+      },
+      {
+        "label": "Net debt (A)",
+        "source": "from_summary_table"
+      },
+      {
+        "label": "Total capital (B)",
+        "source": "from_summary_table"
+      },
+      {
+        "label": "**Capital and net debt (C = A + B)**",
+        "is_total": true
+      },
+      {
+        "label": "",
+        "spacer": true
+      },
+      {
+        "label": "**Gearing ratio (C/A)**",
+        "source": "calculated",
+        "display_format": "percentage",
+        "is_total": true
+      }
+    ]
+  },
+  "additional_instructions": "## Calculation Steps:\n\n1. **GL Breakdown (Output 1):** Filter CPM.csv for all Balance Sheet items related to Debt and Equity components listed in the 'categories' field. Use algebraic sum for the total.\n\n2. **Capital Management Components (Output 2):** Extract data from Balance_Sheet_XLSX to build the Net Debt (A) and Total Capital (B) tables. Show columns for Mar'25, Mar'24, and Mar'23 (if available).\n    - **Net Debt (A)**: Sum all debt components (borrowings, lease liabilities, etc.) and algebraically subtract Cash and Other bank balances.\n    - **Total Capital (B)**: Sum all equity components.\n\n3. **Gearing Ratio Calculation (Output 3):** Calculate Capital and net debt (C = A + B) and Gearing ratio = (C / A) * 100 for Mar'25.\n\n---\n\n## Output Requirements:\n1. **GL Breakdown Table** - Show all relevant GLs with Mar'25 column only.\n2. **Capital Management Components Table** - Show breakdown with columns: Particulars | 31 March 2025 (MYR) | 31 March 2024 (MYR) | 31 March 2023 (MYR). All amounts must be positive, except for cash deductions.\n3. **Gearing Ratio Table** - Show calculation table for Mar'25.\n4. Currency: MYR (Malaysian Ringgit). Format amounts in Indian Rupee style (e.g., \u20b91,23,456 but use MYR currency symbol)."
+}

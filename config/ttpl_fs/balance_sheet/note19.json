@@ -1,0 +1,77 @@
+{
+  "note_number": "NOTE 19",
+  "note_title": "Trade payables",
+  "output_file": "ttpl_note_19_trade_payables.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For trade payables, take positive credit balances (if negative in trial balance, convert to positive for presentation). Use negative formula: -(value) to convert credit balances to positive.",
+  "categories": [
+    "Due to others",
+    "Accrued expenses",
+    "Amounts due to related companies",
+    "Due to MSME"
+  ],
+  "output_format": [
+    {
+      "label": "**A. Disclosure as per MSMED Act, 2006**",
+      "ind_as_minor": null,
+      "is_major_section": true,
+      "bold": true
+    },
+    {
+      "label": "Total outstanding dues of micro enterprises and small enterprises",
+      "ind_as_minor": [
+        "Due to MSME"
+      ],
+      "aggregation": "sum",
+      "is_disclosure_line": true
+    },
+    {
+      "label": "Total outstanding dues of creditors other than micro enterprises and small enterprises*",
+      "ind_as_minor": [
+        "Due to others",
+        "Accrued expenses",
+        "Amounts due to related companies"
+      ],
+      "aggregation": "sum",
+      "is_disclosure_line": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "**B. Trade Payables Breakdown**",
+      "ind_as_minor": null,
+      "is_major_section": true,
+      "bold": true
+    },
+    {
+      "label": "Due to others (including accruals)",
+      "ind_as_minor": [
+        "Due to others",
+        "Accrued expenses"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Due to related companies",
+      "ind_as_minor": [
+        "Amounts due to related companies"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_TRADE_PAYABLES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Due to others (including accruals)",
+        "Due to related companies"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 19: TRADE PAYABLES**\n\nSECTION A: MSMED Act Disclosure (Mandatory)\n1.  'Total outstanding dues of micro enterprises and small enterprises' - Sum of 'Due to MSME' category.\n2.  'Total outstanding dues of creditors other than micro enterprises and small enterprises*' - Sum of all non-MSME payables categories. This should reconcile with the final total if no MSME dues exist.\n\nSECTION B: Trade Payables Breakdown (Standard Schedule III)\n3.  'Due to others (including accruals)' - Sum of 'Due to others' and 'Accrued expenses' categories.\n4.  'Due to related companies' - Sum of 'Amounts due to related companies' category (Mandatory separate disclosure).\n5.  Show **TOTAL_TRADE_PAYABLES** as the final sum of the breakdown lines.\n\nAccounting Context:\n-   Trade payables are measured at amortised cost as per Ind AS 109.\n-   All amounts are credit balances, and the negative formula must be applied to present them as positive figures.\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   All amounts must be displayed as positive (liability balance)."
+}

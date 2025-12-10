@@ -1,0 +1,58 @@
+{
+  "note_number": "NOTE 34",
+  "note_title": "Contingent liabilities and commitments",
+  "output_file": "cpc_note_34_contingent_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items. If values are zero, empty, or missing, display 'Nil'.",
+  "categories": [
+    "Claims against the company not acknowledged as debts",
+    "Estimated amount of contracts remaining to be executed on capital account and not provided for"
+  ],
+  "output_format": [
+    {
+      "label": "Contingent liabilities and commitments",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "(to the extent not provided for)",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "italic": true
+    },
+    {
+      "label": "(i) Contingent liabilities",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Claims against the company not acknowledged as debts",
+      "ind_as_minor": [
+        "Claims against the company not acknowledged as debts"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "(ii) Commitments",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Estimated amount of contracts remaining to be executed on capital account and not provided for",
+      "ind_as_minor": [
+        "Estimated amount of contracts remaining to be executed on capital account and not provided for"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 34: CONTINGENT LIABILITIES AND COMMITMENTS**\n\nPresentation Requirements:\n1.  **Header**: Contingent liabilities and commitments (to the extent not provided for).\n2.  **Section (i)**: Contingent liabilities.\n3.  **Line Item**: Claims against the company not acknowledged as debts.\n4.  **Section (ii)**: Commitments.\n5.  **Line Item**: Estimated amount of contracts remaining to be executed on capital account and not provided for.\n\nFormatting:\n-   As the values for the current period are empty/zero in the source file, explicitly display 'Nil' for these line items.\n-   Follow the exact text descriptions found in the source file."
+}

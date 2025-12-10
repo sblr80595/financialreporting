@@ -1,0 +1,30 @@
+{
+  "note_number": "NOTE 6",
+  "note_title": "Deferred Tax Assets (Net)",
+  "output_file": "ttpl_note_6_deferred_tax_assets.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Deferred Tax Assets represent a recoverable amount and should have a debit (positive) balance.",
+  "categories": [
+    "Deferred Tax Assets (Net)"
+  ],
+  "output_format": [
+    {
+      "label": "Deferred Tax Assets (Net)",
+      "ind_as_minor": [
+        "Deferred Tax Assets (Net)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_DEFERRED_TAX_ASSETS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Deferred Tax Assets (Net)"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 6: DEFERRED TAX ASSETS (NET)**\n\n1. 'Deferred Tax Assets (Net)' - from category 'Deferred Tax Assets (Net)'\n2. Show total (which is the same as the line item value since there's only one item)\n3. This represents the net position of deferred tax after offsetting deferred tax liabilities against deferred tax assets, resulting in a net asset.\n4. Format all amounts in Indian numbering system (e.g., 1,23,456).\n5. Deferred tax is calculated as per Ind AS 12 (Income Taxes) based on temporary differences between book and tax base.\n6. The net position should be a net asset (debit balance in trial balance) and shown as a positive amount on the Asset side of the Balance Sheet.\n7. Deferred tax assets typically arise from timing differences where tax paid is higher than tax expense (e.g., provisions, carry-forward losses)."
+}

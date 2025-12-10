@@ -1,0 +1,37 @@
+Here is the requested financial note, generated from the trial balance provided.
+
+***
+
+**GL Level Breakdown for NOTE 10**
+**Period: Total Mar'25**
+| GL Code | GL Description | Amount (₹) |
+|---|---|---|
+| 14045010 | 14045010 - Petty Cash-Office | 3,000 |
+| 14045015 | 14045015 - Petty cash - Service | 2,000 |
+| 14045020 | 14045020 - Petty Cash-Warehouse | 3,000 |
+| 14045040 | 14045040 - Petty Cash-GA | 1,000 |
+| 14045045 | 14045045 - Petty cash-HR | 1,500 |
+| 14050051 | 14050051 - SCB-MYR (A/C:620194733775) | 30,09,034 |
+| 14050052 | 14050052 - SCB-USD (A/C:620194733767) | 27,247 |
+| 14050053 | 14050053 - SCB-SGD (A/C:620194733759) | 80,730 |
+| 14050054 | 14050054 - SCB-EUR (A/C:620194733740) | 3,604 |
+| 14050057 | 14050057 - MAYBANK (A/C:5122 3204 1703) | 23,41,640 |
+| 14050058 | 14050058 - MTRUSTEE BERHAD (MYR DSRA) - (SCB A/C:620194702594) | 4 |
+| 14050059 | 14050059 - MTRUSTEE BERHAD (USD DSRA) - (SCB A/C:620194702586) | 2 |
+| 14050060 | 14050060 - CIMB BANK BERHAD (A/C:800-356-8399) | 22,93,422 |
+| 14050063 | 14050063 - MTRUSTEE BERHAD (MYR DSRA) – (MBB A/C:512232055243) | 3 |
+| 14050067 | 14050067 - SCB-SGD Investment FCA (A/C:620194729522) | 3,708 |
+| 14050069 | 14050069 - SCB-USD Investment FCA (A/C:620194715424) | 747 |
+| 14050150 | 14050150 - HSBC BANK MALAYSIA BERHAD (MYR A/C:105-854004-101) | 55,164 |
+| 14050170 | 14050170 - HSBC BANK MALAYSIA BERHAD (USD A/C:105-854004-725) | 11,239 |
+| **Total:** | | **₹78,37,044** |
+
+---
+
+**NOTE 10: CASH AND CASH EQUIVALENTS**
+**Period: Total Mar'25**
+| Particulars |
+|---|---|---|
+| Cash on hand | 10,500 |
+| On current accounts | 78,26,544 |
+| **TOTAL CASH AND CASH EQUIVALENTS** | **78,37,044** |

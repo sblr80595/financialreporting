@@ -1,0 +1,191 @@
+GL Code,GL Name,BSPL,Ind AS Major,Ind AS Minor,Total June 2025,Total March 2025
+1000/00000,PAID UP CAPITAL,BS,Equity,Share capital,-50000.0,-50000.0
+1050/00000,RETAINED EARNINGS,BS,Equity,Retained earnings,-28024971.07,-26944070.58
+1060/00000,DEFERRED TAX,BS,Non Current liabilities,Deferred tax liabilities,-167000.0,-252000.0
+2010/00000,FURNITURE & FITTING,BS,Property plant and equipment,Furniture and Fittiings,52001.0,52001.0
+2010/00001,ACCUM. DEPRN. FURNITURE & FITTING,BS,Property plant and equipment,Furniture and Fittiings AD,-28422.0,-27122.0
+2020/00000,OFFICE EQUIPMENT,BS,Property plant and equipment,Office equipment,148358.0,148358.0
+2020/00001,ACCUM. DEPRN. OFFICE EQUIPMENT,BS,Property plant and equipment,Office equipment AD,-55809.0,-52100.0
+2030/00000,TELECOMMUNICATION EQUIPMENT,BS,Property plant and equipment,Office equipment,2015.0,2015.0
+2030/00001,ACCUM. DEPRN. TELECOMMUNICATION EQUIPMENT,BS,Property plant and equipment,Office equipment AD,-1946.0,-1936.0
+2040/00000,MOTOR VEHICLE,BS,Property plant and equipment,Motor Vehicle,202596.0,202596.0
+2040/00001,ACCUM. DEPRN. MOTOR VEHICLE,BS,Property plant and equipment,Motor Vehicle AD,-96513.0,-91448.0
+2050/00000,LABORATORY EQUIPMENT,BS,Property plant and equipment,Plant and machinery,856211.0,856211.0
+2050/00001,ACCUM. DEPRN. LABORATORY EQUIPMENT,BS,Property plant and equipment,Plant and machinery AD,-622084.0,-600679.0
+2060/00000,RENOVATION,BS,Property plant and equipment,Renovation,156678.0,156678.0
+2060/00001,ACCUM. DEPRN. RENOVATION,BS,Property plant and equipment,Renovation-AD,-84973.0,-81056.0
+2070/00000,REAGENT RENTAL INSTRUMENT,BS,Property plant and equipment,Plant and machinery,26518846.0,26353351.0
+2070/00001,ACCUM. DEPRN. REAGENT RENTAL INSTRUMENT,BS,Property plant and equipment,Plant and machinery AD,-16009689.0,-15341902.0
+2070/00002,IMPAIR - REAGENT RENTAL INSTRUMENT,BS,Property plant and equipment,Plant and machinery Impairment,-3778128.0,-3778128.0
+2080/00000,SIGNBOARD,BS,Property plant and equipment,Office equipment,2610.0,2610.0
+2080/00001,ACCUM. DEPRN. SIGNBOARD,BS,Property plant and equipment,Office equipment AD,-1930.0,-1865.0
+2090/00000,AIR CONDITIONER,BS,Property plant and equipment,Office equipment,26537.0,26537.0
+2090/00001,ACCUM. DEPRN. AIR CONDITIONER,BS,Property plant and equipment,Office equipment AD,-11011.0,-10347.0
+2100/00000,MARKETING TOOL/EQUIPMENT,BS,Property plant and equipment,Plant and machinery,10500.0,10500.0
+2100/00001,ACCUM. DEPRN. MARKETING TOOL/EQUIPMENT,BS,Property plant and equipment,Plant and machinery AD,-8532.0,-8269.0
+2200/00000,COMPUTER & SOFTWARE,BS,Property plant and equipment,Computer,335460.0,323760.0
+2200/00001,ACCUM. DEPRN. COMPUTER & SOFTWARE,BS,Property plant and equipment,Computer-AD,-230550.0,-215845.0
+2300/00000,LABORATORY - C101,BS,Property plant and equipment,Plant and machinery,466813.0,466813.0
+2300/00001,ACCUM. DEPRN. LABORATORY - C101,BS,Property plant and equipment,Plant and machinery AD,-115649.0,-103978.0
+2400/00000,ENGINEER LABORATORY - C102,BS,Property plant and equipment,Plant and machinery,278727.0,275027.0
+2400/00001,ACCUM. DEPRN. ENGINEER LABORATORY - C102,BS,Property plant and equipment,Plant and machinery AD,-56121.0,-49191.0
+3000/00000,TRADE DEBTORS,BS,Trade receivables,Trade Receivables considered good – unsecured,7581725.58,6665519.7
+3050/00000,MBB - 5123 5231 7891,BS,Cash and cash equivalents,-current accounts,9420686.0,10338456.0
+3050/00001,MBB - 5623 5754 5110,BS,Cash and cash equivalents,-current accounts,68.0,68.0
+3060/00000,UOB - 2603 0617 90,BS,Cash and cash equivalents,-current accounts,100000.0,100000.0
+3060/00001,UOB USD - 2609 0277 72,BS,Cash and cash equivalents,-current accounts,2285323.71,2408975.16
+3061/00000,UOB - SWEEP,BS,Cash and cash equivalents,-current accounts,517767.0,375226.0
+3080/00000,ALLOWANCE FOR IMPAIRMENT,BS,Trade receivables,"Unsecured, considered impaired",-2000000.0,-2000000.0
+3090/00000,ALLOWANCE FOR DOUBTFUL DEBTS,BS,Trade receivables,"Unsecured, considered impaired",-343208.0,-343208.0
+3100/00000,INVESTMENT IN NEVOLUTION ENGINEERING,BS,Investments,Investments in subsidiaries,50000.0,50000.0
+3100/P0001,OFFICE PETTY CASH,BS,Cash and cash equivalents,Cash on hand,2824.0,3679.0
+3100/P0002,PETTY CASH - LOGISTIC,BS,Cash and cash equivalents,Cash on hand,1000.0,1500.0
+3101/00000,AMOUNT OWING FROM MEDISAFE,BS,Other Financial Assets,Other recoverable (OFA-Current),9808.0,9808.0
+3700/00000,STOCK,BS,Inventories,Traded goods,8928626.1,9330202.84
+3800/00000,AMOUNT OWING FROM CERVEAU TECH SB,BS,Other Financial Assets,Advances,150000.0,150000.0
+3B01/00000,BG-BON PELAKSANAAN (GOVT),BS,Other Financial Assets,Other deposit,674476.0,511364.0
+3D01/00001,DEPOSIT - SECURITY & UTILITY,BS,Other Financial Assets,Security deposits,32700.0,32400.0
+3D01/00002,OTHER DEPOSIT,BS,Other Financial Assets,Security deposits,167421.0,167421.0
+3D01/C0001,CHEW CHUI MUN (C-1-10),BS,Other Financial Assets,Security deposits,4500.0,4500.0
+3D01/D0001,DIMAC MARKETING (COPIER C-1-10),BS,Other Financial Assets,Security deposits,1200.0,1200.0
+3D01/J0001,JMC - KELANA SQUARE,BS,Other Financial Assets,Security deposits,1000.0,1000.0
+3D01/M0001,MUTIARA SAINTIFIK - BG FOR TENDER,BS,Other Financial Assets,Security deposits,9808.0,9808.0
+3D01/N0001,NLC GENERAL PEST CONTROL SDN BHD,BS,Other Financial Assets,Security deposits,1200.0,1200.0
+3D01/T0001,TAN POH LEE (C-P-91),BS,Other Financial Assets,Security deposits,6900.0,6900.0
+3D01/T0002,TENAGA NASIONAL BHD (C-1-09 & 10),BS,Other Financial Assets,Security deposits,5320.0,5320.0
+3D01/W0001,WEE KAI LI (C-1-09),BS,Other Financial Assets,Security deposits,4500.0,4500.0
+3D01/W0002,WONG AH MOOI (G-C-71),BS,Other Financial Assets,Security deposits,3000.0,3000.0
+3F02/00000,FD/BG ACCOUNT - 2623 5718 2553,BS,Other bank balances,Fixed deposits,2977294.0,3084893.0
+3I01/00000,INCOME TAX INSTALLMENT,BS,Income tax assets (net),Income tax recoverable,-545151.0,-122556.0
+3P02/00000,PROVISION FOR EXPIRED STOCK,BS,Inventories,Provision for inventories,-2822981.0,-2822981.0
+4000/00000,TRADE CREDITORS,BS,Trade Payables,Due to others,-5728566.19,-6400243.92
+4002/00004,ACCRUAL - AUDIT FEE,BS,Other Current Liabilities,Other Payables,,-30000.0
+4002/00005,ACCRUAL - STAFF PCB,BS,Other Current Liabilities,Other Payables,-26627.0,-27402.0
+4002/00006,ACCRUAL - STAFF EPF,BS,Other Current Liabilities,Other Payables,-86243.0,-92676.0
+4002/00007,ACCRUAL - STAFF SOCSO,BS,Other Current Liabilities,Other Payables,-5116.0,-5266.0
+4002/00008,ACCRUAL - STAFF EIS,BS,Other Current Liabilities,Other Payables,-896.0,-923.0
+4004/00000,FOREIGN EXCHANGE GAIN/LOSS - UNREALISED,BS,Other Current Liabilities,Other Payables,44918.0,44918.0
+4005/00000,OTHER PAYABLE,BS,Other Current Liabilities,Other Payables,-123737.0,-148664.01
+4010/00000,SUNDRY CREDITORS,BS,Trade Payables,Due to others,-63819.0,-94998.0
+3900/00000,AMOUNT OWING FROM NEVOLUTION ENGINEERING SB,BS,Other current assets,Prepaid Expenses,,
+3D01/A0001,ASWINAS HOLIDAYS SDN BHD,BS,Other current assets,Statutory dues payable,,
+3D01/H0001,HENG AIK HEANG (C-P-61 & 62),BS,Other current assets,Advances to suppliers,,
+3F01/00000,FIXED DEPOSIT WITH BANKER,BS,Other Financial Assets,Interest accrued but not due on fixed deposits,,
+4002/00003,ACCRUAL - BONUS/COMMISSION,BS,Other Current Liabilities,Other Payables,-7622.0,
+5000/00000,SALES,PL,Revenue from Operations,Sale of products,-9480183.0,-44649225.0
+5010/00000,RETURN INWARDS,PL,Revenue from Operations,Sale of products,10874.0,228706.0
+6000/00000,OPENING STOCK,PL,Purchases of Traded Goods,Purchase of traded goods,30129424.0,107362280.0
+6010/00000,PURCHASES,PL,Purchases of Traded Goods,Purchase of traded goods,4382910.74,23902754.16
+6011/00000,DEPRECIATION OF LAB EQUIPMENT,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",689193.0,3359111.0
+6012/00000,PURCHASES RETURN,PL,Purchases of Traded Goods,Purchase of traded goods,3615.0,-5043.0
+6014/00000,TRANSPORT CHG (PRODUCT),PL,Purchases of Traded Goods,Purchase of traded goods,26550.0,124974.0
+6015/00000,CARRIAGE INWARD,PL,Purchases of Traded Goods,Purchase of traded goods,255426.0,1557808.0
+6016/00000,PACKAGING MATERIAL,PL,Purchases of Traded Goods,Purchase of traded goods,8417.0,31792.0
+6018/00000,CUSTOM DUTY,PL,Purchases of Traded Goods,Purchase of traded goods,49151.0,249152.0
+6019/00000,LAB SERVICE & COMMISSIONING FEE,PL,Purchases of Traded Goods,Purchase of traded goods,198487.0,522529.0
+6020/00000,CLOSING STOCK,PL,Purchases of Traded Goods,Purchase of traded goods,-29826421.0,-108231580.0
+7000/00000,OTHER INCOME - OTHERS,PL,Other Income,other INCOME,-400.0,-32987.4
+7000/00001,OTHER INCOME - INTEREST FROM BANK (UOB),PL,Other Income,Interest from bank,-12895.0,-87779.0
+7100/00000,FOREIGN EXCHANGE GAIN / LOSS - REALISED,PL,Other Income,Foreign exchange income,-53866.17,-227068.93
+8000/00000,TAXATION,PL,Tax Expenses,Current Tax,711000.0,2619000.0
+9A03/00000,ACCOMODATION (LOCAL/OVERSEAS),PL,Other Expenses,Accomodation,17437.0,66085.0
+9B01/00000,BANK CHARGES,PL,Other expenses,Bank charges,3309.0,11562.0
+9C04/00002,COMMITMENT CHARGES - EP,PL,Other expenses,Legal and professional expenses,3658.0,24614.0
+9D01/00000,DEPRECIATION,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",48297.0,193349.0
+9D01/00001,IMPAIRMENT OF ASSETS,PL,Depreciation and Amortisation Expense,impairment of assets,,1690226.0
+9D02/00002,DIRECTOR'S SALARY,PL,Employee benefits expense,Salaries and wages,207000.0,897000.0
+9D02/00003,DIRECTOR'S ALLOWANCE,PL,Employee benefits expense,Salaries and wages,22500.0,90000.0
+9D02/00005,DIRECTOR'S EPF,PL,Employee benefits expense,Contributions to provident and other funds,43605.0,187530.0
+9D02/00006,DIRECTOR'S SOCSO,PL,Employee benefits expense,Contributions to provident and other funds,1250.0,4579.0
+9D02/00007,DIRECTOR'S EIS,PL,Employee benefits expense,Contributions to provident and other funds,143.0,523.0
+9D02/00010,DIRECTOR'S HRDF,PL,Employee benefits expense,"Salaries, wages and bonus",2295.0,9180.0
+9D03/00000,DOCUMENTATION & FILLING,PL,Other Expenses,Legal and professional expenses,703.0,3435.0
+9E01/00000,ENTERTAINMENT (NON STAFF),PL,Other Expenses,Advertising and sales promotion,1903.0,8755.0
+9E01/00001,ENTERTAINMENT (STAFF),PL,Other Expenses,Advertising and sales promotion,3404.0,26069.0
+9E03/00000,ELECTRICITY CHARGES,PL,Other Expenses,Power and fuel,17211.0,72885.0
+9I02/00000,ISO RELATED,PL,Other Expenses,Legal and professional expenses,13750.0,48689.0
+9L01/00000,LICENSE FEE,PL,Other Expenses,Legal and professional expenses,4500.0,2439.0
+9M01/00001,MARKETING EXPENSES,PL,Other Expenses,Advertising and sales promotion,1252.0,21351.0
+9O01/00000,OPTICAL/DENTAL CLAIM,PL,Other Expenses,Insurance claim,1996.0,11226.0
+9P01/00000,PRINTING & STATIONERY,PL,Other Expenses,Printing and stationery,4624.0,29687.0
+9P03/00000,POSTAGE & COURIER,PL,Other Expenses,Printing and stationery,13.0,321.0
+9P05/00000,PETROL,PL,Other Expenses,Power and fuel,5947.0,19030.0
+9R01/00001,RENTAL - LOT.GC71,PL,Other Expenses,Rental expenses,3390.0,13560.0
+9R01/00003,RENTAL - LOT.P91,PL,Other Expenses,Rental expenses,,
+9R01/00004,RENTAL - LOT.C110,PL,Other Expenses,Rental expenses,,20000.0
+9R01/00005,RENTAL - LOT.C109,PL,Other Expenses,Rental expenses,,20000.0
+9R01/00007,RENTAL - LOT.C111,PL,Other Expenses,Rental expenses,,20000.0
+9R01/00008,RENTAL - LOT.P90,PL,Other Expenses,Rental expenses,9000.0,33000.0
+9R01/00011,RENTAL - LOT.C107,PL,Other Expenses,Rental expenses,6000.0,24000.0
+9R01/00014,RENTAL - LOT.P02,PL,Other Expenses,Rental expenses,2100.0,8400.0
+9R01/00015,RENTAL - LOT.C101,PL,Other Expenses,Rental expenses,,
+9R01/00016,RENTAL - LOT.C108,PL,Other Expenses,Rental expenses,6000.0,24000.0
+9R01/00017,RENTAL - LOT.C102,PL,Other Expenses,Rental expenses,5400.0,12600.0
+9R02/00000,REGISTRATION/SUBCRIPTION FEE,PL,Other Expenses,Miscellaneous expenses,17040.0,84942.0
+9R04/00001,RENTAL - COPIER,PL,Other Expenses,Rental expenses,540.0,2760.0
+9R04/00002,RENTAL - WATER FILTER,PL,Other Expenses,Rental expenses,750.0,3000.0
+9S01/00001,STAFF'S SALARY,PL,Employee benefits expense,Salaries and wages,694617.0,2929788.0
+9S01/00002,STAFF'S ALLOWANCE,PL,Employee benefits expense,Salaries and wages,94573.0,394343.0
+9S01/00005,STAFF'S COMMISSION,PL,Employee benefits expense,Salaries and wages,23195.0,965141.0
+9S01/00006,STAFF'S EPF,PL,Employee benefits expense,Contributions to provident and other funds,102816.0,558042.0
+9S01/00007,STAFF'S SOCSO,PL,Employee benefits expense,Contributions to provident and other funds,10821.0,45104.0
+9S01/00008,STAFF'S EIS,PL,Employee benefits expense,Contributions to provident and other funds,1211.0,5103.0
+9S01/00009,STAFF'S MEDICAL,PL,Other Expenses,Staff welfare expenses,2845.0,17182.0
+9S01/00011,STAFF'S OUTSTATION ALLOWANCE,PL,Employee benefits expense,"Salaries, wages and bonus",12417.0,46703.0
+9S01/00012,STAFF'S HRDF,PL,Employee benefits expense,"Salaries, wages and bonus",7880.0,31273.0
+9S02/00000,SECRETARIAL FEE,PL,Other Expenses,Legal and professional expenses,,3200.0
+9S03/00000,STAMPING FEE,PL,Other Expenses,Printing and stationery,342.0,11562.0
+9S05/00000,SUNDRY EXPENSES,PL,Other Expenses,Miscellaneous expenses,1842.0,18451.0
+9S06/00000,SERVICE TAX/CHARGES,PL,Other Expenses,Legal and professional expenses,6289.0,33681.0
+9S07/00000,STAFF REFRESHMENT,PL,Other Expenses,Staff welfare expenses,2019.0,22153.0
+9T01/00000,TRAVELLING EXPENSES,PL,Other Expenses,Travelling and conveyance,14227.0,104453.0
+9T02/00000,TOLL & PARKING,PL,Other Expenses,Travelling and conveyance,26035.0,123383.0
+9T03/00000,TELEPHONE & WIFI CHARGES,PL,Other Expenses,Telephone and internet expense,4098.0,17397.0
+9T04/00000,TENDER EXPENSES,PL,Other Expenses,Tender Expenses,227.0,1934.0
+9T05/00000,TRAINING FEE/EXPENSES,PL,Other Expenses,Staff welfare expenses,,35149.0
+9U01/00000,UPKEEP OF MOTOR VEHICLE,PL,Other Expenses,Repair and maintenance,1739.0,6872.0
+9U02/00000,UPKEEP OF PREMISES,PL,Other Expenses,Repair and maintenance,4187.0,28908.0
+9U03/00000,UPKEEP OF OFFICE EQUIPMENT,PL,Other Expenses,Repair and maintenance,840.0,11574.0
+9W01/00000,WATER & SEWERAGE CHARGES,PL,Other Expenses,Power and fuel,1061.0,4693.0
+5020/00000,DISCOUNT ALLOWED,PL,Revenue from Operations,Sale of products,15250.0,684.0
+6017/00000,DISCOUNT RECEIVED,PL,Purchases of Traded Goods,Purchase of traded goods,,-26986.0
+9A01/00000,AUDIT FEE,PL,Other Expenses,Payment to auditor,9500.0,37500.0
+9B02/00001,BAD DEBTS EXPENSES,PL,Exceptional item,Impairment of financial assets,,343208.0
+9C02/00000,COMPANY TRIP,PL,Other Expenses,Travelling and conveyance,,119920.0
+9D02/00009,DIRECTOR'S OUTSTATION ALLOWANCE,PL,Employee benefits expense,"Salaries, wages and bonus",,7434.0
+9I03/00001,INSURANCE - PREMIS,PL,Other Expenses,Insurance claim,,28656.0
+9I03/00003,INSURANCE - GROUP,PL,Other Expenses,Insurance claim,22138.0,21199.0
+9P06/00000,PROFESSIONAL FEE (DEBT COLLECTOR),PL,Other Expenses,Legal and professional expenses,,62505.0
+9P07/00000,PROVISION FOR EXPIRED STOCK,PL,Purchases of Traded Goods,Purchase of traded goods,,2822981.0
+9R01/00002,RENTAL - LOT.P62,PL,Other Expenses,Rental expenses,,2400.0
+9R01/00013,RENTAL - LOT.GC26,PL,Other Expenses,Rental expenses,,500.0
+9S01/00003,STAFF'S BONUS,PL,Employee benefits expense,Salaries and wages,,155523.0
+9S04/00000,SPONSORSHIP,PL,Other Expenses,Sponsorship and conference expenses,,500.0
+9T06/00000,TAX AGENT FEE,PL,Other Expenses,Legal and professional expenses,,7500.0
+5030/00000,ROUNDING CENTS ADJUSTMENT,PL,Other Expenses,Miscellaneous expenses,,
+7000/00002,OTHER INCOME - INTEREST FROM BANK (MBB),PL,Other Income,Interest from bank,-104335.0,-854947.6
+9A02/00000,ADVERTISEMENT & PROMOTION,PL,Other Expenses,Advertising and sales promotion,,9409.0
+9C03/00000,CASUAL WAGES,PL,Employee benefits expense,"Salaries, wages and bonus",2140.0,6534.0
+9C04/00001,COMMITMENT CHARGES - BG,PL,Other Expenses,Legal and professional expenses,8409.0,11517.0
+9E02/00000,EXHIBITION/WORKSHOP FEES,PL,Other Expenses,Advertising and sales promotion,3500.0,51317.0
+9I03/00002,INSURANCE - MOTOR VEHICLE,PL,Other Expenses,Insurance claim,,3504.0
+9P02/00000,PROFESSIONAL FEE,PL,Other Expenses,Legal and professional expenses,3000.0,90492.0
+9P04/00000,PENALTY/LATE INTEREST CHARGES,PL,Other Expenses,Penalty,,1544.0
+9R01/00012,RENTAL - LOT.C106,PL,Other Expenses,Rental expenses,,16000.0
+9R03/00000,ROAD TAX,PL,Other Expenses,Travelling and conveyance,304.0,1471.0
+ROU,,BS,Right of use,Right of use Cost,269429.41,269429.41
+ROU AD,,BS,Right of use,Right of use Accumulated dep,-122640.99,-91863.34
+LL,,BS,Lease Liability,,-148399.48,-178849.42
+Int on LL,,PL,Finance cost,Interest on lease liability,1500.07,2869.58
+Dep on ROU,,PL,Depreciation and Amortisation Expense,Depreciation on ROU,30777.65,76695.35
+9S01/00010,STAFF'S HIRING,PL,Other Expenses,Staff welfare expenses,,10840.0
+D.Tax,Deferred tax charge/(credit),PL,Tax Expenses,Deferred tax charge/(credit),-85000.0,-1227000.0
+E.tax,Earlier years tax adjustments (net),PL,Tax Expenses,Earlier years tax adjustments (net),,-97254.0
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,2.0
+,,,,,,
+,,,,,,-257371.0
+,,,,,,44419835.0
+,,,,,,

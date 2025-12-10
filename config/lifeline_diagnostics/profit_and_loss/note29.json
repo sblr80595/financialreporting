@@ -1,0 +1,39 @@
+{
+  "note_number": "NOTE 29",
+  "note_title": "Finance Costs",
+  "output_file": "everlife_diagnostics_note_29_finance_costs.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. Finance costs include all borrowing costs and interest expenses.",
+  "categories": [
+    "Lease liabilities (refer note 41)",
+    "Interest expense on lease liabilities (refer note 45)",
+    "Interest on loans",
+    "Processing Fees"
+  ],
+  "lease_liability_categories": [
+    "Lease liabilities (refer note 41)",
+    "Interest expense on lease liabilities (refer note 45)"
+  ],
+  "output_format": [
+    {
+      "label": "**Interest expense on:**",
+      "is_header": true
+    },
+    {
+      "label": "Lease liabilities (refer note 33)",
+      "ind_as_minor_variants": [
+        "Lease liabilities (refer note 41)",
+        "Interest expense on lease liabilities (refer note 45)"
+      ]
+    },
+    {
+      "label": "Borrowings",
+      "ind_as_minor": "Interest on loans"
+    },
+    {
+      "label": "Processing Fees",
+      "ind_as_minor": "Processing Fees"
+    }
+  ],
+  "additional_instructions": "This note captures all finance costs incurred during the period.\n\n**Interest expense on:** - This is a category header with no amount.\n\n**Lease liabilities**: Sum all GL accounts where Ind AS Minor is either:\n- 'Lease liabilities (refer note 41)' OR\n- 'Interest expense on lease liabilities (refer note 45)'\n\nThis represents interest expense on lease obligations recognized under Ind AS 116. Include cross-reference to note 33 for lease liability details.\n\n**Borrowings**: Sum all GL accounts where Ind AS Minor is 'Interest on loans'. This includes:\n- Interest on term loans\n- Interest on working capital loans\n- Interest on bank overdrafts\n- Interest on short-term borrowings\n- Interest on any other loans and advances\n\n**Processing Fees**: Sum all GL accounts where Ind AS Minor is 'Processing Fees'. This includes:\n- Loan processing charges\n- Bank charges related to loan facilities\n- Commitment charges on credit facilities\n- Other financing arrangement fees\n\nAll finance costs should be presented as positive amounts (debit balances) representing expenses in the profit and loss statement.\n\nNote: Combine both lease liability categories into a single line item 'Lease liabilities (refer note 33)' for presentation purposes."
+}

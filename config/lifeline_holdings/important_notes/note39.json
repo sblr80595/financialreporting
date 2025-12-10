@@ -1,0 +1,157 @@
+{
+    "note_number": "NOTE 39",
+    "note_title": "Related Party Disclosures",
+    "output_file": "company_note_39_related_party_disclosures_lifeline_holdings.txt",
+    "statement_type": "notes",
+    "summation_rule": "Extract data from ttpl_impnotes.csv (Lifeline Holdings section). Section A lists relationships including Ultimate/Immediate Holding, Subsidiaries, Fellow Subsidiaries, and KMP. Section B and C detail transactions and balances for periods ending 30 June 2025, 31 March 2025, and 31 March 2024.",
+    "categories": [
+        "Intergris Medtech limited",
+        "Integris Health Private Limited",
+        "Tranlumina Gmbh",
+        "Lifeline Diagnostics Supplies Inc",
+        "Everlife Philippines Holding Inc",
+        "Everlife Holding Pte. Limited",
+        "Translumina France",
+        "LAMED Vertriebsgesellschaft",
+        "Blue Medical Devices BV",
+        "Raman Gandotra",
+        "Mr Mukesh Advani",
+        "Advance Therapeutics Private Limited",
+        "Pathways life Sciences",
+        "Transhealth Private Limited",
+        "Transvalve Health Private Limited",
+        "Modification in contract of loan",
+        "Interest Expense",
+        "Rent Paid",
+        "Expenses paid on behalf of",
+        "Amount Repaid by Everlife",
+        "Loan repayments made",
+        "Dividend Paid",
+        "Payment of Payables",
+        "Loan Taken",
+        "Loan Repaid",
+        "Redemption of preference shares",
+        "Corporate guarantee given",
+        "Corporate guarantee received",
+        "Loan given",
+        "Loan repaid",
+        "Loan repayment received",
+        "Interest earned",
+        "Right of Use assets",
+        "Advances for future stock subscription",
+        "Loans Received",
+        "Other payables",
+        "Other Payable",
+        "Investment",
+        "Loan receivables",
+        "Interest accrued",
+        "Interest receivables",
+        "Other Receivables"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Names of related parties and related party relationship",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Relationships (Holding, Subsidiaries, Affiliates)",
+            "ind_as_minor": [
+                "Intergris Medtech limited (Ultimate Holding)",
+                "Tranlumina Gmbh (Holding)",
+                "Lifeline Diagnostics Supplies Inc (Subsidiary)",
+                "Everlife Philippines Holding Inc (Fellow Subsidiary/Affiliate)",
+                "Everlife Holding Pte. Limited (Fellow Subsidiary)"
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "Fellow Subsidiaries",
+            "ind_as_minor": [
+                "Translumina France",
+                "LAMED Vertriebsgesellschaft",
+                "Blue Medical Devices BV"
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "Key Management Personnel ('KMP')",
+            "ind_as_minor": [
+                "Raman Gandotra",
+                "Mr Mukesh Advani"
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "Entities over which KMPs have significant influence",
+            "ind_as_minor": [
+                "Advance Therapeutics Private Limited",
+                "Pathways life Sciences"
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Transactions with related parties",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Summary of transactions",
+            "ind_as_minor": [
+                "Modification in contract of loan",
+                "Interest Expense",
+                "Rent Paid",
+                "Expenses paid on behalf of",
+                "Amount Repaid by Everlife",
+                "Loan repayments made",
+                "Dividend Paid",
+                "Payment of Payables",
+                "Loan Taken",
+                "Loan Repaid",
+                "Redemption of preference shares",
+                "Corporate guarantee given",
+                "Corporate guarantee received",
+                "Loan given",
+                "Loan repaid",
+                "Loan repayment received",
+                "Interest earned"
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(C) Balances outstanding at year end",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Summary of balances",
+            "ind_as_minor": [
+                "Right of Use assets",
+                "Advances for future stock subscription",
+                "Loans Received",
+                "Other payables",
+                "Other Payable",
+                "Investment",
+                "Loan receivables",
+                "Interest accrued",
+                "Corporate guarantee given",
+                "Corporate guarantee received",
+                "Interest receivables",
+                "Other Receivables"
+            ],
+            "aggregation": "table_placeholder"
+        }
+    ],
+    "additional_instructions": "Data is in PHP (Pesos). Columns represent As at 30 June 2025, As at 31 March 2025, and As at 31 March 2024. Ensure entities like 'Transhealth' and 'Transvalve' are correctly mapped to their specific transaction lines."
+}

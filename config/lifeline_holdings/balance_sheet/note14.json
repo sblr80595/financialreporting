@@ -1,0 +1,43 @@
+{
+    "note_number": "NOTE 14",
+    "note_title": "Equity Share Capital",
+    "output_file": "analisa_note_14_equity_share_capital.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Equity share capital categories typically have credit balances (negative in the trial balance: TB_FINAL_LIFELINE_HOLDING.csv). Convert all credit balances to positive values for presentation in the balance sheet under the equity section.",
+    "categories": [
+        "Authorised share capital",
+        "Issued, subscribed and fully paid up"
+    ],
+    "output_format": [
+        {
+            "label": "**Authorised Share Capital**",
+            "ind_as_minor": ["Authorised share capital"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "------------------------------------------------------",
+            "is_blank_row": true
+        },
+        {
+            "label": "**Issued, Subscribed and Fully Paid-up Capital**",
+            "ind_as_minor": null,
+            "is_header": true
+        },
+        {
+            "label": "Issued, subscribed and fully paid up",
+            "ind_as_minor": ["Issued, subscribed and fully paid up"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "TOTAL EQUITY SHARE CAPITAL",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "sum",
+            "sum_of": ["Issued, subscribed and fully paid up"],
+            "bold": true,
+            "show_line": true
+        }
+    ],
+    "additional_instructions": "Sum all accounts mapped to the categories using the primary source TB_FINAL_LIFELINE_HOLDING.csv. Convert credit balances to positive values for presentation. The final total represents the Equity Share Capital carried on the Balance Sheet."
+}

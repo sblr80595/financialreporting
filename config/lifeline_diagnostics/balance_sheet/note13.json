@@ -1,0 +1,65 @@
+{
+    "note_number": "NOTE 13",
+    "note_title": "Other financial assets-current",
+    "output_file": "company_note_13_other_financial_assets_current.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For other financial assets, take positive debit balances from the trial balance.",
+    "categories": [
+        "Rental deposits",
+        "Bid/Performance Bonds",
+        "Supplier deposits"
+    ],
+    "output_format": [
+        {
+            "label": "(Unsecured and considered good, valued at amortised cost)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Rental deposits",
+            "ind_as_minor": [
+                "Rental deposits"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Bid/Performance Bonds",
+            "ind_as_minor": [
+                "Bid/Performance Bonds"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Supplier deposits",
+            "ind_as_minor": [
+                "Supplier deposits"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Amount due from related parties (refer note 39)",
+            "ind_as_minor": [],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other recoverable",
+            "ind_as_minor": [],
+            "aggregation": "sum"
+        },
+        {
+            "label": "TOTAL_OTHER_FINANCIAL_ASSETS_CURRENT",
+            "ind_as_minor": null,
+            "is_total": true,
+            "sum_of": [
+                "Rental deposits",
+                "Bid/Performance Bonds",
+                "Supplier deposits",
+                "Amount due from related parties (refer note 39)",
+                "Other recoverable"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n1. Show '(Unsecured and considered good, valued at amortised cost)' as subheading in italics (no amount)\n2. 'Rental deposits' - from category list: ['Rental deposits']\n3. 'Bid/Performance Bonds' - from category list: ['Bid/Performance Bonds']\n4. 'Supplier deposits' - from category list: ['Supplier deposits']\n5. 'Amount due from related parties (refer note 39)' - from category list: [] (preserve note reference)\n6. 'Other recoverable' - from category list: []\n7. Show total of all five line items\n8. Format all amounts in Indian numbering system without ₹ symbol.\n9. These are current financial assets measured at amortised cost as per Ind AS 109."
+}

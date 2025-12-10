@@ -1,0 +1,102 @@
+{
+  "note_number": "NOTE 31",
+  "note_title": "Other Expenses",
+  "output_file": "everlife_diagnostics_note_31_other_expenses.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. For 'Exchange rate fluctuation (net)', if the result is a loss (positive), include it here; if it's a gain (negative), it should be reported in Other Income (Note 25).",
+  "categories": [
+    "Advertising and sales promotion",
+    "Bad debts written off",
+    "Bank charges (refer note 44)",
+    "Bid Related Expenses",
+    "Exchange rate fluctuation (net)",
+    "Freight charges",
+    "Insurance",
+    "Legal and professional expenses (refer note 33.1 below)",
+    "Management support charges (refer note 44)",
+    "Power and fuel",
+    "Rates and taxes",
+    "Repair and maintenance",
+    "Rent",
+    "Security Expenses",
+    "Software Expenses",
+    "Telephone and internet expense",
+    "Travelling and conveyance",
+    "Miscellaneous expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Advertising and sales promotion",
+      "ind_as_minor": "Advertising and sales promotion"
+    },
+    {
+      "label": "Expected credit loss",
+      "ind_as_minor": "Bad debts written off"
+    },
+    {
+      "label": "Bank charges",
+      "ind_as_minor": "Bank charges (refer note 44)"
+    },
+    {
+      "label": "Bid Related Expenses",
+      "ind_as_minor": "Bid Related Expenses"
+    },
+    {
+      "label": "Exchange rate fluctuation (net)",
+      "ind_as_minor": "Exchange rate fluctuation (net)"
+    },
+    {
+      "label": "Forwarding expense",
+      "ind_as_minor": "Freight charges"
+    },
+    {
+      "label": "Insurance",
+      "ind_as_minor": "Insurance"
+    },
+    {
+      "label": "Legal and professional expenses",
+      "ind_as_minor": "Legal and professional expenses (refer note 33.1 below)"
+    },
+    {
+      "label": "Management support charges",
+      "ind_as_minor": "Management support charges (refer note 44)"
+    },
+    {
+      "label": "Power and fuel",
+      "ind_as_minor": "Power and fuel"
+    },
+    {
+      "label": "Rates and taxes",
+      "ind_as_minor": "Rates and taxes"
+    },
+    {
+      "label": "Repair and maintenance",
+      "ind_as_minor": "Repair and maintenance"
+    },
+    {
+      "label": "Rent",
+      "ind_as_minor": "Rent"
+    },
+    {
+      "label": "Security Expenses",
+      "ind_as_minor": "Security Expenses"
+    },
+    {
+      "label": "Software Expenses",
+      "ind_as_minor": "Software Expenses"
+    },
+    {
+      "label": "Telephone and internet expense",
+      "ind_as_minor": "Telephone and internet expense"
+    },
+    {
+      "label": "Travelling and conveyance",
+      "ind_as_minor": "Travelling and conveyance"
+    },
+    {
+      "label": "Miscellaneous expenses",
+      "ind_as_minor": "Miscellaneous expenses"
+    }
+  ],
+  "additional_instructions": "This note captures all other operating expenses that don't fit into specific expense categories.\n\n**Advertising and sales promotion**: Sum all GL accounts where Ind AS Minor is 'Advertising and sales promotion'. Includes advertising costs, marketing campaigns, sales promotions, and brand building activities.\n\n**Expected credit loss**: Sum all GL accounts where Ind AS Minor is 'Bad debts written off'. This represents provision for doubtful debts, bad debts written off, and expected credit loss under Ind AS 109. Note: The label in presentation is 'Expected credit loss' but the Ind AS Minor may vary.\n\n**Bank charges**: Sum all GL accounts where Ind AS Minor is 'Bank charges (refer note 44)'. Includes bank service charges, transaction fees, and other banking costs.\n\n**Bid Related Expenses**: Sum all GL accounts where Ind AS Minor is 'Bid Related Expenses'. Includes costs related to tender submissions, proposal preparation, and bidding activities.\n\n**Exchange rate fluctuation (net)**: Sum all GL accounts where Ind AS Minor is 'Exchange rate fluctuation (net)'. If the net result is a loss (positive), include it here. If it's a gain (negative), it should be reported in Note 25 (Other Income) instead.\n\n**Forwarding expense**: Sum all GL accounts where Ind AS Minor is 'Freight charges'. Includes freight outward, courier charges, and delivery costs.\n\n**Insurance**: Sum all GL accounts where Ind AS Minor is 'Insurance'. Includes insurance premiums for assets, liability insurance, and other insurance costs.\n\n**Legal and professional expenses**: Sum all GL accounts where Ind AS Minor is 'Legal and professional expenses (refer note 33.1 below)'. Includes legal fees, professional consultancy, audit fees (if not shown separately), and other professional charges.\n\n**Management support charges**: Sum all GL accounts where Ind AS Minor is 'Management support charges (refer note 44)'. Includes charges for management services, shared services, and support functions.\n\n**Power and fuel**: Sum all GL accounts where Ind AS Minor is 'Power and fuel'. Includes electricity charges, diesel/petrol for generators, and other energy costs.\n\n**Rates and taxes**: Sum all GL accounts where Ind AS Minor is 'Rates and taxes'. Includes property taxes, local levies, regulatory fees, and other statutory charges (excluding income tax).\n\n**Repair and maintenance**: Sum all GL accounts where Ind AS Minor is 'Repair and maintenance'. Includes repairs and maintenance of buildings, machinery, equipment, and vehicles.\n\n**Rent**: Sum all GL accounts where Ind AS Minor is 'Rent'. Includes rental payments for premises, equipment, and other assets where Ind AS 116 is not applicable (short-term or low-value leases).\n\n**Security Expenses**: Sum all GL accounts where Ind AS Minor is 'Security Expenses'. Includes security guard services, surveillance systems, and other security-related costs.\n\n**Software Expenses**: Sum all GL accounts where Ind AS Minor is 'Software Expenses'. Includes software licenses, subscriptions, maintenance, and other software-related costs (revenue nature, not capitalized).\n\n**Telephone and internet expense**: Sum all GL accounts where Ind AS Minor is 'Telephone and internet expense'. Includes telephone bills, mobile charges, internet charges, and data communication costs.\n\n**Travelling and conveyance**: Sum all GL accounts where Ind AS Minor is 'Travelling and conveyance'. Includes business travel expenses, local conveyance, accommodation, and related costs.\n\n**Miscellaneous expenses**: Sum all GL accounts where Ind AS Minor is 'Miscellaneous expenses'. Includes sundry expenses, subscriptions, memberships, and other expenses not specifically categorized.\n\nAll other expenses should be presented as positive amounts (debit balances) representing operating expenses in the profit and loss statement.\n\nNote: Include cross-references where mentioned (note 44 for bank charges and management support charges, note 33.1 for legal and professional expenses)."
+}

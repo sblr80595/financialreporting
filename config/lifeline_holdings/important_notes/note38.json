@@ -1,0 +1,17 @@
+{
+    "note_number": "NOTE 38",
+    "note_title": "Segment Information",
+    "output_file": "company_note_38_segment_info.txt",
+    "statement_type": "profit-and-loss",
+    "summation_rule": "Not Applicable - This is a qualitative disclosure note.",
+    "categories": [],
+    "output_format": [
+        {
+            "label": "Segment Information",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "This note must comply with **Ind AS 108**. Generate a narrative stating that 'The Company is primarily engaged in a single business segment, diagnostics and related services, and operates predominantly in one primary geographical area. Hence, no separate segment information is required to be presented.' Use 'Nil' for any quantitative data placeholders."
+}

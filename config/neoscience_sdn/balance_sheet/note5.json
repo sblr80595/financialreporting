@@ -1,0 +1,16 @@
+{
+  "note_number": "NOTE 5",
+  "note_title": "Investments - Non-Current",
+  "output_file": "Neoscience_Note_05_investments_non_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Not applicable - no non-current investments mapped.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "*Investments - Non-Current*",
+      "ind_as_minor": null,
+      "is_header": true
+    }
+  ],
+  "additional_instructions": "This note is not applicable as there are no non-current investments in the trial balance. Display 'Nil' or '-' for all line items. The categories array is empty as there are no matching Ind AS Minor categories for non-current investments."
+}

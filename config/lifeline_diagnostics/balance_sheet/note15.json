@@ -1,0 +1,115 @@
+{
+    "note_number": "NOTE 15",
+    "note_title": "Other Equity",
+    "output_file": "lifeline_diagnostics_note_15_other_equity.md",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. All Equity accounts (credit) are negative. Calculations must sum these raw values first, then flip the sign of the result for presentation.",
+    "categories": [
+        "Securities Premium Reserve",
+        "General Reserve",
+        "Retained earnings",
+        "Share Based Payment Reserve",
+        "Other Comprehensive Income - Net of Tax",
+        "Dividend Declared/Paid"
+    ],
+    "output_format": [
+        {
+            "label": "(i) Reserves",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Securities Premium Reserve",
+            "ind_as_minor": ["Securities Premium Reserve"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "General Reserve",
+            "ind_as_minor": ["General Reserve"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Employee Stock Options Reserve",
+            "ind_as_minor": ["Share Based Payment Reserve"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Total Reserves",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": [
+                "Securities Premium Reserve",
+                "General Reserve",
+                "Employee Stock Options Reserve"
+            ],
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(ii) Retained earnings - Movement",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Balance at the beginning of the year",
+            "ind_as_minor": [
+                "Retained earnings"
+            ],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Profit for the year",
+            "ind_as_minor": [],
+            "aggregation": "sum",
+            "is_placeholder": true
+        },
+        {
+            "label": "Other Comprehensive Income (Net of Tax)",
+            "ind_as_minor": ["Other Comprehensive Income - Net of Tax"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Less: Dividend paid",
+            "ind_as_minor": ["Dividend Declared/Paid"],
+            "aggregation": "sum",
+            "is_deduction": true
+        },
+        {
+            "label": "Balance at the end of the year (Retained Earnings)",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": [
+                "Balance at the beginning of the year",
+                "Profit for the year",
+                "Other Comprehensive Income (Net of Tax)"
+            ],
+            "subtract": ["Less: Dividend paid"],
+            "show_line": true
+        },
+        {
+            "label": "Total Other equity",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "sum",
+            "sum_of": [
+                "Total Reserves",
+                "Balance at the end of the year (Retained Earnings)"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n\n**NOTE 15: OTHER EQUITY**\n\n1.  **Reserves:** Sum and display all three reserve categories.\n2.  **Retained earnings:** The movement now includes **Other Comprehensive Income** (Net of Tax) as an addition and **Dividend paid** as a deduction.\n3.  **Profit for the year:** This remains a placeholder and will show 0 unless provided externally from the P&L statement.\n4.  **Total Other equity:** Sum of Total Reserves and the ending Retained Earnings balance.\n\nAccounting Context: Equity accounts (credit balances) must be displayed positively (sign-flip). Dividends (debit/outflow) are displayed as a deduction."
+}

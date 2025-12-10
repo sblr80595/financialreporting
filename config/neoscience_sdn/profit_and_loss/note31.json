@@ -1,0 +1,117 @@
+{
+  "note_number": "NOTE 31",
+  "note_title": "Other Expenses",
+  "output_file": "neoscience_note_31_other_expenses.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically unless specified otherwise for specific categories.",
+  "categories": [
+    "Accomodation",
+    "Bank charges",
+    "Legal and professional expenses",
+    "Payment to auditor",
+    "Advertising and sales promotion",
+    "Power and fuel",
+    "Insurance claim",
+    "Printing and stationery",
+    "Rental expenses",
+    "Sponsorship and conference expenses",
+    "Staff welfare expenses",
+    "Miscellaneous expenses",
+    "Travelling and conveyance",
+    "Telephone and internet expense",
+    "Tender Expenses",
+    "Repair and maintenance",
+    "Penalty"
+  ],
+  "exclusion_rules": {
+    "foreign_exchange": {
+      "description": "EXCLUDE any 'Ind AS Minor' containing 'foreign exchange', 'forex', or 'FX' - these belong to Note 25 (Other Income)",
+      "keywords": [
+        "foreign exchange",
+        "forex",
+        "FX",
+        "exchange rate",
+        "exchange fluctuation"
+      ]
+    },
+    "employee_benefits": {
+      "description": "EXCLUDE employee benefits that belong in Note 28",
+      "keywords": [
+        "Salaries and wages",
+        "Contributions to provident and other funds",
+        "Salaries, wages and bonus"
+      ]
+    }
+  },
+  "output_format": [
+    {
+      "label": "Power and fuel",
+      "ind_as_minor": "Power and fuel"
+    },
+    {
+      "label": "Travelling and conveyance",
+      "ind_as_minor": "Travelling and conveyance"
+    },
+    {
+      "label": "Legal and professional expenses",
+      "ind_as_minor": "Legal and professional expenses"
+    },
+    {
+      "label": "Payment to auditor",
+      "ind_as_minor": "Payment to auditor"
+    },
+    {
+      "label": "Bank charges",
+      "ind_as_minor": "Bank charges"
+    },
+    {
+      "label": "Insurance charges",
+      "ind_as_minor": "Insurance claim"
+    },
+    {
+      "label": "Repair and maintenance",
+      "ind_as_minor": "Repair and maintenance"
+    },
+    {
+      "label": "Advertising and sales promotion",
+      "ind_as_minor": "Advertising and sales promotion"
+    },
+    {
+      "label": "Telephone and internet expense",
+      "ind_as_minor": "Telephone and internet expense"
+    },
+    {
+      "label": "Printing and stationery",
+      "ind_as_minor": "Printing and stationery"
+    },
+    {
+      "label": "Rental expenses",
+      "ind_as_minor": "Rental expenses"
+    },
+    {
+      "label": "Staff welfare expenses",
+      "ind_as_minor": "Staff welfare expenses"
+    },
+    {
+      "label": "Accomodation",
+      "ind_as_minor": "Accomodation"
+    },
+    {
+      "label": "Tender expenses",
+      "ind_as_minor": "Tender Expenses"
+    },
+    {
+      "label": "Sponsorship and conference expenses",
+      "ind_as_minor": "Sponsorship and conference expenses"
+    },
+    {
+      "label": "Penalty",
+      "ind_as_minor": "Penalty"
+    },
+    {
+      "label": "Miscellaneous expenses",
+      "ind_as_minor": "Miscellaneous expenses"
+    }
+  ],
+  "additional_instructions": "CRITICAL FILTERING RULES FOR NOTE 31:\n\n1. **EXCLUDE FOREIGN EXCHANGE**: Any 'Ind AS Minor' containing 'foreign exchange', 'forex', 'FX', or related terms MUST BE EXCLUDED. These belong in Note 25 (Other Income).\n\n2. **EXCLUDE EMPLOYEE BENEFITS**: Any items with Ind AS Minor matching employee benefit categories ('Salaries and wages', 'Contributions to provident and other funds', 'Salaries, wages and bonus') belong in Note 28, not here.\n\n3. **Rental expenses**: Sum all rental-related GLs:\n   - 9R01/00001 RENTAL - LOT.GC71\n   - 9R01/00002 RENTAL - LOT.P62\n   - 9R01/00003 RENTAL - LOT.P91\n   - 9R01/00004 RENTAL - LOT.C110\n   - 9R01/00005 RENTAL - LOT.C109\n   - 9R01/00007 RENTAL - LOT.C111\n   - 9R01/00008 RENTAL - LOT.P90\n   - 9R01/00011 RENTAL - LOT.C107\n   - 9R01/00013 RENTAL - LOT.GC26\n   - 9R01/00014 RENTAL - LOT.P02\n   - 9R01/00015 RENTAL - LOT.C101\n   - 9R01/00016 RENTAL - LOT.C108\n   - 9R01/00017 RENTAL - LOT.C102\n   - 9R01/00012 RENTAL - LOT.C106\n   - 9R04/00001 RENTAL - COPIER\n   - 9R04/00002 RENTAL - WATER FILTER\n\n4. **Power and fuel** includes:\n   - 9E03/00000 ELECTRICITY CHARGES\n   - 9P05/00000 PETROL\n   - 9W01/00000 WATER & SEWERAGE CHARGES\n\n5. **Legal and professional expenses** includes:\n   - 9C04/00002 COMMITMENT CHARGES - EP\n   - 9C04/00001 COMMITMENT CHARGES - BG\n   - 9I02/00000 ISO RELATED\n   - 9L01/00000 LICENSE FEE\n   - 9P02/00000 PROFESSIONAL FEE\n   - 9P06/00000 PROFESSIONAL FEE (DEBT COLLECTOR)\n   - 9S02/00000 SECRETARIAL FEE\n   - 9S06/00000 SERVICE TAX/CHARGES\n   - 9T06/00000 TAX AGENT FEE\n   - 9D03/00000 DOCUMENTATION & FILLING\n\n6. **Advertising and sales promotion** includes:\n   - 9A02/00000 ADVERTISEMENT & PROMOTION\n   - 9E01/00000 ENTERTAINMENT (NON STAFF)\n   - 9E01/00001 ENTERTAINMENT (STAFF)\n   - 9E02/00000 EXHIBITION/WORKSHOP FEES\n   - 9M01/00001 MARKETING EXPENSES\n\n7. **Staff welfare expenses** (in Other Expenses, not Employee Benefits):\n   - 9S01/00009 STAFF'S MEDICAL\n   - 9S01/00010 STAFF'S HIRING\n   - 9S07/00000 STAFF REFRESHMENT\n   - 9T05/00000 TRAINING FEE/EXPENSES\n   - 9O01/00000 OPTICAL/DENTAL CLAIM\n\n8. **Insurance charges** includes:\n   - 9I03/00001 INSURANCE - PREMIS\n   - 9I03/00002 INSURANCE - MOTOR VEHICLE\n   - 9I03/00003 INSURANCE - GROUP\n\n9. **Repair and maintenance** includes:\n   - 9U01/00000 UPKEEP OF MOTOR VEHICLE\n   - 9U02/00000 UPKEEP OF PREMISES\n   - 9U03/00000 UPKEEP OF OFFICE EQUIPMENT\n\n10. **Travelling and conveyance** includes:\n    - 9T01/00000 TRAVELLING EXPENSES\n    - 9T02/00000 TOLL & PARKING\n    - 9R03/00000 ROAD TAX\n    - 9C02/00000 COMPANY TRIP\n\n11. **Miscellaneous expenses** includes:\n    - 9R02/00000 REGISTRATION/SUBCRIPTION FEE\n    - 9S03/00000 STAMPING FEE\n    - 9S05/00000 SUNDRY EXPENSES\n    - 5030/00000 ROUNDING CENTS ADJUSTMENT (if any)\n\nProvide GL-level breakdown with 'Ind AS Minor' column for transparency and audit trail."
+}

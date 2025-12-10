@@ -1,0 +1,54 @@
+{
+  "note_number": "NOTE 12",
+  "note_title": "Loans-current",
+  "output_file": "company_note_12_loans_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For loans and advances, take positive debit balances from the trial balance.",
+  "categories": [
+    "Advances to employees",
+    "Advances to suppliers",
+    "Balances with statutory authorities"
+  ],
+  "output_format": [
+    {
+      "label": "(Unsecured, considered good)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "   Loans to employees",
+      "ind_as_minor": [
+        "Advances to employees"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Advances to suppliers",
+      "ind_as_minor": [
+        "Advances to suppliers"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Balances with government authorities",
+      "ind_as_minor": [
+        "Balances with statutory authorities"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Loans-current",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "   Loans to employees",
+        "   Advances to suppliers",
+        "   Balances with government authorities"
+      ],
+      "show_line": true,
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 12: LOANS-CURRENT**\n\nPresentation Requirements:\n1.  **Subheading**: '(Unsecured, considered good)' in italics.\n2.  **Loans to employees**: Sum of 'Advances to employees'.\n3.  **Advances to suppliers**: Sum of 'Advances to suppliers'.\n4.  **Balances with government authorities**: Sum of 'Balances with statutory authorities'.\n5.  **Total**: Sum of all items above.\n\nFormatting:\n-   Format all amounts in the Indian numbering system.\n-   Capture all three categories found in the source image."
+}

@@ -1,0 +1,954 @@
+GL Code,GL Description,BSPL,Ind AS Major,Ind AS Minor,(Unaudited) Mar'25,Mar'25 Adjusted
+10010101001,Land,BS,Fixed assets," a) Property, plant and equipment",155.77,155.77
+10010101002,Building,BS,Fixed assets," a) Property, plant and equipment",39.72,39.72
+10010101003,Temparory partition,BS,Fixed assets," a) Property, plant and equipment",242.17,242.17
+10010101004,Plant & Machinery,BS,Fixed assets," a) Property, plant and equipment",5671.52,5671.52
+10010101005,Plant & Machinery_MFG,BS,Fixed assets," a) Property, plant and equipment",45.12,45.12
+10010101006,Furniture & Fixtures,BS,Fixed assets," a) Property, plant and equipment",29.45,29.45
+10010101007,Office equipment,BS,Fixed assets," a) Property, plant and equipment",162.41,162.41
+10010101008,Computers,BS,Fixed assets," a) Property, plant and equipment",337.73,337.73
+10010101009,Vehicles,BS,Fixed assets," a) Property, plant and equipment",49.71,49.71
+10010101010,Leased Building_ROU,BS,ROU, c) Right of Use Assets,553.96,1408.98
+10010101011,Accumulated Depreciation_Building,BS,Fixed assets," a) Property, plant and equipment",-30.94,-30.94
+10010101012,Accumulated Depreciation_Temparory partition,BS,Fixed assets," a) Property, plant and equipment",-57.41,-57.41
+10010101013,Accumulated Depreciation_Plant & Machinery,BS,Fixed assets," a) Property, plant and equipment",-2929.1,-2925.9
+10010101014,Accumulated Depreciation_Plant & Machinery_MFG,BS,Fixed assets," a) Property, plant and equipment",-6.02,-6.02
+10010101015,Accumulated Depreciation_Furniture & Fixures,BS,Fixed assets," a) Property, plant and equipment",-14.43,-14.43
+10010101016,Accumulated Depreciation_Office equipment,BS,Fixed assets," a) Property, plant and equipment",-67.11,-67.11
+10010101017,Accumulated Depreciation_Computers,BS,Fixed assets," a) Property, plant and equipment",-302.24,-302.24
+10010101018,Accumulated Depreciation_Vehicles,BS,Fixed assets," a) Property, plant and equipment",-37.43,-37.43
+10010101019,Accumulated Depreciation_Leased Building_ROU,BS,ROU, c) Right of Use Assets,-355.12,-451.03
+10010101020,Fixed Asset Control Account,BS,Capital work-in-progress, b) Capital work-in-progress,-0.01,10.27
+10010101021,Acquisition clearing account,BS,Control Account,Control Account,0.0,0.0
+10010101022,Capital Goods on Hold account,BS,Control Account,Control Account,0.0,0.0
+10010102001,Software,BS,Fixed assets, e) Other Intangible assets,181.18,181.18
+10010102002,Trade marks,BS,Fixed assets, e) Other Intangible assets,2.15,2.15
+10010102005,Goodwill,BS,Fixed assets, d) Goodwill,2022.34,2022.34
+10010102007,Distribution network,BS,Fixed assets, e) Other Intangible assets,822.63,822.63
+10010102008,Vendor relationship,BS,Fixed assets, e) Other Intangible assets,1781.09,1781.09
+10010102003,Accumulated Depreciation_Software,BS,Fixed assets, e) Other Intangible assets,-148.91,-148.91
+10010102004,Accumulated Depreciation_Trade marks,BS,Fixed assets, e) Other Intangible assets,-2.15,-2.15
+10010102006,Impairment on Goodwill,BS,Fixed assets, d) Goodwill,-812.2,-812.2
+10010102009,Amortisation of Distribution network,BS,Fixed assets, e) Other Intangible assets,-616.98,-616.98
+10010102010,Amortisation of vendor relationship,BS,Fixed assets, e) Other Intangible assets,-1335.81,-1335.81
+10010103001,Tangible work-in-progress,BS,Capital work-in-progress, b) Capital work-in-progress,13.75,13.75
+10010103002,Intangible work-in-progress,BS,Capital work-in-progress, f) Intangibles under development,20.81,20.81
+10010201001,Investments in Joint venture,BS,Non-current investments,Non-current investments,0.0,0.0
+10010201002,Investments in subsidiary,BS,Non-current investments,Non-current investments,0.0,0.0
+10010201003,Investments in Associates,BS,Non-current investments,Non-current investments,0.0,0.0
+10010201004,Accumulated Impairment loss on investment,BS,Non-current investments,Non-current investments,0.0,0.0
+10010301001,Deferred Tax Asset,BS,Deferred tax liabilities,Deferred tax liabilities,701.97,694.71
+10010301002,MAT credit - Jeev,BS,Deferred tax liabilities,Deferred tax liabilities,3.05,3.05
+10010401007,Advance to Suppliers-Stock,BS,Short-term loans and advances,Advances to suppliers,222.08,218.41
+10010401008,Advance to suppliers_Capex,BS,Short-term loans and advances,Advances to suppliers,0.0,0.0
+10010401020,Advance to suppliers (Bank),BS,Short-term loans and advances,Advances to suppliers,1.11,1.11
+10010401002,Tender Deposit,BS,Other current assets,Security deposits,67.69,67.69
+10010401001,Security Deposit,BS,Other current assets,Security deposits,9.01,9.01
+10010401009,Sales tax Deposit,BS,Other current assets,Security deposits,0.5,0.5
+10010401010,Telephone Deposit,BS,Other current assets,Security deposits,0.03,0.03
+10010401011,Electricity Deposit,BS,Other current assets,Security deposits,0.06,0.06
+10010401012,CDSL Deposit,BS,Other current assets,Security deposits,0.08,0.08
+10010401004,Salary Advance,BS,Short-term loans and advances,Advances to employees,17.2,17.2
+10010401015,Staff Advance - MFG,BS,Short-term loans and advances,Advances to employees,0.0,0.0
+10010401013,Other Advance Receivables from Employees,BS,Short-term loans and advances,Advances to employees,2.48,2.48
+10010401006,Imprest Employee Advance,BS,Short-term loans and advances,Advances to employees,0.0,0.0
+10010401014,Travel Advance - Local,BS,Short-term loans and advances,Advances to employees,2.06,2.06
+10010401005,Travel Advance-Foreign,BS,Short-term loans and advances,Advances to employees,2.28,2.28
+10010401003,Rental Advance - Khadi,BS,Other non-current assets,Rent Deposits,0.0,0.0
+10010401016,Rental Advance - KS Ravi kumar,BS,Other non-current assets,Rent Deposits,12.0,12.0
+10010401017,Rental Advance-Mylapore Uma Jaganmohan,BS,Other non-current assets,Rent Deposits,21.0,21.0
+10010401018,Rental Advance -Eswar (HYD),BS,Other non-current assets,Rent Deposits,0.0,0.0
+10010401019,Rental Advance - Godown (mallika),BS,Other non-current assets,Rent Deposits,0.0,0.0
+10010401021,Jeev Expenses Reimbursement,BS,Short-term loans and advances,Advances to suppliers,0.0,0.0
+10010401022,Rent advance_ROU,BS,ROU,Rent Deposits,-7.02,-42.45
+10010401023,Rent Advance_Porur,BS,Other non-current assets,Rent Deposits,0.0,0.0
+10010401024,Rental advance - Villivakkam,BS,Other non-current assets,Rent Deposits,75.0,75.0
+10020101001,Raw Material_Closing stock,BS,Inventory,Raw materials,253.16,253.16
+10020101002,Work-in-progress_Closing stock,BS,Inventory,Work-in-progress,-0.01,-0.01
+10020101003,Finished goods_Closing stock,BS,Inventory,Stock-in-trade',0.0,0.0
+10020101004,Instruments_Closing stock,BS,Inventory,Stock-in-trade',1349.12,1349.12
+10020101005,Spares_Closing stock,BS,Inventory,Stores and spare parts**,486.77,486.77
+10020101006,Reagents_Closing stock,BS,Inventory,Stock-in-trade',2403.21,2338.53
+10020101007,Accessories & Consumables_Closing stock,BS,Inventory,Stores and spare parts**,227.95,227.95
+10020101008,Goods-in-transit_Raw Material,BS,Inventory,Stores and spare parts**,0.0,0.0
+10020101009,Goods-in-transit_Finished goods,BS,Inventory,Stores and spare parts**,0.43,0.43
+10020101010,Goods-in-transit_Traded goods,BS,Inventory,Stores and spare parts**,0.0,0.0
+10020101012,Work in progress variance,BS,Inventory,Work-in-progress,8.39,8.39
+10020101013,COVID-19,BS,Inventory,Stock-in-trade',0.66,0.66
+10020101014,MFG-Instruments,BS,Inventory,Finished goods,140.35,140.35
+10020101015,MFG Ancilliaory Reagents,BS,Inventory,Finished goods,9.32,9.32
+10020101017,Inventory - Audit entries,BS,Inventory,Finished goods,-620.94,614.2
+10020101018,Raw Material-Reagents_Closing stock,BS,Inventory,Finished goods,168.09,168.09
+10020101019,Finished goods-Reagents_Closing stock,BS,Inventory,Finished goods,0.0,0.0
+10020201001,Trade receivables - East region,BS,Trade receivables,Trade receivables considered good,691.06,691.06
+10020201002,Trade receivables - West region,BS,Trade receivables,Trade receivables considered good,1326.03,1326.03
+10020201003,Trade receivables - North region,BS,Trade receivables,Trade receivables considered good,1302.04,1302.04
+10020201004,Trade receivables - South region,BS,Trade receivables,Trade receivables considered good,2919.74,2919.74
+10020201006,Trade receivables - manual entries,BS,Trade receivables,Trade receivables considered good,924.28,464.63
+10020201011,Advance from Customers,BS,Other long-term liabilities,Advances from customers,-7.33,-7.33
+10020201007,Doubtful debts reserve,BS,Trade receivables,Less: Provision for doubtful receivables,-278.8,-286.34
+10020201009,Trade receivables_Service,BS,Trade receivables,Less: Provision for doubtful receivables,0.0,0.0
+10020201010,Invoices to be issued,BS,Trade receivables,Less: Provision for doubtful receivables,0.0,0.0
+10020201012,AR Down Payment Interim Account,BS,Trade receivables,Less: Provision for doubtful receivables,0.0,0.0
+10020201013,Trade Receivable Group company,BS,Trade receivables,Less: Provision for doubtful receivables,0.0,0.0
+10020201005,Trade Creditors - Debit Balances,BS,Trade receivables,Less: Provision for doubtful receivables,0.0,0.0
+10020202001,Trade receivables - Export,BS,Trade receivables,Trade receivables considered good,9.95,9.95
+10020202002,Trade receivables - Export Channel partner,BS,Trade receivables,Trade receivables considered good,-0.99,-0.99
+10020202003,Reinstatement gain or loss on export receivables,BS,Trade receivables,Trade receivables considered good,0.0,0.0
+10020301001,Petty Cash A/c ( MFG),BS,Cash and bank balances,Cash on hand,0.0,0.0
+10020301005,Petty cash (Chennai),BS,Cash and bank balances,Cash on hand,0.03,0.03
+10020301006,Petty Cash A/c (Westminister),BS,Cash and bank balances,Cash on hand,0.0,0.0
+10020301007,Petty Cash A/c (Distribution),BS,Cash and bank balances,Cash on hand,0.0,0.0
+10020301008,Petty Cash A/c (CSD In House),BS,Cash and bank balances,Cash on hand,0.0,0.0
+10020301002,Cash A/c ( Trade),BS,Cash and bank balances,Cash on hand,0.0,0.0
+10020301003,Cash A/c - USD,BS,Cash and bank balances,Cash on hand,0.0,0.0
+10020301004,Cash A/c - EURO,BS,Cash and bank balances,Cash on hand,0.0,0.0
+10020301009,Petty Cash - Jeev,BS,Cash and bank balances,Cash on hand,0.01,0.01
+10020302001,State Bank of Travancore - Main a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302002,State Bank of Travancore - Issue a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302003,State Bank of Travancore - Deposit a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302004,Citi bank - Current a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302005,Citi bank - Issue a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302006,Citi bank - Deposit a/c,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020302007,Citi bank (MFG) - Main a/c,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020302008,Citi bank (MFG) - Issue a/c,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020302009,Citi bank (MFG) - Deposit a/c,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020302010,Bank of Baroda - Main a/c,BS,Cash and bank balances,     - In current accounts,0.89,0.89
+10020302011,Bank of Baroda - Issue a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302012,Bank of Baroda - Deposit a/c,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020302013,Axis Bank - Main a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302014,Axis Bank - Issue a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302015,Axis Bank - Deposit a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302016,State Bank of India - Main a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302017,State Bank of India - Issue a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302018,State Bank of India - Deposit a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302019,Canara Bank - Main a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302020,Canara Bank - Issue a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302021,Canara Bank - Deposit a/c,BS,Cash and bank balances,     - In current accounts,0.0,0.0
+10020302022,SBI Gratuity a/c,BS,Cash and bank balances,     - In current accounts,0.12,0.12
+10020302023,SBI Super annuation a/c,BS,Cash and bank balances,     - In current accounts,0.61,0.61
+10020302024,State Bank of India -36854582503,BS,Cash and bank balances,     - In current accounts,0.05,0.05
+10020302025,Axis Account -923020039401865,BS,Cash and bank balances,     - In current accounts,25.64,25.64
+10020302026,Bank of Baroda-CA A/c,BS,Cash and bank balances,     - In current accounts,1.57,1.57
+10020303003,Fixed deposit_Standby Letter of Credit,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020304001,Corporate Guarantee given to third parties,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020304002,Corporate Guarantee given to group companies,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020305001,Fixed Deposits - Primary,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020305002,Fixed Deposits - Others,BS,Cash and bank balances,Other bank balances,603.4,603.4
+10020303001,FD - Bank Guarantee - Citi Bank,BS,Cash and bank balances,Other bank balances,8.04,8.04
+10020303002,FD - Bank Guarantee - Canara Bank,BS,Cash and bank balances,Other bank balances,0.0,0.0
+10020401001,Interest accrued on fixed deposits,BS,Other current assets,Interest accrued on fixed deposits,30.88,30.88
+10020402001,Prepaid expenses for Interest,BS,Other Financial Asset,Prepaid expenses,0.0,0.0
+10020402002,Prepaid expenses for Insurances,BS,Other Financial Asset,Prepaid expenses,5.74,5.74
+10020402003,Prepaid expenses for Leasing,BS,Other Financial Asset,Prepaid expenses,0.0,0.0
+10020402004,Other prepaid expense,BS,Other Financial Asset,Prepaid expenses,174.0,174.0
+10020402005,Prepaid expenses for License Fee,BS,Other Financial Asset,Prepaid expenses,38.35,38.35
+10020402006,Unamortised finance cost_ROU,BS,ROU, c) Right of Use Assets,2.04,36.81
+10020403001,Advance tax FY_19-20,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020403002,Advance tax FY_20-21,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020403003,Advance tax FY_21-22,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020403004,Advance tax FY_22-23,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020403005,Advance tax FY_23-24,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020403006,Advance tax FY_24-25,BS,Short term provisions,Provision for tax (net of advance tax),650.0,650.0
+10020403007,Advance tax FY_25-26,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020404001,TDS receivables_FY_22-23,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020404025,TDS receivables_FY_23-24,BS,Short term provisions,Provision for tax (net of advance tax),0.02,0.02
+10020404002,TCS receivables,BS,Short term provisions,Provision for tax (net of advance tax),2.84,2.84
+10020404015,TDS on GST,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020404003,With holding tax receivables,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020404004,Corpoarte Income tax receivables,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020404012,Duty Draw back Receivable,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020404013,Duty free credit entitlement,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020404006,SGST INPUT,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404007,CGST INPUT,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404008,IGST INPUT,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404009,SGST REVERSE CHARGE INPUT,BS,Short-term loans and advances,Balances with statutory authorities,19.33,19.33
+10020404010,CGST REVERSE CHARGE INPUT,BS,Short-term loans and advances,Balances with statutory authorities,13.39,13.39
+10020404011,IGST REVERSE CHARGE INPUT,BS,Short-term loans and advances,Balances with statutory authorities,107.28,107.28
+10020404005,GST Refund - Chennai Branch,BS,Short-term loans and advances,Balances with statutory authorities,600.26,600.26
+10020404016,GST Refund - Hyderabad Branch,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404017,GST Refund - Kolkata Branch,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404018,GST Refund - Bangalore Branch,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404019,GST Refund - Kochin Branch,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404020,GST Refund - Delhi Branch,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404022,GST Refund - Mumbai Branch,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404021,GST Refund - Export on sales,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+10020404014,GST Input Tax Interim Account,BS,Short-term loans and advances,Balances with statutory authorities,0.0,100.1
+10020404023,GST Input not claimed (GSTR 2B vs Books),BS,Short-term loans and advances,Balances with statutory authorities,18.46,18.46
+10020404024,GST Refund - Electronic cash ledger,BS,Short-term loans and advances,Balances with statutory authorities,1.78,1.78
+10020404026,TDS receivables_FY_24-25,BS,Short-term loans and advances,Balances with statutory authorities,20.7,20.7
+10020404027,TDS receivables_FY_25-26,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+10020101011,Intercompany Goods in transit,BS,Inventory,Finished goods,-7.94,-7.94
+10020101016,Intercompany -due from SP,BS,Inventory,Finished goods,13.65,13.65
+10020201008,Trade receivables_Intercompany,BS,Inventory,Finished goods,8833.78,8833.78
+10020406001,Warranty receivables,BS,Other Financial Asset,Other receivables,6.66,6.66
+10020406002,Insurance claim receivable,BS,Other Financial Asset,Other receivables,0.0,0.0
+10020406003,FOC receivable,BS,Other Financial Asset,Other receivables,77.44,77.44
+20010101,Deferred Tax Liabilities,BS,Deferred tax liabilities,Deferred tax liabilities,0.0,0.0
+20010102,Deferred tax liability_ROU,BS,ROU,,0.0,0.0
+20010201,Citi Bank Cash credit a/c,BS,Short-term Borrowings,Cash credit facilities from banks,-1163.86,-1163.86
+20010202,Citi Bank OD a/c,BS,Borrowings,Loan from banks,0.0,0.0
+20010203,Citi Bank WCDL a/c,BS,Short-term Borrowings,Working capital demand loan,-1600.0,-1600.0
+20010204,Citi Bank_FCNR Loan,BS,Borrowings,Loan from banks,0.0,0.0
+20010205,Car loan_Swift car,BS,Long-term borrowings,- Vehicle loan from banks (refer note 5.2),0.0,0.0
+20010206,Car loan_Maruthi car,BS,Long-term borrowings,- Vehicle loan from banks (refer note 5.2),0.0,0.0
+20010209,Car Loan_ Benz Car (HDFC Bank),BS,Long-term borrowings,- Vehicle loan from banks (refer note 5.2),-9.38,-9.38
+20010210,Citi Bank_Term Loan-A/c No-D04LCRR221030001,BS,Short-term Borrowings,- Term Loan (refer note 5.2),-405.0,-405.0
+20010208,Advance from Customers_Audit entry,BS,Other long-term liabilities,Advances from customers,0.0,2.67
+20010207,Leasing Indebtedness Leased building,BS,ROU,,0.0,0.0
+20010211,HSBC Bank Cash credit a/c,BS,Short-term Borrowings,Cash credit facilities from banks,0.0,0.0
+20020101,Trade Payable to Third parties_Domestic,BS,Trade payables,Trade payables,-173.26,-269.56
+20020102,Trade Payable to Third parties_Import,BS,Trade payables,Trade payables,-2340.61,-2340.61
+20020115,Trade Payable to Others,BS,Trade payables,Trade payables,-93.08,-93.08
+20020104,Invoice to be received from third parties,BS,Trade payables,Trade payables,0.0,0.0
+20020105,Invoice to be received from group companies,BS,Trade payables,Trade payables,0.0,-70.0
+20020106,Fixed asset invoices to be received,BS,Trade payables,Trade payables,0.0,0.0
+20020107,Trade payable - Audit entry,BS,Trade payables,Trade payables,-112.92,-1125.86
+20020108,Reinstatement gain or loss on Import payables,BS,Trade payables,Trade payables,35.53,35.53
+20020109,Trade Debtors - credit Balances,BS,Trade receivables,Trade receivables considered good,0.0,0.0
+20020110,Trade payable - Unallocated Receipts,BS,Trade Payables,Trade payables,0.0,0.0
+20020111,Interest accured on MSME payable,BS,Trade Payables,Trade payables,0.0,0.0
+20020112,GRNI(Goods Received Not Invoiced),BS,Trade payables,Trade payables,-0.49,-0.49
+20020113,Advance to Suppliers,BS,Trade payables,Trade payables,0.0,0.0
+20020114,AP Down Payment Interim Account,BS,Trade payables,Trade payables,0.0,0.0
+20020116,Trade payable Group company,BS,Trade payables,Trade payables,0.0,0.0
+20020201,Provision for Taxation FY_19-20,BS,Short term provisions,Provision for tax (net of advance tax),75.91,75.91
+20020202,Provision for Taxation FY_20-21,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+20020203,Provision for Taxation FY_21-22,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+20020204,Provision for Taxation FY_22-23,BS,Short term provisions,Provision for tax (net of advance tax),12.71,12.71
+20020207,Provision for Taxation FY_23-24,BS,Short term provisions,Provision for tax (net of advance tax),96.53,96.53
+20020205,Current Tax Payable_ROU,BS,ROU,,0.0,0.0
+20020206,Provision for Net realisable value,BS,Inventory,Less: Provision for inventory,-18.04,-18.04
+20020208,Provision for Warranty,BS,Short term provisions,Provision for Warranty,-55.39,-89.46
+20020209,Provision for Taxation FY_24-25,BS,Short term provisions,Provision for tax (net of advance tax),-561.18,-711.01
+20020210,Provision for Taxation FY_25-26,BS,Short term provisions,Provision for tax (net of advance tax),0.0,0.0
+20020301,Salary payable to all,BS,Other current liabilities,Employee benefits payable,-436.68,-436.68
+20020302,Employee Salary with held payable,BS,Other current liabilities,Employee benefits payable,-8.55,-8.55
+20020303,Employee leave tour allowance payable,BS,Other current liabilities,Employee benefits payable,0.0,0.0
+20020304,Employee Cloth & Medical payable,BS,Other current liabilities,Employee benefits payable,0.0,0.0
+20020305,Employee Travel expenses payable,BS,Other current liabilities,Employee benefits payable,0.0,0.0
+20020313,Payable Others,BS,Trade Payables,Other Payables,0.0,0.0
+20020319,Employee settlement payable,BS,Other current liabilities,Employee benefits payable,-2.65,-2.65
+20020306,Sales Incentive payable,BS,Other current liabilities,Employee benefits payable,-63.84,-63.84
+20020320,TA Bill Payable,BS,Other current liabilities,Employee benefits payable,-3.99,-3.99
+20020307,Bonus Payable,BS,Other current liabilities,Employee benefits payable,-43.74,-43.74
+20020310,Leave encashment payable,BS,Long-term provisions,Provision for compensated absences,-45.56,-73.22
+20020308,Gratuity Payable,BS,Other current liabilities,Employee benefits payable,0.0,0.0
+20020321,Gratuity Payable_Audit,BS,Long-term provisions,Provision for gratuity (refer note 41.2),-65.65,-50.86
+20020309,Outstanding liabilities_Audit,BS,Trade Payables,Other Payables,-11.72,-14.7
+20020318,Outstanding Liabilities_Regular,BS,Trade Payables,Other Payables,-97.25,-89.16
+20020311,Interest payable to banks,BS,Short-term Borrowings,Cash credit facilities from banks,-20.49,-20.49
+20020312,Interest accured but not due on borrowings,BS,Other current liabilities,Interest accrued but not due on borrowings,0.0,0.0
+20020314,Interest accured on distributor deposits,BS,Other Financial liabilities,Deposits from Customers,0.0,-0.3
+20020317,Superannuation payable,BS,Other current liabilities,Statutory liabilities,-11.27,-11.27
+20020322,Lease Liability_ROU,BS,ROU,Lease liabilities,-195.79,-992.01
+20020401,Prepaid service income,BS,Other Financial liabilities,Unearned service income,-120.58,-120.58
+20020402,Deferred Income for Interest,BS,Other Financial liabilities,Unearned service income,0.0,0.0
+20020501,ESI Payable a/c,BS,Other current liabilities,Statutory liabilities,-0.07,-0.07
+20020524,ESI Payable a/c - Vendor,BS,Other current liabilities,Statutory liabilities,-0.06,-0.06
+20020502,EPF Payable a/c,BS,Other current liabilities,Statutory liabilities,-17.74,-17.74
+20020503,Labour welfare fund payable,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020504,Professional Tax payable,BS,Other current liabilities,Statutory liabilities,-0.21,-0.21
+20020505,Endowment fund payable,BS,Other current liabilities,Employee benefits payable,-3.0,-3.0
+20020506,TDS payable on Salary,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020507,TDS payable on Rent,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020508,TDS payable on Professional,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020509,TDS payable on Consultancy,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020510,TDS payable on Contracts,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020511,TDS payable on Interest,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020512,TDS payable on Commission,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020513,TDS payable on purchase of goods,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020514,TCS payable on Sales,BS,Other current liabilities,Statutory liabilities,-2.57,-2.57
+20020515,TCS payable on Scarp,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020516,TCS payable on Non resident,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020530,TDS Payable controls a/c,BS,Other current liabilities,Statutory liabilities,-97.33,-97.33
+20020531,TCS Payable,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020532,TDS Payable - Sec 194R,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020518,SGST Output,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+20020519,CGST Output,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+20020520,IGST Output,BS,Short-term loans and advances,Balances with statutory authorities,0.0,0.0
+20020521,SGST REVERSE CHARGE OUTPUT,BS,Short-term loans and advances,Balances with statutory authorities,-19.33,-19.33
+20020522,CGST REVERSE CHARGE OUTPUT,BS,Short-term loans and advances,Balances with statutory authorities,-13.39,-13.39
+20020523,IGST REVERSE CHARGE OUTPUT,BS,Short-term loans and advances,Balances with statutory authorities,-107.28,-107.28
+20020517,GST Payable - Chennai Branch,BS,Other current liabilities,Statutory liabilities,-23.52,-20.54
+20020525,GST Payable - Bangalore Branch,BS,Other current liabilities,Statutory liabilities,-0.96,-0.96
+20020526,GST Payable - Kochin Branch,BS,Other current liabilities,Statutory liabilities,-8.3,-8.3
+20020527,GST Payable - Delhi Branch,BS,Other current liabilities,Statutory liabilities,-18.0,-18.0
+20020528,GST Payable - Kolkata Branch,BS,Other current liabilities,Statutory liabilities,-6.15,-6.15
+20020529,GST Payable - Hydrebad Branch,BS,Other current liabilities,Statutory liabilities,-10.41,-10.41
+20020533,GST Payable - Mumbai Branch,BS,Other current liabilities,Statutory liabilities,-10.65,-10.65
+20020534,TDS payable on brokerage,BS,Other current liabilities,Statutory liabilities,0.0,0.0
+20020103,Trade Payable to Intercompanies,BS,Inventory,Finished goods,-8848.13,-8848.13
+20020701,CMC - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020702,Micro biological Lab(Kryptor) Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,-10.0,-10.0
+20020703,Sivakirpa Associate - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020704,Kota - SMAP - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,-2.36,-2.36
+20020705,North East Health - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020706,Euroblot (VDC) - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020707,Millennium Special Pathology Laboratory - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020708,Diacare(SK AGENCY) - I FLASH 1200 KA - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,-4.0,-4.0
+20020709,Medical Associate Singhvi Clinical Kota - I FLASH 1200 EA - Security Deposit Fixed,BS,Other Financial liabilities,Deposits from Customers,-4.0,-4.0
+20020801,Navya Hospital Dynacount 5D  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020802,Al Azhar  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020803,CMC(EIA)  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020804,TARUN LAB  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020805,Star Marketing  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-2.06,-2.06
+20020806,Euro star  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020807,Tarun Clinical - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020808,Pentacycle Lab - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-3.85,-3.85
+20020809,TC 240 Icon Enterprises - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020810,Ajinkya -BKL TC 240 - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020811,Mother sai patho ( pentacyte ) - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020812,Premier lab - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020813,Vision pro( Dr. Devang Doshi )  Caretakers - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020814,Vision Pro( Bhavnagar )  Caretakers - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020815,Pulse diagnostics part rental  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020816,Arogaya Pathology rental dynacount - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020817,Eurostar Shreshta Rehmutology (Dr.Narendra)  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-3.0,-3.0
+20020818,Rishi rheumatology Eurostar Microscope - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-3.0,-3.0
+20020819,POC HOUSE Dynacount - Shri Gurupad Hospital - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020820,POC HOUSE TC Prime - Geetha Hospital & RC - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020821,Universal solutions Vision Pro A for SS Pat - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020822,Shakthi enterprises Dynacount - Balamurug - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020823,MOU dynacount 5D - Dhruvi medicare - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020824,iFlash 1800 SSMM Diagnostics & Clinic-Mumbai - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-3.65,-3.65
+20020825,Eurostar with camera - Dr Quadri Lab - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020826,Vision Pro care takers - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-0.75,-0.75
+20020827,Pulse diagnostics soni path lab - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-0.73,-0.73
+20020828,SHINE PATHOLOGY SERVICES  I flash - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020829,Pooja Hospital I FLASH  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-3.5,-3.5
+20020830,Rose medicare Dynacount 5D  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020831,Benchmark Diagnostics Indore TC Prime part  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020832,Icon Enterprises TC 240 Government Medical - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020833,ABC Diagnostics I Flash Dr.Dhanrmendra Bhad - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020834,Vision Pro A from ​​Singla Lab - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020835,LABMENTOR Dynacount 5D - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020836,Dhruvi Medicare system Dynacount 5D - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020837,Sivakripa Associates C & F - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020838,iFlash 1800 soni path lab M.P (Pulse Diagnostics) - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020839,iFlash Federal Diagnostics and research lab - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-5.0,-5.0
+20020840,AVIGNA LABORATORIES LLP Eurostar Microscope - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-3.0,-3.0
+20020841,UNIPATH - SPECIALITY LABORATORY PVT LTD  (EUROSTAR) - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020842,"Ameya Enterprises,Pune (c/o Suyog Life Care) Eurostar - Security Deposit Payable",BS,Other Financial liabilities,Deposits from Customers,-3.0,-3.0
+20020843,Samadhan pathology Eurostar - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020844,B.S Diagnostic centre I Flash 1800 - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020845,S.S. MEDICAL AGENCIES-INDORE (TC Prime Choudary Hospital) - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020846,SHREY ASSOCIATES - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020847,"LAB SOLUTION - BHUVANESWAR EURO BLOT ONE, AIIMS - Security Deposit Payable",BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020848,ALKA DIAGNOSTIC CENTRE - I FLASH 1200 EA  - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-5.0,-5.0
+20020849,RELIEF DIAGNOSTIC AND HEALTH CARE - I FLASH 1800 KA - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020850,DNA ENTERPRISES (DIVINE MICROPATH LAB) - I FLASH 1200 EA - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020851,Health Heart Diagnostics (A.N. PHARMA) - Turbo chem Magna EA - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020852,A4all Diagnostics (Baby Memorial Hospital) Microscope - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-3.0,-3.0
+20020853,JJS pathalogy lab - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-4.0,-4.0
+20020854,Hormocare Diagnostics I flash 1200 - Security  Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-2.0,-2.0
+20020855,Icon Enterprises I flash 1200 - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020856,Divine Diagnostics (Macare Diagnostics and Polyclinic) I flash 1200 - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,-2.0,-2.0
+20020857,IFLASH 1200_KRUPA DIAGNOSTIC_AJINKYA DIAGNOSTICS AND SURGICALS,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020858,IFLASH 1200_BHUMEE DIAGNOSTICS_OM SALES CORPORATION - Security Deposit Payable,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020901,9MEDZ SAVE AGENCY - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.2,-0.2
+20020902,A1 MEDICAL SUPPLIES – MNG - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.1,-0.1
+20020903,A4ALL DIAGNOSTICS DISTRIBUTORS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020904,AADITYA LIFE SUPPORT DEVICES PVT LTD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020905,AJINKYA DIAGNOSTICS AND SURGICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020906,ALVIN INDUSTRIES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020907,AMEYA ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020908,ANSWER HEALTH CARE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.75,-0.75
+20020909,ANSWER MEDICAL SOLUTIONS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020910,ARIHANTHEALTH CARE-MUMBAI - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.75,-0.75
+20020911,ASP DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020912,ASWINI DIAGNOSTICS- TCRT - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020913,ATHARVA ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020914,B & B DIAGNOSTIC SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020915,BALA ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020916,BALAJI DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020917,BEST SURGICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020918,BHADRAKALI SCIENTIFICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20020919,BHARAT ENTERPRISES - HYD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20020920,BHARATH SCIENTIFIC SUPPLIES-KLM - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020921,BINDESH CORPORATION - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.5,-1.5
+20020922,BIO TEK AGENCIES - TVM - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020923,BIOCARE DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020924,BIOCHEM AGENCIES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20020925,BIOCLONE DIAGNOSTICS  - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020926,BIOLEAP HEALTH CARE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020927,BIOMIC INC - MDST - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020928,BIOSYS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.75,-0.75
+20020929,BLUE DART DIAGNOSTICS - MLPM - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020930,BLUEBELL DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020931,BRUNDA MEDICALS & SURGICALS - BLE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020932,CARE TAKERS - AHMEDABAD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.6,-0.6
+20020933,CHEMICALS & INSTRUMENTS - KOLT - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-2.0,-2.0
+20020934,COSMIC CHEMICO CO. - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020935,CRYSTAL DIAGNO VISION - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020936,CRYSTAL HEALTH CARE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020937,DEEPAK DIAGNOSIS - TVLT - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020938,DHANVANTHRI DIAGNOSTIC & SURGICAL DISTRIBUTORS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20020939,DIAGNO INDIA - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020940,DIAGNOSTIC SALES HOUSE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020941,DIATRADES - CLTT - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020942,DISHA DIAGNOSTICS & SURGICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020943,DYNEX - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020944,ENZYME DRUG DISTRIBUTOR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020945,Excell Diagnostics - NEW (FEB) - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020946,FOCUS BIOLOGICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.15,-0.15
+20020947,FOCUS INNOVATIONS SCIENTIFIC AND MEDICAL SYSTEMS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020948,GLOBAL BIOMEDICAL - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020949,GOLDEN SCIENTIFIC COMPANY - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020950,GOLECHHA DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020951,HELPLINER - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020952,HIMANSHU ENTERPRISE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020953,HOSPITO CARE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.06,-0.06
+20020954,IMIC DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020955,INDIAN BIO SYSTEM - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.2,-0.2
+20020956,INNOVATION HEALTHCARE DIAGNOSTICS PVT LTD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020957,ION SCIENTIFIC - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020958,J.PHARMA - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020959,JAI MATA DI ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020960,JANKI ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020961,JAYESH ASSOCIATES (NEW) - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020962,JJ DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020963,K.B.DIAGNOSTICS AND MEDICAL SERVICE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020964,KALYAN DIAGNOSTICS & CHEMICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020965,KONARK ENTERPRISES - HUBLI - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020966,KOTHARI DISTRIBUTORS - D - BLR1 - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.1,-0.1
+20020967,KSHEMA MEDICAL SYSTEMS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020968,KSK DIAGNOSTICS PVT LTD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20020969,L.L.PRODUCTS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.1,-0.1
+20020970,LAB SOLUTION - BHUVANESWAR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.2,-1.2
+20020971,LAKSHMI AGENCIES - MDU - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20020972,LEADS CHEMICALS - CLT - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020973,M.B. DISTRIBUTORS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020974,M/S PEARL SCIENTIFIC - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020975,MARUTHI MEDICAL SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020976,MEDISYS ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20020977,MEDLAB TRADERS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020978,MGF ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20020979,NAVDURGA DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020980,NAVI MEDICARE PVT LTD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.5,-1.5
+20020981,NEW TRICHUR DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020982,NEWTECH SCIENTIFIC PRODUCTS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020983,NIYAMAA LIFE SCIENCES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020984,ORISON ENTERPRISE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020985,OSCAR DIAGNOSTICS - NEW - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020986,PARVATHI DIAGNOSTICS - RAJ - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020987,PAVAN DIAGNOSTIC AGENCY - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020988,PAWAN DISTRIBUTOR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020989,POC HOUSE  - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020990,POZHIN DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020991,PREMIER CHEMICALS & EQUIPMENT - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20020992,PREMIER MEDICAL PRODUCTS-BLR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-2.0,-2.0
+20020993,PRIME SCIENTIFIC HOUSE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20020994,R A ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.5,-1.5
+20020995,R K DIAGNOSTIC AGENCY - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20020996,R K MEDISOLUTION - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.75,-0.75
+20020997,R S K ENTERPRISES - HYD1 (NEW) - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-5.0,-5.0
+20020998,R.K.DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.1,-0.1
+20020999,R.R.SCIENTIFIC TRADERS - HYD2 - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021000,RADHA KRISHNA DIAGNOSTIC ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021001,RADIANT DIAGNOSTICS - SOUTH - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021002,RADIANT DIAGNOSTICS SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021003,RAJASTHAN MEDICAL SERVICES CORPORATION - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021004,RAPID HOUSE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021005,ROSE MEDICARE PVT LTD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021006,S V DIAGNOSTICS - NEW1 - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.1,-0.1
+20021007,S V ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021008,S.S PHARMA SCIENTIFICS &  SURGICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021009,SAI LOHITH MEDICAL SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021010,SAI PAVITHRA MEDICAL SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021011,SAI SRINIVASA AGENCIES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.05,-1.05
+20021012,SANJAY & ANITA DRUG DISTRIBUTORS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021013,SANJEEVINI MEDICAL & ALLIED PRODUCTS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021014,SHAKTHI ENTERPRISES (NEW) - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021015,SHARDA CHEMICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021016,SHIV RAMA & SONS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021017,SHIVAM ENTERPRIS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021018,SHREE BIOMED-NEW - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021019,Shree Enterprises - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021020,SHREE ENTERPRISES - MYST - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.1,-0.1
+20021021,Shree Lakshmi Enterprises - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021022,SHREE LAKSHMI MEDICAL NEEDS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021023,SHREE MURUGAN ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021024,Shree Sai Agencies - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021025,SHREY ASSOCIATES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021026,SHRI JALARAM SALES & SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021027,SHRI MAHALASA AGENCIES (NEW) - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021028,SHWETA SALES CORPORATION - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021029,SIGMA DIAGNOSTICS SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021030,SIVA MEDICAL SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021031,SK AGENCY - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021032,SRI KRISHNA DIAGNOSTICS DISTRIBUTOR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021033,SRI LAKSHMI AGENCIES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021034,SRI RAJA RAJESHWARA ENTERPRISES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021035,SRI RMS AGENCY - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021036,SRI SAI AGENCIES - HYD1 - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021037,SRI SAI RAM ENTERPRISES - HYD - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021038,SRI VISHNU DIAGNOSTICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021039,SRILAB SOLUTIONS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021040,SRINIVASA MEDICAL SERVICES - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021041,SRINIVASA MEDICAL SERVICES - VIJAYAWADA  - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021042,STAR MARKETING AGENCIES - KUR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021043,SUN PHARMACEUTICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021044,SUNRISE SCIENTIFIC - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021045,SUPRABHA DISTRIBUTOR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021046,SUPREME HI-TEC DIAGNOSTIC - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021047,SWASTIK DISTRIBUTOR - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021048,Taxil Medicare & Surgicals - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021049,THE CONTINENTAL DISTRIBUTORS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021050,TRICORE MEDICAL SYSTEMS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021051,TULASI SCIENTIFIC INSTRUMENTS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.75,-0.75
+20021052,UNITY DIAGNOSTICS & RESEARCH CENTRE - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021053,UNIVERSAL SOLUTIONS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021054,VAIGAI SCIENTIFICS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021055,WELCOME ASSOCIATES - TNL - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.3,-0.3
+20021056,SHRI LAKSHMI DIAGNOSTICS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021057,REMEDEX PHARMA PRIVATE LIMITED - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021058,SHIVALINGESHWAR AGENCIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021059,SATYAABH BIOMED - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021060,MEDPLANE ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021061,VIMANAN-BIOMEDICALS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021062,MEDIPOINT ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021063,MANIKANTA AGENCIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.27,-0.27
+20021064,SONA ONE CALL MEDICAL SYSTEMS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021065,MANTRA MEDICAL SOLUTION -  DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021066,REDCELL BIOMEDICAL - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021067,SREE LAKSHMI LABTECH - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021068,MEDIPOINT - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021069,SANCHIT HEALTHCARE LLP - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021070,JAGDEEP MEDICAL HALL - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021071,ORANGE BIOMEDICAL - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021072,LABMENTOR BIOMEDICALS PRIVATE LIMITED - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021073,PATHOLOGY AND SURGICALS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021074,ARIHANT AGENCIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.25,-0.25
+20021075,Om Sales Corporation - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021076,PURVA ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021077,PRECISION MEDICAL SYSTEMS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021078,MINDSPACE SALES AND SERVICE -DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021079,LIFECARE DIAGNOSTICS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021080,RAJ HEALTHCARE PVT LTD - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021081,SCIENTIFIC SOLUTIONS INC - DISTRIBUTORS  DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021082,IMMUNOGENIC SOLUTIONS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021083,BIOSYS - DISTRIBUTORS DEPOSIT PAYABLE_POCT,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021084,MAA ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021085,CHEMEXON - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021086,ACE MEDICAL TECHNOLOGY - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021087,HEALATHON HEALTHCARE - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.18,-0.18
+20021088,SAMARTH PATHCARE ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021089,JAI MARKETING - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021090,DNA ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021091,SYNBIO TECHNOVA PVT LTD - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021092,MS DISTRIBUTORS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021093,SCOPE ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021094,GOKULAM ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021095,MANGLAM TRADERS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021096,ADVION MICRO BIO SCIENCES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021097,BIOCARE DIAGNOSTICS - TVM - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-3.0,-3.0
+20021098,A.N. PHARMA - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021099,VIYONA BIO SYSTEMS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021100,SRIRAM PHARMACEUTICALS AND SURGICALS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021101,AMBIKA DIAGNO VISION - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021102,EMDIAG SCIENTIFIC - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021103,SMS IMPEX - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021104,DIAGNO CARE - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021105,SPACE BIO - KOTTAYAM - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021106,SHUBHAM AGENCIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021107,SRI VIGNESWARA AGENCIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.09,-0.09
+20021108,MADHU MEDICAL SERVICES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021109,M/s S K DIAGNOSTICS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021110,GENERAL MEDITECH - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021111,B MEDITECH SERVICES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021112,CARP BIOTECH PRIVATE LIMITED - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021113,AARYA ENTERPRISES - JHARKAND - DISTRIBUTORS DEPOSIT  PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021114,BIOTECH LIFE SCIENCES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021115,LAB CHEM AGENCIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021116,TIRUMALA MEDICAL SERVICES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021117,LOTUS MEDICAL SUPPLIERS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021118,SHOBHA  ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021119,CEREBRAL ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021120,INTEGRAL LAB SOLUTIONS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021121,G LIFESCIENCE SOLUTIONS PRIVATE LIMITED - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021122,REALM DIAGNOSTICS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021123,BIO MARKETING - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021124,MEDICA SOLUTIONS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021125,BLUE LINE HEALTH CARE - MP - DISTRIBUTORS  DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021126,PRIME AGENCIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021127,SUNRISE ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021128,ADITYA & COMPANY - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021129,G.D. Enterprises - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021130,D.G.TECHNOLOGIES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021131,M.K.BIO DIAGNOSTICS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021132,BRITIA BROTHERS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021133,RATILA BIOTECH - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021134,LABONEST INDIA_POCT - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021135,INVITRO BIO SYSTEMS PVT LTD - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-1.0,-1.0
+20021136,VRA HEALTHCARE PRIVATE LIMITED - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021137,ASPIRE BIOMEDICAL PRIVATE LIMITED - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021138,VISHNU BIO SCIENCES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021139,PEE EM EM ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021140,NIMBUS LIFE CARE - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021141,RELIANCE - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021142,SHREE MEDICARE - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021143,AMOGH DIAGNOSTIC SOLUTIONS PVT LTD - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021144,Es & Es Enterprises - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021145,SREE GOUTHAM SAI SCIENTIFICS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021146,DIAGNO SUPPORT - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021147,ACME MEDITECH PVT LTD- DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021148,SAI ENTERPRISES-DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021149,S.R SCIENTIFICS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021150,UNIVERSAL TRADING CORPORATION_POCT - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021151,KSS BIOTECH_POCT - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021152,UTKARSH BIOTECH - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021153,SHREE VIJAYALAKSHMI MEDICAL AND SURGICALS - DISTRIBUTOR DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021154,ORANGE BIOSCIENCES PRODUCTS PVT LTD - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021155,ACCURATE BIOMEDICALS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021156,SAI ENTERPRISES - SANGLI - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021157,ACCURATE BIOMEDICALS - NASHIK - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021158,KARTIK HEALTHCARE - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,-0.5,-0.5
+20021159,HINDUSTAN ENTERPRISES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021160,GENISTRA MEDICARE - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021161,NIRAMAYA WELLNESS SERVICES PVT LTD - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021162,NEW LIFE MEDITECH SERVICES - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021163,GLOBAL HEALTHCARE- DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+20021164,JAUHARI BIOCHEMICALS - DISTRIBUTORS DEPOSIT PAYABLE,BS,Other Financial liabilities,Deposits from Customers,0.0,0.0
+30010101,Equity Share Capital,BS,Share capital,Equity share capital,-610.39,-610.39
+30010102,Preference Share Capital,BS,Share capital,Preference Share Capital,0.0,0.0
+30010103,Employee Stock Option Reserve,BS,Reserves & Surplus,ESOP Reserve,-79.81,-114.3
+30010201,Capital Reserve,BS,Reserves & Surplus,Retained Earnings,0.0,0.0
+30010202,General Reserve,BS,Reserves & Surplus,Retained Earnings,-4615.74,-4610.1
+30010203,Capital Redemption Reserve,BS,Reserves & Surplus,Retained Earnings,0.0,0.0
+30010204,Profit & Loss Account,BS,Reserves & Surplus,Retained Earnings,0.0,0.0
+30010205,Share Premium,BS,Reserves & Surplus,Securities premium account,-4881.43,-4881.43
+30010206,Employee Benefit Reserve (OCI),BS,Reserves & Surplus,Retained Earnings,0.0,0.0
+30010207,Profit & Loss Account_ROU,BS,ROU,Retained Earnings,14.68,14.68
+40010101001,Sales - Finished goods_Reagents,PL,Revenue from operations,- Finished goods,0.0,0.0
+40010101002,Sales - Finished goods_Instruments,PL,Revenue from operations,- Finished goods,0.0,0.0
+40010102001,Sales - Reagents,PL,Revenue from operations,- Traded goods,-23355.49,-23089.83
+40010102002,Sales - Instruments,PL,Revenue from operations,- Traded goods,-3316.07,-3119.41
+40010102003,Sales - Spares,PL,Revenue from operations,- Traded goods,-59.13,-59.13
+40010102004,Sales - Accessories & Consumables,PL,Revenue from operations,- Traded goods,-407.55,-408.54
+40010102005,Sales - Components,PL,Revenue from operations,- Traded goods,-7.36,-7.36
+40010102006,Sales - Sub assembly,PL,Revenue from operations,- Traded goods,0.0,0.0
+40010102007,Sales- COVID-19,PL,Revenue from operations,- Traded goods,-4.0,-4.0
+40010102008,Sales-MFG-Instruments,PL,Revenue from operations,- Finished goods,-437.09,-437.09
+40010102009,Sales-MFG Ancilliaory Reagents,PL,Revenue from operations,- Finished goods,-51.98,-51.61
+40010201001,Sales - CMC,PL,Revenue from operations,- Annual maintenance contracts,-118.43,-118.43
+40010201002,Sales - CMC,PL,Revenue from operations,- Annual maintenance contracts,-158.58,-158.58
+40020101001,Sales - Scrap,PL,Revenue from operations,-Scrap sales,-1.1,-1.1
+40020101002,After sales & repair service,PL,Revenue from operations,- Annual maintenance contracts,0.0,0.0
+40030101001,Interest income on Fixed deposits,PL,Other income,Interest income on fixed deposits,-49.09,-49.09
+40030101002,Provisions/liabilities no longer required written back,PL,Other income,Provisions no longer required written back,0.0,0.0
+40030101003,Net gain on account of foreign exchange fluctuations,PL,Other income,Miscellaneous income,0.0,0.0
+40030101004,Net gain on sale of assets,PL,Other income,Miscellaneous income,0.0,0.0
+40030101005,Duty Draw back,PL,Other income,Miscellaneous income,-3.02,-3.02
+40030101006,Transport cost recovered from customers,PL,Other income,Miscellaneous income,0.0,0.0
+40030101007,Packing cost recovered from customers,PL,Other income,Miscellaneous income,0.0,0.0
+40030101008,Air freight cost receoverd from customers,PL,Other income,Miscellaneous income,0.0,0.0
+40030101009,Income from Penalty,PL,Other income,Miscellaneous income,0.0,0.0
+40030101010,Interest income on Income tax refund,PL,Other income,Miscellaneous income,0.0,0.0
+40030101011,Other Service Income,PL,Other income,Miscellaneous income,-15.53,-15.53
+40030101012,Other miscellanous income from third parties,PL,Other income,Miscellaneous income,-0.76,-0.76
+40030101013,Bad Debt reversal,PL,Other Income,Recovery of Bad Debts,-1.0,-1.0
+40030101014,Income from Insurance claims,PL,Other expenses,Miscellaneous expenses,4.98,4.98
+40030101015,Excess income received from Customers,PL,Other income,Miscellaneous income,-7.25,-7.25
+40030101016,Asset Disposal parking a/c,PL,Other income,Miscellaneous income,0.0,0.0
+40030101017,DISCOUNT FROM VENDORS,PL,Other income,Miscellaneous income,0.0,0.0
+40030101018,Freight Outward on Sales,PL,Other income,Freight Outward on Sales,-22.08,-22.08
+40030101019,Interest Income on Lease deposit_ROU,PL,ROU,"Interest income from financial assets at amortised cost, rental deposits",0.0,-3.34
+50010101001,COGS - Reagents,PL,Cost of materials consumed,Stock-in-trade,12266.72,12129.42
+50010101002,COGS - Instruments,PL,Cost of materials consumed,Stock-in-trade,3013.67,2836.62
+50010101003,COGS - Spares,PL,Cost of materials consumed,Stock-in-trade,76.59,76.59
+50010101004,COGS - Accessories & Consumables,PL,Cost of materials consumed,Stock-in-trade,290.51,288.42
+50010101005,COGS - Components,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50010101006,COGS - Finished goods reagents,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50010101007,COGS - Sub assembly,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50010101008,COGS - Finished Goods Intrument,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50010101011,COGS-COVID-19,PL,Cost of materials consumed,Stock-in-trade,1.51,1.51
+50010101012,COGS-MFG-Instruments,PL,Cost of materials consumed,Stock-in-trade,206.52,206.52
+50010101013,COGS-MFG Ancilliaory Reagents,PL,Cost of materials consumed,Stock-in-trade,7.62,7.49
+50010101010,Provision for Inventory - Audit entry,PL,Cost of materials consumed,Stock-in-trade,37.06,44.6
+50010201001,Bank Charges - Import,PL,Cost of materials consumed,Stock-in-trade,26.05,26.05
+50010201002,Clearing Charges,PL,Cost of materials consumed,Stock-in-trade,73.14,73.14
+50010201003,Customs Duty,PL,Cost of materials consumed,Stock-in-trade,1.12,1.12
+50010201004,Handling Charges,PL,Cost of materials consumed,Stock-in-trade,-1.89,-1.89
+50010201005,Freight Charges- inward,PL,Cost of materials consumed,Stock-in-trade,0.07,0.07
+50010201006,FREIGHT CHARGES - import,PL,Cost of materials consumed,Stock-in-trade,30.7,30.7
+50010201007,Freight charges- Local,PL,Cost of materials consumed,Stock-in-trade,4.27,4.27
+50010201008,Consumables,PL,Cost of materials consumed,Stock-in-trade,3.21,3.21
+50010201009,Job Work Expenses,PL,Cost of materials consumed,Stock-in-trade,0.06,0.06
+50010201010,Freight charges- Interstate,PL,Cost of materials consumed,Stock-in-trade,0.26,0.26
+50010201011,Job work expenses(MFG),PL,Cost of materials consumed,Stock-in-trade,16.9,16.9
+50010201012,Purchase consumbels(MFG),PL,Cost of materials consumed,Stock-in-trade,4.1,4.1
+50010201013,Purchase R & D (MFG),PL,Cost of materials consumed,Stock-in-trade,4.83,4.83
+50010201014,Expenses R & D (MFG),PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50010201015,Insurance charges_Import,PL,Cost of materials consumed,Stock-in-trade,18.28,18.28
+50010301001,Evaluation,PL,Cost of materials consumed,Stock-in-trade,32.43,32.43
+50010301002,Replacement,PL,Cost of materials consumed,Stock-in-trade,67.0,67.0
+50010301003,Warranty Replacement,PL,Other expenses,Warranty,0.0,0.0
+50010301004,Demo,PL,Cost of materials consumed,Stock-in-trade,27.17,27.17
+50010301005,CMC Replacement,PL,Cost of materials consumed,Stock-in-trade,63.82,63.82
+50010301006,Samples issues,PL,Cost of materials consumed,Stock-in-trade,100.52,100.52
+50010301007,Expiry issues,PL,Cost of materials consumed,Stock-in-trade,97.01,97.01
+50010301008,Loan Issues,PL,Cost of materials consumed,Stock-in-trade,-19.78,-19.78
+50010301009,Installation issues,PL,Cost of materials consumed,Stock-in-trade,44.69,44.69
+50010301010,Defective issues,PL,Cost of materials consumed,Stock-in-trade,113.91,113.91
+50010301011,Refurbish issues,PL,Cost of materials consumed,Stock-in-trade,94.86,94.86
+50010301012,FOC Against Instrument billing,PL,Cost of materials consumed,Stock-in-trade,1.89,1.89
+50010301013,Defective Issue - Manual,PL,Cost of materials consumed,Stock-in-trade,0.03,0.03
+50010301014,Defective issue-MFG,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50010301015,Other Issue Tax,PL,Cost of materials consumed,Stock-in-trade,120.37,120.37
+50010301016,Repair & Return,PL,Cost of materials consumed,Stock-in-trade,-6.91,-6.91
+50010301017,Free issue charge,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50010301018,MFG - Production Defective issue/receipt,PL,Cost of materials consumed,Stock-in-trade,2.55,2.55
+50010301019,MFG - R & D Issue/receipt,PL,Cost of materials consumed,Stock-in-trade,8.0,8.0
+50010301020,MFG - Spares issue/receipt,PL,Cost of materials consumed,Stock-in-trade,-0.35,-0.35
+50010301021,MFG - Refurbish issue/receipt,PL,Cost of materials consumed,Stock-in-trade,0.1,0.1
+50010301022,MFG - Dismantle issue/receipt,PL,Cost of materials consumed,Stock-in-trade,3.53,3.53
+50010301023,MFG - correction issue/receipt,PL,Cost of materials consumed,Stock-in-trade,0.3,0.3
+50010301024,Warranty Claimable,PL,Other expenses,Warranty,24.95,24.95
+50010301025,Warranty Cant Claimable,PL,Other expenses,Warranty,114.59,148.66
+50010301026,Reagent Rental contract,PL,Other expenses,Repairs and maintenance,205.57,205.57
+50010301027,Purchase Manual,PL,Cost of materials consumed,Stock-in-trade,21.56,21.56
+50010301028,Sample Issue (Short Expiry),PL,Cost of materials consumed,Stock-in-trade,0.72,0.72
+50010301029,Quality Control Issue,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101001,Purchase - Reagents,PL,Cost of materials consumed,Stock-in-trade,13208.53,13208.53
+50020101002,Purchase - Instruments,PL,Cost of materials consumed,Stock-in-trade,4457.99,4457.99
+50020101003,Purchase - Spares,PL,Cost of materials consumed,Stock-in-trade,772.17,772.17
+50020101004,Purchase - Accessories & Consumables,PL,Cost of materials consumed,Stock-in-trade,671.81,671.81
+50020101005,Purchase - Components,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101006,Purchase - Finished goods reagents,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101007,Purchase - Sub assembly,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101008,Purchase - Packing material,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101009,Purchase - Tools (MFG),PL,Cost of materials consumed,Stock-in-trade,4.75,4.75
+50020101010,Purchase Return,PL,Cost of materials consumed,Stock-in-trade,-9.43,-9.43
+50020101011,Inventory Increase Offset,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101012,Inventory Decrease Offset,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101013,Purchase Offset Account,PL,Cost of materials consumed,Stock-in-trade,-19512.18,-19512.18
+50020101014,Price Difference Account,PL,Cost of materials consumed,Stock-in-trade,6.42,6.42
+50020101015,Purchase- Raw,PL,Cost of materials consumed,Stock-in-trade,410.62,410.62
+50020101016,Purchase-COVID-19,PL,Cost of materials consumed,Stock-in-trade,1.98,1.98
+50020101017,Purchase-MFG-Instruments,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101018,Purchase-MFG Ancilliaory Reagents,PL,Cost of materials consumed,Stock-in-trade,0.7,0.7
+50020101019,Loss on transit,PL,Cost of materials consumed,Stock-in-trade,0.86,0.86
+50020101020,Purchase - Reagents_Raw material,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50020101021,Purchase - Reagents_Lab QC Material,PL,Cost of materials consumed,Stock-in-trade,0.0,0.0
+50030101001,Salary account,PL,Employee benefits expense,"Salaries, wages and bonus",2528.25,2528.25
+50030101013,Salary expense_Other adjustments,PL,Employee benefits expense,"Salaries, wages and bonus",5.56,5.56
+50030101002,Bonus account,PL,Employee benefits expense,"Salaries, wages and bonus",174.6,174.6
+50030101003,Wellness allowance,PL,Employee benefits expense,"Salaries, wages and bonus",0.0,0.0
+50030101004,Clothing & Medical allowance,PL,Employee benefits expense,"Salaries, wages and bonus",0.0,0.0
+50030101005,Leave tour allowance,PL,Employee benefits expense,"Salaries, wages and bonus",0.0,0.0
+50030101006,Sales Incentive,PL,Employee benefits expense,"Salaries, wages and bonus",274.91,274.91
+50030101007,Professional Tax employee,PL,Employee benefits expense,"Salaries, wages and bonus",0.6,0.6
+50030101008,Exgratia,PL,Employee benefits expense,"Salaries, wages and bonus",6.19,6.19
+50030101009,PF Exgratia,PL,Employee benefits expense,"Salaries, wages and bonus",0.0,0.0
+50030101010,Insurance - Staff Mediclaim,PL,Employee benefits expense,"Salaries, wages and bonus",33.56,33.56
+50030101011,Referral incentive - Employee,PL,Employee benefits expense,"Salaries, wages and bonus",3.86,3.86
+50030101012,Employee Stock Option Plan Expenses,PL,Employee benefits expense,Employee stock compensation expense (refer note 43),8.51,43.0
+50030101014,Salary for contract employees,PL,Employee benefits expense,"Salaries, wages and bonus",0.0,0.0
+50030201001,Employers State insurance fund,PL,Employee benefits expense,Contribution to provident and other funds,0.47,0.47
+50030201002,Employers Provident fund,PL,Employee benefits expense,Contribution to provident and other funds,95.6,95.6
+50030201003,Gratuity account,PL,Employee benefits expense,Contribution to Gratuity,59.09,36.44
+50030201004,Super annuation account,PL,Employee benefits expense,"Salaries, wages and bonus",16.25,16.25
+50030301001,Leave salary account,PL,Employee benefits expense,"Salaries, wages and bonus",-0.23,27.43
+50030401001,Staff welfare expense,PL,Employee benefits expense,Staff welfare expenses,39.78,39.78
+50030401002,Staff welfare - TDS,PL,Employee benefits expense,Staff welfare expenses,1.52,1.52
+50030401003,Staff welfare - Allowances,PL,Employee benefits expense,Staff welfare expenses,2.04,2.04
+50030401004,Staff welfare expense - Ineligible GST Expenses,PL,Employee benefits expense,Staff welfare expenses,9.3,9.3
+50040101001,Interest on CC a/c,PL,Finance costs,on bank borrowings,241.27,241.27
+50040101002,Interest on Term loan a/c,PL,Finance costs,on bank borrowings,50.08,50.08
+50040101003,Interest on FCNR loan a/c,PL,Finance costs,on bank borrowings,0.0,0.0
+50040101004,Interest on Car loans a/c,PL,Finance costs,on bank borrowings,0.98,0.98
+50040101005,Processing fee charges,PL,Finance costs,Other Borrowing Costs,16.7,16.7
+50040201001,Interest on Distributor deposits,PL,Finance costs,on others,5.8,5.8
+50040201002,Interest on Income tax,PL,Finance costs,on others,0.24,0.24
+50040201003,Interest on GST,PL,Finance costs,on others,0.79,0.79
+50040201004,Interest on Penalty,PL,Finance costs,on delayed payment of income tax,22.54,22.54
+50040201005,Interest Expense on Lease Liability_ROU,PL,ROU,on lease Liabilities,0.0,54.28
+50040201006,Interest Expense on Lease deposit_ROU,PL,ROU,Depreciation of Right of use asset,0.0,4.09
+50050101001,Depreciation_TA,PL,Depreciation and amortisation expense,"Depreciation of property, plant and equipment (refer note 11)",857.08,853.88
+50050101002,Depreciation_ROU,PL,ROU,Depreciation of Right of use asset,0.0,106.05
+50050201001,Depreciation_ITA,PL,Depreciation and amortisation expense,Amortisation of intangible assets (refer note 13),688.79,688.79
+50060101001,Bank charges_Domestic,PL,Other expenses,Bank charges,2.56,2.56
+50060101002,Bank charges_Export,PL,Other expenses,Bank charges,2.97,2.97
+50060201006,Rent Expense,PL,Other expenses,Rent (refer note 41.1),216.02,216.02
+50060201007,Rent expense_ROU,PL,ROU,Rent (refer note 41.1),0.0,-121.52
+50060202001,"Rates,taxes & Fees",PL,Other expenses,Rates and taxes,42.2,44.69
+50060203001,Tendor forms,PL,Other expenses,Printing and stationery,2.26,2.26
+50060203002,Printing_General,PL,Other expenses,Printing and stationery,5.05,5.05
+50060203003,Printing_Letter heads,PL,Other expenses,Printing and stationery,0.56,0.56
+50060203004,Printing_Visiting cards,PL,Other expenses,Printing and stationery,1.44,1.44
+50060203005,Printing_Xerox,PL,Other expenses,Printing and stationery,2.55,2.55
+50060203006,Stationery_General,PL,Other expenses,Printing and stationery,11.31,11.31
+50060203007,Stationery_Papers,PL,Other expenses,Printing and stationery,0.79,0.79
+50060203008,Postages,PL,Other expenses,Printing and stationery,0.03,0.03
+50060203009,Cartridges,PL,Other expenses,Printing and stationery,0.78,0.78
+50060204001,Annual maintenance charges,PL,Other expenses,Repairs and maintenance,19.29,19.29
+50060204002,Electrical maintenance,PL,Other expenses,Repairs and maintenance,0.49,0.49
+50060204003,Office maintenance_Khadi,PL,Other expenses,Repairs and maintenance,1.23,1.23
+50060204004,Office maintenance_T4,PL,Other expenses,Repairs and maintenance,0.09,0.09
+50060204005,Office maintenance_V9,PL,Other expenses,Repairs and maintenance,0.86,0.86
+50060204006,Office maintenance_General,PL,Other expenses,Repairs and maintenance,17.3,17.3
+50060204007,Maintenance charges_Director,PL,Other expenses,Repairs and maintenance,1.04,1.04
+50060204008,Pooja expenses,PL,Other expenses,Repairs and maintenance,3.21,3.21
+50060204009,Testing charges,PL,Other expenses,Repairs and maintenance,0.99,0.99
+50060204010,Office maintenance_Sub contract,PL,Other expenses,Repairs and maintenance,0.0,0.0
+50060204011,Office maintenance_CSD in house,PL,Other expenses,Repairs and maintenance,1.55,1.55
+50060204012,Office maintenance_Westminister,PL,Other expenses,Repairs and maintenance,11.14,11.14
+50060204013,Maintenance charges_Hyderabad,PL,Other expenses,Repairs and maintenance,11.54,11.54
+50060204014,Maintenance charges_CCHS,PL,Other expenses,Repairs and maintenance,2.25,2.25
+50060204015,Other material purchase,PL,Cost of materials consumed,Stock-in-trade,0.56,0.56
+50060204016,Security charges,PL,Other expenses,Repairs and maintenance,9.36,9.36
+50060204017,Repairs & Maintenance_Fixed Assets,PL,Other expenses,Repairs and maintenance,21.71,21.71
+50060204018,Office maintenance_Villivakkam,PL,Other expenses,Repairs and maintenance,6.51,6.51
+50060205001,Telephone charges_Kadhi,PL,Other expenses,Telephone and other communication expenses,0.31,0.31
+50060205002,Telephone charges_Gokul Tower,PL,Other expenses,Telephone and other communication expenses,0.16,0.16
+50060205003,Telephone charges_Director,PL,Other expenses,Telephone and other communication expenses,0.0,0.0
+50060205004,Telephone charges_CEO,PL,Other expenses,Telephone and other communication expenses,0.06,0.06
+50060205005,Telephone charges_Admin,PL,Other expenses,Telephone and other communication expenses,4.73,4.73
+50060205006,Telephone charges_Westminister,PL,Other expenses,Telephone and other communication expenses,0.36,0.36
+50060205007,Internet charges_Director,PL,Other expenses,Telephone and other communication expenses,0.0,0.0
+50060205008,Internet charges_CEO,PL,Other expenses,Telephone and other communication expenses,0.0,0.0
+50060205009,Internet charges_Others,PL,Other expenses,Telephone and other communication expenses,1.94,1.94
+50060205010,Telephone Charges_Field Staff,PL,Other expenses,Telephone and other communication expenses,11.33,11.33
+50060205011,Telephone Charges_Villivakkam,PL,Other expenses,Telephone and other communication expenses,0.04,0.04
+50060206001,Electricity Charges_Kadhi,PL,Other expenses,Power and fuel,6.92,6.92
+50060206002,Electricity Charges_L5,PL,Other expenses,Power and fuel,0.12,0.12
+50060206003,Electricity Charges_L6,PL,Other expenses,Power and fuel,0.24,0.24
+50060206004,Electricity Charges_T4,PL,Other expenses,Power and fuel,0.01,0.01
+50060206005,Electricity Charges_V9,PL,Other expenses,Power and fuel,2.02,2.02
+50060206006,Electricity Charges_Sachika,PL,Other expenses,Power and fuel,5.54,5.54
+50060206007,Electricity Charges_MFG,PL,Other expenses,Power and fuel,5.33,5.33
+50060206008,Electricity Charges_Mylapore,PL,Other expenses,Power and fuel,13.58,13.58
+50060206009,Diesel charges,PL,Other expenses,Power and fuel,0.8,0.8
+50060206010,Electricty Charges _Godown(Alapakkam),PL,Other expenses,Power and fuel,0.0,0.0
+50060206011,Electricity Charges_Gerugambakkam (Porur),PL,Other expenses,Power and fuel,1.23,1.23
+50060206012,Electricity charges_Villivakkam,PL,Other expenses,Power and fuel,13.75,13.75
+5006020001,Software Maint Charges,PL,Other expenses,Repairs and maintenance,87.01,87.01
+50060208001,Subscription charges,PL,Other expenses,Miscellaneous expenses,2.79,2.79
+50060208002,Books & Periodicals,PL,Other expenses,Miscellaneous expenses,0.06,0.06
+50060209001,Insurance Charges_Rental asset,PL,Other expenses,Insurance,3.34,3.34
+50060209002,Insurance Charges_Vehicle,PL,Other expenses,Insurance,0.89,0.89
+50060209003,Insurance Charges_Fixed assets,PL,Other expenses,Insurance,0.28,0.28
+50060209004,Insurance Charges_Stock,PL,Other expenses,Insurance,5.93,5.93
+50060209005,Insurance Charges_Transit,PL,Other expenses,Insurance,6.08,6.08
+50060209006,Insurance Charges_Staff,PL,Other expenses,Insurance,0.0,0.0
+50060209007,Insurance Charges_Staff Mediclaim - Ineligible GST Tax,PL,Other expenses,Insurance,0.23,0.23
+50060209008,Insurance charges_Term life insurance,PL,Other expenses,Insurance,6.48,6.48
+50060301001,Freight Charge_Outward,PL,Other expenses,Freight charges,610.22,610.22
+50060301002,Loading & Unloading charges,PL,Other expenses,Freight charges,21.91,21.91
+50060301003,Documentation charges,PL,Other expenses,Freight charges,0.0,0.0
+50060302001,Sales Commission - Others Paid,PL,Other expenses,Sales commission,12.09,12.09
+50060302002,Sales Commission -C & F (KOC),PL,Other expenses,Sales commission,42.54,42.54
+50060302003,Sales Commission -C & F (BLR),PL,Other expenses,Sales commission,44.19,44.19
+50060302004,Sales Commission -C & F (DEL),PL,Other expenses,Sales commission,59.32,59.32
+50060302005,Sales commission -C & F (KOL),PL,Other expenses,Sales commission,41.61,41.61
+50060302006,Sales commission -C & F (HYD),PL,Other expenses,Sales commission,54.67,54.67
+50060302007,Sales commission -C & F (MUM),PL,Other expenses,Sales commission,57.48,57.48
+50060303001,Discounts to customers,PL,Revenue from operations,- Traded goods,-6.31,19.09
+50060303002,Discounts to Distributors,PL,Revenue from operations,- Traded goods,0.0,0.0
+50060304001,Packing Charges,PL,Other expenses,Packing charges,43.53,43.53
+50060304002,Packing charges - Ineligible GST Expense,PL,Other expenses,Packing charges,0.0,0.0
+50060305001,License Fees,PL,Other expenses,Rates and taxes,30.99,30.99
+50060305002,Membership Fee,PL,Other expenses,Miscellaneous expenses,0.85,0.85
+50060306001,Bad Debts Write-off,PL,Other expenses,Bad debts written off,0.54,40.11
+50060306002,Provision for Doubtful debts,PL,Other expenses,Provision for Doubtful debts,76.94,84.48
+50060306003,Bad debts - Others,PL,Other expenses,Bad debts written off,0.0,0.0
+50060307001,Sales Meet & training,PL,Other expenses,Advertising and sales promotion,7.78,7.78
+50060307002,Sales Training Expenses_ICRT,PL,Other expenses,Advertising and sales promotion,18.57,18.57
+50060307003,Sales Training Expenses_Instrument,PL,Other expenses,Advertising and sales promotion,0.04,0.04
+50060307004,Sales Training Exp-outside faculty,PL,Other expenses,Advertising and sales promotion,0.23,0.23
+50060307005,Training Expense - Customer,PL,Other expenses,Advertising and sales promotion,19.73,19.73
+50060307006,Training Expenses - CSD,PL,Other expenses,Advertising and sales promotion,1.66,1.66
+50060307007,Training Expenses - STAFF,PL,Other expenses,Advertising and sales promotion,23.82,23.82
+50060308001,Sales Prom-Stall &conferance,PL,Other expenses,Advertising and sales promotion,34.13,34.13
+50060308002,SALES MEET - DISTRIBUTOR,PL,Other expenses,Advertising and sales promotion,39.07,39.07
+50060308003,Sales Meet-Senate/Cabinet,PL,Other expenses,Advertising and sales promotion,0.0,0.0
+50060308004,Sales Meet - Region,PL,Other expenses,Advertising and sales promotion,0.43,0.43
+50060308005,Sales Meet - CSD,PL,Other expenses,Advertising and sales promotion,0.1,0.1
+50060308006,Annual sales meet,PL,Other expenses,Advertising and sales promotion,0.0,0.0
+50060308007,Sales Meet - Business/Strategy,PL,Other expenses,Advertising and sales promotion,0.38,0.38
+50060308008,SALES MEET -REVIEW,PL,Other expenses,Advertising and sales promotion,1.36,1.36
+50060309001,Sales Promotion Expenses - Guest,PL,Other expenses,Advertising and sales promotion,0.04,0.04
+50060309002,Sales Promotion Expenses - Gift,PL,Other expenses,Advertising and sales promotion,0.38,0.38
+50060309003,Sales Prom Exp - CME,PL,Other expenses,Advertising and sales promotion,16.27,16.27
+50060309004,Sales Prom Exp -Videos for prod,PL,Other expenses,Advertising and sales promotion,2.73,2.73
+50060309005,Sales Promotion Expenses - Medicall,PL,Other expenses,Advertising and sales promotion,1.11,1.11
+50060309006,Sales promotion - Participation fees,PL,Other expenses,Advertising and sales promotion,0.0,0.0
+50060309007,Sales Promotion-Brochures & Design,PL,Other expenses,Advertising and sales promotion,13.1,13.1
+50060309008,Sales Promotion Expenses - Guest (194R),PL,Other expenses,Advertising and sales promotion,0.0,0.0
+50060309009,Sales Promotion Exp - Product development,PL,Other expenses,Advertising and sales promotion,3.59,3.59
+50060309010,Advertisement expenses,PL,Other expenses,Advertising and sales promotion,0.0,0.0
+50060309011,Sales promotion_ Sponsorship,PL,Other expenses,Advertising and sales promotion,15.25,15.25
+50060309012,Sales Promotion_ others,PL,Other expenses,Advertising and sales promotion,24.68,24.68
+50060309013,Sales Promotion - Ineligible GST Expenses,PL,Other expenses,Advertising and sales promotion,0.25,0.25
+50060401001,Travelling Expenses - Foreign (Others),PL,Other expenses,Travelling and conveyance expenses,65.28,65.28
+50060401002,Travelling Expenses - Staff,PL,Other expenses,Travelling and conveyance expenses,83.95,83.95
+50060401003,Travelling Expenses - Guest,PL,Other expenses,Travelling and conveyance expenses,9.5,9.5
+50060401004,Travelling Expenses - Consultant,PL,Other expenses,Travelling and conveyance expenses,3.41,3.41
+50060401005,Transfer Allowance,PL,Other expenses,Travelling and conveyance expenses,0.69,0.69
+50060401006,Travelling Expenses - TA,PL,Other expenses,Travelling and conveyance expenses,711.94,711.94
+50060401007,Travelling Expenses - Products / Demo,PL,Other expenses,Travelling and conveyance expenses,3.92,3.92
+50060401008,Travelling Expenses - Directors / CEO,PL,Other expenses,Travelling and conveyance expenses,2.74,2.74
+50060401009,Travelling /Accommodation Expenses - Interview,PL,Other expenses,Travelling and conveyance expenses,0.08,0.08
+50060401010,Travelling expenses - Staff - Ineligible GST Expenses,PL,Other expenses,Travelling and conveyance expenses,0.18,0.18
+50060402001,Accommodation expenses - Foreign (Others),PL,Other expenses,Travelling and conveyance expenses,0.0,0.0
+50060402002,Accommodation expenses - Staff,PL,Other expenses,Travelling and conveyance expenses,22.22,22.22
+50060402003,Accommodation expenses - Guest,PL,Other expenses,Travelling and conveyance expenses,4.74,4.74
+50060402004,Accommodation expenses - Consultant,PL,Other expenses,Travelling and conveyance expenses,0.03,0.03
+50060402005,Accommodation expenses - TA,PL,Other expenses,Travelling and conveyance expenses,0.0,0.0
+50060403001,Food expenses - Foreign (Others),PL,Other expenses,Travelling and conveyance expenses,0.0,0.0
+50060403002,Food expenses - Staff,PL,Other expenses,Travelling and conveyance expenses,0.07,0.07
+50060403003,Food expenses - Guest,PL,Other expenses,Travelling and conveyance expenses,0.52,0.52
+50060403004,Food expenses - Consultant,PL,Other expenses,Travelling and conveyance expenses,0.0,0.0
+50060403005,Food expenses - TA,PL,Other expenses,Travelling and conveyance expenses,0.0,0.0
+50060403006,Food & Beverage Expenses @ 5%- Ineligible GST expenses,PL,Other expenses,Travelling and conveyance expenses,0.0,0.0
+50060404001,Car Maintenance_CEO,PL,Other expenses,Repairs and maintenance,5.49,5.49
+50060404002,Car Maintenance_Director,PL,Other expenses,Repairs and maintenance,0.32,0.32
+50060404003,Car Fuel_CEO,PL,Other expenses,Repairs and maintenance,0.0,0.0
+50060404004,Car Fuel_Director,PL,Other expenses,Repairs and maintenance,1.22,1.22
+50060404005,Car Maintenance_Employee,PL,Other expenses,Repairs and maintenance,0.08,0.08
+50060404006,Car Fuel_Employee,PL,Other expenses,Repairs and maintenance,0.0,0.0
+50060404007,Two wheeler_Fuel,PL,Other expenses,Repairs and maintenance,0.19,0.19
+50060405001,LOCAL CONVEYANCE CHARGES,PL,Other expenses,Travelling and conveyance expenses,6.8,6.8
+50060501001,Professional charges,PL,Other expenses,Legal and professional fees (refer note (i) below),196.54,266.54
+50060501002,Consultancy charges,PL,Other expenses,Legal and professional fees (refer note (i) below),54.4,54.4
+50060501003,Consultancy charges_Manpower,PL,Other expenses,Legal and professional fees (refer note (i) below),1.31,1.31
+50060501004,Stipend Charges - Internship,PL,Other expenses,Legal and professional fees (refer note (i) below),23.06,10.72
+50060501005,Brokerage charges,PL,Other expenses,Legal and professional fees (refer note (i) below),10.0,10.0
+50060502001,Audit fee_IFRS,PL,Other expenses,Legal and professional fees (refer note (i) below),12.67,12.67
+50060502002,Audit fee_Statutory,PL,Other expenses,Legal and professional fees (refer note (i) below),13.0,13.0
+50060502003,Audit fee_Tax,PL,Other expenses,Legal and professional fees (refer note (i) below),4.5,4.5
+50060502004,Audit fee_Certification,PL,Other expenses,Legal and professional fees (refer note (i) below),0.0,0.0
+50060502005,Internal Audit fee,PL,Other expenses,Legal and professional fees (refer note (i) below),10.0,10.0
+50060503001,Legal expense,PL,Other expenses,Legal and professional fees (refer note (i) below),2.47,2.47
+50060601001,Profit/loss on sale of asset_Land,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.0,0.0
+50060601002,Profit/loss on sale of asset_Building,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.0,0.0
+50060601003,Profit/loss on sale of asset_Temparory partition,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",7.47,7.47
+50060601004,Profit/loss on sale of asset_Plant & Machinery,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",24.65,24.65
+50060601005,Profit/loss on sale of asset_Plant & Machinery_MFG,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.53,0.53
+50060601006,Profit/loss on sale of asset_Furniture & Fixures,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.65,0.65
+50060601007,Profit/loss on sale of asset_Office equipment,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.23,0.23
+50060601008,Profit/loss on sale of asset_Computers,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.03,0.03
+50060601009,Profit/loss on sale of asset_Vehicles,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",39.25,39.25
+50060601010,Profit/loss on sale of asset_Software,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.41,0.41
+50060601011,Profit/loss on sale of asset_Trade marks,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.0,0.0
+50060601012,Impairment Gain / Loss,PL,Other expenses,Impairment on Goodwill,0.0,0.0
+50060601013,Profit/loss on lease closure_ROU,PL,Other income,"Net gain / loss on sale of propety, plant and equipment",0.0,-1.79
+50060602001,Realised gain,PL,Other expenses,Net Gain on account of foreign exchange fluctuations,-141.37,-141.37
+50060602002,Realised loss,PL,Other expenses,Net Gain on account of foreign exchange fluctuations,165.04,165.04
+50060602003,Unrealised gain,PL,Other expenses,Net Gain on account of foreign exchange fluctuations,-28.34,-28.34
+50060602004,Unrealised Loss,PL,Other expenses,Net Gain on account of foreign exchange fluctuations,-0.01,-0.01
+50060602005,Rounding account,PL,Other expenses,Miscellaneous expenses,0.32,0.32
+50060602006,Exchange rate difference,PL,Other expenses,Net Gain on account of foreign exchange fluctuations,-0.02,-0.02
+50060603001,CSR Expenses,PL,Other expenses,Corporate Social Responsibility Expenditure (refer note (ii) below),7.0,28.6
+50060603002,Branch Clearing Charges,PL,Control Account,Control Account,0.0,0.0
+50070101,Prior Period Tax expenses,PL,Current Tax Expense,- Current tax,69.66,69.66
+50070102,Current Tax Expense,PL,Current Tax Expense,- Current tax,561.18,711.01
+50070103,Current Tax expense_ROU,PL,ROU,,0.0,0.0
+50070201,Deferred Tax Expense,PL,Deferred Tax Expense,- Deferred tax,-211.13,-203.87
+50070202,Deferred Tax expense _ROU,PL,ROU,,0.0,0.0
+50080101,Other comprehensive Income/expense,PL,Other comprehensive income,Other comprehensive income,11.16,11.1
+Liability for sales return,Liability for sales return,BS,Other current liabilities,Liability for sales return,-365.36,-452.12
+Right to recover inventory,Right to recover inventory,BS,Other current assets,Right to recover inventory,238.89,379.8
+Deferred Deposits from customers,Deferred Deposits from customers,BS,Other current liabilities,Deposits from customers,-13.08,-12.2
+Other financial liabilities,Other financial liabilities,BS,Other financial liabilities,Deposits from customers,13.08,12.2

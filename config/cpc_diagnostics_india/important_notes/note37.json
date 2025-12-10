@@ -1,0 +1,256 @@
+{
+  "note_number": "NOTE 37",
+  "note_title": "Related Party Disclosures",
+  "output_file": "cpc_note_37_related_party_transactions.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items for the period ended March 31, 2025. If values are empty/zero, display 'Nil'.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "Related Party Disclosures",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "a. Names of related parties and description of relationship",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Subsidiary company",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "italic": true
+    },
+    {
+      "label": "      Jeev Diagnostics Private Limited ('Jeev')",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "   Key Managerial Personnel ('KMP')",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "italic": true
+    },
+    {
+      "label": "      Mr. R.Panchanath, Managing Director",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "      Mrs. Bhuvana Panchanath, Whole time director",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "      Mr. Raman Gandotra, Director",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "      Mr. Chan Cher Mayn, Director",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "      Mr. Chua Fabian Kai Jun, Director",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "      Dr. Pramod Kabra, Chief Executive Officer",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "   Relatives of KMP",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "italic": true
+    },
+    {
+      "label": "      Mr. R Kailasnath - Brother of R Panchanath",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "      Mrs. Mahalakshmi Shankar - Sister of Malini Kailasnath",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "b. Related party transactions",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Everlife Holdings Pte Ltd - Management fees",
+      "ind_as_minor": [ "Everlife Holdings Pte Ltd - Management fees" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Jeev - Purchase of reagents",
+      "ind_as_minor": [ "Jeev - Purchase of reagents" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Jeev - Sale of reagents",
+      "ind_as_minor": [ "Jeev - Sale of reagents" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mr. R.Kailasnath - Remuneration to directors",
+      "ind_as_minor": [ "Mr. R.Kailasnath - Remuneration to directors" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mr. R.Kailasnath - Rent expense",
+      "ind_as_minor": [ "Mr. R.Kailasnath - Rent expense" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mr. R.Kailasnath - Incentive",
+      "ind_as_minor": [ "Mr. R.Kailasnath - Incentive" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mr. R.Panchanath - Rent expense",
+      "ind_as_minor": [ "Mr. R.Panchanath - Rent expense" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mr. R.Panchanath - Remuneration to directors",
+      "ind_as_minor": [ "Mr. R.Panchanath - Remuneration to directors" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mrs. Malini Kailasnath - Remuneration to directors",
+      "ind_as_minor": [ "Mrs. Malini Kailasnath - Remuneration to directors" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mrs. Bhuvana Panchanath - Remuneration to directors",
+      "ind_as_minor": [ "Mrs. Bhuvana Panchanath - Remuneration to directors" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Dr. Pramod Kabra - Salary",
+      "ind_as_minor": [ "Dr. Pramod Kabra - Salary" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mr. Vivek R Kailasnath - Salary",
+      "ind_as_minor": [ "Mr. Vivek R Kailasnath - Salary" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mr. Ashwin N Kailasnath - Salary",
+      "ind_as_minor": [ "Mr. Ashwin N Kailasnath - Salary" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Mrs. Mahalakshmi Shankar - Availment of services",
+      "ind_as_minor": [ "Mrs. Mahalakshmi Shankar - Availment of services" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "c. Related party balances outstanding",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Trade receivable - Jeev",
+      "ind_as_minor": [ "Trade receivable - Jeev" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Advance for supply of goods - Jeev",
+      "ind_as_minor": [ "Advance for supply of goods - Jeev" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Trade payable - Jeev",
+      "ind_as_minor": [ "Trade payable - Jeev" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Employee benefits payables - Mr. R.Kailasnath",
+      "ind_as_minor": [ "Employee benefits payables - Mr. R.Kailasnath" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Employee benefits payables - Mr. R.Panchanath",
+      "ind_as_minor": [ "Employee benefits payables - Mr. R.Panchanath" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Employee benefits payables - Mrs. Malini Kailasnath",
+      "ind_as_minor": [ "Employee benefits payables - Mrs. Malini Kailasnath" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Employee benefits payables - Mrs. Bhuvana Panchanath",
+      "ind_as_minor": [ "Employee benefits payables - Mrs. Bhuvana Panchanath" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Employee benefits payables - Dr. Pramod Kabra",
+      "ind_as_minor": [ "Employee benefits payables - Dr. Pramod Kabra" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Employee benefits payables - Mr. Vivek R Kailasnath",
+      "ind_as_minor": [ "Employee benefits payables - Mr. Vivek R Kailasnath" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Employee benefits payables - Mr. Ashwin N Kailasnath",
+      "ind_as_minor": [ "Employee benefits payables - Mr. Ashwin N Kailasnath" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Reimbursement of Expenses - Jeev",
+      "ind_as_minor": [ "Reimbursement of Expenses - Jeev" ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 37: RELATED PARTY DISCLOSURES**\n\nPresentation Requirements:\n1.  **Section (a) Names**: List all related parties (Subsidiaries, KMP, Relatives) as static text items exactly as they appear in the source.\n2.  **Section (b) Transactions**: List all transactions specified in the source file. Extract values for 'For the year ended March 31, 2025'.\n3.  **Section (c) Balances**: List all outstanding balances specified in the source file. Extract values for 'As at March 31, 2025'.\n\nFormatting:\n-   Since the source file contains empty values for March 2025, the output should reflect 'Nil' or the extracted empty value for these line items.\n-   Ensure every line item from the source file is represented in the output list."
+}

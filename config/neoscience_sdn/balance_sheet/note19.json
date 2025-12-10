@@ -1,0 +1,46 @@
+{
+  "note_number": "NOTE 19",
+  "note_title": "Trade Payables",
+  "output_file": "Neoscience_Note_14_Trade_Payables.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate all trade payable categories to determine the total liability.",
+  "categories": [
+    "Due to Micro enterprises and small enterprises",
+    "Due to related parties (Trade Payables)",
+    "Due to others"
+  ],
+  "output_format": [
+    {
+      "label": "Due to Micro enterprises and small enterprises",
+      "ind_as_minor": ["Due to Micro enterprises and small enterprises"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Due to related parties",
+      "ind_as_minor": ["Due to related parties (Trade Payables)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Due to others",
+      "ind_as_minor": ["Due to others"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Due to Micro enterprises and small enterprises",
+        "Due to related parties",
+        "Due to others"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The total amount is the sum of all components. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

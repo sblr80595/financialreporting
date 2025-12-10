@@ -1,0 +1,111 @@
+{
+    "note_number": "NOTE 15",
+    "note_title": "Other Equity",
+    "output_file": "company_note_15_other_equity.md",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. All Equity accounts (credit) are negative. Calculations must sum these raw values, then flip the sign of the result for presentation.",
+    "categories": [
+        "Capital Redemption Reserve",
+        "Securities Premium Reserve",
+        "General Reserve",
+        "Retained earnings",
+        "Share Based Payment Reserve"
+    ],
+    "output_format": [
+        {
+            "label": "(i) Reserves",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Securities Premium Reserve",
+            "ind_as_minor": ["Securities Premium Reserve"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Capital Redemption Reserve",
+            "ind_as_minor": ["Capital Redemption Reserve"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "General Reserve",
+            "ind_as_minor": ["General Reserve"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Employee Stock Options Reserve (Mapped to Share Based Payment Reserve)",
+            "ind_as_minor": ["Share Based Payment Reserve"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Total Reserves",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": [
+                "Securities Premium Reserve",
+                "Capital Redemption Reserve",
+                "General Reserve",
+                "Employee Stock Options Reserve (Mapped to Share Based Payment Reserve)"
+            ],
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(ii) Retained earnings - Movement",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Balance at the beginning of the year",
+            "ind_as_minor": [
+                "Retained earnings"
+            ],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Profit for the year",
+            "ind_as_minor": [],
+            "aggregation": "sum",
+            "is_placeholder": true
+        },
+        {
+            "label": "Balance at the end of the year (Retained Earnings)",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": [
+                "Balance at the beginning of the year",
+                "Profit for the year"
+            ],
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "Total Other equity (Reserves + Retained Earnings)",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "sum",
+            "sum_of": [
+                "Total Reserves",
+                "Balance at the end of the year (Retained Earnings)"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n\n**NOTE 15: OTHER EQUITY**\n\n1.  **Reserves:** Sum and display all statutory reserves (Securities Premium, General, Capital Redemption) and the Share Based Payment Reserve. These are credit balances and must be displayed positively.\n2.  **Retained Earnings:** Display movement:\n    * `Balance at the beginning of the year`: Mapped to the 'Retained earnings' category (credit balance, sign-flipped).\n    * `Profit for the year`: Placeholder (will be 0 unless external data is provided).\n3.  **Total Other equity:** Sum of 'Total Reserves' and 'Balance at the end of the year (Retained Earnings)'.\n\nCritial Limitation: 'Profit for the year' is not in the trial balance. The template will show 0 for this line unless the value is manually inserted before execution."
+}

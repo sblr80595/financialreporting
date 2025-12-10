@@ -1,0 +1,18 @@
+{
+  "note_number": "NOTE 24",
+  "note_title": "Revenue from Operations",
+  "output_file": "ttps_fs_note_24_revenue_from_operations.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the final notes. Sum algebraically: Sales - Returns - Discounts.",
+  "categories": [
+    "Finished goods"
+  ],
+  "output_format": [
+    {
+      "label": "**Sale of products**",
+      "ind_as_minor": "Finished goods",
+      "is_header": true
+    }
+  ],
+  "additional_instructions": "This note captures revenue from sale of traded goods. Present the net amount as positive value in the final note. IMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

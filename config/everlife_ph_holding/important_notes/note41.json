@@ -1,0 +1,105 @@
+{
+  "note_number": "NOTE 41",
+  "note_title": "Revenue from Contracts with Customers",
+  "output_file": "everlife_ph_holdings_note_39_revenue.txt",
+  "statement_type": "p&l",
+  "summation_rule": "Extract P&L debit balances (which are expenses/costs) or use P&L credit balances (Revenue) and sign-flip them to present as positive revenue amounts.",
+  "categories": [
+    "Revenue - Sale of Goods",
+    "Revenue - Rendering of Services",
+    "Revenue - Commission Income",
+    "Revenue - Interest Income",
+    "Revenue - Other Operating Revenue",
+    "Revenue Timing - Recognised at a Point in Time",
+    "Revenue Timing - Recognised Over Time"
+  ],
+  "output_format": [
+    {
+      "label": "A. Disaggregation of Revenue by Nature/Type",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Revenue from Sale of Goods",
+      "ind_as_minor": [
+        "Revenue - Sale of Goods"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Revenue from Rendering of Services",
+      "ind_as_minor": [
+        "Revenue - Rendering of Services"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Commission Income",
+      "ind_as_minor": [
+        "Revenue - Commission Income"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Other Operating Revenue",
+      "ind_as_minor": [
+        "Revenue - Other Operating Revenue"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Operating Revenue",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Revenue from Sale of Goods",
+        "Revenue from Rendering of Services",
+        "Commission Income",
+        "Other Operating Revenue"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Disaggregation of Revenue by Timing of Recognition",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Revenue recognised at a point in time",
+      "ind_as_minor": [
+        "Revenue Timing - Recognised at a Point in Time"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Revenue recognised over time",
+      "ind_as_minor": [
+        "Revenue Timing - Recognised Over Time"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Revenue (Timing)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Revenue recognised at a point in time",
+        "Revenue recognised over time"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "This note must disaggregate revenue by both nature and timing as required by Ind AS 115. All revenue amounts (credit balances) must be sign-flipped to present them as positive figures. The sum of Section A and Section B totals should ideally equal the total Revenue from Operations reported on the face of the P&L statement."
+}

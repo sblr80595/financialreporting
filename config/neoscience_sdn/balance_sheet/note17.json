@@ -1,0 +1,38 @@
+{
+  "note_number": "NOTE 17",
+  "note_title": "Borrowings (Current)",
+  "output_file": "Neoscience_Note_16_Borrowings.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate all current borrowing components to determine the total liability.",
+  "categories": [
+    "Loan from related party (refer note 45)*",
+    "Cash credit limit from bank"
+  ],
+  "output_format": [
+    {
+      "label": "Loan from related party",
+      "ind_as_minor": ["Loan from related party (refer note 45)*"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Cash credit limit from bank",
+      "ind_as_minor": ["Cash credit limit from bank"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Loan from related party",
+        "Cash credit limit from bank"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The total amount is the sum of all components. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

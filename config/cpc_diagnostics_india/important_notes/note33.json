@@ -1,0 +1,82 @@
+{
+  "note_number": "NOTE 33",
+  "note_title": "Expenditure and Earnings in Foreign Currency",
+  "output_file": "cpc_note_33_foreign_currency.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items for the period ended March 31, 2025.",
+  "categories": [
+    "Travel expenses",
+    "Management Fees",
+    "Growth Strategy",
+    "Sale of products"
+  ],
+  "output_format": [
+    {
+      "label": "Expenditure in foreign currency",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Travel expenses",
+      "ind_as_minor": [
+        "Travel expenses"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Management Fees",
+      "ind_as_minor": [
+        "Management Fees"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Growth Strategy",
+      "ind_as_minor": [
+        "Growth Strategy"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Expenditure in foreign currency",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "   Travel expenses",
+        "   Management Fees",
+        "   Growth Strategy"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Earnings in foreign currency",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Sale of products",
+      "ind_as_minor": [
+        "Sale of products"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Earnings in foreign currency",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "   Sale of products"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 33: EXPENDITURE AND EARNINGS IN FOREIGN CURRENCY**\n\nPresentation Requirements:\n\n**Expenditure in foreign currency**\n1.  **Travel expenses**: Sum of 'Travel expenses'.\n2.  **Management Fees**: Sum of 'Management Fees'.\n3.  **Growth Strategy**: Sum of 'Growth Strategy'.\n4.  **Total**: Sum of the above expenditure items.\n\n**Earnings in foreign currency**\n1.  **Sale of products**: Sum of 'Sale of products'.\n2.  **Total**: Sum of the above earnings items.\n\nFormatting:\n-   Extract data specifically for the period **March 2025**.\n-   Format all amounts in the Indian numbering system."
+}

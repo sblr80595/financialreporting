@@ -1,0 +1,47 @@
+{
+  "note_number": "NOTE 24",
+  "note_title": "Revenue from Operations",
+  "output_file": "cpc_diagnostics_india_note_24_revenue_from_operations.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation.",
+  "categories": [
+    "- Finished goods",
+    "- Traded goods",
+    "- Annual maintenance contracts",
+    "-Scrap sales"
+  ],
+  "output_format": [
+    {
+      "label": "Sale of Products",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "  - Finished goods",
+      "ind_as_minor": "- Finished goods"
+    },
+    {
+      "label": "  - Traded goods",
+      "ind_as_minor": "- Traded goods"
+    },
+    {
+      "label": "Sale of services",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "  - Annual maintenance contracts",
+      "ind_as_minor": "- Annual maintenance contracts"
+    },
+    {
+      "label": "Other operating revenue",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "  -Scrap sales",
+      "ind_as_minor": "-Scrap sales"
+    }
+  ],
+  "additional_instructions": "Note: Revenue from operations includes Sale of Products (Finished goods, Traded goods), Sale of services (Annual maintenance contracts), and Other operating revenue (Scrap sales). Handle the formatting accordingly to maintain Schedule III compliance."
+}

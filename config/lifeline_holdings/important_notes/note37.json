@@ -1,0 +1,17 @@
+{
+    "note_number": "NOTE 37",
+    "note_title": "Events After Reporting Date",
+    "output_file": "company_note_37_events_after_reporting.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Not Applicable - This is a qualitative disclosure note.",
+    "categories": [],
+    "output_format": [
+        {
+            "label": "Events After Reporting Date",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "This note must comply with **Ind AS 10**. Generate a narrative stating that 'No material adjusting or non-adjusting events have occurred between the reporting date and the date when the financial statements were approved by the Board of Directors.' Use 'Nil' for any quantitative data placeholders."
+}

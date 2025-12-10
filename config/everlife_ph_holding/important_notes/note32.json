@@ -1,0 +1,142 @@
+{
+  "note_number": "NOTE 33",
+  "note_title": "Financial Instruments",
+  "output_file": "ttpl_note_33_financial_instruments.md",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the 'period' column. For Assets, take debit balances (positive value). For Liabilities, take credit balances (negative value), but present them as positive numbers by flipping the sign (multiply by -1).",
+  "categories": [
+    "Financial Assets - Amortised Cost - Trade Receivables",
+    "Financial Assets - Amortised Cost - Loans & Advances",
+    "Financial Assets - Amortised Cost - Cash and Cash Equivalents",
+    "Financial Assets - FVTPL - Mutual Funds",
+    "Financial Assets - FVTOCI - Equity Investments",
+    "Financial Liabilities - Amortised Cost - Trade Payables",
+    "Financial Liabilities - Amortised Cost - Borrowings and Lease Liabilities",
+    "Financial Liabilities - Amortised Cost - Other Financial Liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "A. Financial Assets",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Measured at Amortised Cost",
+      "is_section_header": true
+    },
+    {
+      "label": "Trade Receivables (net of ECL)", 
+      "ind_as_minor": [
+        "Financial Assets - Amortised Cost - Trade Receivables"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Loans, advances and other deposits", 
+      "ind_as_minor": [
+        "Financial Assets - Amortised Cost - Loans & Advances"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Cash and Bank Balances", 
+      "ind_as_minor": [
+        "Financial Assets - Amortised Cost - Cash and Cash Equivalents"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Measured at Fair Value Through Profit or Loss (FVTPL)",
+      "is_section_header": true
+    },
+    {
+      "label": "Investments in Mutual Funds", 
+      "ind_as_minor": [
+        "Financial Assets - FVTPL - Mutual Funds"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Measured at Fair Value Through Other Comprehensive Income (FVTOCI)",
+      "is_section_header": true
+    },
+    {
+      "label": "Non-current Equity Investments",
+      "ind_as_minor": [
+        "Financial Assets - FVTOCI - Equity Investments"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "TOTAL FINANCIAL ASSETS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Trade Receivables (net of ECL)",
+        "Loans, advances and other deposits",
+        "Cash and Bank Balances",
+        "Investments in Mutual Funds",
+        "Non-current Equity Investments"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Financial Liabilities",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Measured at Amortised Cost",
+      "is_section_header": true
+    },
+    {
+      "label": "Trade Payables", 
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Trade Payables"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Borrowings and Lease Liabilities", 
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Borrowings and Lease Liabilities"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Other Financial Liabilities", 
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Other Financial Liabilities"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "TOTAL FINANCIAL LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Trade Payables",
+        "Borrowings and Lease Liabilities",
+        "Other Financial Liabilities"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 33: FINANCIAL INSTRUMENTS**\n\n1.  Separate the disclosure into 'A. Financial Assets' and 'B. Financial Liabilities'.\n2.  Group the line items by the Ind AS 109 measurement category (Amortised Cost, FVTPL, FVTOCI).\n3.  Ensure all liability amounts are presented as POSITIVE values ('sign_flip': true).\n4.  Compute and display the 'TOTAL FINANCIAL ASSETS' and 'TOTAL FINANCIAL LIABILITIES'.\n\nAccounting Context:\n-   This note complies with the disclosure requirements of **Ind AS 107** (Financial Instruments: Disclosures), presenting the carrying amount of financial assets and liabilities by their measurement category under **Ind AS 109**.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456)."
+}

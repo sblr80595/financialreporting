@@ -1,0 +1,81 @@
+{
+    "note_number": "NOTE 36",
+    "note_title": "Revenue from Contracts with Customers",
+    "output_file": "company_note_36_revenue.txt",
+    "statement_type": "profit-and-loss",
+    "summation_rule": "Extract closing balance values from the period column. Revenue and Contract Liabilities (credit balances) must be sign-flipped to be shown as positive/gross values in the note. Contract Assets (debit balances) retain their sign.",
+    "categories": [
+        "Revenue Sale of Goods",
+        "Revenue from Services",
+        "Contract Assets Gross",
+        "Contract Liabilities",
+        "Revenue recognized from CL"
+    ],
+    "output_format": [
+        {
+            "label": "(I) Disaggregation of Revenue (Major Product/Service Lines)",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Revenue from Sale of Goods/Products",
+            "ind_as_minor": ["Revenue Sale of Goods"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Revenue from Services",
+            "ind_as_minor": ["Revenue from Services"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Total Revenue (Note: Must reconcile with P&L Statement)",
+            "ind_as_minor": null,
+            "is_total": true,
+            "source_file": "PL_Statement_Output.xlsx",
+            "source_mapping": "Total Revenue",
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(II) Contract Balances",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Contract Assets (Debit Balance)",
+            "ind_as_minor": ["Contract Assets Gross"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Contract Liabilities (Credit Balance)",
+            "ind_as_minor": ["Contract Liabilities"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(III) Revenue Recognised in the Period",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Revenue recognised from amounts included in contract liabilities at the beginning of the period",
+            "ind_as_minor": ["Revenue recognized from CL"],
+            "aggregation": "sum",
+            "sign_flip": true
+        }
+    ],
+    "additional_instructions": "This note details the revenue components and contract balances as required by Ind AS 115. Revenue and Contract Liabilities are credit balances in the trial balance and must be displayed as positive amounts (sign_flip=true). Contract Assets are debit balances. The final total revenue must be extracted from the output P&L statement (PL_Statement_Output.xlsx) for reconciliation. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

@@ -1,0 +1,122 @@
+{
+    "note_number": "NOTE 35",
+    "note_title": "Related Party Disclosures",
+    "output_file": "company_note_35_related_party_disclosures_lifeline_diagnostics.txt",
+    "statement_type": "notes",
+    "summation_rule": "Extract data from ttpl_impnotes.csv (Lifeline Diagnostics section). Section A lists relationships including Holding, Related Companies, Fellow Subsidiaries, and KMP. Section B and C detail transactions and balances for years ended 31 March 2025, 2024, and 2023.",
+    "categories": [
+        "Lifeline Holdings, Inc.",
+        "Everlife Holdings Pte Limited",
+        "CPC Diagnostics Pvt Ltd.",
+        "Everlife Philippines Holding, Inc.",
+        "Artic GmbH, Germany",
+        "Translumina France",
+        "LAMED Vertriebsgesellschaft",
+        "Blue Medical Devices BV",
+        "Chemopharm SDN BHD",
+        "Chemoscience Phils. Inc.",
+        "MPHP Punita Sharma",
+        "Mr. Gurmit Singh Chugh",
+        "Mr. Vishal Sharma",
+        "Mr. Avnish Mehra",
+        "Mr. Arjun Oberoi",
+        "Mr. Vishal Goenka",
+        "Mr. Indranil Mukherjee",
+        "Rex A.Tiri",
+        "Rent Paid",
+        "Dividend Paid",
+        "Reimbursement of Expenses",
+        "Management fees",
+        "Receivable",
+        "Employee related payable",
+        "Payable",
+        "Trade payable",
+        "Right of Use assets"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Names of related parties and related party relationship",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Related parties where control exists",
+            "ind_as_minor": [
+                "Lifeline Holdings, Inc. (Holding Company)",
+                "Everlife Holdings Pte Limited (Related Company)",
+                "CPC Diagnostics Pvt Ltd. (Related Company)",
+                "Everlife Philippines Holding, Inc. (Related Company)",
+                "Artic GmbH, Germany (Related Company)"
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "Fellow Subsidiaries",
+            "ind_as_minor": [
+                "Translumina France",
+                "LAMED Vertriebsgesellschaft",
+                "Blue Medical Devices BV",
+                "Chemopharm SDN BHD",
+                "Chemoscience Phils. Inc."
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "Key Management Personnel ('KMP')",
+            "ind_as_minor": [
+                "MPHP Punita Sharma",
+                "Mr. Gurmit Singh Chugh",
+                "Mr. Vishal Sharma",
+                "Mr. Avnish Mehra",
+                "Mr. Arjun Oberoi",
+                "Mr. Vishal Goenka",
+                "Mr. Indranil Mukherjee",
+                "Rex A.Tiri"
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Transactions with related parties",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Transactions during the year (Management Fees, Rent, etc.)",
+            "ind_as_minor": [
+                "Management fees",
+                "Rent Paid",
+                "Dividend Paid",
+                "Reimbursement of Expenses"
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(C) Balances outstanding at year end",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Balances (Receivables, Payables, ROU Assets)",
+            "ind_as_minor": [
+                "Receivable",
+                "Employee related payable",
+                "Payable",
+                "Trade payable",
+                "Right of Use assets"
+            ],
+            "aggregation": "table_placeholder"
+        }
+    ],
+    "additional_instructions": "Data is in PHP (Pesos). Columns represent years ended 31 March 2025, 2024, and 2023. Ensure KMP list combines both the definition section and those appearing in transactions (e.g. Rex A.Tiri)."
+}

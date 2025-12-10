@@ -1,0 +1,102 @@
+{
+  "note_number": "NOTE 8",
+  "note_title": "Inventories",
+  "output_file": "ttpl_note_8_inventories.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For inventory items, take positive debit balances. For provisions, take the absolute value of credit balances and present as a deduction.",
+  "categories": [
+    "Stock-in-trade",
+    "Finished goods",
+    "Raw material and packaging material",
+    "Work-in-progress",
+    "Stock in transit",
+    "Allowance for obsolete inventories"
+  ],
+  "output_format": [
+    {
+      "label": "**Inventories** (valued at lower of cost and net realisable value)",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Raw material and packaging material",
+      "ind_as_minor": [
+        "Raw material and packaging material"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Work-in-progress (WIP)",
+      "ind_as_minor": [
+        "Work-in-progress"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Finished goods",
+      "ind_as_minor": [
+        "Finished goods"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Stock-in-trade (Traded goods)",
+      "ind_as_minor": [
+        "Stock-in-trade"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Stock in transit",
+      "ind_as_minor": [
+        "Stock in transit"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Gross Inventory Subtotal",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Raw material and packaging material",
+        "Work-in-progress (WIP)",
+        "Finished goods",
+        "Stock-in-trade (Traded goods)",
+        "Stock in transit"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "Less: Provision for inventory obsolescence",
+      "ind_as_minor": [
+        "Allowance for obsolete inventories"
+      ],
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "TOTAL_INVENTORIES (Net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Gross Inventory Subtotal"
+      ],
+      "subtract": [
+        "Less: Provision for inventory obsolescence"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 8: INVENTORIES**\n\n1.  Show primary inventory classifications:\n    * `Raw material and packaging material`: Sum of corresponding GL categories.\n    * `Work-in-progress (WIP)`: Sum of 'Work-in-progress' category.\n    * `Finished goods`: Sum of 'Finished goods' category.\n    * `Stock-in-trade (Traded goods)`: Sum of 'Stock-in-trade' category.\n    * `Stock in transit`: Sum of 'Stock in transit' category.\n2.  Show **Gross Inventory Subtotal**.\n3.  Deduct **Less: Provision for inventory obsolescence** (from 'Allowance for obsolete inventories' GL, shown as a negative value).\n4.  Show **TOTAL_INVENTORIES (Net)** as the final balance, calculated as Gross Subtotal minus Provision.\n\nAccounting Context:\n-   Inventories are valued at the lower of cost and net realizable value (NRV) as per Ind AS 2.\n-   Provision for inventory obsolescence is deducted to present inventories at NRV.\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   Show the Provision line as a deduction (in parentheses)."
+}

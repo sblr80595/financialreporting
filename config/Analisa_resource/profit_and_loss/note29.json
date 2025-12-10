@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 29",
+  "note_title": "Finance Cost",
+  "output_file": "analisa_note_29_finance_cost.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Present these as positive values in the final notes.",
+  "categories": [
+    "Interest on lease liability"
+  ],
+  "output_format": [
+    {
+      "label": "**Finance Cost**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Interest on lease liability",
+      "ind_as_minor": "Interest on lease liability"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Interest on lease liability'. Present the amount as positive value. This represents finance costs incurred on lease liabilities as per Ind AS 116."
+}

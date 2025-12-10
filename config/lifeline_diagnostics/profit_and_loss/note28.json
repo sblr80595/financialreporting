@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 28",
+  "note_title": "Employee Benefits Expense",
+  "output_file": "everlife_diagnostics_note_28_employee_benefits_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. This includes all employee-related costs including salaries, statutory contributions, and welfare expenses.",
+  "categories": [
+    "Salaries, wages and Bonus",
+    "Contributions to provident and other funds",
+    "Staff welfare expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Salaries, wages and Bonus",
+      "ind_as_minor": "Salaries, wages and Bonus"
+    },
+    {
+      "label": "Contributions to provident and other funds",
+      "ind_as_minor": "Contributions to provident and other funds"
+    },
+    {
+      "label": "Staff welfare expenses",
+      "ind_as_minor": "Staff welfare expenses"
+    }
+  ],
+  "additional_instructions": "This note captures all employee-related expenses during the period.\n\n**Salaries, wages and Bonus**: Sum all GL accounts where Ind AS Minor is 'Salaries, wages and Bonus'. This includes:\n- Basic salaries and wages for all employees\n- Director remuneration (salaries and allowances)\n- Staff allowances (travel, outstation, HRA, etc.)\n- Bonuses and incentives\n- Commission payments to employees\n- Any other direct compensation to employees\n\n**Contributions to provident and other funds**: Sum all GL accounts where Ind AS Minor is 'Contributions to provident and other funds'. This includes:\n- Employer's contribution to Provident Fund (EPF/PF)\n- Employer's contribution to Employee State Insurance (ESI/SOCSO)\n- Employer's contribution to Employee Insurance Scheme (EIS)\n- Gratuity contributions\n- Superannuation or pension fund contributions\n- Any other statutory or retirement benefit contributions\n\n**Staff welfare expenses**: Sum all GL accounts where Ind AS Minor is 'Staff welfare expenses'. This includes:\n- Staff medical expenses and insurance\n- Staff training and development costs\n- Staff welfare activities\n- Staff canteen/refreshment expenses\n- Staff uniform expenses\n- Recreation and team building activities\n- Any other employee welfare-related costs\n\nAll employee benefit expenses should be presented as positive amounts (debit balances) in the final note."
+}

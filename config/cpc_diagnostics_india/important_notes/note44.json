@@ -1,0 +1,59 @@
+{
+  "note_number": "NOTE 44",
+  "note_title": "Additional Information",
+  "output_file": "cpc_note_44_additional_information.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Data for Note 44 was not found in the source file. This is a template structure.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "Additional Information",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "(i) Quantitative Information (e.g., Remuneration to Auditors)",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "   [No line items found in source file]",
+      "ind_as_minor": null,
+      "is_text_item": true,
+      "default_value": "Nil"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "(ii) Explanatory Note 1 (e.g., Code on Social Security, 2020)",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "   [No explanatory text found in source file]",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "(iii) Explanatory Note 2 (e.g., Events after the Reporting Period)",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "   [No explanatory text found in source file]",
+      "ind_as_minor": null,
+      "is_text_block": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 44: ADDITIONAL INFORMATION**\n\nPresentation Requirements:\n1.  **Structure**: The note is divided into three subheadings as requested.\n    * **Subheading 1**: Intended for quantitative line items.\n    * **Subheading 2 & 3**: Intended for purely explanatory text blocks.\n2.  **Data Status**: As the source file `cpc_impnotes.xlsx` ends at Note 43, no specific data is available for this note. Placeholders are used.\n\nFormatting:\n-   Display the note structure with 'No data found' messages where values or text would typically appear."
+}

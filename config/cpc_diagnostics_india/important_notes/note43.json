@@ -1,0 +1,275 @@
+{
+  "note_number": "NOTE 43",
+  "note_title": "Other Statutory Information",
+  "output_file": "cpc_note_43_other_statutory_information.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Values are hardcoded/text-based as per the source file.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "Other Statutory requirements",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "(i) The quarterly returns or statements of current assets filed by the Company for the sanctioned cash credit with banks or financial institutions along with reconciliation and reasons for discrepancies is as follows:",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "Quarterly Returns Reconciliation",
+      "columns": [
+        "Quarter",
+        "Name of the bank",
+        "Particulars of security",
+        "Amount as reported in quarterly statements",
+        "Amount as per books",
+        "Amount of difference"
+      ],
+      "is_table_structure": true
+    },
+    {
+      "label": "Quarter I",
+      "columns_values": [
+        "I",
+        "Citi Bank NA",
+        "Sales",
+        "1,995.38",
+        "1,995.38",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade receivables",
+        "4,184.87",
+        "4,184.87",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade payables",
+        "2,205.40",
+        "2,205.40",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Inventory",
+        "3,044.22",
+        "3,044.22",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "Quarter II",
+      "columns_values": [
+        "II",
+        "Citi Bank NA",
+        "Sales",
+        "2,184.39",
+        "2,184.39",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade receivables",
+        "4,709.13",
+        "4,709.13",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade payables",
+        "1,290.27",
+        "1,290.27",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Inventory",
+        "2,435.57",
+        "2,435.57",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "Quarter III",
+      "columns_values": [
+        "III",
+        "Citi Bank NA",
+        "Sales",
+        "2,653.47",
+        "2,653.47",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade receivables",
+        "5,320.72",
+        "5,320.72",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade payables",
+        "2,383.59",
+        "2,383.59",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Inventory",
+        "2,878.13",
+        "2,878.13",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "Quarter IV",
+      "columns_values": [
+        "IV",
+        "Citi Bank NA",
+        "Sales",
+        "2,309.74",
+        "2,309.74",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade receivables",
+        "4,510.38",
+        "4,510.38",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Trade payables",
+        "3,102.86",
+        "3,102.86",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "columns_values": [
+        "",
+        "",
+        "Inventory",
+        "4,062.06",
+        "4,062.06",
+        "0"
+      ],
+      "is_table_row": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "(ii) The Company was not declared as a wilful defaulter by any bank or financial Institution or other lender.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(iii) The Company has no transactions with struck off companies.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(iv) There are no charges or satisfaction yet to be registered with Registrar of Companies beyond the statutory period.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(v) The company has complied with the number of layers prescribed under clause (87) of section 2 of the Companies Act 2013.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(vi) There were no Scheme of arrangements approved by the Competent Authority in terms of sections 230 to 237 of the Companies Act, 2013.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(vii) The company has not advanced or loaned funds to any persons or entities, including foreign entities (intermediaries) with the understanding that the Intermediary shall directly or indirectly lend or invest in other persons or entities identified in any manner whatsoever by on or behalf of the Company (Ultimate Beneficiaries) or provide any guarantee, security or the like to or on behalf of the ultimate beneficiaries.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(viii) The company has not received any fund from any persons or entities, including foreign entities with the understanding that the Company shall directly or indirectly lend or invest in other persons or entities identified in any manner whatsoever by on or behalf of the Funding Party (Ultimate Beneficiaries) or provide any guarantee, security or the like to or on behalf of the ultimate beneficiaries.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(ix) The Company does not have any transactions to be recorded in the books of accounts that has been surrendered or disclosed as income during the year in the tax assessments under the Income tax Act 1961.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "(x) The Company has not traded or invested in Crypto currency or Virtual Currency during the financial year.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 43: OTHER STATUTORY INFORMATION**\n\nPresentation Requirements:\n1.  **Quarterly Returns (Point i)**: Present the detailed table with hardcoded values for Sales, Receivables, Payables, and Inventory for all four quarters.\n2.  **Explanatory Points (ii - x)**: Display the full text for each statutory declaration exactly as found in the source file.\n3.  **Data Extraction**: All data is hardcoded based on the provided file content for the period ended March 31, 2025.\n\nFormatting:\n-   Format financial amounts in the table with the Indian numbering system.\n-   Ensure all 10 points are clearly listed."
+}

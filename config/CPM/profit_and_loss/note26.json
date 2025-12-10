@@ -1,0 +1,18 @@
+{
+  "note_number": "NOTE 26",
+  "note_title": "Purchases of Stock-in-Trade",
+  "output_file": "company_a_note_26_purchases_stock_in_trade.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Sum all related GL accounts algebraically (respecting debit/positive and credit/negative signs). DO NOT coerce signs to positive. The final total could be negative. A negative balance indicates that credits to purchases (e.g., purchase returns) exceeded the debits (purchases).",
+  "categories": [
+    "Purchase of traded goods",
+    "Purchase during the year"
+  ],
+  "output_format": [
+    {
+      "label": "Purchase of traded goods*",
+      "ind_as_minor": "Purchase of traded goods"
+    }
+  ],
+  "additional_instructions": "*A negative balance indicates that credits to purchases (e.g., purchase returns) exceeded the debits (purchases).\n\nIMPORTANT: This note uses ALGEBRAIC summation. Do not convert negative values to positive. Present the final amount as-is, whether positive or negative."
+}

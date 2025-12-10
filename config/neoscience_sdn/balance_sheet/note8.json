@@ -1,0 +1,38 @@
+{
+  "note_number": "NOTE 8",
+  "note_title": "Inventories",
+  "output_file": "Neoscience_Note_05_Inventories.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate inventory components and subtract the Provision for inventories. Final amounts should be presented as the net realized value.",
+  "categories": [
+    "Traded goods (cost)",
+    "Provision for inventories"
+  ],
+  "output_format": [
+    {
+      "label": "Traded goods",
+      "ind_as_minor": ["Traded goods (cost)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Less: Provision for inventories",
+      "ind_as_minor": ["Provision for inventories"],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "net_sum",
+      "sum_of": ["Traded goods"],
+      "subtract": ["Less: Provision for inventories"],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The calculation must reflect the Net Realizable Value principle (Traded goods - Provision for inventories). Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

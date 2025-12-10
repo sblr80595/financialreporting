@@ -1,0 +1,152 @@
+{
+  "note_number": "NOTE 27",
+  "note_title": "Changes in inventories of finished goods, work-in-progress and stock-in-trade",
+  "output_file": "cpc_diagnostics_india_note_27_changes_in_inventories.txt",
+  "opening_balance_column": "Opening Balance",
+  "closing_balance_column": "Closing Balance",
+  "calculation_method": "detailed",
+  "statement_type": "profit-loss",
+  "summation_rule": "Calculate net change as (Opening Inventory - Closing Inventory). Use Opening Balance and Closing Balance columns specifically. Opening balance data not available - show as 0.",
+  "categories": [
+    "Finished goods",
+    "Work-in-progress",
+    "Stock-in-trade"
+  ],
+  "inventory_categories": [
+    {
+      "label": "Finished goods",
+      "sub_categories": [
+        {
+          "label": "Instruments",
+          "ind_as_minor": "Finished goods - Instruments"
+        },
+        {
+          "label": "Reagents",
+          "ind_as_minor": "Finished goods - Reagents"
+        }
+      ]
+    },
+    {
+      "label": "Work-in-progress",
+      "sub_categories": [
+        {
+          "label": "Instruments",
+          "ind_as_minor": "Work-in-progress - Instruments"
+        },
+        {
+          "label": "Reagents",
+          "ind_as_minor": "Work-in-progress - Reagents"
+        }
+      ]
+    },
+    {
+      "label": "Stock-in-trade",
+      "sub_categories": [
+        {
+          "label": "Instruments",
+          "ind_as_minor": "Stock-in-trade - Instruments"
+        },
+        {
+          "label": "Reagents",
+          "ind_as_minor": "Stock-in-trade - Reagents"
+        }
+      ]
+    }
+  ],
+  "opening_balance_available": false,
+  "output_format": [
+    {
+      "label": "**Opening stock**",
+      "is_header": true
+    },
+    {
+      "label": "  Finished goods",
+      "is_header": true
+    },
+    {
+      "label": "    Instruments",
+      "value_type": "opening",
+      "category": "Finished goods - Instruments"
+    },
+    {
+      "label": "    Reagents",
+      "value_type": "opening",
+      "category": "Finished goods - Reagents"
+    },
+    {
+      "label": "  Work-in-progress",
+      "is_header": true
+    },
+    {
+      "label": "    Instruments",
+      "value_type": "opening",
+      "category": "Work-in-progress - Instruments"
+    },
+    {
+      "label": "    Reagents",
+      "value_type": "opening",
+      "category": "Work-in-progress - Reagents"
+    },
+    {
+      "label": "  Stock-in-trade",
+      "is_header": true
+    },
+    {
+      "label": "    Instruments",
+      "value_type": "opening",
+      "category": "Stock-in-trade - Instruments"
+    },
+    {
+      "label": "    Reagents",
+      "value_type": "opening",
+      "category": "Stock-in-trade - Reagents"
+    },
+    {
+      "label": "**Closing stock**",
+      "is_header": true
+    },
+    {
+      "label": "  **Finished goods**",
+      "is_header": true
+    },
+    {
+      "label": "    Instruments",
+      "value_type": "closing",
+      "category": "Finished goods - Instruments"
+    },
+    {
+      "label": "    Reagents",
+      "value_type": "closing",
+      "category": "Finished goods - Reagents"
+    },
+    {
+      "label": "  **Work-in-progress**",
+      "is_header": true
+    },
+    {
+      "label": "    Instruments",
+      "value_type": "closing",
+      "category": "Work-in-progress - Instruments"
+    },
+    {
+      "label": "    Reagents",
+      "value_type": "closing",
+      "category": "Work-in-progress - Reagents"
+    },
+    {
+      "label": "  **Stock-in-trade**",
+      "is_header": true
+    },
+    {
+      "label": "    Instruments",
+      "value_type": "closing",
+      "category": "Stock-in-trade - Instruments"
+    },
+    {
+      "label": "    Reagents",
+      "value_type": "closing",
+      "category": "Stock-in-trade - Reagents"
+    }
+  ],
+  "additional_instructions": "IMPORTANT: This note has detailed breakdown of inventory changes by Finished goods, Work-in-progress, and Stock-in-trade, each with Instruments and Reagents sub-categories.\n\nOpening stock data is NOT available (show 0). Only closing stock should be calculated from the trial balance.\n\nCalculation Formula:\n- Opening Stock Total: Sum of all opening balances (currently 0)\n- Closing Stock Total: Sum of all closing balances\n- Net Change = Opening Stock Total - Closing Stock Total\n\nIf closing > opening, result is negative (shown in brackets)."
+}

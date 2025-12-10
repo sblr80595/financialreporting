@@ -1,0 +1,143 @@
+{
+  "note_number": "NOTE 42",
+  "note_title": "Employee Stock Compensation",
+  "output_file": "cpc_note_42_employee_stock_compensation.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items for the period ended March 31, 2025.",
+  "categories": [
+    "Outstanding at the beginning of the year - Number",
+    "Outstanding at the beginning of the year - WAEP",
+    "Add: Granted during the year - Number",
+    "Add: Granted during the year - WAEP",
+    "Less: forfeited during the year - Number",
+    "Less: forfeited during the year - WAEP",
+    "Less: Cancelled during the year - Number",
+    "Less: Cancelled during the year - WAEP",
+    "Less: exercised during the year - Number",
+    "Less: exercised during the year - WAEP",
+    "Less: expired during the year - Number",
+    "Less: expired during the year - WAEP",
+    "Outstanding at the end of the year - Number",
+    "Outstanding at the end of the year - WAEP",
+    "Exercisable options - Number",
+    "Exercisable options - WAEP"
+  ],
+  "output_format": [
+    {
+      "label": "Employee stock compensation - Employee stock option plan",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "In April 15, 2021, Board of Directors of the Company approved the 2021 Employee Stock Option Plan (ESOP) to its employees. The vesting conditions include service and performance terms for the employees. Exercise price of options will be Rs.100. The options under this grant would vest to the employees generally over 4 year vesting period as 20% for the first three years and thereafter 40% for the last one year from the date of grant commencement date, respectively.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Movement of Options during the year ended March 31, 2025",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "TABLE_HEADER",
+      "columns": [
+        "Particulars",
+        "Number of options",
+        "Weighted average exercise price (Rs.)"
+      ],
+      "is_table_structure": true
+    },
+    {
+      "label": "Outstanding at the beginning of the year",
+      "columns_values": [
+        "Outstanding at the beginning of the year - Number",
+        "Outstanding at the beginning of the year - WAEP"
+      ],
+      "default_values": ["0", "0"]
+    },
+    {
+      "label": "Add: Granted during the year",
+      "columns_values": [
+        "Add: Granted during the year - Number",
+        "Add: Granted during the year - WAEP"
+      ],
+      "default_values": ["0", "0"]
+    },
+    {
+      "label": "Less: forfeited during the year",
+      "columns_values": [
+        "Less: forfeited during the year - Number",
+        "Less: forfeited during the year - WAEP"
+      ],
+      "default_values": ["0", "0"]
+    },
+    {
+      "label": "Less: Cancelled during the year",
+      "columns_values": [
+        "Less: Cancelled during the year - Number",
+        "Less: Cancelled during the year - WAEP"
+      ],
+      "default_values": ["0", "0"]
+    },
+    {
+      "label": "Less: exercised during the year",
+      "columns_values": [
+        "Less: exercised during the year - Number",
+        "Less: exercised during the year - WAEP"
+      ],
+      "default_values": ["0", "0"]
+    },
+    {
+      "label": "Less: expired during the year",
+      "columns_values": [
+        "Less: expired during the year - Number",
+        "Less: expired during the year - WAEP"
+      ],
+      "default_values": ["0", "0"]
+    },
+    {
+      "label": "Outstanding at the end of the year",
+      "columns_values": [
+        "Outstanding at the end of the year - Number",
+        "Outstanding at the end of the year - WAEP"
+      ],
+      "default_values": ["0", "0"],
+      "bold": true
+    },
+    {
+      "label": "Exercisable options",
+      "columns_values": [
+        "Exercisable options - Number",
+        "Exercisable options - WAEP"
+      ],
+      "default_values": ["0", "0"]
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Additional Information:",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "   Range of exercise prices for outstanding options: Rs. 100",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "   Weighted average remaining contractual life: 0 years",
+      "ind_as_minor": null,
+      "is_text_item": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 42: EMPLOYEE STOCK COMPENSATION**\n\nPresentation Requirements:\n1.  **Plan Description**: Include the explanatory text about the 2021 ESOP plan.\n2.  **Movement Table**: Create a two-column table for 'Number of Options' and 'Weighted Average Exercise Price'.\n3.  **Data Extraction**: Extract the specific values for **March 31, 2025** from the source file.\n4.  **Formatting**: \n    * Ensure the table structure aligns with the source.\n    * Display '0' where the source file shows '0'."
+}

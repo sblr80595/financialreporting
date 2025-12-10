@@ -1,0 +1,104 @@
+{
+  "note_number": "NOTE 38",
+  "note_title": "Segment Information",
+  "output_file": "everlife_ph_holdings_note_37_segment_information.txt",
+  "statement_type": "p&l-balance-sheet",
+  "summation_rule": "Extract balances from both the P&L (for Revenue and Result) and Balance Sheet (for Assets/Liabilities). Debit balances are positive; Credit balances are negative and must be sign-flipped for presentation (except for Liabilities in the Segment Position table, which are typically presented as positive amounts).",
+  "categories": [
+    "Segment Revenue - Revenue from External Customers",
+    "Segment Revenue - Inter-segment Revenue",
+    "Segment Result - Profit before Tax (PBT) by Segment",
+    "Segment Result - Segment P&L Adjustments",
+    "Segment Position - Segment Assets",
+    "Segment Position - Segment Liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "A. Segment Revenue",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Revenue from external customers",
+      "ind_as_minor": [
+        "Segment Revenue - Revenue from External Customers"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Inter-segment revenue",
+      "ind_as_minor": [
+        "Segment Revenue - Inter-segment Revenue"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Segment Revenue",
+      "is_subtotal": true,
+      "sum_of": [
+        "Revenue from external customers",
+        "Inter-segment revenue"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Segment Result",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Segment Profit before Tax (PBT)",
+      "ind_as_minor": [
+        "Segment Result - Profit before Tax (PBT) by Segment"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Segment adjustments (e.g., unallocated expenses)",
+      "ind_as_minor": [
+        "Segment Result - Segment P&L Adjustments"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Profit before Tax as per P&L Statement",
+      "is_total": true,
+      "sum_of": [
+        "Segment Profit before Tax (PBT)",
+        "Segment adjustments (e.g., unallocated expenses)"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "C. Segment Position",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Segment Assets",
+      "ind_as_minor": [
+        "Segment Position - Segment Assets"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Segment Liabilities (Presented as Positive)",
+      "ind_as_minor": [
+        "Segment Position - Segment Liabilities"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    }
+  ],
+  "additional_instructions": "This note requires the mapping tool to handle data segmentation by segment (e.g., 'Segment A', 'Segment B', 'Unallocated'). The output should present separate columns for each segment, plus a total column, showing the breakdown for Revenue, PBT, Assets, and Liabilities. Liabilities must be sign-flipped to be presented as positive amounts."
+}

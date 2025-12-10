@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 30",
+  "note_title": "Depreciation and Amortisation Expense",
+  "output_file": "analisa_note_30_depreciation_amortisation.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Present these as positive values in the final notes.",
+  "categories": [
+    "Depreciation on property, plant and equipment (refer note 4)",
+    "Depreciation on ROU"
+  ],
+  "output_format": [
+    {
+      "label": "**Depreciation and Amortisation Expense**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Depreciation on property, plant and equipment (refer note 4)",
+      "ind_as_minor": "Depreciation on property, plant and equipment (refer note 4)"
+    },
+    {
+      "label": "Depreciation on right of use assets",
+      "ind_as_minor": "Depreciation on ROU"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minors: 'Depreciation on property, plant and equipment (refer note 4)' and 'Depreciation on ROU'. Present each category separately and show the total. All amounts should be displayed as positive values. This note represents non-cash expenses for depreciation and amortisation."
+}

@@ -1,0 +1,32 @@
+{
+  "sap_connection": {
+    "service_layer_url": "https://vmsapb1han.centralindia.cloudapp.azure.com:50000/b1s/v1",
+    "username": "U0036",
+    "password": "Thl@369",
+    "company_db": "THLMAIN",
+    "verify_ssl": false
+  },
+  "date_range": {
+    "start_date": "2024-04-01",
+    "end_date": "2025-03-31"
+  },
+  "filters": {
+    "related_bp_codes": []
+  },
+  "api": {
+    "timeout": 120,
+    "max_retries": 3,
+    "records_per_page": 1000
+  },
+  "paths": {
+    "output_dir": "output",
+    "financial_statements_dir": "output/financial_statements",
+    "journal_entries_dir": "output/journal_entries",
+    "invoices_dir": "output/invoices",
+    "reports_dir": "output/reports",
+    "logs_dir": "logs"
+  },
+  "external_services": {
+    "sap_help_url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html"
+  }
+}

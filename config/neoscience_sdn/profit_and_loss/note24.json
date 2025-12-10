@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 24",
+  "note_title": "Revenue from Operations",
+  "output_file": "neoscience_note_24_revenue_from_operations.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the final notes. Sum algebraically: Sales - Returns - Discounts.",
+  "categories": [
+    "Sale of products"
+  ],
+  "output_format": [
+    {
+      "label": "**Sale of products**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "ind_as_minor": "Sale of products"
+    }
+  ],
+  "additional_instructions": "This note captures revenue from sale of traded goods. The calculation should be: Gross Sales (GL 5000/00000) less Return Inwards (GL 5010/00000) less Discount Allowed (GL 5020/00000). All these GLs have the same Ind AS Minor 'Sale of products'. Present the net amount as positive value in the final note."
+}

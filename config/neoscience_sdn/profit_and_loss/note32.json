@@ -1,0 +1,35 @@
+{
+  "note_number": "NOTE 32",
+  "note_title": "Income Tax",
+  "output_file": "neoscience_note_31_income_tax.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Sum all tax components algebraically. Current tax is typically positive (expense). Deferred tax charge is positive, deferred tax credit is negative (reduces expense). Earlier years adjustments can be positive (additional expense) or negative (reversal/credit).",
+  "categories": [
+    "Current Tax",
+    "Deferred tax charge/(credit)",
+    "Earlier years tax adjustments (net)"
+  ],
+  "output_format": [
+    {
+      "label": "**(a) Amounts recognised in the statement of profit and loss**",
+      "is_header": true
+    },
+    {
+      "label": "Current tax",
+      "ind_as_minor": "Current Tax"
+    },
+    {
+      "label": "Deferred tax charge/(credit)",
+      "ind_as_minor": "Deferred tax charge/(credit)"
+    },
+    {
+      "label": "Earlier years tax adjustments (net)",
+      "ind_as_minor": "Earlier years tax adjustments (net)"
+    },
+    {
+      "label": "**Income tax expense reported in the statement of profit and loss**",
+      "is_total": true
+    }
+  ],
+  "additional_instructions": "This note discloses the income tax expense recognized in the statement of profit and loss, broken down into its components.\n\nGL Mapping:\n- **Current tax**: GL 8000/00000 TAXATION (Ind AS Minor: 'Current Tax')\n  This represents the current period's tax liability based on taxable income.\n\n- **Deferred tax charge/(credit)**: D.Tax (Ind AS Minor: 'Deferred tax charge/(credit)')\n  This represents the movement in deferred tax assets/liabilities during the period.\n  - Positive value = Deferred tax charge (increases tax expense)\n  - Negative value = Deferred tax credit (reduces tax expense)\n  In the trial balance, this appears as a negative value when it's a credit.\n\n- **Earlier years tax adjustments (net)**: E.tax (Ind AS Minor: 'Earlier years tax adjustments (net)')\n  This represents adjustments related to prior period taxes (assessments, revisions, etc.)\n  - Positive value = Additional tax expense for prior years\n  - Negative value = Reversal/refund for prior years\n\nCalculation Formula:\nTotal Income Tax Expense = Current Tax + Deferred Tax Charge/(Credit) + Earlier Years Adjustments\n\nExample for June 2025:\n- Current tax: ₹7,11,000\n- Deferred tax credit: (₹85,000) [shown as negative in TB]\n- Earlier years adjustments: ₹0\n- Total: ₹7,11,000 - ₹85,000 = ₹6,26,000\n\nPresentation Notes:\n1. Use algebraic summation - DO NOT convert negative values to positive\n2. Show deferred tax credit in parentheses if negative: (85,000)\n3. If earlier years adjustment is zero, show as '-' or '0'\n4. The final total line is bolded and represents the total tax expense in P&L\n5. This note can be expanded with section (b) for OCI tax effects if applicable\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for tax disclosure in financial statements."
+}

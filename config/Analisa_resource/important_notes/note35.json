@@ -1,0 +1,70 @@
+{
+    "note_number": "NOTE 35",
+    "note_title": "Contingent Liabilities and Commitments (Analisa)",
+    "output_file": "company_note_35_contingent_liabilities_analisa.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract values from TB_FINAL_ANALISA_HOLDING.csv. Values for Contingent Liabilities are usually extracted directly from the Trial Balance/input files as positive amounts.",
+    "categories": [
+        "Claims against the Company not acknowledged as debts",
+        "Guarantees",
+        "Other Contingent Liabilities",
+        "Capital Commitments",
+        "Other Commitments"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Contingent Liabilities (Amount in Rs.)",
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Claims against the Company not acknowledged as debts",
+            "ind_as_minor": ["Claims against the Company not acknowledged as debts"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Guarantees",
+            "ind_as_minor": ["Guarantees"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other Contingent Liabilities",
+            "ind_as_minor": ["Other Contingent Liabilities"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Total Contingent Liabilities",
+            "is_total": true,
+            "calculation": "sum_all_above",
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Commitments (Amount in Rs.)",
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Capital Commitments (Estimated amount of contracts remaining to be executed on account of capital expenditure and not provided for)",
+            "ind_as_minor": ["Capital Commitments"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other Commitments",
+            "ind_as_minor": ["Other Commitments"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Total Commitments",
+            "is_total": true,
+            "calculation": "sum_all_above",
+            "bold": true,
+            "show_line": true
+        }
+    ],
+    "additional_instructions": "This note details Contingent Liabilities and Commitments. The quantitative figures are sourced from **TB_FINAL_ANALISA_HOLDING.csv**. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

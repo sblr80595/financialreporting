@@ -1,0 +1,479 @@
+{
+  "id": "cf_indas_indirect",
+  "statementType": "CashFlow",
+  "framework": "IndAS",
+  "method": "Indirect",
+  "version": 1,
+  "meta": {
+    "title": "Statement of Cash Flows",
+    "subtitlePattern": "For the year ended {periodEnd}",
+    "currencyLabelDefault": "INR, in Lakhs"
+  },
+  "columns": [
+    {
+      "id": "particulars",
+      "label": "Particulars",
+      "type": "text",
+      "alignment": "left",
+      "width": "flex"
+    },
+    {
+      "id": "current",
+      "label": "Current Year",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    },
+    {
+      "id": "previous",
+      "label": "Previous Year",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    }
+  ],
+  "rows": [
+    {
+      "id": "CFO_SECTION",
+      "label": "Cash flows from operating activities",
+      "type": "section",
+      "order": 10,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.section"
+      }
+    },
+    {
+      "id": "PBT",
+      "label": "Profit before tax",
+      "type": "lineItem",
+      "parentId": "CFO_SECTION",
+      "order": 20,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "ADJ_NON_CASH",
+      "label": "Adjustments for:",
+      "type": "group",
+      "parentId": "CFO_SECTION",
+      "order": 30,
+      "style": {
+        "indentLevel": 1,
+        "italic": true,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "DEP_AMORT",
+      "label": "Depreciation and amortisation",
+      "type": "lineItem",
+      "parentId": "ADJ_NON_CASH",
+      "order": 40,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "FIN_COST",
+      "label": "Finance costs",
+      "type": "lineItem",
+      "parentId": "ADJ_NON_CASH",
+      "order": 50,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "INTEREST_INCOME",
+      "label": "Interest income",
+      "type": "lineItem",
+      "parentId": "ADJ_NON_CASH",
+      "order": 60,
+      "style": {
+        "indentLevel": 2
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "DIV_INCOME",
+      "label": "Dividend income",
+      "type": "lineItem",
+      "parentId": "ADJ_NON_CASH",
+      "order": 65,
+      "style": {
+        "indentLevel": 2
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "GAIN_LOSS_DISPOSAL",
+      "label": "(Gain)/loss on disposal of assets",
+      "type": "lineItem",
+      "parentId": "ADJ_NON_CASH",
+      "order": 67,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "UNREALIZED_FX",
+      "label": "Unrealized foreign exchange (gain)/loss",
+      "type": "lineItem",
+      "parentId": "ADJ_NON_CASH",
+      "order": 69,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "OP_PROFIT_BEFORE_WC",
+      "label": "Operating profit before working capital changes",
+      "type": "subtotal",
+      "parentId": "CFO_SECTION",
+      "order": 70,
+      "style": {
+        "indentLevel": 1,
+        "bold": true
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "PBT",
+          "DEP_AMORT",
+          "FIN_COST",
+          "INTEREST_INCOME",
+          "DIV_INCOME",
+          "GAIN_LOSS_DISPOSAL",
+          "UNREALIZED_FX"
+        ]
+      }
+    },
+    {
+      "id": "CHANGES_WC",
+      "label": "Changes in working capital:",
+      "type": "group",
+      "parentId": "CFO_SECTION",
+      "order": 80,
+      "style": {
+        "indentLevel": 1,
+        "italic": true,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "CHG_INVENTORIES",
+      "label": "(Increase)/decrease in inventories",
+      "type": "lineItem",
+      "parentId": "CHANGES_WC",
+      "order": 82,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "CHG_TRADE_REC",
+      "label": "(Increase)/decrease in trade receivables",
+      "type": "lineItem",
+      "parentId": "CHANGES_WC",
+      "order": 84,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "CHG_OTHER_ASSETS",
+      "label": "(Increase)/decrease in other assets",
+      "type": "lineItem",
+      "parentId": "CHANGES_WC",
+      "order": 86,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "CHG_TRADE_PAY",
+      "label": "Increase/(decrease) in trade payables",
+      "type": "lineItem",
+      "parentId": "CHANGES_WC",
+      "order": 88,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "CHG_OTHER_LIAB",
+      "label": "Increase/(decrease) in other liabilities and provisions",
+      "type": "lineItem",
+      "parentId": "CHANGES_WC",
+      "order": 90,
+      "style": {
+        "indentLevel": 2
+      }
+    },
+    {
+      "id": "CASH_GEN_OPS",
+      "label": "Cash generated from operations",
+      "type": "subtotal",
+      "parentId": "CFO_SECTION",
+      "order": 95,
+      "style": {
+        "indentLevel": 1,
+        "bold": true
+      }
+    },
+    {
+      "id": "INCOME_TAX_PAID",
+      "label": "Income taxes paid",
+      "type": "lineItem",
+      "parentId": "CFO_SECTION",
+      "order": 100,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "NET_CFO",
+      "label": "Net cash from operating activities (A)",
+      "type": "total",
+      "parentId": "CFO_SECTION",
+      "order": 120,
+      "style": {
+        "indentLevel": 0,
+        "bold": true,
+        "backgroundToken": "surface.total"
+      }
+    },
+    {
+      "id": "CFI_SECTION",
+      "label": "Cash flows from investing activities",
+      "type": "section",
+      "order": 130,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.section"
+      }
+    },
+    {
+      "id": "PURCHASE_PPE",
+      "label": "Purchase of property, plant and equipment",
+      "type": "lineItem",
+      "parentId": "CFI_SECTION",
+      "order": 135,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "PURCHASE_INTANGIBLES",
+      "label": "Purchase of intangible assets",
+      "type": "lineItem",
+      "parentId": "CFI_SECTION",
+      "order": 137,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "PROCEEDS_DISPOSAL",
+      "label": "Proceeds from disposal of assets",
+      "type": "lineItem",
+      "parentId": "CFI_SECTION",
+      "order": 140,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "PURCHASE_INVESTMENTS",
+      "label": "Purchase of investments",
+      "type": "lineItem",
+      "parentId": "CFI_SECTION",
+      "order": 145,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "PROCEEDS_INVESTMENTS",
+      "label": "Proceeds from sale of investments",
+      "type": "lineItem",
+      "parentId": "CFI_SECTION",
+      "order": 147,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "INTEREST_RECEIVED",
+      "label": "Interest received",
+      "type": "lineItem",
+      "parentId": "CFI_SECTION",
+      "order": 150,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "DIVIDEND_RECEIVED",
+      "label": "Dividend received",
+      "type": "lineItem",
+      "parentId": "CFI_SECTION",
+      "order": 155,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "NET_CFI",
+      "label": "Net cash used in investing activities (B)",
+      "type": "total",
+      "parentId": "CFI_SECTION",
+      "order": 160,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.total"
+      }
+    },
+    {
+      "id": "CFF_SECTION",
+      "label": "Cash flows from financing activities",
+      "type": "section",
+      "order": 170,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.section"
+      }
+    },
+    {
+      "id": "PROCEEDS_BORROWINGS",
+      "label": "Proceeds from borrowings",
+      "type": "lineItem",
+      "parentId": "CFF_SECTION",
+      "order": 175,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "REPAYMENT_BORROWINGS",
+      "label": "Repayment of borrowings",
+      "type": "lineItem",
+      "parentId": "CFF_SECTION",
+      "order": 180,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "PAYMENT_LEASE_LIAB",
+      "label": "Payment of lease liabilities",
+      "type": "lineItem",
+      "parentId": "CFF_SECTION",
+      "order": 182,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "PROCEEDS_EQUITY",
+      "label": "Proceeds from issue of equity shares",
+      "type": "lineItem",
+      "parentId": "CFF_SECTION",
+      "order": 185,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "INTEREST_PAID",
+      "label": "Interest paid",
+      "type": "lineItem",
+      "parentId": "CFF_SECTION",
+      "order": 190,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "DIVIDEND_PAID",
+      "label": "Dividend paid",
+      "type": "lineItem",
+      "parentId": "CFF_SECTION",
+      "order": 195,
+      "style": {
+        "indentLevel": 1
+      },
+      "sign": "invert"
+    },
+    {
+      "id": "NET_CFF",
+      "label": "Net cash from/(used in) financing activities (C)",
+      "type": "total",
+      "parentId": "CFF_SECTION",
+      "order": 200,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.total"
+      }
+    },
+    {
+      "id": "NET_CHANGE_CASH",
+      "label": "Net increase/(decrease) in cash and cash equivalents (A + B + C)",
+      "type": "total",
+      "order": 210,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.totalStrong"
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "NET_CFO",
+          "NET_CFI",
+          "NET_CFF"
+        ]
+      }
+    },
+    {
+      "id": "FX_EFFECT",
+      "label": "Effect of exchange rate changes on cash",
+      "type": "lineItem",
+      "order": 215,
+      "style": {
+        "indentLevel": 0
+      }
+    },
+    {
+      "id": "OPENING_CASH",
+      "label": "Cash and cash equivalents at the beginning of the year",
+      "type": "lineItem",
+      "order": 220,
+      "style": {
+        "indentLevel": 0
+      }
+    },
+    {
+      "id": "CLOSING_CASH",
+      "label": "Cash and cash equivalents at the end of the year",
+      "type": "total",
+      "order": 230,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.total"
+      }
+    }
+  ]
+}

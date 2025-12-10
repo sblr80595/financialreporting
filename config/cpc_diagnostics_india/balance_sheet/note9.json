@@ -1,0 +1,75 @@
+{
+  "note_number": "NOTE 9",
+  "note_title": "Trade receivables",
+  "output_file": "company_note_9_trade_receivables.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For 'Unsecured, considered good', take positive debit balance. For 'Unsecured, considered impaired', take value from 'Less: Provision for doubtful receivables' with SIGN FLIPPED (if negative, make positive). For 'Less: Allowance...', take the same 'Less: Provision for doubtful receivables' value and display with -(parentheses) as deduction.",
+  "categories": [
+    "Trade receivables considered good",
+    "Less: Provision for doubtful receivables"
+  ],
+  "output_format": [
+    {
+      "label": "Trade receivables",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "   Unsecured, considered good",
+      "ind_as_minor": [
+        "Trade receivables considered good"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Unsecured, considered impaired",
+      "ind_as_minor": [
+        "Less: Provision for doubtful receivables"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true,
+      "note": "Take the value from 'Less: Provision for doubtful receivables' and flip the sign. If allowance is credit (negative), show as positive gross amount here."
+    },
+    {
+      "label": "Total Gross Trade Receivables",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "   Unsecured, considered good",
+        "   Unsecured, considered impaired"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "Impairment allowance",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "   Less: Allowance against expected credit loss",
+      "ind_as_minor": [
+        "Less: Provision for doubtful receivables"
+      ],
+      "is_deduction": true,
+      "aggregation": "sum",
+      "display_format": "-(value)",
+      "note": "Take the value from 'Less: Provision for doubtful receivables' and display as a deduction."
+    },
+    {
+      "label": "Total Trade receivables",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Total Gross Trade Receivables"
+      ],
+      "subtract": [
+        "   Less: Allowance against expected credit loss"
+      ],
+      "show_line": true,
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 9: TRADE RECEIVABLES**\n\nPresentation Requirements:\n1.  **Unsecured, considered good**: Sum of 'Trade receivables considered good'.\n2.  **Unsecured, considered impaired**: Sum of 'Less: Provision for doubtful receivables' (flipped to positive).\n3.  **Subtotal**: Sum of Good + Impaired.\n4.  **Less: Allowance against expected credit loss**: Sum of 'Less: Provision for doubtful receivables' (shown as negative deduction).\n5.  **Total Trade receivables**: Subtotal minus Allowance.\n\nFormatting:\n-   Format all amounts in the Indian numbering system.\n-   Ensure the final total matches the Net Book Value."
+}

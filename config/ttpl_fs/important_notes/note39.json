@@ -1,0 +1,74 @@
+{
+  "note_number": "NOTE 39",
+  "note_title": "Segment Information",
+  "output_file": "ttpl_note_39_segment_information.txt",
+  "statement_type": "combined-disclosure",
+  "summation_rule": "Extract segment-wise values for the identified operating segments (e.g., Business A, Business B) for the following metrics.",
+  "categories": [
+    "Segment Revenue - External - Segment A",
+    "Segment Revenue - External - Segment B",
+    "Segment Results (PBT) - Segment A",
+    "Segment Results (PBT) - Segment B",
+    "Segment Assets - Segment A",
+    "Segment Assets - Segment B",
+    "Segment Liabilities - Segment A",
+    "Segment Liabilities - Segment B"
+  ],
+  "output_format": [
+    {
+      "label": "Operating Segments",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Segment A (e.g., Business Vertical)",
+      "is_segment_name": true
+    },
+    {
+      "label": "Segment B (e.g., Geographical Area)",
+      "is_segment_name": true
+    },
+    {
+      "label": "Unallocated Items / Reconciliation",
+      "is_segment_name": true
+    },
+    {
+      "label": "Total",
+      "is_segment_name": true,
+      "bold": true
+    },
+    {
+      "label": "Revenue from external customers",
+      "metric_type": "revenue",
+      "segment_map": {
+        "Segment A (e.g., Business Vertical)": ["Segment Revenue - External - Segment A"],
+        "Segment B (e.g., Geographical Area)": ["Segment Revenue - External - Segment B"]
+      }
+    },
+    {
+      "label": "Segment Result (Profit Before Tax)",
+      "metric_type": "profit",
+      "segment_map": {
+        "Segment A (e.g., Business Vertical)": ["Segment Results (PBT) - Segment A"],
+        "Segment B (e.g., Geographical Area)": ["Segment Results (PBT) - Segment B"]
+      }
+    },
+    {
+      "label": "Segment Assets",
+      "metric_type": "assets",
+      "segment_map": {
+        "Segment A (e.g., Business Vertical)": ["Segment Assets - Segment A"],
+        "Segment B (e.g., Geographical Area)": ["Segment Assets - Segment B"]
+      }
+    },
+    {
+      "label": "Segment Liabilities",
+      "metric_type": "liabilities",
+      "segment_map": {
+        "Segment A (e.g., Business Vertical)": ["Segment Liabilities - Segment A"],
+        "Segment B (e.g., Geographical Area)": ["Segment Liabilities - Segment B"]
+      }
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 39: SEGMENT INFORMATION**\n\n1.  **Format**: The final output MUST be a **table** that cross-references key financial metrics with each operating segment (Business/Geographical).\n2.  **Required Columns**: The table must have a column for each Segment identified in the source data, plus 'Unallocated' and 'Total'.\n3.  **Required Rows**: Segment Revenue, Segment Result (PBT), Segment Assets, and Segment Liabilities (as minimum mandatory disclosures).\n4.  The output must include a **reconciliation** between total segment metrics and the corresponding total amounts in the financial statements (P&L/Balance Sheet).\n\nAccounting Context:\n-   This note complies with **Ind AS 108** (Operating Segments), requiring disclosure of financial information for the components used by the chief operating decision-maker (CODM) to allocate resources and assess performance.  \n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456)."
+}

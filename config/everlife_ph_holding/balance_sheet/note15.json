@@ -1,0 +1,83 @@
+{
+  "note_number": "NOTE 15",
+  "note_title": "Other Equity",
+  "output_file": "company_note_15_other_equity.md",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Equity accounts (credit) are negative, and Dividends (debit) are positive. Calculations must sum these raw values first, then flip the sign of the result for presentation.",
+  "categories": [
+    "Retained earnings",
+    "Premium on Redemption of Preffered Stock",
+    "Other Equity - Financial Liability",
+    "Dividend paid"
+  ],
+  "output_format": [
+    {
+      "label": "(i) Retained earnings",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Balance at the beginning of the year",
+      "ind_as_minor": [
+        "Dividend paid",
+        "Retained earnings"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Profit for the year",
+      "ind_as_minor": [],
+      "aggregation": "sum",
+      "is_placeholder": true
+    },
+    {
+      "label": "Balance at the end of the year (Retained Earnings)",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Balance at the beginning of the year",
+        "Profit for the year"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "(ii) Other Reserves",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Premium on Redemption of Preffered Stock",
+      "ind_as_minor": [
+        "Premium on Redemption of Preffered Stock"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Other Equity - Financial Liability",
+      "ind_as_minor": [
+        "Other Equity - Financial Liability"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Other equity",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Balance at the end of the year (Retained Earnings)",
+        "Premium on Redemption of Preffered Stock",
+        "Other Equity - Financial Liability"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 15: OTHER EQUITY**\n\nPresentation Requirements:\n1.  **(i) Retained earnings** (Header)\n    * `Balance at the beginning of the year`: Sums raw values of 'Dividend paid' and 'Retained earnings' GLs, then flips the sign.\n    * `Profit for the year`: **Placeholder (will be 0).** This value must be provided externally.\n    * `Balance at the end of the year (Retained Earnings)`: Calculated as (Beginning Balance + Profit).\n\n2.  **(ii) Other Reserves** (New Header to group the remaining items)\n    * `Premium on Redemption of Preffered Stock`: Extracts and sign-flips the 'Premium on Redemption of Preffered Stock' GL balance.\n    * `Other Equity - Financial Liability`: Extracts and sign-flips the 'Other Equity - Financial Liability' GL balance.\n\n3.  **Total Other equity** (Total): Calculated as the sum of `Balance at the end of the year (Retained Earnings)` and all other reserve/equity line items.\n\nAccounting Context:\n-   The calculation for 'Balance at the beginning of the year' correctly nets the opening retained earnings (credit) against any dividends paid (debit).\n\nCritical Limitation:\n-   **'Profit for the year' is not in the trial balance.** It is the result of the P&L statement. The template will show 0 and the subsequent totals will be incorrect unless the prompt is manually modified before execution."
+}

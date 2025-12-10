@@ -1,0 +1,109 @@
+{
+  "note_number": "NOTE 39",
+  "note_title": "Additional Information",
+  "output_file": "everlife_ph_holdings_note_38_additional_info.txt",
+  "statement_type": "p&l-balance-sheet",
+  "summation_rule": "Extract balances from both the P&L and Balance Sheet. Debit balances are positive. Credit balances (e.g., Net Profit) are negative and should be presented as positive amounts by flipping the sign (multiply by -1).",
+  "categories": [
+    "EPS - Net Profit / (Loss) Attributable to Equity Holders",
+    "EPS - Weighted Average Number of Equity Shares",
+    "EPS - Face Value Per Share",
+    "Auditor Payments - Statutory Audit Fees",
+    "Auditor Payments - Tax Audit Fees",
+    "Auditor Payments - Other Services",
+    "Auditor Payments - Reimbursement of Expenses"
+  ],
+  "output_format": [
+    {
+      "label": "A. Earnings Per Share (EPS)",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Net Profit / (Loss) Attributable to Equity Holders (Numerator)",
+      "ind_as_minor": [
+        "EPS - Net Profit / (Loss) Attributable to Equity Holders"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Weighted Average Number of Equity Shares (Denominator) (in units)",
+      "ind_as_minor": [
+        "EPS - Weighted Average Number of Equity Shares"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Basic and Diluted Earnings Per Share (in currency)",
+      "ind_as_minor": null,
+      "is_formula": true,
+      "calculation": "divide",
+      "formula_components": [
+        "Net Profit / (Loss) Attributable to Equity Holders (Numerator)",
+        "Weighted Average Number of Equity Shares (Denominator) (in units)"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "Face Value Per Share (in currency)",
+      "ind_as_minor": [
+        "EPS - Face Value Per Share"
+      ],
+      "aggregation": "sum",
+      "is_descriptive": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Payments to Auditors (excluding GST/Taxes)",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Statutory Audit Fees",
+      "ind_as_minor": [
+        "Auditor Payments - Statutory Audit Fees"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "ii) Tax Audit Fees",
+      "ind_as_minor": [
+        "Auditor Payments - Tax Audit Fees"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "iii) For other services",
+      "ind_as_minor": [
+        "Auditor Payments - Other Services"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "iv) Reimbursement of expenses",
+      "ind_as_minor": [
+        "Auditor Payments - Reimbursement of Expenses"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL PAYMENTS TO AUDITORS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "i) Statutory Audit Fees",
+        "ii) Tax Audit Fees",
+        "iii) For other services",
+        "iv) Reimbursement of expenses"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "This note covers specific statutory/additional disclosures required under Ind AS. Net Profit (a credit balance) must be sign-flipped for the EPS numerator. The EPS calculation line item should compute the Basic and Diluted EPS (assuming they are the same). All P&L expenses for auditor payments should be extracted directly (Debit balances are positive)."
+}

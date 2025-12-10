@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-11-26 23:42:11",
+  "entity": "everlife_ph_holding",
+  "total_execution_time": 2.3e-05,
+  "adjustments": [
+    {
+      "id": 1,
+      "name": "Entries not considered in the correct period",
+      "status": "SKIPPED",
+      "error": null,
+      "execution_time": 0,
+      "output_file": "/home/rakeshwar/Rakesh/RAME_Conglomerates/DataMind/tattva_BDIC/integris-financials/data/everlife_ph_holding/output/adjusted-trialbalance/enc_correct_period_reconciliation.xlsx"
+    },
+    {
+      "id": 2,
+      "name": "Roll back of audit adjustments entries",
+      "status": "SKIPPED",
+      "error": null,
+      "execution_time": 0,
+      "output_file": "/home/rakeshwar/Rakesh/RAME_Conglomerates/DataMind/tattva_BDIC/integris-financials/data/everlife_ph_holding/output/adjusted-trialbalance/rb_audit_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 3,
+      "name": "Roll forward entries",
+      "status": "SKIPPED",
+      "error": null,
+      "execution_time": 0,
+      "output_file": "/home/rakeshwar/Rakesh/RAME_Conglomerates/DataMind/tattva_BDIC/integris-financials/data/everlife_ph_holding/output/adjusted-trialbalance/rf_audit_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 4,
+      "name": "Interco adjustments",
+      "status": "SKIPPED",
+      "error": null,
+      "execution_time": 0,
+      "output_file": "/home/rakeshwar/Rakesh/RAME_Conglomerates/DataMind/tattva_BDIC/integris-financials/data/everlife_ph_holding/output/adjusted-trialbalance/interco_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 5,
+      "name": "Audit adjustment entries proposed by GT India",
+      "status": "SKIPPED",
+      "error": null,
+      "execution_time": 0,
+      "output_file": "/home/rakeshwar/Rakesh/RAME_Conglomerates/DataMind/tattva_BDIC/integris-financials/data/everlife_ph_holding/output/adjusted-trialbalance/gt_india_audit_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 6,
+      "name": "Reclassification entries proposed by GT India",
+      "status": "SKIPPED",
+      "error": null,
+      "execution_time": 0,
+      "output_file": "/home/rakeshwar/Rakesh/RAME_Conglomerates/DataMind/tattva_BDIC/integris-financials/data/everlife_ph_holding/output/adjusted-trialbalance/reclass_entries_reconciliation.xlsx"
+    }
+  ]
+}

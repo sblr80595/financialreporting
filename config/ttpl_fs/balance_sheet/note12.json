@@ -1,0 +1,73 @@
+{
+  "note_number": "NOTE 12",
+  "note_title": "Loans-current",
+  "output_file": "ttpl_note_12_loans_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For loans and advances, take positive debit balances from the trial balance.",
+  "categories": [
+    "Loan to related parties",
+    "Loans to others",
+    "Income tax recoverable",
+    "AMT credit entitlement",
+    "Security deposits"
+  ],
+  "output_format": [
+    {
+      "label": "(Unsecured, considered good)",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "Loan to related parties* (Refer note 39)",
+      "ind_as_minor": [
+        "Loan to related parties"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Loans to others",
+      "ind_as_minor": [
+        "Loans to others"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Income tax recoverable*",
+      "ind_as_minor": [
+        "Income tax recoverable"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "AMT credit entitlement",
+      "ind_as_minor": [
+        "AMT credit entitlement"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Security deposits",
+      "ind_as_minor": [
+        "Security deposits"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_LOANS_CURRENT",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Loan to related parties* (Refer note 39)",
+        "Loans to others",
+        "Income tax recoverable*",
+        "AMT credit entitlement",
+        "Security deposits"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 12: LOANS-CURRENT**\n\n1.  Show '(Unsecured, considered good)' as subheading.\n2.  **'Loan to related parties* (Refer note 39)'**: Sum of 'Loan to related parties' category.\n3.  **'Loans to others'**: Sum of 'Loans to others' category.\n4.  **'Income tax recoverable*'**: Sum of 'Income tax recoverable' category (this includes tax refunds due).\n5.  **'AMT credit entitlement'**: Sum of 'AMT credit entitlement' category.\n6.  **'Security deposits'**: Sum of 'Security deposits' category.\n7.  Show final total **TOTAL_LOANS_CURRENT**.\n\nAccounting Context:\n-   This note combines short-term loans given and certain recoverable advances (like tax and deposits) expected to be realized within 12 months.\n-   All items are measured at amortised cost as per Ind AS 109, except for tax-related items.\n-   Related party disclosures (Note 39) apply to the first line item (Loan to related parties).\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   All amounts should be displayed as positive (debit balance)."
+}

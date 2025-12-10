@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 19",
+  "note_title": "Trade payables",
+  "output_file": "analisa_note_19_trade_payables.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Trade payables typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the balance sheet as a liability.",
+  "categories": [
+    "Due to others"
+  ],
+  "output_format": [
+    {
+      "label": "**Trade payables**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Due to others",
+      "ind_as_minor": "Due to others"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Due to others'. Convert credit balances to positive values for presentation. This represents amounts owed to trade creditors and suppliers for goods and services purchased."
+}

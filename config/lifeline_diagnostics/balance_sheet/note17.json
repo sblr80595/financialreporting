@@ -1,0 +1,47 @@
+{
+  "note_number": "NOTE 17",
+  "note_title": "Borrowings",
+  "output_file": "lifeline_diagnostics_note_17_borrowings.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Borrowings are typically credit balances (liabilities). Present as positive amounts in the balance sheet. Calculate separate totals for current and non-current portions.",
+  "generate_if_empty": true,
+  "match_on_minor_only": true,
+  "categories": [
+    "Loan from Banks",
+    "Notes Payable"
+  ],
+  "output_format": [
+    {
+      "label": "**Borrowings - current**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Loan from Banks",
+      "ind_as_minor": "Loan from Banks",
+      "default_value": 0,
+      "classification": "current"
+    },
+    {
+      "label": "Notes Payable (Please refer note [3a])",
+      "ind_as_minor": "Notes Payable",
+      "default_value": 0,
+      "classification": "current"
+    },
+    {
+      "label": "**Borrowings - non-current**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Loan from Banks",
+      "ind_as_minor": "Loan from Banks",
+      "default_value": 0,
+      "classification": "non-current"
+    }
+  ],
+  "validation": {
+    "current_borrowings_total": 859167.09
+  },
+  "additional_instructions": "This note discloses borrowings (both current and non-current) recognized in the balance sheet as per Ind AS 109 - Financial Instruments.\n\n**CRITICAL MATCHING INSTRUCTION**: \nONLY sum GL accounts where the 'Ind AS Minor' column exactly matches the specified categories.\n- For current borrowings: Match 'Loan from Banks' AND 'Notes Payable' and classify based on maturity within 12 months\n- For non-current borrowings: Match 'Loan from Banks' and classify based on maturity beyond 12 months\nDO NOT match on 'Ind AS Major' column or any other column.\n\n**Classification Logic**:\n- Use the 'Current/Non-current' indicator in the trial balance to separate current vs non-current portions\n- If no indicator exists, use the account name or maturity date to determine classification\n- Current: Due within 12 months from reporting date\n- Non-current: Due after 12 months from reporting date\n\n**Borrowings - current** - This is a section header.\n\n**Loan from Banks (Current)**: Sum all GL accounts where Ind AS Minor = 'Loan from Banks' AND classified as current. This includes:\n- Term loans from banks (current portion)\n- Vehicle loans from banks (current portion - Please refer note [3a])\n- Working capital loans\n- Cash credit facilities\n- Overdraft facilities\n- Short-term bank borrowings\n- Current maturity of long-term borrowings\n\n**Notes Payable (Please refer note [3a])**: Sum all GL accounts where Ind AS Minor = 'Notes Payable' AND classified as current. This includes:\n- Promissory notes issued\n- Commercial paper\n- Short-term notes payable\n- Bills payable to banks\n\n**Borrowings - non-current** - This is a section header.\n\n**Loan from Banks (Non-current)**: Sum all GL accounts where Ind AS Minor = 'Loan from Banks' AND classified as non-current. This includes:\n- Term loans from banks (non-current portion)\n- Vehicle loans from banks (non-current portion - Please refer note [3a])\n- Long-term bank borrowings\n- Secured loans with maturity beyond 12 months\n- Less: Current maturity transferred to current borrowings\n\nBorrowings represent funds obtained from banks and financial institutions for business operations and capital expenditure. All borrowings are measured at amortized cost under Ind AS 109.\n\n**Validation Check**:\n- Expected current borrowings total: ₹859,167.09\n- Verify that the sum of current borrowings matches this amount\n\nMatching Logic:\n- Column to match: 'Ind AS Minor' ONLY\n- Values to match for current: 'Loan from Banks' (current portion), 'Notes Payable'\n- Values to match for non-current: 'Loan from Banks' (non-current portion)\n- DO NOT use 'Ind AS Major' column for matching\n\nPresentation Notes:\n1. Show current and non-current borrowings separately\n2. Present as positive amounts (credit balances)\n3. Current borrowings: Repayable within 12 months\n4. Non-current borrowings: Repayable after 12 months\n5. Include cross-references to other notes (e.g., note [3a] for vehicle loans)\n6. Follow Schedule III format for balance sheet presentation\n7. Borrowings are financial liabilities measured at amortized cost\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for borrowings disclosure. Additional disclosures may be required:\n- Nature of security provided\n- Rate of interest\n- Terms of repayment\n- Default in repayment of loans\n- Quarterly returns filed with banks\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

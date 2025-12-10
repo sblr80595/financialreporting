@@ -1,0 +1,122 @@
+{
+    "note_number": "NOTE 33",
+    "note_title": "Financial Instruments - Risk Management",
+    "output_file": "company_note_33_financial_instruments_risk.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "The values are extracted primarily from the final outputs of other notes and the Balance Sheet auxiliary file for quantitative risk disclosures.",
+    "categories": [
+        "Trade Receivables 0-6 months",
+        "Trade Receivables 6-12 months",
+        "Trade Receivables >12 months",
+        "Total Financial Liabilities < 1 year",
+        "Total Financial Liabilities 1-5 years",
+        "Total Financial Liabilities > 5 years",
+        "Foreign Currency Receivables",
+        "Foreign Currency Payables",
+        "Variable Rate Borrowings"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Credit Risk",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "I. Credit Exposure - Ageing of Trade Receivables (Quantitative Disclosure)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "0 - 6 months",
+            "ind_as_minor": ["Trade Receivables 0-6 months"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "6 - 12 months",
+            "ind_as_minor": ["Trade Receivables 6-12 months"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "> 12 months",
+            "ind_as_minor": ["Trade Receivables >12 months"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Total Trade Receivables (Gross)",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": ["0 - 6 months", "6 - 12 months", "> 12 months"],
+            "show_line": true,
+            "bold": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Liquidity Risk",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "I. Maturity Analysis of Financial Liabilities (Quantitative Disclosure)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Less than 1 year",
+            "ind_as_minor": ["Total Financial Liabilities < 1 year"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "1 to 5 years",
+            "ind_as_minor": ["Total Financial Liabilities 1-5 years"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Greater than 5 years",
+            "ind_as_minor": ["Total Financial Liabilities > 5 years"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Total Financial Liabilities",
+            "ind_as_minor": null,
+            "is_total": true,
+            "source_file": "Balance_Sheet_Output.xlsx",
+            "source_mapping": "Total Financial Liabilities",
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(C) Market Risk",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Foreign Currency Exposures (Quantitative Disclosure)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Net Foreign Currency Exposure",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "subtract",
+            "sum_of": ["Foreign Currency Receivables"],
+            "subtract": ["Foreign Currency Payables"],
+            "bold": true
+        }
+    ],
+    "additional_instructions": "This note requires both qualitative descriptions (e.g., policies) and quantitative tables. The output_format only captures the quantitative tables for data extraction. All amounts are typically sourced from the TB_FINAL.csv or derived from other detailed notes (e.g., Liquidity Risk data comes from the breakdown of Borrowings/Payables in other notes). Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

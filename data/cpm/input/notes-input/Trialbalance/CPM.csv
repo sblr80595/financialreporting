@@ -1,0 +1,441 @@
+GL Code,GL Code Description ,BSPL,Ind AS Major,Ind AS Minor,Total Mar'25,Total Jun'25
+,,,,,0.0,
+84036000,84036000 - Write off of Intangible Asset,PL,Depreciation and amortisation expenses,Amortisation of intangible assets,0.0,0.0
+14010080,14010080 - WHT CLAIMABLE,BS,Other financial assets,Other recoverable (OFA-Current),130915.0,164467.0
+14050067,14050067 - SCB-SGD Investment FCA (A/C:620194729522),BS,Cash and cash equivalents,Balance with banks in current accounts,3708.0,3430.0
+14050069,14050069 - SCB-USD Investment FCA (A/C:620194715424),BS,Cash and cash equivalents,Balance with banks in current accounts,747.0,5478.0
+14050170,14050170 - HSBC BANK MALAYSIA BERHAD (USD A/C:105-854004-725),BS,Cash and cash equivalents,Balance with banks in current accounts,11239.0,116749.0
+14050612,14050612 - F.Deposit-HSBC-105854004165,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,4479200.0,0.0
+21035438,21035438 - HP-MBB AUTO FINANCE - AGREEMENT NO.788834471141 (VLV4802),BS,Borrowings- current,Vehicle loan (Current),-42024.0,-42024.0
+21050080,21050080 - Current Term loan - HSBC (MYR) - 105-854004-034,BS,Borrowings,Term loan from banks,-122123241.0,-119164353.0
+21050090,21050090 - Current Term loan - HSBC (USD) - 105-854004-762,BS,Borrowings,Term loan from banks,-91711620.0,-86035425.0
+Lease Receivables,Lease Receivables,BS,Other financial assets,Lease receivables,0.0,0.0
+12050910,12050910 - Accum. Dep Signboard,BS,"Property, plant and equipment","Property, plant and equipment- Accumulated Depreciation",-39953.0,-40025.0
+14010060,14010060 - Other Debtor - JGS,BS,Other financial assets,Lease receivables,0.0,0.0
+51020020,51020020 - Foreign Sales-Associate,PL,Revenue from operations,Traded goods,0.0,0.0
+67200020,67200020 - Foreign Cost Of Sales-Associate,PL,Purchases of stock-in-trade,Purchase of traded goods,0.0,0.0
+86020000,86020000 - Taxation,PL,Tax expense,Current tax,5986609.0,578648.0
+86010000,86010000 - Tax (Temp),PL,Tax expense,Deferred tax,1375867.0,1643997.0
+85035032,85035032 - Unrealised Exchange Gain/Loss -AP,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),-189343.0,-89995.0
+85035031,85035031 - Unrealised Exchange Gain/Loss -AR,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),97930.0,25451.0
+85035030,85035030 - Unrealised Exchange Gain/Loss,PL,Other Income,Gain/Loss on foreign exchange fluctuations (net),-5545589.0,-2609723.0
+85035025,85035025 - Exchange Gain / Loss-AR (Non-Trade)-OA,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),105.0,-16.0
+85035020,85035020 - Exchange Gain/Loss-AR (Trade)-OA,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),19107.0,461.0
+85035010,85035010 - Exchange Gain/Loss-AP (Trade)-OA,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),-1283722.0,-318358.0
+85035000,85035000 - Exchange Gain/Loss-OA,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),238983.0,-107865.0
+85030000,85030000 - Other Interest - Loan Creditor,PL,Finance costs,Other FC,266394.0,0.0
+85020070,85020070 - Bank Interest - Invoice Financing,PL,Finance costs,Advances from factoring arrangement,117252.0,115733.0
+85020060,85020060 - Bank Interest- Term loan,PL,Finance costs,Interest expense on term loan,15913413.0,3416515.0
+85020050,85020050 - Bank Interest- Leasing,PL,Finance costs,Interest expense on Lease liabilities,34496.0,18257.0
+85020040,85020040 - Bank Interest- HP,PL,Finance costs,Interest expense on term Finance lease payables,7677.0,819.0
+85020020,85020020 - Bank Interest - BA,PL,Finance costs,Interest expense on Banker's acceptance,546612.0,29759.0
+Interest on Equipment Loan ,Interest on Equipment Loan ,PL,Finance costs,Interest expense on Equipment Loan,325909.0,69715.0
+85020010,85020010 - Bank Interest - O/D,PL,Finance costs,Other FC,17241.0,2016.0
+85015000,85015000 - Commitment Fees,PL,Other expenses,Legal and professional expenses,15010.0,2493.0
+85011018,85011018 - Bank Charges - ePerolehan - EP (SER),PL,Other expenses,Bank charges,2440.0,257.0
+85011017,85011017 - Bank Charges - ePerolehan - EP (ANA),PL,Other expenses,Bank charges,3909.0,5668.0
+85011016,85011016 - Bank Charges - ePerolehan - EP (CSG),PL,Other expenses,Bank charges,115.0,17.0
+85011015,85011015 - Bank Charges - ePerolehan - EP (HC),PL,Other expenses,Bank charges,143599.0,37068.0
+85011014,85011014 - Bank Charges- rounding,PL,Other expenses,Bank charges,1.0,0.0
+85010000,85010000 - Bank Charges,PL,Other expenses,Bank charges,101888.0,9905.0
+84520000,84520000 - Depreciation - ROU,PL,Depreciation and amortisation expenses,Depreciation on right of use assets,727387.0,205312.0
+84510000,84510000 - Depreciation- Assets,PL,Depreciation and amortisation expenses,"Depreciation on property, plant and equipment",8035869.0,2263956.0
+84040000,84040000 - Penalty,PL,Other expenses,Rates and Taxes,55846.0,1474.0
+84035200,84035200 - Provision Stock Obsolescence,PL,Purchases of stock-in-trade,Purchase during the year,207150.0,174653.0
+84031010,84031010 - Machine Rental-TX,PL,Other expenses,Rent,945.0,360.0
+84015010,84015010 - Allowance for doubtful debt -OA,PL,Other expenses,Allowance for bad and doubtful loans (PL),39754.0,62893.0
+84015000,84015000 - Bad Debts written Off-OA,PL,Other expenses,Bad debts/asset written off,0.0,0.0
+83530020,83530020 - Tax Fee,PL,Other expenses,Legal and professional expenses,26914.0,6000.0
+83515020,83515020 - Secretarial Fees,PL,Other expenses,Legal and professional expenses,3915.0,756.0
+83510000,83510000 - Legal Fees,PL,Other expenses,Legal and professional expenses,26244.0,7052.0
+83230000,83230000 - Sponsorship,PL,Other expenses,Advertising and sales promotion,90702.0,12488.0
+83021020,83021020 - Sales promotion-NR,PL,Other expenses,Advertising and sales promotion,8800.0,0.0
+83021010,83021010 - Sales promotion-TX,PL,Other expenses,Advertising and sales promotion,32660.0,17012.0
+83020000,83020000 - Sales promotion,PL,Other expenses,Advertising and sales promotion,-119996.0,168781.0
+83015000,83015000 - Printing-Leaflets/Brochures,PL,Other expenses,Printing and stationery,0.0,0.0
+82556010,82556010 - General Insurance,PL,Other expenses,Insurance charges,208587.0,67514.0
+Change in Deferred Consideration (E),Change in Deferred Consideration,PL,Other expenses,Change in Deferred Consideration (E),0.0,0.0
+Change in Deferred Consideration (P),Change in Deferred Consideration,PL,Other Income,Change in Deferred Consideration (P),0.0,0.0
+82554005,82554005 - Attestation Fee,PL,Other expenses,Registration fee,580.0,80.0
+82553005,82553005 - Subscription-Office,PL,Other expenses,Advertising and sales promotion,19049.0,5435.0
+82552005,82552005 - Tender Fee,PL,Other expenses,Legal and professional expenses,11585.0,921.0
+82551010,82551010 - General Expenses-TX,PL,Other expenses,Miscellaneous expenses,-63140.0,0.0
+82550000,82550000 - General Expenses,PL,Other expenses,Miscellaneous expenses,2216.0,283.0
+82545000,82545000 - Postages/Courier on Docs,PL,Other expenses,Printing and stationery,2044.0,891.0
+82541010,82541010 - Printing & Stationery-TX,PL,Other expenses,Printing and stationery,28889.0,4880.0
+82540000,82540000 - Printing & Stationery,PL,Other expenses,Printing and stationery,94413.0,26419.0
+82535000,82535000 - Water,PL,Other expenses,Power and fuel,10023.0,3530.0
+82530000,82530000 - Electricity,PL,Other expenses,Power and fuel,295980.0,76312.0
+82525025,82525025 - Telecommunication- H/P,PL,Other expenses,Telephone and internet expense,122728.0,37309.0
+82525005,82525005 - Telecommunication- Fixed,PL,Other expenses,Telephone and internet expense,93578.0,26807.0
+82520055,82520055 - Security Fees,PL,Other expenses,Legal and professional expenses,11016.0,2679.0
+82520040,82520040 - Maintenance-Lab,PL,Other expenses,Repair and maintenance,1497.0,0.0
+82520030,82520030 - Maintenance-Store,PL,Other expenses,Repair and maintenance,1546.0,8445.0
+82520029,82520029 - Maintenance-AssetRR-IM 0%,PL,Other expenses,Repair and maintenance,600.0,11126.0
+82520026,82520026 - Maintenance-AssetRR-TX,PL,Other expenses,Repair and maintenance,78679.0,14500.0
+82520022,82520022 - Maintenance-Asset-TX,PL,Other expenses,Repair and maintenance,171762.0,8884.0
+82520020,82520020 - Maintenance-Asset,PL,Other expenses,Repair and maintenance,517006.0,27704.0
+82520060,82520060 - Maintenance-Asset IT,PL,Other expenses,Repair and maintenance,167352.0,123944.0
+82520012,82520012 - Maintenance-Office-TX,PL,Other expenses,Repair and maintenance,77565.0,45584.0
+82520010,82520010 - Maintenance-Office,PL,Other expenses,Repair and maintenance,170820.0,41588.0
+82511000,82511000 - Storage,PL,Other expenses,Miscellaneous expenses,135437.0,45606.0
+82510000,82510000 - Office Rental,PL,Other expenses,Rent,-945.0,35640.0
+82025000,82025000 - Road Tax,PL,Other expenses,Travelling and conveyance,1739.0,54.0
+82021015,82021015 - Toll,PL,Other expenses,Travelling and conveyance,101781.0,25415.0
+82020000,82020000 - Parking,PL,Other expenses,Travelling and conveyance,96431.0,27486.0
+82016000,82016000 - Petrol & Mileage,PL,Other expenses,Travelling and conveyance,371021.0,100628.0
+82015100,82015100 - Travelling Overseas,PL,Other expenses,Travelling and conveyance,242768.0,69825.0
+82015000,82015000 - Local Travelling,PL,Other expenses,Travelling and conveyance,805072.0,214600.0
+82011020,82011020 - Upkeep motor vehicles-BL,PL,Other expenses,Repair and maintenance,0.0,0.0
+82010000,82010000 - Upkeep motor vehicles,PL,Other expenses,Repair and maintenance,29364.0,5929.0
+81545000,81545000 - Staff Insurance,PL,Employee benefits expenses,Staff welfare expenses,136502.0,86597.0
+81541010,81541010 - Recruitment-TX,PL,Employee benefits expenses,Staff welfare expenses,0.0,0.0
+81540000,81540000 - Recruitment,PL,Employee benefits expenses,Staff welfare expenses,378126.0,114473.0
+Employee Stock Options ,Share Based Payment to employees,PL,Employee benefits expenses,Share Based Payment to employees,11946.0,2603.0
+81535000,81535000 - Subscription-Staff,PL,Employee benefits expenses,Staff welfare expenses,6897.0,5094.0
+81531000,81531000 - Entertainment-Vendors,PL,Other expenses,Advertising and sales promotion,27314.0,7200.0
+81530000,81530000 - Entertainment-Customer,PL,Other expenses,Advertising and sales promotion,40809.0,13348.0
+81525205,81525205 - Training Expenses-Staff,PL,Employee benefits expenses,"Salaries, wages and bonus",16428.0,270.0
+81525160,81525160 - Training Expenses-External-NR,PL,Employee benefits expenses,Staff welfare expenses,0.0,0.0
+81525110,81525110 - Training Expenses-External-TX,PL,Employee benefits expenses,Staff welfare expenses,0.0,0.0
+81525000,81525000 - Training Expenses-External,PL,Employee benefits expenses,Staff welfare expenses,-13368.0,5469.0
+81522010,81522010 - Uniform For Employees,PL,Employee benefits expenses,Staff welfare expenses,0.0,0.0
+81521010,81521010 - Staff Welfare-TX,PL,Employee benefits expenses,"Salaries, wages and bonus",12510.0,1180.0
+81520000,81520000 - Staff Welfare,PL,Employee benefits expenses,Staff welfare expenses,250972.0,133093.0
+81515000,81515000 - Medical Fees,PL,Employee benefits expenses,Staff welfare expenses,76801.0,21326.0
+81510000,81510000 - Consultancy Fee,PL,Other expenses,Legal and professional expenses,2723719.0,586945.0
+81050000,81050000 - Retirement Benefit,PL,Employee benefits expenses,"Salaries, wages and bonus",0.0,0.0
+81040000,81040000 - Allowance,PL,Employee benefits expenses,"Salaries, wages and bonus",1477282.0,380182.0
+81035020,81035020 - Commissions-Others,PL,Other expenses,Commission on sales,0.0,0.0
+81035010,81035010 - Commissions Staff,PL,Employee benefits expenses,"Salaries, wages and bonus",420017.0,112650.0
+81031020,81031020 - EIS (Employment Insurance System),PL,Employee benefits expenses,Contributions to provident and other funds,20222.0,5594.0
+81030110,81030110 - HRDF,PL,Employee benefits expenses,Contributions to provident and other funds,-25997.0,0.0
+81030020,81030020 - Socso-Staff,PL,Employee benefits expenses,Contributions to provident and other funds,179426.0,49626.0
+81025040,81025040 - EPF-Provision,PL,Employee benefits expenses,Contributions to provident and other funds,364453.0,145515.0
+81025020,81025020 - EPF-Staff,PL,Employee benefits expenses,Contributions to provident and other funds,2125048.0,559988.0
+81020020,81020020 - S/term Compensated Leave-Staff,PL,Employee benefits expenses,"Salaries, wages and bonus",6207.0,0.0
+81015040,81015040 - Incentives-Provision,PL,Employee benefits expenses,"Salaries, wages and bonus",1811499.0,602552.0
+81015030,81015030 - Incentives-Staff,PL,Employee benefits expenses,"Salaries, wages and bonus",7000.0,0.0
+81015020,81015020 - Bonus,PL,Employee benefits expenses,"Salaries, wages and bonus",761954.0,448914.0
+81010030,81010030 - Overtime,PL,Employee benefits expenses,"Salaries, wages and bonus",74873.0,23171.0
+81010020,81010020 - Salaries-Staff,PL,Employee benefits expenses,"Salaries, wages and bonus",15895934.0,4214471.0
+80551010,80551010 - Packaging Material-TX,PL,Other expenses,Packaging expenses,263606.0,64614.0
+80550000,80550000 - Packaging Material,PL,Other expenses,Packaging expenses,39504.0,16927.0
+80540000,80540000 - Warehouse Rental,PL,Other expenses,Rent,0.0,-36000.0
+80520000,80520000 - Courier,PL,Other expenses,Printing and stationery,532230.0,263443.0
+80511010,80511010 - Lorry/Air Freight-TX,PL,Other expenses,Forwarding expense,2755.0,0.0
+80510000,80510000 - Lorry/Air Freight,PL,Other expenses,Forwarding expense,554371.0,145772.0
+82555000,82555000 - Licences/Stamp Duty,PL,Other expenses,Legal and professional expenses,1032447.0,30302.0
+73610000,73610000 - Dividend-OP,PL,Other income,Dividend income,-20446550.0,-27482100.0
+73500000,73500000 - Gain/Loss On Disposal Of Assets,PL,Other income,Profit/Loss on sale of PPE,4816.0,35278.0
+73300010,73300010 - Other Income,PL,Other income,Miscellaneous income,-1138661.0,-258997.0
+73100010,73100010 - Other Income - SR,PL,Other income,Miscellaneous income,0.0,0.0
+71500000,71500000 - FD Interest,PL,Other income,Interest income from banks,-718320.0,-140155.0
+71000000,71000000 - Rental Income,PL,Other income,Rental Income ,-192300.0,-48075.0
+67200010,67200010 - Foreign Cost Of Sales-intercompany,PL,Purchases of stock-in-trade,Purchase during the year,3380.0,0.0
+67200000,67200000 - Foreign Cost Of Sales-3rd party,PL,Purchases of stock-in-trade,Purchase during the year,73296.0,4427.0
+67100010,67100010 - Local Cost Of Sales-intercompany,PL,Purchases of stock-in-trade,Purchase during the year,491971.0,780579.0
+67000000,67000000 - Local Cost Of Sales-3rd party,PL,Purchases of stock-in-trade,Purchase during the year,78250708.0,21376436.0
+64100000,64100000 - Duties-Others,PL,Purchases of stock-in-trade,Purchase during the year,15459.0,8634.0
+63040000,63040000 - Purchases-Offset,PL,Purchases of stock-in-trade,Purchase during the year,-81680418.0,-28899584.0
+63033010,63033010 - Purchase Local Return-intercompany,PL,Purchases of stock-in-trade,Purchase during the year,-18639.0,-2796.0
+63032000,63032000 - Purchase Foreign Return-3rd Party,PL,Purchases of stock-in-trade,Purchase during the year,-100888.0,-2733.0
+63030000,63030000 - Purchase Local Return-3rd party,PL,Purchases of stock-in-trade,Purchase during the year,-23349.0,2210.0
+63020030,63020030 - Purchase Local-Associate,PL,Purchases of stock-in-trade,Purchase during the year,0.0,0.0
+63020010,63020010 - Purchase Local-intercompany,PL,Purchases of stock-in-trade,Purchase during the year,4446153.0,4492779.0
+63020000,63020000 - Purchases Local-3rd party,PL,Purchases of stock-in-trade,Purchase during the year,11699008.0,2851378.0
+63011000,63011000 - Purchase Others,PL,Purchases of stock-in-trade,Purchase during the year,934671.0,336035.0
+63010020,63010020 - Purchase Foreign-Associate,PL,Purchases of stock-in-trade,Purchase during the year,7906.0,866.0
+63010010,63010010 - Purchase Foreign-intercompany,PL,Purchases of stock-in-trade,Purchase during the year,102280.0,26375.0
+63010000,63010000 - Purchases Foreign-3rd party,PL,Purchases of stock-in-trade,Purchase during the year,65763737.0,21537593.0
+51020010,51020010 - Foreign Sales-intercompany,PL,Revenue from operations,Traded goods,-6154.0,0.0
+51010010,51010010 - Local Sales-intercompany,PL,Revenue from operations,Traded goods,-464235.0,-820215.0
+51010000,51010000 - Local Sales-3rd party,PL,Revenue from operations,Traded goods,-135368127.0,-37575523.0
+Share Based Payment Reserve,Share Based Payment Reserve,BS,Reserves and surplus,Share Based Payment Reserve,-1040663.0,-1043265.0
+34020000,34020000 - DEFERRED TAXATION,BS,Deferred tax liabilities (net),Deferred tax liabilities (net),-648742.0,-2292739.0
+34010000,34010000 - Prov.for Taxation,BS,Current tax assets (net),Income tax recoverable,0.0,0.0
+34010000L,34010000 - Prov.for Taxation,BS,Current tax liabilities (net),Provision for income tax (net of prepaid taxes),-1763091.0,-1491740.0
+32900000,32900000 - Dividend,BS,Reserves and surplus,Dividend paid,245198.0,245198.0
+32000000,32000000 - Retained Earnings,BS,Reserves and surplus,Retained earnings,-81323421.0,-104293965.0
+31000000,31000000 - Paid Up Capital,BS,Equity share capital,"Issued, subscribed and fully paid up",-20436545.0,-20436545.0
+21055000,21055000 - LEASE LIABILITY,BS,Lease liabilities - Current,Lease liabilities,-308303.0,-633880.0
+21050070,21050070 - Current Term loan - MBB (USD) A/C:712231800000,BS,Borrowings- non current,Term loan from banks,0.0,0.0
+21050060,21050060 - Current Term loan - MBB (MYR) A/C:412231910285,BS,Borrowings- non current,Term loan from banks,-3434160.0,-3434160.0
+21050050,21050050 - Current Term loan - SCB (USD),BS,Borrowings- non current,Term loan from banks,0.0,0.0
+21050040,21050040 - Current Term loan - SCB (MYR),BS,Borrowings- non current,Term loan from banks,0.0,0.0
+21045030,21045030 - Invoice Financing,BS,Borrowings- current,Buyers credit,-8904606.0,-8565764.0
+21045020,21045020 - Banker's Acceptance,BS,Borrowings- current,Bankers Acceptance,-4793000.0,-3437000.0
+21035435,21035435 - HP-MBB AUTO FINANCE- AGREEMENT NO.788834445334 (IV-11512),BS,Borrowings- current,Vehicle loan (Current),-6161.0,-2444.0
+21035434,21035434 - HP-MBB AUTO FINANCE- AGREEMENT NO. 788834440205 (VHJ 7412),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035433,21035433 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/22/02/002 (EXPIRED MAR2025),BS,Borrowings- current,Vehicle loan (Current),2725960.0,2238569.0
+21035432,21035432 - HP-MBB AUTO FINANCE - 788834439820,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035431,21035431 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/21/07/031 (EXPIRED JUN2024),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035430,21035430 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/21/07/030 (EXPIRED JUN2024),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035429,21035429 - HP-MBB AUTO FINANCE - AGREEMENT 788834427990 (EXPIRED 6/11/2023),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035428,21035428 - HP-MBB AUTO FINANCE - AGREEMENT 788834428002 (EXPIRED 6/11/2023),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035427,21035427 - HP-MBB AUTO FINANCE - AGREEMENT 788834428026 (EXPIRED 6/11/2023),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035426,21035426 - HP-MBB AUTO FINANCE - AGREEMENT 788834427983 (EXPIRED 6/11/2023),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035425,21035425 - HP-MBB AUTO FINANCE - AGREEMENT 788834428019 (EXPIRED 6/11/2023),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035424,21035424 - HP-MBB AUTO FINANCE - AGREEMENT 788834428033 (EXPIRED 6/11/2023),BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035423,21035423 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/20/01/001,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035422,21035422 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/20/02/005,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035420,21035420 - HP-CIMB FACTORLEASE - HISTO-022489 (AGREEMENT NO. PA/19/10/037) DUE SEPT 2022,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035380,21035380 - HP-ORIX CREDIT-4 unit Dell Latitute 3470 Notebook 109208,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035370,21035370 - HP-ORIX CREDIT-1 unit DELL NOTEBOOK CONTRACT 106280,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035010,21035010 - HP-AFFIN BANK-BMW740 (VAN963) DUE:07/03/2023,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21031050,21031050 - Amount Owing To Related Companies (Associate) - Trade,BS,Trade payables,Due to others,-7293.0,-7038.0
+21031040,21031040 - Amount Owing To Related Companies (Subsi) - Non Trade,BS,Other financial liabilities,Other payables (OFL),-665989.0,-726006.0
+21031030,21031030 - Amount Owing To Related Companies (Subsi) - Trade,BS,Trade payables,Due to others,72029.0,54162.0
+21030050,21030050 - Dir Loans- HC Chew,BS,Borrowings,Loan from directors,-12283.0,-12283.0
+21030040,21030040 - Dir Loans- CC Chang,BS,Borrowings,Loan from directors,-9245.0,-9245.0
+21030030,21030030 - Dir Loans- CA Ooi,BS,Borrowings,Loan from directors,-104412.0,-104412.0
+21030020,21030020 - Dir Loans- Chang Fang Chyi,BS,Borrowings,Loan from directors,-12077.0,-12077.0
+21025100,21025100 - Loan-Medigene Sdn Bhd,BS,Borrowings from related party - Holding/Subsidiary,Loan from related parties,0.0,0.0
+21025095,21025095 - Loan-Chemoscience Pte Ltd,BS,Borrowings from related party - Holding/Subsidiary,Loan from related parties,-9933401.0,-11696300.0
+21025090,21025090 - Loan-Everlife,BS,Borrowings from related party - Everlife group,Loan from holding company,-574560.0,0.0
+21025085,21025085 - Loan-Biofrontier Technology Pte Ltd,BS,Borrowings from related party - Holding/Subsidiary,Loan from related parties,0.0,0.0
+21025080,21025080 - Loan-Yao Lily,BS,Borrowings,Loan from shareholders,-9990.0,-9990.0
+21025030,21025030 - Loan-Robin,BS,Borrowings,Loan from shareholders,-5593.0,-5593.0
+21025010,21025010 - Loans- NSH/MHM,BS,Borrowings,Loan from shareholders,-12797.0,-12797.0
+Other current financial liabilities from related party - Everlife group,,,Other current financial liabilities from related party - Everlife group,Other payables (OFL),-188419.0,-304677.0
+Other current financial liabilities from related party - Holding/Subsidiary,,,Other current financial liabilities from related party - Holding/Subsidiary,Other payables (OFL),-983078.0,-1061319.0
+21023900,21023900 - STP Dummy - 0%,BS,Other financial liabilities,Other payables (OFL),45.0,45.0
+21023100,21023100 - Sevice Tax Payable - 6%,BS,Other current liabilities,Statutory dues payable- OCL,208437.0,-167342.0
+21021000,21021000 - Customer Deposit Receivable,BS,Contract liabilities,Contract liabilities,-686937.0,-2754333.0
+21020000,21020000 - Cash Sales Deposits,BS,Contract liabilities,Contract liabilities,-164743.0,-130877.0
+51020000,51020000 - Foreign Sales-3rd party,PL,Revenue from operations,Traded goods,-300259.0,-134816.0
+21015090,21015090 - Provision for stock written off,BS,Inventories,Allowance for obsolete inventories,-1764529.0,-1939182.0
+21015065,21015065 - EIS Payable,BS,Other current liabilities,Statutory dues payable- OCL,-3698.0,-3806.0
+21015061,21015061 - HRDF Payable,BS,Other current liabilities,Statutory dues payable- OCL,0.0,0.0
+21015070,21015070 - LHDN Payable,BS,Other current liabilities,Statutory dues payable- OCL,-349829.0,-162759.0
+21015060,21015060 - SOCSO Payable,BS,Other current liabilities,Statutory dues payable- OCL,-27093.0,-27704.0
+21015050,21015050 - EPF Payable,BS,Other current liabilities,Statutory dues payable- OCL,-578634.0,-389400.0
+21015040,21015040 - Provision for Doubtful debts,BS,Trade receivables,Allowance for bad and doubtful debts,-300413.0,-363306.0
+21015020,21015020 - Provision-Bonus,BS,Other financial liabilities,Employee related payables (OFL),-522498.0,-1396423.0
+Trade payable from related party - Associates,,,Trade payable from related party - Associates,Due to others,-7293.0,-7038.0
+Trade payable from related party - Holding/Subsidiary,,,Trade payable from related party - Holding/Subsidiary,Due to others,-5798044.0,-8586688.0
+Trade payable from related party - Everlife group,,,Trade payable from related party - Everlife group,Due to others,0.0,0.0
+21015016,21015016 - Accruals-Vouchers Redemption,BS,Trade payables,Accrued expenses,18929.0,21122.0
+21015015,21015015 - Deposit Received,BS,Contract liabilities,Contract liabilities,-12400.0,-12400.0
+21015014,21015014 - Accruals-Points Redemption,BS,Contract liabilities,Contract liabilities,-7316.0,-7316.0
+21015013,21015013 - Accruals-Staff Commission,BS,Other financial liabilities,Employee related payables (OFL),-141768.0,-189327.0
+21015011,21015011 - Accruals-Misc,BS,Trade payables,Accrued expenses,0.0,0.0
+21015010,21015010 - Accruals-Others,BS,Trade payables,Accrued expenses,-723814.0,-816471.0
+21013000,21013000 - GST-Importation Of Service-CL,BS,Other current liabilities,Statutory dues payable- OCL,-6456.0,-6456.0
+21011580,21011580 - Cred  Alloc-Marine ins (Total Lifescience),BS,Trade payables,Due to others,0.0,0.0
+21011575,21011575 - Cred  Alloc-Marine ins (Total Service),BS,Trade payables,Due to others,0.0,0.0
+21011570,21011570 - Cred  Alloc-Marine ins (TotalHealthcare),BS,Trade payables,Due to others,0.0,0.0
+21011565,21011565 - Cred  Alloc-Marine ins (Total Anal),BS,Trade payables,Due to others,0.0,0.0
+21011551,21011551 - Cred Alloc-Handling fee(Total Lifescience),BS,Trade payables,Due to others,0.0,0.0
+21011550,21011550 - Cred Alloc-Handling fee(Total Service),BS,Trade payables,Due to others,0.0,0.0
+21011545,21011545 - Cred Alloc-Handling fee(Total Healthcare),BS,Trade payables,Due to others,0.0,0.0
+21011540,21011540 - Cred Alloc-Handling fee(Total Anal),BS,Trade payables,Due to others,0.0,0.0
+21011536,21011536 - Cred Alloc-Inward Freight (Total Lifescience),BS,Trade payables,Due to others,0.0,0.0
+21011535,21011535 - Cred Alloc-Inward Freight (Total Service),BS,Trade payables,Due to others,0.0,0.0
+21011530,21011530 - Cred Alloc-Inward Freight (Total Healthcare),BS,Trade payables,Due to others,0.0,0.0
+21011525,21011525 - Cred Alloc-Inward Freight (Total Anal),BS,Trade payables,Due to others,12691.0,18192.0
+21011521,21011521 - Cred Alloc-Import duty (Total Lifescience),BS,Trade payables,Due to others,0.0,40.0
+21011520,21011520 - Cred Alloc-Import duty (Total Service),BS,Trade payables,Due to others,0.0,0.0
+21011515,21011515 - Cred Alloc-Import duty(TotalHealthcare),BS,Trade payables,Due to others,0.0,0.0
+21015012,21015012 - Accruals-Staff Claims,BS,Other financial liabilities,Employee related payables (OFL),0.0,0.0
+21010080,21010080 - Amount Owing To Related Company,BS,Other financial liabilities,Other payables (OFL),-4742.0,-4742.0
+21010070,21010070 - Non-Trade Creditors-Foreign,BS,Other financial liabilities,Other payables (OFL),-202828.0,-215192.0
+21011510,21011510 - Cred Alloc-Import duty( Total Anal),BS,Other financial liabilities,Other payables (OFL),-84810.0,-37091.0
+21010060,21010060 - Creditor Allocation-Landed Cost,BS,Other financial liabilities,Other payables (OFL),-233859.0,-255968.0
+21010040,21010040 - Other Creditors,BS,Other financial liabilities,Other payables (OFL),720846.0,535430.0
+21010030,21010030 - Non-Trade Creditors-Local,BS,Other financial liabilities,Other payables (OFL),398079.0,46547.0
+21010020,21010020 - Trade Creditors-Local,BS,Trade payables,Due to others,-3621787.0,-2724975.0
+21010010,21010010 - Trade Creditors-Foreign,BS,Trade payables,Due to others,-7699699.0,-12745219.0
+14050510,14050510 - F.Deposit-CIMB-50011732700056-IHP,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,356096.0
+14050410,14050410 - F.Deposit-CIMB-50011732700055-IHP,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,650070.0
+14050310,14050310 - F.Deposit-Maybank-212231888673,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,9712172.0,4726861.0
+14050210,14050210 - F. Deposit-SCB,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,3145488.0
+14050150,14050150 - HSBC BANK MALAYSIA BERHAD (MYR A/C:105-854004-101),BS,Cash and cash equivalents,Balance with banks in current accounts,55164.0,2701532.0
+14050140,14050140 - F.Deposit-CIMB-50011732700004,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,2664963.0
+14050110,14050110 - F.Deposit-CIMB-50011732700003,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,0.0
+14050100,14050100 - F.Deposit-CIMB-50011732700002,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,0.0
+14050090,14050090 - Techcombank- USD (A/C:106-25101090-025 ),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050070,14050070 - F.Deposit-CIMB-50011732700001,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,1512184.0,1520373.0
+14050064,14050064 - MTRUSTEE BERHAD (USD DSRA) – (MBB A/C:712231089552),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050063,14050063 - MTRUSTEE BERHAD (MYR DSRA) – (MBB A/C:512232055243),BS,Cash and cash equivalents,Balance with banks in current accounts,3.0,0.0
+14050062,14050062 - USD PROCEEDS ACCOUNT - (SCB A/C:620194702535),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050061,14050061 - MYR PROCEEDS ACCOUNT - (SCB A/C:620194702578),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050060,14050060 - CIMB BANK BERHAD (A/C:800-356-8399),BS,Cash and cash equivalents,Balance with banks in current accounts,2293422.0,1501629.0
+14050059,14050059 - MTRUSTEE BERHAD (USD DSRA) - (SCB A/C:620194702586),BS,Cash and cash equivalents,Balance with banks in current accounts,2.0,0.0
+14050058,14050058 - MTRUSTEE BERHAD (MYR DSRA) - (SCB A/C:620194702594),BS,Cash and cash equivalents,Balance with banks in current accounts,4.0,0.0
+14050057,14050057 - MAYBANK (A/C:5122 3204 1703),BS,Cash and cash equivalents,Balance with banks in current accounts,2341640.0,1405068.0
+14050056,14050056 - SCB-USD Investment FCA (A/C:620194715424),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050055,14050055 - SCB-SGD Investment FCA (A/C:620194729522),BS,Cash and cash equivalents,Balance with banks in current accounts,-180.0,0.0
+14050054,14050054 - SCB-EUR (A/C:620194733740),BS,Cash and cash equivalents,Balance with banks in current accounts,3604.0,2560.0
+14050053,14050053 - SCB-SGD (A/C:620194733759),BS,Cash and cash equivalents,Balance with banks in current accounts,80730.0,14681.0
+14050052,14050052 - SCB-USD (A/C:620194733767),BS,Cash and cash equivalents,Balance with banks in current accounts,27247.0,4244.0
+14050051,14050051 - SCB-MYR (A/C:620194733775),BS,Cash and cash equivalents,Balance with banks in current accounts,3009034.0,1357802.0
+14050040,14050040 - F.Deposit-ABB,BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14045045,14045045 - Petty cash-HR,BS,Cash and cash equivalents,Cash on hand ,1500.0,1500.0
+14045040,14045040 - Petty Cash-GA,BS,Cash and cash equivalents,Cash on hand ,1000.0,1000.0
+14045020,14045020 - Petty Cash-Warehouse,BS,Cash and cash equivalents,Cash on hand ,3000.0,3000.0
+14045015,14045015 - Petty cash - Service,BS,Cash and cash equivalents,Cash on hand ,2000.0,2000.0
+14045010,14045010 - Petty Cash-Office,BS,Cash and cash equivalents,Cash on hand ,3000.0,3000.0
+14040000,14040000 - Interest Suspense - HP and Leasing,BS,Other financial liabilities,Interest accrued but not due on Borrowings ,126062.0,87861.0
+14026210,14026210 - Other Recoverable-RI Technologies Ltd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),0.0,0.0
+14026180,14026180 - Other Recoverable-Research Instruments Sdn Bhd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),7364.0,0.0
+14026170,14026170 - Other Recoverable-Medigene Sdn Bhd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),17664.0,0.0
+14026140,14026140 - Other Recoverable-Everlife Holdings Pte Ltd,BS,Other current financial assets to related party - Everlife group,Amount due from related parties (OCFA),176508.0,258704.0
+Other current financial assets to related party - Associates,,,Other current financial assets to related party - Associates,Amount due from related parties (OCFA),7590.0,0.0
+14026070,14026070 - Other Recoverable-PT Chemoscience Indonesia,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),-24178.0,-109.0
+14026050,14026050 - Other Recoverable-Chemoscience Singapapore,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),10088.0,3767.0
+14026040,14026040 - Other Recoverable-Chemoinformatics,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),40052.0,37982.0
+14026020,14026020 - Other Recoverable-Chemoresources,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),187520.0,245015.0
+14025135,"14025135 - Loan to Chemoscience Phils., Inc",BS,Loan to related party - Holding/Subsidiary,Loan to related parties,0.0,0.0
+14025120,14025120 - Loan to PT Chemoscience Indonesia,BS,Loan to related party - Holding/Subsidiary,Loan to related parties,0.0,0.0
+14025100,14025100 - Loan to Vina Chemoscience Co Ltd,BS,Other current liabilities,Other payables (OCL),0.0,0.0
+14025090,14025090 - Loan to Chemoresources Sdn Bhd,BS,Loan to related party - Holding/Subsidiary,Loan to related parties,2192000.0,2192000.0
+14025085,14025085 - Loan to Chemoinformatics Sdn Bhd,BS,Loan to related party - Holding/Subsidiary,Loan to related parties,0.0,0.0
+14025080,14025080 - Loan to Chemoscience Thailand,BS,Loan to related party - Associates,Loan to related parties,75719.0,144677.0
+14025010,14025010 - Loan to Staff,BS,Other financial liabilities,Employee related payables (OFL),0.0,0.0
+14024060,14024060 - Amount Owing By Related Companies (Associate) - Non Trade,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),12977.0,20138.0
+,,,,,0.0,0.0
+14024050,14024050 - Amount Owing By Related Companies (Associate) - Trade,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),37168.0,35869.0
+14050030,14050030 - F.Deposits-UOB-1740048517,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,0.0
+14024030,14024030 - Amount Owing By Related Companies (Subsi) - Trade,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),125991.0,121717.0
+14022000,14022000 - AP Down Payment Payable,BS,Other current assets,Advances to suppliers (OCA),1616286.0,3207762.0
+14020000,14020000 - Deposits,BS,Other financial assets,Security deposits (OFA-Current),311655.0,309505.0
+14017000,14017000 - Advance Sales,BS,Trade receivables,"Trade receivables- Unsecured, considered good",198671.0,383823.0
+14016000,14016000 - Advance,BS,Other current assets,Prepaid expenses (OCA),195732.0,236729.0
+14050027,14050027 - UOB - USD (A/C:2329000925),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050026,14050026 - UOB - Investment (A/C: 2329000933),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14015000,14015000 - Prepayments,BS,Other current assets,Prepaid expenses (OCA),1845614.0,1862952.0
+14014000,14014000 - GST Input Tax Payable,BS,Other current assets,Balance with government authorities,-268.0,-268.0
+14013000,14013000 - GST-Importation Of Service-CA,BS,Other current assets,Balance with government authorities,6456.0,6456.0
+14012000,14012000 - GST 21 Day Rule,BS,Other current assets,Balance with government authorities,177.0,177.0
+14010050,14010050 - Non Trade Debtors,BS,Other financial assets,Other recoverable (OFA-Current),436.0,5341.0
+14050023,14050023 - UOB - SGD (A/C: 1289005477),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050022,14050022 - UOB - EURO (A/C: 1749009786),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050021,14050021 - UOB - USD (A/C: 1749009794),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14010020,14010020 - Other Debtors,BS,Trade receivables,"Trade receivables- Unsecured, considered good",-692009.0,-704569.0
+14010010,14010010 - Trade Debtors,BS,Trade receivables,"Trade receivables- Unsecured, considered good",23982611.0,30122413.0
+Trade receivables to related party - Holding/Subsidiary,,,Trade receivables to related party - Holding/Subsidiary,"Trade receivables- Unsecured, considered good",739729.0,1877978.0
+Trade receivables to related party - Associates,,,Trade receivables to related party - Associates,"Trade receivables- Unsecured, considered good",0.0,0.0
+14005000,14005000 - Closing Stock,BS,Inventories,Finished goods (Closing),16593010.0,23443395.0
+13020190,13020190 - Biofrontier Technology Pte Ltd,BS,Investments,Investments in subsidiaries,50060697.0,50060697.0
+13020185,13020185 - RI Techologies Limited,BS,Investments,Investment in Associates,7981966.0,7981966.0
+13020180,13020180 - Research Instruments Sdn Bhd,BS,Investments,Investments in subsidiaries,15040000.0,15040000.0
+13020175,13020175 - Research Instruments Pte. Ltd.,BS,Investments,Investments in subsidiaries,81320379.0,81320379.0
+13020170,13020170 - Scientific Resources Pte Ltd,BS,Investments,Investments in subsidiaries,27364808.0,27364808.0
+13020161,13020161 - Medigene Sdn Bhd,BS,Investments,Investments in subsidiaries,19581141.0,19581141.0
+13020160,13020160 - Chemoscience Phils Inc,BS,Investments,Investments in subsidiaries,4947327.0,4947327.0
+13020150,13020150 - Chemoscience Pte Ltd,BS,Investments,Investments in subsidiaries,15884598.0,15884598.0
+13020140,13020140 - Chemoscience (Thailand) Co Ltd,BS,Investments,Investment in Associates,746602.0,746602.0
+13020131,13020131 - Prov for diminution in value of investment-Chemoscience HK Ltd,BS,Investments,Investment in Associates,0.0,0.0
+13020130,13020130 - Chemoscience Hong Kong Ltd,BS,Investments,Investment in Associates,0.0,0.0
+13020101,13020101 - Prov for diminution in value of investment-PT Chemoscience,BS,Investments,Investments in subsidiaries,-990749.0,-990749.0
+13020100,13020100 - PT CHEMOSCIENCE INDONESIA,BS,Investments,Investments in subsidiaries,990750.0,990750.0
+13020061,13020061 - Prov for diminution in value of investment-Chemoinformatics Sdn Bhd,BS,Investments,Investments in subsidiaries,-99999.0,-99999.0
+13020060,13020060 - Chemoinformatics Sdn Bhd,BS,Investments,Investments in subsidiaries,100000.0,100000.0
+13020051,13020051 - Prov for diminution in value of investment-Chemoresources,BS,Investments,Investments in subsidiaries,-583720.0,-583720.0
+13020050,13020050 - Chemoresources Sdn Bhd,BS,Investments,Investments in subsidiaries,583720.0,583720.0
+13020031,13020031 - Prov for diminution in value of investment-Chemoscience (M),BS,Investments,Investments in subsidiaries,-129951.0,-129951.0
+13020030,13020030 - Chemoscience Malaysia,BS,Investments,Investments in subsidiaries,1345564.0,1345564.0
+14050020,14050020 - United Overseas Bank (A/C:1743034924),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+14050010,14050010 - Alliance Bank (A/C:1403-7001-0000-969),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0,0.0
+12060020,12060020 - Right of Use Asset-cost,BS,Right-of-use assets,Right of use assets,2598712.0,3702118.0
+12050020,12050020 - Signboard-cost,BS,"Property, plant and equipment",Office equipment,40602.0,40602.0
+12045910,12045910 - Accum. Dep ren.,BS,"Property, plant and equipment",Renovation-AD,-1264083.0,-1336105.0
+12045020,12045020 - Renovation-cost,BS,"Property, plant and equipment",Renovation,3225567.0,3227567.0
+12040910,12040910 - Accum. Dep T/E,BS,"Property, plant and equipment",Office Equipment-AD,-399456.0,-417029.0
+12040020,12040020 - Tools & Equipment-cost,BS,"Property, plant and equipment",Office Equipment,777000.0,810018.0
+12035910,12035910 - Accum. Dep E.F,BS,"Property, plant and equipment",Accumulated Depreciation,-206562.0,-206562.0
+12035020,12035020 - Electrical Fittings-cost,BS,"Property, plant and equipment","Property, plant and equipment",206562.0,206562.0
+12030910,12030910 - Accum. Dep M/V,BS,"Property, plant and equipment",Motor vehicles-AD,-718976.0,-733915.0
+12030020,12030020 - Motor Vehicles-cost,BS,"Property, plant and equipment",Motor vehicles,885724.0,885724.0
+12025911,12025911 - Accum. Dep machinery,BS,"Property, plant and equipment",Machinery-AD,-26024.0,-27290.0
+12025910,12025910 - Accum. Dep machineryRR,BS,"Property, plant and equipment",Machinery-AD,-40009815.0,-42028809.0
+12025030,12025030 - Machinery-cost,BS,"Property, plant and equipment",Machinery,0.0,0.0
+12025020,12025020 - MachineryRR-cost,BS,"Property, plant and equipment",Machinery,61949259.0,66084904.0
+12020911,12020911 - Accum.Dep computersRR,BS,"Property, plant and equipment",Other intangible assets,-60440.0,-60440.0
+12020910,12020910 - Accum. Dep computers,BS,"Property, plant and equipment",Computer-AD,-3963255.0,-4032205.0
+12020030,12020030 - ComputerRR-cost,BS,"Property, plant and equipment",Other intangible assets,60440.0,60440.0
+12020020,12020020 - Computers-cost,BS,"Property, plant and equipment",Computer,4438107.0,4484197.0
+12015910,12015910 - Accum. Dep Office Equipment,BS,"Property, plant and equipment",Office Equipment-AD,-1509938.0,-1513676.0
+12015020,12015020 - Office Equipment-cost,BS,"Property, plant and equipment",Office Equipment,1541780.0,1541780.0
+12010910,12010910 - Accum. Dep Furniture and Fittings,BS,"Property, plant and equipment",Furniture and Fittings-AD,-445571.0,-448538.0
+12010020,12010020 - Furniture & Fittings-cost,BS,"Property, plant and equipment",Furniture and Fittings,520395.0,520395.0
+11020000,11020000 - Goodwill,BS,Other intangible assets,Intangible assets,0.0,0.0
+14024040,14024040 - Amount Owing By Related Companies (Subsi) - Non Trade,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),1046814.0,1254974.0
+631500,,PL,Revenue from operations,Sale of services,-4867526.0,-1506907.0
+14010040,14010040 - Other Debtors - Rel Co,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),353222.0,144101.0
+83523000,83523000 - Audit Fees,PL,Other expenses,Legal and professional expenses,202884.0,97839.0
+14021000,14021000 - Deposits-Adhoc,BS,Other financial assets,Security deposits (OFA-Current),420.0,8310.0
+13020195,13020195 - Hausen Bernstein Co Ltd,BS,Investments,Investments in subsidiaries,70828976.0,70828976.0
+14026060,14026060 - Other Recoverable-Chemoscience Thailand,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),0.0,0.0
+14026130,14026130 - Other Recoverable-Chemoscience Phils Inc,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),0.0,0.0
+14026190,14026190 - Other Recoverable-Scientific Resources Pte Ltd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),0.0,0.0
+14026200,14026200 - Other Recoverable-Research Instruments Pte Ltd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),-5762.0,0.0
+14026220,14026220 - Other Recoverable-Biofrontier Technology Pte Ltd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),0.0,0.0
+14026230,14026230 - Other Recoverable-Research Instruments Vietnam Company Ltd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),0.0,0.0
+14026240,14026240 - Other Recoverable-Hausen Bernstein Co Ltd,BS,Other current financial assets to related party - Holding/Subsidiary,Amount due from related parties (OCFA),2831.0,0.0
+14050610,14050610 - F.Deposit-CIMB-50011732700060-IHP,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,214759.0
+14050611,14050611 - F.Deposit-CIMB-50011732700061-IHP,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0,401978.0
+21025200,21025200 - Loan-Research Instruments Sdn Bhd,BS,Borrowings from related party - Holding/Subsidiary,Loan from related parties,-5080000.0,-3100000.0
+21025250,21025250 - Loan-Chemoinformatics Sdn Bhd,BS,Borrowings from related party - Holding/Subsidiary,Loan from related parties,-839191.0,-839191.0
+21035436,21035436 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/23/03/009 (EXPIRED MAR2026),BS,Borrowings- current,Vehicle loan (Current),-803477.0,-618059.0
+21035437,21035437 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/23/10/050 (EXPIRED SEP2026),BS,Borrowings- current,Vehicle loan (Current),-1922483.0,-1618933.0
+80511020,80511020 - Lorry/Air Freight-NR,PL,Other expenses,Forwarding expense,0.0,0.0
+82520032,82520032 - Maintenance-Store-TX,PL,Other expenses,Repair and maintenance,10382.0,3630.0
+82541020,82541020 - Printing & Stationery-NR,PL,Other expenses,Printing and stationery,1770.0,0.0
+74510000,74510000 - Other Income-Compensation,PL,Other income,Miscellaneous income,0.0,0.0
+14025140,14025140 - Loan to Medigene Sdn Bhd,BS,Loan to related party - Holding/Subsidiary,Loan to related parties,0.0,0.0
+14045050,14045050 - Petty Cash-Analytical,BS,Cash and cash equivalents,Cash on hand ,0.0,0.0
+14045055,14045055 - Petty Cash - HC,BS,Cash and cash equivalents,Cash on hand ,0.0,0.0
+13020070,13020070 - Chemoresearch Sdn Bhd,BS,Investments,Investments in subsidiaries,0.0,0.0
+12060910,12060910 - Accum.Dep ROU,BS,Right-of-use assets,Right of use assets- Accumulated Depreciation,-1904652.0,-2109965.0
+21015075,21015075 - Loan-Bio-Rev Pte Ltd,BS,Borrowings from related party - Holding/Subsidiary,Loan from related parties,0.0,0.0
+21035390,"21035390 - HP-AFFIN Bank-1 unit HINO (VAG2854) - RM1,975 due: 19/6/2022",BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21035421,21035421 - HP-CIMB FACTORLEASE - AGREEMENT NO. PA/19/11/042 DUE SEPT 2022,BS,Borrowings- current,Vehicle loan (Current),0.0,0.0
+21045050,21045050 - Short Term Loan,BS,Borrowings,Short tem loan,0.0,0.0
+Loss on dimumition in value of investments,Loss on dimumition in value of investments,PL,Other expenses,Provision for Loss on dimumition in value of investments,0.0,0.0
+Other Bank Balances ,Other Bank Balances ,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,7386596.0,0.0
+21035438NC,,BS,Borrowings- non current,Vehicle loan from banks,-38519.0,-29590.0
+Lease Liabilities -NC,Lease Liabilities -NC,BS,Lease liabilities-Non Current ,Lease liabilities,-260664.0,-863857.0
+21050080NC,,BS,Borrowings,Loan from banks (current),-3125000.0,-6250000.0
+21050090NC,,BS,Borrowings,Loan from banks (current),-2351580.0,-4741275.0
+21050050NC,,BS,Borrowings,Loan from banks (current),0.0,0.0
+21050040NC,,BS,Borrowings,Loan from banks (current),0.0,0.0
+14006000,Inventory - Goods in transit,BS,Inventories,Goods in Transit ,1970069.0,2410653.0
+21031060,Amount Owing To Related Companies (Associate) - Non Trade,BS,Other financial liabilities,Other payables (OFL),0.0,-23465.0
+80551020,Packaging Material-NR,PL,Other expenses,Packaging expenses,0.0,2145.0
+82520014,Maintenance-Office-OP,PL,Other expenses,Repair and maintenance,0.0,130.0
+21025350,21025350 - Loan-Hausen Bernstein Co Ltd,BS,Borrowings from related party - Holding/Subsidiary,Loan from related parties,0.0,-11184874.0
+21025400,21025400 - Loan-RI Techologies Limited,BS,Borrowings from related party - Associates,Loan from related parties,0.0,-2258900.0
+21025450,21025450 - Loan-Chemoscience (Thailand) Co Ltd,BS,Borrowings from related party - Associates,Loan from related parties,0.0,-1328715.0
+84061000,84061000 - Indirect Tax,PL,Other expenses,Tax Expense off ,0.0,409602.0
+32100000,32100000 - Share based payment reserve (SOCIE),BS,Reserves and surplus,Share Based Payment Reserve,0.0,0.0
+21010015,21010015 - Trade creditors (GIT),BS,Trade payables,Due to others,0.0,-1822724.0
+Loans - Everlife ,Loans - Everlife ,BS,Loan to related party - Everlife group,Loan to related parties,0.0,44469600.0
+,,,,,0.0,0.0
+,,,,,0.0,0.0
+,,,,,0.0,0.0
+,,,,,0.0,0.0
+,,,,,0.0,0.0
+Interest accrued and not due -(OFCL),Interest accrued and not due -(OFCL),BS,Other financial liabilities,Interest accrued but not due on Borrowings ,-1251490.0,-1231255.0
+Provision for leave Encashment,,BS,Provisions - current,Compensated absences (Current),-210260.0,-210260.0
+14015000NC,,BS,Other Non-current assets,Prepaid expenses (ONCA),103930.0,103433.0
+Prepayments EIR ,Prepayments EIR ,BS,Borrowings- non current,Term loan from banks,6225944.0,6225944.0
+Equipment loan from banks NC,Equipment loan from banks NC,BS,Borrowings- non current,Equipment loan from banks NC,-768719.0,-403156.0
+Equipment loan from banks C,Equipment loan from banks C,BS,Borrowings- current,Equipment loan from banks C,-2000103.0,-1833836.0
+21010050,21010050 - Trade Creditors-Allocation A/C,BS,Trade Payables,Accrued expenses,0.0,
+Rates and Taxes,Rates and Taxes,PL,Other expenses,Rates and Taxes,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

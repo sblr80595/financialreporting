@@ -1,0 +1,52 @@
+{
+  "note_number": "NOTE 13",
+  "note_title": "Other financial assets-current",
+  "output_file": "company_a_note_13_other_financial_assets_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other financial assets, take positive debit balances from the trial balance.",
+  "categories": [
+    "Security deposits (OFA-Current)",
+    "Amount due from related parties (OCFA)",
+    "Other recoverable (OFA-Current)"
+  ],
+  "output_format": [
+    {
+      "label": "(Unsecured and considered good, valued at amortised cost)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "Security deposits",
+      "ind_as_minor": [
+        "Security deposits (OFA-Current)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Amount due from related parties (refer note 39)",
+      "ind_as_minor": [
+        "Amount due from related parties (OCFA)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Other recoverable",
+      "ind_as_minor": [
+        "Other recoverable (OFA-Current)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_OTHER_FINANCIAL_ASSETS_CURRENT",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Security deposits",
+        "Amount due from related parties (refer note 39)",
+        "Other recoverable"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. Show '(Unsecured and considered good, valued at amortised cost)' as subheading in italics (no amount)\n2. 'Security deposits' - from category 'Security deposits (OFA-Current)'\n3. 'Amount due from related parties (refer note 39)' - from category 'Amount due from related parties (OCFA)' (preserve note reference)\n4. 'Other recoverable' - from category 'Other recoverable (OFA-Current)'\n5. Show total of all three line items\n6. Example: Security deposits: 3,17,875; Amount due from related parties: 21,22,158; Other recoverable: 1,69,508; Total: 26,09,541\n8. Format all amounts in Indian numbering system without \u20b9 symbol.\n9. These are current financial assets measured at amortised cost as per Ind AS 109.\n10. The subheading indicates credit quality and valuation method as required by Schedule III.\n11. Related party receivables require cross-reference to Note 39 for detailed related party disclosures.\n12. Other financial assets are debit balances (positive values in trial balance)."
+}

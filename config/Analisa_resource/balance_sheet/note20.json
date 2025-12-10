@@ -1,0 +1,32 @@
+{
+  "note_number": "NOTE 20",
+  "note_title": "Other financial liabilities",
+  "output_file": "analisa_note_20_other_financial_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Financial liabilities typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the balance sheet as a liability.",
+  "categories": [
+    "Accruals",
+    "Employee related payables",
+    "Deferred Consideration"
+  ],
+  "output_format": [
+    {
+      "label": "**Other financial liabilities**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Accruals",
+      "ind_as_minor": "Accruals"
+    },
+    {
+      "label": "Employee related payables",
+      "ind_as_minor": "Employee related payables"
+    },
+    {
+      "label": "Deferred consideration",
+      "ind_as_minor": "Deferred Consideration"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minors: 'Accruals', 'Employee related payables', and 'Deferred Consideration'. Convert credit balances to positive values for presentation. Present each category separately and show the total. This note includes accrued expenses, employee-related dues, and deferred payment obligations."
+}

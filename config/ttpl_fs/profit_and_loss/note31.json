@@ -1,0 +1,144 @@
+{
+  "note_number": "NOTE 31",
+  "note_title": "Other Expenses",
+  "output_file": "ttps_fs_note_31_other_expenses.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories have debit balances (positive in trial balance). Aggregate all accounts for each minor category algebraically and present as positive values.",
+  "categories": [
+    "Power and fuel",
+    "Forwarding expenses",
+    "Rent (refer note 25 and 28)",
+    "Rates and taxes",
+    "Insurance charges",
+    "Repair and maintenance",
+    "Registration Fee",
+    "Advertisement, marketing and development",
+    "Sponsorship and conference expenses",
+    "Commission expense",
+    "Travelling and conveyance",
+    "Telephone and internet expense",
+    "Printing and stationery",
+    "Legal and professional expenses (refer note (i) below)",
+    "Foreign exchange loss (net)",
+    "Festival Celebration",
+    "Loss on disposal of PPE",
+    "Management support charges (refer note 44)",
+    "Bad debts",
+    "Testing fee",
+    "Bank charges",
+    "Miscellaneous expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Power and fuel",
+      "ind_as_minor": "Power and fuel",
+      "is_header": false
+    },
+    {
+      "label": "Forwarding expenses",
+      "ind_as_minor": "Forwarding expenses",
+      "is_header": false
+    },
+    {
+      "label": "Rent (refer note 25 and 28)",
+      "ind_as_minor": "Rent (refer note 25 and 28)",
+      "is_header": false
+    },
+    {
+      "label": "Rates and taxes",
+      "ind_as_minor": "Rates and taxes",
+      "is_header": false
+    },
+    {
+      "label": "Insurance charges",
+      "ind_as_minor": "Insurance charges",
+      "is_header": false
+    },
+    {
+      "label": "Repair and maintenance",
+      "ind_as_minor": "Repair and maintenance",
+      "is_header": false
+    },
+    {
+      "label": "Registration Fee",
+      "ind_as_minor": "Registration Fee",
+      "is_header": false
+    },
+    {
+      "label": "Advertisement, marketing and development",
+      "ind_as_minor": "Advertisement, marketing and development",
+      "is_header": false
+    },
+    {
+      "label": "Sponsorship and conference expenses",
+      "ind_as_minor": "Sponsorship and conference expenses",
+      "is_header": false
+    },
+    {
+      "label": "Commission expense",
+      "ind_as_minor": "Commission expense",
+      "is_header": false
+    },
+    {
+      "label": "Travelling and conveyance",
+      "ind_as_minor": "Travelling and conveyance",
+      "is_header": false
+    },
+    {
+      "label": "Telephone and internet expense",
+      "ind_as_minor": "Telephone and internet expense",
+      "is_header": false
+    },
+    {
+      "label": "Printing and stationery",
+      "ind_as_minor": "Printing and stationery",
+      "is_header": false
+    },
+    {
+      "label": "Legal and professional expenses (refer note (i) below)",
+      "ind_as_minor": "Legal and professional expenses (refer note (i) below)",
+      "is_header": false
+    },
+    {
+      "label": "Foreign exchange loss (net)",
+      "ind_as_minor": "Foreign exchange loss (net)",
+      "is_header": false
+    },
+    {
+      "label": "Festival Celebration",
+      "ind_as_minor": "Festival Celebration",
+      "is_header": false
+    },
+    {
+      "label": "Loss on disposal of PPE",
+      "ind_as_minor": "Loss on disposal of PPE",
+      "is_header": false
+    },
+    {
+      "label": "Management support charges (refer note 44)",
+      "ind_as_minor": "Management support charges (refer note 44)",
+      "is_header": false
+    },
+    {
+      "label": "Bad debts",
+      "ind_as_minor": "Bad debts",
+      "is_header": false
+    },
+    {
+      "label": "Testing fee",
+      "ind_as_minor": "Testing fee",
+      "is_header": false
+    },
+    {
+      "label": "Bank charges",
+      "ind_as_minor": "Bank charges",
+      "is_header": false
+    },
+    {
+      "label": "Miscellaneous expenses",
+      "ind_as_minor": "Miscellaneous expenses",
+      "is_header": false
+    }
+  ],
+  "additional_instructions": "Aggregate all mapped accounts algebraically for each minor category. Always generate this note even if no matching accounts found. Display zero (0) when no data available."
+}

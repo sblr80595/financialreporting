@@ -1,0 +1,49 @@
+{
+  "note_number": "NOTE 20",
+  "note_title": "Other financial liabilities",
+  "output_file": "ttpl_note_20_other_financial_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other financial liabilities, take positive credit balances (if negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Interest accrued but not due on borrowings",
+    "Employee related payables (OFL)",
+    "Other payables (OFL)"
+  ],
+  "output_format": [
+    {
+      "label": "Interest accrued but not due on borrowings",
+      "ind_as_minor": [
+        "Interest accrued but not due on borrowings"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Employee related payables",
+      "ind_as_minor": [
+        "Employee related payables (OFL)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Other payables (refer note (i) below)",
+      "ind_as_minor": [
+        "Other payables (OFL)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_OTHER_FINANCIAL_LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Interest accrued but not due on borrowings",
+        "Employee related payables",
+        "Other payables (refer note (i) below)"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 20: OTHER FINANCIAL LIABILITIES**\n\n1.  'Interest accrued but not due on borrowings' - from category 'Interest accrued but not due on borrowings'.\n2.  'Employee related payables' - from category 'Employee related payables (OFL)'.\n3.  **'Other payables (refer note (i) below)'** - from category 'Other payables (OFL)'.\n4.  Show total of all three line items as **TOTAL_OTHER_FINANCIAL_LIABILITIES**.\n\nAccounting Context:\n-   These are current financial liabilities measured at amortized cost as per Ind AS 109.\n-   They represent various short-term obligations that are financial in nature but are not trade payables or borrowings.\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   All amounts must be displayed as positive (liability balance)."
+}

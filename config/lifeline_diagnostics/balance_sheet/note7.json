@@ -1,0 +1,119 @@
+{
+    "note_number": "NOTE 7",
+    "note_title": "Other assets (Current)",
+    "output_file": "company_note_7_other_assets.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For other assets, take positive debit balances from the trial balance.",
+    "categories": [
+        "Other current assets",
+        "Advances to principal",
+        "Advances to employees",
+        "Prepaid expenses",
+        "Balance with government authorities",
+        "Stock lying with third party"
+    ],
+    "output_format": [
+        {
+            "label": "7A. Other non-current assets",
+            "ind_as_minor": null,
+            "is_major_section": true
+        },
+        {
+            "label": "(Unsecured, considered good)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Prepaid expenses (Non-Current)",
+            "ind_as_minor": ["Prepaid expenses"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "SUBTOTAL_7A",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "sum_of": [
+                "Prepaid expenses (Non-Current)"
+            ],
+            "show_line": true,
+            "display_label": ""
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "7B. Other current assets",
+            "ind_as_minor": null,
+            "is_major_section": true
+        },
+        {
+            "label": "(Unsecured, considered good)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Advances to principal",
+            "ind_as_minor": ["Advances to principal"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Advances to employees",
+            "ind_as_minor": ["Advances to employees"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Prepaid expenses (Current)",
+            "ind_as_minor": ["Prepaid expenses"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Balance with government authorities",
+            "ind_as_minor": ["Balance with government authorities"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Stock lying with third party",
+            "ind_as_minor": ["Stock lying with third party"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other current assets (General)",
+            "ind_as_minor": ["Other current assets"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "SUBTOTAL_7B",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "sum_of": [
+                "Advances to principal",
+                "Advances to employees",
+                "Prepaid expenses (Current)",
+                "Balance with government authorities",
+                "Stock lying with third party",
+                "Other current assets (General)"
+            ],
+            "show_line": true,
+            "display_label": ""
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "TOTAL_OTHER_ASSETS",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "sum",
+            "sum_of": [
+                "SUBTOTAL_7A",
+                "SUBTOTAL_7B"
+            ],
+            "show_line": true,
+            "display_label": "Total (7A + 7B)",
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\nThis note combines both non-current and current other assets in a single note with two sections:\n\nSECTION 7A: Other non-current assets\n1. Show '7A. Other non-current assets' as major section header\n2. Show '(Unsecured, considered good)' as subheading (no amount)\n3. 'Prepaid expenses (Non-Current)' - Mapped to: ['Prepaid expenses'] (Assumption: Non-current portion)\n4. Show subtotal for 7A section.\n5. Add blank row for spacing\n\nSECTION 7B: Other current assets\n6. Show '7B. Other current assets' as major section header\n7. Show '(Unsecured, considered good)' as subheading (no amount)\n8. 'Advances to principal' - Mapped to: ['Advances to principal']\n9. 'Advances to employees' - Mapped to: ['Advances to employees']\n10. 'Prepaid expenses (Current)' - Mapped to: ['Prepaid expenses'] (Assumption: Current portion)\n11. 'Balance with government authorities' - Mapped to: ['Balance with government authorities']\n12. 'Stock lying with third party' - Mapped to: ['Stock lying with third party']\n13. 'Other current assets (General)' - Mapped to: ['Other current assets']\n14. Show subtotal for 7B section.\n15. Add blank row for spacing\n\nFINAL TOTAL:\n16. Show grand total as 'Total (7A + 7B)' = 7A subtotal + 7B subtotal\n\n17. Format all amounts in Indian numbering system without ₹ symbol.\n18. Non-current assets have benefits extending beyond 12 months; current assets within 12 months.\n19. Balance with government authorities includes GST input credit, income tax refunds, etc.\n20. All other assets are debit balances (positive values in trial balance)."
+}

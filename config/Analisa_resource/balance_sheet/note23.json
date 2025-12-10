@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 23",
+  "note_title": "Current tax liabilities (net)",
+  "output_file": "analisa_note_23_current_tax_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Current tax liabilities typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the balance sheet as a liability.",
+  "categories": [
+    "Provision for income tax (net of prepaid taxes)"
+  ],
+  "output_format": [
+    {
+      "label": "**Current tax liabilities (net)**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Provision for income tax (net of prepaid taxes)",
+      "ind_as_minor": "Provision for income tax (net of prepaid taxes)"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Provision for income tax (net of prepaid taxes)'. Convert credit balances to positive values for presentation. This represents the net current tax liability after adjusting for advance tax paid and TDS credits."
+}

@@ -1,0 +1,16 @@
+{
+    "note_number": "NOTE 11",
+    "note_title": "Other bank balances",
+    "output_file": "company_a_note_11_other_bank_balances.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Not applicable - no other bank balances mapped.",
+    "categories": [],
+    "output_format": [
+        {
+            "label": "*Other bank balances*",
+            "ind_as_minor": null,
+            "is_header": true
+        }
+    ],
+    "additional_instructions": "This note is not applicable as there are no 'Other bank balances' in the trial balance. Display 'Nil' or '-' for all line items. The categories array is empty as there are no matching GL categories."
+}

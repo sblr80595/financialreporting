@@ -1,0 +1,386 @@
+{
+  "note_number": "CASHFLOW",
+  "note_title": "Cash Flow Statement (Lifeline Diagnostics)",
+  "statement_type": "cashflow",
+  "method": "INDIRECT",
+  "period_column": "31 March 25",
+  "prior_period_column": "31 March 24",
+  "summation_rule": "Algebraic sum (preserve signs: debits positive, credits negative)",
+  
+    "auxiliary_files": [
+    {
+      "file_name": "TB_FINAL.csv",
+      "file_path": "data/{entity}/input/trial-balance/",
+      "purpose": "Primary source for all line items (Profit/Loss, Adjustments, Investing/Financing Cash Flows)",
+      "required": true
+    },
+    {
+      "file_name": "BS_Statement_*.xlsx",
+      "file_path": "data/{entity}/output/balance-sheet/",
+      "purpose": "For working capital and non-current asset movement calculation (e.g., Opening Cash/Non-Current Investments)",
+      "required": true
+    },
+    {
+      "file_name": "PL_Sttement_*.xlsx",
+      "file_path": "data/{entity}/output/profit-loss/",
+      "purpose": "Extract Profit Before Tax (if not in TB)",
+      "required": false
+    },
+    {
+      "file_name": "tax_mar'25.csv",
+      "file_path": "data/{entity}/input/notes-input/",
+      "purpose": "Income tax paid during the period",
+      "required": false
+    }
+  ],
+  
+  "sections": {
+    "operating_activities": {
+      "title": "Cash flows from operating activities",
+      "starting_point": {
+        "line_item": "Profit before tax",
+        "ind_as_minor": ["Profit Before Tax", "PBT", "Profit before taxation"]
+      },
+      
+      "adjustments_section": {
+        "title": "Adjustments for:",
+        "categories": [
+          {
+            "line_item": "Depreciation on property, plant and equipment and right of use assets",
+            "ind_as_minor": ["Depreciation - PPE", "Depreciation on PPE", "Depreciation - ROU", "ROU Depreciation", "Depreciation", "Depreciation Expense"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Amortisation on intangible assets",
+            "ind_as_minor": ["Amortisation - Intangible", "Intangible Amortisation", "Amortization"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Interest on lease liabilities",
+            "ind_as_minor": ["Interest - Lease", "Lease Interest", "Interest on Lease Liabilities"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Share-based payment expense",
+            "ind_as_minor": ["Share Based Payment", "ESOP Expense", "Stock Option Expense"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Finance cost",
+            "ind_as_minor": ["Finance Costs", "Interest on Borrowings", "Interest Expense", "Borrowing Costs"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Provision for inventory obsolescence",
+            "ind_as_minor": ["Provision for Obsolescence", "Inventory Write-down", "Obsolescence Provision"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Unrealised loss/ gain on foreign exchange (net)",
+            "ind_as_minor": ["Unrealised Forex Loss", "MTM Loss - Forex", "Unrealised Forex Gain", "MTM Gain - Forex", "Foreign Exchange Fluctuation"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Interest income",
+            "ind_as_minor": ["Interest Income", "Income from Deposits"],
+            "display_format": "-(value)",
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Provision for bad and doubtful debts",
+            "ind_as_minor": ["Provision for Bad Debts", "ECL Provision", "Bad Debt Provision", "Doubtful Debt Provision"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Bad debts",
+            "ind_as_minor": ["Bad Debts Written Off", "Bad Debt Expense"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Loss on sale of property, plant and equipment",
+            "ind_as_minor": ["Loss on Sale of PPE", "Loss on Asset Sale"],
+            "display_in_summary": true
+          },
+          {
+            "line_item": "Dividend income from subsidiaries",
+            "ind_as_minor": ["Dividend Income", "Income from Investments"],
+            "display_format": "-(value)",
+            "display_in_summary": true
+          }
+        ]
+      },
+      
+      "subtotal_1": {
+        "line_item": "Operating profit before working capital changes",
+        "format": "bold"
+      },
+      
+      "working_capital_changes": {
+        "title": "Changes in working capital",
+        "categories": [
+          {
+            "line_item": "Movement in trade payables",
+            "ind_as_minor": ["Trade Payables", "Creditors", "Sundry Creditors"],
+            "calculation": "(current - prior)"
+          },
+          {
+            "line_item": "Movement in other financial liabilities",
+            "ind_as_minor": ["Other Financial Liabilities - Current", "Other Financial Liabilities"],
+            "calculation": "(current - prior)"
+          },
+          {
+            "line_item": "Movement in other liabilities & contact liabilities",
+            "ind_as_minor": ["Other Current Liabilities", "Contract Liabilities", "Statutory Dues"],
+            "calculation": "(current - prior)"
+          },
+          {
+            "line_item": "Movement in provisions",
+            "ind_as_minor": ["Provisions - Current", "Provisions"],
+            "calculation": "(current - prior)"
+          },
+          {
+            "line_item": "Movement in trade receivables",
+            "ind_as_minor": ["Trade Receivables", "Debtors", "Sundry Debtors"],
+            "calculation": "-(current - prior)"
+          },
+          {
+            "line_item": "Movement in inventories",
+            "ind_as_minor": ["Inventories", "Stock", "Inventory"],
+            "calculation": "-(current - prior)"
+          },
+          {
+            "line_item": "Movement in financial assets",
+            "ind_as_minor": ["Other Financial Assets - Current", "Financial Assets"],
+            "calculation": "-(current - prior)"
+          },
+          {
+            "line_item": "Movement in other assets",
+            "ind_as_minor": ["Other Current Assets", "Prepaid Expenses", "Other Assets"],
+            "calculation": "-(current - prior)"
+          }
+        ]
+      },
+      
+      "subtotal_2": {
+        "line_item": "Cash generated from/(used in) operations",
+        "format": "bold"
+      },
+      
+      "tax_paid": {
+        "line_item": "Income tax paid (net)",
+        "ind_as_minor": ["Income Tax Paid", "Tax Paid", "Direct Taxes Paid"],
+        "display_format": "-(value)"
+      },
+      
+      "section_total": {
+        "line_item": "Net cash flows from/ (used in) operating activities [A]",
+        "format": "bold_underline"
+      }
+    },
+    
+    "investing_activities": {
+      "title": "Cash flows from investing activities",
+      
+      "categories": [
+        {
+          "line_item": "Purchase of property, plant and equipment and intangible assets",
+          "ind_as_minor": ["PPE Additions", "Capital Expenditure", "Purchase of PPE", "Intangible Asset Additions"],
+          "display_format": "-(value)"
+        },
+        {
+          "line_item": "Proceeds from disposal of property, plant and equipment",
+          "ind_as_minor": ["Sale of PPE", "Proceeds from Asset Sale"]
+        },
+        {
+          "line_item": "Investment in associates",
+          "ind_as_minor": ["Investment in Associates", "Associate Investments"],
+          "display_format": "-(value)"
+        },
+        {
+          "line_item": "Proceeds from disposal of subsidiary",
+          "ind_as_minor": ["Sale of Subsidiary", "Disposal of Subsidiary"]
+        },
+        {
+          "line_item": "Payment of contingent consideration liability",
+          "ind_as_minor": ["Contingent Consideration Payment", "Contingent Liability Payment"],
+          "display_format": "-(value)"
+        },
+        {
+          "line_item": "(Investment)/maturity in bank deposits",
+          "ind_as_minor": ["Fixed Deposits - Non Current", "Bank Deposits", "FD Investments"],
+          "calculation": "-(current - prior)"
+        },
+        {
+          "line_item": "Interest received",
+          "ind_as_minor": ["Interest Received", "Interest Income Received"]
+        },
+        {
+          "line_item": "Dividend income received",
+          "ind_as_minor": ["Dividend Received", "Dividend Income Received"]
+        },
+        {
+          "line_item": "Proceeds against loans given",
+          "ind_as_minor": ["Loan Repayment Received", "Loans Repaid"]
+        },
+        {
+          "line_item": "Loan Given",
+          "ind_as_minor": ["Loans Given", "Loans to Related Parties", "Loans Advanced"],
+          "display_format": "-(value)"
+        }
+      ],
+      
+      "section_total": {
+        "line_item": "Net cash used in investing activities [B]",
+        "format": "bold_underline"
+      }
+    },
+    
+    "financing_activities": {
+      "title": "Cash flows from financing activities",
+      
+      "categories": [
+        {
+          "line_item": "Proceeds from non-current borrowings",
+          "ind_as_minor": ["Long Term Borrowings - Proceeds", "Term Loan Proceeds"]
+        },
+        {
+          "line_item": "Repayments of non-current borrowings",
+          "ind_as_minor": ["Long Term Borrowings - Repayment", "Repayment of Term Loans"],
+          "display_format": "-(value)"
+        },
+        {
+          "line_item": "(Repayments)/proceeds from current borrowings (net)",
+          "ind_as_minor": ["Short Term Borrowings", "Working Capital Loans", "Current Borrowings"],
+          "calculation": "(current - prior)"
+        },
+        {
+          "line_item": "Payment of principal portion of lease liabilities (including interest)",
+          "ind_as_minor": ["Lease Liability Payment - Principal", "Lease Payment", "Payment of Lease Liabilities"],
+          "display_format": "-(value)"
+        },
+        {
+          "line_item": "Interest paid",
+          "ind_as_minor": ["Interest Paid - Borrowings", "Interest Paid", "Finance Costs Paid"],
+          "display_format": "-(value)"
+        }
+      ],
+      
+      "section_total": {
+        "line_item": "Net cash (used in)/flows from financing activities [C]",
+        "format": "bold_underline"
+      }
+    },
+    
+    "reconciliation": {
+      "title": "Cash and cash equivalents reconciliation",
+      "components": [
+        {
+          "line_item": "Net (decrease)/ increase in cash and cash equivalents [A+B+C]",
+          "format": "bold_underline"
+        },
+        {
+          "line_item": "Cash and cash equivalents at the beginning of the year",
+          "source": "balance_sheet_prior_period",
+          "ind_as_minor": ["Cash and Cash Equivalents", "Cash & Bank Balances"]
+        },
+        {
+          "line_item": "Cash and cash equivalents at the end of the year",
+          "format": "bold_double_underline"
+        }
+      ]
+    },
+    
+    "cash_breakdown": {
+      "title": "Cash and cash equivalents include (refer note 11)",
+      "categories": [
+        {
+          "line_item": "Cash on hand",
+          "ind_as_minor": ["Cash in Hand", "Cash"]
+        },
+        {
+          "line_item": "Balance with banks",
+          "is_header": true
+        },
+        {
+          "line_item": "- On current accounts",
+          "ind_as_minor": ["Bank Balance - Current Account", "Current Account", "Balance in Current Account"],
+          "indent": 1
+        }
+      ]
+    },
+    
+    "non_cash_activities": {
+      "title": "Non- cash financing and investing activities:",
+      "categories": [
+        {
+          "line_item": "- Acquisition of right-of-use assets",
+          "ind_as_minor": ["ROU Asset Additions", "Right of Use Asset Acquired"],
+          "indent": 1
+        },
+        {
+          "line_item": "- Contingent consideration for acquisition of subsidiaries",
+          "ind_as_minor": ["Contingent Consideration", "Deferred Consideration"],
+          "indent": 1
+        }
+      ]
+    }
+  },
+  
+  "output_structure": {
+    "format": "table",
+    "sections": [
+      {
+        "type": "header",
+        "content": "# CASH FLOW STATEMENT (INDIRECT METHOD)\n## For the year ended {period_column} and {prior_period_column}"
+      },
+      {
+        "type": "section",
+        "section_key": "operating_activities",
+        "include_subsections": true
+      },
+      {
+        "type": "section",
+        "section_key": "investing_activities"
+      },
+      {
+        "type": "section",
+        "section_key": "financing_activities"
+      },
+      {
+        "type": "section",
+        "section_key": "reconciliation"
+      },
+      {
+        "type": "section",
+        "section_key": "cash_breakdown"
+      },
+      {
+        "type": "section",
+        "section_key": "non_cash_activities"
+      }
+    ]
+  },
+  
+  "formatting_rules": {
+    "amount_format": "indian_rupee",
+    "negative_display": "brackets",
+    "bold_items": ["section_totals", "subtotals", "reconciliation_totals"],
+    "underline_items": ["final_totals"],
+    "indent_levels": {
+      "main_items": 0,
+      "sub_items": 1,
+      "detail_items": 2
+    }
+  },
+  
+  "validation_rules": [
+    "Opening Cash + Net Change = Closing Cash",
+    "Closing Cash must match Balance Sheet",
+    "All depreciation/amortization must be added back",
+    "Working Capital: Asset Increase = Negative, Liability Increase = Positive",
+    "A + B + C = Net Change in Cash",
+    "All amounts in Indian Rupee format (₹1,23,456)",
+    "Cash outflows shown in brackets (₹XX,XXX)",
+    "Subtotals and section totals in bold"
+  ]
+}

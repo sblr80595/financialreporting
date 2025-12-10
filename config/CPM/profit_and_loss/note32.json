@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 32",
+  "note_title": "Tax Expense",
+  "output_file": "company_a_note_32_tax_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Apply algebraic summation. Current tax and deferred tax may have debit (expense) or credit (benefit) balances. Preserve signs throughout calculations. Negative values indicate tax benefits/credits.",
+  "categories": [
+    "Current tax",
+    "Deferred tax"
+  ],
+  "output_format": [
+    {
+      "label": "Current tax",
+      "ind_as_minor": "Current tax"
+    },
+    {
+      "label": "Deferred tax",
+      "ind_as_minor": "Deferred tax"
+    }
+  ],
+  "additional_instructions": "Tax expense includes both current and deferred tax components. Current tax represents the actual tax payable/receivable for the period. Deferred tax represents the tax effect of temporary differences. Both components should preserve their natural signs (debit = expense, credit = benefit). The total tax expense may be positive (expense) or negative (benefit) depending on the components."
+}

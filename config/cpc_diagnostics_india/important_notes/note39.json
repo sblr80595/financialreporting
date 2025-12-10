@@ -1,0 +1,137 @@
+{
+  "note_number": "NOTE 39",
+  "note_title": "Segment reporting",
+  "output_file": "cpc_note_39_segment_reporting.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items for the period ended March 31, 2025. If values are empty or zero, display 'Nil'.",
+  "categories": [
+    "Segment revenue - India",
+    "Segment revenue - Outside India",
+    "Segment assets - India",
+    "Segment assets - Outside India",
+    "Unallocated assets",
+    "Capital expenditure - India",
+    "Capital expenditure - Outside India"
+  ],
+  "output_format": [
+    {
+      "label": "Segment reporting",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "(a) Business segments",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "The Company is engaged in only one business namely sale of diagnostic instruments, reagents and providing maintenance services for the said equipments for the in-vitro diagnostics industry and has only one reportable segment as envisaged by Accounting Standard 17 - Segment Reporting (AS-17). Accordingly, amounts appearing in these financial statements relates to only trading/ manufacture of in-vitro diagnostics industry.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "(b) Geographic Segments",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "The Company caters to both overseas customers as well as domestic customers. In presenting the geographic information, segment revenue has been determined based on the geographic location of the customers.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Segment revenue by location of customers",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   India",
+      "ind_as_minor": [
+        "Segment revenue - India"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Outside India",
+      "ind_as_minor": [
+        "Segment revenue - Outside India"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Carrying amount of segment assets",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   India",
+      "ind_as_minor": [
+        "Segment assets - India"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Outside India",
+      "ind_as_minor": [
+        "Segment assets - Outside India"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Unallocated assets",
+      "ind_as_minor": [
+        "Unallocated assets"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Capital expenditure (Property, plant and equipment and intangible assets)",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   India",
+      "ind_as_minor": [
+        "Capital expenditure - India"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Outside India",
+      "ind_as_minor": [
+        "Capital expenditure - Outside India"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 39: SEGMENT REPORTING**\n\nPresentation Requirements:\n1.  **Business Segments**: Include the descriptive text explaining the single business segment.\n2.  **Geographic Segments**: Include the descriptive text regarding domestic and overseas customers.\n3.  **Tables**: Create three distinct sections for Revenue, Assets, and Capital Expenditure.\n4.  **Data Extraction**: Map the 'India' and 'Outside India' rows from the source tables to the respective line items.\n\nFormatting:\n-   As the values for March 31, 2025 are empty in the source file, display 'Nil' for all numeric line items."
+}

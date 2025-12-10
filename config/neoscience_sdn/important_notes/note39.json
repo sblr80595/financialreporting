@@ -1,0 +1,124 @@
+{
+  "note_number": "Note 39",
+  "note_title": "Additional Information",
+  "output_file": "Neoscience_Note_39_Additional_Info.txt",
+  "source_file": "TB_Neoscience_Final.csv",
+  "auxiliary_files": [
+    "data/neoscience_sdn/output/financial_statements/BS/Balance_Sheet_*.xlsx",
+    "data/neoscience_sdn/output/financial_statements/PL/PL_Statement_*.xlsx"
+  ],
+  "statement_type": "disclosure",
+  "summation_rule": "Retrieve data for Commitments and Contingent Liabilities from auxiliary files. If data is not found, display 'Data Not Found in Source'. Final summation rule for totals is a simple sum of components.",
+  "categories": [
+    "General Additional Information Narrative",
+    "Capital Commitments - Contracts Remaining",
+    "Uncalled Liability on Shares",
+    "Claims Not Acknowledged as Debts",
+    "Corporate Guarantees Provided",
+    "Bills Discounted"
+  ],
+  "output_format": [
+    {
+      "label": "39. Additional Information (General)",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "General Narrative Content",
+      "ind_as_minor": [
+        "General Additional Information Narrative"
+      ],
+      "calculation": "narrative_retrieval",
+      "not_found_message": "No general additional information (other than 39A and 39B) was explicitly identified in the source files."
+    },
+    {
+      "label": "39A. Commitments",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Capital Commitments: Estimated amount of contracts remaining to be executed on capital account and not provided for.",
+      "ind_as_minor": [
+        "Capital Commitments - Contracts Remaining"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "Other Commitments: Uncalled liability on shares partly paid (e.g., in subsidiary or associate).",
+      "ind_as_minor": [
+        "Uncalled Liability on Shares"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "**Total Commitments**",
+      "calculation": "sum_previous_rows",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ],
+      "bold": true
+    },
+    {
+      "label": "39B. Contingent Liabilities",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Claims against the Company not acknowledged as debts (including pending legal matters).",
+      "ind_as_minor": [
+        "Claims Not Acknowledged as Debts"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "Corporate guarantees provided to banks or third parties.",
+      "ind_as_minor": [
+        "Corporate Guarantees Provided"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "Bills discounted with banks.",
+      "ind_as_minor": [
+        "Bills Discounted"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "**Total Contingent Liabilities**",
+      "calculation": "sum_previous_rows",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ],
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns for monetary values: As at 30 June 2025 and As at 31 March 2025. Ensure a narrative message is displayed for the general information section if no data is found. Use the specified 'Data Not Found in Source' message for missing monetary line items. Format amounts using standard Malaysian Ringgit (MYR) format with commas."
+}

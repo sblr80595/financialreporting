@@ -1,0 +1,84 @@
+{
+  "note_number": "NOTE 42",
+  "note_title": "Conversion of Partnership Firm into Company",
+  "output_file": "ttpl_note_42_conversion_disclosure.txt",
+  "statement_type": "disclosure",
+  "summation_rule": "Extract closing balance values for assets and liabilities taken over. All items should be presented as positive amounts.",
+  "categories": [
+    "Assets Taken Over at Book Value",
+    "Liabilities Taken Over at Book Value",
+    "Share Capital Issued to Partners",
+    "Capital Reserve arising on conversion"
+  ],
+  "output_format": [
+    {
+      "label": "A. Quantitative Disclosures",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Assets and Liabilities transferred at Book Value",
+      "is_header": true
+    },
+    {
+      "label": "i) Assets taken over",
+      "ind_as_minor": [
+        "Assets Taken Over at Book Value"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "ii) Less: Liabilities taken over",
+      "ind_as_minor": [
+        "Liabilities Taken Over at Book Value"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true,
+      "is_deduction": true,
+      "display_format": "-(value)"
+    },
+    {
+      "label": "Net Assets taken over",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "i) Assets taken over"
+      ],
+      "subtract": [
+        "ii) Less: Liabilities taken over"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Consideration and Capital Reserve",
+      "is_header": true
+    },
+    {
+      "label": "Less: Consideration discharged (Share Capital issued)",
+      "ind_as_minor": [
+        "Share Capital Issued to Partners"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true,
+      "is_deduction": true,
+      "display_format": "-(value)"
+    },
+    {
+      "label": "Capital Reserve arising on conversion",
+      "ind_as_minor": [
+        "Capital Reserve arising on conversion"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false,
+      "is_total": true,
+      "note": "This amount reconciles the Net Assets taken over with the Share Capital issued."
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 42: CONVERSION OF PARTNERSHIP FIRM INTO COMPANY**\n\n1.  **Narrative**: The note requires extensive qualitative disclosure detailing the scheme of conversion, effective date, and accounting method (pooling of interests/carrying value method).\n2.  **Quantitative Reconciliation**: The output must show a table reconciling **Assets Taken Over** minus **Liabilities Taken Over** to arrive at **Net Assets**. This is then reconciled against **Consideration Paid** (Share Capital Issued) to determine the **Capital Reserve**.\n\nAccounting Context:\n-   This transaction is typically accounted for at **carrying values** (book values) under the 'common control' exception.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456).\n-   Liability/Consideration lines should be shown as deductions."
+}

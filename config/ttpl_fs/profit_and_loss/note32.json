@@ -1,0 +1,24 @@
+{
+  "note_number": "NOTE 32",
+  "note_title": "Income Tax Expense",
+  "output_file": "ttps_fs_note_32_income_tax_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories have debit balances (positive in trial balance). Aggregate all accounts for each minor category algebraically and present as positive values. Sum both components for total income tax expense.",
+  "categories": [
+    "Current Tax",
+    "Deferred tax expense"
+  ],
+  "output_format": [
+    {
+      "label": "Current tax",
+      "ind_as_minor": "Current Tax",
+      "is_header": false
+    },
+    {
+      "label": "Deferred tax charge/(credit)",
+      "ind_as_minor": "Deferred tax expense",
+      "is_header": false
+    }
+  ],
+  "additional_instructions": "Aggregate all mapped accounts algebraically for each minor category. Calculate total as sum of Current tax and Deferred tax. Display the total as 'Income tax expense reported in the statement of profit and loss'. Always generate this note even if no matching accounts found. Display zero (0) when no data available."
+}

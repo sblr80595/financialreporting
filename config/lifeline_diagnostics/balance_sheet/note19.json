@@ -1,0 +1,24 @@
+{
+  "note_number": "NOTE 19",
+  "note_title": "Trade payables",
+  "output_file": "lifeline_diagnostics_note_19_trade_payables.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. ONLY match accounts where the Ind AS Minor column exactly matches 'Due to others'. Ignore the Major category column. Trade payables are typically credit balances (liabilities). Present as positive amounts in the balance sheet.",
+  "generate_if_empty": true,
+  "match_on_minor_only": true,
+  "categories": [
+    "Due to others"
+  ],
+  "output_format": [
+    {
+      "label": "Trade payables",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Due to others",
+      "ind_as_minor": "Due to others"
+    }
+  ],
+  "additional_instructions": "This note discloses trade payables recognized in the balance sheet as per Ind AS 109 - Financial Instruments and Schedule III disclosure requirements.\n\n**CRITICAL MATCHING INSTRUCTION**: \nONLY sum GL accounts where the 'Ind AS Minor' column exactly equals 'Due to others'. \nDO NOT match on 'Ind AS Major' column or any other column. \nIGNORE accounts that have 'Trade payables' in the Major column but do NOT have 'Due to others' in the Minor column.\nONLY the Minor column value 'Due to others' should be used for matching and summing accounts.\n\n**Trade payables** - This is a display header only, NOT a matching criterion.\n\n**Due to others**: Sum all GL accounts where Ind AS Minor column = 'Due to others'. This includes:\n- Trade creditors for goods purchased\n- Trade creditors for services received\n- Suppliers for raw materials/trading goods\n- Vendors for operational expenses\n- Acceptances (bills payable)\n- Any other amounts payable to suppliers for goods/services in the ordinary course of business\n- Amounts due to suppliers (other than micro and small enterprises)\n\nMatching Logic:\n- Column to match: 'Ind AS Minor' ONLY\n- Value to match: 'Due to others' (exact match)\n- DO NOT use 'Ind AS Major' column for matching\n- DO NOT match on any other criteria\n\nTrade payables represent amounts owed to suppliers for goods and services purchased on credit in the normal course of business. These are measured at amortized cost under Ind AS 109.\n\nPresentation Notes:\n1. Trade payables are current liabilities\n2. Present as positive amounts (credit balances)\n3. This category typically represents suppliers other than MSMEs (Micro, Small and Medium Enterprises)\n4. Separate disclosure may be required for MSME payables as per MSMED Act\n5. Follow Schedule III format for balance sheet presentation\n6. Trade payables are financial liabilities measured at amortized cost\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for trade payables disclosure. Companies may need to provide additional disclosures:\n- Ageing analysis of trade payables\n- Amounts due to MSMEs separately\n- Amounts due to related parties\n- Details of payables outstanding beyond normal credit period\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

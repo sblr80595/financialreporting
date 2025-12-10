@@ -1,0 +1,54 @@
+{
+  "note_number": "NOTE 10",
+  "note_title": "Cash and cash equivalents",
+  "output_file": "company_note_10_cash_and_cash_equivalents.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For cash and bank balances, take positive debit balances from the trial balance.",
+  "categories": [
+    "Cash on hand",
+    "- In current accounts",
+    "Other bank balances"
+  ],
+  "output_format": [
+    {
+      "label": "Cash on hand",
+      "ind_as_minor": [
+        "Cash on hand"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Balances with banks",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "   In current accounts",
+      "ind_as_minor": [
+        "- In current accounts"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Other bank balances",
+      "ind_as_minor": [
+        "Other bank balances"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Cash and cash equivalents",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Cash on hand",
+        "   In current accounts",
+        "   Other bank balances"
+      ],
+      "show_line": true,
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 10: CASH AND CASH EQUIVALENTS**\n\nPresentation Requirements:\n1.  **Cash on hand**: Sum of 'Cash on hand'.\n2.  **Balances with banks** (Header).\n3.  **In current accounts**: Sum of '- In current accounts'.\n4.  **Other bank balances**: Sum of 'Other bank balances'.\n5.  **Total Cash and cash equivalents**: Sum of all lines above.\n\nFormatting:\n-   Format all amounts in the Indian numbering system.\n-   Ensure strict mapping to the provided category names."
+}

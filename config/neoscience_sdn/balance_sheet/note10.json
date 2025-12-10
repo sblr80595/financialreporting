@@ -1,0 +1,62 @@
+{
+  "note_number": "NOTE 10",
+  "note_title": "Cash and cash equivalents",
+  "output_file": "Neoscience_Note_07_Cash.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate all Cash and Bank balance components to arrive at the total reported amount.",
+  "categories": [
+    "Cash on hand",
+    "Balances with banks (current accounts)",
+    "Balances with banks (deposit accounts)",
+    "Cash equivalents",
+    "Restricted balances"
+  ],
+  "output_format": [
+    {
+      "label": "Cash on hand",
+      "ind_as_minor": ["Cash on hand"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Balances with banks (current accounts)",
+      "ind_as_minor": ["Balances with banks (current accounts)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Balances with banks (deposit accounts)",
+      "ind_as_minor": ["Balances with banks (deposit accounts)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Cash equivalents",
+      "ind_as_minor": ["Cash equivalents"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Restricted balances",
+      "ind_as_minor": ["Restricted balances"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Cash on hand",
+        "Balances with banks (current accounts)",
+        "Balances with banks (deposit accounts)",
+        "Cash equivalents",
+        "Restricted balances"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The total amount is the sum of all components. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

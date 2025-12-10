@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 30",
+  "note_title": "Depreciation and Amortisation Expense",
+  "output_file": "cpc_diagnostics_india_note_30_depreciation_amortisation.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Display as positive values in the final notes.",
+  "categories": [
+    "Depreciation of property, plant and equipment",
+    "Depreciation of Right of use asset",
+    "Amortisation of intangible assets"
+  ],
+  "output_format": [
+    {
+      "label": "Depreciation of property, plant and equipment (refer note 4)",
+      "ind_as_minor": "Depreciation of property, plant and equipment"
+    },
+    {
+      "label": "Depreciation of Right of use asset (refer note 5)",
+      "ind_as_minor": "Depreciation of Right of use asset"
+    },
+    {
+      "label": "Amortisation of intangible assets (refer note 6)",
+      "ind_as_minor": "Amortisation of intangible assets"
+    }
+  ],
+  "additional_instructions": "Note: Depreciation and amortisation includes PPE depreciation, ROU asset depreciation, and intangible asset amortisation. Each line item references its corresponding asset note. Handle the formatting accordingly to maintain Schedule III compliance."
+}

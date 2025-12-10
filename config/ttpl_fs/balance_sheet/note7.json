@@ -1,0 +1,125 @@
+{
+  "note_number": "NOTE 7",
+  "note_title": "Other assets (Non-current and Current)",
+  "output_file": "ttpl_note_7_other_assets.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other assets, take positive debit balances from the trial balance.",
+  "categories": [
+    "Prepaid expenses (ONCA)",
+    "Advances to suppliers (OCA)",
+    "Prepaid expenses (OCA)",
+    "Balance with government authorities (OCA)",
+    "Interest accrued (OCA)",
+    "Other recoverable (OCA)"
+  ],
+  "output_format": [
+    {
+      "label": "7A. Other non-current assets",
+      "ind_as_minor": null,
+      "is_major_section": true,
+      "bold": true
+    },
+    {
+      "label": "(Unsecured, considered good)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "Prepaid expenses",
+      "ind_as_minor": [
+        "Prepaid expenses (ONCA)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "SUBTOTAL_7A",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Prepaid expenses"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "7B. Other current assets",
+      "ind_as_minor": null,
+      "is_major_section": true,
+      "bold": true
+    },
+    {
+      "label": "(Unsecured, considered good)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "Advances to suppliers",
+      "ind_as_minor": [
+        "Advances to suppliers (OCA)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Prepaid expenses",
+      "ind_as_minor": [
+        "Prepaid expenses (OCA)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Balance with government authorities",
+      "ind_as_minor": [
+        "Balance with government authorities (OCA)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Interest accrued",
+      "ind_as_minor": [
+        "Interest accrued (OCA)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Other recoverable",
+      "ind_as_minor": [
+        "Other recoverable (OCA)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "SUBTOTAL_7B",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Advances to suppliers",
+        "Prepaid expenses",
+        "Balance with government authorities",
+        "Interest accrued",
+        "Other recoverable"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "TOTAL_OTHER_ASSETS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "SUBTOTAL_7A + SUBTOTAL_7B",
+      "show_line": true,
+      "bold": true,
+      "display_label": "Total (7A + 7B)"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 7: OTHER ASSETS (NON-CURRENT AND CURRENT)**\n\nSECTION 7A: Other non-current assets\n1. Show '7A. Other non-current assets' as major section header\n2. Show '(Unsecured, considered good)' as subheading (no amount)\n3. 'Prepaid expenses' - from category 'Prepaid expenses (ONCA)'\n4. Show subtotal for 7A section.\n\nSECTION 7B: Other current assets\n5. Show '7B. Other current assets' as major section header\n6. Show '(Unsecured, considered good)' as subheading (no amount)\n7. 'Advances to suppliers' - from category 'Advances to suppliers (OCA)'\n8. 'Prepaid expenses' - from category 'Prepaid expenses (OCA)'\n9. 'Balance with government authorities' - from category 'Balance with government authorities (OCA)'\n10. **NEW: 'Interest accrued' - from category 'Interest accrued (OCA)'**\n11. **NEW: 'Other recoverable' - from category 'Other recoverable (OCA)'**\n12. Show subtotal for 7B section.\n\nFINAL TOTAL:\n13. Show grand total as 'Total (7A + 7B)' = 7A subtotal + 7B subtotal.\n\nFormatting:\n- Format all amounts in Indian numbering system (e.g., 1,23,456).\n- All amounts should be displayed as positive (debit balance)."
+}

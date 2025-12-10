@@ -1,0 +1,80 @@
+{
+  "note_number": "NOTE 14",
+  "note_title": "Equity share capital",
+  "output_file": "company_a_note_14_equity_share_capital.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For equity share capital, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation).",
+  "categories": [
+    "Ordinary common shares A",
+    "Redeemable preferred shares"
+  ],
+  "output_format": [
+    {
+      "label": "Authorised",
+      "ind_as_minor": null,
+      "is_section_header": true
+    },
+    {
+      "label": "Ordinary common shares A",
+      "ind_as_minor": [
+        "Ordinary common shares A"
+      ],
+      "aggregation": "sum",
+      "is_descriptive": false
+    },
+    {
+      "label": "Redeemable preferred shares",
+      "ind_as_minor": [
+        "Redeemable preferred shares"
+      ],
+      "aggregation": "sum",
+      "is_descriptive": false
+    },
+    {
+      "label": "SUBTOTAL_AUTHORISED",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "Ordinary common shares A",
+        "Redeemable preferred shares"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Issued, subscribed and fully paid up",
+      "ind_as_minor": null,
+      "is_section_header": true
+    },
+    {
+      "label": "Ordinary common shares A",
+      "ind_as_minor": [
+        "Ordinary common shares A"
+      ],
+      "aggregation": "sum",
+      "is_descriptive": false
+    },
+    {
+      "label": "Redeemable preferred shares",
+      "ind_as_minor": [
+        "Redeemable preferred shares"
+      ],
+      "aggregation": "sum",
+      "is_descriptive": false
+    },
+    {
+      "label": "TOTAL_EQUITY_SHARE_CAPITAL",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Ordinary common shares A",
+        "Redeemable preferred shares"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. Show 'Authorised' as section header (no amount on this line)\n2. Show 'Ordinary common shares A' with value from category 'Ordinary common shares A'\n3. Show 'Redeemable preferred shares' with value from category 'Redeemable preferred shares'\n4. Show subtotal for Authorised section (sum of the two share types)\n5. Add a blank row for spacing\n6. Show 'Issued, subscribed and fully paid up' as section header (no amount on this line)\n7. Show 'Ordinary common shares A' with value from category 'Ordinary common shares A'\n8. Show 'Redeemable preferred shares' with value from category 'Redeemable preferred shares'\n9. Show total for Issued section (sum of the two share types)\n10. Note: Both 'Authorised' and 'Issued' sections use the SAME categories and typically show the SAME amounts when fully subscribed.\n11. Format all amounts in Indian numbering system without \u20b9 symbol but with MYR denomination.\n12. Equity share capital is a credit balance (may appear negative in trial balance) - take absolute value for presentation. The descriptive lines from the original script have been removed as the minor categories are used as labels instead."
+}

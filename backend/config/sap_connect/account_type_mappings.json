@@ -1,0 +1,299 @@
+{
+  "account_type_mappings": {
+    "default": {
+      "name": "Standard SAP B1 Mapping",
+      "description": "Default SAP Business One account type structure",
+      "mappings": {
+        "1": {
+          "category": "Assets",
+          "description": "Asset accounts",
+          "code_ranges": {
+            "11000000-12999999": "Property, Plant and Equipment / Intangible Assets",
+            "13000000-13999999": "Trade Receivables / Other Current Assets",
+            "14000000-14999999": "Inventories",
+            "15000000-15999999": "Cash and Cash Equivalents / Short-term Loans",
+            "16000000-16999999": "Current Investments",
+            "17000000-17999999": "Deferred Tax Assets",
+            "18000000-19999999": "Other Non-current Assets"
+          }
+        },
+        "2": {
+          "category": "Liabilities",
+          "description": "Liability accounts",
+          "code_ranges": {
+            "21000000-21999999": "Trade Payables / Other Current Liabilities",
+            "22000000-22999999": "Long-term Borrowings",
+            "23000000-23999999": "Deferred Tax Liabilities",
+            "24000000-24999999": "Other Non-current Liabilities",
+            "25000000-25999999": "Short-term Borrowings",
+            "26000000-26999999": "Short-term Provisions",
+            "27000000-27999999": "Current Tax Provisions",
+            "28000000-29999999": "Other Current Liabilities"
+          }
+        },
+        "3": {
+          "category": "Equity",
+          "description": "Equity accounts",
+          "code_ranges": {
+            "31000000-31999999": "Share Capital",
+            "32000000-39999999": "Reserves and Surplus"
+          }
+        },
+        "4": {
+          "category": "Revenue",
+          "description": "Revenue from operations",
+          "code_ranges": {
+            "51000000-59999999": "Revenue from Operations"
+          }
+        },
+        "5": {
+          "category": "Cost of Goods Sold",
+          "description": "Direct costs",
+          "code_ranges": {
+            "61000000-69999999": "Cost of Materials Consumed / Purchases"
+          }
+        },
+        "6": {
+          "category": "Expenses",
+          "description": "Operating expenses",
+          "code_ranges": {
+            "71000000-89999999": "Other Expenses"
+          }
+        },
+        "7": {
+          "category": "Other Income",
+          "description": "Non-operating income",
+          "code_ranges": {
+            "71000000-79999999": "Other Income"
+          }
+        },
+        "8": {
+          "category": "Tax",
+          "description": "Tax related accounts",
+          "code_ranges": {
+            "86000000-89999999": "Tax Expense"
+          }
+        }
+      }
+    },
+    "india_standard": {
+      "name": "India Standard Mapping",
+      "description": "Standard mapping for Indian companies (Schedule III compliant)",
+      "mappings": {
+        "1": {
+          "category": "Assets",
+          "schedule3_mapping": {
+            "11000000-11999999": "Other Intangible Assets",
+            "12000000-12999999": "Property, Plant and Equipment",
+            "13000000-13999999": "Trade Receivables",
+            "14000000-14999999": "Inventories",
+            "15000000-15999999": "Cash and Cash Equivalents",
+            "16000000-16999999": "Current Investments",
+            "17000000-17999999": "Deferred Tax Assets (Net)"
+          }
+        },
+        "2": {
+          "category": "Liabilities",
+          "schedule3_mapping": {
+            "21000000-21999999": "Trade Payables",
+            "22000000-22999999": "Long-term Borrowings",
+            "23000000-23999999": "Deferred Tax Liabilities (Net)",
+            "25000000-25999999": "Short-term Borrowings",
+            "26000000-26999999": "Short-term Provisions",
+            "27000000-27999999": "Provisions - Current Tax"
+          }
+        },
+        "3": {
+          "category": "Equity",
+          "schedule3_mapping": {
+            "31000000-31999999": "Equity Share Capital",
+            "32000000-39999999": "Reserves and Surplus"
+          }
+        },
+        "4": {
+          "category": "Revenue",
+          "schedule3_mapping": {
+            "51000000-59999999": "Revenue from Operations"
+          }
+        },
+        "5": {
+          "category": "Cost of Goods Sold",
+          "schedule3_mapping": {
+            "61000000-62999999": "Cost of Materials Consumed",
+            "63000000-64999999": "Purchases of Stock-in-Trade"
+          }
+        },
+        "6": {
+          "category": "Expenses",
+          "schedule3_mapping": {
+            "80000000-85999999": "Other Expenses",
+            "75000000-76999999": "Finance Costs",
+            "77000000-78999999": "Depreciation and Amortization",
+            "79000000-79999999": "Employee Benefits Expense"
+          }
+        },
+        "7": {
+          "category": "Other Income",
+          "schedule3_mapping": {
+            "71000000-74999999": "Other Income"
+          }
+        },
+        "8": {
+          "category": "Tax",
+          "schedule3_mapping": {
+            "86000000-89999999": "Tax Expense"
+          }
+        }
+      }
+    }
+  },
+  "entity_mappings": {
+    "CPM_CHEMOPHARM": {
+      "mapping_profile": "india_standard",
+      "custom_rules": {
+        "account_specific": {
+          "11010000": "Other Intangible Assets",
+          "11020000": "Goodwill",
+          "31000000": "Equity Share Capital",
+          "32000000": "Reserves and Surplus"
+        },
+        "name_based_overrides": {
+          "TRADEMARK": "Other Intangible Assets",
+          "GOODWILL": "Goodwill",
+          "FURNITURE": "Property, Plant and Equipment",
+          "COMPUTER": "Property, Plant and Equipment",
+          "OFFICE EQUIPMENT": "Property, Plant and Equipment",
+          "CREDITOR": "Trade Payables",
+          "DEBTOR": "Trade Receivables",
+          "BANK": "Cash and Cash Equivalents",
+          "CASH": "Cash and Cash Equivalents",
+          "STOCK": "Inventories",
+          "INVENTORY": "Inventories",
+          "SALARY": "Employee Benefits Expense",
+          "WAGES": "Employee Benefits Expense",
+          "INTEREST": "Finance Costs",
+          "DEPRECIATION": "Depreciation and Amortization"
+        }
+      },
+      "verified_date": "2025-11-10",
+      "verified_by": "auto_detect",
+      "type_analysis": {
+        "1": {
+          "count": 251,
+          "code_range": "11010000-14050612",
+          "sample_names": [
+            "Trademark",
+            "Goodwill",
+            "Furniture & Fittings-cost",
+            "Furniture & Fittings-cost-TX-CG",
+            "Furniture & Fittings-cost-NR"
+          ]
+        },
+        "2": {
+          "count": 198,
+          "code_range": "21010010-34030000",
+          "sample_names": [
+            "Trade Creditors-Foreign",
+            "Trade creditors (GIT)",
+            "Trade Creditors-Local",
+            "Non-Trade Creditors-Local",
+            "Other Creditors"
+          ]
+        },
+        "3": {
+          "count": 8,
+          "code_range": "31000000-99999999",
+          "sample_names": [
+            "Paid Up Capital",
+            "Retained Earnings",
+            "Share based payment reserve (SOCIE)",
+            "Dividend",
+            "Capital Reserves-FA revaluation"
+          ]
+        },
+        "4": {
+          "count": 9,
+          "code_range": "51010000-84011000",
+          "sample_names": [
+            "Local Sales-3rd party",
+            "Local Sales-intercompany",
+            "Local Sales-Associate",
+            "Foreign Sales-3rd party",
+            "Foreign Sales-intercompany"
+          ]
+        },
+        "5": {
+          "count": 36,
+          "code_range": "61010000-68000000",
+          "sample_names": [
+            "Opening Stock-Raw Material",
+            "Opening Stock-WIP",
+            "Opening Stock-FG",
+            "Marine Insurance-Air Freight",
+            "Marine Insurance-Bill of Lading"
+          ]
+        },
+        "7": {
+          "count": 13,
+          "code_range": "71000000-75000010",
+          "sample_names": [
+            "Rental Income",
+            "Rental Income - Subsidiaries",
+            "FD Interest",
+            "Commission Received",
+            "Other Income - OS"
+          ]
+        },
+        "6": {
+          "count": 314,
+          "code_range": "73500000-86020000",
+          "sample_names": [
+            "Gain/Loss On Disposal Of Assets",
+            "Diminution In Value",
+            "Lorry/Air Freight",
+            "Lorry/Air Freight-TX",
+            "Lorry/Air Freight-NR"
+          ]
+        },
+        "8": {
+          "count": 1,
+          "code_range": "86010000-86010000",
+          "sample_names": [
+            "Tax (Temp)"
+          ]
+        }
+      }
+    },
+    "TTL_TEST": {
+      "mapping_profile": "india_standard",
+      "verified_date": null,
+      "verified_by": null
+    },
+    "THL": {
+      "mapping_profile": "india_standard",
+      "verified_date": null,
+      "verified_by": null
+    },
+    "IHL": {
+      "mapping_profile": "india_standard",
+      "verified_date": null,
+      "verified_by": null
+    },
+    "TMDT": {
+      "mapping_profile": "india_standard",
+      "verified_date": null,
+      "verified_by": null
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-11-10",
+    "description": "Account type mappings for Schedule III financial statement generation",
+    "notes": [
+      "This configuration file maps SAP B1 account types to Schedule III categories",
+      "Each entity can use a predefined mapping profile or have custom rules",
+      "Custom rules take precedence over profile mappings",
+      "Auto-detection can verify and update mappings based on actual data"
+    ]
+  }
+}

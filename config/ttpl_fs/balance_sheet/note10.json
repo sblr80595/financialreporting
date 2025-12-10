@@ -1,0 +1,61 @@
+{
+  "note_number": "NOTE 10",
+  "note_title": "Cash and cash equivalents",
+  "output_file": "ttpl_note_10_cash_and_cash_equivalents.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For cash and bank balances, take positive debit balances from the trial balance.",
+  "categories": [
+    "Cash on hand (including foreign currency)",
+    "Cheques in hand",
+    "Balance with banks in current accounts"
+  ],
+  "output_format": [
+    {
+      "label": "**A. Balances with banks**",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   In current accounts",
+      "ind_as_minor": [
+        "Balance with banks in current accounts"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "**B. Cash on hand**",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Cash on hand (including foreign currency)",
+      "ind_as_minor": [
+        "Cash on hand (including foreign currency)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Cheques in hand",
+      "ind_as_minor": [
+        "Cheques in hand"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_CASH_AND_CASH_EQUIVALENTS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   In current accounts",
+        "   Cash on hand (including foreign currency)",
+        "   Cheques in hand"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 10: CASH AND CASH EQUIVALENTS**\n\n1.  Show **A. Balances with banks** as a section header.\n2.  'In current accounts' - from category 'Balance with banks in current accounts'.\n3.  Show **B. Cash on hand** as a section header.\n4.  'Cash on hand (including foreign currency)' - from category 'Cash on hand (including foreign currency)'.\n5.  'Cheques in hand' - from category 'Cheques in hand'.\n6.  Show **TOTAL_CASH_AND_CASH_EQUIVALENTS** as the final total of all lines.\n\nAccounting Context:\n-   As per Ind AS 7 (Statement of Cash Flows), Cash and Cash Equivalents includes cash on hand, demand deposits, and short-term, highly liquid investments readily convertible to known amounts of cash.\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   All amounts should be displayed as positive (debit balance)."
+}

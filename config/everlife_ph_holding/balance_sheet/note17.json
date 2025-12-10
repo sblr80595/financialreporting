@@ -1,0 +1,38 @@
+{
+  "note_number": "NOTE 17",
+  "note_title": "Borrowings",
+  "output_file": "lifeline_diagnostics_note_17_borrowings.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Borrowings are typically credit balances (liabilities). Present as positive amounts in the balance sheet. Calculate separate totals for current and non-current portions.",
+  "generate_if_empty": true,
+  "match_on_minor_only": true,
+  "categories": [
+    "Loan from Related Parties",
+    "Advances from stockholders"
+  ],
+  "output_format": [
+    {
+      "label": "**Non Current (unsecured)**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Loan from Related Parties (Refer note 21)",
+      "ind_as_minor": "Loan from Related Parties",
+      "default_value": 0,
+      "classification": "non-current"
+    },
+    {
+      "label": "**Current**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Other Borrowings (Refer note 21)",
+      "ind_as_minor": "Advances from stockholders",
+      "default_value": 0,
+      "classification": "current"
+    }
+  ],
+  "additional_instructions": "This note discloses borrowings (both current and non-current) recognized in the balance sheet as per Ind AS 109 - Financial Instruments.\n\n**CRITICAL MATCHING INSTRUCTION**: \nONLY sum GL accounts where the 'Ind AS Minor' column exactly matches the specified categories.\n- For non-current borrowings: Match ONLY 'Loan from Related Parties'\n- For current borrowings: Match ONLY 'Advances from stockholders'\nDO NOT match on 'Ind AS Major' column or any other column.\n\n**Non Current (unsecured)** - This is a section header indicating unsecured non-current borrowings.\n\n**Loan from Related Parties (Refer note 21)**: Sum all GL accounts where Ind AS Minor = 'Loan from Related Parties'. This includes:\n- Unsecured loans from related parties\n- Loans from directors\n- Loans from promoters\n- Loans from holding companies\n- Loans from subsidiary companies\n- Loans from associate companies\n- Loans from key management personnel\n- Other loans from entities under common control\n- Long-term borrowings from related parties (maturity > 12 months)\n\nThese are typically unsecured loans with repayment terms beyond 12 months from the reporting date. Cross-reference to Note 21 for detailed terms and conditions.\n\n**Current** - This is a section header for current borrowings.\n\n**Other Borrowings (Refer note 21)**: Sum all GL accounts where Ind AS Minor = 'Advances from stockholders'. This includes:\n- Advances received from shareholders/stockholders\n- Short-term loans from stockholders\n- Interest-free advances from equity holders\n- Temporary funding from shareholders\n- Working capital support from stockholders\n- Unsecured advances from promoters (current portion)\n- Other short-term borrowings from equity holders\n\nThese represent advances or loans from stockholders/shareholders that are repayable within 12 months or repayable on demand. Cross-reference to Note 21 for detailed terms and conditions.\n\nMatching Logic:\n- Column to match: 'Ind AS Minor' ONLY\n- Values to match:\n  * Non-current: 'Loan from Related Parties' (exact match)\n  * Current: 'Advances from stockholders' (exact match)\n- DO NOT use 'Ind AS Major' column for matching\n\nPresentation Notes:\n1. Show non-current and current borrowings separately\n2. Present as positive amounts (credit balances)\n3. Non-current borrowings are marked as \"(unsecured)\"\n4. Non-current: Repayable after 12 months from reporting date\n5. Current: Repayable within 12 months or on demand\n6. Include cross-references to Note 21 for terms and conditions\n7. Follow Schedule III format for balance sheet presentation\n8. Borrowings are financial liabilities measured at amortized cost under Ind AS 109\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for borrowings disclosure. Additional disclosures required in Note 21 or related notes:\n- Terms and conditions of borrowings\n- Interest rates (if applicable)\n- Repayment terms and schedule\n- Security provided (if any)\n- Nature of relationship with lenders\n- Details of related party transactions\n- Default in repayment (if any)\n- Conversion features (if applicable)\n\nRelated Party Disclosure (Ind AS 24):\n- Nature of related party relationship\n- Terms and conditions of related party borrowings\n- Interest rates and repayment terms\n- Outstanding balances at year-end\n- Transactions during the year (borrowings taken/repaid)\n- Guarantees provided/received\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

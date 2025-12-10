@@ -1,0 +1,38 @@
+# ============================================================================
+# Unified Backend Requirements
+# Financial Automation Platform - Trial Balance Processing & Note Generation
+# ============================================================================
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# AI/ML
+google-generativeai  # Gemini AI for note generation and processing
+anthropic>=0.71.0    # Claude AI (optional, for alternative AI provider)
+
+# Data Processing
+pandas==2.1.4
+openpyxl==3.1.2      # Excel file support
+
+# Configuration & Settings
+pydantic==2.5.3
+pydantic-settings==2.1.0
+pydantic[email]
+python-dotenv==1.0.0
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0  # JWT token handling
+passlib[bcrypt]==1.7.4             # Password hashing
+
+# File Handling
+python-multipart==0.0.6  # Form data and file uploads
+aiofiles>=23.2.1         # Async file operations
+
+# Database & Connectivity
+pyodbc>=5.0.0            # SAP HANA connectivity (requires unixODBC: brew install unixodbc)
+urllib3<2.0.0            # Pin to v1.x for LibreSSL compatibility on macOS
+
+# External APIs
+requests>=2.31.0         # External API access (FX rates fallback)
+currencyconverter>=0.17  # Offline/ECB FX rates fallback

@@ -1,0 +1,85 @@
+{
+  "note_number": "NOTE 34",
+  "note_title": "Financial Instrument Risk",
+  "output_file": "ttpl_note_34_risk_management.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract financial liability balances from the 'period' column. Liabilities are credit balances (negative value), but for presentation in the maturity table, they must be converted to positive (multiply by -1).",
+  "categories": [
+    "Financial Liabilities - Amortised Cost - Trade Payables",
+    "Financial Liabilities - Amortised Cost - Borrowings & Lease Liabilities",
+    "Financial Liabilities - Amortised Cost - Loans from Related Parties",
+    "Financial Liabilities - Amortised Cost - Other Financial Liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "Liquidity Risk Management",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Maturity analysis of Financial Liabilities",
+      "is_section_header": true
+    },
+    {
+      "label": "Trade Payables",
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Trade Payables"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Borrowings and Lease Liabilities",
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Borrowings & Lease Liabilities"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Loans from Related Parties",
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Loans from Related Parties"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Other Financial Liabilities (Accruals, etc.)",
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Other Financial Liabilities"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "TOTAL FINANCIAL LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Trade Payables",
+        "Borrowings and Lease Liabilities",
+        "Loans from Related Parties",
+        "Other Financial Liabilities (Accruals, etc.)"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Credit Risk",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Market Risk",
+      "is_header": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 33: FINANCIAL INSTRUMENT RISK**\n\n1.  **Liquidity Risk Table**: The 'output_format' provides the rows for the maturity analysis table. The final output must use a table with columns for **Line Item**, **Total Carrying Amount**, **Less than 1 Year**, **1 to 5 Years**, and **More than 5 Years**.\n2.  All liability amounts must be converted to **positive** values for presentation.\n3.  **Credit Risk**: Include a placeholder section for Credit Risk disclosure, specifically regarding Expected Credit Loss (ECL) provisions.\n4.  **Market Risk**: Include a placeholder section for Market Risk sensitivity analysis (e.g., Foreign Currency Risk and Interest Rate Risk).\n\nAccounting Context:\n-   This note complies with **Ind AS 107** (Financial Instruments: Disclosures).\n-   **Liquidity Risk** is the risk that the entity will encounter difficulty in meeting obligations associated with financial liabilities that are settled by delivering cash or another financial asset. \n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456)."
+}

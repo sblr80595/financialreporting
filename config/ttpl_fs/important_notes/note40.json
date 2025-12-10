@@ -1,0 +1,100 @@
+{
+  "note_number": "NOTE 40",
+  "note_title": "Revenue from Contracts with Customers",
+  "output_file": "ttpl_note_40_revenue_from_customers.txt",
+  "statement_type": "profit-and-loss",
+  "summation_rule": "Extract closing balance values from the 'period' column. Revenue items are typically credit balances, but should be presented as positive amounts. Deduct GST/Excise Duty if applicable.",
+  "categories": [
+    "Revenue from Sale of Goods",
+    "Revenue from Services",
+    "Other Operating Revenue",
+    "Excise Duty/GST (for deduction)"
+  ],
+  "output_format": [
+    {
+      "label": "A. Disaggregation of Revenue",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Sale of Goods",
+      "ind_as_minor": [
+        "Revenue from Sale of Goods"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "ii) Rendering of Services",
+      "ind_as_minor": [
+        "Revenue from Services"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "iii) Other Operating Revenue",
+      "ind_as_minor": [
+        "Other Operating Revenue"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Gross Revenue",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "i) Sale of Goods",
+        "ii) Rendering of Services",
+        "iii) Other Operating Revenue"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "Less: Duties and Taxes (e.g., GST/Excise Duty)",
+      "ind_as_minor": [
+        "Excise Duty/GST (for deduction)"
+      ],
+      "is_deduction": true,
+      "aggregation": "sum",
+      "sign_flip": false,
+      "display_format": "-(value)"
+    },
+    {
+      "label": "TOTAL REVENUE FROM OPERATIONS (Net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Gross Revenue"
+      ],
+      "subtract": [
+        "Less: Duties and Taxes (e.g., GST/Excise Duty)"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Timing of Revenue Recognition",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Revenue recognized at a point in time",
+      "is_disclosure_line": true,
+      "note": "This amount must be manually calculated/mapped from the source data to show the revenue recognized when control transfers instantly (e.g., sale of goods)."
+    },
+    {
+      "label": "ii) Revenue recognized over time",
+      "is_disclosure_line": true,
+      "note": "This amount must be manually calculated/mapped from the source data to show the revenue recognized as services are rendered (e.g., long-term contracts)."
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 40: REVENUE FROM CONTRACTS WITH CUSTOMERS**\n\n1.  **Section A (Disaggregation)**: Show breakdown by major streams (Goods, Services, Other), deduct GST/Duties, and reconcile to the Net Revenue from Operations line on the P&L statement.\n2.  **Section B (Timing)**: Show disaggregation based on the timing of transfer of goods/services (point in time vs. over time). The tool should map the source data to these two disclosure lines.\n3.  **Accounting Context**: This note complies with **Ind AS 115** (Revenue from Contracts with Customers).\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456).\n-   All revenue items and the final total should be positive."
+}

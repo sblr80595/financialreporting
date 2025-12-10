@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 30",
+  "note_title": "Depreciation and Amortisation Expense",
+  "output_file": "everlife_diagnostics_note_30_depreciation_amortisation.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. Depreciation and amortisation are non-cash expenses that allocate the cost of assets over their useful lives.",
+  "categories": [
+    "Dep. On PPE",
+    "Dep. On ROU",
+    "Amortisation of intangible assets (refer note 5A)"
+  ],
+  "output_format": [
+    {
+      "label": "Depreciation on property, plant and equipment (refer note 4)",
+      "ind_as_minor": "Dep. On PPE"
+    },
+    {
+      "label": "Depreciation on right of use assets (refer note 4A)",
+      "ind_as_minor": "Dep. On ROU"
+    },
+    {
+      "label": "Amortisation of intangible assets (refer note 4B)",
+      "ind_as_minor": "Amortisation of intangible assets (refer note 5A)"
+    }
+  ],
+  "additional_instructions": "This note captures all depreciation and amortisation expenses during the period.\n\n**Depreciation on property, plant and equipment (refer note 4)**: Sum all GL accounts where Ind AS Minor is 'Dep. On PPE'. This includes:\n- Depreciation on buildings\n- Depreciation on plant and machinery\n- Depreciation on furniture and fixtures\n- Depreciation on office equipment\n- Depreciation on computers and software\n- Depreciation on vehicles\n- Depreciation on all other tangible fixed assets\n\nDepreciation is calculated based on the useful lives of assets as per Schedule II of the Companies Act, 2013 or as estimated by management.\n\n**Depreciation on right of use assets (refer note 4A)**: Sum all GL accounts where Ind AS Minor is 'Dep. On ROU'. This includes:\n- Depreciation on right-of-use assets recognized under Ind AS 116 (Leases)\n- Depreciation on leased premises\n- Depreciation on leased equipment\n- Depreciation on leased vehicles\n\nRight-of-use assets are depreciated over the shorter of the lease term or the useful life of the underlying asset.\n\n**Amortisation of intangible assets (refer note 4B)**: Sum all GL accounts where Ind AS Minor is 'Amortisation of intangible assets (refer note 5A)'. This includes:\n- Amortisation of computer software\n- Amortisation of licenses and permits\n- Amortisation of patents and trademarks\n- Amortisation of goodwill (if applicable)\n- Amortisation of other intangible assets\n\nIntangible assets are amortised over their estimated useful lives or the period of expected economic benefit.\n\nAll depreciation and amortisation expenses should be presented as positive amounts (debit balances) representing non-cash expenses in the profit and loss statement.\n\nInclude cross-references to:\n- Note 4 for PPE details\n- Note 4A for ROU asset details\n- Note 4B for intangible asset details"
+}

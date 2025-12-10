@@ -1,0 +1,126 @@
+{
+  "note_number": "32",
+  "note_title": "Tax Expense",
+  "statement_type": "important-notes",
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+  "multi_source_integration": true,
+  "auxiliary_files": [
+    {
+      "label": "PL_Statement_XLSX",
+      "file_path": "data/cpm/output/financial_statements/PL",
+      "file_name": "PL_Statement_*.xlsx",
+      "description": "Profit & Loss statement from reports folder (wildcard for actual filename)"
+    },
+    {
+      "label": "Tax_Mar",
+      "file_path": "data/cpm/input",
+      "file_name": "tax_mar'25.csv",
+      "description": "Detailed tax calculations for March 2025"
+    }
+  ],
+  "periods": [
+    {
+      "period_name": "Mar'25",
+      "period_column": "Total Mar'25",
+      "auxiliary_refs": [
+        "PL_Statement_XLSX",
+        "Tax_Mar"
+      ]
+    }
+  ],
+  "multi_source_rule": "Integrate data from trial balance and auxiliary files. Use 'PL_Statement_XLSX' and 'Tax_Mar' for reconciliation and validation. Cross-reference tax calculations with P&L data.",
+  "summation_rule": "Apply algebraic summation. Current tax and deferred tax may have debit (expense) or credit (benefit) balances. Preserve signs throughout calculations. Negative values indicate tax benefits/credits.",
+  "period_handling": "Generate all sections for Mar'25 only. Comparative analysis is not applicable.",
+  "categories": [
+    "Current tax",
+    "Deferred tax"
+  ],
+  "tax_rate": 0.24,
+  "statutory_rate_description": "Tax at statutory rate of 24%",
+  "permanent_differences": {
+    "income_not_taxable": {
+      "default_mar": 100000,
+      "description": "Income not subject to tax"
+    },
+    "expenses_not_deductible": {
+      "default_mar": 250000,
+      "description": "Expenses not deductible for tax purposes"
+    }
+  },
+  "output_format": {
+    "gl_breakdown": [
+      {
+        "section": "Current tax expense",
+        "categories": [
+          "Current tax"
+        ],
+        "format": "GL [code]: [description] \u2192 \u20b9[signed_amount]",
+        "show_subtotal": true,
+        "subtotal_label": "Total Current Tax"
+      },
+      {
+        "section": "Deferred tax expense/(credit)",
+        "categories": [
+          "Deferred tax"
+        ],
+        "format": "GL [code]: [description] \u2192 \u20b9[signed_amount]",
+        "show_subtotal": true,
+        "subtotal_label": "Total Deferred Tax"
+      }
+    ],
+    "summary_table": [
+      {
+        "label": "Current tax expense",
+        "source": "current_tax_total",
+        "calculation": "sum_of_current_tax_gls"
+      },
+      {
+        "label": "Deferred tax expense/(credit)",
+        "source": "deferred_tax_total",
+        "calculation": "sum_of_deferred_tax_gls"
+      },
+      {
+        "label": "TOTAL TAX EXPENSE",
+        "source": "total",
+        "calculation": "current_tax + deferred_tax",
+        "is_total": true
+      }
+    ],
+    "reconciliation": [
+      {
+        "label": "Profit Before Tax (PBT)",
+        "source": "calculated",
+        "calculation": "sum_all_pl_gls_excluding_tax",
+        "is_bold": true
+      },
+      {
+        "label": "Tax at statutory rate of 24%",
+        "source": "calculated",
+        "calculation": "pbt * 0.24"
+      },
+      {
+        "label": "Add: Expenses not deductible",
+        "source": "auxiliary_or_default",
+        "calculation": "amount * 0.24"
+      },
+      {
+        "label": "Less: Income not taxable",
+        "source": "auxiliary_or_default",
+        "calculation": "-(amount * 0.24)"
+      },
+      {
+        "label": "Other adjustments / Unrecognised DTA",
+        "source": "balancing_figure",
+        "calculation": "total_tax - (tax_at_24% + adjustments)",
+        "description": "Balancing figure to reconcile to actual tax expense"
+      },
+      {
+        "label": "TOTAL TAX EXPENSE",
+        "source": "total",
+        "calculation": "matches_summary_table_total",
+        "is_total": true
+      }
+    ]
+  },
+  "additional_instructions": "## Calculation Steps:\n\n**For Mar'25:**\n\n1. **Filter Trial Balance GLs:**\n \u00a0 - Current tax: All GLs where 'Ind AS Minor' = 'Current tax'\n \u00a0 - Deferred tax: All GLs where 'Ind AS Minor' = 'Deferred tax'\n\n2. **Compute Tax Expense Components:**\n \u00a0 - Current Tax Expense = Algebraic sum of current tax GLs\n \u00a0 - Deferred Tax Expense = Algebraic sum of deferred tax GLs\n \u00a0 - Total Tax Expense = Current + Deferred\n\n3. **Calculate Profit Before Tax (PBT):**\n \u00a0 - Sum all GLs where BSPL = 'PL' (Profit & Loss)\n \u00a0 - EXCLUDE GLs with 'Ind AS Minor' = 'Current tax' or 'Deferred tax'\n \u00a0 - PBT = Sum of all P&L items before tax (Cross-validate with 'PL_Statement_XLSX' where possible)\n\n4. **Compute Tax at Statutory Rate:**\n \u00a0 - Tax at 24% = PBT \u00d7 0.24\n\n5. **Identify Permanent Differences:**\n \u00a0 - Income not taxable: Check auxiliary files or use default of \u20b91,00,000\n \u00a0 \u00a0 - Tax impact = -(amount \u00d7 0.24)\n \u00a0 - Expenses not deductible: Check auxiliary files or use default of \u20b92,50,000\n \u00a0 \u00a0 - Tax impact = +(amount \u00d7 0.24)\n\n6. **Calculate Balancing Figure:**\n \u00a0 - Balancing Figure = Total Tax Expense - [Tax at 24% + Expense Adjustments - Income Adjustments]\n \u00a0 - This represents other adjustments, timing differences, or unrecognised DTA\n\n---\n\n## Arithmetic Rules:\n- Perform algebraic summation: respect positive and negative signs\n- Example: [\u20b91,00,000, \u20b9-20,000, \u20b930,000] \u2192 Net = \u20b91,10,000\n- Treat values in parentheses \"()\" or with \"CR\" as negative\n- Round to nearest rupee (no decimals) after all calculations\n- Preserve signs in all intermediate calculations\n\n---\n\n## Output Requirements:\n1. **Detailed GL Breakdown** - Show every GL with signed amounts\n2. **Summary Table** - Tax expense components for P&L\n3. **ETR Reconciliation** - Show how statutory rate reconciles to effective rate\n4. Generate all three sections for the ONLY period (Mar'25)\n5. Use Indian numbering format: \u20b91,23,456 (not \u20b9123,456)\n6. For negative amounts: \u20b9-1,23,456 or (\u20b91,23,456)\n\n---\n\n## Validation Checks:\n- Verify that Total Tax Expense in Summary Table matches Reconciliation total\n- Ensure PBT calculation excludes tax items\n- Confirm algebraic integrity: sum of parts = total\n- Cross-check auxiliary file data with trial balance where possible\n- If auxiliary files are missing data, clearly state that defaults were used"
+}

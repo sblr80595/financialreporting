@@ -1,0 +1,334 @@
+BALANCE SHEET,BS/PL,,Major,Minor,Total June 2025
+11101010,BS,Cash on Hand- PHP,Cash and cash equivalents,Cash,"1,00,840.00"
+11101020,BS,Cash on Hand- Forex,Cash and cash equivalents,Cash,"34,829.10"
+11101030,BS,Cheques on hand,Cheques on hand,Cheques on hand,"5,00,94,285.50"
+11101040,BS,Petty Cash Fund,Cash and cash equivalents,Cash,"30,000.00"
+11101050,BS,Revolving Fund,Cash and cash equivalents,Cash,"17,19,745.00"
+11102010,BS,Cash in Bank-BDO Quezon Avenue- 2010023087,Cash and cash equivalents,Bank Balance,"41,20,474.59"
+11102020,BS,Cash in Bank-BDO $ Timog Avenue- 1240022458,Cash and cash equivalents,Bank Balance,#ERROR!
+11102030,BS,Cash in Bank-BDO Timog Avenue- 1240027476,Cash and cash equivalents,Bank Balance,"84,22,250.03"
+11102050,BS,Cash in Bank-BPI Timog Avenue- 0271-0348-65,Cash and cash equivalents,Bank Balance,"36,33,418.81"
+11102060,BS,Cash in Bank-LBP Savings West Avenue- 0231-1546-98,Cash and cash equivalents,Bank Balance,"1,33,43,460.37"
+11102070,BS,Cash in Bank-LBP Checking West Avenue- 0232-1139-60,Cash and cash equivalents,Bank Balance,"8,06,962.10"
+11102080,BS,Cash in Bank-MBTC Checking QA-007-07651074-8,Cash and cash equivalents,Bank Balance,"15,120.00"
+11102090,BS,Cash in Bank-MBTC Savings QA-076-3-07651074-2,Cash and cash equivalents,Bank Balance,"86,82,463.85"
+11102100,BS,Cash in Bank-UBP South Triangle- 24030002994,Cash and cash equivalents,Bank Balance,"1,91,44,997.71"
+11102110,BS,Cash in Bank-UBP $ South Triangle- 02410100455-2,Cash and cash equivalents,Bank Balance,#ERROR!
+11102130,BS,Cash in Bank-Security Bank -0214048262002,Cash and cash equivalents,Bank Balance,"25,24,814.83"
+11102140,BS,Cash in Bank-Citibank-0759664019,Cash and cash equivalents,Bank Balance,"5,02,669.91"
+11102150,BS,Cash in Bank-RCBC-7590794840,Cash and cash equivalents,Bank Balance,"40,37,258.37"
+11102160,BS,Cash in Bank-Eastwest CA-200048710319,Cash and cash equivalents,Bank Balance,"36,28,398.17"
+11102180,BS,Cash in Bank-DBP Roces CA-000052254609,Cash and cash equivalents,Bank Balance,"79,71,734.98"
+11103000,BS,Short-term Investments,NA,NA,-
+11201010,BS,Accounts Receivable - Government Hospitals,Trade receivables,"Unsecured, considered good","33,94,65,720.98"
+11201020,BS,Accounts Receivable - Private Hospitals,Trade receivables,"Unsecured, considered good","9,57,81,769.97"
+11201030,BS,Accounts Receivable - Dealers,Trade receivables,"Unsecured, considered good","22,47,46,186.83"
+11201040,BS,Accounts Receivable - Free Standingl Laboratories (FSL),Trade receivables,"Unsecured, considered good","4,42,39,975.09"
+11201050,BS,Accounts Receivable - AMCOW,Trade receivables,"Unsecured, considered good","74,17,820.33"
+11201060,BS,Accounts Receivable - Research,Trade receivables,"Unsecured, considered good","5,08,75,871.98"
+11201070,BS,Accounts Receivable - Academe,Trade receivables,"Unsecured, considered good","2,31,57,953.38"
+11201080,BS,Accounts Receivable - Medical Center (Research Hub),Trade receivables,"Unsecured, considered good","50,95,244.60"
+11201081,BS,Accounts Receivable - Non-Government Organizations,Trade receivables,"Unsecured, considered good","16,08,544.64"
+11201090,BS,Accounts Receivable - Industrial,Trade receivables,"Unsecured, considered good","60,81,027.18"
+11201091,BS,Accounts Receivable - Global Manufacturers,Trade receivables,"Unsecured, considered good",-
+11201092,BS,Accounts Receivable - Third Party Laboratories,Trade receivables,"Unsecured, considered good",-
+11201098,BS,Accounts Receivable - National Agencies,Trade receivables,"Unsecured, considered good","13,42,167.24"
+11201099,BS,Allowance for Doubtful Accounts,Trade receivables,Impairment allowance,"-3,01,01,932.00"
+11202010,BS,Accounts Receivable - Nontrade,Other current assets,Other current assets,-
+11202040,BS,Advances to External Parties,Other current assets,Advances to principal,"7,60,849.92"
+11202050,BS,Advances to Employees,Other current assets,Advances to employees,"12,59,299.06"
+11202060,BS,Advances Subject to Liquidation,Other current assets,Advances to employees,"4,25,588.18"
+11202070,BS,Advances to Principal,Other current assets,Advances to principal,"1,49,09,353.73"
+11202080,BS,Advances to Related Parties,Other current assets,Other current assets,"57,13,809.06"
+11202090,BS,Allowance for Doubtful Accounts � Non-Trade,,,-
+11203010,BS,Accounts Receivable - Clearing,Trade receivables,"Unsecured, considered good",-
+11301010,BS,Inventory - Reagents,Inventories,Stock in Traded goods,"35,42,40,038.46"
+11301020,BS,Inventory - Consumables,Inventories,Stock in Traded goods,"1,97,76,994.08"
+11301030,BS,Inventory - Laboratory Equipment,Inventories,Stock in Traded goods,"9,90,98,140.59"
+11301040,BS,Inventory - Accessories and Bundles,Inventories,Stock in Traded goods,"82,99,324.22"
+11301050,BS,Inventory - Software,Inventories,Stock in Traded goods,"42,22,764.02"
+11301060,BS,Allowance for Inventory Obsolescence,Inventories,Less allowance for inventory obsolescence,"-38,93,426.85"
+11302010,BS,Inventory - Office Supplies,Inventories,Stock in Traded goods,"5,40,692.78"
+11302020,BS,Inventory - Spareparts,Inventories,Spare parts,"8,32,29,099.93"
+11304010,BS,Consignment Inventory - Reagents,Inventories,Stock in Traded goods,"33,41,655.24"
+11304020,BS,Consignment Inventory - Consumables,Inventories,Stock in Traded goods,"2,33,752.94"
+,,,,,
+11401010,BS,Prepaid Expenses,Other current assets,Prepaid expenses,"2,09,71,937.11"
+11401020,BS,Prepaid Insurances,Other current assets,Prepaid expenses,"41,04,187.90"
+11401030,BS,Prepaid Service Contracts,Other current assets,Prepaid expenses,"1,69,98,249.10"
+11401040,BS,Prepaid Taxes & Licenses,Other current assets,Prepaid expenses,"45,91,569.40"
+11402010,BS,Creditable EWT,Provisions - current,Provision for Income Tax,"-8,89,510.68"
+11402020,BS,Creditable VAT,Other current assets,Balance with government authorities,"1,25,43,861.88"
+11402030,BS,VAT Input,Other current assets,Balance with government authorities,"7,47,75,639.55"
+12102020,BS,FA - Transportation Equipment,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","14,26,99,517.50"
+12102030,BS,FA - Office Equipment,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","4,40,47,221.94"
+12102040,BS,FA - Laboratory Equipment,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","1,05,92,68,429.61"
+12102050,BS,FA - Furnitures and Fixtures,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","41,07,860.52"
+12102060,BS,FA - Service Tools,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","1,81,70,364.87"
+12301020,BS,Accum. Dep'n - Transportation E.,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","-11,00,85,650.55"
+12301030,BS,Accum. Dep'n - Office E.,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","-3,71,14,272.27"
+12301040,BS,Accum. Dep'n - Laboratory E.,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","-67,15,50,562.45"
+12301050,BS,Accum. Dep'n - Furnitures&Fixtures,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","-41,07,860.53"
+12301060,BS,Accum. Dep'n - Tools,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","-1,42,46,179.34"
+12201010,BS,FA - Leasehold Improvements,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","5,03,48,774.01"
+12201020,BS,FA - Software,"Property, plant, equipment and Intagible Assets",Other Intangible Assets,"58,24,473.18"
+12201030,BS,FA Microsoft Office and Licenses,"Property, plant, equipment and Intagible Assets",Other Intangible Assets,"41,23,308.89"
+12302010,BS,Accum. Dep'n and Amort'n - Leasehold,"Property, plant, equipment and Intagible Assets","Property, plant and equipments","-3,66,40,472.27"
+12302020,BS,Accum. Dep'n and Amort'n - Software,"Property, plant, equipment and Intagible Assets",Other Intangible Assets,"-56,42,556.44"
+12302030,BS,Accum. Dep'n and Amort'n Microsoft Office and Licenses,"Property, plant, equipment and Intagible Assets",Other Intangible Assets,"-40,24,718.29"
+12401010,BS,Fixed Asset Clearing Account,Other current assets,Fixed Asset Clearing Account,"36,76,168.65"
+12501020,BS,Retirement Fund,NA,NA,-
+12601010,BS,Deferred Input Tax,Other current assets,Balance with government authorities,"6,24,409.20"
+12602010,BS,Rental Deposits,Other financial assets- non current,Security Deposits,"62,06,481.69"
+12602020,BS,Bid/Performance Bonds,Other financial assets- non current,Bid/Performance Bonds,"54,21,268.50"
+12602030,BS,Supplier Deposits,Other financial assets- non current,Security Deposits,"5,87,907.73"
+12601020,BS,Deferred Tax Asset,Deferred tax assets (net),Deferred tax assets (net),"4,46,71,941.00"
+21202080,BS,Deferred Tax Liability,Deferred tax assets (net),Deferred Tax Liability,"-2,12,33,647.85"
+12603010,BS,Right-of Use Asset,Right-of-use assets,Right-of-use assets,"14,80,67,434.52"
+12603020,BS,Accumulated Depreciation,Right-of-use assets,Right-of-use assets,#ERROR!
+21101010,BS,Accounts Payable - Foreign,Trade payables,Due to others,"-15,45,50,960.78"
+21101020,BS,Accounts Payable - Domestic,Trade payables,Due to others,"-26,32,29,964.79"
+21102010,BS,Due to Officers/Employees,Trade payables,Due to others,"-50,23,016.62"
+21102020,BS,Accounts Payable - Banks and Financial Institutions,Trade payables,Due to others,"-5,58,826.69"
+21102030,BS,Accounts Payable - Brokers and Forwarders,Trade payables,Due to others,"-31,31,950.98"
+21102060,BS,Accounts Payable - Goods,Trade payables,Due to others,"-18,50,554.72"
+21102070,BS,Accounts Payable - Services,Trade payables,Due to others,"-1,99,83,647.68"
+21102080,BS,Accounts Payable - Others,Trade payables,Due to others,"-1,02,69,845.31"
+21102050,BS,Advances from Customers,Other current liabilities,Advances from Customers,"-20,28,143.85"
+21201010,BS,Accrued Expenses,Trade payables,Due to others,"-1,00,67,111.16"
+21201020,BS,Accrued 13th Month Pay,Other financial liabilities,Employee related payables (refer note 45),"-62,49,784.10"
+21201030,BS,Accrued SL/VL Monetization,Other financial liabilities,Employee related payables (refer note 45),"-23,26,844.68"
+21201040,BS,Accrued Payroll,Other financial liabilities,Employee related payables (refer note 45),"-31,07,735.58"
+21201060,BS,Accrued 14th Month Pay,Other current liabilities,Employee related payables (refer note 45),"-60,37,439.89"
+21201080,BS,Accrued Importation Cost,Trade payables,Due to others,"-1,49,858.93"
+21201090,BS,Accrued Incentives,Other current liabilities,Employee related payables (refer note 45),"-1,01,50,318.41"
+21202010,BS,Withholding Tax Payable - Compensation,Other current liabilities,Statutory dues payable,"-17,09,357.11"
+21202020,BS,Expanded Withholding Tax Payable,Other current liabilities,Statutory dues payable,"-8,17,466.43"
+21202030,BS,Output VAT Payable,Other current liabilities,Balance with government authorities,"-7,90,88,444.25"
+21202040,BS,Government Contributions Payable,Other current liabilities,Statutory dues payable,"-23,13,189.04"
+21202050,BS,Notes Payable,Borrowings - current,Notes Payable,"-10,00,00,000.00"
+21202060,BS,Income Tax Payable,Provisions - current,Provision for Income Tax,"-52,74,520.32"
+21202070,BS,Dividend Payable,Other financial liabilities,Dividend Payable,-
+,,,,,-
+21202090,BS,Final Withholding Tax Payable,Other current liabilities,Statutory dues payable,"-2,31,825.04"
+,,,,,
+,,,,,-
+21203010,BS,Accounts Payable - Clearing,Other current liabilities,Other Payable,"-1,69,308.55"
+21203020,BS,Goods Receipt Not Invoiced,Other current liabilities,Other Payable,"3,303.57"
+,,,,,
+,,,,,-
+22102010,BS,Lease Liability - Current portion,Lease liabilities - current,Lease liabilities - current,"-2,21,19,491.89"
+,,,,,
+,,,,,-
+SGV 2,BS,Car Loans - Current portion,0,0,-
+,,,,,
+,,,,,
+,,,,,-
+22101020,BS,Car Loans,Borrowings - current,Loan from Banks,"-47,87,096.77"
+SGV1,BS,Lease Liability,Lease liabilities - non-current,Lease liabilities - non-current,"-3,56,54,461.56"
+22102020,BS,Retirement Liability,Provisions - non current,Retirement Benefits Payable NC,"-1,61,90,457.05"
+22102030,BS,Long Term Employee Benefit Liability,Provisions - non current,Employee related payables (refer note 45),-
+,,,,,
+,,,,,-
+TOTAL LIABILITIES,,,,,-
+,,,,,-
+31101000,BS,Common Stocks,0,0,-
+31101010,BS,Subscribed Common Stocks,Equity,Equity share capital,"-50,00,00,000.00"
+31201010,BS,Retained Earnings - Appropriated,Other equity,Retained earnings,"-60,00,00,000.00"
+31201020,BS,Retained Earnings - Unappropriated,Other equity,Retained earnings,#ERROR!
+31201040,BS,Other Comprehensive Income,Other equity,Other comprehensive income,"-1,99,39,265.80"
+,,Current Earnings,,,-
+31201030,BS,Dividends Declared,Other equity,Less: Dividend,"37,50,00,000.00"
+,,,,,
+,,,,,
+,,,,,-
+,,,,,
+41101010,PL,Sales of Goods - Government Hospitals,Revenue from operations,Traded goods,"-22,43,27,437.48"
+41101020,PL,Sales of Goods - Private Hospitals,Revenue from operations,Traded goods,"-8,36,65,100.48"
+41101030,PL,Sales of Goods - Dealers,Revenue from operations,Traded goods,"-23,05,28,837.18"
+41101040,PL,Sales of Goods - Free Standingl Laboratories (FSL),Revenue from operations,Traded goods,"-6,06,06,551.44"
+41101050,PL,Sales of Goods - AMCOW,Revenue from operations,Traded goods,"-79,82,391.68"
+41101060,PL,Sales of Goods - Research,Revenue from operations,Traded goods,"-2,26,33,387.10"
+41101070,PL,Sales of Goods - Academe,Revenue from operations,Traded goods,"-2,03,57,344.55"
+41101080,PL,Sales of Goods - Molecular Diagnostics,Revenue from operations,Traded goods,"-46,45,670.03"
+41101081,PL,41101081 - Sales of Goods - Non-Government Organizations,Revenue from operations,Traded goods,"-17,51,562.50"
+41101090,PL,Sales of Goods - Industrial,Revenue from operations,Traded goods,"-31,66,359.37"
+41101092,PL,Sales of Goods - Third Party Laboratories,Revenue from operations,Traded goods,-
+41101098,PL,Sales of Goods - National Agencies,Revenue from operations,Traded goods,"-16,84,642.86"
+41101091,PL,41101091 - Sales of Goods - Global Manufacturers,Revenue from operations,Traded goods,-
+41101130,PL,Sales of Goods - Distributor,Revenue from operations,Traded goods,-
+41101110,PL,41101110 - Sales Revenue,Revenue from operations,Traded goods,"-9,70,031.25"
+,,,,,
+,,,,,-
+41102010,PL,41102010 - Sales of Services - Hospital Laboratories,Revenue from operations,Supply of Services,"-24,35,519.63"
+41102020,PL,41102020 - Sales of Services - Private Hospitals,Revenue from operations,Supply of Services,"-2,73,615.18"
+41102030,PL,41102030 - Sales of Services - Sub-distribution Networks,Revenue from operations,Supply of Services,"-9,03,738.76"
+41102040,PL,41102040 - Sales of Services - Free Standing Laboratories,Revenue from operations,Supply of Services,"-59,029.46"
+41102060,PL,41102060 - Sales of Services - Research,Revenue from operations,Supply of Services,"-2,75,414.28"
+41102070,PL,41102070 - Sales of Services - Academe/Research Laboratories,Revenue from operations,Supply of Services,"-1,82,956.61"
+41102080,PL,41102080 - Sales of Services - Molecular Diagnostics,Revenue from operations,Supply of Services,"-3,24,092.41"
+41102090,PL,41102090 - Sales of Services - Local Manufacturers,Revenue from operations,Supply of Services,"-1,79,049.11"
+41102098,PL,41102098 - Sales of Services - National Agencies,Revenue from operations,Supply of Services,"-88,594.64"
+,,,,,-
+,,,,,
+,,,,,-
+41201010,PL,Customer Discount,Revenue from operations,Traded goods,"2,34,636.70"
+,,,,,
+,,,,,-
+,,,,,
+,,,,,-
+51101010,PL,51101010 - COS - Hospital Laboratories,Purchases of traded goods,Purchases of traded goods,"13,14,93,243.26"
+51101020,PL,51101020 - COS - Private Hospitals,Purchases of traded goods,Purchases of traded goods,"3,80,78,967.66"
+51101030,PL,51101030 - COS - Sub-distribution Networks,Purchases of traded goods,Purchases of traded goods,"14,75,79,735.54"
+51101040,PL,51101040 - COS - Free Standing Laboratories,Purchases of traded goods,Purchases of traded goods,"3,18,82,865.36"
+51101050,PL,51101050 - COS - OFW Clinics,Purchases of traded goods,Purchases of traded goods,"49,42,086.69"
+51101060,PL,51101060 - COS - Research,Purchases of traded goods,Purchases of traded goods,"1,26,07,855.84"
+51101070,PL,51101070 - COS - Academe/Research Laboratories,Purchases of traded goods,Purchases of traded goods,"1,14,10,217.95"
+51101080,PL,51101080 - COS - Molecular Diagnostics,Purchases of traded goods,Purchases of traded goods,"32,96,616.38"
+51101081,PL,51101081 - COS - Non-Government Organizations,Purchases of traded goods,Purchases of traded goods,"7,82,603.56"
+51101090,PL,51101090 - COS - Local Manufacturers,Purchases of traded goods,Purchases of traded goods,"14,19,395.76"
+51101092,PL,51101092 - COS - Third Party Laboratories,Purchases of traded goods,Purchases of traded goods,-
+51101098,PL,51101098 - COS - National Agencies,Purchases of traded goods,Purchases of traded goods,"11,31,616.39"
+51101100,PL,51101100 - COS - Quality Control/Validation Kits,Purchases of traded goods,Purchases of traded goods,"7,16,867.42"
+51101110,PL,51101110 - COS � Spare Parts,Purchases of traded goods,Purchases of traded goods,"36,43,283.81"
+51101091,PL,51101091 - COS - Global Manufacturers,Purchases of traded goods,Purchases of traded goods,-
+51102030,PL,51102030 - Inventory Adjustment,Purchases of traded goods,Purchases of traded goods,"-15,49,616.70"
+51103010,PL,51102030 - Inventory Adjustment,Purchases of traded goods,Purchases of traded goods,"92,10,599.10"
+51101120,PL,51101120 - COS - Input VAT Closed to Expense,Purchases of traded goods,Purchases of traded goods,-
+,,,,,
+,,,,,-
+,,,,,
+,,,,,-
+61101010,PL,61101010 - Basic Pay,Employee benefits expense,"Salaries, wages and Bonus","3,85,21,951.38"
+61101020,PL,61101020 - Overtime Pay,Employee benefits expense,"Salaries, wages and Bonus","8,33,649.90"
+61101030,PL,61101030 - Commissions,Employee benefits expense,"Salaries, wages and Bonus","57,87,900.00"
+,,,,,
+,,,,,-
+61102010,PL,61102010 - 13th Month Pay,Employee benefits expense,"Salaries, wages and Bonus","33,40,847.64"
+61102020,PL,61102020 - SL/VL Monetization,Employee benefits expense,"Salaries, wages and Bonus","13,56,463.14"
+61102030,PL,"61102030 - SSS, PhilHealth, HDMF Share",Employee benefits expense,Contributions to provident and other funds,"35,76,663.75"
+61102040,PL,61102040 - De Minimis Benefits,Employee benefits expense,"Salaries, wages and Bonus","3,05,298.15"
+61102050,PL,61102050 - Incentives,Employee benefits expense,"Salaries, wages and Bonus","56,84,437.83"
+61102060,PL,61102060 - Uniform,Employee benefits expense,Staff welfare expenses,"8,250.00"
+61102070,PL,61102070 - Health Card,Employee benefits expense,Staff welfare expenses,"16,99,319.06"
+61102080,PL,61102080 - Employee Trainings and Development,Employee benefits expense,Staff welfare expenses,"7,80,753.35"
+61102081,PL,61102081 - Corporate Events and Activities,Employee benefits expense,Staff welfare expenses,"2,22,311.80"
+61102090,PL,61102090 - Employee Benefits,Employee benefits expense,Staff welfare expenses,-
+61102091,PL,61102091 - Per Diem and Lodging Expenses,Employee benefits expense,"Salaries, wages and Bonus","18,80,126.45"
+61102100,PL,61102100 - 14th Month Pay,Employee benefits expense,"Salaries, wages and Bonus","32,39,526.63"
+61102110,PL,61102110 - Salary Differential,Employee benefits expense,"Salaries, wages and Bonus","23,999.70"
+61102120,PL,61102120 - Magna Carta Pay,Employee benefits expense,"Salaries, wages and Bonus","1,05,600.00"
+61103020,PL,61103020 - Retirement Expense,Employee benefits expense,"Salaries, wages and Bonus","42,55,881.38"
+,,,,,
+,,,,,
+,,,,,-
+61201010,PL,Rent,Other expenses,Rent,#ERROR!
+61201020,PL,Electricity,Other expenses,Power and fuel,"10,15,607.31"
+61201030,PL,Water,Other expenses,Miscellaneous expenses,"23,494.64"
+61201040,PL,Telephone Expense,Other expenses,Telephone and internet expense,"1,73,549.46"
+61201050,PL,Cell Cards,Other expenses,Telephone and internet expense,"6,71,430.75"
+,,,,,
+,,,,,-
+61202010,PL,Admin Expense - Office Supplies,Other expenses,Miscellaneous expenses,"2,93,160.22"
+61202020,PL,Admin Expense - Pantry Supplies,Other expenses,Miscellaneous expenses,"1,00,467.83"
+61202030,PL,Admin Expense - Service Supplies,Other expenses,Miscellaneous expenses,"49,970.30"
+61202040,PL,Admin Expense - Supplies Operating,Other expenses,Miscellaneous expenses,"14,36,649.74"
+61203010,PL,Admin Expense - Transportation,Other expenses,Travelling and conveyance,"30,55,380.58"
+61203020,PL,Admin Expense - Gasoline and oil,Other expenses,Power and fuel,"32,88,441.56"
+61203030,PL,Admin Expense - Parking Fee,Other expenses,Travelling and conveyance,"84,565.19"
+61203040,PL,Admin Expense - Toll Fee,Other expenses,Travelling and conveyance,"5,28,719.80"
+,,,,,
+,,,,,-
+61301010,PL,R&M Goods Expense - Transportation Equipment,Other expenses,Repair and maintenance,"5,69,870.66"
+61301020,PL,R&M Goods Expense - Office Equipment,Other expenses,Repair and maintenance,"22,110.71"
+61301030,PL,R&M Goods Expense - Laboratory Equipment,Other expenses,Miscellaneous expenses,-
+61301040,PL,R&M Goods Expense - Common Repair & Maintenance,Other expenses,Repair and maintenance,"31,023.59"
+61302010,PL,R&M Service Expense - Transportation Equipment,Other expenses,Repair and maintenance,"11,50,400.24"
+61302020,PL,R&M Service Expense - Office Equipment,Other expenses,Repair and maintenance,"1,85,658.93"
+61302030,PL,R&M Service Expense - Laboratory Equipment,Other expenses,Repair and maintenance,"2,05,311.28"
+61302040,PL,R&M Service Expense - Common Repair & Maintenance,Other expenses,Repair and maintenance,"1,05,337.49"
+,,,,,
+,,,,,-
+61401000,PL,Transportation and Travel Expense,Other expenses,Travelling and conveyance,-
+61402010,PL,Mktg. Expense - Representation Expenses,Other expenses,Advertising and sales promotion,-
+61402020,PL,Mktg. Expense - Seminars and Meetings,Other expenses,Advertising and sales promotion,"17,72,889.35"
+61402030,PL,Mktg. Expense - Promotional Materials,Other expenses,Advertising and sales promotion,"2,75,195.53"
+61402040,PL,Mktg. Expense - Sponsorships,Other expenses,Advertising and sales promotion,"5,15,205.03"
+61402050,PL,Mktg. Expense - Advertising,Other expenses,Advertising and sales promotion,"6,03,059.01"
+61402060,PL,Mktg. Expense - Demo Materials,Other expenses,Advertising and sales promotion,"14,58,677.90"
+61402070,PL,Mktg. Expense - FDA Evaluation Fee,Other expenses,Rates and taxes,"6,250.27"
+,,,,,
+,,,,,-
+61501010,PL,Life Insurance,Other expenses,Insurance,"39,001.16"
+61501020,PL,Car Insurance,Other expenses,Insurance,"5,67,816.65"
+61501030,PL,Fire Insurance,Other expenses,Insurance,"85,370.84"
+61501050,PL,Casualty Insurance,Other expenses,Insurance,"1,696.50"
+61501060,PL,Other Insurance,Other expenses,Insurance,-
+,,,,,
+,,,,,-
+61502010,PL,Municipal Taxes,Other expenses,Rates and taxes,"45,91,569.40"
+61502030,PL,Business Licenses and Permits,Other expenses,Rates and taxes,"57,544.15"
+61502040,PL,FDA Permits/Certificates/Licenses,Other expenses,Rates and taxes,"1,99,241.98"
+61502050,PL,Other Taxes,Other expenses,Rates and taxes,"38,75,229.51"
+61501040,PL,61501040 - Marine Open Policy Insurance,Other expenses,Insurance,"6,798.14"
+,,,,,
+,,,,,-
+61601020,PL,Depreciation - Transport Equipment,Depreciation and amortisation expense,Dep. On PPE,"40,12,075.16"
+61601030,PL,Depreciation - Office Equipment,Depreciation and amortisation expense,Dep. On PPE,"11,58,776.50"
+61601040,PL,Depreciation - Laboratory Equipments,Depreciation and amortisation expense,Dep. On PPE,"3,58,24,803.54"
+61601050,PL,Depreciation - Furnitures & Fixture,Depreciation and amortisation expense,Dep. On PPE,"5,327.62"
+61601060,PL,Depreciation - Service Tools,Depreciation and amortisation expense,Dep. On PPE,"10,61,121.56"
+61601070,PL,Depreciation expense - ROU,Depreciation and amortisation expense,Dep. On ROU,"38,91,727.02"
+,,,,,
+,,,,,-
+61602010,PL,Amortization - Leasehold Improvement,Depreciation and amortisation expense,Dep. On PPE,"14,90,770.08"
+61602030,PL,Amortization - Software,Depreciation and amortisation expense,Amortisation of intangible assets (refer note 5A),"4,22,009.97"
+61602040,PL,Amortization - Microsoft Office & Licenses,Depreciation and amortisation expense,Amortisation of intangible assets (refer note 5A),"10,11,023.68"
+61602050,PL,Amortization - Prepaid Contracts,Depreciation and amortisation expense,Amortisation of intangible assets (refer note 5A),-
+61602020,PL,Amortization - Prepaid Service Contracts,Depreciation and amortisation expense,Software Expenses,"19,33,617.42"
+,,,,,
+,,,,,-
+61503010,PL,Audit and Legal Fees,Other expenses,Legal and professional expenses (refer note 33.1 below),"3,66,581.25"
+61503020,PL,Bad Debts Expense,Other expenses,Bad debts written off,"62,31,044.00"
+61503030,PL,Subscription Dues,Other expenses,Software Expenses,"3,28,871.37"
+61503040,PL,Professional Fee,Other expenses,Legal and professional expenses (refer note 33.1 below),"3,31,890.06"
+61503050,PL,Bank Charges,Other expenses,Bank charges (refer note 44),"1,27,473.60"
+61503060,PL,Freight and Deliveries,Other expenses,Freight charges,"1,20,09,768.00"
+61503070,PL,Processing Fee,Finance cost,Processing Fees,"2,35,060.96"
+61503080,PL,Bid-Related Expenses,Other expenses,Bid Related Expenses,"7,52,115.00"
+61503100,PL,Security Services,Other expenses,Security Expenses,"7,14,732.67"
+61503110,PL,Miscellaneous Expenses,Other expenses,Miscellaneous expenses,"15,55,830.67"
+61503081,PL,61503081 - Other Bid-Related Expenses,Other expenses,Bid Related Expenses,"50,801.78"
+61503120,PL,Donation,Other expenses,Donation,-
+61503150,PL,Consultancy Services,Other expenses,Legal and professional expenses (refer note 33.1 below),"60,000.00"
+91101020,PL,External Services Fees,Other expenses,Legal and professional expenses (refer note 33.1 below),"8,47,162.81"
+91101010,PL,Management Fees,Other expenses,Management support charges (refer note 44),"75,89,397.63"
+91101030,PL,Software Maintenance Cost,Other expenses,Software Expenses,-
+91101040,PL,Other Non-Operating Expenses,Other expenses,Miscellaneous expenses,"25,01,000.00"
+,,,,,
+,,,,,-
+,,,,,
+,,,,,-
+61503090,PL,Interest Expense,Finance cost,Interest on loans,"20,87,883.95"
+61503140,PL,Interest Expense on Lease,Finance cost,Interest expense on lease liabilities (refer note 45),"9,86,812.55"
+42101010,PL,Interest from Savings,Other income,from banks,"-16,692.38"
+42101020,PL,Other Interest Income,Other income,from banks,"-78,201.74"
+42102010,PL,Miscellaneous Income,Other income,Miscellaneous income,"-63,389.00"
+42103010,PL,(Gain)Loss on Sale of F. Asset,Other income,"Profit on sale of property, plant and equipment","-8,45,742.78"
+42103020,PL,(Gain)Loss on Forex-Realized,Other expenses,Exchange rate fluctuation (net),"40,82,637.86"
+42103040,PL,(Gain)Loss on Forex-UnRealized,Other expenses,Exchange rate fluctuation (net),"21,83,411.27"
+41103010,PL,Rental Income - Government Hospitals,Other income,Rental Income,-
+New GL,PL,Reversal of Allowance for ECL,Other income,Reversal of Allowance for ECL,-
+,,,,,
+,,,,,-
+,,,,,
+,,,,,-
+71101010,PL,Provision for Income Tax - Current,Income tax,Current tax,"2,41,83,232.00"
+71101020,PL,Provision for Income Tax - Deferred P/L,Income tax,Deferred tax charge/(credit),"-33,40,295.00"
+71101030,PL,Provision for prior year assessments,Provision for Income Tax - Prior Year,Rates and taxes,"-47,00,529.79"
+,,,,,
+,,,,,-
+,,,,,
+,,,,,-
+81101010,PL,Remeasurement loss(gain) on Retirement Benefit (OCI),Re-measurements of the defined benefit plans,Re-measurements of the defined benefit plans,"-21,52,151.42"
+81101020,PL,Provision for Income Tax - Deferred OCI,Re-measurements of the defined benefit plans,Income tax relating to above item,"5,38,037.85"

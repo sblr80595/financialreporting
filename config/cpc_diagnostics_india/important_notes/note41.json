@@ -1,0 +1,87 @@
+{
+  "note_number": "NOTE 41",
+  "note_title": "Dues to Micro and Small Enterprises",
+  "output_file": "cpc_note_41_msme_dues.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items for the period ended March 31, 2025. If values are empty or zero, display 'Nil'.",
+  "categories": [
+    "- Principal",
+    "- Interest",
+    "The amount of interest paid by the buyer in terms of Section 16...",
+    "The amount of interest due and payable for the period of delay...",
+    "The amount of interest accrued and remaining unpaid...",
+    "The amount of further interest remaining due and payable..."
+  ],
+  "output_format": [
+    {
+      "label": "Dues to micro and small suppliers",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "The management has identified the enterprises which have provided goods and services to the Company and which qualify under the definition of micro and small enterprises, as defined under Micro, Small and Medium Enterprises Development Act, 2006. Such determination/ identification has been done on the basis of information received and available with the Company and relied upon by the auditors.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Particulars",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "   Principal amount remaining unpaid to any supplier as at the end of the accounting year",
+      "ind_as_minor": [
+        "- Principal"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Interest due thereon remaining unpaid to any supplier as at the end of the accounting year",
+      "ind_as_minor": [
+        "- Interest"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   The amount of interest paid by the buyer in terms of Section 16 of the MSMED Act, 2006 along with the amounts of the payment made to the supplier beyond the appointed day during the accounting year",
+      "ind_as_minor": [
+        "The amount of interest paid by the buyer in terms of Section 16, of the Micro, Small and Medium Enterprise Development Act, 2006 along with the amounts of the payment made  to the supplier beyond the appointed day during each accounting period"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   The amount of interest due and payable for the period of delay in making payment (which have been paid but beyond the appointed day during the period) but without adding the interest specified under MSMED Act, 2006",
+      "ind_as_minor": [
+        "The amount of interest due and payable for the period of delay in making payment (which have been paid but beyond the appointed day during the period) but without adding the interest specified under Micro Small and Medium Enterprise Development Act, 2006"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   The amount of interest accrued and remaining unpaid at the end of the accounting year",
+      "ind_as_minor": [
+        "The amount of interest accrued and remaining unpaid  at the end of each accounting period; and"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   The amount of further interest remaining due and payable even in the succeeding years, until such date when the interest dues as above are actually paid to the small enterprise",
+      "ind_as_minor": [
+        "The amount of further interest remaining due and payable even in the succeeding years, until such date  when the interest dues as above are actually paid to the small enterprise for the purpose of disallowance as a deductible expenditure under Section 23 of the Micro Small and Medium Enterprise Development Act, 2006."
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 41: DUES TO MICRO AND SMALL ENTERPRISES**\n\nPresentation Requirements:\n1.  **Explanatory Text**: Include the management disclosure text regarding the identification of MSME vendors.\n2.  **Table**: Present the specific MSME disclosure line items required by the Act.\n3.  **Data Extraction**: Extract values for **March 31, 2025**.\n\nFormatting:\n-   As the source file shows empty/nil values for March 2025, display 'Nil' for all numeric line items."
+}

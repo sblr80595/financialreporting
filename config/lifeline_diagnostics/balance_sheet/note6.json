@@ -1,0 +1,29 @@
+{
+    "note_number": "NOTE 6",
+    "note_title": "Deferred tax liabilities (net)",
+    "output_file": "company_note_6_deferred_tax_liabilities.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For deferred tax liabilities (net), take the value as-is. If credit balance (negative), present as liability (positive). If debit balance (positive), present as asset in parentheses or negative.",
+    "categories": [
+        "Deferred Tax Assets (Net)"
+    ],
+    "output_format": [
+        {
+            "label": "Deferred tax liabilities/ (assets) (net)",
+            "ind_as_minor": [
+                "Deferred Tax Liability"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "TOTAL_DEFERRED_TAX_LIABILITIES",
+            "ind_as_minor": null,
+            "is_total": true,
+            "sum_of": [
+                "Deferred tax liabilities/ (assets) (net)"
+            ],
+            "show_line": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n1. 'Deferred tax liabilities/ (assets) (net)' - from category 'Deferred Tax Liability'\n2. Show total (which is same as the line item value since there's only one item)\n3. This represents the net position of deferred tax after offsetting deferred tax assets against deferred tax liabilities\n5. Format all amounts in Indian numbering system without ₹ symbol.\n6. Deferred tax is calculated as per Ind AS 12 (Income Taxes) based on temporary differences between book and tax base.\n7. If net position is a liability (credit balance in trial balance), show as positive amount.\n8. If net position is an asset (debit balance in trial balance), this should be classified under 'Deferred tax assets' instead.\n9. The label format 'liabilities/ (assets)' indicates the note can show either depending on the net position.\n10. Deferred tax typically arises from differences in depreciation, provisions, carry-forward losses, etc."
+}

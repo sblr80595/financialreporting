@@ -1,0 +1,54 @@
+{
+  "note_number": "NOTE 25",
+  "note_title": "Other Income",
+  "output_file": "ttps_fs_note_25_other_income.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "For each minor category, aggregate all mapped accounts algebraically (following BODMAS: sum of all positive and negative values). Income categories typically have credit balances (negative in the trial balance). After algebraic aggregation, convert the final net amount to positive values for presentation in the final notes.",
+  "categories": [
+    "Interest income on fixed deposits",
+    "Loan to related party",
+    "Liabilities/provisions no longer required written back",
+    "Reversal of allowance for bad and doubtful debts",
+    "Export incentive",
+    "Business support service to group companies",
+    "Miscellaneous income"
+  ],
+  "output_format": [
+    {
+      "label": "Interest income on fixed deposits",
+      "ind_as_minor": "Interest income on fixed deposits",
+      "is_header": false
+    },
+    {
+      "label": "Interest income on loan to related party",
+      "ind_as_minor": "Loan to related party",
+      "is_header": false
+    },
+    {
+      "label": "Liabilities/provisions no longer required written back",
+      "ind_as_minor": "Liabilities/provisions no longer required written back",
+      "is_header": false
+    },
+    {
+      "label": "Reversal of allowance for bad and doubtful debts",
+      "ind_as_minor": "Reversal of allowance for bad and doubtful debts",
+      "is_header": false
+    },
+    {
+      "label": "Export incentive",
+      "ind_as_minor": "Export incentive",
+      "is_header": false
+    },
+    {
+      "label": "Business support service to group companies",
+      "ind_as_minor": "Business support service to group companies",
+      "is_header": false
+    },
+    {
+      "label": "Miscellaneous income",
+      "ind_as_minor": "Miscellaneous income",
+      "is_header": false
+    }
+  ],
+  "additional_instructions": "This note captures all other income items not related to core operations. AGGREGATION LOGIC: If multiple accounts map to the same minor category (e.g., 3 accounts for 'Miscellaneous income'), perform algebraic summation: add all values as they are (positive + positive + negative). Example: If Account A = 10,000, Account B = 5,000, Account C = -3,000, then final = 10,000 + 5,000 + (-3,000) = 12,000. After algebraic aggregation, present the final net amount as positive value. IMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

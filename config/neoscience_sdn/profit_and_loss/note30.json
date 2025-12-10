@@ -1,0 +1,31 @@
+{
+  "note_number": "NOTE 30",
+  "note_title": "Depreciation and Amortisation Expense",
+  "output_file": "neoscience_note_30_depreciation_amortisation.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. Impairment of assets should be excluded from this note as it's reported separately.",
+  "categories": [
+    "Depreciation on property, plant and equipment (refer note 4)",
+    "Depreciation on ROU"
+  ],
+  "exclusion_rules": {
+    "impairment": {
+      "description": "EXCLUDE 'impairment of assets' - this is reported separately in the P&L and not part of regular depreciation",
+      "gl_patterns": [
+        "IMPAIRMENT",
+        "impairment of assets"
+      ]
+    }
+  },
+  "output_format": [
+    {
+      "label": "Depreciation on property, plant and equipment (refer note 4A)",
+      "ind_as_minor": "Depreciation on property, plant and equipment (refer note 4)"
+    },
+    {
+      "label": "Depreciation on right of use assets (refer note 4B)",
+      "ind_as_minor": "Depreciation on ROU"
+    }
+  ],
+  "additional_instructions": "Depreciation and amortisation are non-cash expenses that allocate the cost of assets over their useful lives.\n\n**Depreciation on property, plant and equipment** includes:\n- GL 6011/00000 DEPRECIATION OF LAB EQUIPMENT (major component)\n- GL 9D01/00000 DEPRECIATION (general depreciation)\n\nNote: These GLs share the same Ind AS Minor 'Depreciation on property, plant and equipment (refer note 4)'\n\n**Depreciation on right of use assets** includes:\n- Dep on ROU (Depreciation on Right-of-Use assets under Ind AS 116)\n\nIMPORTANT EXCLUSION:\n- GL 9D01/00001 'IMPAIRMENT OF ASSETS' should NOT be included in this note. Impairment is a separate exceptional/other expense item and should be reported separately in the P&L statement.\n\nInclude cross-references to Note 4A (PPE) and Note 4B (ROU Assets). The note structure follows Schedule III requirements for depreciation disclosure."
+}

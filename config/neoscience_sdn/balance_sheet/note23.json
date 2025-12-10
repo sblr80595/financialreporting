@@ -1,0 +1,42 @@
+{
+  "note_number": "NOTE 23",
+  "note_title": "Current Tax Liabilities (Net)",
+  "output_file": "Neoscience_Note_17B_Tax_Liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Current tax is calculated net of prepaid taxes. Provision for taxation is a liability (positive value), and Income tax recoverable is an asset (negative value used in the net calculation).",
+  "categories": [
+    "Provision for taxation (net of prepaid taxes)",
+    "Income tax recoverable"
+  ],
+  "output_format": [
+    {
+      "label": "**Current Tax Liabilities (Net)**",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Provision for taxation (net of prepaid taxes)",
+      "ind_as_minor": ["Provision for taxation (net of prepaid taxes)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Less: Income tax recoverable",
+      "ind_as_minor": ["Income tax recoverable"],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Current Tax Liabilities (Net)",
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": ["Provision for taxation (net of prepaid taxes)"],
+      "subtract": ["Less: Income tax recoverable"],
+      "bold": true,
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. This note calculates and displays the Total Current Tax Liabilities (Net). Note that 'Income tax recoverable' is an asset, which is sign-flipped to ensure it is subtracted from the liability in the net calculation. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

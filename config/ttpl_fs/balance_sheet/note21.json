@@ -1,0 +1,40 @@
+{
+  "note_number": "NOTE 21",
+  "note_title": "Other current liabilities",
+  "output_file": "ttpl_note_21_other_current_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other current liabilities, take positive credit balances (if negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Statutory dues payable- OCL",
+    "Creditors for capital goods (OCL)"
+  ],
+  "output_format": [
+    {
+      "label": "Statutory dues payable",
+      "ind_as_minor": [
+        "Statutory dues payable- OCL"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Creditors for capital goods",
+      "ind_as_minor": [
+        "Creditors for capital goods (OCL)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_OTHER_CURRENT_LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Statutory dues payable",
+        "Creditors for capital goods"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 21: OTHER CURRENT LIABILITIES**\n\n1.  **'Statutory dues payable'** - from category 'Statutory dues payable- OCL' (Includes GST, TDS, PF, etc.).\n2.  **'Creditors for capital goods'** - from category 'Creditors for capital goods (OCL)' (Current portion of amounts due for PPE purchases).\n3.  Show **TOTAL_OTHER_CURRENT_LIABILITIES** as the final sum.\n\nAccounting Context:\n-   These are non-financial liabilities, distinct from trade payables and other financial liabilities.\n-   They are all expected to be settled within 12 months (current classification).\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   All amounts must be displayed as positive (liability balance)."
+}

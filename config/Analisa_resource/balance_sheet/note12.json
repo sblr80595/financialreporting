@@ -1,0 +1,31 @@
+{
+    "note_number": "NOTE 12",
+    "note_title": "Loans-current",
+    "output_file": "company_note_12_loans_current.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For loans, take positive debit balances from the trial balance. Value is expected to be Nil.",
+    "categories": [],
+    "output_format": [
+        {
+            "label": "(Unsecured, considered good)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Loan to related parties* (Refer note 39)",
+            "ind_as_minor": [],
+            "aggregation": "sum"
+        },
+        {
+            "label": "TOTAL_LOANS_CURRENT",
+            "ind_as_minor": null,
+            "is_total": true,
+            "sum_of": [
+                "Loan to related parties* (Refer note 39)"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n1. Show '(Unsecured, considered good)' as subheading in italics (no amount)\n2. 'Loan to related parties* (Refer note 39)' - from empty category list, resulting in Nil/0.00.\n3. Show total (which is same as the line item value since there's only one item)\n6. Format all amounts in Indian numbering system without ₹ symbol.\n7. All values are expected to be 0.00."
+}

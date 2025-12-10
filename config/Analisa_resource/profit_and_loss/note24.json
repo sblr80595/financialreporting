@@ -1,0 +1,18 @@
+{
+  "note_number": "NOTE 24",
+  "note_title": "Revenue from Operations",
+  "output_file": "analisa_note_24_revenue_from_operations.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the final notes.",
+  "categories": [
+    "Revenue from Operations"
+  ],
+  "output_format": [
+    {
+      "label": "**Revenue from Operations**",
+      "ind_as_minor": "Revenue from Operations",
+      "is_header": true
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Revenue from Operations'. Convert credit balances to positive values for presentation. The net amount should include sales less any returns and discounts."
+}

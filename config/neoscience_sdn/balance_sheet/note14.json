@@ -1,0 +1,60 @@
+{
+  "note_number": "NOTE 14",
+  "note_title": "Equity Share Capital",
+  "output_file": "Neoscience_Note_10_Equity_Capital.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "The closing balance (iv) is calculated by reconciling the opening balance (iii) with the net movement. Subheadings (i) and (ii) must use hardcoded values from configuration.",
+  "categories": [
+    "Balance at the beginning of the year",
+    "Add: Share issued during the year",
+    "Conversion of 7% Compulsory Convertible Preference Shares",
+    "Add : Issued during the year (Refer note 28)",
+    "Less: Transaction cost arising on share issues"
+  ],
+  "output_format": [
+    {
+      "label": "(i) Authorised Capital",
+      "ind_as_minor": ["Authorised Capital (Amount)"],
+      "aggregation": "hardcoded",
+      "sign_flip": false,
+      "bold": true
+    },
+    {
+      "label": "(ii) Issued, Subscribed and Fully Paid-up",
+      "ind_as_minor": ["Issued Subscribed and Fully Paid-up Capital (Amount)"],
+      "aggregation": "hardcoded",
+      "sign_flip": false,
+      "bold": true
+    },
+    {
+      "label": "(iii) Reconciliation of Shares Outstanding - Opening Balance",
+      "ind_as_minor": ["Balance at the beginning of the year"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Add: Net share movements",
+      "ind_as_minor": [
+        "Add: Share issued during the year",
+        "Conversion of 7% Compulsory Convertible Preference Shares",
+        "Add : Issued during the year (Refer note 28)",
+        "Less: Transaction cost arising on share issues"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "(iv) Balance at the end of the period",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "(iii) Reconciliation of Shares Outstanding - Opening Balance",
+        "Add: Net share movements"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. Subheadings (i) and (ii) must display hardcoded placeholder values. Subheadings (iii) and (iv) must be calculated from the GL data using reconciliation logic (Opening + Net Movement). Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

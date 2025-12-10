@@ -1,0 +1,55 @@
+{
+  "note_number": "NOTE 7",
+  "note_title": "Other Current Assets",
+  "output_file": "Neoscience_Note_9_OCA.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate all listed current non-financial asset components to derive the total for the note.",
+  "categories": [
+    "Advances",
+    "Advance to suppliers",
+    "Income tax recoverable",
+    "Advances to suppliers (OCA)",
+    "Balance with government authorities"
+  ],
+  "output_format": [
+    {
+      "label": "Advances (General)",
+      "ind_as_minor": ["Advances"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Advance to suppliers",
+      "ind_as_minor": ["Advance to suppliers", "Advances to suppliers (OCA)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Income tax recoverable",
+      "ind_as_minor": ["Income tax recoverable"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Balance with government authorities",
+      "ind_as_minor": ["Balance with government authorities"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Advances (General)",
+        "Advance to suppliers",
+        "Income tax recoverable",
+        "Balance with government authorities"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The total amount is the sum of all components. Group 'Advance to suppliers' and 'Advances to suppliers (OCA)' into a single line item. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

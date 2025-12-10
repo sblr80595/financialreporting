@@ -1,0 +1,24 @@
+{
+    "note_number": "NOTE 14",
+    "note_title": "Equity share capital",
+    "output_file": "analisa_note_14_equity_share_capital.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Equity share capital typically has credit balance (negative in the trial balance). Convert to positive values for presentation in the balance sheet under equity section.",
+    "categories": [
+        "Equity share capital"
+    ],
+    "output_format": [
+        {
+            "label": "**Equity share capital**",
+            "ind_as_minor": null,
+            "is_header": true
+        },
+        {
+            "label": "Total Paid-up Equity Capital",
+            "ind_as_minor": ["Equity share capital"],
+            "aggregation": "sum",
+            "sign_flip": true
+        }
+    ],
+    "additional_instructions": "Sum all accounts with Ind AS Minor 'Equity share capital'. Convert credit balances to positive values for presentation. This represents the total equity share capital carried on the Balance Sheet."
+}

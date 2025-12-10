@@ -1,0 +1,90 @@
+{
+  "note_number": "NOTE 8",
+  "note_title": "Inventories",
+  "output_file": "company_note_8_inventories.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For inventory items, take positive debit balances. For provisions, take the absolute value of credit balances and present as a deduction.",
+  "categories": [
+    "Raw materials",
+    "Work-in-progress",
+    "Stock-in-trade'",
+    "Stores and spare parts**",
+    "Finished goods",
+    "Less: Provision for inventory"
+  ],
+  "output_format": [
+    {
+      "label": "Raw materials",
+      "ind_as_minor": [
+        "Raw materials"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Work-in-progress",
+      "ind_as_minor": [
+        "Work-in-progress"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Finished goods",
+      "ind_as_minor": [
+        "Finished goods"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Stock-in-trade",
+      "ind_as_minor": [
+        "Stock-in-trade'"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Stores and spare parts",
+      "ind_as_minor": [
+        "Stores and spare parts**"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Inventories (Gross)",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "Raw materials",
+        "Work-in-progress",
+        "Finished goods",
+        "Stock-in-trade",
+        "Stores and spare parts"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "Less: Provision for inventory",
+      "ind_as_minor": [
+        "Less: Provision for inventory"
+      ],
+      "is_deduction": true,
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Inventories",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Total Inventories (Gross)"
+      ],
+      "subtract": [
+        "Less: Provision for inventory"
+      ],
+      "show_line": true,
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 8: INVENTORIES**\n\nPresentation Requirements:\n1.  **Raw materials**: Sum of 'Raw materials'.\n2.  **Work-in-progress**: Sum of 'Work-in-progress'.\n3.  **Finished goods**: Sum of 'Finished goods'.\n4.  **Stock-in-trade**: Sum of 'Stock-in-trade''.\n5.  **Stores and spare parts**: Sum of 'Stores and spare parts**'.\n6.  **Subtotal**: Calculate the gross inventory value.\n7.  **Less: Provision for inventory**: Deduct value from 'Less: Provision for inventory'.\n8.  **Total Inventories**: Net value (Gross - Provision), bolded and double-underlined.\n\nFormatting:\n-   Format all amounts in the Indian numbering system.\n-   Ensure the provision is shown as a deduction."
+}

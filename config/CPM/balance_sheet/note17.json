@@ -1,0 +1,226 @@
+{
+  "note_number": "NOTE 17",
+  "note_title": "Borrowings (Non-current and Current)",
+  "output_file": "company_note_17_borrowings.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For borrowings, take credit balances (liabilities) from the trial balance. Current maturities are negative adjustments in non-current section.",
+  "categories": [
+    "Buyers credit",
+    "Bankers Acceptance",
+    "Loan from banks (current)",
+    "Equipment loan from banks C",
+    "Vehicle loan (Current)",
+    "Loan from holding company",
+    "Loan from directors",
+    "Loan from related parties",
+    "Loan from shareholders",
+    "Term loan from banks",
+    "Equipment loan from banks NC",
+    "Vehicle loan from banks"
+  ],
+  "output_format": [
+    {
+      "label": "17A. Borrowings - current",
+      "ind_as_minor": null,
+      "is_major_section": true
+    },
+    {
+      "label": "Secured",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "Invoice financing *",
+      "ind_as_minor": [
+        "Buyers credit"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Banker's acceptance**",
+      "ind_as_minor": [
+        "Bankers Acceptance"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Current maturities of non-current borrowings (refer note 17A above)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "- Term loan from banks",
+      "ind_as_minor": [
+        "Loan from banks (current)"
+      ],
+      "aggregation": "sum",
+      "indent_level": 1
+    },
+    {
+      "label": "-Equipment loan from banks",
+      "ind_as_minor": [
+        "Equipment loan from banks C"
+      ],
+      "aggregation": "sum",
+      "indent_level": 1
+    },
+    {
+      "label": "- Vehicle loan from banks#",
+      "ind_as_minor": [
+        "Vehicle loan (Current)"
+      ],
+      "aggregation": "sum",
+      "indent_level": 1
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Unsecured Loans from Related Parties",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "Loan from holding Company (refer note 39)",
+      "ind_as_minor": [
+        "Loan from holding company"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Loan from directors (refer note 39)",
+      "ind_as_minor": [
+        "Loan from directors"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Loan from related parties (refer note 39)",
+      "ind_as_minor": [
+        "Loan from related parties"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Loan from shareholders (refer note 39)",
+      "ind_as_minor": [
+        "Loan from shareholders"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "SUBTOTAL_17A",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "Invoice financing *",
+        "Banker's acceptance**",
+        "- Term loan from banks",
+        "-Equipment loan from banks",
+        "- Vehicle loan from banks#",
+        "Loan from holding Company (refer note 39)",
+        "Loan from directors (refer note 39)",
+        "Loan from related parties (refer note 39)",
+        "Loan from shareholders (refer note 39)"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "17B. Borrowings - non current",
+      "ind_as_minor": null,
+      "is_major_section": true
+    },
+    {
+      "label": "Secured loans",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "Term loan from banks#",
+      "ind_as_minor": [
+        "Term loan from banks"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Equipment loan from banks ##",
+      "ind_as_minor": [
+        "Equipment loan from banks NC"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Vehicle loan from banks ##",
+      "ind_as_minor": [
+        "Vehicle loan from banks"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Current maturities of non-current borrowings (refer note 17B below)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "- Term loan",
+      "ind_as_minor": [
+        "Loan from banks (current)"
+      ],
+      "aggregation": "sum",
+      "is_negative": true,
+      "indent_level": 1
+    },
+    {
+      "label": "- Equipment loan",
+      "ind_as_minor": [
+        "Equipment loan from banks C"
+      ],
+      "aggregation": "sum",
+      "is_negative": true,
+      "indent_level": 1
+    },
+    {
+      "label": "- Vehicle loan",
+      "ind_as_minor": [
+        "Vehicle loan (Current)"
+      ],
+      "aggregation": "sum",
+      "is_negative": true,
+      "indent_level": 1
+    },
+    {
+      "label": "SUBTOTAL_17B",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "Term loan from banks#",
+        "Equipment loan from banks ##",
+        "Vehicle loan from banks ##",
+        "- Term loan",
+        "- Equipment loan",
+        "- Vehicle loan"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "TOTAL_BORROWINGS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "SUBTOTAL_17A + SUBTOTAL_17B",
+      "show_line": true,
+      "display_label": "Total (17A + 17B)"
+    }
+  ],
+  "additional_instructions": "Output Structure:\nThis note combines both current and non-current borrowings in a single note with two sections:\n\nSECTION 17A: Borrowings - current\n1. Show '17A. Borrowings - current' as major section header\n2. Show 'Secured' as subheading (no amount)\n3. 'Invoice financing *' - from category 'Buyers credit'\n4. 'Banker's acceptance**' - from category 'Bankers Acceptance'\n5. Show 'Current maturities of non-current borrowings (refer note 17A above)' as subheading (no amount)\n6. '- Term loan from banks' - from category 'Loan from banks (current)' with indent\n7. '-Equipment loan from banks' - from category 'Equipment loan from banks C' with indent\n8. '- Vehicle loan from banks#' - from category 'Vehicle loan (Current)' with indent\n9. Add blank row for spacing\n10. Show 'Unsecured Loans from Related Parties' as subheading (no amount)\n11. 'Loan from holding Company (refer note 39)' - from category 'Loan from holding company'\n12. 'Loan from directors (refer note 39)' - from category 'Loan from directors'\n13. 'Loan from related parties (refer note 39)' - from category 'Loan from related parties'\n14. 'Loan from shareholders (refer note 39)' - from category 'Loan from shareholders'\n15. Show subtotal for 17A section\n16. Add blank row for spacing\n\nSECTION 17B: Borrowings - non current\n17. Show '17B. Borrowings - non current' as major section header\n18. Show 'Secured loans' as subheading (no amount)\n19. 'Term loan from banks#' - from category 'Term loan from banks'\n20. 'Equipment loan from banks ##' - from category 'Equipment loan from banks NC'\n21. 'Vehicle loan from banks ##' - from category 'Vehicle loan from banks'\n22. Show 'Current maturities of non-current borrowings (refer note 17B below)' as subheading (no amount)\n23. '- Term loan' - NEGATIVE value of category 'Loan from banks (current)' with indent\n24. '- Equipment loan' - NEGATIVE value of category 'Equipment loan from banks C' with indent\n25. '- Vehicle loan' - NEGATIVE value of category 'Vehicle loan (Current)' with indent\n26. Show subtotal for 17B section\n27. Add blank row for spacing\n\nFINAL TOTAL:\n28. Show grand total as 'Total (17A + 17B)' = 17A subtotal + 17B subtotal\n\nIMPORTANT CALCULATION NOTES:\n- Current maturities in Section 17B (lines 23-25) must be NEGATIVE values (deducted from non-current borrowings)\n- The same amounts appear as POSITIVE in Section 17A (lines 6-8) as current liabilities\n- This ensures proper classification: the portion due within 12 months is shown as current, and deducted from non-current\n\n29. Format all amounts in Indian numbering system without \u20b9 symbol.\n30. Secured borrowings are backed by collateral; unsecured have no collateral.\n31. Current borrowings are due within 12 months; non-current borrowings are due after 12 months.\n32. Related party disclosures reference note 39 for detailed terms and conditions.\n33. # and ## symbols indicate specific disclosure notes about security and terms."
+}

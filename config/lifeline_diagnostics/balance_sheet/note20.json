@@ -1,0 +1,19 @@
+{
+  "note_number": "NOTE 20",
+  "note_title": "Other financial liabilities",
+  "output_file": "lifeline_diagnostics_note_20_other_financial_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Financial liabilities are typically credit balances. Present as positive amounts in the balance sheet.",
+  "generate_if_empty": true,
+  "categories": [
+    "Employee related payables (refer note 45)"
+  ],
+  "output_format": [
+    {
+      "label": "Employee related payables (refer note 45)",
+      "ind_as_minor": "Employee related payables (refer note 45)",
+      "default_value": 0
+    }
+  ],
+  "additional_instructions": "This note discloses other financial liabilities recognized in the balance sheet as per Ind AS 109 - Financial Instruments.\n\n**Employee related payables (refer note 45)**: Sum all GL accounts where Ind AS Minor is 'Employee related payables (refer note 45)'. This includes:\n- Salary and wages payable to employees\n- Bonus and incentives payable\n- Commission payable to employees\n- Accrued employee benefits\n- Staff advances to be recovered\n- Other employee-related financial liabilities\n- Employee reimbursements pending payment\n\nOther financial liabilities represent amounts payable to employees for services rendered during the period. These are current liabilities expected to be settled within 12 months from the reporting date.\n\nPresentation Notes:\n1. Financial liabilities are shown on the balance sheet\n2. Present as positive amounts (credit balances)\n3. Cross-reference to Note 45 for detailed movement and breakdown\n4. These are classified as current financial liabilities\n5. Follow Schedule III format for balance sheet presentation\n6. Measured at amortized cost under Ind AS 109\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for other financial liabilities disclosure under Ind AS.\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

@@ -1,0 +1,116 @@
+{
+  "note_number": "40",
+  "note_title": "Financial Guarantees and Segment Information",
+  "statement_type": "important-notes",
+
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+
+  "auxiliary_files": [
+    {
+      "label": "PL_Statement",
+      "file_path": "data/cpm/output/financial_statements/PL",
+      "file_name": "PL_Statement_*.xlsx",
+      "description": "Used to extract segment revenue by geography"
+    },
+    {
+      "label": "Balance_Sheet",
+      "file_path": "data/cpm/output/financial_statements/BS",
+      "file_name": "Balance_Sheet_*.xlsx",
+      "description": "Used to extract segment-wise non-current assets"
+    }
+  ],
+
+  "periods": [
+    { "period_name": "Mar'25", "period_column": "Total Mar'25" },
+    { "period_name": "Mar'24", "period_column": "Total Mar'24" }
+  ],
+
+  "categories": [
+    "Corporate guarantees",
+    "Segment revenue – Within India",
+    "Segment revenue – Outside India",
+    "Inter-segment eliminations",
+    "Revenue from external customers",
+    "Non-current assets – Within India",
+    "Non-current assets – Outside India"
+  ],
+
+  "output_format": {
+    "summary_sections": [
+      {
+        "section": "NOTE 40: FINANCIAL GUARANTEES",
+        "fields": [
+          {
+            "label": "Corporate Guarantees",
+            "description": "Guarantees issued to subsidiaries or related parties",
+            "source": "calculated_from_trial_balance_or_auxiliary",
+            "period_specific": true
+          },
+          {
+            "label": "Total Financial Guarantees",
+            "description": "Aggregate of all guarantees issued",
+            "source": "calculated",
+            "is_total": true,
+            "period_specific": true
+          }
+        ]
+      },
+      {
+        "section": "NOTE 40: SEGMENT REVENUE",
+        "fields": [
+          {
+            "label": "Segment Revenue – Within India",
+            "description": "Refer to PL_Statement.xlsx for geographic revenue split. Trial balance does not contain location-tagged revenue.",
+            "source": "refer_to_file",
+            "period_specific": true
+          },
+          {
+            "label": "Segment Revenue – Outside India",
+            "description": "Refer to PL_Statement.xlsx for geographic revenue split. Trial balance does not contain location-tagged revenue.",
+            "source": "refer_to_file",
+            "period_specific": true
+          },
+          {
+            "label": "Inter-segment Sales",
+            "description": "Eliminated from total",
+            "source": "calculated_from_auxiliary",
+            "period_specific": true
+          },
+          {
+            "label": "Revenue from External Customers",
+            "description": "Net of eliminations",
+            "source": "calculated",
+            "is_total": true,
+            "period_specific": true
+          }
+        ]
+      },
+      {
+        "section": "NOTE 40: SEGMENT ASSETS",
+        "fields": [
+          {
+            "label": "Non-current Assets – Within India",
+            "description": "Refer to Balance_Sheet.xlsx for geographic asset split. Trial balance does not contain location-tagged assets.",
+            "source": "refer_to_file",
+            "period_specific": true
+          },
+          {
+            "label": "Non-current Assets – Outside India",
+            "description": "Refer to Balance_Sheet.xlsx for geographic asset split. Trial balance does not contain location-tagged assets.",
+            "source": "refer_to_file",
+            "period_specific": true
+          },
+          {
+            "label": "Total Segment Assets",
+            "description": "Aggregate of above",
+            "source": "calculated",
+            "is_total": true,
+            "period_specific": true
+          }
+        ]
+      }
+    ]
+  },
+
+  "additional_instructions": "Extract financial guarantees from trial balance or auxiliary files. Use PL_Statement.xlsx for segment revenue and Balance_Sheet.xlsx for segment assets. If no data is found for a category, refer to the relevant file and explain why direct extraction is not possible. Format all amounts in MYR with comma separators and proper sign conventions. Round only after final aggregation."
+}

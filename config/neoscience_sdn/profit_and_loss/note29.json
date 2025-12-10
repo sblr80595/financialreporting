@@ -1,0 +1,21 @@
+{
+  "note_number": "NOTE 29",
+  "note_title": "Finance Costs",
+  "output_file": "neoscience_note_29_finance_costs.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically.",
+  "categories": [
+    "Interest on lease liability"
+  ],
+  "output_format": [
+    {
+      "label": "**Interest expense on:**",
+      "is_header": true
+    },
+    {
+      "label": "Lease liabilities (refer note 37)",
+      "ind_as_minor": "Interest on lease liability"
+    }
+  ],
+  "additional_instructions": "Finance costs for Neoscience currently include only interest on lease liabilities as per Ind AS 116.\n\nGL Details:\n- Int on LL (Interest on Lease Liability): This represents interest expense on lease obligations recognized under Ind AS 116\n\nThe 'Interest expense on:' line is a category header with no amount. Include cross-reference to note 37 for lease liabilities details.\n\nIf the company has other finance costs in future periods (such as term loans, equipment loans, banker's acceptance, etc.), they should be added as separate line items under this note."
+}

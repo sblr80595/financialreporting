@@ -1,0 +1,61 @@
+{
+  "note_number": "NOTE 14",
+  "note_title": "Equity share capital",
+  "output_file": "company_a_note_14_equity_share_capital.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For equity share capital, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation).",
+  "categories": [
+    "Equity share capital"
+  ],
+  "output_format": [
+    {
+      "label": "Authorised",
+      "ind_as_minor": null,
+      "is_section_header": true
+    },
+    {
+      "label": "56,80,600 Equity shares of MYR 3.60 each.",
+      "ind_as_minor": [
+        "Equity share capital"
+      ],
+      "aggregation": "sum",
+      "is_descriptive": true
+    },
+    {
+      "label": "SUBTOTAL_AUTHORISED",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "56,80,600 Equity shares of MYR 3.60 each."
+      ],
+      "show_line": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Issued, subscribed and fully paid up",
+      "ind_as_minor": null,
+      "is_section_header": true
+    },
+    {
+      "label": "56,80,600 Equity shares of MYR 3.60 each.",
+      "ind_as_minor": [
+        "Equity share capital"
+      ],
+      "aggregation": "sum",
+      "is_descriptive": true
+    },
+    {
+      "label": "TOTAL_EQUITY_SHARE_CAPITAL",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "56,80,600 Equity shares of MYR 3.60 each."
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. Show 'Authorised' as section header (no amount on this line)\n2. Show '56,80,600 Equity shares of MYR 3.60 each.' with value from category 'Equity share capital'\n3. Show subtotal for Authorised section (same as line item value: 2,04,36,545)\n4. Add a blank row for spacing\n5. Show 'Issued, subscribed and fully paid up' as section header (no amount on this line)\n6. Show '56,80,600 Equity shares of MYR 3.60 each.' with same value from category 'Equity share capital'\n7. Show total for Issued section (same as line item value: 2,04,36,545)\n8. Note: Both 'Authorised' and 'Issued' sections use the SAME category and typically show the SAME amount when fully subscribed.\n10. Format all amounts in Indian numbering system without \u20b9 symbol but with MYR denomination.\n11. The descriptive line contains share count and face value details as per Companies Act requirements.\n12. Equity share capital is a credit balance (may appear negative in trial balance) - take absolute value for presentation."
+}

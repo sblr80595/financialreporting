@@ -1,0 +1,45 @@
+{
+  "note_number": "NOTE 27",
+  "note_title": "Changes in Inventories of Traded Goods",
+  "output_file": "neoscience_note_27_changes_in_inventories.txt",
+  "opening_balance_column": "Total March 2025",
+  "closing_balance_column": "Total June 2025",
+  "calculation_method": "simple",
+  "statement_type": "profit-loss",
+  "summation_rule": "Calculate net change as (Opening Inventory - Closing Inventory). Opening Inventory is from 'Total March 2025' column and Closing Inventory is from 'Total June 2025' column. Net provision effect to be added if applicable.",
+  "categories": [
+    "Traded goods",
+    "Provision for inventories"
+  ],
+  "inventory_categories": [
+    {
+      "label": "Traded goods",
+      "ind_as_minor_variants": [
+        "Traded goods"
+      ]
+    }
+  ],
+  "allowance_category": "Provision for inventories",
+  "provision_category": "Purchase of traded goods",
+  "provision_gl_patterns": [
+    "PROVISION FOR EXPIRED STOCK"
+  ],
+  "output_format": [
+    {
+      "label": "**Inventories at the end of the period:**",
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "value_type": "closing_total"
+    },
+    {
+      "label": "**Inventories at the beginning of the period:**",
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "value_type": "opening_total"
+    }
+  ]
+}

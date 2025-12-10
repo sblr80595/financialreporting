@@ -1,0 +1,134 @@
+{
+  "note_number": "33",
+  "note_title": "Fair Value Measurement",
+  "statement_type": "important-notes",
+  
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+  
+  "multi_source_integration": true,
+  
+  "auxiliary_files": [
+    {
+      "label": "Balance_Sheet_XLSX", 
+      "file_path": "data/cpm/output/financial_statements",
+      "file_name": "Balance_Sheet_*.xlsx", 
+      "description": "Generated Balance Sheet for Carrying Value vs. Fair Value comparison"
+    }
+  ],
+
+  "periods": [
+    {
+      "period_name": "Mar'25",
+      "period_column": "Total Mar'25"
+    }
+  ],
+  
+  "multi_source_rule": "GL Breakdown (Output 1) from CPM.csv. Carrying Value vs. Fair Value (Output 2) from Balance_Sheet.xlsx, focusing on Mar'25.",
+  
+  "summation_rule": "Use algebraic summation for GL breakdown totals (Output 1). Output 2 (Carrying/Fair Value totals) must be computed by summing particulars from the auxiliary file.",
+
+  "period_handling": "Generate all sections for only Mar'25.",
+
+  "categories": [
+    "Trade receivables", 
+    "Cash and cash equivalents", 
+    "Loans", 
+    "Borrowings", 
+    "Trade payables", 
+    "Lease liabilities", 
+    "Other financial assets/liabilities"
+  ],
+
+  "output_format": {
+    "gl_breakdown": [
+      {
+        "section": "NOTE 33: GL CODE BREAKDOWN (31 March 2025)",
+        "categories": [
+          "Trade receivables", 
+          "Cash and cash equivalents", 
+          "Loans", 
+          "Borrowings", 
+          "Trade payables", 
+          "Lease liabilities", 
+          "Other financial assets/liabilities"
+        ],
+        "format": "GL Code | GL Code Description | Ind AS Major | Ind AS Minor | 31 March 2025 (MYR)",
+        "show_subtotal": true,
+        "subtotal_label": "Total Financial Instruments"
+      }
+    ],
+    
+    "summary_table": [
+      {
+        "label": "**Financial Assets**",
+        "is_bold": true
+      },
+      {
+        "label": "Trade receivables",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Cash and cash equivalents",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Loans",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Other financial assets",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "**Total Financial Assets**",
+        "is_total": true
+      },
+      {
+        "label": "**Financial Liabilities**",
+        "is_bold": true
+      },
+      {
+        "label": "Borrowings",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Trade payables",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Lease liabilities",
+        "source": "Balance_Sheet_XLSX"
+      },
+      {
+        "label": "Other financial liabilities",
+        "source": "Balance_Sheet_XLSX"
+      },  
+      {
+        "label": "**Total Financial Liabilities**",
+        "is_total": true
+      }
+    ],
+
+    "reconciliation": [
+      {
+        "label": "**Fair Value Hierarchy**",
+        "is_bold": true
+      },
+      {
+        "label": "Level 1: Quoted prices in active markets"
+      },
+      {
+        "label": "Level 2: Observable inputs other than Level 1"
+      },
+      {
+        "label": "Level 3: Unobservable inputs"
+      },
+      {
+        "label": "Fair value of instruments measured at amortised cost for which fair value is disclosed: **Level 3**",
+        "is_bold": true
+      }
+    ]
+  },
+
+  "additional_instructions": "## Calculation Steps:\n\n1. **GL Breakdown:** Filter CPM.csv for relevant 'Ind AS Minor' categories matching Trade receivables, Cash and cash equivalents, Loans, Borrowings, Trade payables, Lease liabilities, Other financial assets/liabilities. Extract Mar'25 values.\n\n2. **Summary Table:** Extract financial assets and liabilities from Balance_Sheet.xlsx for Mar'25. Create two columns: Carrying Value and Fair Value. For most items at amortised cost, Carrying Value = Fair Value.\n\n3. **Reconciliation:** Provide Fair Value Hierarchy disclosure with standard Level 1, 2, 3 definitions.\n\n---\n\n## Output Requirements:\n1. **GL Breakdown Table** - Show all financial instrument GLs with Mar'25 column only\n2. **Summary Table** - Show Carrying Value vs Fair Value for Financial Assets and Liabilities\n3. **Fair Value Hierarchy Table** - Standard disclosure\n4. Currency: **MYR** (Malaysian Ringgit)\n5. Format amounts in Indian Rupee style: ₹1,23,456 (but show MYR currency)"
+}

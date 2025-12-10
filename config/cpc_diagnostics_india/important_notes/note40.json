@@ -1,0 +1,251 @@
+{
+  "note_number": "NOTE 40",
+  "note_title": "Employee benefits",
+  "output_file": "cpc_note_40_employee_benefits.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items for the period ended March 31, 2025. If values are empty or zero, display 'Nil' or the specific value found (e.g., 0).",
+  "categories": [
+    "Present value of obligation as at the beginning of the year",
+    "Current service cost",
+    "Interest cost",
+    "Benefit paid",
+    "Actuarial (gain)/loss on obligations",
+    "Projected benefit value of obligation as at the end of the year",
+    "Fair value of the asset as at the beginning of the year",
+    "Expected return on plan assets",
+    "Contributions paid into the plan",
+    "Benefits paid by the plan*",
+    "Actuarial (losses)/gains",
+    "Fair value of the asset as at the end of the year",
+    "Liability recognized in the balance sheet",
+    "Total included in employee benefits",
+    "Discount rate",
+    "Salary escalation rate",
+    "Attrition rate"
+  ],
+  "output_format": [
+    {
+      "label": "Employee benefits",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Defined contribution plan",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "The Company makes contributions, determined as a specified percentage of employee salaries, in respect of qualifying employees towards Provident Fund, which is a defined contribution plan. The company has no obligations other than to make the specified contributions. The contributions are charged to the statement of profit and loss as they accrue.",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Defined benefit plan (Gratuity)",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "The following table sets out the status of the gratuity plan as required under AS 15 (Revised):",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "I. Reconciliation of opening and closing balances of defined benefit obligation",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Present value of obligation as at the beginning of the year",
+      "ind_as_minor": [
+        "Present value of obligation as at the beginning of the year"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Current service cost",
+      "ind_as_minor": [
+        "Current service cost"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Interest cost",
+      "ind_as_minor": [
+        "Interest cost"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Benefits paid",
+      "ind_as_minor": [
+        "Benefit paid"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Actuarial (gain)/loss on obligations",
+      "ind_as_minor": [
+        "Actuarial (gain)/loss on obligations"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Projected benefit value of obligation as at the end of the year",
+      "ind_as_minor": [
+        "Projected benefit value of obligation as at the end of the year"
+      ],
+      "aggregation": "sum",
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "II. Movement in fair value of plan assets",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Fair value of the asset as at the beginning of the year",
+      "ind_as_minor": [
+        "Fair value of the asset as at the beginning of the year"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Expected return on plan assets",
+      "ind_as_minor": [
+        "Expected return on plan assets"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Contributions paid into the plan",
+      "ind_as_minor": [
+        "Contributions paid into the plan"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Benefits paid by the plan",
+      "ind_as_minor": [
+        "Benefits paid by the plan*"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Actuarial (losses)/gains",
+      "ind_as_minor": [
+        "Actuarial (losses)/gains"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Fair value of the asset as at the end of the year",
+      "ind_as_minor": [
+        "Fair value of the asset as at the end of the year"
+      ],
+      "aggregation": "sum",
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "III. Reconciliation of fair value of assets and obligations",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Present value of obligation as at the end of the year",
+      "ind_as_minor": [
+        "Projected benefit value of obligation as at the end of the year"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Fair value of plan assets as at the end of the year",
+      "ind_as_minor": [
+        "Fair value of the asset as at the end of the year"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Net Liability recognized in the Balance Sheet",
+      "ind_as_minor": [
+        "Liability recognized in the balance sheet"
+      ],
+      "aggregation": "sum",
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "IV. Expenses recognized in the Statement of Profit and Loss",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Total included in employee benefits",
+      "ind_as_minor": [
+        "Total included in employee benefits"
+      ],
+      "aggregation": "sum",
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "V. Principal Actuarial Assumptions",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Discount rate",
+      "ind_as_minor": [
+        "Discount rate"
+      ],
+      "aggregation": "sum",
+      "display_format": "percentage"
+    },
+    {
+      "label": "   Salary escalation rate",
+      "ind_as_minor": [
+        "Salary escalation rate"
+      ],
+      "aggregation": "sum",
+      "display_format": "percentage"
+    },
+    {
+      "label": "   Attrition rate",
+      "ind_as_minor": [
+        "Attrition rate"
+      ],
+      "aggregation": "sum",
+      "display_format": "percentage"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 40: EMPLOYEE BENEFITS**\n\nPresentation Requirements:\n1.  **Defined Contribution Plan**: Display the standard text describing the plan.\n2.  **Gratuity Plan Tables**: Create separate tables for PBO Reconciliation, Plan Assets Movement, Net Liability, Expenses, and Assumptions.\n3.  **Data Extraction**: Extract values specifically for **March 31, 2025** from the source file.\n4.  **Formatting**: \n    * For assumptions (Discount rate, etc.), format values as percentages (e.g., 0.0707 -> 7.07%).\n    * For financial amounts, use the Indian numbering system.\n    * If a value is zero in the source (e.g., Service Cost for 2025), display it as '0' or 'Nil'."
+}

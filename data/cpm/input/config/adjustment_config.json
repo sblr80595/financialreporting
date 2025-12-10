@@ -1,0 +1,80 @@
+{
+  "validation_settings": {
+    "tolerance_variance_percentage": 0.001,
+    "description": "Allowed variance as percentage of total amount. Example: 0.001% means if total debits = 696,292,457, allowed variance = 6,962.92"
+  },
+  "adjustments": [
+    {
+      "id": 1,
+      "name": "Entries not considered in correct period",
+      "key": "enc_correct_period",
+      "icon": "📅",
+      "prompt_file": "PROMPT_ENC_CORRECT_PERIOD",
+      "source_files": [
+        "unadjusted_trialbalance.xlsx",
+        "enc_correct_period_adjustments.xlsx"
+      ],
+      "output_file": "enc_correct_period_reconciliation.xlsx"
+    },
+    {
+      "id": 2,
+      "name": "Roll back of audit adjustments",
+      "key": "roll_back",
+      "icon": "⏪",
+      "prompt_file": "PROMPT_ROLL_BACK_AUDIT_ADJUSTMENTS",
+      "source_files": [
+        "unadjusted_trialbalance.xlsx",
+        "rb_audit_adjustments.xlsx"
+      ],
+      "output_file": "rb_audit_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 3,
+      "name": "Roll forward entries",
+      "key": "roll_forward",
+      "icon": "⏩",
+      "prompt_file": "PROMPT_ROLL_FORWARD_AUDIT_ADJUSTMENTS",
+      "source_files": [
+        "unadjusted_trialbalance.xlsx",
+        "rf_audit_adjustments.xlsx"
+      ],
+      "output_file": "rf_audit_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 4,
+      "name": "Interco adjustments",
+      "key": "interco",
+      "icon": "🔄",
+      "prompt_file": "PROMPT_INTERCO_ADJUSTMENTS",
+      "source_files": [
+        "unadjusted_trialbalance.xlsx",
+        "interco_manual_adjustments.xlsx"
+      ],
+      "output_file": "interco_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 5,
+      "name": "GT India audit adjustments",
+      "key": "gt_india",
+      "icon": "🔍",
+      "prompt_file": "PROMPT_GT_INDIA_AUDIT_ADJUSTMENTS",
+      "source_files": [
+        "unadjusted_trialbalance.xlsx",
+        "audit_adjustment_entries.xlsx"
+      ],
+      "output_file": "gt_india_audit_adjustments_reconciliation.xlsx"
+    },
+    {
+      "id": 6,
+      "name": "Reclassification entries",
+      "key": "reclassification",
+      "icon": "📊",
+      "prompt_file": "PROMPT_RECLASSIFICATION_ENTRIES_ADJUSTMENTS",
+      "source_files": [
+        "unadjusted_trialbalance.xlsx",
+        "reclass_entries_adjustments.xlsx"
+      ],
+      "output_file": "reclass_entries_reconciliation.xlsx"
+    }
+  ]
+}

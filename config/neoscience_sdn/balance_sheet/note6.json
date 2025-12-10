@@ -1,0 +1,43 @@
+{
+  "note_number": "NOTE 6",
+  "note_title": "Deferred Tax (Net)",
+  "output_file": "Neoscience_Note_13_Deferred_Tax.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Calculate the net deferred tax balance by subtracting Deferred Tax Assets (DTA) from Deferred Tax Liabilities (DTL).",
+  "categories": [
+    "Deferred Tax Liability (DTL)",
+    "Deferred Tax Asset (DTA)",
+    "Valuation allowance (if applicable)"
+  ],
+  "output_format": [
+    {
+      "label": "Deferred Tax Liability (DTL)",
+      "ind_as_minor": ["Deferred Tax Liability (DTL)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Less: Deferred Tax Asset (DTA)",
+      "ind_as_minor": ["Deferred Tax Asset (DTA)"],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "Net Deferred Tax",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Deferred Tax Liability (DTL)"
+      ],
+      "subtract": [
+        "Less: Deferred Tax Asset (DTA)"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The net result determines if the balance is a net liability or net asset. The DTA must be sign-flipped to show as a deduction. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

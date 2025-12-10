@@ -1,0 +1,42 @@
+{
+  "note_number": "NOTE 29",
+  "note_title": "Finance Costs",
+  "output_file": "cpc_diagnostics_india_note_29_finance_costs.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Display as positive values in the final notes.",
+  "categories": [
+    "On bank borrowings",
+    "On delayed payment of income tax",
+    "On lease liabilities",
+    "On others",
+    "Other borrowing costs"
+  ],
+  "output_format": [
+    {
+      "label": "Interest expenses",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "      on bank borrowings",
+      "ind_as_minor": "On bank borrowings"
+    },
+    {
+      "label": "      on delayed payment of income tax",
+      "ind_as_minor": "On delayed payment of income tax"
+    },
+    {
+      "label": "      on lease Liabilities",
+      "ind_as_minor": "On lease liabilities"
+    },
+    {
+      "label": "      on others",
+      "ind_as_minor": "On others"
+    },
+    {
+      "label": "Other borrowing costs",
+      "ind_as_minor": "Other borrowing costs"
+    }
+  ],
+  "additional_instructions": "Note: Finance costs include interest expenses on various items (bank borrowings, delayed income tax payment, lease liabilities, others) and other borrowing costs. All interest items are shown under 'Interest expenses' header. Handle the formatting accordingly to maintain Schedule III compliance."
+}

@@ -1,0 +1,20 @@
+{
+  "note_number": "NOTE 5",
+  "note_title": "Investments",
+  "output_file": "lifeline_diagnostics_note_5_investments.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Investments are typically debit balances (assets). Present as positive amounts in the balance sheet.",
+  "generate_if_empty": true,
+  "match_on_minor_only": true,
+  "categories": [
+    "Investments in Associates"
+  ],
+  "output_format": [
+    {
+      "label": "Investments in Associates",
+      "ind_as_minor": "Investments in Associates",
+      "default_value": 0
+    }
+  ],
+  "additional_instructions": "This note discloses investments recognized in the balance sheet as per Ind AS 28 - Investments in Associates and Joint Ventures.\n\n**CRITICAL MATCHING INSTRUCTION**: \nONLY sum GL accounts where the 'Ind AS Minor' column exactly equals 'Investments in Associates'.\nDO NOT match on 'Ind AS Major' column or any other column.\nIGNORE accounts that may have 'Investments' in the Major column but do NOT have 'Investments in Associates' in the Minor column.\n\n**Investments in Associates**: Sum all GL accounts where Ind AS Minor = 'Investments in Associates'. This includes:\n- Equity investments in associate companies\n- Investments where the company has significant influence (typically 20-50% ownership)\n- Long-term strategic investments in associates\n- Investments accounted for using the equity method\n- Share of post-acquisition profits/losses of associates\n- Share of other comprehensive income of associates\n\nAssociates are entities over which the company has significant influence but not control. Significant influence is the power to participate in the financial and operating policy decisions of the investee but is not control or joint control over those policies.\n\nAccounting Treatment:\n- Investments in associates are initially recognized at cost\n- Subsequently measured using the equity method as per Ind AS 28\n- Under equity method, the investment is adjusted for:\n  * Share of profit or loss of the associate\n  * Share of other comprehensive income of the associate\n  * Dividends received from the associate (reduces investment value)\n  * Impairment losses (if any)\n\nMatching Logic:\n- Column to match: 'Ind AS Minor' ONLY\n- Value to match: 'Investments in Associates' (exact match)\n- DO NOT use 'Ind AS Major' column for matching\n\nPresentation Notes:\n1. Investments in associates are non-current assets\n2. Present as positive amounts (debit balances)\n3. Measured using equity method under Ind AS 28\n4. Show carrying amount as at the balance sheet date\n5. Follow Schedule III format for balance sheet presentation\n6. May require separate note for detailed disclosure of each associate\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for investments disclosure. Additional disclosures may be required:\n- Name of each associate\n- Percentage of ownership interest\n- Country of incorporation\n- Principal activities\n- Share of profit/loss and OCI for the year\n- Carrying amount of investment\n- Fair value of investment (if publicly traded)\n- Summarized financial information of associates\n- Nature and extent of significant restrictions\n- Unrecognized share of losses (if applicable)\n- Commitments and contingent liabilities related to associates\n\nInd AS 28 Disclosure Requirements:\n- List of associates with proportion of ownership interest\n- Summarized financial information of material associates\n- Nature of the relationship with the associate\n- Reasons for classifying as associate (if ownership < 20%)\n- Reporting date differences (if any)\n- Restrictions on ability of associates to transfer funds\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 25",
+  "note_title": "Other Income",
+  "output_file": "neoscience_note_25_other_income.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative). Convert these to positive for display. For 'Foreign exchange income', sum algebraically and present the net result.",
+  "categories": [
+    "Interest from bank",
+    "Foreign exchange income",
+    "other INCOME"
+  ],
+  "output_format": [
+    {
+      "label": "Interest income - from banks",
+      "ind_as_minor": "Interest from bank"
+    },
+    {
+      "label": "Gain on foreign exchange fluctuations (net)",
+      "ind_as_minor": "Foreign exchange income"
+    },
+    {
+      "label": "Miscellaneous income",
+      "ind_as_minor": "other INCOME"
+    }
+  ],
+  "additional_instructions": "Interest from bank includes both UOB (GL 7000/00001) and MBB (GL 7000/00002) interest income. Foreign exchange income (GL 7100/00000) should be presented as 'Gain on foreign exchange fluctuations (net)' if the result is positive (net gain). Miscellaneous income includes GL 7000/00000."
+}

@@ -1,0 +1,30 @@
+{
+  "note_number": "NOTE 11",
+  "note_title": "Other bank balances",
+  "output_file": "company_a_note_11_other_bank_balances.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For fixed deposits, take positive debit balances from the trial balance.",
+  "categories": [
+    "Fixed deposits with banks with maturity period of more than 3 months but less than 12 months"
+  ],
+  "period_column_override": "Total June 25",
+  "output_format": [
+    {
+      "label": "Fixed deposits with banks with maturity period of more than 3 months but less than 12 months*",
+      "ind_as_minor": [
+        "Fixed deposits with banks with maturity period of more than 3 months but less than 12 months"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_OTHER_BANK_BALANCES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Fixed deposits with banks with maturity period of more than 3 months but less than 12 months*"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Fixed deposits with banks with maturity period of more than 3 months but less than 12 months*' - from category 'Fixed deposits with banks with maturity period of more than 3 months but less than 12 months'\n2. Show total (which is same as the line item value since there's only one item)\n3. The asterisk (*) in the label indicates there may be a footnote reference\n4. Example: Fixed deposits: 10,00,000; Total: 10,00,000\n5. Format all amounts in Indian numbering system without \u20b9 symbol.\n6 This is a simple single-item note with straightforward summation."
+}

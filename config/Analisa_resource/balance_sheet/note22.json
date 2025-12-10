@@ -1,0 +1,16 @@
+{
+  "note_number": "NOTE 22",
+  "note_title": "Provisions - current",
+  "output_file": "analisa_note_22_provisions_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Not applicable - no current provisions mapped.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "**Provisions - current**",
+      "ind_as_minor": null,
+      "is_header": true
+    }
+  ],
+  "additional_instructions": "This note is not applicable as there are no current provisions in the trial balance. Display 'Nil' or '-' for all line items. The categories array is empty as there are no matching Ind AS Minor categories for current provisions."
+}

@@ -1,0 +1,33 @@
+{
+  "note_number": "NOTE 32",
+  "note_title": "Income Tax",
+  "output_file": "everlife_ph_holdings_note_32_income_tax.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Sum all tax components algebraically. Current tax is typically positive (expense). Deferred tax charge is positive (increases expense), deferred tax credit is negative (reduces expense). Present the net total as income tax expense.",
+  "generate_if_empty": true,
+  "categories": [
+    "Current tax",
+    "Deferred tax charge/(credit)"
+  ],
+  "output_format": [
+    {
+      "label": "**(a) Amounts recognised in the statement of profit and loss**",
+      "is_header": true
+    },
+    {
+      "label": "Current tax",
+      "ind_as_minor": "Current tax",
+      "default_value": 0
+    },
+    {
+      "label": "Deferred tax charge/(credit)",
+      "ind_as_minor": "Deferred tax charge/(credit)",
+      "default_value": 0
+    },
+    {
+      "label": "**Income tax expense reported in the statement of profit and loss**",
+      "is_total": true
+    }
+  ],
+  "additional_instructions": "This note discloses the income tax expense recognized in the statement of profit and loss, broken down into its components.\n\n**(a) Amounts recognised in the statement of profit and loss** - This is a section header with no amount.\n\n**Current tax**: Sum all GL accounts where Ind AS Minor is 'Current tax'. This represents:\n- Current period's tax liability based on taxable income\n- Tax expense calculated as per Income Tax Act provisions\n- Always presented as positive amount (expense)\n\n**Deferred tax charge/(credit)**: Sum all GL accounts where Ind AS Minor is 'Deferred tax charge/(credit)'. This represents:\n- Movement in deferred tax assets/liabilities during the period\n- Timing differences between accounting profit and taxable profit\n- Positive value = Deferred tax charge (increases tax expense)\n- Negative value = Deferred tax credit (reduces tax expense)\n- Present negative amounts in parentheses: (33,40,295)\n\n**Income tax expense reported in the statement of profit and loss** - This is a total line (bold header).\n\nCalculation Formula:\nTotal Income Tax Expense = Current Tax + Deferred Tax Charge/(Credit)\n\nExample from the image:\n- Current tax: ₹2,41,83,232\n- Deferred tax credit: (₹33,40,295) [shown as negative/credit]\n- Total: ₹2,41,83,232 - ₹33,40,295 = ₹2,08,42,937\n\nPresentation Notes:\n1. Use algebraic summation - respect the sign of deferred tax\n2. Show deferred tax credit in parentheses if negative\n3. The final total line is bolded and represents total tax expense in P&L\n4. This note follows Schedule III format for tax disclosure\n5. Can be expanded with section (b) for OCI tax effects if applicable\n6. Can be expanded with section (c) for reconciliation of tax expense if required\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for income tax disclosure in financial statements under Ind AS.\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

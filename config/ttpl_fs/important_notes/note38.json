@@ -1,0 +1,111 @@
+{
+  "note_number": "NOTE 38",
+  "note_title": "Lease Related Disclosures",
+  "output_file": "ttpl_note_38_lease_related_disclosures.txt",
+  "statement_type": "combined-disclosure",
+  "summation_rule": "Extract closing balance values from the 'period' column. Expenditure items are typically positive amounts. Liabilities are presented as positive amounts.",
+  "categories": [
+    "Lease Liabilities - Maturity < 1 Year",
+    "Lease Liabilities - Maturity 1-5 Years",
+    "Lease Liabilities - Maturity > 5 Years",
+    "Depreciation on ROU assets",
+    "Finance Cost on Lease Liabilities",
+    "Additions to ROU assets",
+    "Total Cash Outflow for Leases"
+  ],
+  "output_format": [
+    {
+      "label": "A. Amounts recognized in Profit or Loss",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Depreciation expense on Right-of-Use assets",
+      "ind_as_minor": [
+        "Depreciation on ROU assets"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "ii) Finance cost on Lease Liabilities",
+      "ind_as_minor": [
+        "Finance Cost on Lease Liabilities"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Amounts recognized in Statement of Financial Position",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Additions to Right-of-Use assets",
+      "ind_as_minor": [
+        "Additions to ROU assets"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "ii) Total cash outflow for leases",
+      "ind_as_minor": [
+        "Total Cash Outflow for Leases"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "C. Maturity Analysis of Undiscounted Lease Payments",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Less than 1 year",
+      "ind_as_minor": [
+        "Lease Liabilities - Maturity < 1 Year"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "ii) 1 to 5 years",
+      "ind_as_minor": [
+        "Lease Liabilities - Maturity 1-5 Years"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "iii) More than 5 years",
+      "ind_as_minor": [
+        "Lease Liabilities - Maturity > 5 Years"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total undiscounted future lease payments",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "i) Less than 1 year",
+        "ii) 1 to 5 years",
+        "iii) More than 5 years"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 38: LEASE RELATED DISCLOSURES**\n\n1.  **Section A**: Items affecting the Profit & Loss statement (Depreciation and Finance Cost).\n2.  **Section B**: Total cash outflow and additions to ROU assets.\n3.  **Section C**: Quantitative **Maturity Analysis** of undiscounted lease payments, broken down by time bucket (as required by Ind AS 116).\n\nAccounting Context:\n-   This note complies with the detailed disclosure requirements of **Ind AS 116** (Leases).\n-   It provides users with the full cost impact (P&L, Cash Flow) and future commitments related to leases.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456)."
+}

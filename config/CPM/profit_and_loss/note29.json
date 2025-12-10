@@ -1,0 +1,52 @@
+{
+  "note_number": "NOTE 29",
+  "note_title": "Finance Costs",
+  "output_file": "company_a_note_29_finance_costs.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically.",
+  "categories": [
+    "Interest expense on Lease liabilities",
+    "Interest expense on term loan",
+    "Interest expense on term Finance lease payables",
+    "Interest expense on Equipment Loan",
+    "Interest expense on Banker's acceptance",
+    "Advances from factoring arrangement",
+    "Other FC",
+    "Other finance costs"
+  ],
+  "output_format": [
+    {
+      "label": "**Interest expense on:**",
+      "is_header": true
+    },
+    {
+      "label": "Lease liabilities (refer note 37)",
+      "ind_as_minor": "Interest expense on Lease liabilities"
+    },
+    {
+      "label": "Term loan (refer note 39)",
+      "ind_as_minor": "Interest expense on term loan"
+    },
+    {
+      "label": "Vehicle loan",
+      "ind_as_minor": "Interest expense on term Finance lease payables"
+    },
+    {
+      "label": "Equipment loan",
+      "ind_as_minor": "Interest expense on Equipment Loan"
+    },
+    {
+      "label": "Banker's acceptance",
+      "ind_as_minor": "Interest expense on Banker's acceptance"
+    },
+    {
+      "label": "Advances from factoring arrangement",
+      "ind_as_minor": "Advances from factoring arrangement"
+    },
+    {
+      "label": "Others",
+      "ind_as_minor": "Other FC"
+    }
+  ],
+  "additional_instructions": "Finance costs include all interest expenses and borrowing costs. The 'Interest expense on:' line is a category header with no amount. Include cross-references to related notes (note 37 for lease liabilities, note 39 for term loans). 'Other FC' or 'Other finance costs' should be grouped under 'Others'."
+}

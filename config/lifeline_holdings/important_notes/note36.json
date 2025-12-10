@@ -1,0 +1,17 @@
+{
+    "note_number": "NOTE 36",
+    "note_title": "Statutory Information and Additional Disclosures",
+    "output_file": "company_note_36_statutory.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Not Applicable - This is a qualitative disclosure note.",
+    "categories": [],
+    "output_format": [
+        {
+            "label": "Statutory and Additional Disclosures",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "This note must adhere to the mandatory requirements of the Companies Act, 2013. Generate detailed, narrative disclosures covering the following points derived from the source: **No transactions with struck-off companies, No pending charges with ROC, No unrecorded funding/lending arrangements with intermediaries, and No undisclosed income.** Also include standard sections like SBNs and Benami Property (stating 'Nil' or 'Not Applicable')."
+}

@@ -1,0 +1,31 @@
+{
+  "note_number": "NOTE 11",
+  "note_title": "Other bank balances",
+  "output_file": "ttpl_note_11_other_bank_balances.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For fixed deposits, take positive debit balances from the trial balance.",
+  "categories": [
+    "Fixed deposits with banks with original maturity period of more than 12 months"
+  ],
+  "output_format": [
+    {
+      "label": "Fixed deposits with banks with original maturity period of more than 12 months*",
+      "ind_as_minor": [
+        "Fixed deposits with banks with original maturity period of more than 12 months"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_OTHER_BANK_BALANCES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Fixed deposits with banks with original maturity period of more than 12 months*"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 11: OTHER BANK BALANCES**\n\n1.  'Fixed deposits with banks with original maturity period of more than 12 months*' - from category 'Fixed deposits with banks with original maturity period of more than 12 months'.\n2.  Show **TOTAL_OTHER_BANK_BALANCES** (which is same as the line item value).\n\nAccounting Context:\n-   As per Ind AS, fixed deposits that cannot be classified as Cash Equivalents (maturity > 3 months) or Current Assets (maturity > 12 months at the reporting date, but original maturity > 12 months) are placed here.\n-   The line item represents fixed deposits with long-term maturity, which are classified as non-current assets.\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   All amounts should be displayed as positive (debit balance)."
+}

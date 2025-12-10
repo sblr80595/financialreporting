@@ -1,0 +1,52 @@
+{
+  "note_number": "NOTE 22",
+  "note_title": "Provisions - current",
+  "output_file": "ttpl_note_22_provisions_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For provisions, take positive credit balances (if negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Compensated absences (Current)",
+    "Provision for expenses (Current)"
+  ],
+  "output_format": [
+    {
+      "label": "Employees benefits",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Compensated absences",
+      "ind_as_minor": [
+        "Compensated absences (Current)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Other provisions",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Provision for expenses",
+      "ind_as_minor": [
+        "Provision for expenses (Current)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_PROVISIONS_CURRENT",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Compensated absences",
+        "   Provision for expenses"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 22: PROVISIONS - CURRENT**\n\n1.  **'Employees benefits'** (Header):\n    * 'Compensated absences' - from category 'Compensated absences (Current)'.\n2.  **'Other provisions'** (Header):\n    * 'Provision for expenses' - from category 'Provision for expenses (Current)'.\n3.  Show total as **TOTAL_PROVISIONS_CURRENT** (Sum of all lines).\n\nAccounting Context:\n-   This note details short-term provisions expected to be settled within 12 months, as per Ind AS 37 and Ind AS 19.\n\nFormatting:\n-   Format all amounts in Indian numbering system (e.g., 1,23,456).\n-   All amounts must be displayed as positive (liability balance)."
+}

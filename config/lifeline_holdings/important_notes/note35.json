@@ -1,0 +1,17 @@
+{
+    "note_number": "NOTE 35",
+    "note_title": "Contingent Liabilities and Commitments",
+    "output_file": "company_note_35_contingencies.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Not Applicable - This is a purely explanatory note. The content indicates Nil values.",
+    "categories": [],
+    "output_format": [
+        {
+            "label": "Contingent Liabilities and Commitments",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "This note is purely explanatory. Based on the source data content, the note must explicitly state that **'The Company does not have any contingent liabilities or capital commitments as at the reporting date.'** Use 'Nil' or '-' for any line items that are typically quantified."
+}

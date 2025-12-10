@@ -1,0 +1,16 @@
+{
+  "note_number": "NOTE 15",
+  "note_title": "Other Equity",
+  "output_file": "Neoscience_Note_19_revenue_from_customers.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Not applicable - no components of Other Equity mapped.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "*Other Equity*",
+      "ind_as_minor": null,
+      "is_header": true
+    }
+  ],
+  "additional_instructions": "This note is not applicable as there are no balances or movements mapped to the components of Other Equity (e.g., Reserves, Retained Earnings). Display 'Nil' or '-' for all line items."
+}

@@ -1,0 +1,47 @@
+{
+  "note_number": "NOTE 20",
+  "note_title": "Other financial liabilities",
+  "output_file": "company_a_note_20_other_financial_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other financial liabilities, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Interest accrued but not due on Borrowings",
+    "Employee related payables (OFL)",
+    "Other payables (OFL)"
+  ],
+  "output_format": [
+    {
+      "label": "Interest accrued but not due on borrowings",
+      "ind_as_minor": [
+        "Interest accrued but not due on Borrowings"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Employee related payables",
+      "ind_as_minor": [
+        "Employee related payables (OFL)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Other payables*",
+      "ind_as_minor": [
+        "Other payables (OFL)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_OTHER_FINANCIAL_LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Interest accrued but not due on borrowings",
+        "Employee related payables",
+        "Other payables*"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Interest accrued but not due on borrowings' - from category 'Interest accrued but not due on Borrowings'\n2. 'Employee related payables' - from category 'Employee related payables (OFL)'\n3. 'Other payables*' - from category 'Other payables (OFL)' (asterisk indicates footnote reference)\n4. Show total of all three line items\n5. Example: Interest accrued: 11,43,394; Employee payables: 15,85,750; Other payables: 20,50,320; Total: 47,79,464\n7. Format all amounts in Indian numbering system without \u20b9 symbol.\n8. These are current financial liabilities measured at amortized cost as per Ind AS 109.\n9. Other financial liabilities are credit balances (may appear negative in trial balance) - take absolute values for presentation.\n10. The asterisk (*) on 'Other payables' indicates there may be a footnote or additional disclosure."
+}

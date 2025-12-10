@@ -1,0 +1,77 @@
+{
+  "entity": "lifeline_holdings",
+  "entity_name": "Lifeline Holdings",
+  "validation_rules": {
+    "rule_1": {
+      "enabled": true,
+      "rule_number": 1,
+      "rule_name": "Total Debits Equal Total Credits",
+      "description": "The sum of all debit amounts must equal the sum of all credit amounts",
+      "category": "Balance Validation",
+      "severity": "critical",
+      "custom_tolerance": null,
+      "notes": "This rule ensures the fundamental accounting equation is maintained"
+    },
+    "rule_2": {
+      "enabled": true,
+      "rule_number": 2,
+      "rule_name": "Balance Calculation Accuracy",
+      "description": "Each row's Balance must equal (Debit - Credit)",
+      "category": "Data Integrity",
+      "severity": "critical",
+      "custom_tolerance": null,
+      "notes": "Ensures individual GL account balances are correctly calculated"
+    },
+    "rule_3": {
+      "enabled": true,
+      "rule_number": 3,
+      "rule_name": "No Duplicate Accounts",
+      "description": "Each G/L Acct/BP Code must be unique",
+      "category": "Data Integrity",
+      "severity": "critical",
+      "custom_tolerance": null,
+      "notes": "Prevents duplicate GL codes which can cause reporting errors"
+    },
+    "rule_4": {
+      "enabled": true,
+      "rule_number": 4,
+      "rule_name": "No Missing or Invalid Data",
+      "description": "All rows must have valid codes, names, and numeric values",
+      "category": "Data Integrity",
+      "severity": "critical",
+      "custom_tolerance": null,
+      "notes": "Ensures completeness of trial balance data"
+    },
+    "rule_5": {
+      "enabled": true,
+      "rule_number": 5,
+      "rule_name": "Logical Balance Signs by Account Type",
+      "description": "Assets (1xxxxx): Positive | Liabilities (2xxxxx): Negative | Revenue (3xxxxx): Negative | Expenses (4xxxxx): Positive | Equity (5xxxxx): Negative",
+      "category": "Business Logic",
+      "severity": "warning",
+      "custom_tolerance": null,
+      "notes": "Validates account balances have expected signs based on account type"
+    },
+    "rule_6": {
+      "enabled": true,
+      "rule_number": 6,
+      "rule_name": "Accounting Equation Validation",
+      "description": "Assets = -(Liabilities + Equity + Revenue + Expenses)",
+      "category": "Balance Validation",
+      "severity": "critical",
+      "custom_tolerance": null,
+      "notes": "Ensures the fundamental accounting equation balances"
+    }
+  },
+  "tolerance_settings": {
+    "percentage_tolerance": 0.001,
+    "absolute_tolerance": 0.01,
+    "description": "Standard tolerance settings - 0.001% percentage tolerance and ₹0.01 absolute tolerance"
+  },
+  "metadata": {
+    "last_updated": "2025-01-26",
+    "updated_by": "System Admin",
+    "version": "1.0",
+    "note": "All 6 rules enabled for Lifeline Holdings"
+  }
+}

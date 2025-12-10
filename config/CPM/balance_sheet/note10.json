@@ -1,0 +1,37 @@
+{
+  "note_number": "NOTE 10",
+  "note_title": "Cash and cash equivalents",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For cash and bank balances, take positive debit balances from the trial balance.",
+  "categories": [
+    "Cash",
+    "Balance with banks in current accounts"
+  ],
+  "output_format": [
+    {
+      "label": "Cash on hand",
+      "ind_as_minor": [
+        "Cash"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "On current accounts",
+      "ind_as_minor": [
+        "Balance with banks in current accounts"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_CASH_AND_CASH_EQUIVALENTS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Cash on hand",
+        "On current accounts"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Cash on hand' - from category 'Cash'\n2. 'On current accounts' - from category 'Balance with banks in current accounts'\n3. Show total of both items\n4. Example: Cash on hand: 50,000; On current accounts: 5,25,000; Total: 5,75,000\n5. Format all amounts in Indian numbering system without \u20b9 symbol.\n6. This is a simple note with straightforward summation - no subtotals or deductions required."
+}

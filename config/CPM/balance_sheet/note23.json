@@ -1,0 +1,29 @@
+{
+  "note_number": "NOTE 23",
+  "note_title": "Current tax liabilities (net)",
+  "output_file": "company_a_note_23_current_tax_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For current tax liabilities, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Provision for income tax (net of prepaid taxes)"
+  ],
+  "output_format": [
+    {
+      "label": "Provision for income tax (net of advance tax)",
+      "ind_as_minor": [
+        "Provision for income tax (net of prepaid taxes)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_CURRENT_TAX_LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Provision for income tax (net of advance tax)"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Provision for income tax (net of advance tax)' - from category 'Provision for income tax (net of prepaid taxes)'\n2. Show total (which is same as the line item value since there's only one item)\n3. Example: Provision for income tax (net of advance tax): 14,91,746; Total: 14,91,746\n5. Format all amounts in Indian numbering system without \u20b9 symbol.\n6. This represents the net current tax liability after adjusting advance tax/prepaid taxes.\n7. Current tax liability is a credit balance (may appear negative in trial balance) - take absolute value for presentation."
+}

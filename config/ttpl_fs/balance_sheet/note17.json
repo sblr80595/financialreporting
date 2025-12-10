@@ -1,0 +1,151 @@
+{
+  "note_number": "NOTE 17",
+  "note_title": "Borrowings",
+  "output_file": "ttpl_note_17_borrowings.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Borrowings are liabilities (credit balance) and should be presented as positive amounts. Current maturity of non-current borrowings must be included in the Current section.",
+  "categories": [
+    "Buyers credit (Current)",
+    "Foreign currency working capital loan (Current)",
+    "CC Limit from bank (Current)",
+    "Loan from banks (Current)",
+    "Loan from holding company (Current)",
+    "Vehicle Loan (Non-current)",
+    "Current maturity of non-current borrowings"
+  ],
+  "output_format": [
+    {
+      "label": "17A. Non-current borrowings",
+      "ind_as_minor": null,
+      "is_major_section": true,
+      "bold": true
+    },
+    {
+      "label": "Secured",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "   Vehicle loan (refer note (e) below)",
+      "ind_as_minor": [
+        "Vehicle Loan (Non-current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Unsecured",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "SUBTOTAL_17A",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Vehicle loan (refer note (e) below)"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "17B. Current borrowings",
+      "ind_as_minor": null,
+      "is_major_section": true,
+      "bold": true
+    },
+    {
+      "label": "Secured",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "   Buyers credit (refer note (a) below)",
+      "ind_as_minor": [
+        "Buyers credit (Current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Foreign currency working capital loan (refer note (b) below)",
+      "ind_as_minor": [
+        "Foreign currency working capital loan (Current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Cash credit Limit from bank (refer note (a), (b),(c) and (d) below)",
+      "ind_as_minor": [
+        "CC Limit from bank (Current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Term loan from bank (refer note (d) below)",
+      "ind_as_minor": [
+        "Loan from banks (Current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Unsecured",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "   Loan from holding company",
+      "ind_as_minor": [
+        "Loan from holding company (Current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Current maturity of long-term borrowings",
+      "ind_as_minor": [
+        "Current maturity of non-current borrowings"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "SUBTOTAL_17B",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Buyers credit (refer note (a) below)",
+        "   Foreign currency working capital loan (refer note (b) below)",
+        "   Cash credit Limit from bank (refer note (a), (b),(c) and (d) below)",
+        "   Term loan from bank (refer note (d) below)",
+        "   Loan from holding company",
+        "Current maturity of long-term borrowings"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "TOTAL_BORROWINGS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "SUBTOTAL_17A + SUBTOTAL_17B",
+      "show_line": true,
+      "bold": true,
+      "display_label": "Total (17A + 17B)"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 17: BORROWINGS**\n\nThis note details all interest-bearing loans and borrowings, segregated into Non-current (17A) and Current (17B).\n\nSECTION 17A: Non-current borrowings\n1.  **Secured**: Include 'Vehicle loan (refer note (e) below)' using the 'Vehicle Loan (Non-current)' GL category.\n2.  Show subtotal for 17A section.\n\nSECTION 17B: Current borrowings\n3.  **Secured**: Include Buyers credit, Foreign currency working capital loan, Cash credit Limit, and Term loan, mapping to their respective (Current) GL categories.\n4.  **Unsecured**: Include 'Loan from holding company'.\n5.  **Current maturity**: Include 'Current maturity of long-term borrowings' using the 'Current maturity of non-current borrowings' GL category.\n6.  Show subtotal for 17B section.\n\nFINAL TOTAL:\n7.  Show grand total as 'Total (17A + 17B)' = 17A subtotal + 17B subtotal.\n\nAccounting Context:\n-   Classification (Non-current/Current) is based on the period till the obligation is due (more or less than 12 months from the reporting date).\n-   Disclosures regarding nature of security, interest rates, and terms of repayment must be considered in the final note output (refer to the notes (a) through (e)).\n-   Borrowings are measured at amortised cost as per Ind AS 109.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456).\n-   All amounts should be displayed as positive (liability balance)."
+}

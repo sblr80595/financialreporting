@@ -1,0 +1,28 @@
+{
+  "note_number": "NOTE 21",
+  "note_title": "Other current liabilities",
+  "output_file": "lifeline_diagnostics_note_21_other_current_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Other current liabilities are typically credit balances (liabilities). Present as positive amounts in the balance sheet.",
+  "generate_if_empty": true,
+  "categories": [
+    "Advances from Customers",
+    "Statutory dues payable",
+    "Other Payable"
+  ],
+  "output_format": [
+    {
+      "label": "Advances from Customers",
+      "ind_as_minor": "Advances from Customers"
+    },
+    {
+      "label": "Statutory dues payable",
+      "ind_as_minor": "Statutory dues payable"
+    },
+    {
+      "label": "Other Payable",
+      "ind_as_minor": "Other Payable"
+    }
+  ],
+  "additional_instructions": "This note discloses other current liabilities recognized in the balance sheet as per Schedule III of the Companies Act, 2013.\n\n**Advances from Customers**: Sum all GL accounts where Ind AS Minor is 'Advances from Customers'. This includes:\n- Advance payments received from customers\n- Customer deposits for future services/goods\n- Unearned revenue (contract liabilities)\n- Deferred revenue from customer advances\n- Any other advances received from customers pending delivery of goods/services\n\n**Statutory dues payable**: Sum all GL accounts where Ind AS Minor is 'Statutory dues payable'. This includes:\n- TDS (Tax Deducted at Source) payable\n- GST payable (CGST, SGST, IGST)\n- Professional Tax payable\n- Provident Fund (PF) payable\n- Employee State Insurance (ESI) payable\n- Income tax payable (current)\n- Other statutory dues and taxes payable to government authorities\n\n**Other Payable**: Sum all GL accounts where Ind AS Minor is 'Other Payable'. This includes:\n- Sundry creditors for expenses\n- Accrued expenses\n- Payables for services received\n- Security deposits received\n- Other miscellaneous current liabilities not classified elsewhere\n- Liabilities for expenses due but not yet paid\n\nPresentation Notes:\n1. All items are current liabilities expected to be settled within 12 months\n2. Present as positive amounts (credit balances) in the balance sheet\n3. These are obligations due to parties other than trade creditors\n4. Follow Schedule III format for balance sheet presentation\n5. Ensure proper classification between current and non-current liabilities\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for other current liabilities disclosure under Ind AS.\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

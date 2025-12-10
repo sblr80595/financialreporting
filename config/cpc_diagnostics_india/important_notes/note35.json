@@ -1,0 +1,24 @@
+{
+  "note_number": "NOTE 35",
+  "note_title": "Value of imported and indigenous raw materials",
+  "output_file": "cpc_note_35_imported_indigenous_materials.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Check values for the period ended March 31, 2025. Since values are zero/empty, display the required unavailability message.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "Value of imported and indigenous raw materials, stores and spare parts consumed",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "There is no available data for this note for period March 2025",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": false,
+      "italic": true
+    }
+  ],
+  "additional_instructions": "The source file contains '0' or empty values for Imported and Indigenous raw materials for the year ended March 31, 2025. As per instructions, this note displays a message indicating no data is available."
+}

@@ -1,0 +1,239 @@
+{
+  "note_number": "39",
+  "note_title": "Information on Related Party Transactions",
+  "statement_type": "important-notes",
+
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+
+  "multi_source_integration": true,
+
+  "auxiliary_files": [
+    {
+      "label": "Audit_Adjustment_Entries",
+      "file_path": "data/cpm/input/manual-adjustments",
+      "file_name": "Audit_Adjustment_Entries.xlsx",
+      "file_type": "xlsx",
+      "description": "Audit adjustment entries for related party transaction adjustments"
+    },
+    {
+      "label": "Interco_Manual_Adjustments",
+      "file_path": "data/cpm/input/manual-adjustments",
+      "file_name": "Interco_Manual_Adjustments.xlsx",
+      "file_type": "xlsx",
+      "description": "Intercompany adjustment entries for related party balances"
+    }
+  ],
+
+  "periods": [
+    { "period_name": "Mar'25", "period_column": "Total Mar'25" },
+    { "period_name": "Mar'24", "period_column": "Total Mar'24" }
+  ],
+
+  "multi_source_rule": "Extract base GL balances from CPM.csv trial balance. Apply adjustments from Excel files using algebraic summation. All .xlsx files must be read using Excel-compatible readers.",
+  "summation_rule": "Use algebraic summation. Preserve signs. Treat parentheses or 'CR' as negative.",
+  "period_handling": "Generate all sections for Mar'25 and Mar'24.",
+
+  "categories": [
+    "Revenue from operations - Related Party",
+    "Sales - Related Party",
+    "Purchase of goods/services - Related Party",
+    "Trade receivables - Related Party",
+    "Trade payables - Related Party",
+    "Other receivables - Related Party",
+    "Other payables - Related Party",
+    "Loans to related parties",
+    "Loans from related parties",
+    "Reimbursement of expenses",
+    "Short-term employee benefits",
+    "Post-employment benefits",
+    "Share-based payments"
+  ],
+
+  "output_format": {
+    "gl_breakdown": [
+      {
+        "section": "NOTE 39: GL CODE BREAKDOWN (Related Party Items)",
+        "categories": [
+          "Revenue from operations - Related Party",
+          "Sales - Related Party",
+          "Purchase of goods/services - Related Party",
+          "Trade receivables - Related Party",
+          "Trade payables - Related Party",
+          "Other receivables - Related Party",
+          "Other payables - Related Party",
+          "Loans to related parties",
+          "Loans from related parties",
+          "Reimbursement of expenses",
+          "Short-term employee benefits"
+        ],
+        "format": "GL Code | GL Code Description | Ind AS Major | Ind AS Minor | 31 March 2025 (MYR) | 31 March 2024 (MYR)",
+        "show_subtotal": true,
+        "subtotal_label": "Total Related Party Items (Trial Balance)"
+      }
+    ],
+    
+    "nature_of_relationship": [
+      {
+        "section": "NOTE 39: NATURE OF RELATIONSHIP",
+        "label": "**Nature of Relationship**",
+        "is_bold": true,
+        "is_header": true
+      },
+      {
+        "label": "Parent Company",
+        "description": "Everlife Group Pte. Ltd., Singapore",
+        "source": "hardcoded",
+        "value_mar25": "N/A",
+        "value_mar24": "N/A"
+      },
+      {
+        "label": "Entities under common control",
+        "description": "Subsidiaries and associates of Everlife Group",
+        "source": "hardcoded",
+        "value_mar25": "N/A",
+        "value_mar24": "N/A"
+      },
+      {
+        "label": "Key Management Personnel (KMP)",
+        "description": "Directors and senior management of the Company",
+        "source": "hardcoded",
+        "value_mar25": "N/A",
+        "value_mar24": "N/A"
+      }
+    ],
+
+    "transactions_summary": [
+      {
+        "section": "NOTE 39: TRANSACTIONS WITH RELATED PARTIES",
+        "label": "**Transactions**",
+        "is_bold": true,
+        "is_header": true
+      },
+      {
+        "label": "Sale of goods/services",
+        "description": "Revenue from related party entities",
+        "source": "calculated_from_gls_and_adjustments",
+        "calculation": "Extract from 'Revenue from operations - Related Party' and 'Sales - Related Party' GL categories. Apply adjustments from Adjustment_Entries file if applicable.",
+        "period_specific": true
+      },
+      {
+        "label": "Purchase of goods/services",
+        "description": "Purchases from related party entities",
+        "source": "calculated_from_gls_and_adjustments",
+        "calculation": "Extract from 'Purchase of goods/services - Related Party' GL category. Apply adjustments from Adjustment_Entries file if applicable.",
+        "period_specific": true
+      },
+      {
+        "label": "Reimbursement of expenses",
+        "description": "Expense reimbursements to/from related parties",
+        "source": "calculated_from_gls_and_adjustments",
+        "calculation": "Extract from 'Reimbursement of expenses' GL category. Apply adjustments from Interco file if applicable.",
+        "period_specific": true
+      },
+      {
+        "label": "**Total Transactions**",
+        "source": "calculated",
+        "calculation": "Algebraic sum of all transaction categories above.",
+        "is_total": true,
+        "period_specific": true
+      }
+    ],
+
+    "outstanding_balances": [
+      {
+        "section": "NOTE 39: OUTSTANDING BALANCES WITH RELATED PARTIES",
+        "label": "**Outstanding Balances**",
+        "is_bold": true,
+        "is_header": true
+      },
+      {
+        "label": "Trade receivables",
+        "description": "Amounts receivable from related parties",
+        "source": "calculated_from_gls_and_adjustments",
+        "calculation": "Extract from 'Trade receivables - Related Party' and 'Other receivables - Related Party' GL categories. Apply adjustments from Interco file.",
+        "period_specific": true
+      },
+      {
+        "label": "Loans to related parties",
+        "description": "Loans and advances given to related parties",
+        "source": "calculated_from_gls_and_adjustments",
+        "calculation": "Extract from 'Loans to related parties' GL category.",
+        "period_specific": true
+      },
+      {
+        "label": "**Total Amounts Receivable**",
+        "source": "calculated",
+        "calculation": "Sum of Trade receivables and Loans to related parties.",
+        "is_subtotal": true,
+        "period_specific": true
+      },
+      {
+        "label": "Trade payables",
+        "description": "Amounts payable to related parties",
+        "source": "calculated_from_gls_and_adjustments",
+        "calculation": "Extract from 'Trade payables - Related Party' and 'Other payables - Related Party' GL categories. Apply adjustments from Interco file.",
+        "period_specific": true
+      },
+      {
+        "label": "Loans from related parties",
+        "description": "Loans and borrowings from related parties",
+        "source": "calculated_from_gls_and_adjustments",
+        "calculation": "Extract from 'Loans from related parties' GL category.",
+        "period_specific": true
+      },
+      {
+        "label": "**Total Amounts Payable**",
+        "source": "calculated",
+        "calculation": "Sum of Trade payables and Loans from related parties.",
+        "is_subtotal": true,
+        "period_specific": true
+      },
+      {
+        "label": "**Net Related Party Balance**",
+        "source": "calculated",
+        "calculation": "Total Amounts Receivable - Total Amounts Payable. Show positive if net receivable, negative if net payable.",
+        "is_total": true,
+        "period_specific": true
+      }
+    ],
+
+    "kmp_compensation": [
+      {
+        "section": "NOTE 39: COMPENSATION OF KEY MANAGEMENT PERSONNEL (KMP)",
+        "label": "**KMP Compensation**",
+        "is_bold": true,
+        "is_header": true
+      },
+      {
+        "label": "Short-term employee benefits",
+        "description": "Salaries, bonuses, and other short-term benefits",
+        "source": "calculated_from_gls",
+        "calculation": "Extract from 'Short-term employee benefits' GL category for KMP-specific codes.",
+        "period_specific": true
+      },
+      {
+        "label": "Post-employment benefits",
+        "description": "Pension and other post-employment benefits",
+        "source": "calculated_from_gls",
+        "calculation": "Extract from 'Post-employment benefits' GL category if available, otherwise report as nil.",
+        "period_specific": true
+      },
+      {
+        "label": "Share-based payments",
+        "description": "Stock options and equity compensation",
+        "source": "calculated_from_gls",
+        "calculation": "Extract from 'Share-based payments' GL category if available, otherwise report as nil.",
+        "period_specific": true
+      },
+      {
+        "label": "**Total KMP Compensation**",
+        "source": "calculated",
+        "calculation": "Sum of all KMP compensation components.",
+        "is_total": true,
+        "period_specific": true
+      }
+    ]
+  },
+
+  "additional_instructions": "Ensure all auxiliary files with .xlsx extension are read using pd.read_excel(). Do not attempt to read them as CSV."
+}

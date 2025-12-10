@@ -1,0 +1,101 @@
+{
+    "note_number": "NOTE 32",
+    "note_title": "Financial Instruments",
+    "output_file": "company_note_32_financial_instruments.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract carrying amounts from the source files. TB_FINAL.csv amounts should follow standard debit/credit rules. Totals must be extracted directly from the Balance Sheet auxiliary file.",
+    "categories": [
+        "Trade Receivables AC",
+        "Loans AC",
+        "Other Financial Assets AC",
+        "Cash and Bank Balances AC",
+        "Borrowings AC",
+        "Trade Payables AC",
+        "Other Financial Liabilities AC"
+    ],
+    "output_format": [
+        {
+            "label": "(I) Financial Assets",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Measured at Amortised Cost",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Trade Receivables",
+            "ind_as_minor": ["Trade Receivables AC"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Loans (Non-current and Current)",
+            "ind_as_minor": ["Loans AC"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other Financial Assets",
+            "ind_as_minor": ["Other Financial Assets AC"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Cash and Cash Equivalents",
+            "ind_as_minor": ["Cash and Bank Balances AC"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Total Financial Assets",
+            "ind_as_minor": null,
+            "is_total": true,
+            "source_file": "Balance_Sheet_Output.xlsx",
+            "source_mapping": "Total Financial Assets",
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(II) Financial Liabilities",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Measured at Amortised Cost",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Borrowings (Non-current and Current)",
+            "ind_as_minor": ["Borrowings AC"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Trade Payables",
+            "ind_as_minor": ["Trade Payables AC"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Other Financial Liabilities",
+            "ind_as_minor": ["Other Financial Liabilities AC"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Total Financial Liabilities",
+            "ind_as_minor": null,
+            "is_total": true,
+            "source_file": "Balance_Sheet_Output.xlsx",
+            "source_mapping": "Total Financial Liabilities",
+            "bold": true,
+            "show_line": true
+        }
+    ],
+    "additional_instructions": "This note provides a breakdown of all financial instruments by their measurement category (Amortised Cost). Individual line items are sourced from TB_FINAL.csv. The two total lines ('Total Financial Assets' and 'Total Financial Liabilities') must be extracted directly from the output Balance Sheet auxiliary file (Balance_Sheet_Output.xlsx) to ensure reconciliation. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

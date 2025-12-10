@@ -1,0 +1,64 @@
+{
+  "note_number": "NOTE 9",
+  "note_title": "Trade receivables",
+  "output_file": "Neoscience_Note_06_Trade_Receivables.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all trade receivable categories and subtract the Allowance for expected credit losses. The allowance should be sign-flipped and presented as a deduction.",
+  "categories": [
+    "Trade receivables - Unsecured considered good",
+    "Trade receivables - Unsecured considered doubtful",
+    "Trade receivables - Secured",
+    "Allowance for expected credit losses"
+  ],
+  "output_format": [
+    {
+      "label": "Trade receivables - Unsecured considered good",
+      "ind_as_minor": ["Trade receivables - Unsecured considered good"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Trade receivables - Unsecured considered doubtful",
+      "ind_as_minor": ["Trade receivables - Unsecured considered doubtful"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Trade receivables - Secured",
+      "ind_as_minor": ["Trade receivables - Secured"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total Gross Trade Receivables",
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Trade receivables - Unsecured considered good",
+        "Trade receivables - Unsecured considered doubtful",
+        "Trade receivables - Secured"
+      ],
+      "bold": true,
+      "show_line": false
+    },
+    {
+      "label": "Less: Allowance for expected credit losses",
+      "ind_as_minor": ["Allowance for expected credit losses"],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "net_sum",
+      "sum_of": ["Total Gross Trade Receivables"],
+      "subtract": ["Less: Allowance for expected credit losses"],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The calculation must show Gross Receivables less Allowance for expected credit losses. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

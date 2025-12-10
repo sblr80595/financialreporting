@@ -1,0 +1,114 @@
+{
+    "note_number": "NOTE 35",
+    "note_title": "Related Party Disclosures",
+    "output_file": "company_note_35_related_party_disclosures_ttpl_fs.txt",
+    "statement_type": "notes",
+    "summation_rule": "Extract data from ttpl_impnotes.csv (Translumina Therapeutics section). Section A lists relationships including Ultimate/Immediate Holding, Fellow Subsidiaries, and KMP. Section B and C detail transactions and balances for periods ending 30 June 2025 and 31 March 2025.",
+    "categories": [
+        "Integris Medtech Private Limited",
+        "Evercure Holding Pte Limited",
+        "Mrs. Punita Sharma",
+        "Mr. Gurmit Singh Chugh",
+        "Translumina GmbH",
+        "Transhealth Private Limited",
+        "Translumina Medical Devices Trading L.L.C",
+        "Blue Medical Devices BV",
+        "LAMED Vertriebsgesellschaft",
+        "Helmed",
+        "Deemed Equity",
+        "Employee benefit expense",
+        "Business support service",
+        "Expenses reimbursement",
+        "Cross charged",
+        "Interest payable on loan",
+        "Advance to supplier",
+        "Trade payables",
+        "Loan given",
+        "Interest Accrued on loan given",
+        "Corporate Guarantee",
+        "Trade receivables",
+        "Other recoverable"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Names of related parties and related party relationship",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Relationships (Holding Companies)",
+            "ind_as_minor": [
+                "Integris Medtech Private Limited (Immediate Holding Company)",
+                "Evercure Holding Pte Limited (Ultimate Holding Company)"
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "Key management personnels ('KMP')",
+            "ind_as_minor": [
+                "Mrs. Punita Sharma (designated partner)",
+                "Mr. Gurmit Singh Chugh (designated partner)"
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "Fellow Subsidiaries",
+            "ind_as_minor": [
+                "Translumina GmbH",
+                "Transhealth Private Limited",
+                "Translumina Medical Devices Trading L.L.C",
+                "Blue Medical Devices BV",
+                "LAMED Vertriebsgesellschaft",
+                "Helmed"
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Transactions with related parties",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Summary of transactions",
+            "ind_as_minor": [
+                "Deemed Equity",
+                "Employee benefit expense",
+                "Business support service",
+                "Expenses reimbursement",
+                "Cross charged"
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(C) Balances outstanding at year end",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Summary of balances",
+            "ind_as_minor": [
+                "Interest payable on loan",
+                "Advance to supplier",
+                "Trade payables",
+                "Loan given",
+                "Interest Accrued on loan given",
+                "Corporate Guarantee",
+                "Trade receivables",
+                "Other recoverable"
+            ],
+            "aggregation": "table_placeholder"
+        }
+    ],
+    "additional_instructions": "Data is in Lakhs of Indian Rupees. Columns represent As at 30 June 2025 and As at 31 March 2025. Map entities like 'Transhealth' and 'Blue Medical' to their specific balance line items."
+}

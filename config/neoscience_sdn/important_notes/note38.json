@@ -1,0 +1,86 @@
+{
+  "note_number": "Note 38",
+  "note_title": "Financial Risk Management",
+  "output_file": "Neoscience_Note_38_Risk_Management.txt",
+  "source_file": "TB_Neoscience_Final.csv",
+  "auxiliary_files": ["data/neoscience_sdn/output/financial_statements/BS/Balance_Sheet_*.xlsx"],
+  "statement_type": "disclosure",
+  "summation_rule": "Perform complex calculations for Net Debt and interest rate sensitivity based on component aggregation. Use GL data as primary source, cross-referencing to auxiliary Balance Sheet file if available.",
+  "categories": [
+    "Trade receivables",
+    "Loans",
+    "Cash and cash equivalents",
+    "Other bank balances",
+    "Short term borrowings",
+    "Lease liabilities (current portion)",
+    "Interest accrued and due on borrowings",
+    "Current investments",
+    "Interest accrued on above asset",
+    "Variable rate borrowing exposure",
+    "Fixed rate borrowing exposure"
+  ],
+  "output_format": [
+    {
+      "label": "A) Credit risk management and exposure",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Total Maximum Exposure",
+      "ind_as_minor": ["Trade receivables", "Loans", "Cash and cash equivalents", "Other bank balances"],
+      "calculation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "B) Liquidity risk",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Net Debt (Calculated)",
+      "ind_as_minor": null,
+      "calculation": "net_debt",
+      "positive_components": ["Short term borrowings", "Lease liabilities (current portion)", "Interest accrued and due on borrowings"],
+      "negative_components": ["Current investments", "Cash and cash equivalents", "Other bank balances", "Interest accrued on above asset"],
+      "bold": true
+    },
+    {
+      "label": "Maturity Analysis - Less than 1 Year",
+      "ind_as_minor": ["Short term borrowings", "Lease liabilities (current portion)", "Trade payables", "Other financial liabilities (Current)", "Other current liabilities"],
+      "calculation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "C) Market risks",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Variable rate borrowing exposure",
+      "ind_as_minor": ["Variable rate borrowing exposure"],
+      "calculation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Fixed rate borrowing exposure",
+      "ind_as_minor": ["Fixed rate borrowing exposure"],
+      "calculation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Interest Rate Sensitivity (Increase 50 bps)",
+      "ind_as_minor": ["Variable rate borrowing exposure"],
+      "calculation": "sensitivity_analysis",
+      "rate_change": 0.005,
+      "sign_flip": false
+    },
+    {
+      "label": "Interest Rate Sensitivity (Decrease 50 bps)",
+      "ind_as_minor": ["Variable rate borrowing exposure"],
+      "calculation": "sensitivity_analysis",
+      "rate_change": -0.005,
+      "sign_flip": false
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 30 June 2025 and As at 31 March 2025. Ensure detailed GL-level breakdown is shown for components used in the Net Debt calculation. Net Debt calculation must follow the formula: (Short term liabilities) - (Cash and equivalents + Current investments). Format amounts in Indian Rupee format with commas (₹1,23,456)."
+}

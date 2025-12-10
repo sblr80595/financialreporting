@@ -1,0 +1,32 @@
+{
+  "note_number": "NOTE 28",
+  "note_title": "Employee Benefits Expense",
+  "output_file": "company_a_note_28_employee_benefits_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically.",
+  "categories": [
+    "Salaries, wages and bonus",
+    "Contributions to provident and other funds",
+    "Share based payment to employees",
+    "Staff welfare expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Salaries, wages and bonus",
+      "ind_as_minor": "Salaries, wages and bonus"
+    },
+    {
+      "label": "Contributions to provident and other funds",
+      "ind_as_minor": "Contributions to provident and other funds"
+    },
+    {
+      "label": "Share based payment to employees (refer note 41)",
+      "ind_as_minor": "Share based payment to employees"
+    },
+    {
+      "label": "Staff welfare expenses",
+      "ind_as_minor": "Staff welfare expenses"
+    }
+  ],
+  "additional_instructions": "Employee benefits are operating expenses and should be presented as positive amounts. Ensure all GL accounts related to employee costs are captured under the appropriate categories."
+}

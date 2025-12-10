@@ -1,0 +1,94 @@
+{
+  "note_number": "NOTE 38",
+  "note_title": "Disclosure on Jointly controlled entity",
+  "output_file": "cpc_note_38_jointly_controlled_entity.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract values for the specified line items for the period ended March 31, 2025. If values are empty or zero, display 'Nil'.",
+  "categories": [
+    "Assets",
+    "Liabilities",
+    "Income",
+    "Expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Disclosure on Jointly controlled entity",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "The Company holds no interest in a jointly-controlled assets or operation. However, it held interest in joint controlled entity as follows, until acquisition of the whole of the share capital of the entity:",
+      "ind_as_minor": null,
+      "is_text_block": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Details of the Jointly controlled entity:",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "bold": true
+    },
+    {
+      "label": "   Name of the entity: Jeev Diagnostics Private Limited",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "   Country of incorporation: India",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "   Proportion of ownership interest: 50%",
+      "ind_as_minor": null,
+      "is_text_item": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "The Company's share of the aggregate amounts of assets, liabilities, income and expenses of the above jointly controlled entity is as under:",
+      "ind_as_minor": null,
+      "is_subheading": true,
+      "italic": true
+    },
+    {
+      "label": "   Assets",
+      "ind_as_minor": [
+        "Assets"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Liabilities",
+      "ind_as_minor": [
+        "Liabilities"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Income",
+      "ind_as_minor": [
+        "Income"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    },
+    {
+      "label": "   Expenses",
+      "ind_as_minor": [
+        "Expenses"
+      ],
+      "aggregation": "sum",
+      "default_value": "Nil"
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 38: DISCLOSURE ON JOINTLY CONTROLLED ENTITY**\n\nPresentation Requirements:\n1.  **Introductory Text**: Display the explanatory text regarding the interest in the jointly controlled entity.\n2.  **Entity Details**: List the Name, Country, and Ownership percentage as found in the source file.\n3.  **Financial Data**: Extract and display the values for Assets, Liabilities, Income, and Expenses for the period **March 31, 2025**.\n\nFormatting:\n-   Since the source file shows empty values for March 2025 (likely due to the entity becoming a subsidiary), display 'Nil' for the financial line items."
+}

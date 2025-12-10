@@ -1,0 +1,50 @@
+{
+  "note_number": "NOTE 27",
+  "note_title": "Changes in Inventories of Traded Goods",
+  "output_file": "lifeline_holdings_note_27_changes_in_inventories.txt",
+  "opening_balance_column": "Opening Balance",
+  "closing_balance_column": "Closing Balance",
+  "calculation_method": "simple",
+  "statement_type": "profit-loss",
+  "summation_rule": "Calculate net change as (Opening Inventory - Closing Inventory). Use Opening Balance and Closing Balance columns specifically. The change can be positive (decrease in inventory) or negative (increase in inventory).",
+  "generate_if_empty": true,
+  "categories": [
+    "Stock in Traded goods",
+    "Fixed Asset Clearing Account",
+    "Spare parts",
+    "Less allowance for inventory obsolescence"
+  ],
+  "inventory_categories": [
+    {
+      "label": "Traded goods",
+      "ind_as_minor_variants": [
+        "Stock in Traded goods",
+        "Fixed Asset Clearing Account",
+        "Spare parts"
+      ]
+    }
+  ],
+  "allowance_category": "Less allowance for inventory obsolescence",
+  "provision_category": null,
+  "output_format": [
+    {
+      "label": "**Inventories at the end of the period:**",
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "value_type": "closing_total",
+      "default_value": 0
+    },
+    {
+      "label": "**Inventories at the beginning of the period:**",
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "value_type": "opening_total",
+      "default_value": 0
+    }
+  ],
+  "additional_instructions": "IMPORTANT: This note uses Opening Balance and Closing Balance columns from the trial balance, NOT period totals.\n\nCalculation Formula:\n- **Closing Inventory (A)**: Sum of closing balances of:\n  * Stock in Traded goods\n  * Fixed Asset Clearing Account (if representing inventory)\n  * Spare parts\n  * Less: Allowance for inventory obsolescence (closing balance)\n  \n- **Opening Inventory (B)**: Sum of opening balances of:\n  * Stock in Traded goods\n  * Fixed Asset Clearing Account (if representing inventory)\n  * Spare parts\n  * Less: Allowance for inventory obsolescence (opening balance)\n\n- **Net Change = (B - A)** = Opening Inventory - Closing Inventory\n  * Positive result = Decrease in inventory (adds to cost of sales)\n  * Negative result = Increase in inventory (reduces cost of sales)\n\nPresentation in Schedule III Format:\n1. Show \"Inventories at the end of the period:\" as header\n2. Show closing traded goods (consolidated amount from all categories minus allowance)\n3. Show \"Inventories at the beginning of the period:\" as header\n4. Show opening traded goods (consolidated amount from all categories minus allowance)\n5. Calculate and show the net change\n\nExample Calculation:\nIf Closing = ₹57,27,65,204 and Opening = ₹47,03,38,337\nChange = Opening - Closing = 47,03,38,337 - 57,27,65,204 = (₹10,24,26,867)\nThe negative value indicates inventory increased by ₹10,24,26,867 during the period.\n\nProvide detailed calculation breakdown showing:\n- Closing Inventory components\n- Opening Inventory components\n- Final net change calculation\n\nBefore the final Schedule III table, show the GL-level breakdown with individual components for audit trail purposes.\n\nNote: \"Fixed Asset Clearing Account\" may sometimes temporarily hold inventory in transit or under installation. Include it only if it represents inventory, not if it's for capital work in progress.\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for both opening and closing inventories when no data is available, resulting in zero net change."
+}

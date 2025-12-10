@@ -1,0 +1,88 @@
+{
+    "note_number": "NOTE 38",
+    "note_title": "Related Party Disclosures",
+    "output_file": "company_note_38_related_party_disclosures_analisa.txt",
+    "statement_type": "notes",
+    "summation_rule": "Extract data directly from ttpl_impnotes.csv. Section A lists relationships. Section B lists transactions with columns for Period ended 30 June 2025 and comparison years. Section C lists balances for 2023-2025.",
+    "categories": [
+        "Everlife Holdings Pte. Ltd",
+        "Scientifc Resources Pte Ltd",
+        "Chemopharm Sdn Bhd",
+        "Medigene Sdn Bhd",
+        "Biofrontier Technology Pte Ltd",
+        "Thang Lee Tean",
+        "Chua Kai Jun, Fabian",
+        "Purchase of Traded Goods",
+        "Management fee Paid",
+        "Loan Taken",
+        "Loan Repaid",
+        "Interest Paid",
+        "Maintaince Services",
+        "Loan Received",
+        "Loan Given",
+        "Interest Received",
+        "Short-term employee benefits",
+        "Defined contribution plan",
+        "Borrowings",
+        "Trade Payables"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Name of related parties and description of relationship",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "List of Related Parties (Holding & Subsidiaries)",
+            "ind_as_minor": ["Everlife Holdings Pte. Ltd", "Scientifc Resources Pte Ltd", "Chemopharm Sdn Bhd", "Medigene Sdn Bhd", "Biofrontier Technology Pte Ltd"],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "Key Managerial Personnel",
+            "ind_as_minor": ["Thang Lee Tean", "Chua Kai Jun, Fabian"],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "Relationships between a parent and its subsidiaries shall be disclosed irrespective of whether there have been transactions between them.",
+            "ind_as_minor": null,
+            "aggregation": "qualitative_text_or_value"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Summary of transaction with related parties",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Transaction Summary (Purchase, Loans, Services)",
+            "ind_as_minor": ["Purchase of Traded Goods", "Management fee Paid", "Loan Taken", "Interest Paid"],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "Key Management Personnel Compensation",
+            "ind_as_minor": ["Short-term employee benefits", "Defined contribution plan"],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(C) Outstanding balances as at balance sheet date",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Outstanding Balances (Borrowings & Payables)",
+            "ind_as_minor": ["Borrowings", "Trade Payables"],
+            "aggregation": "table_placeholder"
+        }
+    ],
+    "additional_instructions": "This note requires the extraction of multi-column tables from the CSV. Ensure #REF! errors in the source are handled or noted. Maintain the distinction between 'Fellow Subsidiaries' and 'Holding Co.' in Section C columns."
+}

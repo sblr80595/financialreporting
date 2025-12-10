@@ -1,0 +1,34 @@
+{
+  "note_number": "Note 41",
+  "note_title": "Segment Information",
+  "output_file": "Neoscience_Note_41_Segment_Info.txt",
+  "source_file": "TB_Neoscience_Final.csv",
+  "auxiliary_files": [
+    "data/neoscience_sdn/output/financial_statements/BS/Balance_Sheet_*.xlsx",
+    "data/neoscience_sdn/output/financial_statements/PL/PL_Statement_*.xlsx"
+  ],
+  "statement_type": "disclosure",
+  "summation_rule": "Not applicable; note is primarily narrative.",
+  "categories": [
+    "Segment Information Narrative"
+  ],
+  "output_format": [
+    {
+      "label": "41. Segment Information",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Operating Segment Disclosure",
+      "ind_as_minor": [
+        "Segment Information Narrative"
+      ],
+      "calculation": "narrative_retrieval",
+      "not_found_message": "The company is considered to operate in a single reportable segment, 'Trading of products', for the purpose of Ind AS 108 / MFRS 8 'Operating Segments'. The major revenues are derived from trading activities, and management reviews the business on a single-segment basis. No further segment-wise financial data is presented.",
+      "columns": [
+        "Narrative"
+      ]
+    }
+  ],
+  "additional_instructions": "The output must generate a single narrative stating that the Company operates in one segment ('Trading of products') and no separate segment financials are presented."
+}

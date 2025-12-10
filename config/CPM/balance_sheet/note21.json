@@ -1,0 +1,29 @@
+{
+  "note_number": "NOTE 21",
+  "note_title": "Other current liabilities",
+  "output_file": "company_a_note_21_other_current_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other current liabilities, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Statutory dues payable- OCL"
+  ],
+  "output_format": [
+    {
+      "label": "Statutory dues payable",
+      "ind_as_minor": [
+        "Statutory dues payable- OCL"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_OTHER_CURRENT_LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Statutory dues payable"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Statutory dues payable' - from category 'Statutory dues payable- OCL'\n2. Show total (which is same as the line item value since there's only one item)\n3. Example: Statutory dues payable: 7,57,467; Total: 7,57,467\n5. Format all amounts in Indian numbering system without \u20b9 symbol.\n6. Statutory dues typically include GST payable, TDS payable, professional tax, provident fund, ESI, and other statutory obligations.\n7. Other current liabilities are credit balances (may appear negative in trial balance) - take absolute values for presentation.\n8. These are current liabilities due within 12 months as per Schedule III classification."
+}

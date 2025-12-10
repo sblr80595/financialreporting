@@ -1,0 +1,73 @@
+{
+  "note_number": "NOTE 15",
+ "note_title": "Other Equity",
+  "output_file": "company_note_15_other_equity.md",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Equity accounts (credit) are negative, and Dividends (debit) are positive. Calculations must sum these raw values first, then flip the sign of the result for presentation.",
+  "categories": [
+    "Dividend paid",
+    "Retained earnings",
+    "Share Based Payment Reserve"
+  ],
+  "output_format": [
+    {
+      "label": "(i) Retained earnings",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Balance at the beginning of the year",
+      "ind_as_minor": [
+        "Dividend paid",
+        "Retained earnings"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Profit for the year",
+      "ind_as_minor": [],
+      "aggregation": "sum",
+      "is_placeholder": true
+    },
+    {
+      "label": "Balance at the end of the year (Retained Earnings)",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Balance at the beginning of the year",
+        "Profit for the year"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "(ii) Employee Stock Options Reserve",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Balance at the end of the year (ESOP)",
+      "ind_as_minor": [
+        "Share Based Payment Reserve"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Other equity",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Balance at the end of the year (Retained Earnings)",
+        "Balance at the end of the year (ESOP)"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 15: OTHER EQUITY**\n\nPresentation Requirements:\n1.  **(i) Retained earnings** (Header)\n    * `Balance at the beginning of the year`: **Crucial calculation.** This will sum the raw values (debit/positive and credit/negative) from 'Dividend paid' and 'Retained earnings' GLs. It will then flip the sign of the total sum (e.g., if sum is -80,000, it will display 80,000).\n    * `Profit for the year`: **This is a placeholder.** The template will show 0. This value must be provided externally.\n    * `Balance at the end of the year (Retained Earnings)`: Calculated as (Beginning Balance + Profit).\n\n2.  **(ii) Employee Stock Options Reserve** (Header)\n    * `Balance at the end of the year (ESOP)`: This will sum the GLs under 'Share Based Payment Reserve' (which is likely a negative credit balance) and then flip the sign to display a positive number.\n\n3.  **Total Other equity** (Total): Calculated as `Balance at the end of the year (Retained Earnings)` + `Balance at the end of the year (ESOP)`.\n\nAccounting Context:\n-   This note shows the components and movement in 'Other Equity'.\n-   The calculation for 'Balance at the beginning of the year' correctly nets the opening retained earnings (credit) against any dividends paid (debit) to arrive at the true opening balance.\n\nCritial Limitation:\n-   **'Profit for the year' is not in the trial balance.** It is the result of the P&L statement. The `BALANCE_SHEET_TEMPLATE` cannot take this external input, so 'Profit for the year' will be 0 and the subsequent totals will be incorrect unless the prompt is manually modified before execution."
+}

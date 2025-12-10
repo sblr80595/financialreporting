@@ -1,0 +1,37 @@
+{
+  "note_number": "NOTE 28",
+  "note_title": "Employee Benefits Expenses",
+  "output_file": "cpc_diagnostics_india_note_28_employee_benefits_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Display as positive values in the final notes.",
+  "categories": [
+    "Salaries, wages and bonus",
+    "Contribution to provident and other funds",
+    "Contribution to Gratuity",
+    "Employee stock compensation expense (refer note 43)",
+    "Staff welfare expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Salaries, wages and bonus",
+      "ind_as_minor": "Salaries, wages and bonus"
+    },
+    {
+      "label": "Contribution to provident and other funds",
+      "ind_as_minor": "Contribution to provident and other funds"
+    },
+    {
+      "label": "Contribution to Gratuity",
+      "ind_as_minor": "Contribution to Gratuity"
+    },
+    {
+      "label": "Employee stock compensation expense (refer note 43)",
+      "ind_as_minor": "Employee stock compensation expense (refer note 43)"
+    },
+    {
+      "label": "Staff welfare expenses",
+      "ind_as_minor": "Staff welfare expenses"
+    }
+  ],
+  "additional_instructions": "Note: Employee benefits expense includes salaries, provident fund contributions, gratuity, ESOP expense, and staff welfare. Handle the formatting accordingly to maintain Schedule III compliance."
+}

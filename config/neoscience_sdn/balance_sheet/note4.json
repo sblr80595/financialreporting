@@ -1,0 +1,88 @@
+{
+  "note_number": "NOTE 4",
+  "note_title": "Right-of-use assets",
+  "output_file": "Neoscience_Note_04_ROU_Movement.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Perform algebraic sum (BODMAS) for all movement amounts. Gross Block is calculated as Opening + Additions - Disposals. Accumulated Amortization is calculated as Opening + Amortization - Reversal on disposal. Net block is Gross Block - Accumulated Amortization.",
+  "categories": [
+    "Buildings-Opening",
+    "Buildings-Additions",
+    "Buildings-Disposals",
+    "Buildings-Amortization",
+    "Buildings-Reversal"
+  ],
+  "output_format": [
+    {
+      "label": "Gross Block",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Balance as at 1 April 2024",
+      "ind_as_minor": ["Buildings-Opening"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Additions",
+      "ind_as_minor": ["Buildings-Additions"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Disposals",
+      "ind_as_minor": ["Buildings-Disposals"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Balance as at 30 June 2025 (Closing Gross Block)",
+      "is_subtotal": true,
+      "calculation": "custom_movement",
+      "calculation_components": ["Balance as at 1 April 2024", "Additions", "Disposals"],
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Accumulated Amortization",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Balance as at 1 April 2024",
+      "ind_as_minor": ["Buildings-Amortization-Opening"],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Amortization charge for the period",
+      "ind_as_minor": ["Buildings-Amortization"],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Reversal on disposal",
+      "ind_as_minor": ["Buildings-Reversal"],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Balance as at 30 June 2025 (Closing Acc. Amort.)",
+      "is_subtotal": true,
+      "calculation": "custom_movement",
+      "calculation_components": ["Balance as at 1 April 2024", "Amortization charge for the period", "Reversal on disposal"],
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Net Carrying Amount (Gross Block - Acc. Amort.)",
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": ["Balance as at 30 June 2025 (Closing Gross Block)"],
+      "subtract": ["Balance as at 30 June 2025 (Closing Acc. Amort.)"],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: one for 31 March 2025 and one for 30 June 2025, detailing all the above movement categories (Gross Block, Accumulated Amortization, and Net Carrying Amount) for the 'Buildings' Asset Class. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

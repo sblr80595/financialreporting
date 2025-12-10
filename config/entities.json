@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "description": "Single source of truth for entities, including currency metadata. Update this file to add or edit entities across backend and frontend.",
+  "entities": [
+    {
+      "code": "cpm",
+      "name": "CPM Malaysia",
+      "short_code": "cpm",
+      "description": "CPM Malaysia entity",
+      "currency": {
+        "code": "MYR",
+        "symbol": "RM",
+        "name": "Malaysian Ringgit",
+        "decimal_places": 2,
+        "format": "RM #,##0.00"
+      }
+    },
+    {
+      "code": "analisa_resource",
+      "name": "Analisa Resource",
+      "short_code": "analisa_resource",
+      "description": "Analisa Resource entity",
+      "currency": {
+        "code": "MYR",
+        "symbol": "RM",
+        "name": "Malaysian Ringgit",
+        "decimal_places": 2,
+        "format": "RM #,##0.00"
+      }
+    },
+    {
+      "code": "neoscience_sdn",
+      "name": "Neoscience SDN",
+      "short_code": "neoscience_sdn",
+      "description": "Neoscience SDN entity",
+      "currency": {
+        "code": "MYR",
+        "symbol": "RM",
+        "name": "Malaysian Ringgit",
+        "decimal_places": 2,
+        "format": "RM #,##0.00"
+      }
+    },
+    {
+      "code": "lifeline_holdings",
+      "name": "Lifeline Holdings",
+      "short_code": "lifeline_holdings",
+      "description": "Lifeline Holdings entity",
+      "currency": {
+        "code": "PHP",
+        "symbol": "₱",
+        "name": "Philippine Peso",
+        "decimal_places": 2,
+        "format": "₱#,##0.00"
+      }
+    },
+    {
+      "code": "lifeline_diagnostics",
+      "name": "Lifeline Diagnostics",
+      "short_code": "lifeline_diagnostics",
+      "description": "Lifeline Diagnostics entity",
+      "currency": {
+        "code": "PHP",
+        "symbol": "₱",
+        "name": "Philippine Peso",
+        "decimal_places": 2,
+        "format": "₱#,##0.00"
+      }
+    },
+    {
+      "code": "everlife_ph_holding",
+      "name": "Everlife Ph Holding",
+      "short_code": "everlife_ph_holding",
+      "description": "Everlife Ph Holding entity",
+      "currency": {
+        "code": "PHP",
+        "symbol": "₱",
+        "name": "Philippine Peso",
+        "decimal_places": 2,
+        "format": "₱#,##0.00"
+      }
+    },
+    {
+      "code": "ttpl_fs",
+      "name": "Translumina Therapeutics Private Limited",
+      "short_code": "ttpl_fs",
+      "description": "Translumina Therapeutics Private Limited",
+      "currency": {
+        "code": "INR",
+        "symbol": "₹",
+        "name": "Indian Rupee",
+        "decimal_places": 2,
+        "format": "₹#,##,##0.00"
+      }
+    },
+    {
+      "code": "cpc_diagnostics_india",
+      "name": "CPC (CPC Diagnostics Pvt. Ltd India )",
+      "short_code": "cpc_diagnostics_india",
+      "description": "CPC (CPC Diagnostics Pvt. Ltd India )",
+      "currency": {
+        "code": "INR",
+        "symbol": "₹",
+        "name": "Indian Rupee",
+        "decimal_places": 2,
+        "format": "₹#,##,##0.00"
+      }
+    },
+    {
+      "code": "hausen",
+      "name": "Hausen",
+      "short_code": "hausen",
+      "description": "Hausen entity",
+      "currency": {
+        "code": "EUR",
+        "symbol": "€",
+        "name": "Euro",
+        "decimal_places": 2,
+        "format": "€#,##0.00"
+      }
+    },
+    {
+      "code": "integris",
+      "name": "Integris",
+      "short_code": "integris",
+      "description": "Integris entity",
+      "currency": {
+        "code": "USD",
+        "symbol": "$",
+        "name": "US Dollar",
+        "decimal_places": 2,
+        "format": "$#,##0.00"
+      }
+    }
+  ]
+}

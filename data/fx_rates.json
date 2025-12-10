@@ -1,0 +1,37 @@
+{
+  "MYR->USD": {
+    "base_currency": "MYR",
+    "target_currency": "USD",
+    "rate": 0.23812379790292224,
+    "as_of": "2025-12-10 01:30:22.419658",
+    "source": "currencyconverter-ecb"
+  },
+  "MYR->INR": {
+    "base_currency": "MYR",
+    "target_currency": "INR",
+    "rate": 21.139226107997434,
+    "as_of": "2025-12-10 01:30:22.420404",
+    "source": "currencyconverter-ecb"
+  },
+  "PHP->USD": {
+    "base_currency": "PHP",
+    "target_currency": "USD",
+    "rate": 0.016992827415212967,
+    "as_of": "2025-11-28 05:18:43.872585",
+    "source": "currencyconverter-ecb"
+  },
+  "PHP->INR": {
+    "base_currency": "PHP",
+    "target_currency": "INR",
+    "rate": 1.5085229788364476,
+    "as_of": "2025-11-28 05:18:43.872882",
+    "source": "currencyconverter-ecb"
+  },
+  "INR->USD": {
+    "base_currency": "INR",
+    "target_currency": "USD",
+    "rate": 0.011264546615206258,
+    "as_of": "2025-12-05 03:07:07.643574",
+    "source": "currencyconverter-ecb"
+  }
+}

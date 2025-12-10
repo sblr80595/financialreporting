@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "description": "Default currency mapping for each entity. This configuration is used to display the appropriate currency symbol and format when an entity is selected.",
+  "last_updated": "2025-11-23",
+  "entities": {
+    "cpm": {
+      "entity_name": "CPM Malaysia",
+      "default_currency": "MYR",
+      "currency_symbol": "RM",
+      "currency_name": "Malaysian Ringgit",
+      "decimal_places": 2,
+      "format": "RM #,##0.00"
+    },
+    "analisa_resource": {
+      "entity_name": "Analisa Resource",
+      "default_currency": "MYR",
+      "currency_symbol": "RM",
+      "currency_name": "Malaysian Ringgit",
+      "decimal_places": 2,
+      "format": "RM #,##0.00"
+    },
+    "neoscience_sdn": {
+      "entity_name": "Neoscience SDN",
+      "default_currency": "MYR",
+      "currency_symbol": "RM",
+      "currency_name": "Malaysian Ringgit",
+      "decimal_places": 2,
+      "format": "RM #,##0.00"
+    },
+    "lifeline_holdings": {
+      "entity_name": "Lifeline Holdings",
+      "default_currency": "PHP",
+      "currency_symbol": "₱",
+      "currency_name": "Philippine Peso",
+      "decimal_places": 2,
+      "format": "₱#,##0.00"
+    },
+    "lifeline_diagnostics": {
+      "entity_name": "Lifeline Diagnostics",
+      "default_currency": "PHP",
+      "currency_symbol": "₱",
+      "currency_name": "Philippine Peso",
+      "decimal_places": 2,
+      "format": "₱#,##0.00"
+    },
+    "everlife_ph_holding": {
+      "entity_name": "Everlife Ph Holding",
+      "default_currency": "PHP",
+      "currency_symbol": "₱",
+      "currency_name": "Philippine Peso",
+      "decimal_places": 2,
+      "format": "₱#,##0.00"
+    },
+    "ttpl_fs": {
+      "entity_name": "Translumina Therapeutics Private Limited",
+      "default_currency": "INR",
+      "currency_symbol": "₹",
+      "currency_name": "Indian Rupee",
+      "decimal_places": 2,
+      "format": "₹#,##,##0.00"
+    },
+    "hausen": {
+      "entity_name": "Hausen",
+      "default_currency": "EUR",
+      "currency_symbol": "€",
+      "currency_name": "Euro",
+      "decimal_places": 2,
+      "format": "€#,##0.00"
+    },
+    "integris": {
+      "entity_name": "Integris",
+      "default_currency": "USD",
+      "currency_symbol": "$",
+      "currency_name": "US Dollar",
+      "decimal_places": 2,
+      "format": "$#,##0.00"
+    },
+    "cpc_diagnostics_india": {
+      "entity_name": "CPC (CPC Diagnostics Pvt. Ltd India )",
+      "default_currency": "INR",
+      "currency_symbol": "₹",
+      "currency_name": "Indian Rupee",
+      "decimal_places": 2,
+      "format": "₹#,##,##0.00"
+    }
+  },
+  "supported_currencies": [
+    {
+      "code": "INR",
+      "symbol": "₹",
+      "name": "Indian Rupee",
+      "format": "₹#,##,##0.00"
+    },
+    {
+      "code": "PHP",
+      "symbol": "₱",
+      "name": "Philippine Peso",
+      "format": "₱#,##0.00"
+    },
+    {
+      "code": "MYR",
+      "symbol": "RM",
+      "name": "Malaysian Ringgit",
+      "format": "RM #,##0.00"
+    },
+    {
+      "code": "USD",
+      "symbol": "$",
+      "name": "US Dollar",
+      "format": "$#,##0.00"
+    },
+    {
+      "code": "EUR",
+      "symbol": "€",
+      "name": "Euro",
+      "format": "€#,##0.00"
+    },
+    {
+      "code": "SGD",
+      "symbol": "S$",
+      "name": "Singapore Dollar",
+      "format": "S$#,##0.00"
+    }
+  ],
+  "notes": [
+    "The 'format' field follows Excel-style number formatting patterns",
+    "Indian Rupee (INR) uses the Indian numbering system (lakhs and crores): #,##,##0.00",
+    "Other currencies typically use the standard international format: #,##0.00",
+    "Currency symbols should be displayed before the amount in financial statements",
+    "All amounts should be rounded to the specified decimal_places"
+  ]
+}

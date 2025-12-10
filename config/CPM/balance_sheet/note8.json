@@ -1,0 +1,60 @@
+{
+  "note_number": "NOTE 8",
+  "note_title": "Inventories",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For inventory items, take positive debit balances. For provisions, take the absolute value of credit balances.",
+  "categories": [
+    "Finished goods (Closing)",
+    "TG",
+    "Goods in Transit",
+    "Allowance for obsolete inventories"
+  ],
+  "output_format": [
+    {
+      "label": "Finished goods (refer note below)",
+      "ind_as_minor": null,
+      "is_reference": true
+    },
+    {
+      "label": "Traded goods",
+      "ind_as_minor": [
+        "Finished goods (Closing)",
+        "TG"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Goods-in-transit",
+      "ind_as_minor": [
+        "Goods in Transit"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "SUBTOTAL_INVENTORY",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "Traded goods",
+        "Goods-in-transit"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "Less: Provision for inventory obsolescence",
+      "ind_as_minor": [
+        "Allowance for obsolete inventories"
+      ],
+      "is_deduction": true,
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_INVENTORIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "SUBTOTAL_INVENTORY - [Less: Provision for inventory obsolescence]",
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Finished goods (refer note below)' - reference line, no amount shown\n2. 'Traded goods' - sum of categories: 'Finished goods (Closing)' + 'TG'\n3. 'Goods-in-transit' - value from 'Goods in Transit' category\n4. Draw a line and show subtotal\n5. 'Less: Provision for inventory obsolescence' - deduct value from 'Allowance for obsolete inventories'\n6. Draw a line and show final total (TOTAL_INVENTORIES)\n7. Format: Traded goods = 2,34,43,395; Goods-in-transit = 24,10,653; Subtotal = 2,58,54,048; Less Provision = 19,39,182; Final Total = 2,39,14,866."
+}

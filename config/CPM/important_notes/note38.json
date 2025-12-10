@@ -1,0 +1,81 @@
+{
+  "note_number": "38",
+  "note_title": "Contingent Liabilities and Commitments",
+  "statement_type": "important-notes",
+
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+
+  "multi_source_integration": true,
+
+  "auxiliary_files": [
+    {
+      "label": "PL_Statement",
+      "file_path": "data/cpm/output/financial_statements",
+      "file_name": "PL_Statement.xlsx",
+      "description": "Profit and Loss statement used to extract recurring service and lease expenses"
+    },
+    {
+      "label": "Balance_Sheet",
+      "file_path": "data/cpm/output/financial_statements",
+      "file_name": "Balance_Sheet.xlsx",
+      "description": "Balance sheet used to validate contingent liabilities and commitments"
+    }
+  ],
+
+  "periods": [
+    { "period_name": "Mar'25", "period_column": "Total Mar'25" },
+    { "period_name": "Mar'24", "period_column": "Total Mar'24" },
+    { "period_name": "Mar'23", "period_column": "Total Mar'23" }
+  ],
+
+  "multi_source_rule": "Extract base GL balances from CPM.csv trial balance. Use PL and Balance Sheet files to validate operating lease and service commitments. If no relevant GLs or values are found, return standard disclosure statement with management representation.",
+
+  "summation_rule": "Use algebraic summation for all calculations. Preserve signs throughout. Treat parentheses '()' or 'CR' indicators as negative values.",
+
+  "period_handling": "Generate all sections for Mar'25, Mar'24, and Mar'23. If no data is found for any period, display 'Nil' or return standard disclosure.",
+
+  "categories": [
+    "Capital commitments",
+    "Operating lease commitments",
+    "Service contract obligations",
+    "Corporate guarantees",
+    "Legal claims",
+    "Tax disputes"
+  ],
+
+  "output_format": {
+    "management_representation": [
+      {
+        "section": "NOTE 38: MANAGEMENT REPRESENTATION",
+        "label": "**Disclosure Statement**",
+        "is_bold": true,
+        "is_header": true
+      },
+      {
+        "label": "Contingent liabilities and commitments",
+        "source": "conditional",
+        "description_if_not_found": "There are no contingent liabilities and commitments as at 31 March 2025, 31 March 2024, and 31 March 2023.",
+        "description_if_found": null
+      }
+    ],
+
+    "gl_breakdown": [
+      {
+        "section": "NOTE 38: GL CODE BREAKDOWN (Contingent Liabilities and Commitments)",
+        "categories": [
+          "Capital commitments",
+          "Operating lease commitments",
+          "Service contract obligations",
+          "Corporate guarantees",
+          "Legal claims",
+          "Tax disputes"
+        ],
+        "format": "GL Code | GL Code Description | Ind AS Major | Ind AS Minor | 31 March 2025 (MYR) | 31 March 2024 (MYR) | 31 March 2023 (MYR)",
+        "show_subtotal": true,
+        "subtotal_label": "Total Potential Commitments and Contingencies"
+      }
+    ]
+  },
+
+  "additional_instructions": "## Calculation Steps:\n\n1. Filter CPM.csv for GL codes matching categories listed above.\n2. Extract GL Code, Description, Ind AS Major/Minor, and values for Mar'25, Mar'24, Mar'23.\n3. Use PL_Statement and Balance_Sheet files to validate operating lease and service commitments.\n4. If no matching GLs or values are found, display management representation message first.\n5. Format all amounts in MYR with comma separators and proper sign conventions.\n6. Round only after final aggregation.\n7. If any category has no data, display 'Nil' or '0'.\n8. Ensure completeness and consistency across all periods."
+}

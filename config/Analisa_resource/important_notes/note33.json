@@ -1,0 +1,104 @@
+{
+    "note_number": "NOTE 33",
+    "note_title": "Financial Instruments - Analisa",
+    "output_file": "company_note_33_financial_instruments_analisa.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column (TB_FINAL_ANALISA_HOLDING.csv). Financial Assets (Debit) retain sign. Financial Liabilities (Credit) must be sign-flipped to display as positive values. Totals are extracted from the Balance Sheet auxiliary file.",
+    "categories": [
+        "Investment in subsidiaries",
+        "Cash and cash equivalents",
+        "Other bank balances",
+        "Loans",
+        "Other financial assets",
+        "Borrowings",
+        "Trade payables",
+        "Lease liabilities",
+        "Other financial liabilities"
+    ],
+    "output_format": [
+        {
+            "label": "(I) Financial Assets (Measured at Amortised Cost)",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Investment in subsidiaries",
+            "ind_as_minor": ["Investment in subsidiaries"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Cash and cash equivalents",
+            "ind_as_minor": ["Cash and cash equivalents"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other bank balances",
+            "ind_as_minor": ["Other bank balances"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Loans",
+            "ind_as_minor": ["Loans"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other financial assets",
+            "ind_as_minor": ["Other financial assets"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Total financial assets",
+            "ind_as_minor": null,
+            "is_total": true,
+            "source_file": "Balance_Sheet_Analisa.xlsx",
+            "source_mapping": "Total Financial Assets",
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(II) Financial Liabilities (Measured at Amortised Cost)",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Borrowings",
+            "ind_as_minor": ["Borrowings"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Trade payables",
+            "ind_as_minor": ["Trade payables"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Lease liabilities",
+            "ind_as_minor": ["Lease liabilities"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Other financial liabilities",
+            "ind_as_minor": ["Other financial liabilities"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Total financial liabilities",
+            "ind_as_minor": null,
+            "is_total": true,
+            "source_file": "Balance_Sheet_Analisa.xlsx",
+            "source_mapping": "Total Financial Liabilities",
+            "bold": true,
+            "show_line": true
+        }
+    ],
+    "additional_instructions": "This note details the breakdown of financial instruments by category (Amortised Cost) using **TB_FINAL_ANALISA_HOLDING.csv**. The two final totals must be extracted from the output Balance Sheet auxiliary file (**Balance_Sheet_Analisa.xlsx**) to ensure reconciliation. Financial Liabilities (credit balances) must be sign-flipped to display positively. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

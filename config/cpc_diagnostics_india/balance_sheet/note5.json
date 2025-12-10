@@ -1,0 +1,59 @@
+{
+  "note_number": "NOTE 5",
+  "note_title": "Investments",
+  "output_file": "company_note_5_investments.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract investment values from trial balance. Sum values from specified GL codes.",
+  "categories": [
+    "Non-current investments"
+  ],
+  "output_format": [
+    {
+      "label": "Investments",
+      "ind_as_minor": null,
+      "is_major_section": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "TABLE_HEADER",
+      "columns": [
+        "Particulars",
+        "As at 30 June 2025"
+      ],
+      "is_table_structure": true
+    },
+    {
+      "label": "Non-current investments",
+      "ind_as_minor": null,
+      "is_subsection_header": true,
+      "bold": true
+    },
+    {
+      "label": "Non-current investments",
+      "ind_as_minor": [
+        "Non-current investments"
+      ],
+      "aggregation": "sum",
+      "indent_level": 0
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Total Investments",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Non-current investments"
+      ],
+      "show_line": true,
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 5: INVESTMENTS**\n\nPresentation Requirements:\n\nTABLE STRUCTURE:\n- Column headers: Particulars | As at 30 June 2025\n- Amounts in Indian numbering system.\n\nCONTENT:\n1. **Investments** (Major Header)\n2. **Non-current investments** (Sub-header)\n3. Line item: 'Non-current investments' -> Sum of GL category 'Non-current investments'.\n4. **Total Investments**: Calculated total of the above.\n\nFormatting:\n- Bold the final total.\n- Double-underline the final total.\n- Ensure the output file name is 'cpc_note_5_investments.md'."
+}

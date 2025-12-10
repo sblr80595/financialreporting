@@ -1,0 +1,30 @@
+{
+  "note_number": "NOTE 28",
+  "note_title": "Employee Benefits Expense",
+  "output_file": "analisa_note_28_employee_benefits_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Present these as positive values in the final notes.",
+  "categories": [
+    "Employee Benefits Expense"
+  ],
+  "output_format": [
+    {
+      "label": "**Employee Benefits Expense**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Salaries and wages",
+      "ind_as_minor": "Salaries and wages"
+    },
+    {
+      "label": "Contributions to provident and other funds",
+      "ind_as_minor": "Contributions to provident and other funds"
+    },
+    {
+      "label": "Staff welfare expenses",
+      "ind_as_minor": "Staff welfare expenses"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minors: 'Salaries and wages', 'Contributions to provident and other funds', and 'Staff welfare expenses'. Present each category separately and show the total. All amounts should be displayed as positive values."
+}

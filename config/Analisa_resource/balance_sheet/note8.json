@@ -1,0 +1,55 @@
+{
+    "note_number": "NOTE 8",
+    "note_title": "Inventories",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For inventory items, take positive debit balances. For provisions, take the absolute value of credit balances.",
+    "categories": [
+        "Traded goods"
+    ],
+    "period_column_override": "Total June 25",
+    "output_format": [
+        {
+            "label": "Finished goods (refer note below)",
+            "ind_as_minor": null,
+            "is_reference": true
+        },
+        {
+            "label": "Traded goods",
+            "ind_as_minor": [
+                "Traded goods"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "SUBTOTAL_INVENTORY",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "sum_of": [
+                "Traded goods"
+            ],
+            "show_line": true
+        },
+        {
+            "label": "Less: Provision for inventory obsolescence",
+            "ind_as_minor": [],
+            "is_deduction": true,
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "TOTAL_INVENTORIES",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "subtract",
+            "sum_of": [
+                "SUBTOTAL_INVENTORY"
+            ],
+            "subtract": [
+                "Less: Provision for inventory obsolescence"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n1. 'Finished goods (refer note below)' - reference line, no amount shown\n2. 'Traded goods' - sum of category: ['Traded goods']\n3. Draw a line and show subtotal (SUBTOTAL_INVENTORY), which is equal to 'Traded goods'\n4. 'Less: Provision for inventory obsolescence' - deduct value from categories: [] (No specific provision found, resulting in zero)\n5. Draw a line and show final total (TOTAL_INVENTORIES)\n6. Format all amounts in Indian numbering system without ₹ symbol.\n7. Inventory is valued at lower of cost or Net Realisable Value (NRV)."
+}

@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 28",
+  "note_title": "Employee Benefits Expense",
+  "output_file": "neoscience_note_28_employee_benefits_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. This includes director's remuneration as well as staff costs.",
+  "categories": [
+    "Salaries and wages",
+    "Contributions to provident and other funds",
+    "Salaries, wages and bonus"
+  ],
+  "output_format": [
+    {
+      "label": "Salaries, wages and bonus",
+      "ind_as_minor": "Salaries, wages and bonus"
+    },
+    {
+      "label": "Contributions to provident and other funds",
+      "ind_as_minor": "Contributions to provident and other funds"
+    },
+    {
+      "label": "Staff welfare expenses",
+      "ind_as_minor": "Staff welfare expenses"
+    }
+  ],
+  "additional_instructions": "Employee benefits include both director and staff costs:\n\n**Salaries, wages and bonus** includes:\n- Salaries and wages: GL 9D02/00002 (Director's Salary), 9S01/00001 (Staff's Salary)\n- Allowances: GL 9D02/00003 (Director's Allowance), 9S01/00002 (Staff's Allowance)\n- Commission: GL 9S01/00005 (Staff's Commission)\n- Bonus: GL 9S01/00003 (Staff's Bonus) if applicable\n\n**Salaries, wages and bonus** category also includes:\n- GL 9D02/00010 (Director's HRDF)\n- GL 9D02/00009 (Director's Outstation Allowance)\n- GL 9S01/00011 (Staff's Outstation Allowance)\n- GL 9S01/00012 (Staff's HRDF)\n- GL 9C03/00000 (Casual Wages)\n\n**Contributions to provident and other funds** includes:\n- EPF: GL 9D02/00005 (Director's EPF), 9S01/00006 (Staff's EPF)\n- SOCSO: GL 9D02/00006 (Director's SOCSO), 9S01/00007 (Staff's SOCSO)\n- EIS: GL 9D02/00007 (Director's EIS), 9S01/00008 (Staff's EIS)\n\n**Staff welfare expenses** includes:\n- GL 9S01/00009 (Staff's Medical)\n- GL 9S01/00010 (Staff's Hiring)\n- GL 9S07/00000 (Staff Refreshment)\n- GL 9T05/00000 (Training Fee/Expenses)\n\nNote: Even though some GLs have Ind AS Minor as 'Salaries and wages', they should be grouped under 'Salaries, wages and bonus' for Schedule III presentation. Ensure all employee-related costs are captured under the appropriate categories."
+}

@@ -1,0 +1,106 @@
+{
+    "note_number": "NOTE 34",
+    "note_title": "Financial Instruments - Risk Management",
+    "output_file": "company_note_34_financial_instruments_risk.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract values from TB_FINAL_LIFELINE_HOLDINGS.csv. Liabilities (Credit) must be sign-flipped for the Liquidity Maturity table.",
+    "categories": [
+        "Trade Receivables Gross",
+        "ECL Provision",
+        "FL Maturity < 1 year",
+        "FL Maturity 1-5 years",
+        "FL Maturity > 5 years",
+        "Net Foreign Currency Exposure",
+        "Variable Rate Borrowings"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Credit Risk",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "I. Maximum Exposure to Credit Risk (Qualitative Summary)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "II. Provision for Expected Credit Losses (ECL)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Gross Carrying Amount of Financial Assets",
+            "ind_as_minor": ["Trade Receivables Gross"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Less: Expected Credit Loss Provision",
+            "ind_as_minor": ["ECL Provision"],
+            "aggregation": "sum",
+            "is_deduction": true
+        },
+        {
+            "label": "Carrying amount net of impairment provision",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "subtract",
+            "sum_of": ["Gross Carrying Amount of Financial Assets"],
+            "subtract": ["Less: Expected Credit Loss Provision"],
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Liquidity Risk - Maturity Analysis of Financial Liabilities",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Less than 1 year (Current)",
+            "ind_as_minor": ["FL Maturity < 1 year"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "1 to 5 years",
+            "ind_as_minor": ["FL Maturity 1-5 years"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Greater than 5 years (Non-current)",
+            "ind_as_minor": ["FL Maturity > 5 years"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(C) Market Risk",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "I. Foreign Currency Risk (Net Exposure for Sensitivity)",
+            "ind_as_minor": ["Net Foreign Currency Exposure"],
+            "aggregation": "sum",
+            "is_subheading": true
+        },
+        {
+            "label": "II. Interest Rate Risk (Total Variable Rate Borrowings)",
+            "ind_as_minor": ["Variable Rate Borrowings"],
+            "aggregation": "sum",
+            "is_subheading": true
+        }
+    ],
+    "additional_instructions": "This note requires extensive qualitative text disclosures alongside the quantitative tables. The quantitative figures are sourced from TB_FINAL_LIFELINE_HOLDINGS.csv, representing the input required for the standard Ind AS 109/IFRS 7 risk tables. Note that the full Liquidity Maturity analysis requires values for ALL financial liabilities (Trade Payables, Borrowings, etc.) to be bucketed into the three categories. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

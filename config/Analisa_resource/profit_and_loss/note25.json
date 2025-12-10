@@ -1,0 +1,18 @@
+{
+  "note_number": "NOTE 25",
+  "note_title": "Other Income",
+  "output_file": "analisa_note_25_other_income.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the final notes.",
+  "categories": [
+    "Other Income"
+  ],
+  "output_format": [
+    {
+      "label": "**Other Income**",
+      "ind_as_minor": "Other Income",
+      "is_header": true
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Other Income'. Convert credit balances to positive values for presentation. This includes items like interest income, dividend income, profit on sale of assets, miscellaneous income, etc."
+}

@@ -1,0 +1,68 @@
+{
+    "note_number": "NOTE 36",
+    "note_title": "Other Statutory Information (Analisa)",
+    "output_file": "company_note_36_statutory_information_analisa.txt",
+    "statement_type": "statutory-disclosure",
+    "summation_rule": "The values for this note are primarily qualitative/explanatory text. Any quantitative amounts mentioned (e.g., amounts for disputed taxes, utilization of funds) must be extracted from TB_FINAL_ANALISA_HOLDING.csv or a dedicated statutory disclosure file.",
+    "categories": [
+        "Undisclosed Income/Benami Property",
+        "Compliance with scheme of arrangements",
+        "MSMED Compliance (Sec 43B(h))",
+        "CSR Expenditure Compliance",
+        "Borrowings for Working Capital/Specific Purposes",
+        "Utilization of Funds for Non-specific Purposes",
+        "Details of Proceedings related to Undisclosed Income",
+        "Title Deeds of Immovable Property"
+    ],
+    "output_format": [
+        {
+            "label": "1. Details of proceedings under Benami Property Transactions Act, 1988 or on undisclosed income",
+            "ind_as_minor": ["Undisclosed Income/Benami Property"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        },
+        {
+            "label": "2. Compliance with Approved Scheme of Arrangements",
+            "ind_as_minor": ["Compliance with scheme of arrangements"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        },
+        {
+            "label": "3. Compliance with provisions of Section 43B(h) of Income Tax Act, 1961 (MSMED Act)",
+            "ind_as_minor": ["MSMED Compliance (Sec 43B(h))"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        },
+        {
+            "label": "4. Compliance with Corporate Social Responsibility (CSR) obligations",
+            "ind_as_minor": ["CSR Expenditure Compliance"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        },
+        {
+            "label": "5. Borrowing funds from banks or financial institutions for the purpose of working capital",
+            "ind_as_minor": ["Borrowings for Working Capital/Specific Purposes"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        },
+        {
+            "label": "6. Utilisation of funds for purposes other than those for which they were borrowed",
+            "ind_as_minor": ["Utilization of Funds for Non-specific Purposes"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        },
+        {
+            "label": "7. Details of proceedings relating to undisclosed income under the Income Tax Act, 1961",
+            "ind_as_minor": ["Details of Proceedings related to Undisclosed Income"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        },
+        {
+            "label": "8. Title deeds of immovable property not held in the name of the company",
+            "ind_as_minor": ["Title Deeds of Immovable Property"],
+            "aggregation": "qualitative_text",
+            "bold": true
+        }
+    ],
+    "additional_instructions": "This is a purely statutory and explanatory disclosure note. For each of the eight line items, the system must pull the required explanatory text from a dedicated qualitative/disclosure input file for Analisa, or use the provided text from the Trial Balance/input mapping. Any quantitative figures embedded in the text must be in the Indian numbering system (e.g., 1,23,456)."
+}

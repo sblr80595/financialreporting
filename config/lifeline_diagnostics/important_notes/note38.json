@@ -1,0 +1,17 @@
+{
+    "note_number": "NOTE 38",
+    "note_title": "Statutory Information and Additional Disclosures",
+    "output_file": "company_note_38_statutory_information.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Not Applicable - This is a qualitative disclosure note. All monetary values are expected to be Nil or derived from separate supporting schedules.",
+    "categories": [],
+    "output_format": [
+        {
+            "label": "*Statutory and Additional Disclosures*",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "This note is purely explanatory and must adhere to all mandatory disclosure requirements under the Companies Act, 2013, and other applicable statutes. The output should be comprehensive and qualitative, structured using the following mandatory subheadings:\n\n**A. Details of Specified Bank Notes (SBNs) (if applicable for the period)**\n- Disclosure regarding demonetised currency if the reporting period overlaps with demonetisation or related rules.\n\n**B. Details of benami property held**\n- Disclosure under the Prohibition of Benami Property Transactions Act, 1988.\n\n**C. Details of borrowings from banks/financial institutions**\n- Whether funds have been utilized for the purpose for which they were borrowed.\n- Whether funds have been advanced or loaned to intermediaries.\n\n**D. Details of non-compliance with statutory payments**\n- Amounts unpaid at the year-end relating to provident fund, ESI, GST, income tax, or other material statutory dues.\n\n**E. Undisclosed income**\n- Disclosure under Income Tax laws for any transactions where income was not recorded.\n\n**F. Details of application pending for a capital fund**\n- If the company is required to meet certain funding criteria (e.g., from government schemes).\n\n**G. Details of adherence to the number of layers of companies**\n- Compliance with restrictions on the number of subsidiary layers (if applicable).\n\n**H. Details of current investments in subsidiaries/associates**\n- If held for sale or trading purposes (requires cross-reference to Investments note).\n\n**I. Other items requiring specific disclosure**\n- Any other matter mandated by the Indian Accounting Standards or the Companies Act that is not covered elsewhere.\n\n**Formatting:** The output must be narrative and structured using clear sub-sections. No monetary values are expected unless specifically mandated by a sub-section (in which case, Nil or '-' should be used if not applicable)."
+}

@@ -1,0 +1,31 @@
+{
+  "note_number": "NOTE 21",
+  "note_title": "Other current liabilities",
+  "output_file": "lifeline_diagnostics_note_21_other_current_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "FORCE ZERO VALUES ONLY. Ignore all trial balance data.",
+  "generate_if_empty": true,
+  "skip_data_matching": true,
+  "categories": [],
+  "output_format": [
+    {
+      "label": "Advances from Customers",
+      "ind_as_minor": null,
+      "default_value": 0,
+      "hardcoded_value": 0
+    },
+    {
+      "label": "Statutory dues payable",
+      "ind_as_minor": null,
+      "default_value": 0,
+      "hardcoded_value": 0
+    },
+    {
+      "label": "Other Payable",
+      "ind_as_minor": null,
+      "default_value": 0,
+      "hardcoded_value": 0
+    }
+  ],
+  "additional_instructions": "**FORCE ZERO VALUES - DO NOT PROCESS TRIAL BALANCE DATA**\n\nThis note is intentionally configured to ALWAYS return zero values.\n\nDO NOT:\n- Match any accounts from trial balance\n- Sum any GL accounts\n- Use Ind AS Minor or Major for matching\n- Process any trial balance data\n- Look for 'Other current liabilities' in any column\n\nALWAYS:\n- Return 0 for Advances from Customers\n- Return 0 for Statutory dues payable  \n- Return 0 for Other Payable\n- Ignore all trial balance content for this note\n\nThis note should display:\n```\nNOTE 21: Other current liabilities\n                                    As at          As at\n                               31-Mar-2025    31-Mar-2024\nAdvances from Customers                  0              0\nStatutory dues payable                   0              0\nOther Payable                            0              0\n──────────────────────────────────────────────────────────\nTotal                                    0              0\n```\n\n**CRITICAL: Treat this note as a zero-value placeholder. Do not match or sum any data.**"
+}

@@ -1,0 +1,47 @@
+{
+    "note_number": "NOTE 13",
+    "note_title": "Other financial assets-current",
+    "output_file": "company_note_13_other_financial_assets_current.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For other financial assets, take positive debit balances from the trial balance.",
+    "categories": [
+        "Security deposits (OFA-Current)"
+    ],
+    "output_format": [
+        {
+            "label": "(Unsecured and considered good, valued at amortised cost)",
+            "ind_as_minor": null,
+            "is_subheading": true
+        },
+        {
+            "label": "Security deposits",
+            "ind_as_minor": [
+                "Security deposits (OFA-Current)"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Amount due from related parties (refer note 39)",
+            "ind_as_minor": [],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Other recoverable",
+            "ind_as_minor": [],
+            "aggregation": "sum"
+        },
+        {
+            "label": "TOTAL_OTHER_FINANCIAL_ASSETS_CURRENT",
+            "ind_as_minor": null,
+            "is_total": true,
+            "sum_of": [
+                "Security deposits",
+                "Amount due from related parties (refer note 39)",
+                "Other recoverable"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n1. Show '(Unsecured and considered good, valued at amortised cost)' as subheading in italics (no amount)\n2. 'Security deposits' - from category list: ['Security deposits (OFA-Current)']\n3. 'Amount due from related parties (refer note 39)' - from category list: [] (preserve note reference)\n4. 'Other recoverable' - from category list: []\n5. Show total of all three line items\n8. Format all amounts in Indian numbering system without ₹ symbol.\n9. These are current financial assets measured at amortised cost as per Ind AS 109."
+}

@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 25",
+  "note_title": "Other Income",
+  "output_file": "everlife_diagnostics_note_25_other_income.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the final notes. For 'Gain on sale of property, plant and equipment', sum algebraically and present only if the net result is a gain (positive).",
+  "categories": [
+    "from banks",
+    "Profit on sale of property, plant and equipment",
+    "Miscellaneous income"
+  ],
+  "output_format": [
+    {
+      "label": "Interest income from banks",
+      "ind_as_minor": "from banks"
+    },
+    {
+      "label": "Gain on sale of property, plant and equipment",
+      "ind_as_minor": "Profit on sale of property, plant and equipment"
+    },
+    {
+      "label": "Miscellaneous income",
+      "ind_as_minor": "Miscellaneous income"
+    }
+  ],
+  "additional_instructions": "This note captures other income items that are not part of regular operations.\n\n**Interest income from banks**: Sum all GL accounts where Ind AS Minor is 'from banks'. This represents interest earned on bank deposits and current accounts. Convert negative (credit) balances to positive for presentation.\n\n**Gain on sale of property, plant and equipment**: Sum all GL accounts where Ind AS Minor is 'Profit on sale of property, plant and equipment'. This represents gains realized on disposal of fixed assets. If the result is positive (gain), display it. If negative (loss), it should be reported in Other Expenses (Note 31) instead.\n\n**Miscellaneous income**: Sum all GL accounts where Ind AS Minor is 'Miscellaneous income'. This includes sundry income items that don't fit into other specific categories.\n\nAll income items should be presented as positive amounts in the final note, representing credits to the profit and loss statement."
+}

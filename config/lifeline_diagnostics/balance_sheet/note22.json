@@ -1,0 +1,38 @@
+{
+  "note_number": "NOTE 22",
+  "note_title": "Provisions",
+  "output_file": "lifeline_diagnostics_note_22_provisions.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Provisions are typically credit balances (liabilities). Present as positive amounts in the balance sheet. Calculate separate totals for current and non-current portions.",
+  "generate_if_empty": true,
+  "match_on_minor_only": true,
+  "categories": [
+    "Provision for Income Tax",
+    "Retirement Benefits Payable NC"
+  ],
+  "output_format": [
+    {
+      "label": "**Provisions -non current**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Provision for Income Tax",
+      "ind_as_minor": "Provision for Income Tax",
+      "default_value": 0,
+      "classification": "non-current"
+    },
+    {
+      "label": "**Provisions - current**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Retirement Benefits Payable",
+      "ind_as_minor": "Retirement Benefits Payable NC",
+      "default_value": 0,
+      "classification": "current"
+    }
+  ],
+  "additional_instructions": "This note discloses provisions (both current and non-current) recognized in the balance sheet as per Ind AS 37 - Provisions, Contingent Liabilities and Contingent Assets.\n\n**CRITICAL MATCHING INSTRUCTION**: \nONLY sum GL accounts where the 'Ind AS Minor' column exactly matches the specified categories.\n- For current provisions: Match 'Provision for Income Tax'\n- For non-current provisions: Match 'Retirement Benefits Payable NC'\nDO NOT match on 'Ind AS Major' column or any other column.\n\n**Provisions - current** - This is a section header.\n\n**Provision for Income Tax**: Sum all GL accounts where Ind AS Minor = 'Provision for Income Tax'. This includes:\n- Provision for current year income tax\n- Income tax payable for the current assessment year\n- Estimated tax liability on current year profits\n- Tax provisions pending final assessment\n- Additional tax provisions based on tax audit adjustments\n- Less: Advance tax and TDS credits (if netted in the same account)\n\nProvision for income tax represents the estimated tax liability on taxable income for the current year as per Income Tax Act, 1961. This is the current portion expected to be settled within 12 months from the reporting date.\n\n**Provisions - non-current** - This is a section header.\n\n**Retirement Benefits Payable**: Sum all GL accounts where Ind AS Minor = 'Retirement Benefits Payable NC'. This includes:\n- Provision for gratuity (non-current portion)\n- Provision for leave encashment (non-current portion)\n- Provision for pension benefits (non-current portion)\n- Provision for post-employment benefits\n- Provision for long-term employee benefits\n- Other retirement benefit obligations due after 12 months\n\nRetirement benefits payable represent the non-current portion of employee benefit obligations under Ind AS 19 - Employee Benefits. These are provisions for defined benefit plans and other long-term employee benefits expected to be settled after 12 months from the reporting date.\n\nMatching Logic:\n- Column to match: 'Ind AS Minor' ONLY\n- Values to match for current: 'Provision for Income Tax'\n- Values to match for non-current: 'Retirement Benefits Payable NC'\n- DO NOT use 'Ind AS Major' column for matching\n\nPresentation Notes:\n1. Show current and non-current provisions separately\n2. Provisions are liabilities shown on the balance sheet\n3. Present as positive amounts (credit balances)\n4. Current provisions: Expected to be settled within 12 months\n5. Non-current provisions: Expected to be settled after 12 months\n6. Follow Schedule III format for balance sheet presentation\n7. Tax provision may require adjustment based on final assessment or return filing\n8. Retirement benefits should be measured as per actuarial valuation (Ind AS 19)\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for provisions disclosure under Ind AS. Provisions are classified as current or non-current based on the expected timing of settlement.\n\nAdditional Disclosures (if required):\n- Movement in provisions during the year\n- Nature and timing of expected settlement\n- Uncertainties about the amount or timing\n- Major assumptions made for actuarial valuation (for retirement benefits)\n- Sensitivity analysis for key assumptions (for retirement benefits)\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

@@ -1,0 +1,34 @@
+{
+  "note_number": "NOTE 12",
+  "note_title": "Loans-current",
+  "output_file": "company_a_note_12_loans_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For loans, take positive debit balances from the trial balance.",
+  "categories": [
+    "Loan to related parties"
+  ],
+  "output_format": [
+    {
+      "label": "(Unsecured, considered good)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "Loan to related parties* (Refer note 39)",
+      "ind_as_minor": [
+        "Loan to related parties"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_LOANS_CURRENT",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Loan to related parties* (Refer note 39)"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. Show '(Unsecured, considered good)' as subheading in italics (no amount)\n2. 'Loan to related parties* (Refer note 39)' - from category 'Loan to related parties' (preserve asterisk and note reference)\n3. Show total (which is same as the line item value since there's only one item)\n4. Example: Loan to related parties: 4,68,06,277; Total: 4,68,06,277\n6. Format all amounts in Indian numbering system without \u20b9 symbol.\n7. These are current loans (recoverable within 12 months) measured at amortised cost as per Ind AS 109.\n8. The subheading indicates security status and credit quality as required by Schedule III.\n9. The asterisk (*) and cross-reference to Note 39 are mandatory for related party loan disclosures as per Ind AS 24.\n10. Loans are financial assets with debit balances (positive values in trial balance).\n11. Related party loans require additional disclosures in Note 39 regarding terms, interest rates, and repayment schedules."
+}

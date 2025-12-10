@@ -1,0 +1,17 @@
+{
+  "note_number": "NOTE 26",
+  "note_title": "Purchases of Stock-in-Trade",
+  "output_file": "everlife_diagnostics_note_26_purchases_stock_in_trade.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Sum all related GL accounts algebraically (respecting debit/positive and credit/negative signs). Purchases are typically debit balances (positive). Include all purchase-related costs such as freight, custom duty, and other direct purchase expenses. Deduct purchase returns and discounts received.",
+  "categories": [
+    "Purchases of traded goods"
+  ],
+  "output_format": [
+    {
+      "label": "Purchases of traded goods",
+      "ind_as_minor": "Purchases of traded goods"
+    }
+  ],
+  "additional_instructions": "This note captures all purchases of stock-in-trade during the period.\n\n**Purchases of traded goods**: Sum all GL accounts where Ind AS Minor is 'Purchases of traded goods'. This includes:\n- Main purchases of goods for resale\n- Freight inward/carriage inward on purchases\n- Custom duty on imports\n- Packaging materials related to purchases\n- Any other direct costs attributable to bringing goods to their present location and condition\n- Less: Purchase returns (credit entries)\n- Less: Discounts received on purchases (credit entries)\n\nSum algebraically - do not convert negative values to positive. The final amount represents net purchases.\n\nNote: Opening stock and closing stock should NOT be included in this note - they belong to Note 27 (Changes in Inventories)."
+}

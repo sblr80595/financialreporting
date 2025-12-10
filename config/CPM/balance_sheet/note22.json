@@ -1,0 +1,34 @@
+{
+  "note_number": "NOTE 22",
+  "note_title": "Provisions - current",
+  "output_file": "company_a_note_22_provisions_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For provisions, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation as liability).",
+  "categories": [
+    "Compensated absences (Current)"
+  ],
+  "output_format": [
+    {
+      "label": "Employees benefits",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Compensated absences",
+      "ind_as_minor": [
+        "Compensated absences (Current)"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_PROVISIONS_CURRENT",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Compensated absences"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. Show 'Employees benefits' as header (no amount)\n2. 'Compensated absences' - from category 'Compensated absences (Current)'\n3. Show total (which is same as the line item value since there's only one item under employee benefits)\n4. Example: Compensated absences: 2,10,260; Total: 2,10,260\n6. Format all amounts in Indian numbering system without \u20b9 symbol.\n7. This represents current portion of employee benefit provisions (due within 12 months).\n8. Provisions are liabilities with credit balances (may appear negative in trial balance) - take absolute values for presentation.\n9. Compensated absences include provision for earned leave, privilege leave, etc. as per Ind AS 19."
+}

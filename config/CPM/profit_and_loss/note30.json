@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 30",
+  "note_title": "Depreciation and Amortisation Expense",
+  "output_file": "company_a_note_30_depreciation_amortisation.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically.",
+  "categories": [
+    "Depreciation on property, plant and equipment",
+    "Depreciation on right of use assets"
+  ],
+  "output_format": [
+    {
+      "label": "Depreciation on property, plant and equipment (refer note 4A)",
+      "ind_as_minor": "Depreciation on property, plant and equipment"
+    },
+    {
+      "label": "Depreciation on right of use assets (refer note 4B)",
+      "ind_as_minor": "Depreciation on right of use assets"
+    }
+  ],
+  "additional_instructions": "Depreciation and amortisation are non-cash expenses that allocate the cost of assets over their useful lives. Include cross-references to Note 4A (PPE) and Note 4B (ROU Assets). If amortisation is zero, still display as \u20b90 with '(if any)' notation."
+}

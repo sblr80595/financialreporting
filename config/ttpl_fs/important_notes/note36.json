@@ -1,0 +1,86 @@
+{
+  "note_number": "NOTE 36",
+  "note_title": "Contingent Liabilities and Commitments",
+  "output_file": "ttpl_note_36_contingent_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the 'period' column. Balances should always be presented as positive amounts, irrespective of their original debit/credit nature.",
+  "categories": [
+    "Contingent Liabilities - Claims against the Company not acknowledged as debts",
+    "Contingent Liabilities - Guarantees given",
+    "Contingent Liabilities - Other contractual disputes",
+    "Commitments - Estimated amount of contracts remaining to be executed on Capital Account"
+  ],
+  "output_format": [
+    {
+      "label": "A. Contingent Liabilities",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Claims against the Company not acknowledged as debts",
+      "ind_as_minor": [
+        "Contingent Liabilities - Claims against the Company not acknowledged as debts"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "ii) Guarantees provided by the Company",
+      "ind_as_minor": [
+        "Contingent Liabilities - Guarantees given"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "iii) Other contractual disputes and matters under appeal",
+      "ind_as_minor": [
+        "Contingent Liabilities - Other contractual disputes"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "TOTAL CONTINGENT LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "i) Claims against the Company not acknowledged as debts",
+        "ii) Guarantees provided by the Company",
+        "iii) Other contractual disputes and matters under appeal"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Commitments",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Estimated amount of contracts remaining to be executed on Capital Account",
+      "ind_as_minor": [
+        "Commitments - Estimated amount of contracts remaining to be executed on Capital Account"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "TOTAL COMMITMENTS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Estimated amount of contracts remaining to be executed on Capital Account"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 35: CONTINGENT LIABILITIES AND COMMITMENTS**\n\n1.  **A. Contingent Liabilities**: Sum of potential obligations (claims, guarantees, disputes).\n2.  **B. Commitments**: Sum of non-cancellable future spending, primarily **Capital Commitments**.\n\nAccounting Context:\n-   This note complies with **Ind AS 37** (Provisions, Contingent Liabilities and Contingent Assets).\n-   **Contingent Liabilities** are potential obligations whose existence will be confirmed only by the occurrence or non-occurrence of one or more uncertain future events not wholly within the control of the entity. They are NOT recognized on the Balance Sheet but disclosed.\n-   **Commitments** are future expenditures (often for capital expenditure - Capex) where the company is legally obligated, but the liability is not yet incurred. They are disclosed separately from liabilities.\n-   All amounts should be presented as positive (disclosure only).\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456)."
+}

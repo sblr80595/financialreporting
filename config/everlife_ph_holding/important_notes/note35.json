@@ -1,0 +1,86 @@
+{
+  "note_number": "NOTE 35",
+  "note_title": "Contingent Liabilities and Commitments",
+  "output_file": "everlife_ph_holdings_note_34_contingent_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the 'period' column. Balances should always be presented as positive amounts, irrespective of their original debit/credit nature.",
+  "categories": [
+    "Contingent Liabilities - Claims against the Company not acknowledged as debts",
+    "Contingent Liabilities - Guarantees given",
+    "Contingent Liabilities - Other contractual disputes",
+    "Commitments - Estimated amount of contracts remaining to be executed on Capital Account"
+  ],
+  "output_format": [
+    {
+      "label": "A. Contingent Liabilities",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Claims against the Company not acknowledged as debts",
+      "ind_as_minor": [
+        "Contingent Liabilities - Claims against the Company not acknowledged as debts"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "ii) Guarantees provided by the Company",
+      "ind_as_minor": [
+        "Contingent Liabilities - Guarantees given"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "iii) Other contractual disputes and matters under appeal",
+      "ind_as_minor": [
+        "Contingent Liabilities - Other contractual disputes"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "TOTAL CONTINGENT LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "i) Claims against the Company not acknowledged as debts",
+        "ii) Guarantees provided by the Company",
+        "iii) Other contractual disputes and matters under appeal"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Commitments",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Estimated amount of contracts remaining to be executed on Capital Account",
+      "ind_as_minor": [
+        "Commitments - Estimated amount of contracts remaining to be executed on Capital Account"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "TOTAL COMMITMENTS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Estimated amount of contracts remaining to be executed on Capital Account"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "This note requires both quantitative disclosure (captured here) and a detailed narrative explaining the nature, timing, and estimate of financial effect for each contingent liability (not captured in this prompt). All amounts should be presented as positive."
+}

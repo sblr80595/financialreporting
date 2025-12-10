@@ -1,0 +1,168 @@
+{
+  "note_number": "NOTE 32",
+  "note_title": "Financial Instruments",
+  "output_file": "everlife_ph_holdings_note_32_financial_instruments.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the 'period' column. For Assets, take debit balances (positive value). For Liabilities, take credit balances (negative value), but present them as positive numbers by flipping the sign (multiply by -1).",
+  "categories": [
+    "Financial Assets - Amortised Cost - Trade Receivables",
+    "Financial Assets - Amortised Cost - Loans to Related Parties",
+    "Financial Assets - Amortised Cost - Other Receivables",
+    "Financial Assets - Amortised Cost - Cash and Bank Balances",
+    "Financial Assets - FVTPL - Mutual Funds",
+    "Financial Assets - FVTOCI - Equity Investments",
+    "Financial Liabilities - Amortised Cost - Trade Payables",
+    "Financial Liabilities - Amortised Cost - Loans from Related Parties",
+    "Financial Liabilities - Amortised Cost - Other Payables / Accruals",
+    "Financial Liabilities - Amortised Cost - Borrowings (Term Loan)",
+    "Financial Liabilities - FVTPL - Contingent Consideration"
+  ],
+  "output_format": [
+    {
+      "label": "A. Financial Assets",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Measured at Amortised Cost",
+      "is_section_header": true
+    },
+    {
+      "label": "Trade Receivables (net of ECL)", 
+      "ind_as_minor": [
+        "Financial Assets - Amortised Cost - Trade Receivables"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Loans to subsidiaries and other related parties", 
+      "ind_as_minor": [
+        "Financial Assets - Amortised Cost - Loans to Related Parties"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Other bank balances and deposits",
+      "ind_as_minor": [
+        "Financial Assets - Amortised Cost - Other Receivables"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Cash and Cash Equivalents", 
+      "ind_as_minor": [
+        "Financial Assets - Amortised Cost - Cash and Bank Balances"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Measured at Fair Value Through Profit or Loss (FVTPL)",
+      "is_section_header": true
+    },
+    {
+      "label": "Investments in Mutual Funds", 
+      "ind_as_minor": [
+        "Financial Assets - FVTPL - Mutual Funds"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Measured at Fair Value Through Other Comprehensive Income (FVTOCI)",
+      "is_section_header": true
+    },
+    {
+      "label": "Non-current Equity Investments",
+      "ind_as_minor": [
+        "Financial Assets - FVTOCI - Equity Investments"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "TOTAL FINANCIAL ASSETS",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Trade Receivables (net of ECL)",
+        "Loans to subsidiaries and other related parties",
+        "Other bank balances and deposits",
+        "Cash and Cash Equivalents",
+        "Investments in Mutual Funds",
+        "Non-current Equity Investments"
+      ],
+      "show_line": true,
+      "bold": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Financial Liabilities",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Measured at Amortised Cost",
+      "is_section_header": true
+    },
+    {
+      "label": "Trade Payables (including acceptances)", 
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Trade Payables"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Loans from shareholders and related parties", 
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Loans from Related Parties"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Other financial liabilities (accruals and expenses payable)", 
+      "ind_as_minor": [
+        "Financial Liabilities - Amortised Cost - Other Payables / Accruals",
+        "Financial Liabilities - Amortised Cost - Borrowings (Term Loan)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "Measured at Fair Value Through Profit or Loss (FVTPL)",
+      "is_section_header": true
+    },
+    {
+      "label": "Contingent Consideration for business acquisition", 
+      "ind_as_minor": [
+        "Financial Liabilities - FVTPL - Contingent Consideration"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "TOTAL FINANCIAL LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Trade Payables (including acceptances)",
+        "Loans from shareholders and related parties",
+        "Other financial liabilities (accruals and expenses payable)",
+        "Contingent Consideration for business acquisition"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. Separate the disclosure into 'A. Financial Assets' and 'B. Financial Liabilities'.\n2. Group the line items by the IFRS 9 measurement category (Amortised Cost, FVTPL, FVTOCI).\n3. The labels (particulars) are generic placeholders; verify these against the precise line item descriptions in the source documents.\n4. Ensure all liability amounts are presented as POSITIVE values ('sign_flip': true).\n5. Compute and display the 'TOTAL FINANCIAL ASSETS' and 'TOTAL FINANCIAL LIABILITIES'."
+}

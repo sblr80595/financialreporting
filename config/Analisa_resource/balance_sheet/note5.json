@@ -1,0 +1,65 @@
+{
+    "note_number": "NOTE 5",
+    "note_title": "Investments",
+    "output_file": "company_note_5_investments.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract investment values from trial balance. The single 'Investments in subsidiaries' category is taken as the Net Carrying Amount.",
+    "categories": [
+        "Investments in subsidiaries"
+    ],
+    "period_column_override": "Total June 25",
+    "output_format": [
+        {
+            "label": "Investments",
+            "ind_as_minor": null,
+            "is_major_section": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "TABLE_HEADER",
+            "columns": [
+                "Particulars",
+                "As at 30 June 2025"
+            ],
+            "is_table_structure": true
+        },
+        {
+            "label": "Investment in subsidiaries",
+            "ind_as_minor": null,
+            "is_subsection_header": true,
+            "bold": true
+        },
+        {
+            "label": "Non-current investments (Carried at cost):",
+            "ind_as_minor": null,
+            "is_subheading": true,
+            "italic": true
+        },
+        {
+            "label": "Investment in unquoted equity instruments – at cost.",
+            "ind_as_minor": null,
+            "is_subheading": true,
+            "bold": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "Net carrying amount of Investment in Subsidiaries",
+            "ind_as_minor": [
+                "Investments in subsidiaries"
+            ],
+            "aggregation": "sum",
+            "indent_level": 0,
+            "is_total": true,
+            "show_line": true,
+            "bold": true,
+            "double_underline": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\nThis note presents Investments in a two-column format:\n\nTABLE STRUCTURE:\n- Column headers: Particulars | As at 30 June 2025\n- All amounts in Indian numbering system without ₹ symbol\n- Values are dynamically calculated from trial balance GL codes, NOT hardcoded\n\nHEADER SECTION:\n1. Show 'Investments' as major section header\n2. Add blank row\n3. Show 'Investment in subsidiaries' as subsection header (bold, no amount)\n4. Show 'Non-current investments (Carried at cost):' as subheading (italic, no amount)\n5. Show 'Investment in unquoted equity instruments – at cost.' as subheading (bold, no amount)\n6. Add blank row\n\nINVESTMENT DETAILS (Simplified to single line):\n1. 'Net carrying amount of Investment in Subsidiaries': Sum of category 'Investments in subsidiaries'. This single line represents the final Net Carrying Amount (as no impairment is separately tracked/specified).\n\nTOTAL CALCULATION:\n- The single line is the final total.\n- Value is the algebraic sum of the 'Investments in subsidiaries' category.\n\nFORMATTING NOTES:\n- Bold the final total line\n- Double-underline the final total\n- Right-align all numbers\n- Use Indian Numbering System."
+}

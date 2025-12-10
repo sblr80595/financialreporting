@@ -1,0 +1,18 @@
+# Backend Dockerfile
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Install system dependencies for pyodbc
+RUN apt-get update && apt-get install -y unixodbc unixodbc-dev gcc g++ && rm -rf /var/lib/apt/lists/*
+
+COPY backend/ ./backend/
+COPY backend/requirements.txt ./
+COPY config/ ./config/
+
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+EXPOSE 8001
+
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8001", "--log-level", "warning"]

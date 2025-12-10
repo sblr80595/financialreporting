@@ -1,0 +1,45 @@
+{
+  "note_number": "NOTE 13",
+  "note_title": "Other financial assets-current",
+  "output_file": "company_note_13_other_financial_assets_current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other financial assets, take positive debit balances from the trial balance.",
+  "categories": [
+    "Other receivables",
+    "Prepaid expenses"
+  ],
+  "output_format": [
+    {
+      "label": "(Unsecured and considered good, valued at amortised cost)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "   Other receivables",
+      "ind_as_minor": [
+        "Other receivables"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Prepaid expenses",
+      "ind_as_minor": [
+        "Prepaid expenses"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Other financial assets-current",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "   Other receivables",
+        "   Prepaid expenses"
+      ],
+      "show_line": true,
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 13: OTHER FINANCIAL ASSETS-CURRENT**\n\nPresentation Requirements:\n1.  **Subheading**: '(Unsecured and considered good, valued at amortised cost)' in italics.\n2.  **Other receivables**: Sum of 'Other receivables'.\n3.  **Prepaid expenses**: Sum of 'Prepaid expenses'.\n4.  **Total**: Sum of all items above.\n\nFormatting:\n-   Format all amounts in the Indian numbering system.\n-   Include both 'Other receivables' and 'Prepaid expenses' as requested."
+}

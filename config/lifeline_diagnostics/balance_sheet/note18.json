@@ -1,0 +1,34 @@
+{
+  "note_number": "NOTE 18",
+  "note_title": "Lease liabilities",
+  "output_file": "lifeline_diagnostics_note_18_lease_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Lease liabilities are typically credit balances. Present as positive amounts in the balance sheet. Calculate separate totals for current and non-current portions.",
+  "generate_if_empty": true,
+  "match_on_minor_only": true,
+  "categories": [
+    "Lease liabilities - current",
+    "Lease liabilities - non-current"
+  ],
+  "output_format": [
+    {
+      "label": "Lease liabilities - current",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Current lease liabilities",
+      "ind_as_minor": "Lease liabilities - current"
+    },
+    {
+      "label": "Lease liabilities - non-current",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Non-current lease liabilities",
+      "ind_as_minor": "Lease liabilities - non-current"
+    }
+  ],
+  "additional_instructions": "This note discloses lease liabilities recognized in the balance sheet as per Ind AS 116 - Leases.\n\n**CRITICAL MATCHING INSTRUCTION**: \nONLY sum GL accounts where the 'Ind AS Minor' column exactly matches the specified minor categories.\n- For current: Match ONLY 'Lease liabilities - current'\n- For non-current: Match ONLY 'Lease liabilities - non-current'\nDO NOT match on 'Ind AS Major' column or any other column.\n\n**Lease liabilities - current** - This is a section header.\n\n**Current lease liabilities**: Sum all GL accounts where Ind AS Minor = 'Lease liabilities - current'. This includes:\n- Lease payment obligations due within 12 months\n- Current portion of lease liabilities under Ind AS 116\n- Lease liabilities for premises/office spaces (current portion)\n- Lease liabilities for equipment and vehicles (current portion)\n- Any other lease obligations due within the next 12 months\n\n**Lease liabilities - non-current** - This is a section header.\n\n**Non-current lease liabilities**: Sum all GL accounts where Ind AS Minor = 'Lease liabilities - non-current'. This includes:\n- Lease payment obligations due after 12 months\n- Non-current portion of lease liabilities under Ind AS 116\n- Lease liabilities for premises/office spaces (non-current portion)\n- Lease liabilities for equipment and vehicles (non-current portion)\n- Long-term lease obligations beyond the next 12 months\n\nLease liabilities represent the present value of future lease payments for right-of-use assets recognized under Ind AS 116. The liability is measured at the present value of remaining lease payments, discounted using the interest rate implicit in the lease or the incremental borrowing rate.\n\nMatching Logic:\n- Column to match: 'Ind AS Minor' ONLY\n- Values to match: \n  * 'Lease liabilities - current' (exact match)\n  * 'Lease liabilities - non-current' (exact match)\n- DO NOT use 'Ind AS Major' column for matching\n\nPresentation Notes:\n1. Show current and non-current portions separately\n2. Present as positive amounts (credit balances)\n3. Current portion: Due within 12 months from reporting date\n4. Non-current portion: Due after 12 months from reporting date\n5. Follow Schedule III format for balance sheet presentation\n6. Cross-reference to Note 4A (Right-of-use assets) for corresponding asset details\n7. Lease liabilities are financial liabilities measured at amortized cost\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for lease liabilities disclosure under Ind AS 116. The note should clearly distinguish between current and non-current portions.\n\nAdditional Disclosures (if required):\n- Maturity analysis of lease liabilities\n- Interest expense on lease liabilities (disclosed in finance costs)\n- Details of leases for land, buildings, and equipment\n- Variable lease payments not included in measurement\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

@@ -1,0 +1,406 @@
+{
+  "id": "pl_indas",
+  "statementType": "PnL",
+  "framework": "IndAS",
+  "version": 1,
+  "meta": {
+    "title": "Statement of Profit and Loss",
+    "subtitlePattern": "For the year ended {periodEnd}",
+    "currencyLabelDefault": "INR, in Lakhs"
+  },
+  "columns": [
+    {
+      "id": "particulars",
+      "label": "Particulars",
+      "type": "text",
+      "alignment": "left",
+      "width": "flex"
+    },
+    {
+      "id": "note",
+      "label": "Note",
+      "type": "noteRef",
+      "alignment": "center",
+      "width": 60
+    },
+    {
+      "id": "current",
+      "label": "Current Year",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    },
+    {
+      "id": "previous",
+      "label": "Previous Year",
+      "type": "amount",
+      "alignment": "right",
+      "width": 140,
+      "format": "amount"
+    }
+  ],
+  "rows": [
+    {
+      "id": "REV_OPS",
+      "label": "Revenue from operations",
+      "type": "lineItem",
+      "order": 10,
+      "style": {
+        "bold": true
+      },
+      "noteNumber": "24",
+      "mappings": [
+        {
+          "source": "GL",
+          "glRanges": [
+            {
+              "from": "400000",
+              "to": "409999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OTHER_INC",
+      "label": "Other income",
+      "type": "lineItem",
+      "order": 20,
+      "noteNumber": "25",
+      "mappings": [
+        {
+          "source": "GL",
+          "glRanges": [
+            {
+              "from": "410000",
+              "to": "419999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TOTAL_INCOME",
+      "label": "TOTAL INCOME (I)",
+      "type": "subtotal",
+      "order": 30,
+      "style": {
+        "bold": true,
+        "uppercase": true,
+        "backgroundToken": "surface.subtotal"
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "REV_OPS",
+          "OTHER_INC"
+        ]
+      }
+    },
+    {
+      "id": "EXPENSES_SECTION",
+      "label": "Expenses",
+      "type": "section",
+      "order": 40,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.section"
+      }
+    },
+    {
+      "id": "MAT_CONS",
+      "label": "Cost of materials consumed",
+      "type": "lineItem",
+      "parentId": "EXPENSES_SECTION",
+      "order": 50,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "26"
+    },
+    {
+      "id": "STOCK_IN_TRADE",
+      "label": "Purchases of stock-in-trade",
+      "type": "lineItem",
+      "parentId": "EXPENSES_SECTION",
+      "order": 60,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "27"
+    },
+    {
+      "id": "CHG_INVENTORY",
+      "label": "Changes in inventories of finished goods, work-in-progress and stock-in-trade",
+      "type": "lineItem",
+      "parentId": "EXPENSES_SECTION",
+      "order": 65,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "27A"
+    },
+    {
+      "id": "EMP_BEN",
+      "label": "Employee benefits expense",
+      "type": "lineItem",
+      "parentId": "EXPENSES_SECTION",
+      "order": 70,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "28"
+    },
+    {
+      "id": "FIN_COST",
+      "label": "Finance costs",
+      "type": "lineItem",
+      "parentId": "EXPENSES_SECTION",
+      "order": 80,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "29"
+    },
+    {
+      "id": "DEP_AMORT",
+      "label": "Depreciation and amortisation expense",
+      "type": "lineItem",
+      "parentId": "EXPENSES_SECTION",
+      "order": 90,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "30"
+    },
+    {
+      "id": "OTHER_EXP",
+      "label": "Other expenses",
+      "type": "lineItem",
+      "parentId": "EXPENSES_SECTION",
+      "order": 100,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "31"
+    },
+    {
+      "id": "TOTAL_EXPENSES",
+      "label": "TOTAL EXPENSES (II)",
+      "type": "subtotal",
+      "order": 110,
+      "style": {
+        "bold": true,
+        "uppercase": true,
+        "backgroundToken": "surface.subtotal"
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "MAT_CONS",
+          "STOCK_IN_TRADE",
+          "CHG_INVENTORY",
+          "EMP_BEN",
+          "FIN_COST",
+          "DEP_AMORT",
+          "OTHER_EXP"
+        ]
+      }
+    },
+    {
+      "id": "PBT_BEFORE_EXC",
+      "label": "Profit before exceptional items and tax (I - II)",
+      "type": "subtotal",
+      "order": 120,
+      "style": {
+        "bold": true
+      },
+      "calculation": {
+        "op": "diff",
+        "minuend": "TOTAL_INCOME",
+        "subtrahend": "TOTAL_EXPENSES"
+      }
+    },
+    {
+      "id": "EXCEPTIONAL",
+      "label": "Exceptional items",
+      "type": "lineItem",
+      "order": 130
+    },
+    {
+      "id": "PBT",
+      "label": "Profit before tax (III)",
+      "type": "subtotal",
+      "order": 140,
+      "style": {
+        "bold": true
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "PBT_BEFORE_EXC",
+          "EXCEPTIONAL"
+        ]
+      }
+    },
+    {
+      "id": "TAX_EXPENSE",
+      "label": "Tax expense",
+      "type": "group",
+      "order": 150,
+      "style": {
+        "bold": true,
+        "collapsible": true,
+        "defaultExpanded": true
+      }
+    },
+    {
+      "id": "CURRENT_TAX",
+      "label": "Current tax",
+      "type": "lineItem",
+      "parentId": "TAX_EXPENSE",
+      "order": 160,
+      "style": {
+        "indentLevel": 1
+      },
+      "noteNumber": "32"
+    },
+    {
+      "id": "DEFERRED_TAX",
+      "label": "Deferred tax",
+      "type": "lineItem",
+      "parentId": "TAX_EXPENSE",
+      "order": 170,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "TAX_ADJ",
+      "label": "Tax adjustments for earlier periods",
+      "type": "lineItem",
+      "parentId": "TAX_EXPENSE",
+      "order": 175,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "TOTAL_TAX",
+      "label": "Total tax expense",
+      "type": "subtotal",
+      "order": 180,
+      "parentId": "TAX_EXPENSE",
+      "style": {
+        "indentLevel": 1,
+        "bold": true
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "CURRENT_TAX",
+          "DEFERRED_TAX",
+          "TAX_ADJ"
+        ]
+      }
+    },
+    {
+      "id": "PROFIT_FOR_YEAR",
+      "label": "Profit for the year (IV)",
+      "type": "total",
+      "order": 190,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.total"
+      },
+      "calculation": {
+        "op": "diff",
+        "minuend": "PBT",
+        "subtrahend": "TOTAL_TAX"
+      }
+    },
+    {
+      "id": "OCI_SECTION",
+      "label": "Other comprehensive income",
+      "type": "section",
+      "order": 200,
+      "style": {
+        "bold": true,
+        "collapsible": true,
+        "defaultExpanded": false
+      }
+    },
+    {
+      "id": "OCI_NOT_RECLASS",
+      "label": "Items that will not be reclassified to profit or loss",
+      "type": "group",
+      "parentId": "OCI_SECTION",
+      "order": 205,
+      "style": {
+        "indentLevel": 1,
+        "italic": true
+      }
+    },
+    {
+      "id": "OCI_RECLASS",
+      "label": "Items that will be reclassified subsequently to profit or loss",
+      "type": "group",
+      "parentId": "OCI_SECTION",
+      "order": 207,
+      "style": {
+        "indentLevel": 1,
+        "italic": true
+      }
+    },
+    {
+      "id": "OCI_TAX",
+      "label": "Income tax relating to items of OCI",
+      "type": "lineItem",
+      "parentId": "OCI_SECTION",
+      "order": 209,
+      "style": {
+        "indentLevel": 1
+      }
+    },
+    {
+      "id": "TOTAL_OCI",
+      "label": "Total other comprehensive income",
+      "type": "subtotal",
+      "parentId": "OCI_SECTION",
+      "order": 210,
+      "style": {
+        "bold": true
+      }
+    },
+    {
+      "id": "TOTAL_CI",
+      "label": "Total comprehensive income for the year (V)",
+      "type": "total",
+      "order": 220,
+      "style": {
+        "bold": true,
+        "backgroundToken": "surface.total"
+      },
+      "calculation": {
+        "op": "sum",
+        "children": [
+          "PROFIT_FOR_YEAR",
+          "TOTAL_OCI"
+        ]
+      }
+    },
+    {
+      "id": "EPS_BASIC",
+      "label": "Earnings per equity share - Basic (₹)",
+      "type": "lineItem",
+      "order": 230
+    },
+    {
+      "id": "EPS_DILUTED",
+      "label": "Earnings per equity share - Diluted (₹)",
+      "type": "lineItem",
+      "order": 240
+    }
+  ]
+}

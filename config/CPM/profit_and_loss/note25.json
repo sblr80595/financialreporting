@@ -1,0 +1,37 @@
+{
+  "note_number": "NOTE 25",
+  "note_title": "Other Income",
+  "output_file": "company_a_note_25_other_income.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative). Convert these to positive for display. For 'Gain/Loss on foreign exchange fluctuations (net)', sum algebraically and present the net result (if it's a gain).",
+  "categories": [
+    "Interest income from banks",
+    "Gain/Loss on foreign exchange fluctuations (net)",
+    "Dividend income",
+    "Rental Income",
+    "Miscellaneous income"
+  ],
+  "output_format": [
+    {
+      "label": "Interest income - from banks",
+      "ind_as_minor": "Interest income from banks"
+    },
+    {
+      "label": "Gain on foreign exchange fluctuations (net)",
+      "ind_as_minor": "Gain/Loss on foreign exchange fluctuations (net)"
+    },
+    {
+      "label": "Dividend income",
+      "ind_as_minor": "Dividend income"
+    },
+    {
+      "label": "Rental Income (refer note 39)",
+      "ind_as_minor": "Rental Income"
+    },
+    {
+      "label": "Miscellaneous income",
+      "ind_as_minor": "Miscellaneous income"
+    }
+  ],
+  "additional_instructions": ""
+}

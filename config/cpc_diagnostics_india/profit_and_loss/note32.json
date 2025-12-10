@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 32",
+  "note_title": "Tax Expense",
+  "output_file": "cpc_diagnostics_india_note_32_tax_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Tax expense categories typically have debit balances (positive in the trial balance). Display as positive values in the final notes.",
+  "categories": [
+    "Current tax",
+    "Deferred tax"
+  ],
+  "output_format": [
+    {
+      "label": "Current tax",
+      "ind_as_minor": "Current tax"
+    },
+    {
+      "label": "Deferred tax",
+      "ind_as_minor": "Deferred tax"
+    }
+  ],
+  "additional_instructions": "Note: Tax expense includes current tax and deferred tax components. Handle the formatting accordingly to maintain Schedule III compliance."
+}

@@ -1,0 +1,214 @@
+{
+  "note_number": "NOTE 3",
+  "note_title": "Property, plant and equipment",
+  "output_file": "company_note_3_property_plant_and_equipment.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Gross carrying amounts (cost) should be positive (debit). Accumulated depreciation (credit) should be flipped to positive and presented as a deduction in parentheses.",
+  "categories": [
+    "Building",
+    "Plant and equipment",
+    "Computers and accessories",
+    "Furniture and fixtures",
+    "Office equipments",
+    "Vehicles",
+    "Leasehold improvements",
+    "Building-AD",
+    "Plant and equipment-AD",
+    "Computers and accessories-AD",
+    "Furniture and fixtures-AD",
+    "Office equipments-AD",
+    "Vehicles-AD",
+    "Leasehold improvements-AD"
+  ],
+  "output_format": [
+    {
+      "label": "Gross carrying amount (Cost)",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Building",
+      "ind_as_minor": [
+        "Building"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Plant and equipment",
+      "ind_as_minor": [
+        "Plant and equipment"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Computers and accessories",
+      "ind_as_minor": [
+        "Computers and accessories"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Furniture and fixtures",
+      "ind_as_minor": [
+        "Furniture and fixtures"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Office equipments",
+      "ind_as_minor": [
+        "Office equipments"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Vehicles",
+      "ind_as_minor": [
+        "Vehicles"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Leasehold improvements",
+      "ind_as_minor": [
+        "Leasehold improvements"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total Gross carrying amount",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Building",
+        "   Plant and equipment",
+        "   Computers and accessories",
+        "   Furniture and fixtures",
+        "   Office equipments",
+        "   Vehicles",
+        "   Leasehold improvements"
+      ],
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Less: Accumulated depreciation",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Building",
+      "ind_as_minor": [
+        "Building-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Plant and equipment",
+      "ind_as_minor": [
+        "Plant and equipment-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Computers and accessories",
+      "ind_as_minor": [
+        "Computers and accessories-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Furniture and fixtures",
+      "ind_as_minor": [
+        "Furniture and fixtures-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Office equipments",
+      "ind_as_minor": [
+        "Office equipments-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Vehicles",
+      "ind_as_minor": [
+        "Vehicles-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Leasehold improvements",
+      "ind_as_minor": [
+        "Leasehold improvements-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Accumulated depreciation",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Building",
+        "   Plant and equipment",
+        "   Computers and accessories",
+        "   Furniture and fixtures",
+        "   Office equipments",
+        "   Vehicles",
+        "   Leasehold improvements"
+      ],
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Net carrying amount",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Total Gross carrying amount"
+      ],
+      "subtract": [
+        "Total Accumulated depreciation"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 3: PROPERTY, PLANT AND EQUIPMENT**\n\nPresentation Requirements:\n1.  **Gross carrying amount (Cost)** (Header): Followed by a sum of cost GLs for each asset class.\n    * `Building`: Sum of 'Building'\n    * `Plant and equipment`: Sum of 'Plant and equipment'\n    * `Computers and accessories`: Sum of 'Computers and accessories'\n    * `Furniture and fixtures`: Sum of 'Furniture and fixtures'\n    * `Office equipments`: Sum of 'Office equipments'\n    * `Vehicles`: Sum of 'Vehicles'\n    * `Leasehold improvements`: Sum of 'Leasehold improvements'\n    * `Total Gross carrying amount`: Sub-total of all gross amounts above.\n\n2.  **Less: Accumulated depreciation** (Header): Followed by a sum of AD GLs for each asset class, presented as deductions.\n    * `Building`: Sum of 'Building-AD'\n    * `Plant and equipment`: Sum of 'Plant and equipment-AD'\n    * `Computers and accessories`: Sum of 'Computers and accessories-AD'\n    * `Furniture and fixtures`: Sum of 'Furniture and fixtures-AD'\n    * `Office equipments`: Sum of 'Office equipments-AD'\n    * `Vehicles`: Sum of 'Vehicles-AD'\n    * `Leasehold improvements`: Sum of 'Leasehold improvements-AD'\n    * `Total Accumulated depreciation`: Sub-total of all AD amounts above, shown as a deduction.\n\n3.  **Net carrying amount** (Total): Calculated as `Total Gross carrying amount` - `Total Accumulated depreciation`.\n    * This is the final closing balance (Net Book Value) of PPE.\n\nAccounting Context:\n-   This note details the cost and accumulated depreciation for tangible fixed assets (PPE) as required by Ind AS 16.\n-   Gross carrying amount represents the original cost of the assets.\n-   Accumulated depreciation represents the total depreciation charged to date.\n-   Net carrying amount (NBV) is the amount at which the assets are carried on the Balance Sheet.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456).\n-   Show all 'Accumulated depreciation' lines as deductions (e.g., (1,23,456)).\n-   The final 'Net carrying amount' should be bold."
+}

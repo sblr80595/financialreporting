@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 16",
+  "note_title": "Contract liabilities",
+  "output_file": "analisa_note_16_contract_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Contract liabilities typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the balance sheet as a liability.",
+  "categories": [
+    "Consideration received in advance",
+    "Contract liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "**Contract liabilities**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Consideration received in advance",
+      "ind_as_minor": "Consideration received in advance"
+    },
+    {
+      "label": "Contract liabilities",
+      "ind_as_minor": "Contract liabilities"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minors: 'Consideration received in advance' and 'Contract liabilities'. Convert credit balances to positive values for presentation. Present each category separately and show the total. This represents obligations to transfer goods or services to customers for which consideration has been received in advance as per Ind AS 115."
+}

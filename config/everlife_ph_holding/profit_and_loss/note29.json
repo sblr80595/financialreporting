@@ -1,0 +1,21 @@
+{
+  "note_number": "NOTE 29",
+  "note_title": "Finance Costs",
+  "output_file": "everlife_ph_holdings_note_29_employee_benefits_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. Finance costs include all borrowing costs and interest expenses.",
+   "categories": [
+    "Interest Expense"
+  ],
+  "output_format": [
+    {
+      "label": "Finance Cost",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Interest Expense",
+      "ind_as_minor": "Interest Expense"
+    }
+  ]
+  }

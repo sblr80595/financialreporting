@@ -1,0 +1,82 @@
+{
+  "note_number": "NOTE 37",
+  "note_title": "Additional Information",
+  "output_file": "ttpl_note_37_additional_information.txt",
+  "statement_type": "profit-and-loss",
+  "summation_rule": "Extract closing balance values from the 'period' column. All expenditure and income items should be presented as positive amounts.",
+  "categories": [
+    "Consumption of imported raw material",
+    "Consumption of indigenous raw material",
+    "Expenditure in foreign currency",
+    "Earnings in foreign currency"
+  ],
+  "output_format": [
+    {
+      "label": "A. Consumption of Raw Materials",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Imported",
+      "ind_as_minor": [
+        "Consumption of imported raw material"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "ii) Indigenous",
+      "ind_as_minor": [
+        "Consumption of indigenous raw material"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total Raw Material Consumed",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "i) Imported",
+        "ii) Indigenous"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Foreign Currency Transactions (Expenditure)",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Expenditure in foreign currency (e.g., traveling, commission)",
+      "ind_as_minor": [
+        "Expenditure in foreign currency"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "C. Foreign Currency Transactions (Earnings)",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Earnings in foreign currency (e.g., export sales, services rendered)",
+      "ind_as_minor": [
+        "Earnings in foreign currency"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 37: ADDITIONAL INFORMATION**\n\n1.  **Section A (Consumption)**: Disclose the breakup of raw material consumption into Imported and Indigenous components.\n2.  **Section B & C (Forex)**: Disclose total foreign currency expenditure and total foreign currency earnings separately.\n3.  This note requires extensive *qualitative* disclosure (not captured in this prompt), including statutory details like CSR, related party transaction narratives, and detailed explanations of various items.\n\nAccounting Context:\n-   This note is used to comply with various Schedule III and statutory disclosures not covered in primary notes.\n-   All amounts should be presented as positive (expenditure or income).\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456)."
+}

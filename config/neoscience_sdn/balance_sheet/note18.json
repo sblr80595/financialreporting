@@ -1,0 +1,242 @@
+{
+  "note_number": "Note 18",
+  "note_title": "Lease related disclosures",
+  "output_file": "Neoscience_Note_18_Leases.txt",
+  "auxiliary_files": [
+    "data/neoscience_sdn/output/financial_statements/BS/Balance_Sheet_*.xlsx",
+    "data/neoscience_sdn/input/notes-input/Lease_Payments.csv"
+  ],
+  "statement_type": "disclosure",
+  "summation_rule": "Calculate ROU Net Block (Gross - Depreciation). Sum lease maturity payments. All other values are direct retrievals.",
+  "categories": [
+    "ROU Assets - Gross Block",
+    "ROU Assets - Accumulated Depreciation",
+    "Lease Liabilities - Current portion",
+    "Lease Liabilities - Non-current portion",
+    "Depreciation expense on ROU assets",
+    "Interest expense on lease liabilities",
+    "Expense relating to short-term leases",
+    "Total cash outflow for leases",
+    "Effective rate of interest for lease liability 30 June 2025",
+    "Effective rate of interest for lease liability 31 March 2025",
+    "Lease Maturity - Less than 1 year",
+    "Lease Maturity - 1 to 5 years",
+    "Lease Maturity - More than 5 years"
+  ],
+  "output_format": [
+    {
+      "label": "18. Lease related disclosures",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Narrative",
+      "ind_as_minor": null,
+      "calculation": "narrative_retrieval",
+      "not_found_message": "The Group has leases for office premises. With the exception of short-term leases, each lease is reflected on the balance sheet as a Right-of-Use (ROU) asset and a Lease Liability. ROU assets are classified consistently with property, plant and equipment."
+    },
+    {
+      "label": "A. Amount recognised in the Balance Sheet",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "\\textbf{I. Right-of-use assets}"
+    },
+    {
+      "label": "Gross Block",
+      "ind_as_minor": [
+        "ROU Assets - Gross Block"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "Accumulated depreciation",
+      "ind_as_minor": [
+        "ROU Assets - Accumulated Depreciation"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "\\textbf{Net Block (ROU Asset)}",
+      "calculation": "subtract_two_previous_rows",
+      "bold": true,
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "\\textbf{II. Lease liabilities}"
+    },
+    {
+      "label": "Current portion",
+      "ind_as_minor": [
+        "Lease Liabilities - Current portion"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "Non-current portion",
+      "ind_as_minor": [
+        "Lease Liabilities - Non-current portion"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "B. Amount recognised in the Statement of Profit and Loss",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Depreciation expense on Right-of-use assets",
+      "ind_as_minor": [
+        "Depreciation expense on ROU assets"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "Interest expense on lease liabilities",
+      "ind_as_minor": [
+        "Interest expense on lease liabilities"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "Expense relating to short-term leases",
+      "ind_as_minor": [
+        "Expense relating to short-term leases"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "C. Cash flow information",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Total cash outflow for leases",
+      "ind_as_minor": [
+        "Total cash outflow for leases"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025"
+      ]
+    },
+    {
+      "label": "D. Maturity analysis of lease liabilities",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Less than 1 year",
+      "ind_as_minor": [
+        "Lease Maturity - Less than 1 year"
+      ],
+      "calculation": "direct_retrieve",
+      "data_source": "Auxiliary Source 2",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "Undiscounted Lease Payments (MYR)"
+      ]
+    },
+    {
+      "label": "1 to 5 years",
+      "ind_as_minor": [
+        "Lease Maturity - 1 to 5 years"
+      ],
+      "calculation": "direct_retrieve",
+      "data_source": "Auxiliary Source 2",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "Undiscounted Lease Payments (MYR)"
+      ]
+    },
+    {
+      "label": "More than 5 years",
+      "ind_as_minor": [
+        "Lease Maturity - More than 5 years"
+      ],
+      "calculation": "direct_retrieve",
+      "data_source": "Auxiliary Source 2",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "Undiscounted Lease Payments (MYR)"
+      ]
+    },
+    {
+      "label": "\\textbf{Total undiscounted lease payments}",
+      "calculation": "sum_previous_rows",
+      "bold": true,
+      "columns": [
+        "Undiscounted Lease Payments (MYR)"
+      ]
+    },
+    {
+      "label": "E. Other disclosures",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Effective rate of interest for lease liability 30 June 2025",
+      "ind_as_minor": [
+        "Effective rate of interest for lease liability 30 June 2025"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "Rate (%)"
+      ]
+    },
+    {
+      "label": "Effective rate of interest for lease liability 31 March 2025",
+      "ind_as_minor": [
+        "Effective rate of interest for lease liability 31 March 2025"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "DATA NOT FOUND",
+      "columns": [
+        "Rate (%)"
+      ]
+    }
+  ],
+  "additional_instructions": "The final output must present monetary values for 30 June 2025 and 31 March 2025, and a single column for the maturity analysis. Ensure ROU assets calculation is performed correctly (Gross - Acc. Dep). Effective interest rate should be retrieved and displayed as a percentage."
+}

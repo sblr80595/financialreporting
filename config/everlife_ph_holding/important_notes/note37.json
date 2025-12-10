@@ -1,0 +1,27 @@
+{
+  "note_number": "NOTE 37",
+  "note_title": "Events After Reporting Period",
+  "output_file": "everlife_ph_holdings_note_36_events_after_reporting.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "None. This note is qualitative.",
+  "categories": [
+    "Narrative Disclosure - Significant Events",
+    "Narrative Disclosure - Financial Impact Estimate"
+  ],
+  "output_format": [
+    {
+      "label": "Summary of Significant Events After Reporting Period",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "Narrative: Description of non-adjusting events after the reporting period (e.g., major acquisition, equity issuance, large debt restructuring, damage from natural disaster).",
+      "is_placeholder": true
+    },
+    {
+      "label": "Narrative: Estimate of the financial effect of these events or a statement that such an estimate cannot be made.",
+      "is_placeholder": true
+    }
+  ],
+  "additional_instructions": "This note requires manual input and qualitative/narrative disclosure as per IAS 10 / Ind AS 10. The output format serves only as a structured template reminder and will show zero/blank values from the Trial Balance."
+}

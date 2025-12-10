@@ -1,0 +1,130 @@
+{
+    "note_number": "NOTE 31",
+    "note_title": "Employee benefits (Gratuity)",
+    "output_file": "company_note_31_employee_benefits.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. Employee benefit liability is typically a credit balance (negative in TB). Flip sign for all DBO (liability) categories to show as positive/gross values in the note. Expenses and benefits paid retain their sign as per P&L/Cash flow.",
+    "categories": [
+        "Gratuity Liability Opening",
+        "Gratuity Service Cost",
+        "Gratuity Interest Cost",
+        "Gratuity Benefits Paid",
+        "Gratuity Actuarial Gain/Loss OCI",
+        "Gratuity Liability Closing",
+        "Gratuity Current Portion",
+        "Gratuity Non-Current Portion"
+    ],
+    "output_format": [
+        {
+            "label": "(I) Amount recognised in the Statement of profit and loss",
+            "ind_as_minor": null,
+            "is_header": true
+        },
+        {
+            "label": "Current service cost",
+            "ind_as_minor": ["Gratuity Service Cost"],
+            "aggregation": "sum",
+            "sign_flip": false
+        },
+        {
+            "label": "Interest cost",
+            "ind_as_minor": ["Gratuity Interest Cost"],
+            "aggregation": "sum",
+            "sign_flip": false
+        },
+        {
+            "label": "Actuarial (gain)/loss recognised during the period",
+            "ind_as_minor": ["Gratuity Actuarial Gain/Loss OCI"],
+            "aggregation": "sum",
+            "sign_flip": false
+        },
+        {
+            "label": "Amount recognised in the Statement of profit and loss",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": ["Current service cost", "Interest cost", "Actuarial (gain)/loss recognised during the period"],
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(II) Changes in present value of defined benefit obligation:",
+            "ind_as_minor": null,
+            "is_header": true
+        },
+        {
+            "label": "Present value of defined benefit obligation as at the beginning of the period",
+            "ind_as_minor": ["Gratuity Liability Opening"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Current service cost",
+            "ind_as_minor": ["Gratuity Service Cost"],
+            "aggregation": "sum",
+            "sign_flip": false
+        },
+        {
+            "label": "Interest cost",
+            "ind_as_minor": ["Gratuity Interest Cost"],
+            "aggregation": "sum",
+            "sign_flip": false
+        },
+        {
+            "label": "Benefits paid",
+            "ind_as_minor": ["Gratuity Benefits Paid"],
+            "aggregation": "sum",
+            "sign_flip": false
+        },
+        {
+            "label": "Actuarial (gain)/loss recognised during the period",
+            "ind_as_minor": ["Gratuity Actuarial Gain/Loss OCI"],
+            "aggregation": "sum",
+            "sign_flip": false
+        },
+        {
+            "label": "Present value of defined benefit obligation as at the end of the period",
+            "ind_as_minor": ["Gratuity Liability Closing"],
+            "is_total": true,
+            "aggregation": "sum",
+            "sign_flip": true,
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(III) Classification of net liability",
+            "ind_as_minor": null,
+            "is_header": true
+        },
+        {
+            "label": "Non-current liability",
+            "ind_as_minor": ["Gratuity Non-Current Portion"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Current liability",
+            "ind_as_minor": ["Gratuity Current Portion"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Total liability",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "sum",
+            "sum_of": ["Non-current liability", "Current liability"],
+            "bold": true,
+            "show_line": true
+        }
+    ],
+    "additional_instructions": "This note details the reconciliation of the Defined Benefit Obligation (DBO) and the expense recognized in the Statement of Profit and Loss, as per Ind AS 19 / IAS 19. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol. Note: Actual implementation for DBO opening/closing balances would involve complex logic to retrieve prior period's closing balance as current period's opening balance, which is simplified here by mapping to placeholder categories."
+}

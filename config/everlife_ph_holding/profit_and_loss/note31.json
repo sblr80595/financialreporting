@@ -1,0 +1,38 @@
+{
+  "note_number": "NOTE 31",
+  "note_title": "Other Expenses",
+  "output_file": "everlife_ph_holdings_note_31_other_expenses.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. Other expenses include all operating expenses not classified elsewhere.",
+  "generate_if_empty": true,
+  "categories": [
+    "Legal and professional expenses",
+    "Bank charges",
+    "Rent",
+    "Miscellaneous expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Other Expenses",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Legal and professional expenses",
+      "ind_as_minor": "Legal and professional expenses"
+    },
+    {
+      "label": "Bank charges",
+      "ind_as_minor": "Bank charges"
+    },
+    {
+      "label": "Rent",
+      "ind_as_minor": "Rent"
+    },
+    {
+      "label": "Miscellaneous expenses",
+      "ind_as_minor": "Miscellaneous expenses"
+    }
+  ],
+  "additional_instructions": "This note captures all other operating expenses during the period.\n\n**Legal and professional expenses**: Sum all GL accounts where Ind AS Minor is 'Legal and professional expenses'. This includes:\n- Legal fees and consultation charges\n- Professional fees (CA, CS, lawyers, consultants)\n- Audit fees\n- Tax advisory fees\n- Other professional service charges\n\n**Bank charges**: Sum all GL accounts where Ind AS Minor is 'Bank charges'. This includes:\n- Bank service charges\n- Transaction fees\n- Processing charges\n- Credit card charges\n- Other banking fees\n\n**Rent**: Sum all GL accounts where Ind AS Minor is 'Rent'. This includes:\n- Office rent\n- Warehouse rent\n- Equipment rent\n- Other rental expenses\n\n**Miscellaneous expenses**: Sum all GL accounts where Ind AS Minor is 'Miscellaneous expenses'. This includes:\n- Sundry expenses\n- Petty cash expenses\n- Other operating expenses not classified elsewhere\n\nAll expenses should be presented as positive amounts (debit balances) in the final note.\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

@@ -1,0 +1,67 @@
+{
+    "note_number": "NOTE 8",
+    "note_title": "Inventories",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For inventory items, take positive debit balances. For provisions, take the absolute value of credit balances.",
+    "categories": [
+        "Stock in Traded goods",
+        "Less allowance for inventory obsolescence",
+        "Spare parts"
+    ],
+    "output_format": [
+        {
+            "label": "Finished goods (refer note below)",
+            "ind_as_minor": null,
+            "is_reference": true
+        },
+        {
+            "label": "Stock in Traded goods",
+            "ind_as_minor": [
+                "Stock in Traded goods"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Spare parts",
+            "ind_as_minor": [
+                "Spare parts"
+            ],
+            "aggregation": "sum"
+        },
+        {
+            "label": "SUBTOTAL_INVENTORY_GROSS",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "sum_of": [
+                "Stock in Traded goods",
+                "Spare parts"
+            ],
+            "show_line": true,
+            "display_label": "Gross Inventory"
+        },
+        {
+            "label": "Less: Provision for inventory obsolescence",
+            "ind_as_minor": [
+                "Less allowance for inventory obsolescence"
+            ],
+            "is_deduction": true,
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "TOTAL_INVENTORIES",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "subtract",
+            "sum_of": [
+                "SUBTOTAL_INVENTORY_GROSS"
+            ],
+            "subtract": [
+                "Less: Provision for inventory obsolescence"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n1. 'Finished goods (refer note below)' - reference line, no amount shown\n2. 'Stock in Traded goods' - sum of category: ['Stock in Traded goods']\n3. 'Spare parts' - sum of category: ['Spare parts']\n4. Draw a line and show subtotal (SUBTOTAL_INVENTORY_GROSS), which is the sum of all inventory categories.\n5. 'Less: Provision for inventory obsolescence' - deduct value from category: ['Less allowance for inventory obsolescence']. The provision value (credit balance) should be sign-flipped and displayed as a deduction.\n6. Draw a line and show final total (TOTAL_INVENTORIES) calculated as Gross Inventory minus Provision.\n7. Format all amounts in Indian numbering system without ₹ symbol.\n8. Inventory is valued at lower of cost or Net Realisable Value (NRV)."
+}

@@ -1,0 +1,101 @@
+{
+  "note_number": "NOTE 2",
+  "note_title": "Intangible assets",
+  "output_file": "company_note_2_intangible_assets.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Gross carrying amounts (cost) should be positive (debit). Accumulated amortization (credit) should be flipped to positive and presented as a deduction in parentheses.",
+  "categories": [
+    "Intangible assets",
+    "IA under development",
+    "Intangible assets-AD"
+  ],
+  "output_format": [
+    {
+      "label": "Gross carrying amount (Cost)",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Intangible assets",
+      "ind_as_minor": [
+        "Intangible assets"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Intangible assets under development",
+      "ind_as_minor": [
+        "IA under development"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total Gross carrying amount",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Intangible assets",
+        "   Intangible assets under development"
+      ],
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Less: Accumulated Amortisation",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Intangible assets",
+      "ind_as_minor": [
+        "Intangible assets-AD"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Intangible assets under development",
+      "ind_as_minor": null,
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Accumulated Amortisation",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Intangible assets",
+        "   Intangible assets under development"
+      ],
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Net carrying amount",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Total Gross carrying amount"
+      ],
+      "subtract": [
+        "Total Accumulated Amortisation"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 2: INTANGIBLE ASSETS**\n\nPresentation Requirements:\n1.  **Gross carrying amount (Cost)** (Header): Sum of cost GLs for each asset class.\n    * `Intangible assets`: Sum of 'Intangible assets'\n    * `Intangible assets under development`: Sum of 'IA under development' (Note: IAUD is not amortised until put to use).\n    * `Total Gross carrying amount`: Sub-total of all gross amounts above.\n\n2.  **Less: Accumulated Amortisation** (Header): Followed by a sum of AD GLs for each asset class, presented as deductions.\n    * `Intangible assets`: Sum of 'Intangible assets-AD'\n    * `Intangible assets under development`: This line should show zero/nil as IAUD is not amortised.\n    * `Total Accumulated Amortisation`: Sub-total of all AD amounts above, shown as a deduction.\n\n3.  **Net carrying amount** (Total): Calculated as `Total Gross carrying amount` - `Total Accumulated Amortisation`.\n    * This is the final closing balance (Net Book Value) of Intangible Assets.\n\nAccounting Context:\n-   This note details the cost and accumulated amortisation for intangible assets as required by Ind AS 38.\n-   Amortisation is the systematic allocation of the depreciable amount of an intangible asset over its useful life.\n-   IAUD are costs incurred for internally generated or acquired assets not yet available for use; hence, no amortisation is charged.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456).\n-   Show all 'Accumulated Amortisation' lines as deductions (e.g., (1,23,456)).\n-   The final 'Net carrying amount' should be bold."
+}

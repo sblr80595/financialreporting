@@ -1,0 +1,133 @@
+{
+  "note_number": "NOTE 31",
+  "note_title": "Other Expenses",
+  "output_file": "company_a_note_31_other_expenses.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically unless specified otherwise for specific categories.",
+  "categories": [
+    "Power and fuel",
+    "Forwarding expense",
+    "Rates and taxes",
+    "Travelling and conveyance",
+    "Legal and professional expenses",
+    "Bank charges",
+    "Insurance charges",
+    "Repair and maintenance",
+    "Registration fee",
+    "Advertising and sales promotion",
+    "Telephone and internet expense",
+    "Printing and stationery",
+    "Allowance for bad and doubtful loans (PL)",
+    "Packaging expenses",
+    "Profit/Loss on sale of PPE",
+    "Tax Expense off",
+    "Miscellaneous expenses"
+  ],
+  "exclusion_rules": {
+    "foreign_exchange": {
+      "description": "EXCLUDE any 'Ind AS Minor' containing 'foreign exchange', 'forex', or 'FX' - these belong to Note 25 (Other Income)",
+      "keywords": [
+        "foreign exchange",
+        "forex",
+        "FX",
+        "exchange rate",
+        "exchange fluctuation"
+      ]
+    },
+    "miscellaneous": {
+      "description": "For Miscellaneous expenses, EXCLUDE GLs containing these keywords",
+      "keywords": [
+        "foreign exchange",
+        "forex",
+        "FX",
+        "disposal",
+        "sale of PPE",
+        "rent"
+      ]
+    }
+  },
+  "special_rules": {
+    "loss_on_sale_ppe": {
+      "description": "For 'Loss on sale of property, plant and equipment', sum ONLY debit (positive) balances. Ignore credit balances (gains).",
+      "ind_as_minor_variants": [
+        "Profit/Loss on sale of PPE",
+        "Loss on disposal of assets",
+        "Gain/Loss on disposal of assets"
+      ],
+      "calculation": "sum_debits_only"
+    }
+  },
+  "output_format": [
+    {
+      "label": "Power and fuel",
+      "ind_as_minor": "Power and fuel"
+    },
+    {
+      "label": "Forwarding expense",
+      "ind_as_minor": "Forwarding expense"
+    },
+    {
+      "label": "Rates and taxes",
+      "ind_as_minor": "Rates and taxes"
+    },
+    {
+      "label": "Travelling and conveyance",
+      "ind_as_minor": "Travelling and conveyance"
+    },
+    {
+      "label": "Legal and professional expenses",
+      "ind_as_minor": "Legal and professional expenses"
+    },
+    {
+      "label": "Bank charges",
+      "ind_as_minor": "Bank charges"
+    },
+    {
+      "label": "Insurance charges",
+      "ind_as_minor": "Insurance charges"
+    },
+    {
+      "label": "Repair and maintenance",
+      "ind_as_minor": "Repair and maintenance"
+    },
+    {
+      "label": "Registration fee",
+      "ind_as_minor": "Registration fee"
+    },
+    {
+      "label": "Advertising and sales promotion",
+      "ind_as_minor": "Advertising and sales promotion"
+    },
+    {
+      "label": "Telephone and internet expense",
+      "ind_as_minor": "Telephone and internet expense"
+    },
+    {
+      "label": "Printing and stationery",
+      "ind_as_minor": "Printing and stationery"
+    },
+    {
+      "label": "Allowance for bad and doubtful loans",
+      "ind_as_minor": "Allowance for bad and doubtful loans (PL)"
+    },
+    {
+      "label": "Packaging expenses",
+      "ind_as_minor": "Packaging expenses"
+    },
+    {
+      "label": "Loss on sale of property, plant and equipment",
+      "ind_as_minor": "Profit/Loss on sale of PPE",
+      "special_calculation": "debits_only"
+    },
+    {
+      "label": "Tax Expense off",
+      "ind_as_minor": "Tax Expense off"
+    },
+    {
+      "label": "Miscellaneous expenses",
+      "ind_as_minor": "Miscellaneous expenses",
+      "special_calculation": "exclude_keywords"
+    }
+  ],
+  "additional_instructions": "CRITICAL FILTERING RULES FOR NOTE 31:\n\n1. **EXCLUDE ALL FOREIGN EXCHANGE**: Any 'Ind AS Minor' containing 'foreign exchange', 'forex', 'FX', 'exchange rate', or 'exchange fluctuation' MUST BE EXCLUDED from this note. These items belong in Note 25 (Other Income).\n\n2. **Loss on sale of PPE - DEBITS ONLY**: For the line 'Loss on sale of property, plant and equipment':\n   - Find all GLs where 'Ind AS Minor' matches: 'Profit/Loss on sale of PPE', 'Loss on disposal of assets', or 'Gain/Loss on disposal of assets'\n   - Sum ONLY the debit (positive) balances\n   - IGNORE all credit balances (these are gains, not losses)\n   - The result represents total loss on disposal\n\n3. **Miscellaneous expenses - Apply Exclusions**: For 'Miscellaneous expenses':\n   - Include GLs where 'Ind AS Minor' is 'Miscellaneous expenses', 'General expenses', or 'Misc.'\n   - EXCLUDE any GLs that also contain keywords: 'foreign exchange', 'forex', 'FX', 'disposal', 'sale of PPE', or 'rent'\n   - Sum the remaining GLs algebraically\n\n4. **GL Breakdown**: Include 'Ind AS Minor' column in the GL-level breakdown table for transparency.\n\nThese rules prevent double-counting and ensure proper classification across notes."
+}

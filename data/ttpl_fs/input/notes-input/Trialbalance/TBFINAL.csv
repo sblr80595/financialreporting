@@ -1,0 +1,423 @@
+GL Code,GL Name,BSPL,Major,Minor,Total June 25
+20011,Building,BS,"Property, plant and equipment",Fixed Assets,981.871654
+20012,Plant & Machinery,BS,"Property, plant and equipment",Fixed Assets,1648.4968126999997
+20013,Computers &  Peripherls,BS,"Property, plant and equipment",Fixed Assets,272.2309245
+20014,Furniture & Fixtures,BS,"Property, plant and equipment",Fixed Assets,282.7536597
+20015,Leasehold Land,BS,"Property, plant and equipment",Fixed Assets,82.6727409
+20016,Office Equipments,BS,"Property, plant and equipment",Fixed Assets,72.15695610546449
+20017,Vehicle,BS,"Property, plant and equipment",Fixed Assets,339.3556
+20019,Assets Under Construction,BS,Intangible assets under development,Fixed Assets,634.7674527000001
+400169,Acquisition Clearing Account,BS,Capital work in progress,Fixed Assets,0.0
+20025,Assets Under Construction – DSIR (R&D),BS,Capital work in progress,Fixed Assets,1.75
+20024,Right Of Use Asset,BS,Right-of-use assets,Right of use assets,2002.5084974503854
+20023,Accumulated Depreciation-ROU,BS,Right-of-use assets,Right of use assets,-278.82013518105936
+20031,Accumulated Depreciation- Building,BS,"Property, plant and equipment",Fixed Assets,-130.2141163
+20032,Accumulated Depreciation- Plant & Machinery,BS,"Property, plant and equipment",Fixed Assets,-724.4865814
+20033,Accumulated Depreciation- Computers & Peripherls,BS,"Property, plant and equipment",Fixed Assets,-178.8634608995446
+20034,Accumulated Depreciation- Furniture & Fixtures,BS,"Property, plant and equipment",Fixed Assets,-113.75415374967214
+20035,Accumulated Depreciation- Office Equipments,BS,"Property, plant and equipment",Fixed Assets,-53.620794840983606
+20036,Accumulated Depreciation- Vehicle,BS,"Property, plant and equipment",Fixed Assets,-174.2927855
+20021,Leasehold Improvement,BS,"Property, plant and equipment",Fixed Assets,351.1716428
+20022,Accumulated Depreciation Leasehold Improvement,BS,"Property, plant and equipment",Fixed Assets,-191.61023486425094
+20018,Software,BS,Intangible assets,Fixed Assets,132.3800349
+20037,Accumulated Ammortization-Software,BS,Intangible assets,Fixed Assets,-74.1727581
+20065,Deffered Tax Asset,BS,Deferred tax assets (net),Deffered Tax Assets,1307.9132624777844
+20075,Loan to Transvalve Health Private Limited,BS,Long-term loans and advances,Loan to related parties*,0.08459899999999987
+20076,Loan To Halemed Medical Private Limited,BS,Long-term loans and advances,Loan to related parties*,38.06174
+20077,Loan To Transhealth Private Limited,BS,Long-term loans and advances,Loan to related parties*,96.65754079999984
+20072,Other Loan,BS,Long-term loans and advances,Loans to others,0.0
+20091,Finished Goods - Trading,BS,Inventories,Stock-in-trade,2695.4735424494293
+20092,Finished Goods,BS,Inventories,Finished goods.,2626.6088562877517
+20093,Raw material,BS,Inventories,Raw material and packaging material,-7987.9769633079795
+20095,Packing - Material,BS,Inventories,Raw material and packaging material,428.29437490000004
+20096,Chemical,BS,Inventories,Raw material and packaging material,186.34685109999998
+20098,RM/PM Inward,BS,Inventories,Raw material and packaging material,10128.1343581
+200421,Work In Progress - FG,BS,Inventories,Work-in-progress,980.4799747802587
+20097,Consumables & Others,BS,Inventories,Raw material and packaging material,50.110598599999996
+20099,Rejected Materials,BS,Inventories,Raw material and packaging material,3.442875
+20106,Promotional Material,BS,Inventories,Raw material and packaging material,0.0
+20108,Rejected FG,BS,Inventories,Finished goods.,15.3370212
+20110,Goods in Transit,BS,Inventories,Stock in transit,2.9003
+200111,Trade Debtors (Domestic),BS,Trade receivables,"Unsecured, considered good",22807.4334175
+200112,Trade Debtors (Export),BS,Trade receivables,"Unsecured, considered good",718.4413483
+200113,Debtors - RR,BS,Trade receivables,"Unsecured, considered good",-3.9852856
+200114,Non- Recognised Receipt,BS,Trade receivables,"Unsecured, considered good",1.2295099
+200115,Debtor - Inter Branch,BS,Trade receivables,,72997.2887055
+200123,Trade Debtors Related Parties Domestic,BS,Trade receivables,"Unsecured, considered good",-191.98722269999985
+200124,Trade Debtors Related Parties Import,BS,Trade receivables,"Unsecured, considered good",1734.5936169314
+200125,Debtors for JV,BS,Trade receivables,"Unsecured, considered good",1.0000000003174137e-05
+200121,Sundry Debtors (Doubtful),BS,Trade receivables,Less : Provision for doubtful debts,-347.66928466094953
+200131,Cash in Hand,BS,Cash and bank balances,Cash on hand (including foreign currency),0.0
+200132,Petty Cash Rama Road,BS,Cash and bank balances,Cash on hand (including foreign currency),0.0
+200141,Foreign Currency in Hand,BS,Cash and bank balances,Cash on hand (including foreign currency),3.099547900000007
+200150,Post dated cheques in Hand,BS,Cash and bank balances,Cash on hand (including foreign currency),0.0
+200151,Cheques in hand,BS,Cash and bank balances,Cheques in hand,0.0
+200161,BOB A/c No 06860200000721,BS,Cash and bank balances,- in current accounts,1.8163510999999999
+200162,HDFC Bank A/c No 00262560003453,BS,Cash and bank balances,- in current accounts,0.1584145999999999
+200163,HDFC Bank C/A No 13992320000055,BS,Cash and bank balances,- in current accounts,0.05571139999999665
+200164,HDFC Bank A/c No 00262790000203,BS,Short-term borrowings,CC Limit from bank,-1287.1307399000025
+200165,Kotak Mahindra Bank C/A No 7711154664,BS,Cash and bank balances,- in current accounts,45.19933
+200167,Reco HDFC Bank A/c No 00262790000203,BS,Cash and bank balances,- in current accounts,-2.4e-06
+200182,CITI Bank (CCOD A/c No:-535987009),BS,Short-term borrowings,CC Limit from bank,-3521.1995039000035
+200183,CITI Bank (CCOD A/c No:-535987017) EEFC USD,BS,Cash and bank balances,- in current accounts,0.0
+200184,CITI Bank (CCOD A/c No:-535987025) EEFC EUR,BS,Cash and bank balances,- in current accounts,-0.34459
+200185,CITI Bank (CCOD A/c no.550431009)-INR,BS,Cash and bank balances,- in current accounts,-2e-05
+200188,ICICI Bank (CC Account No. – 135251000009) INR,BS,Short-term borrowings,CC Limit from bank,-857.6579374000002
+200189,ICICI Bank (CC Account No. – 135206000028) EEFC EURO,BS,Short-term borrowings,- in current accounts,20.96028469999999
+200190,ICICI Bank (CC Account No. – 135206000030) EEFC USD,BS,Short-term borrowings,- in current accounts,17.35901599999998
+200192,Fixed Deposit With HDFC Bank,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,545.1292883000001
+200194,Fixed Deposit With ICICI Bank,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,288.9544
+200191,Fixed Deposit With Kotak Bank,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,15.81
+200193,Fixed Deposit With BOB Bank,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,11.80767
+200171,FDR-BG-Bio-Pharmaceutical Corporation Ltd.,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200172,Fd-0209/3332473_20.11.13_kotak _7711373638,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200173,FD No.4411789707 ( 3.9.16_kotak(MD_  Agst BG),BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200174,FDR-4411832014,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200175,FDR-4413646411( 21.12.19- 01.07.20) 5.80%,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200176,FDR-50300215807913 HDFC Dom-19.04.19,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200177,Intt Accrued on FDR_(Security_s Tax),BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200178,FDR-4413672625 ( 26.02.20 To26.05.20) 5.10%,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200179,FDR-4413681832 (3months10 Day),BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200180,FDR- Agst Bank Guarantee(Kotak_7711290140),BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200181,Balance in Deposits Account (FDR),BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,0.0
+200187,Margin money (HDFC-FD-200180),BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,206.34852319999996
+200195,Fixed Deposit With CITI Bank,BS,Other bank balances,Fixed deposit with maturities more than three months but less than twelve months,9.7896834
+200203,Kapil Kumar,BS,Long-term loans and advances,Loans to others,0.0
+200205,Loan to Others,BS,Long-term loans and advances,Loans to others,0.0
+200212,Advance Tax,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),1735.0
+200213,Mat Credit,BS,Long-term loans and advances,AMT credit entitlement,2.4e-06
+200214,Income Tax Refund,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),15.28832
+200215,Amount seized by Income Tax,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),0.0
+200216,Vat,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200217,TDS on bank interest,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),8.638477
+200218,TDS - others,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),0.0
+200220,TCS,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),3.26075
+200221,Custom Duty Recoverable,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200524,GST Recoverable,BS,Short-term loans and advances,Balance with statutory authorities,348.30879
+200227,Custom Duty Wallet,BS,Short-term loans and advances,Balance with statutory authorities,57.73118400000006
+200222,TDS Recoverable A.Y. 2022-23,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),4.2337191999999995
+200223,TDS Recoverable A.Y. 2023-24,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),-2.6e-06
+200224,TDS Recoverable A.Y. 2024-25,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),-0.0944565
+200228,TDS Recoverable A.Y. 2025-26,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),56.1673374
+200230,TDS Recoverable A.Y. 2026-27,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),3.3380772999999997
+200225,Income Tax Refund Recoverable (A.Y. 2022-23),BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),2.7514
+200226,Income Tax Refund Recoverable (A.Y. 2021-22),BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),0.4121
+200231,Loan & Advance To Employee,BS,Short-term loans and advances,Loan to Employee,46.6300585
+200271,Security Deposit,BS,Long-term loans and advances,Security deposits,30.5505769
+200301,EMD,BS,Long-term loans and advances,Security deposits,76.84775
+200302,EMD Control Account,BS,Long-term loans and advances,Security deposits,54.690228899999994
+200501,Input -SGST,BS,Short-term loans and advances,Balance with statutory authorities,74.11896229999999
+200503,Input -IGST,BS,Short-term loans and advances,Balance with statutory authorities,282.3988935
+200504,Input RCM CGST,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200505,Input RCM SGST,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200506,Input RCM IGST,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+0,Input -SGST-TDS,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+0,Input -CGST-TDS,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+0,Input -IGST-TDS,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200510,ECL- CGST,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200511,ECL- SGST,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200512,ECL- IGST,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200373,ECL- CGST (LLP),BS,Short-term loans and advances,Balance with statutory authorities,5.5105345
+200374,ECL- SGST (LLP),BS,Short-term loans and advances,Balance with statutory authorities,5.5105145
+200375,ECL- IGST (LLP),BS,Short-term loans and advances,Balance with statutory authorities,7.8984
+200513,Input SGST Blocked,BS,Short-term loans and advances,Balance with statutory authorities,0.012103600000000006
+200514,Input CGST Blocked,BS,Short-term loans and advances,Balance with statutory authorities,0.012103599999999999
+200515,Input IGST Blocked,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200502,Input -CGST,BS,Short-term loans and advances,Balance with statutory authorities,74.11896229999999
+200361,Input -SGST (LLP),BS,Short-term loans and advances,Balance with statutory authorities,121.25797670000003
+200362,Input -CGST (LLP),BS,Short-term loans and advances,Balance with statutory authorities,8.3668637
+200363,Input -IGST (LLP),BS,Short-term loans and advances,Balance with statutory authorities,29.873774700000002
+200368,Input RCM IGST (LLP),BS,Short-term loans and advances,Balance with statutory authorities,0.0
+200370,Input -SGST-TDS (LLP),BS,Short-term loans and advances,Balance with statutory authorities,3.9999999934536845e-07
+200371,Input -CGST-TDS (LLP),BS,Short-term loans and advances,Balance with statutory authorities,3.9999999934536845e-07
+200372,Input -IGST-TDS (LLP),BS,Short-term loans and advances,Balance with statutory authorities,1.0000000010279564e-06
+100141,Output-SGST (LLP),BS,Other current liabilities,Statutory dues payable,-4.600000000021254e-06
+100140,Output-IGST (LLP),BS,Other current liabilities,Statutory dues payable,0.0
+100142,Output-CGST (LLP),BS,Other current liabilities,Statutory dues payable,-1.4000000000069512e-05
+100149,Output RCM IGST (LLP),BS,Other current liabilities,Statutory dues payable,0.0
+100147,Output RCM CGST (LLP),BS,Other current liabilities,Statutory dues payable,7.7e-06
+100148,Output RCM SGST (LLP),BS,Other current liabilities,Statutory dues payable,7.7e-06
+200391,Prepaid Expenses,BS,Short-term loans and advances,Prepaid expenses,95.056861
+200411,Export Refund Receivable,BS,Short-term loans and advances,Export incentive receivable,22.0362305
+200412,Rodtap Recoverable (Export Incentive),BS,Short-term loans and advances,Export incentive receivable,9.27976
+200379,Advances To Suppliers,BS,Short-term loans and advances,Advances to suppliers*,1163.3915155
+200401,Accured interest on Bank FDR,BS,Other current assets,Interest accrued ,44.11046999999999
+200402,Other Recoverable,BS,Other current assets,Other recoverable (refer note (i) below),1693.7204826686002
+10058,CFIL-Loan,BS,Long-term borrowings,Term loan from bank (refer note (d) below),0.0
+10011,Term loan from Bank,BS,Short-term borrowings,Term loan from bank (refer note (d) below),0.0
+10021,HDFC Car Loan ( BMW),BS,Long-term borrowings,Vehicle loan (refer note (e) below),0.0013262999999999999
+10022,Car Loan Discovery,BS,Long-term borrowings,Vehicle loan (refer note (e) below),0.0
+10023,Vehicle Loan Kotak Mahindra Prime Ltd. ( Skoda - CZPA01194 ),BS,Long-term borrowings,Vehicle loan (refer note (e) below),-7.75805
+10024,Vehicle Loan Kotak Mahindra Prime Ltd. ( Skoda - CZPA01422 ),BS,Long-term borrowings,Vehicle loan (refer note (e) below),-7.75805
+10025,Vehicle Loan HDFC Bank Ltd ( Amaze - 124522224 ),BS,Long-term borrowings,Vehicle loan (refer note (e) below),-2.7126701
+10026,Vehicle Loan HDFC Bank Ltd ( Amaze - 124605008 ),BS,Long-term borrowings,Vehicle loan (refer note (e) below),-2.7126769
+10027,Vehicle Loan HDFC Bank Ltd ( Creta -129245995),BS,Long-term borrowings,Vehicle loan (refer note (e) below),-6.8374234000000005
+10028,Vehicle Loan HDFC Bank Ltd (Innova-135834419),BS,Long-term borrowings,Vehicle loan (refer note (e) below),-12.6590799
+10041,Loan from IHL,BS,Short-term borrowings,Loan from related party (refer note (f) below),-12906.042058069861
+10047,Loan from Punita Sharma,BS,Short-term borrowings,Loan from related party (refer note (f) below),0.0
+10051,Provision for Gratuity-LT,BS,Provisions,Provision for gratuity (refer note 40),-399.51148
+10052,Provision for Leave Encashment-LT,BS,Provisions,Provision for compensated absences,-59.392912499999994
+100226,Provision Salary,BS,Provisions,Employee related payable,-467.7664835
+10031,American Express Credit Card (PS)-41009,BS,Trade payables,Payable to other than micro and small enterprises,-0.0105816
+10032,HDFC Credit Card-1225( Punita Sharma),BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10034,Kotak Credit Card No.-6238 ( Gurmit Singh Chugh),BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10036,Citi Credit card(1072) – Punita Sharma,BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10037,Citi Credit card (7551)-Kewal Krishan,BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10038,HDFC Bank Credit Card – 6612(Paritosh),BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10039,HDFC Credit Card(7560) – Indranil Mukherjee,BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10040,HDFC Credit Card(7568) – Gurmit Singh Chugh,BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10048,HDFC Credit Card(8855) – Punita Sharma,BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10049,HDFC Credit Card(6612) – Paritosh Arora,BS,Trade payables,Payable to other than micro and small enterprises,0.0
+10044,Buyers Credit,BS,Short-term borrowings,Buyers credit (refer note (a) below),0.0
+10055,Buyers Credit (Euro),BS,Short-term borrowings,Buyers credit (refer note (a) below),-1565.6291832999998
+10046,FCNR LOAN,BS,Short-term borrowings,Foreign currency working capital loan (refer note (b) below),0.0
+10057,FCNR (Euro),BS,Short-term borrowings,Foreign currency working capital loan (refer note (b) below),-1514.8498174000001
+10091,Sundry Creditors-Imported,BS,Trade payables,Payable to other than micro and small enterprises,-2192.7079080000008
+10092,Sundry Creditors-Domestic,BS,Trade payables,Payable to other than micro and small enterprises,-2462.710462
+10093,Sundry Creditors-Capex - Domestic,BS,Other current liabilities,Payable to other than micro and small enterprises,4.236342000000002
+10094,Sundry Creditors-Services,BS,Trade payables,Payable to other than micro and small enterprises,113.18563770000011
+10096,Sundry Creditors - Consumables,BS,Trade payables,Payable to other than micro and small enterprises,-0.7287499999999988
+10097,Employees Payable,BS,Other current liabilities,Advances to employees,44.672005
+10098,Creditors Related Party,BS,Trade payables,Payable to other than micro and small enterprises,-64.1347596999999
+10099,Creditors Related Party-Imported,BS,Trade payables,Payable to other than micro and small enterprises,99.58432940000003
+10095,Sundry Creditiors Capex - Imported,BS,Other Current Liabilities ,Payable to other than micro and small enterprises,49.587732599999995
+100112,Employee Expense Payable,BS,Other Current Liabilities ,Employee Related Payable,-1.87244
+100101,Creditors for JV Account,BS,Other Current Liabilities ,Payable to other than micro and small enterprises,-959.1298654999996
+100102,Creditors - Inter Branch,BS,Trade payables,,-72997.2887986
+100125,Goods Recieved Not Invoiced (GRN)  Clearing,BS,Trade payables,Payable to other than micro and small enterprises,0.4082
+100111,Salary Payable,BS,Other current liabilities,Employee related payable,-281.15246090000005
+100241,Employee Contribution to PF,BS,Other current liabilities,Statutory dues payable,-0.2365
+100242,Employee Contribution to ESIC,BS,Other current liabilities,Statutory dues payable,-0.00291
+100243,Employer Contribution to PF Payable,BS,Other current liabilities,Statutory dues payable,-14.98828
+100244,Employer Contribution to ESIC Payable,BS,Other current liabilities,Statutory dues payable,-0.49535399999999996
+100246,Gratuity Payable,BS,Other current liabilities,Statutory dues payable,0.0
+100248,Leave encashment Payable,BS,Provisions,Provision for compensated absences,-75.6859644
+100250,Social Security Contribution Payable,BS,Other current liabilities,Statutory dues payable,0.0
+100127,Freight Clearing,BS,Other current liabilities,,-0.0036916000000014903
+100131,Advance from Customers,BS,Other current liabilities,Advances from customers,-249.54537340000002
+100135,Security Deposit from Customer,BS,Other current liabilities,Advances from customers,-85.0
+0,Output RCM IGST- Import service,BS,Other current liabilities,Statutory dues payable,0.0
+100301,Output-SGST,BS,Other current liabilities,Statutory dues payable,-67.98806900000001
+100302,Output-IGST,BS,Other current liabilities,Statutory dues payable,-314.47819710000005
+100303,Output-CGST,BS,Other current liabilities,Statutory dues payable,-67.98806900000001
+100304,Output RCM CGST,BS,Other current liabilities,Statutory dues payable,-0.0322625
+100305,Output RCM SGST,BS,Other current liabilities,Statutory dues payable,-0.0322625
+100306,Output RCM IGST,BS,Other current liabilities,Statutory dues payable,-7.1230233999999975
+100161,TDS - Professional-10%,BS,Other current liabilities,Statutory dues payable,-5.423497900000001
+100162,TDS- Foreign Payment,BS,Other current liabilities,Statutory dues payable,-4.5609949
+100163,TDS - Salary,BS,Other current liabilities,Statutory dues payable,-43.24378
+100164,TDS - Contractor(2%),BS,Other current liabilities,Statutory dues payable,1.6475028000000007
+100165,TDS - Sub-Contractor(1%),BS,Other current liabilities,Statutory dues payable,-0.30313
+100166,TDS- Transporter-2%,BS,Other current liabilities,Statutory dues payable,0.0
+100167,TDS - Rent-10%,BS,Other current liabilities,Statutory dues payable,-1.0863817999999998
+100168,TDS - Commission & Brokage-5%,BS,Other current liabilities,Statutory dues payable,-0.6314769
+100169,TDS - Purchase 194Q-0.1%,BS,Other current liabilities,Statutory dues payable,-0.9167378999999998
+100170,TDS-other than interest on securities(194A),BS,Other current liabilities,Statutory dues payable,-13.491773899999995
+100172,TDS-Contractor-1.5 %,BS,Other current liabilities,Statutory dues payable,0.0
+100173,TDS on Fees for Technical Services u/s 194J 2%,BS,Other current liabilities,Statutory dues payable,-0.07312299999999983
+100181,Custom Duty Payable,BS,Short-term loans and advances,Balance with statutory authorities,0.0
+100183,TCS Payable,BS,Other current liabilities,Statutory dues payable,-0.0002189999999999418
+100191,Provision For Taxation,BS,Long-term loans and advances,Income tax recoverable* (refer note 27(b)),-1382.2480580983815
+100221,Provision for Customer Claims,BS,Provisions,Provision for customer scheme (refer note (i)),-7574.537189237401
+100222,Provision S&M,BS,Trade payables,Payable to other than micro and small enterprises,-372.29963
+100223,Provision Factory Cost,BS,Trade payables,Payable to other than micro and small enterprises,-14.28
+100224,Provision G&A,BS,Trade payables,Payable to other than micro and small enterprises,-184.9050513999997
+100234,MSME Interest on Trade payables,BS,Trade payables,Payable to other than micro and small enterprises,-2.0549237000000002
+100225,Provision for Others,BS,Provisions,Provision for sales return (refer note (ii)),-1223.399655
+10081,Leased Liability LongTerm,BS,Lease liabilities,Lease Liabilities,-1977.104983068895
+100201,Provision for Gratuity,BS,Provisions,Provision for gratuity (refer note 40),0.0
+100202,Lease Equalisation Reserve,BS,Other current liabilities,Lease Liabilities,-0.27246
+100231,Other Expenses Payable,BS,Other current liabilities,Other payable(refer note (i) below),-2328.8052090860683
+100233,Interest Accrued But Not Due On Borrowings,BS,Other current liabilities,Interest accrued but not due on borrowings,-42.8169751
+50011,Avnish Mehra Capital Account,BS,Partners' contribution,Partners Capital Account,-0.01
+50012,IHL Capital Account,BS,Partners' current account,Partners Current account,0.0
+50022,Opening Balance - Inventory,BS,Opening Balance,,-5490.2713733
+50023,Opening Balance - BP,BS,Opening Balance,,-14569.4817446
+50024,Opening Balance - FA,BS,Opening Balance,,0.4375
+50026,Opening Balance - G/L,BS,Opening Balance,,20059.3156179
+50021,Profit & Loss Account,BS,Reserves and surplus,,9965.191807404315
+50031,Retained Earnings Account,BS,Reserves and surplus,,-12450.319250499999
+50028,Deemed Equity,BS,Reserves and surplus,,-454.467169
+50032,Period End Closing,BS,Reserves and surplus,,0.0
+30012,FOC & Sample Supplies,PL,Sale of products,Finished goods,0.0
+30013,Domestic Sales,PL,Sale of products,Finished goods,-9551.365876299998
+30014,Trading Sales,PL,Sale of products,Finished goods,-4357.3588725
+30017,Branch Sale,PL,Sale of products,Finished goods,-3951.1225945000006
+30019,Scrap Sales,PL,Sale of products,Finished goods,-0.7606002000000001
+30020,Income from Service,PL,Other Income,Miscellaneous income,-14.5
+30021,Sales Return provision,PL,Sale of products,Finished goods,0.0
+30061,Export Sales,PL,Sale of products,Finished goods,-925.4230628
+30031,Sales Return,PL,Sale of products,Finished goods,722.6180731999999
+30034,Sales Return-Expired,PL,Sale of products,Finished goods,35.8307526
+30035,Sales Return-Damage,PL,Sale of products,Finished goods,102.790323
+30038,Credit Note - FOC,PL,Sale of products,Finished goods,28.1141586
+30015,Price Variation- Sales,PL,Sale of products,Finished goods,-142.75472630000004
+30016,Trade Discount-Sales,PL,Sale of products,Finished goods,8.7941468
+30018,Volume Discount on Sales,PL,Sale of products,Finished goods,3026.4481766000004
+30082,Intrest on FDR,PL,Other Income,Interest income on fixed deposits,-12.467903099999985
+30091,Interest on Income Tax Refund,PL,Other Income,Income tax refunds,0.0
+30093,Liablities Return Back,PL,Other Income,Liabilities/provisions no longer required written back,-86.72865363905039
+30094,Other Interest,PL,Other Income,Miscellaneous income,0.0
+30095,MEIS Refund,PL,Other Income,Export incentive,0.0
+30099,Duty Drawback,PL,Other Income,Export incentive,-9.21679
+30084,Realised Foreign Exchange Gains,PL,Other expenses,Foreign exchange loss (net),-113.45935490000001
+30085,Unrealised Foreign Exchange Gains,PL,Other expenses,Foreign exchange loss (net),-207.28030349999997
+30088,Freight Outward Income,PL,Other Income,Miscellaneous income,-0.973435
+300101,Other Income,PL,Other Income,Miscellaneous income,-612.8167478
+30102,Recovery Against FOC,PL,Other Income,Miscellaneous income,-1e-05
+30104,Rental Income,PL,Other Income,Miscellaneous income,-7.5
+30105,Rodtap Income (Export Incentive),PL,Other Income,Export incentive,-3.84068
+30106,Profit on Sale of Fixed Assets,PL,Other Income,"Profit on sale of property, plant and equipments (net)",0.0
+New code1,Interest on loan to THL,PL,Other Income,Loan to related party,-42.73972602739726
+New code3,Interest on loan to halemed,PL,Other Income,Loan to related party,-15.33197
+40011,Puchase ( Import),PL,Purchase of traded goods,Add: purchases during the year,4459.6129768
+40012,Purchase (Domestic),PL,Purchase of traded goods,Add: purchases during the year,3048.9424953
+40013,Purchase (Consumable),PL,Purchase of traded goods,Add: purchases during the year,9.378074
+40014,Purchase (Price Variation),PL,Purchase of traded goods,Add: purchases during the year,-1020.4540594999999
+40015,Purchase,PL,Purchase of traded goods,Add: purchases during the year,0.0
+40016,Purchase Offset,PL,Purchase of traded goods,,-10440.478274399999
+40017,Purchase Return Account,PL,Purchase of traded goods,Add: purchases during the year,-0.0909
+40019,Branch Purchase,PL,Sale of products,Finished goods,3952.4677618
+40072,Work In Progress - Inventory Change,PL,Cost of Goods Sold,,0.0
+40073,Materials - Purchase Price Gains,PL,Purchase of traded goods,Add: purchases during the year,1020.4540594999999
+40076,Stock Revaluation Losses,PL,Purchase of traded goods,,0.0
+40077,Stock Difference Gains,PL,Purchase of traded goods,,-9.3733999
+40078,Stock Difference Losses,PL,Purchase of traded goods,,27.610511599999995
+40080,Power & Fuel,PL,Other expenses,Power and fuel,2.2069613
+40081,Inter-Branch Stock t/f Delhi,PL,Purchase of traded goods,,3099.6026922999995
+40091,Freight Inward,PL,Purchase of traded goods,Add: purchases during the year,3.6878303000000003
+40092,Custom Duty,PL,Purchase of traded goods,Add: purchases during the year,-2.0000000298023222e-06
+400392,Custom Clearing Exp,PL,Purchase of traded goods,Add: purchases during the year,-0.3995190999999992
+400394,Packaging Material- Misc,PL,Purchase of traded goods,Add: purchases during the year,17.43572
+400111,Job work for Vas Accessories,PL,Other expenses,Miscellaneous expenses,3.5672725
+400121,Cost of Goods Sold - Manufacturing,PL,Cost of Goods Sold,,2915.7638478568383
+400122,Cost of Goods Sold - Trading,PL,Cost of Goods Sold,,3189.396268
+400123,Cost of Goods Sold- Sample,PL,Cost of Goods Sold,,55.8051759
+400125,Cost of Goods Sold - Expiry,PL,Cost of Goods Sold,,92.134886
+400126,Cost of Goods Sold - Damaged,PL,Cost of Goods Sold,,69.92166639999999
+400161,Depreciation- Building,PL,Depreciation and amortisation expense,Depreciation of tangible assets,10.817277464250957
+400162,Depreciation- Plant & Machinery,PL,Depreciation and amortisation expense,Depreciation of tangible assets,25.82624
+400163,Depreciation- Computers & Peripherls,PL,Depreciation and amortisation expense,Depreciation of tangible assets,8.927538899544633
+400164,Depreciation- Furniture & Fixtures,PL,Depreciation and amortisation expense,Depreciation of tangible assets,4.4434471496721315
+400165,Depreciation- Office Equipments,PL,Depreciation and amortisation expense,Depreciation of tangible assets,2.1338775409836064
+400166,Depreciation- Vehicle,PL,Depreciation and amortisation expense,Depreciation of tangible assets,7.27914
+400167,Amortization-Software,PL,Depreciation and amortisation expense,Amortisation of intangible assets,4.03203
+400170,Amortisation of ROU,PL,Depreciation and amortisation expense,Depreciation on right of use assets,59.51514928105937
+400901,Current Tax Expense,PL,Tax expense,Current Tax,100.0
+400902,Tax Prior Years,PL,Tax expense,Tax earlier years,0.0
+400903,Deferred Tax Expense,PL,Tax expense,Deferred tax expense,-60.846895397656375
+400905,MAT Credit Utilisation,PL,Tax expense,,0.0
+400171,Basic Salary,PL,Employee benefits expense,"Salaries, wages and other benefits",449.50999
+400172,Conveyance Allowance,PL,Employee benefits expense,"Salaries, wages and other benefits",0.0
+400174,Other Salary,PL,Employee benefits expense,"Salaries, wages and other benefits",9.0661
+400175,Gratuity,PL,Employee benefits expense,"Salaries, wages and other benefits",0.0
+400176,Driver Allowance,PL,Employee benefits expense,"Salaries, wages and other benefits",0.0
+400177,Leave Encashment,PL,Employee benefits expense,"Salaries, wages and other benefits",0.0
+400178,Employer Contribution to PF,PL,Employee benefits expense,Contribution to provident and other funds,22.91291
+400179,Employer Contribution to ESIC,PL,Employee benefits expense,Contribution to provident and other funds,1.17181
+400180,House Rent Allowance,PL,Employee benefits expense,"Salaries, wages and other benefits",215.46401
+400801,Special Allowance,PL,Employee benefits expense,"Salaries, wages and other benefits",363.62962
+400802,Others,PL,Other expenses,Miscellaneous expenses,0.0
+400201,Bonus,PL,Employee benefits expense,"Salaries, wages and other benefits",0.560007799999998
+400202,Incentive,PL,Employee benefits expense,"Salaries, wages and other benefits",70.11515
+40071,Wages,PL,Employee benefits expense,"Salaries, wages and other benefits",38.28166
+400203,Performance Incentives,PL,Employee benefits expense,"Salaries, wages and other benefits",7.11508
+400204,Social Security Exp,PL,Employee benefits expense,"Salaries, wages and other benefits",0.0
+400205,Stipend,PL,Employee benefits expense,"Salaries, wages and other benefits",0.0871
+400206,Ex Gratia,PL,Employee benefits expense,"Salaries, wages and other benefits",0.0
+400207,Bonus Expense Provision,PL,Employee benefits expense,"Salaries, wages and other benefits",11.381895700000001
+400208,Gratuity Expense Provision,PL,Employee benefits expense,"Salaries, wages and other benefits",18.4767899
+400209,Leave Encashment Expense Provision,PL,Employee benefits expense,"Salaries, wages and other benefits",59.392906999999994
+400213,Arear Pay Expense Provision,PL,Employee benefits expense,"Salaries, wages and other benefits",160.99207
+400214,ESOP expense,PL,Employee benefits expense,Shared Based Payment,591.9729199999999
+400181,Health Insurance,PL,Employee benefits expense,Staff welfare,12.879096
+400182,Food & Beverages,PL,Employee benefits expense,Staff welfare,12.0746539
+400183,Others Staff Welfare,PL,Employee benefits expense,Staff welfare,20.5877694
+400211,Interest on CC Limit,PL,Finance costs,Cash credit and others,116.67634699999999
+400221,Interest on Car Loan,PL,Finance costs,Vehicle loan,0.8234537
+400231,Bank Charges,PL,Other expenses,Bank charges,37.244972600000004
+400241,Interest On Late Payment of TDS,PL,Other expenses,Miscellaneous expenses,0.0
+400242,Interest On Late Payment of GST,PL,Finance costs,Interest on delayed payment of statutory dues,0.0
+400251,Others Finance Cost,PL,Finance costs,Cash credit and others,108.37561
+400259,Interest on Term Loan,PL,Finance costs,Cash credit and others,0.0
+400295,Interest On Buyers Credit Limit (HDFC Bank),PL,Finance costs,Cash credit and others,38.683989200000006
+400296,Interest on FCNR Limit (CITI Bank),PL,Finance costs,Cash credit and others,53.0882292
+400101,Interest on Leased Liability,PL,Finance costs,Interest on Lease Liabilities,47.53768441945226
+400298,Loan Processing Fee,PL,Finance costs,Cash credit and others,0.0
+400297,Interest on loan from Related Party,PL,Finance costs,Loan from related party,274.64287539725854
+New code2,Interest on discounting of share based payment expenses,PL,Finance costs,Interest on discounting of share based payment expenses,40.11951
+400191,Recuritement Charges,PL,Other expenses,Legal and professional expenses (refer note (i) below),4.5503096
+400301,Registration Fee,PL,Other expenses,Registration Fee,9.577475400000003
+400321,Rates & Taxes,PL,Other expenses,Rates and taxes ,31.8418352
+400381,Donation,PL,Other expenses,Charity and donation ,0.0
+400421,Festival Celebration,PL,Other expenses,Festival Celebration,0.20685
+400491,Conveyance Expenses,PL,Other expenses,Travelling and conveyance,2.7655621000000004
+400501,Membership & Subscription Fee,PL,Other expenses,Membership & Subscription Fee,0.1716802
+400511,Provision for Bad Debts ( P/L),PL,Other expenses,Liabilities/provisions no longer required written back,47.15
+400512,Provision for PPE ( P/L),PL,Other expenses,Provison for PPE,0.0
+400521,Courier Expenses,PL,Other expenses,Forwarding expenses,16.7157758
+400531,Bad Debts w/off,PL,Other expenses,Bad Debts,0.0
+400541,Testing Expenses,PL,Other expenses,Testing fee,9.60404
+400542,Round Off,PL,Other expenses,Miscellaneous expenses,0.0063636000000000005
+400561,Destruction Charges,PL,Other expenses,Miscellaneous expenses,0.06
+400591,Audit Fees,PL,Other expenses,Legal and professional expenses (refer note (i) below),5.7875
+400601,Misc. Expenses,PL,Other expenses,Miscellaneous expenses,0.0
+400581,G&A Exps,PL,Other expenses,Miscellaneous expenses,0.0
+400582,Realized Conversion Diff Loss,PL,Other expenses,,0.0
+400261,Rent,PL,Other expenses,Rent (refer note 25 and 28),0.2391856990575576
+400342,Printing & Stationary-Others,PL,Other expenses,Printing and stationery,5.241183400000001
+400483,R&D Expenses,PL,Other expenses,"Advertisment,marketing and development",0.0
+400401,Electricity Expenses,PL,Other expenses,Power and fuel,24.029792
+400471,Security Expenses,PL,Other expenses,Miscellaneous expenses,7.5994681
+400472,Claim Expense,PL,Sale of products,Finished goods,949.7076017374015
+400473,Short & Excess Settlement,PL,Other expenses,Miscellaneous expenses,0.0049197
+400474,Emp Reimb-Conveyance,PL,Other expenses,Travelling and conveyance,17.00828
+400475,Emp Remb-Misc,PL,Other expenses,Travelling and conveyance,-1.64846
+400476,Lease Rent,PL,Other expenses,Travelling and conveyance,3.32776
+400477,Emp Reimb-Food & Beverage,PL,Employee benefits expense,Staff welfare,25.829215
+400478,Emp Reim-Printing & Stationary,PL,Other expenses,Printing and stationery,0.37098
+400479,Emp Reimb-Courier,PL,Other expenses,Forwarding expenses,0.24732
+400480,Pollution Fee for Factory,PL,Other expenses,Miscellaneous expenses,0.02251
+400481,Business Support Service,PL,Other expenses,Miscellaneous expenses,0.0
+400482,Tender Fee-Bharatkosh,PL,Other expenses,Registration Fee,0.2976891000000003
+400486,Clinical Expenses,PL,Other expenses,Testing fee,0.0
+400484,Loss on Sale of Fixed Asset,PL,Other expenses,Loss on disposal of PPE,0.13475779453551937
+400331,Realised Foreign Exchange Losses,PL,Other expenses,Foreign exchange loss (net),501.5856916999999
+400332,Unrealised Foreign Exchange Losses,PL,Other expenses,Foreign exchange loss (net),-52.307466200000036
+400252,Tour & Travel - Foreign Ticket,PL,Other expenses,Travelling and conveyance,76.46390659999999
+400253,Tour & Travel - Domestic Ticlets,PL,Other expenses,Travelling and conveyance,27.8175784
+400254,Tours & Travels Foreign Hotels,PL,Other expenses,Travelling and conveyance,20.6328521
+400255,Tours & Travels Domestic Hotels,PL,Other expenses,Travelling and conveyance,41.7465403
+400256,Tours & Travels Visa Charges,PL,Other expenses,Travelling and conveyance,5.64124
+400257,Other Travel Expense,PL,Other expenses,Travelling and conveyance,15.4988329
+400258,Emp Reimb-Tour & Travel,PL,Other expenses,Travelling and conveyance,55.8419738
+400351,Legal & Professional Charges-Others,PL,Other expenses,Legal and professional expenses (refer note (i) below),115.14734739999999
+400352,Clinical Expenses,PL,Other expenses,Testing fee,74.75345399999998
+400361,Internet Expenses,PL,Other expenses,Telephone and internet expense,6.0162713
+400362,Others Expense,PL,Other expenses,Miscellaneous expenses,-6.630855400000001
+400364,Mobile Expense,PL,Other expenses,Telephone and internet expense,0.7044786
+400365,Emp Reimb-Mobile Exp,PL,Other expenses,Telephone and internet expense,6.4445378
+400371,Conference Expenses,PL,Other expenses,Sponsorship and conference expenses,0.0
+400391,Freight Outwards,PL,Other expenses,Forwarding expenses,39.6749963
+400393,Other Couriers,PL,Other expenses,Forwarding expenses,0.0
+400431,Vehicle Insurance,PL,Other expenses,Insurance charges ,0.9701654
+400432,Other Insurance,PL,Other expenses,Insurance charges ,9.35521
+400441,Repair & Manintenance- Office,PL,Other expenses,Repair and maintainance,12.659185599999995
+400442,Repair & Manintenance- Computer,PL,Other expenses,Repair and maintainance,1.309864
+400443,Repair & Manintenance- Building,PL,Other expenses,Repair and maintainance,0.6904
+400444,Repair & Manintenance- Plant & Machinery,PL,Other expenses,Repair and maintainance,8.1931525
+400445,Repair & Manintenance- Others,PL,Other expenses,Repair and maintainance,2.86417
+400446,Repair & Maitenance- Software,PL,Other expenses,Repair and maintainance,36.409861
+400461,CME Sponcership Exps,PL,Other expenses,Sponsorship and conference expenses,211.74359
+400463,Sales Promotion (RD),PL,Other expenses,"Advertisment,marketing and development",252.10008670000002
+400271,Advertisement Expense,PL,Other expenses,"Advertisment,marketing and development",11.76
+400281,Commission On Sale,PL,Other expenses,Commission expense,16.0
+400571,S&M Exps,PL,Other expenses,Miscellaneous expenses,0.0
+400585,Promotional Material - ME,PL,Purchase of traded goods,Add: purchases during the year,0.0
+400586,Workshop Expenses,PL,Other expenses,Miscellaneous expenses,0.0
+400587,Emp Reimb-Sale Promotion,PL,Other expenses,"Advertisment,marketing and development",1.69515
+400300,Interest on MSME Vendors,,Other expenses,Interest on MSME,0.0029517000000000002
+400700,Labour Cost loading,PL,,,-188.234749
+400701,Other Ohs Loading,PL,,,-100.71799800000001
+400702,Depreciation Loading,PL,,,-26.7153
+400485,Management Support Charges,PL,Other expenses,Management support charges (refer note 44),194.51871

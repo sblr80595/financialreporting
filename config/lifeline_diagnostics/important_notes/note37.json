@@ -1,0 +1,76 @@
+{
+    "note_number": "NOTE 37",
+    "note_title": "Contingent Liabilities and Commitments",
+    "output_file": "company_note_37_contingencies_commitments.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. Amounts for contingent liabilities and commitments are typically disclosed as positive values.",
+    "categories": [
+        "Claims Not Acknowledged",
+        "Corporate Guarantees",
+        "Other Legal Contingencies",
+        "Capital Commitments",
+        "Other Purchase Commitments"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Contingent Liabilities",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "I. Claims against the Company not acknowledged as debts",
+            "ind_as_minor": ["Claims Not Acknowledged"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "II. Corporate Guarantees and Indemnities",
+            "ind_as_minor": ["Corporate Guarantees"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "III. Other Legal or Regulatory Contingencies",
+            "ind_as_minor": ["Other Legal Contingencies"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Total Contingent Liabilities (Monetary Value)",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": ["I. Claims against the Company not acknowledged as debts", "II. Corporate Guarantees and Indemnities", "III. Other Legal or Regulatory Contingencies"],
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Commitments",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "I. Estimated amount of contracts remaining to be executed on capital account and not provided for",
+            "ind_as_minor": ["Capital Commitments"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "II. Other Commitments (e.g., Purchase Commitments, Investment Commitments)",
+            "ind_as_minor": ["Other Purchase Commitments"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Total Commitments (Monetary Value)",
+            "ind_as_minor": null,
+            "is_subtotal": true,
+            "calculation": "sum",
+            "sum_of": ["I. Estimated amount of contracts remaining to be executed on capital account and not provided for", "II. Other Commitments (e.g., Purchase Commitments, Investment Commitments)"],
+            "bold": true,
+            "show_line": true
+        }
+    ],
+    "additional_instructions": "This note requires both extensive qualitative text disclosures (explaining the nature, timing, and estimate of uncertainty) and the quantitative amounts, as mandated by **Ind AS 37**. The values should be sourced from TB_FINAL.csv. Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

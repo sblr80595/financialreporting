@@ -1,0 +1,26 @@
+{
+  "note_number": "NOTE 25",
+  "note_title": "Other Income",
+  "output_file": "everlife_ph_holdings_note_25_other_income.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Income categories typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the final notes. For 'Gain on sale of property, plant and equipment', sum algebraically and present only if the net result is a gain (positive).",
+  "categories": [
+    "Interest Income",
+    "Dividend income"
+  ],
+  "output_format": [
+    {
+      "label": "Other income",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Interest Income",
+      "ind_as_minor": "Interest Income"
+    },
+    {
+      "label": "Dividend income",
+      "ind_as_minor": "Dividend income"
+    }
+  ]
+}

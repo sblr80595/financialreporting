@@ -1,0 +1,97 @@
+{
+  "note_number": "NOTE 31",
+  "note_title": "Other Expenses",
+  "output_file": "analisa_note_31_other_expenses.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Present these as positive values in the final notes.",
+  "categories": [
+    "Advertising and sales promotion",
+    "Bank charges",
+    "Commission on sales",
+    "Gain/Loss on foreign exchange fluctuations (net)",
+    "Insurance charges",
+    "Legal and professional expenses",
+    "Management fees",
+    "Miscellaneous expenses",
+    "Payment to auditor",
+    "Power and fuel",
+    "Printing and stationery",
+    "Rates and Taxes",
+    "Rental expenses",
+    "Repair and maintenance",
+    "Telephone and internet expense",
+    "Travelling and conveyance"
+  ],
+  "output_format": [
+    {
+      "label": "**Other Expenses**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Advertising and sales promotion",
+      "ind_as_minor": "Advertising and sales promotion"
+    },
+    {
+      "label": "Bank charges",
+      "ind_as_minor": "Bank charges"
+    },
+    {
+      "label": "Commission on sales",
+      "ind_as_minor": "Commission on sales"
+    },
+    {
+      "label": "Gain/Loss on foreign exchange fluctuations (net)",
+      "ind_as_minor": "Gain/Loss on foreign exchange fluctuations (net)"
+    },
+    {
+      "label": "Insurance charges",
+      "ind_as_minor": "Insurance charges"
+    },
+    {
+      "label": "Legal and professional expenses",
+      "ind_as_minor": "Legal and professional expenses"
+    },
+    {
+      "label": "Management fees",
+      "ind_as_minor": "Management fees"
+    },
+    {
+      "label": "Miscellaneous expenses",
+      "ind_as_minor": "Miscellaneous expenses"
+    },
+    {
+      "label": "Payment to auditor",
+      "ind_as_minor": "Payment to auditor"
+    },
+    {
+      "label": "Power and fuel",
+      "ind_as_minor": "Power and fuel"
+    },
+    {
+      "label": "Printing and stationery",
+      "ind_as_minor": "Printing and stationery"
+    },
+    {
+      "label": "Rates and Taxes",
+      "ind_as_minor": "Rates and Taxes"
+    },
+    {
+      "label": "Rental expenses",
+      "ind_as_minor": "Rental expenses"
+    },
+    {
+      "label": "Repair and maintenance",
+      "ind_as_minor": "Repair and maintenance"
+    },
+    {
+      "label": "Telephone and internet expense",
+      "ind_as_minor": "Telephone and internet expense"
+    },
+    {
+      "label": "Travelling and conveyance",
+      "ind_as_minor": "Travelling and conveyance"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with the specified Ind AS Minors for Other Expenses. Present each category separately showing individual amounts. Display all amounts as positive values. Calculate and show the total of all other expenses."
+}

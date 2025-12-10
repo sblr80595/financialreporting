@@ -1,0 +1,71 @@
+{
+  "note_number": "NOTE 36",
+  "note_title": "Other Statutory Information",
+  "output_file": "everlife_ph_holdings_note_35_statutory_info.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the 'period' column. Liability balances (credit) should be sign-flipped to present as positive.",
+  "categories": [
+    "Statutory Dues - MSME Principal Outstanding",
+    "Statutory Dues - MSME Interest Outstanding",
+    "Statutory Dues - MSME Interest Paid",
+    "Dividend - Proposed / Declared",
+    "Dividend - Tax on Dividend"
+  ],
+  "output_format": [
+    {
+      "label": "A. Dues to Micro and Small Enterprises (MSME)",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Principal amount remaining unpaid to MSME at the end of the year",
+      "ind_as_minor": [
+        "Statutory Dues - MSME Principal Outstanding"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "ii) Interest amount due and payable for the year on delayed payments",
+      "ind_as_minor": [
+        "Statutory Dues - MSME Interest Outstanding"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "iii) Interest actually paid to MSME on delayed payments",
+      "ind_as_minor": [
+        "Statutory Dues - MSME Interest Paid"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "B. Dividend Disclosures",
+      "is_section_header": true,
+      "bold": true
+    },
+    {
+      "label": "i) Amount of dividend proposed/declared during the year",
+      "ind_as_minor": [
+        "Dividend - Proposed / Declared"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    },
+    {
+      "label": "ii) Amount of dividend distribution tax on proposed dividend",
+      "ind_as_minor": [
+        "Dividend - Tax on Dividend"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true
+    }
+  ],
+  "additional_instructions": "This note is primarily for statutory compliance disclosures. Use sign-flip for liability-type accounts (MSME dues and declared dividends) to present them as positive amounts. The prompt only covers structured quantitative disclosures; the remaining statutory narrative is excluded."
+}

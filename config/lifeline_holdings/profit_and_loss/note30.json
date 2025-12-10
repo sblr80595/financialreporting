@@ -1,0 +1,29 @@
+{
+  "note_number": "NOTE 30",
+  "note_title": "Depreciation and Amortisation Expense",
+  "output_file": "everlife_diagnostics_note_30_depreciation_amortisation.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expenses are typically debit balances (positive). Sum them algebraically. Depreciation and amortisation are non-cash expenses that allocate the cost of assets over their useful lives.",
+  "generate_if_empty": true,
+  "categories": [
+    "Dep. On PPE",
+    "Dep. On ROU",
+    "Amortisation of intangible assets (refer note 5A)"
+  ],
+  "output_format": [
+    {
+      "label": "Depreciation on property, plant and equipment (refer note 4)",
+      "ind_as_minor": "Dep. On PPE",
+      "default_value": 0
+    },
+    {
+      "label": "Depreciation on right of use assets (refer note 4A)",
+      "ind_as_minor": "Dep. On ROU",
+      "default_value": 0
+    },
+    {
+      "label": "Amortisation of intangible assets (refer note 4B)",
+      "ind_as_minor": "Amortisation of intangible assets (refer note 5A)",
+      "default_value": 0
+    }
+  ]}

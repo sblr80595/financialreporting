@@ -1,0 +1,154 @@
+{
+  "note_number": "34",
+  "note_title": "Financial Instruments Risk",
+  "statement_type": "important-notes",
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+  "multi_source_integration": true,
+  "auxiliary_files": [
+    {
+
+      "label": "Balance_Sheet_XLSX", 
+      "file_path": "data/cpm/output/financial_statements/BS",
+      "file_name": "Balance_Sheet_*.xlsx", 
+      "description": "Generated Balance Sheet for Credit Risk and Liquidity Risk analysis"
+    
+    }
+  ],
+  "periods": [
+    {
+      "period_name": "Mar'25",
+      "period_column": "Total Mar'25"
+    }
+  ],
+  "multi_source_rule": "GL Breakdown (Output 1) from CPM.csv filtered for financial instruments exposed to credit and liquidity risks. Credit Risk Exposure and Liquidity Risk tables (Outputs 2 & 3) from Balance_Sheet.xlsx focusing on Mar'25.",
+  "summation_rule": "Use algebraic summation for all calculations. For Credit Risk: sum all financial asset particulars. For Liquidity Risk: use the maturity breakdown from Balance Sheet data. Preserve signs throughout calculations.",
+  "period_handling": "Generate all sections for Mar'25 only. Extract historical data (Mar'24, Mar'23) from Balance Sheet if available, otherwise note as 'Not Available'.",
+  "categories": [
+    "Trade receivables",
+    "Cash and cash equivalents",
+    "Loans",
+    "Other financial assets",
+    "Borrowings",
+    "Trade payables",
+    "Lease liabilities",
+    "Other financial liabilities"
+  ],
+  "output_format": {
+    "gl_breakdown": [
+      {
+        "section": "NOTE 34: GL CODE BREAKDOWN (Credit and Liquidity Risk Instruments)",
+        "categories": [
+          "Trade receivables",
+          "Cash and cash equivalents",
+          "Loans",
+          "Other financial assets",
+          "Borrowings",
+          "Trade payables",
+          "Lease liabilities",
+          "Other financial liabilities"
+        ],
+        "format": "GL Code | GL Code Description | Ind AS Major | Ind AS Minor | 31 March 2025 (MYR)",
+        "show_subtotal": true,
+        "subtotal_label": "Total Relevant Instruments"
+      }
+    ],
+    "summary_table": [
+      {
+        "section": "NOTE 34: CREDIT RISK EXPOSURE",
+        "label": "**Financial Assets Exposed to Credit Risk**",
+        "is_bold": true
+      },
+      {
+        "label": "Trade receivables",
+        "source": "Balance_Sheet_XLSX",
+        "calculation": "Extract from Balance Sheet for Mar'25"
+      },
+      {
+        "label": "Cash and cash equivalents",
+        "source": "Balance_Sheet_XLSX",
+        "calculation": "Extract from Balance Sheet for Mar'25"
+      },
+      {
+        "label": "Loans to related parties",
+        "source": "Balance_Sheet_XLSX",
+        "calculation": "Extract from Balance Sheet for Mar'25"
+      },
+      {
+        "label": "Other financial assets",
+        "source": "Balance_Sheet_XLSX",
+        "calculation": "Extract from Balance Sheet for Mar'25"
+      },
+      {
+        "label": "**Total Credit Risk Exposure**",
+        "source": "calculated",
+        "calculation": "Algebraic sum of all financial assets above",
+        "is_total": true
+      }
+    ],
+    "reconciliation": [
+      {
+        "section": "NOTE 34: LIQUIDITY RISK - CONTRACTUAL MATURITIES (31 March 2025)",
+        "label": "**Financial Liabilities by Maturity**",
+        "is_bold": true
+      },
+      {
+        "label": "Borrowings - Current",
+        "maturity_split": true,
+        "less_than_1y": "Extract current portion from Balance Sheet",
+        "1_to_5y": "0",
+        "more_than_5y": "0"
+      },
+      {
+        "label": "Borrowings - Non-current",
+        "maturity_split": true,
+        "less_than_1y": "0",
+        "1_to_5y": "Extract non-current portion (if maturity disclosed)",
+        "more_than_5y": "Extract long-term portion (if maturity disclosed)"
+      },
+      {
+        "label": "Trade payables",
+        "maturity_split": true,
+        "less_than_1y": "Extract from Balance Sheet",
+        "1_to_5y": "0",
+        "more_than_5y": "0"
+      },
+      {
+        "label": "Lease liabilities - Current",
+        "maturity_split": true,
+        "less_than_1y": "Extract current portion from Balance Sheet",
+        "1_to_5y": "0",
+        "more_than_5y": "0"
+      },
+      {
+        "label": "Lease liabilities - Non-current",
+        "maturity_split": true,
+        "less_than_1y": "0",
+        "1_to_5y": "Extract non-current portion",
+        "more_than_5y": "0"
+      },
+      {
+        "label": "Other financial liabilities",
+        "maturity_split": true,
+        "less_than_1y": "Extract from Balance Sheet",
+        "1_to_5y": "0",
+        "more_than_5y": "0"
+      },
+      {
+        "label": "**Total Financial Liabilities (Mar'25)**",
+        "is_total": true,
+        "calculation": "Sum of all liability maturities by column"
+      },
+      {
+        "label": "**Total After 1 Year**",
+        "is_total": true,
+        "calculation": "Sum of '1 to 5 years' + 'More than 5 years'"
+      },
+      {
+        "label": "**Grand Total**",
+        "is_total": true,
+        "calculation": "Sum of all three maturity columns"
+      }
+    ]
+  },
+  "additional_instructions": "## Calculation Steps:\n\n**For Mar'25:**\n\n1. **GL Breakdown (Output 1):** Filter CPM.csv for rows where 'Ind AS Minor' matches any of the categories: Trade receivables, Cash and cash equivalents, Loans, Other financial assets, Borrowings, Trade payables, Lease liabilities, Other financial liabilities. Extract GL Code, GL Code Description, Ind AS Major, Ind AS Minor, and Total Mar'25 values. Compute algebraic sum.\n\n2. **Credit Risk Exposure (Output 2):** From Balance_Sheet.xlsx, extract all financial assets (Trade receivables, Cash and cash equivalents, Loans, Other financial assets) for Mar'25. Sum these to get Total Credit Risk Exposure.\n\n3. **Liquidity Risk Analysis (Output 3):** From Balance_Sheet.xlsx, identify all financial liabilities (Borrowings, Trade payables, Lease liabilities, Other financial liabilities). Classify each by contractual maturity:\n   - **Less than 1 year:** Current portion of borrowings, current lease liabilities, trade payables, other current financial liabilities\n   - **1 to 5 years:** Non-current borrowings (if maturity info available), non-current lease liabilities\n   - **More than 5 years:** Long-term borrowings (if maturity info available)\n\n   If specific maturity data is not available in Balance Sheet, use reasonable assumptions:\n   - Current liabilities \u2192 Less than 1 year\n   - Non-current liabilities \u2192 1 to 5 years (unless clearly long-term)\n\n---\n\n## Arithmetic Rules:\n- Perform algebraic summation: respect positive and negative signs.\n- For Credit Risk: Sum all asset values (all typically positive).\n- For Liquidity Risk: Sum liability values by maturity bucket. Total After 1 Year = (1 to 5 years) + (More than 5 years). Grand Total = (Less than 1 year) + (1 to 5 years) + (More than 5 years).\n- Round consistently (2 decimals) only after aggregation.\n\n---\n\n## Output Requirements:\n1. **GL Breakdown Table** - Show all relevant financial instrument GLs with Mar'25 column\n2. **Credit Risk Exposure Table** - Show all financial assets and Total Credit Risk Exposure for Mar'25\n3. **Liquidity Risk Table** - Show all financial liabilities classified by maturity (Less than 1 year, 1 to 5 years, More than 5 years) with calculated totals\n4. Currency: **MYR** (Malaysian Ringgit)\n5. Format amounts in Malaysian Ringgit style: MYR 1,23,456 or MYR -1,23,456\n\n---\n\n## Important Notes:\n- If historical data (Mar'24, Mar'23) exists in Balance Sheet, include in Credit Risk table as additional columns\n- For Liquidity Risk, if maturity breakdown is not explicitly available in Balance Sheet, classify as:\n  - Current liabilities = Less than 1 year\n  - Non-current liabilities = 1 to 5 years\n- Include a footnote if maturity assumptions were made\n- Ensure all totals reconcile with Balance Sheet figures"
+}

@@ -1,0 +1,28 @@
+{
+  "note_number": "NOTE 27",
+  "note_title": "Changes in Inventories of Traded Goods",
+  "output_file": "analisa_note_27_changes_inventories.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Calculate opening inventory minus closing inventory. A positive result means inventory decreased (added to expenses). A negative result means inventory increased (reduces expenses).",
+  "categories": [
+    "Traded goods"
+  ],
+  "output_format": [
+    {
+      "label": "**Changes in Inventories of Traded Goods**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Opening inventory",
+      "ind_as_minor": "Traded goods",
+      "period": "opening"
+    },
+    {
+      "label": "Less: Closing inventory",
+      "ind_as_minor": "Traded goods",
+      "period": "closing"
+    }
+  ],
+  "additional_instructions": "Filter trial balance entries with Ind AS Minor 'Traded goods'. Calculate the change as Opening Inventory minus Closing Inventory. Present the opening and closing balances separately, then show the net change. Inventory values should be displayed as positive amounts."
+}

@@ -1,0 +1,70 @@
+{
+  "note_number": "NOTE 13",
+  "note_title": "Other financial assets-Currents",
+  "output_file": "Neoscience_Note_8_OFA_Current.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate all listed current financial asset components to derive the total for the note.",
+  "categories": [
+    "Other recoverable (OFA-Current)",
+    "Performance deposits",
+    "Security deposits",
+    "Other deposits",
+    "Interest accrued but not due (OFA-Current)",
+    "Interest accrued but not due on loan to related party (OFA-Current)"
+  ],
+  "output_format": [
+    {
+      "label": "Other recoverable",
+      "ind_as_minor": ["Other recoverable (OFA-Current)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Performance deposits",
+      "ind_as_minor": ["Performance deposits"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Security deposits",
+      "ind_as_minor": ["Security deposits"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Other deposits",
+      "ind_as_minor": ["Other deposits"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Interest accrued but not due (General)",
+      "ind_as_minor": ["Interest accrued but not due (OFA-Current)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Interest accrued on loan to related party",
+      "ind_as_minor": ["Interest accrued but not due on loan to related party (OFA-Current)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Other recoverable",
+        "Performance deposits",
+        "Security deposits",
+        "Other deposits",
+        "Interest accrued but not due (General)",
+        "Interest accrued on loan to related party"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. The total amount is the sum of all components. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

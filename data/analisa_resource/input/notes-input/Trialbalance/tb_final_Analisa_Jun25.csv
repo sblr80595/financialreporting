@@ -1,0 +1,214 @@
+Gl code,GL Description,BSPL,Major,Minor,Total June 25
+12021010,Office Equipment-cost,BS,Property plant and equipment,Office equipment,351535.43
+12021910,Accum. Dep Office Equipment,BS,Property plant and equipment,Office equipment AD,-325268.6
+12031010,Computers-cost,BS,Property plant and equipment,Computer,555393.96
+12031910,Accum. Dep computers,BS,Property plant and equipment,Computer-AD,-319402.82
+12011010,Furniture & Fittings-cost,BS,Property plant and equipment,Furniture and Fittiings,96801.44
+12011910,Accum. Dep Furniture and Fittings,BS,Property plant and equipment,Furniture and Fittiings AD,-95536.78
+12051010,Renovation-cost,BS,Property plant and equipment,Renovation,717101.26
+12051910,Accum. Dep Renovation,BS,Property plant and equipment,Renovation-AD,-717101.26
+12061010,Motor Vehicle-cost,BS,Property plant and equipment,Motor Vehicle,10350.0
+12061910,Accum. Dep Motor Vehicle,BS,Property plant and equipment,Motor Vehicle AD,-4398.75
+12091010,Laboratory Equipment - Cost,BS,Property plant and equipment,Plant and machinery,937792.21
+12091910,Accum. Dep Lab Equipment,BS,Property plant and equipment,Plant and machinery AD,-805070.46
+12081010,Tools & Equipment-cost,BS,Property plant and equipment,Plant and machinery,25891.54
+12081910,Accum. Dep T/E,BS,Property plant and equipment,Plant and machinery AD,-4315.26
+ROU,ROU,BS,Right of use,Right of use Cost,852392.0129554854
+AD ROU,AD ROU,BS,Right of use,Right of use Accumulated dep,-395419.2694657028
+14011010,Trade Debtors-Local,BS,Trade receivables,Trade Receivables considered good – unsecured,3781815.91
+14011020,Trade Debtors-Foreign,BS,Trade receivables,Trade Receivables considered good – unsecured,15636.0
+14011030,Trade Debtors-Local-Interco,BS,Trade receivables,Trade Receivables considered good – unsecured,0.0
+14011040,Trade Debtors-Foreign-Interco,BS,Trade receivables,Trade Receivables considered good – unsecured,0.0
+14012000,Provision for Doubtful Debts,BS,Trade receivables,"Unsecured, considered impaired",0.0
+14030100,Closing Stock,BS,Inventories,Traded goods,2515449.88
+14030200,Inventory - Goods In Transit,BS,Inventories,Goods in Transit,0.0
+14015100,Sundry Deposits,BS,Other financial assets,Security deposits (OFA-Current),81637.01
+14016100,Advance Trident Freight,BS,Other current assets,Prepaid expenses (OCA),5786.05
+14016200,Advance DHL Express,BS,Other current assets,Prepaid expenses (OCA),801.6
+14016300,Advance Geodis Wilson,BS,Other current assets,Prepaid expenses (OCA),5260.92
+14016400,Advance World Asia Logisttics,BS,Other current assets,Prepaid expenses (OCA),1863.95
+14016500,Advance Staff,BS,Other current assets,Prepaid expenses (OCA),4083.35
+14015200,Prepayment to Supplier,BS,Other current assets,Prepaid expenses (OCA),713984.79
+14022010,Other Debtors-Local,BS,Contract liabilities,Consideration received in advance,-191593.0
+14022020,Other Debtors-Foreign,BS,Trade receivables,"Unsecured, considered impaired",0.0
+14050010,Bank - SCB 8613 (MYR),BS,Cash and cash equivalents,Balance with banks in current accounts,1521475.95
+14050020,Bank - SCB 5128 (Payroll),BS,Cash and cash equivalents,Balance with banks in current accounts,160105.52
+14050040,Bank - SCB 5245 (USD),BS,Cash and cash equivalents,Balance with banks in current accounts,681015.06
+14050030,Bank - SCB 5342 (SGD),BS,Cash and cash equivalents,Balance with banks in current accounts,0.0
+14050050,Bank - MBB 0326,BS,Cash and cash equivalents,Balance with banks in current accounts,758902.2
+14045010,Petty Cash,BS,Cash and cash equivalents,Cash on hand,853.3
+14060010,Fixed Deposit/Repo  - MBB 6248,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,598428.6
+14060020,Fixed Deposit - SCB 794-3-5759261-6,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,43540.0
+14060030,Fixed Deposit - SCB 794-3-9949824-3,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,4272.159999999974
+FD short term (cash & Cash equi),FD short term (cash & Cash equi),BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,372672.0
+14060040,Bank Guarantee Margin Hold - MBB 2562,BS,Other bank balances,Fixed deposits with banks with maturity period of more than 3 months but less than 12 months,0.0
+16010000,INVESTMENTS,BS,Investments,Investments in subsidiaries,62273222.0
+21010010,Trade Creditors-Local,BS,Trade Payables,Due to others,1324081.6
+21010020,Trade Creditors-Foreign,BS,Trade Payables,Due to others,1069620.55
+21010050,Trade Creditors-Allocation A/C,BS,Trade Payables,Due to others,0.0
+21110010,Other Creditors-Local,BS,Trade Payables,Due to others,40708.17
+21110020,Other Creditors-Foreign,BS,Trade Payables,Due to others,2471.15
+21015010,Accruals & Payables-Others,BS,Other financial liabilities,Accruals,1274543.48
+21015080,Accruals-Freight & Duty,BS,Other financial liabilities,Accruals,626.4
+21015090,Accruals-Corp Card,BS,Other financial liabilities,Accruals,0.0
+21015100,Accruals-Dividend Payable,BS,Other current liabilities,Dividend payable,0.0
+21015110,Accruals-Deferred Revenue,BS,Contract liabilities,Consideration received in advance,0.0
+21015120,Provision of Bonus,BS,Other financial liabilities,Employee related payables,449496.2
+21015130,Provision of Sales Commission,BS,Other financial liabilities,Employee related payables,122134.88
+21010080,Amount Owing To Everlife Holdings Pte Ltd,BS,Other current financial liabilities from related party - Everlife group,Other payables (OFL),42621250.0
+21015020,Accruals-Payroll & Claims etc,BS,Other financial liabilities,Employee related payables,7890.0
+21015030,Accruals-PCB,BS,Other financial liabilities,Employee related payables,12326.5
+21015040,Accruals-EPF,BS,Other financial liabilities,Employee related payables,41985.0
+21015050,Accruals-SOCSO/EIS,BS,Other financial liabilities,Employee related payables,3678.5
+21015070,Accruals-Zakat,BS,Other financial liabilities,Employee related payables,122.63
+21015060,Accruals-HRDF,BS,Other financial liabilities,Employee related payables,1877.28
+Contract liabilities,,BS,Contract liabilities,Consideration received in advance,81234.0
+Deferred consideration,Deferred consideration,BS,Other financial liabilities,Deferred Consideration,17417222.0
+21020000,Customers Down Payment,BS,Contract liabilities,Contract liabilities,709203.32
+21022010,SST IT Provider,BS,Other current liabilities,Other Payables (OCL),0.0
+21022020,SST Consultancy,BS,Other current liabilities,Other Payables (OCL),32062.26
+21022030,SST Maintenance Repair,BS,Other current liabilities,Other Payables (OCL),32158.33
+21022040,SST Training or Coaching Services,BS,Other current liabilities,Other Payables (OCL),0.0
+21022050,SST Digital Service and Electronic Medium,BS,Other current liabilities,Other Payables (OCL),10335.97
+34010000,Provision for Taxation,BS,Current tax liabilities (net),Provision for income tax (net of prepaid taxes),674389.5472
+34020000,Deferred Taxation,BS,Deferred tax liabilities (net),Deferred tax liabilities (net),100473.0
+Lease Liabilty Current,Lease Liabilty Current,BS,Lease liabilities - Current,Lease liabilities,283490.1931713767
+Lease Liabilty Non Current,Lease Liabilty Non Current,BS,Lease liabilities-Non Current,Lease liabilities,191653.563822549
+31000000,Paid Up Capital,BS,Equity share capital,"Issued, subscribed and fully paid up",350000.0
+33000000,Dividend,BS,Reserves and surplus,Retained earnings,-21800000.0
+32000000,Retained Earnings,BS,Reserves and surplus,Retained earnings,28777914.53369585
+Profit Period-jun FS,Profit Period,BS,Reserves and surplus,Retained earnings,1290100.506304144
+41010010,Local Sales,PL,Revenue,Revenue from Operations,4863258.55
+41010011,Local Sales-LF,PL,Revenue,Revenue from Operations,54020.0
+41010012,Local Sales-Services & Rental of Equipment,PL,Revenue,Revenue from Operations,0.0
+41010014,Local Sales-Interco,PL,Revenue,Revenue from Operations,0.0
+41010015,Local Sales-Associate,PL,Revenue,Revenue from Operations,0.0
+41020010,Foreign Sales,PL,Revenue,Revenue from Operations,10468.92
+41020011,Foreign Sales-LF,PL,Revenue,Revenue from Operations,313193.23
+41020014,Foreign Sales-Interco,PL,Revenue,Revenue from Operations,0.0
+41020015,Foreign Sales-Associate,PL,Revenue,Revenue from Operations,0.0
+41020015,Foreign Sales-Associate,PL,Revenue,Revenue from Operations,0.0
+51010000,Opening Stock,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+53010010,Purchases-Local,PL,Purchases of Traded Goods,Purchase of traded goods,657341.59
+53010011,Purchases-Local-LF,PL,Purchases of Traded Goods,Purchase of traded goods,45114.88
+55100000,Inward Freight-Air,PL,Purchases of Traded Goods,Purchase of traded goods,67022.94
+55100020,Inward Freight-Land,PL,Purchases of Traded Goods,Purchase of traded goods,19817.6
+54100000,Duties,PL,Purchases of Traded Goods,Purchase of traded goods,43905.38
+52030000,Marine Insurance-Road,PL,Purchases of Traded Goods,Purchase of traded goods,2930.52
+55200000,Packaging/Dry Ice/Handling/Others,PL,Purchases of Traded Goods,Purchase of traded goods,6363.86
+55300000,"Service, Training & Installation Charges",PL,Purchases of Traded Goods,Purchase of traded goods,151374.54
+52020000,Marine Insurance-Bill Of lading,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+52010000,Marine Insurance-Air Freight,PL,Purchases of Traded Goods,Purchase of traded goods,1817.4
+53010014,Purchase Local-Interco,PL,Purchases of Traded Goods,Purchase of traded goods,7963.0
+53010015,Purchase Local-Associate,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+53020010,Purchases-Foreign,PL,Purchases of Traded Goods,Purchase of traded goods,2537948.96
+53020011,Purchases-Foreign-LF,PL,Purchases of Traded Goods,Purchase of traded goods,186577.72
+53020014,Purchase Foreign-Interco,PL,Purchases of Traded Goods,Purchase of traded goods,14796.38
+53020015,Purchase Foreign-Associate,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+53031000,Purchase-Others,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+53032000,Purchase-Offset,PL,Purchases of Traded Goods,Purchase of traded goods,-3478257.68
+56010000,Closing Stocks,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+57010010,Local Cost Of Sales,PL,Purchases of Traded Goods,Purchase of traded goods,3067776.11
+57100014,Local Cost Of Sales-Interco,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+57100015,Local Cost Of Sales-Associate,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+57100099,Stock Adjustment,PL,Purchases of Traded Goods,Purchase of traded goods,-107893.09
+57200010,Foreign Cost of Sales,PL,Purchases of Traded Goods,Purchase of traded goods,192503.81
+57200014,Foreign Cost Of Sales-Interco,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+57200015,Foreign Cost Of Sales-Associate,PL,Purchases of Traded Goods,Purchase of traded goods,0.0
+71000000,Commission Received,PL,Other Income,other INCOME,0.0
+72000000,Others income,PL,Other Income,other INCOME,154030.0
+61035020,Commissions-Others,PL,Other expenses,Commission on sales,0.0
+62510020,Office Equipment Rental,PL,Other Expenses,Rental expenses,1486.0
+62510130,Laboratory/Service Consumable,PL,Other Expenses,Miscellaneous expenses,5040.7
+62510140,Tender Expenses,PL,Other expenses,Legal and professional expenses,720.4
+62510150,Stamp Duty,PL,Other expenses,Legal and professional expenses,0.0
+62510100,Registration/Licences,PL,Other expenses,Legal and professional expenses,575.0
+64015000,Bad Debt,PL,Exceptional item,Impairment of financial assets,0.0
+64021000,SST Expenses,PL,Other Expenses,Miscellaneous expenses,20.0
+63015000,Printing-Leaflets/Brochures,PL,Other Expenses,Printing and stationery,0.0
+63020000,Advertisement and Promotion,PL,Other Expenses,Advertising and sales promotion,27869.02
+61518000,Training Expenses,PL,Other Expenses,Staff welfare expenses,0.0
+63230000,Donation & Sponsorship,PL,Other Expenses,Miscellaneous expenses,0.0
+62015200,Entertainment-Local,PL,Other Expenses,Travelling and conveyance,1571.92
+62015300,Entertainment-Oversea,PL,Other Expenses,Travelling and conveyance,0.0
+62016000,Petrol & Mileage,PL,Other Expenses,Travelling and conveyance,7508.4
+62015000,Travelling-Local (Air ticket/Accomodation/Meals),PL,Other Expenses,Travelling and conveyance,26479.76
+62017000,Car Rental,PL,Other Expenses,Travelling and conveyance,1339.18
+62015100,Travelling-Overseas (Air ticket/Accomodation/Meals),PL,Other Expenses,Travelling and conveyance,22909.84
+62018000,Parking & Toll,PL,Other Expenses,Travelling and conveyance,2108.69
+61011010,Salaries-Directors,PL,Employee benefits expense,Salaries and wages,22500.0
+61011020,Salaries-Directors fee,PL,Employee benefits expense,Salaries and wages,0.0
+61011030,Salaries-Directors Allowance & Others,PL,Employee benefits expense,Salaries and wages,0.0
+61012010,Salaries-Staff,PL,Employee benefits expense,Salaries and wages,559795.16
+61012040,Allowance,PL,Employee benefits expense,Salaries and wages,0.0
+61012020,Salaries-Temporary Worker,PL,Employee benefits expense,Salaries and wages,0.0
+61012030,Overtime,PL,Employee benefits expense,Salaries and wages,0.0
+61012050,Ex-Gratia,PL,Employee benefits expense,Salaries and wages,0.0
+61015010,Bonus-Directors,PL,Employee benefits expense,Salaries and wages,0.0
+61015020-1,Bonus-Staff,PL,Employee benefits expense,Salaries and wages,0.0
+61035010,Commissions-Staff,PL,Employee benefits expense,Salaries and wages,53221.75
+61015020,Bonus-Staff,PL,Employee benefits expense,Salaries and wages,128941.29
+61025010,EPF-Directors,PL,Employee benefits expense,Contributions to provident and other funds,1980.0
+61015020,Bonus-Staff,PL,Employee benefits expense,Salaries and wages,0.0
+61025020,EPF-Staff,PL,Employee benefits expense,Contributions to provident and other funds,69571.0
+61031010,Sosco-Directors,PL,Employee benefits expense,Contributions to provident and other funds,312.45
+61031020,Socso-Directors-EIS,PL,Employee benefits expense,Contributions to provident and other funds,0.0
+61031030,Sosco-Staff,PL,Employee benefits expense,Contributions to provident and other funds,6613.25
+61031040,Socso-Staff-EIS,PL,Employee benefits expense,Contributions to provident and other funds,755.1
+61041010,HRDF-Directors,PL,Employee benefits expense,Staff welfare expenses,5370.719999999999
+61515000,Medical Fees,PL,Employee benefits expense,Staff welfare expenses,1387.0
+61517000,Uniform For Employees,PL,Employee benefits expense,Staff welfare expenses,600.0
+61520000,Staff Insurance,PL,Employee benefits expense,Staff welfare expenses,8274.92
+61516000,Staff Welfare,PL,Employee benefits expense,Staff welfare expenses,2697.94
+61518000-1,Training Expenses,PL,Employee benefits expense,Staff welfare expenses,34576.42
+61519000,Recruitment,PL,Employee benefits expense,Staff welfare expenses,5250.69
+62019000,Road Tax,PL,Other Expenses,Travelling and conveyance,0.0
+60510000,Transportation charges,PL,Other Expenses,Travelling and conveyance,171.4
+62510030,Machinery Rental,PL,Other Expenses,Rental expenses,0.0
+62520050,Maintenance-Asset-Lab,PL,Other expenses,Repair and maintenance,0.0
+62510010,Office Rental,PL,Other Expenses,Rental expenses,0.0
+62520010,Maintenance-Upkeep Office,PL,Other expenses,Repair and maintenance,22788.04
+62520020,Maintenance-Asset-Office Equipment,PL,Other expenses,Repair and maintenance,1380.0
+62520030,Maintenance-Asset-Motor Vehicle,PL,Other expenses,Repair and maintenance,56.0
+62520040,Maintenance-Asset-Computer Software Maintenance,PL,Other expenses,Repair and maintenance,69388.77
+62520060,Maintenance-Asset-Furniture & Fittings,PL,Other expenses,Repair and maintenance,0.0
+62510050,Quit Rent,PL,Other Expenses,Rental expenses,0.0
+62510060,Property Assessment,PL,Other Expenses,Miscellaneous expenses,0.0
+62530030,Electricity,PL,Other Expenses,Power and fuel,13877.35
+62535040,Water,PL,Other Expenses,Power and fuel,143.1
+62536000,Sewerage,PL,Other Expenses,Power and fuel,125.85
+62530010,Telephone & Internet,PL,Other Expenses,Telephone and internet expense,5460.4
+62530020,Mobile Phone Lines,PL,Other Expenses,Telephone and internet expense,8892.33
+62510070,Printing & Stationery,PL,Other Expenses,Printing and stationery,12224.58
+62510080,Postages/Courier,PL,Other Expenses,Printing and stationery,987.9399999999999
+63235000,Subscription fee,PL,Other Expenses,Miscellaneous expenses,7047.83
+62510120,Small Value Asset,PL,Other Expenses,Miscellaneous expenses,950.0
+64035000,Stock Write Off,PL,Other Expenses,Miscellaneous expenses,0.0
+62510040,General Insurance,PL,Other expenses,Insurance charges,5932.71
+62510090,Miscellaneous Expenses,PL,Other Expenses,Miscellaneous expenses,0.0
+62510110,Penalty & Late Payment,PL,Other expenses,Rates and Taxes,0.0
+68010000,Management Fee,PL,Other Expenses,Management fees,239778.0
+63510000,Legal/Professional Fees,PL,Other expenses,Legal and professional expenses,8442.65
+63525000,Accounting Fees,PL,Other expenses,Legal and professional expenses,2760.0
+63526000,Consultancy Fee-Bio-P,PL,Other expenses,Legal and professional expenses,15000.0
+63540000,Audit Fees,PL,Other Expenses,Payment to auditor,13199.99
+63520000,Secretarial Fees,PL,Other Expenses,Payment to auditor,210.0
+63527000,Tax Fees,PL,Other Expenses,Payment to auditor,375.0
+63530000,Filing Fees,PL,Other Expenses,Payment to auditor,200.0
+62510180,OD/Commitment Fees,PL,Other expenses,Legal and professional expenses,1715.14
+62510170,Bank Charges,PL,Other expenses,Bank charges,24759.9
+65040000,Unrealised Exchange Gain / Loss,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),0.0
+62510160,Realised Exchange Gain / Loss,PL,Other expenses,Gain/Loss on foreign exchange fluctuations (net),-35649.13
+65050000,FD Interest,PL,Finance costs,Other FC,12433.54
+65060000,Interest Expense,PL,Finance costs,Other FC,0.0
+ILA Interest on Lease,,PL,Finance cost,Interest on lease liability,6781.756993925596
+65040000-1,Unrealised Exchange Gain / Loss,PL,Finance costs,Other FC,35812.39999999999
+64511910,Depreciation - Furniture & Fittings,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",291.18
+64521910,Depreciation - Office Equipment,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",2984.58
+64531910,Depreciation - Computer & Software,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",17798.95
+64541910,Depreciation - Machinery,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",0.0
+64551910,Depreciation - Motor Vehicle,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",258.75
+64561910,Depreciation - ROU,PL,Depreciation and Amortisation Expense,Depreciation on ROU,69254.25651021746
+64571910,Depreciation - Tools & Equipment,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",2157.63
+64581910,Depreciation - Lab Equipment,PL,Depreciation and Amortisation Expense,"Depreciation on property, plant and equipment (refer note 4)",9583.26
+66020000,Taxation,PL,Tax Expenses,Current Tax,-30004.32720000006

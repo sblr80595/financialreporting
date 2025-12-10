@@ -1,0 +1,17 @@
+{
+  "note_number": "NOTE 26",
+  "note_title": "Purchases of Stock-in-Trade",
+  "output_file": "neoscience_note_26_purchases_stock_in_trade.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Sum all related GL accounts algebraically (respecting debit/positive and credit/negative signs). DO NOT coerce signs to positive. The calculation includes: Purchases + Purchase-related expenses - Purchase Returns - Discounts Received. The final total reflects net purchases.",
+  "categories": [
+    "Purchase of traded goods"
+  ],
+  "output_format": [
+    {
+      "label": "Purchase of traded goods*",
+      "ind_as_minor": "Purchase of traded goods"
+    }
+  ],
+  "additional_instructions": "*This note includes all purchase-related transactions:\n- GL 6010/00000 PURCHASES (main purchases)\n- GL 6012/00000 PURCHASES RETURN (reduces purchases, typically negative)\n- GL 6014/00000 TRANSPORT CHG (adds to purchase cost)\n- GL 6015/00000 CARRIAGE INWARD (adds to purchase cost)\n- GL 6016/00000 PACKAGING MATERIAL (adds to purchase cost)\n- GL 6018/00000 CUSTOM DUTY (adds to purchase cost)\n- GL 6019/00000 LAB SERVICE & COMMISSIONING FEE (adds to purchase cost)\n- GL 6017/00000 DISCOUNT RECEIVED (reduces purchases, typically negative)\n\nIMPORTANT: This note uses ALGEBRAIC summation. Do not convert negative values to positive. Present the final amount as-is, whether positive or negative. All these GLs have Ind AS Minor 'Purchase of traded goods'.\n\nNOTE: Opening Stock (GL 6000/00000) and Closing Stock (GL 6020/00000) should NOT be included in this note - they belong to Note 27 (Changes in Inventories)."
+}

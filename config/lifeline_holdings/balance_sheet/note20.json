@@ -1,0 +1,26 @@
+{
+  "note_number": "NOTE 20",
+  "note_title": "Other financial liabilities",
+  "output_file": "lifeline_diagnostics_note_20_other_financial_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Sum all related GL accounts algebraically. Financial liabilities are typically credit balances. Present as positive amounts in the balance sheet.",
+  "generate_if_empty": true,
+  "match_on_minor_only": true,
+  "categories": [
+    "Due to a related party",
+    "Accrued expense"
+  ],
+  "output_format": [
+    {
+      "label": "Due to a related party (Refer note 21)",
+      "ind_as_minor": "Due to a related party",
+      "default_value": 0
+    },
+    {
+      "label": "Accrued expense",
+      "ind_as_minor": "Accrued expense",
+      "default_value": 0
+    }
+  ],
+  "additional_instructions": "This note discloses other financial liabilities recognized in the balance sheet as per Ind AS 109 - Financial Instruments.\n\n**CRITICAL MATCHING INSTRUCTION**: \nONLY sum GL accounts where the 'Ind AS Minor' column exactly matches the specified categories.\n- Match 'Due to a related party' for related party payables\n- Match 'Accrued expense' for accrued expenses\nDO NOT match on 'Ind AS Major' column or any other column.\n\n**Due to a related party (Refer note 21)**: Sum all GL accounts where Ind AS Minor = 'Due to a related party'. This includes:\n- Amounts payable to related parties\n- Payables to directors\n- Payables to promoters\n- Payables to holding companies\n- Payables to subsidiary companies\n- Payables to associate companies\n- Payables to key management personnel\n- Other amounts due to entities under common control\n- Financial liabilities to related parties for goods/services\n- Expenses payable to related parties\n\nThese represent amounts owed to related parties for transactions other than trade payables and borrowings. Cross-reference to Note 21 for detailed related party disclosures.\n\n**Accrued expense**: Sum all GL accounts where Ind AS Minor = 'Accrued expense'. This includes:\n- Accrued salaries and wages\n- Accrued interest payable\n- Accrued utilities (electricity, water, telephone)\n- Accrued professional fees\n- Accrued rent\n- Accrued audit fees\n- Accrued legal fees\n- Accrued insurance premiums\n- Other expenses incurred but not yet paid\n- Provisions for expenses recognized but payment pending\n\nAccrued expenses represent liabilities for expenses that have been incurred during the period but payment has not yet been made as at the balance sheet date.\n\nMatching Logic:\n- Column to match: 'Ind AS Minor' ONLY\n- Values to match: 'Due to a related party', 'Accrued expense' (exact matches)\n- DO NOT use 'Ind AS Major' column for matching\n\nPresentation Notes:\n1. Other financial liabilities are typically current liabilities\n2. Present as positive amounts (credit balances)\n3. Include cross-reference to Note 21 for related party details\n4. Follow Schedule III format for balance sheet presentation\n5. Measured at amortized cost under Ind AS 109\n6. Show total of all other financial liabilities\n\nSchedule III Compliance:\nThis format follows Schedule III of Companies Act, 2013 requirements for other financial liabilities disclosure. Additional disclosures may be required:\n- Terms and conditions of related party payables\n- Nature of relationship with related parties\n- Interest rates (if applicable)\n- Repayment terms\n- Details of transactions during the year\n\nRelated Party Disclosure (Ind AS 24):\n- Nature of related party relationship\n- Outstanding balances at year-end\n- Transactions during the year\n- Terms and conditions\n- Guarantees provided/received (if any)\n\nInd AS 109 Requirements:\n- Classification as financial liabilities\n- Measurement at amortized cost\n- Fair value disclosures (if required)\n- Credit risk assessment\n\nIMPORTANT: Always generate this note even if no matching accounts are found in the trial balance. Display zero (0) values for all line items when no data is available."
+}

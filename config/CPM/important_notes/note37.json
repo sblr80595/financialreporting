@@ -1,0 +1,128 @@
+{
+  "note_number": "37",
+  "note_title": "Lease Related Disclosures pursuant to Ind AS 116",
+  "statement_type": "important-notes",
+
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+  "multi_source_integration": true,
+
+  "auxiliary_files": [
+    {
+      "label": "Audit_Adjustment_Entries_XLSX",
+      "file_path": "data/cpm/input/manual-adjustments",
+      "file_name": "Audit_Adjustment_Entries_Mar25.xlsx",
+      "description": "Audit adjustment entries for movements (additions, modifications, terminations) for Mar'25."
+    }
+  ],
+
+  "periods": [
+    { "period_name": "Mar'25", "period_column": "Total Mar'25" }
+  ],
+
+  "multi_source_rule": "Extract base GL balances from Trial Balance. USE PRE-GENERATED Balance_Sheet_DATA and PL_Statement_DATA for final balances and expenses. Extract movements from Audit_Adjustment_Entries_XLSX. Reconciliation of movement table is mandatory for Mar'25.",
+
+  "summation_rule": "Use algebraic summation. Opening + Additions + Interest - Payments + Adjustments - Terminations = Closing Balance. Current + Non-Current = Total Lease Liabilities. Use signs: Payments/Terminations are negative. Preserve signs. Treat '()' or 'CR' as negative.",
+
+  "period_handling": "Generate all quantitative sections for Mar'25 ONLY. No comparative data is required.",
+
+  "categories": [
+    "Lease liabilities",
+    "Lease liabilities - Current",
+    "Lease liabilities - Non Current",
+    "Right of use assets",
+    "Depreciation on right-of-use assets",
+    "Interest expense on lease liabilities",
+    "Rent expense - Short-term leases"
+  ],
+
+  "additional_instructions": "## Calculation Steps (Mar'25 ONLY):\n1. **Data Priority:** Use Trial Balance for GL lookups. **Use PL_Statement_DATA and Balance_Sheet_DATA for line item values.** Use Audit_Adjustment_Entries_XLSX for movements.\n2. **PL/BS Line Items (Provided Separately):** Treat the following as provided input for calculation:\n   - **PL_Statement_DATA:** Provides 'Depreciation on ROU Assets' and 'Interest Expense on Lease Liabilities'.\n   - **Balance_Sheet_DATA:** Provides 'Total Lease Liabilities', 'Current Lease Liabilities', 'Non-Current Lease Liabilities', and the prior year's closing balance (for Mar'25 Opening).\n3. **Movement Calculation:** Payments are calculated via reconciliation: `Payments = Opening + Additions + Interest + Adjustments - Terminations - Closing`.\n4. **Maturity Check:** Total NPV must equal Total Lease Liabilities (Closing Balance).\n5. **Formatting:** Use MYR, comma separators, leading minus for negatives. Round to 2 decimals only after final aggregation.\n",
+
+  "output_format": {
+    "general_disclosure": [
+      {
+        "section": "I. General Disclosure and Summary",
+        "label": "**Summary of Policy**",
+        "is_bold": true,
+        "is_header": true
+      },
+      {
+        "label": "Summary",
+        "source": "hardcoded_summary",
+        "description_if_not_found": "The Company recognizes right-of-use assets and corresponding lease liabilities for all non-short-term leases over office and business premises, restricting the use and pledge of these assets. The policy includes considering extension options where beneficial.",
+        "description_if_found": null
+      }
+    ],
+
+    "movement_in_lease_liabilities": [
+      {
+        "section": "II. Lease Liability Movement (Section A)",
+        "label": "**Reconciliation of Lease Liability Movement**",
+        "is_bold": true,
+        "is_header": true,
+        "format": "Particulars | 31 March 2025 (MYR)"
+      },
+      { "label": "Opening Balance", "source": "derived_from_prior_BS", "calculation": "Use prior year closing balance from Balance_Sheet_DATA." },
+      { "label": "Additions", "source": "calculated_from_adjustments", "calculation": "Extract from Audit_Adjustment_Entries_XLSX." },
+      { "label": "Accretion of interest", "source": "calculated_from_PL", "calculation": "Use Interest expense from PL_Statement_DATA." },
+      { "label": "Payments", "source": "calculated_reconciliation", "calculation": "Payments = Opening + Additions + Interest + Adjustments - Terminations - Closing.", "display_format": "-(value)" },
+      { "label": "Adjustments", "source": "calculated_from_adjustments", "calculation": "Extract modification adjustments from Audit_Adjustment_Entries_XLSX." },
+      { "label": "Lease termination", "source": "calculated_from_adjustments", "calculation": "Extract termination amounts from Audit_Adjustment_Entries_XLSX.", "display_format": "-(value)" },
+      { "label": "**Closing balance**", "source": "extracted_from_BS", "calculation": "Use 'Total Lease Liabilities' from Balance_Sheet_DATA. Must reconcile.", "is_subtotal": true },
+      { "label": " - Current", "source": "extracted_from_BS", "calculation": "Use 'Current Lease Liabilities' from Balance_Sheet_DATA." },
+      { "label": " - Non Current", "source": "extracted_from_BS", "calculation": "Use 'Non-Current Lease Liabilities' from Balance_Sheet_DATA." }
+    ],
+
+    "balance_sheet_presentation": [
+      {
+        "section": "III. Balance Sheet Presentation & P&L Impact (Section B)",
+        "label": "**BALANCE SHEET PRESENTATION**",
+        "is_bold": true,
+        "is_header": true,
+        "format": "Particulars | 31 March 2025 (MYR)"
+      },
+      { "label": "Current Lease Liabilities", "source": "extracted_from_BS", "calculation": "Use 'Current Lease Liabilities' from Balance_Sheet_DATA." },
+      { "label": "Non-current Lease Liabilities", "source": "extracted_from_BS", "calculation": "Use 'Non-Current Lease Liabilities' from Balance_Sheet_DATA." },
+      { "label": "**Total Lease Liabilities**", "source": "calculated", "calculation": "Current + Non-Current. Must match closing balance in Movement table.", "is_total": true }
+    ],
+
+    "profit_and_loss_impact": [
+      {
+        "section": "III. Balance Sheet Presentation & P&L Impact (Section B)",
+        "label": "**PROFIT AND LOSS IMPACT**",
+        "is_bold": true,
+        "is_header": true,
+        "format": "Particulars | 31 March 2025 (MYR)"
+      },
+      { "label": "Depreciation on ROU Assets", "source": "extracted_from_PL", "calculation": "Use 'Depreciation on ROU Assets' from PL_Statement_DATA." },
+      { "label": "Interest Expense on Lease Liabilities", "source": "extracted_from_PL", "calculation": "Use 'Interest Expense on Lease Liabilities' from PL_Statement_DATA." },
+      { "label": "Short-Term Lease Rent Expense", "source": "extracted_from_TB", "calculation": "Extract 'Rent expense - Short-term leases' from Trial Balance." },
+      { "label": "**Total Lease Expense**", "source": "calculated", "calculation": "Sum of Depreciation + Interest + Short-term rent.", "is_total": true }
+    ],
+
+    "maturity_analysis": [
+      {
+        "section": "IV. Maturity & Cash Flow Disclosures (Sections D and E)",
+        "label": "**MATURITY ANALYSIS OF LEASE LIABILITIES**",
+        "is_bold": true,
+        "is_header": true,
+        "format": "Net present values (31 March 2025) | Amount (MYR)"
+      },
+      { "label": "Within 1 year", "source": "calculated_from_BS_split", "calculation": "NPV = Current Lease Liability (from Balance_Sheet_DATA)." },
+      { "label": "1-2 years", "source": "calculated_from_BS_split", "calculation": "NPV for 1-2 years (portion of Non-Current)." },
+      { "label": "2-3 years", "source": "calculated_from_BS_split", "calculation": "NPV for 2-3 years (portion of Non-Current)." },
+      { "label": "More than 3 years", "source": "calculated_from_BS_split", "calculation": "NPV for >3 years (portion of Non-Current)." },
+      { "label": "**TOTAL NET PRESENT VALUE**", "source": "extracted_from_BS", "calculation": "Sum of NPV buckets. Must equal Total Lease Liabilities (from Balance_Sheet_DATA).", "is_total": true }
+    ],
+
+    "cash_flow_impact": [
+      {
+        "section": "IV. Maturity & Cash Flow Disclosures (Sections D and E)",
+        "label": "**CASH FLOW IMPACT**",
+        "is_bold": true,
+        "is_header": true,
+        "format": "Particulars | 31 March 2025 (MYR)"
+      },
+      { "label": "Total cash outflow of leases", "source": "calculated", "calculation": "Payments (Movement table) + Interest expense + Short-term rent." }
+    ]
+  }
+}

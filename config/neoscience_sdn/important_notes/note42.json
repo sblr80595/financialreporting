@@ -1,0 +1,159 @@
+{
+  "note_number": "Note 42",
+  "note_title": "Related Party Disclosures",
+  "output_file": "Neoscience_Note_42_Related_Party.txt",
+  "source_file": "TB_Neoscience_Final.csv",
+  "auxiliary_files": [
+    "data/neoscience_sdn/output/financial_statements/BS/Balance_Sheet_*.xlsx",
+    "data/neoscience_sdn/output/financial_statements/PL/PL_Statement_*.xlsx"
+  ],
+  "statement_type": "disclosure",
+  "summation_rule": "Simple summation for KMP compensation totals. Retrieval of individual line items for all other tables.",
+  "categories": [
+    "KMP Short-term employee benefits",
+    "KMP Post-employment benefits",
+    "Related Party Sales",
+    "Related Party Purchases",
+    "Related Party Rent Paid",
+    "Related Party Trade Receivables",
+    "Related Party Trade Payables"
+  ],
+  "output_format": [
+    {
+      "label": "42. Related Party Disclosures",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "List of Related Parties and Relationship",
+      "ind_as_minor": null,
+      "calculation": "narrative_retrieval",
+      "not_found_message": "The list of related parties and their relationships was not explicitly identified in the source files."
+    },
+    {
+      "label": "A. Key Management Personnel (KMP) Compensation",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Short-term employee benefits (e.g., salaries, bonus)",
+      "ind_as_minor": [
+        "KMP Short-term employee benefits"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ]
+    },
+    {
+      "label": "Post-employment benefits (e.g., gratuity contribution)",
+      "ind_as_minor": [
+        "KMP Post-employment benefits"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ]
+    },
+    {
+      "label": "**Total KMP Compensation**",
+      "calculation": "sum_previous_rows",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ],
+      "bold": true
+    },
+    {
+      "label": "B. Related Party Transactions",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Sale of goods (net)",
+      "ind_as_minor": [
+        "Related Party Sales"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ]
+    },
+    {
+      "label": "Purchase of goods (net)",
+      "ind_as_minor": [
+        "Related Party Purchases"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ]
+    },
+    {
+      "label": "Rent paid",
+      "ind_as_minor": [
+        "Related Party Rent Paid"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ]
+    },
+    {
+      "label": "C. Related Party Balances",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Trade Receivables from related parties",
+      "ind_as_minor": [
+        "Related Party Trade Receivables"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ]
+    },
+    {
+      "label": "Trade Payables to related parties",
+      "ind_as_minor": [
+        "Related Party Trade Payables"
+      ],
+      "calculation": "direct_retrieve",
+      "not_found_message": "Data Not Found in Source",
+      "columns": [
+        "30 June 2025",
+        "31 March 2025",
+        "31 March 2024",
+        "31 March 2023"
+      ]
+    }
+  ],
+  "additional_instructions": "The final output must present four columns for monetary values: As at 30 June 2025, As at 31 March 2025, As at 31 March 2024, and As at 31 March 2023. Ensure 'Data Not Found in Source' is used for any missing monetary line items. Format amounts using standard Malaysian Ringgit (MYR) format with commas."
+}

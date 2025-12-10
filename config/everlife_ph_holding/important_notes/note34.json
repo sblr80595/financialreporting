@@ -1,0 +1,113 @@
+{
+    "note_number": "NOTE 34",
+    "note_title": "Related Party Disclosures",
+    "output_file": "company_note_34_related_party_disclosures_everlife_ph.txt",
+    "statement_type": "notes",
+    "summation_rule": "Extract data from ttpl_impnotes.csv (Everlife PH section). Section A lists relationships including Ultimate/Immediate Holding, Associates, Affiliates, and KMP. Section B and C detail transactions and balances for years ended 31 March 2025, 2024, and 2023.",
+    "categories": [
+        "Intergris Healthcare Private Limited",
+        "Everlife Holdings Pte. Limited",
+        "Lifeline Diagnostics Supplies Inc",
+        "Lifeline Holdings, Inc.",
+        "Translumina France",
+        "LAMED Vertriebsgesellschaft",
+        "Blue Medical Devices BV",
+        "Raman Gandotra",
+        "Rent Paid",
+        "Expenses paid on behalf of",
+        "Amount Repaid by",
+        "Dividend Paid",
+        "Amount Repaid to",
+        "Advances from shareholders",
+        "Equity share capital",
+        "Preference share capital",
+        "Loan Taken",
+        "Repayment of Loan",
+        "Interest on Loan",
+        "Loan from Related Party",
+        "Other payables",
+        "Dividend receivable",
+        "Investment",
+        "Other Receivable"
+    ],
+    "output_format": [
+        {
+            "label": "(A) Names of related parties and related party relationship",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Related parties where control exists",
+            "ind_as_minor": [
+                "Intergris Healthcare Private Limited",
+                "Everlife Holdings Pte. Limited",
+                "Lifeline Diagnostics Supplies Inc",
+                "Lifeline Holdings, Inc."
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "Fellow Subsidiaries",
+            "ind_as_minor": [
+                "Translumina France",
+                "LAMED Vertriebsgesellschaft",
+                "Blue Medical Devices BV"
+            ],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "Key Management Personnel ('KMP')",
+            "ind_as_minor": ["Raman Gandotra"],
+            "aggregation": "qualitative_list"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(B) Transactions with related parties",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Transactions during the year (Rent, Expenses, Repayments)",
+            "ind_as_minor": [
+                "Rent Paid",
+                "Expenses paid on behalf of Everlife Philippines Holdings, Inc.",
+                "Amount Repaid by Everlife Philippines Holdings, Inc.",
+                "Dividend Paid",
+                "Amount Repaid to Everlife Philippines Holdings, Inc."
+            ],
+            "aggregation": "table_placeholder"
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(C) Balances outstanding at year end",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Balances (Share Capital, Loans, Payables, Receivables)",
+            "ind_as_minor": [
+                "Advances from shareholders",
+                "Equity share capital",
+                "Preference share capital",
+                "Repayment of Loan",
+                "Interest on Loan",
+                "Loan from Related Party",
+                "Other payables",
+                "Dividend receivable",
+                "Investment",
+                "Other Receivable"
+            ],
+            "aggregation": "table_placeholder"
+        }
+    ],
+    "additional_instructions": "Data is in Pesos. Columns represent years ended 31 March 2025, 2024, and 2023. Ensure negative values (repayments) are formatted correctly with parentheses."
+}

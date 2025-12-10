@@ -1,0 +1,54 @@
+{
+  "note_number": "NOTE 5",
+  "note_title": "Investments",
+  "output_file": "ttpl_note_5_investments.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Investments are financial assets and typically have a debit (positive) balance.",
+  "categories": [
+    "Investments (Non-current)",
+    "Investments (Current)"
+  ],
+  "output_format": [
+    {
+      "label": "**A. Non-current investments**",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Investments in equity instruments",
+      "ind_as_minor": [
+        "Investments (Non-current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "**B. Current investments**",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Investments in mutual funds",
+      "ind_as_minor": [
+        "Investments (Current)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total Investments",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Investments in equity instruments",
+        "   Investments in mutual funds"
+      ],
+      "bold": true,
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 5: INVESTMENTS**\n\nPresentation Requirements:\n1.  **A. Non-current investments** (Header):\n    * `Investments in equity instruments`: Sum of 'Investments (Non-current)' GL codes.\n\n2.  **B. Current investments** (Header):\n    * `Investments in mutual funds`: Sum of 'Investments (Current)' GL codes.\n\n3.  **Total Investments**: Final total, which should reconcile with the Balance Sheet line item.\n\nAccounting Context:\n-   This note details investments held by TTPL, classified as financial assets.\n-   Classification into current/non-current depends on the management's intent and the expected realization period (within 12 months for current).\n-   Investments are generally measured at Fair Value Through Other Comprehensive Income (FVOCI) or Fair Value Through Profit or Loss (FVTPL) as per Ind AS 109.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456).\n-   All amounts should be displayed as positive (debit balance)."
+}

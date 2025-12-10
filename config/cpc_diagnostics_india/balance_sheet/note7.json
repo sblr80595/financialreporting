@@ -1,0 +1,108 @@
+{
+  "note_number": "NOTE 7",
+  "note_title": "Other assets (Non-current and Current)",
+  "output_file": "company_note_7_other_assets.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For other assets, take positive debit balances from the trial balance.",
+  "categories": [
+    "Rent Deposits",
+    "Security deposits",
+    "Interest accrued on fixed deposits",
+    "Right to recover inventory"
+  ],
+  "output_format": [
+    {
+      "label": "7A. Other non-current assets",
+      "ind_as_minor": null,
+      "is_major_section": true
+    },
+    {
+      "label": "(Unsecured, considered good)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "   Security Deposits",
+      "ind_as_minor": [
+        "Rent Deposits"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Other non-current assets",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "   Security Deposits"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "7B. Other current assets",
+      "ind_as_minor": null,
+      "is_major_section": true
+    },
+    {
+      "label": "(Unsecured, considered good)",
+      "ind_as_minor": null,
+      "is_subheading": true
+    },
+    {
+      "label": "   Security deposits",
+      "ind_as_minor": [
+        "Security deposits"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Interest accrued on fixed deposits",
+      "ind_as_minor": [
+        "Interest accrued on fixed deposits"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "   Right to recover inventory",
+      "ind_as_minor": [
+        "Right to recover inventory"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Total Other current assets",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "   Security deposits",
+        "   Interest accrued on fixed deposits",
+        "   Right to recover inventory"
+      ],
+      "show_line": true,
+      "display_label": ""
+    },
+    {
+      "label": "",
+      "is_blank_row": true
+    },
+    {
+      "label": "Total Other assets",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "add",
+      "sum_of": [
+        "Total Other non-current assets",
+        "Total Other current assets"
+      ],
+      "show_line": true,
+      "display_label": "Total (7A + 7B)",
+      "bold": true,
+      "double_underline": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 7: OTHER ASSETS (NON-CURRENT AND CURRENT)**\n\nPresentation Requirements:\n\nSECTION 7A: Other non-current assets\n1.  Map 'Rent Deposits' from the source file to the label 'Security Deposits' (or 'Rent Deposits' if preferred) under this section.\n2.  Calculate subtotal for 7A.\n\nSECTION 7B: Other current assets\n1.  Map 'Security deposits' to 'Security deposits'.\n2.  Map 'Interest accrued on fixed deposits' to 'Interest accrued on fixed deposits'.\n3.  Map 'Right to recover inventory' to 'Right to recover inventory'.\n4.  Calculate subtotal for 7B.\n\nFINAL TOTAL:\n1.  Sum 7A and 7B for the grand total.\n2.  Format all amounts in the Indian numbering system.\n3.  Ensure clear separation between Non-current and Current sections."
+}

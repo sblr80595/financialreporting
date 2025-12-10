@@ -1,0 +1,38 @@
+{
+  "note_number": "NOTE 18",
+  "note_title": "Lease liabilities",
+  "output_file": "company_a_note_18_lease_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For lease liabilities, take positive credit balances (may appear as negative in trial balance, convert to positive for presentation).",
+  "categories": [
+    "Lease liabilities-Non Current",
+    "Lease liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "Non current",
+      "ind_as_minor": [
+        "Lease liabilities-Non Current"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Current",
+      "ind_as_minor": [
+        "Lease liabilities"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "TOTAL_LEASE_LIABILITIES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "sum_of": [
+        "Non current",
+        "Current"
+      ],
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. 'Non current' - from category 'Lease liabilities-Non Current'\n2. 'Current' - from category 'Lease liabilities'\n3. Show total of both non-current and current lease liabilities\n4. Example: Non current: 15,00,000; Current: 5,00,000; Total: 20,00,000\n5.  Format all amounts in Indian numbering system without \u20b9 symbol.\n6.Lease liabilities are presented under Ind AS 116 requirements, showing current and non-current classification.\n7 Since these are liabilities, values may appear as negative (credit balance) in trial balance - take absolute values for presentation."
+}

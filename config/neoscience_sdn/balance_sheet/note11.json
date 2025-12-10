@@ -1,0 +1,96 @@
+{
+  "note_number": "NOTE 11",
+  "note_title": "Other Bank Balances",
+  "output_file": "Neoscience_Note_07_Cash.txt",
+  "auxiliary_files": [
+    "data/neoscience/output/financial_statement/SOCIE.md",
+    "data/neoscience/output/financial_statement/PL_Statement_*.xlsx"
+  ],
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate all Cash and Bank balance components to arrive at the total reported amount.",
+  "categories": [
+    "Cash on hand",
+    "Balances with banks - current accounts",
+    "Fixed deposits with original maturity of more than three months but less than twelve months *",
+    "Interest accrued on bank deposits",
+    "Bank deposits with original maturity more than 12 months but remaining maturity less than 12 months",
+    "Amount disclosed under other financial assets (current) (refer note 13)"
+  ],
+  "output_format": [
+    {
+      "label": "A. Cash and Cash Equivalents",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Cash on hand",
+      "ind_as_minor": [
+        "Cash on hand"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Balances with banks - current accounts",
+      "ind_as_minor": [
+        "Balances with banks - current accounts"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "B. Other Bank Balances",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Fixed deposits (< 12 months)",
+      "ind_as_minor": [
+        "Fixed deposits with original maturity of more than three months but less than twelve months *"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Interest accrued on bank deposits",
+      "ind_as_minor": [
+        "Interest accrued on bank deposits"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Bank deposits with original maturity > 12 months (remaining maturity < 12 months)",
+      "ind_as_minor": [
+        "Bank deposits with original maturity more than 12 months but remaining maturity less than 12 months"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Amount disclosed under other financial assets (current)",
+      "ind_as_minor": [
+        "Amount disclosed under other financial assets (current) (refer note 13)"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Cash on hand",
+        "Balances with banks - current accounts",
+        "Fixed deposits (< 12 months)",
+        "Interest accrued on bank deposits",
+        "Bank deposits with original maturity > 12 months (remaining maturity < 12 months)",
+        "Amount disclosed under other financial assets (current)"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. Data is primarily sourced from 'TB_Neoscience.csv'. If auxiliary files ('SOCIE.md' or 'PL_Statement_*.xlsx') are available at 'data/neoscience/output/financial_statement/', they may be used as optional cross-references; the note must generate using the primary source regardless. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

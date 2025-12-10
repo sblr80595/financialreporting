@@ -1,0 +1,16 @@
+{
+  "note_number": "NOTE 15",
+  "note_title": "Other Equity",
+  "output_file": "analisa_note_15_other_equity.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Not applicable - no other equity components mapped.",
+  "categories": [],
+  "output_format": [
+    {
+      "label": "**Other Equity**",
+      "ind_as_minor": null,
+      "is_header": true
+    }
+  ],
+  "additional_instructions": "This note is not applicable as there are no other equity components mapped in the trial balance. Display 'Nil' or '-' for all line items. The categories array is empty as there are no matching Ind AS Minor categories for other equity components."
+}

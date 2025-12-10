@@ -1,0 +1,50 @@
+{
+    "note_number": "NOTE 4",
+    "note_title": "Right-of-use assets",
+    "output_file": "company_note_4_right_of_use_assets.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column. For Right-of-use assets, calculate net carrying amount by subtracting accumulated depreciation from gross carrying amount. Gross carrying amount should be positive (debit balance). Accumulated depreciation should be presented as deduction.",
+    "categories": [
+        "Right of use Cost",
+        "Right of use Accumulated dep",
+        "Other payables (OFL)",
+        "Depreciation on ROU"
+    ],
+    "period_column_override": "Total June 25",
+    "output_format": [
+        {
+            "label": "Gross carrying amount",
+            "ind_as_minor": [
+                "Right of use Cost"
+            ],
+            "aggregation": "sum",
+            "is_header": false,
+            "sign_flip": false
+        },
+        {
+            "label": "Less: Accumulated depreciation",
+            "ind_as_minor": [
+                "Right of use Accumulated dep"
+            ],
+            "aggregation": "sum",
+            "is_deduction": true,
+            "display_format": "-(value)",
+            "sign_flip": true
+        },
+        {
+            "label": "Net carrying amount",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "subtract",
+            "sum_of": [
+                "Gross carrying amount"
+            ],
+            "subtract": [
+                "Less: Accumulated depreciation"
+            ],
+            "show_line": true,
+            "bold": true
+        }
+    ],
+    "additional_instructions": "Output Structure:\n\n**NOTE 4: RIGHT-OF-USE ASSETS**\n\nPresentation Requirements:\n1. 'Gross carrying amount' - Sum of all GL codes under category 'Right of use Cost'\n  - This represents the total cost/fair value of leased assets recognized under Ind AS 116\n  - Should be positive amount (debit balance)\n\n2. 'Less: Accumulated depreciation' - Sum of all GL codes under category 'Right of use Accumulated dep'\n  - Present as deduction with minus sign or in parentheses: -(amount)\n  - If the trial balance shows credit balance (negative), flip the sign to show as positive deduction\n  - This represents depreciation charged on right-of-use assets since lease commencement\n\n3. 'Net carrying amount' - Calculate as: Gross carrying amount - Accumulated depreciation\n  - This is the closing balance of right-of-use assets\n  - Should match the net book value of ROU assets in the balance sheet\n  - Present as bold/total line\n\nAccounting Context:\n- Right-of-use assets are recognized under Ind AS 116 (Leases)\n- ROU assets represent the lessee's right to use an underlying asset for the lease term\n- Typically includes leased properties, equipment, vehicles, etc.\n- Depreciation is charged over the shorter of lease term or useful life\n- The net carrying amount represents the present value of future lease obligations reflected as an asset\n\nFormatting:\n- Format all amounts in Indian numbering system (e.g., 1,23,456)\n- Do not include ₹ symbol in the output\n- Show 'Less: Accumulated depreciation' as a deduction line\n- The final 'Net carrying amount' should be clearly marked as total\n\nValidation:\n- Ensure gross carrying amount is positive\n- Ensure accumulated depreciation is shown as deduction (negative/parentheses)\n- Verify net carrying amount = gross amount - accumulated depreciation\n- All amounts should reconcile with the trial balance period column specified"
+}

@@ -1,0 +1,30 @@
+{
+  "note_number": "NOTE 30",
+  "note_title": "Depreciation and Amortisation Expense",
+  "output_file": "ttps_fs_note_30_depreciation_and_amortisation_expense.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories have debit balances (positive in trial balance). Aggregate all accounts for each minor category algebraically and present as positive values.",
+  "categories": [
+    "Depreciation of tangible assets",
+    "Depreciation on right of use assets",
+    "Amortisation of intangible assets"
+  ],
+  "output_format": [
+    {
+      "label": "Depreciation of property, plant and equipment (refer note 4(a))",
+      "ind_as_minor": "Depreciation of tangible assets",
+      "is_header": false
+    },
+    {
+      "label": "Depreciation on right of use assets (refer note 4)",
+      "ind_as_minor": "Depreciation on right of use assets",
+      "is_header": false
+    },
+    {
+      "label": "Amortisation of intangible assets (refer note 4(b))",
+      "ind_as_minor": "Amortisation of intangible assets",
+      "is_header": false
+    }
+  ],
+  "additional_instructions": "Aggregate all mapped accounts algebraically for each minor category. Always generate this note even if no matching accounts found. Display zero (0) when no data available."
+}

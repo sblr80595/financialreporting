@@ -1,0 +1,17 @@
+# Frontend Dockerfile
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY frontend/package*.json ./frontend/
+RUN cd frontend && npm install
+
+COPY frontend/ ./frontend/
+
+EXPOSE 3000
+
+# Set proxy target for Docker environment
+ENV PROXY_TARGET=http://backend:8001
+
+# Start React dev server (uses setupProxy.js)
+CMD ["sh", "-c", "cd frontend && NODE_OPTIONS=--no-deprecation npm start"]

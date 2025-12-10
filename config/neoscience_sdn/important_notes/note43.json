@@ -1,0 +1,161 @@
+{
+  "note_number": "Note 43",
+  "note_title": "Reconciliation of liabilities arising from financing activities",
+  "output_file": "Neoscience_Note_43_Financing_Liabilities.txt",
+  "source_file": "TB_Neoscience_Final.csv",
+  "auxiliary_files": [
+    "data/neoscience_sdn/output/financial_statements/cashflow/Cashflow_Statement_*.xlsx"
+  ],
+  "statement_type": "disclosure",
+  "summation_rule": "Perform step-by-step reconciliation for Short term borrowing and Lease liabilities. Each closing balance is the sum of the prior period's closing balance and the current period's movements.",
+  "categories": [
+    "Short term borrowing",
+    "Lease liabilities",
+    "Financing Activities Balance 31 March 2022",
+    "CF Principal Inflow/(Repayment) 2025",
+    "CF Interest Repayment 2025",
+    "NC Interest/ROU Addition 2025"
+  ],
+  "output_format": [
+    {
+      "label": "43. Reconciliation of liabilities arising from financing activities",
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "Balance as at 31 March 2022",
+      "ind_as_minor": [
+        "Financing Activities Balance 31 March 2022"
+      ],
+      "calculation": "direct_retrieve",
+      "data_source": "Source",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED",
+      "columns": [
+        "Short term borrowing",
+        "Lease liabilities"
+      ],
+      "bold": true
+    },
+    {
+      "label": "\\textbf{Year Ended 31 March 2023:}"
+    },
+    {
+      "label": "Cash flows: - Inflow of funds / (repayment) of principal portion",
+      "ind_as_minor": [
+        "Short term borrowing",
+        "Lease liabilities"
+      ],
+      "calculation": "extract_from_note_table",
+      "data_key": "Cash flows: - Inflow of funds / (repayment) of principal portion",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "Cash flows: - Repayment of interest portion",
+      "ind_as_minor": [
+        "Short term borrowing",
+        "Lease liabilities"
+      ],
+      "calculation": "extract_from_note_table",
+      "data_key": "Cash flows: - Repayment of interest portion",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "Non cash: - Interest expense / liability against addition of ROU asset and interest",
+      "ind_as_minor": [
+        "Short term borrowing",
+        "Lease liabilities"
+      ],
+      "calculation": "extract_from_note_table",
+      "data_key": "Non cash: - Interest expense / liability against addition of ROU asset and interest",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "\\textbf{Balance as at 31 March 2023}",
+      "calculation": "reconciliation_sum",
+      "periods": [
+        "31 March 2022"
+      ],
+      "bold": true
+    },
+    {
+      "label": "\\textbf{Year Ended 31 March 2024:}"
+    },
+    {
+      "label": "Cash flows: - Repayment of principal portion",
+      "ind_as_minor": [
+        "Short term borrowing",
+        "Lease liabilities"
+      ],
+      "calculation": "extract_from_note_table",
+      "data_key": "Cash flows: - Repayment of principal portion",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "Cash flows: - Repayment of interest portion",
+      "ind_as_minor": [
+        "Short term borrowing",
+        "Lease liabilities"
+      ],
+      "calculation": "extract_from_note_table",
+      "data_key": "Cash flows: - Repayment of interest portion",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "Non cash: - Interest expense / liability against addition of ROU asset and interest",
+      "ind_as_minor": [
+        "Short term borrowing",
+        "Lease liabilities"
+      ],
+      "calculation": "extract_from_note_table",
+      "data_key": "Non cash: - Interest expense / liability against addition of ROU asset and interest",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "\\textbf{Balance as at 31 March 2024}",
+      "calculation": "reconciliation_sum",
+      "periods": [
+        "31 March 2023"
+      ],
+      "bold": true
+    },
+    {
+      "label": "\\textbf{Period Ended 30 June 2025:}"
+    },
+    {
+      "label": "Cash flows: - Inflow of funds / (repayment) of principal portion",
+      "ind_as_minor": [
+        "CF Principal Inflow/(Repayment) 2025"
+      ],
+      "calculation": "direct_retrieve",
+      "data_source": "Source",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "Cash flows: - Repayment of interest portion",
+      "ind_as_minor": [
+        "CF Interest Repayment 2025"
+      ],
+      "calculation": "direct_retrieve",
+      "data_source": "Source",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "Non cash: - Interest expense / liability against addition of ROU asset and interest",
+      "ind_as_minor": [
+        "NC Interest/ROU Addition 2025"
+      ],
+      "calculation": "direct_retrieve",
+      "data_source": "Source",
+      "not_found_message": "DATA NOT FOUND / CALCULATION INHIBITED"
+    },
+    {
+      "label": "\\textbf{Balance as at 30 June 2025}",
+      "calculation": "reconciliation_sum",
+      "periods": [
+        "31 March 2024"
+      ],
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The model must extract the movements for 2023 and 2024 directly from the Note 43 table found within the primary source file ('neoscience_note37.xlsx - Sheet1.csv'). Opening and 2025 movements are retrieved from the primary/auxiliary files using standard ledger lookups. Final output must use the two columns: Short term borrowing and Lease liabilities."
+}

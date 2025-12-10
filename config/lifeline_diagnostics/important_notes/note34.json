@@ -1,0 +1,115 @@
+{
+    "note_number": "NOTE 34",
+    "note_title": "Lease Related Disclosures",
+    "output_file": "company_note_34_lease_disclosures.txt",
+    "statement_type": "balance-sheet",
+    "summation_rule": "Extract closing balance values from the period column: **Total June 2025**. Use TB_FINAL.csv for P&L items (expense/interest) and Lease Liability payments. Use ROU Asset/Lease Liability categories for reconciliation tables.",
+    "categories": [
+        "ROU Asset Opening Balance",
+        "ROU Asset Additions",
+        "Depreciation ROU Asset PL",
+        "Lease Liability Opening Balance",
+        "Lease Liability Additions",
+        "Lease Interest Expense PL",
+        "Lease Liability Payments"
+    ],
+    "output_format": [
+        {
+            "label": "(I) Reconciliation of Right-of-Use Assets",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Opening balance of ROU Asset",
+            "ind_as_minor": ["ROU Asset Opening Balance"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Additions during the period",
+            "ind_as_minor": ["ROU Asset Additions"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Less: Depreciation charge for the period",
+            "ind_as_minor": ["Depreciation ROU Asset PL"],
+            "aggregation": "sum",
+            "is_deduction": true
+        },
+        {
+            "label": "Closing balance of ROU Asset (Net)",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "sum",
+            "sum_of": ["Opening balance of ROU Asset", "Additions during the period"],
+            "subtract": ["Less: Depreciation charge for the period"],
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(II) Reconciliation of Lease Liability",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Opening balance of Lease Liability",
+            "ind_as_minor": ["Lease Liability Opening Balance"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Additions/Adjustments",
+            "ind_as_minor": ["Lease Liability Additions"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Interest expense",
+            "ind_as_minor": ["Lease Interest Expense PL"],
+            "aggregation": "sum",
+            "sign_flip": true
+        },
+        {
+            "label": "Less: Payments",
+            "ind_as_minor": ["Lease Liability Payments"],
+            "aggregation": "sum",
+            "is_deduction": true
+        },
+        {
+            "label": "Closing balance of Lease Liability",
+            "ind_as_minor": null,
+            "is_total": true,
+            "calculation": "sum",
+            "sum_of": ["Opening balance of Lease Liability", "Additions/Adjustments", "Interest expense"],
+            "subtract": ["Less: Payments"],
+            "bold": true,
+            "show_line": true
+        },
+        {
+            "label": "",
+            "is_blank_row": true
+        },
+        {
+            "label": "(III) Amounts Recognised in Statement of Profit and Loss",
+            "ind_as_minor": null,
+            "is_header": true,
+            "bold": true
+        },
+        {
+            "label": "Depreciation expense on ROU assets",
+            "ind_as_minor": ["Depreciation ROU Asset PL"],
+            "aggregation": "sum"
+        },
+        {
+            "label": "Interest expense on lease liabilities",
+            "ind_as_minor": ["Lease Interest Expense PL"],
+            "aggregation": "sum"
+        }
+    ],
+    "additional_instructions": "This note requires detailed reconciliations for ROU Asset and Lease Liability as per Ind AS 116. Data primarily comes from TB_FINAL.csv, but an optional 'leases.csv' may provide the detailed reconciliation steps. Ensure amounts for liability reconciliation are appropriately sign-flipped (e.g., liability opening/closing balances are displayed positively). Format all amounts in the Indian numbering system (e.g., 1,23,456) without currency symbol."
+}

@@ -1,0 +1,63 @@
+{
+  "note_number": "NOTE 20",
+  "note_title": "Other Financial Liabilities",
+  "output_file": "Neoscience_Note_15_Other_Financial_Liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Aggregate all financial liability components listed to derive the total for the note.",
+  "categories": [
+    "Employee related payables (OFL)",
+    "Other payables (OFL)",
+    "Liability Component of Financial Instruement issued to Related Parties",
+    "7% Compulsory Convertible Preference Shares (Liability Component)",
+    "Interest payable on Compulsory Convertible Preference Shares",
+    "Interest accrued but not due on borrowings"
+  ],
+  "output_format": [
+    {
+      "label": "Employee related payables",
+      "ind_as_minor": ["Employee related payables (OFL)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Other payables",
+      "ind_as_minor": ["Other payables (OFL)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Liability Component of Financial Instruement issued to Related Parties",
+      "ind_as_minor": ["Liability Component of Financial Instruement issued to Related Parties", "7% Compulsory Convertible Preference Shares (Liability Component)"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Interest payable on Compulsory Convertible Preference Shares",
+      "ind_as_minor": ["Interest payable on Compulsory Convertible Preference Shares"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Interest accrued but not due on borrowings",
+      "ind_as_minor": ["Interest accrued but not due on borrowings"],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total (net)",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "sum",
+      "sum_of": [
+        "Employee related payables",
+        "Other payables",
+        "Liability Component of Financial Instruement issued to Related Parties",
+        "Interest payable on Compulsory Convertible Preference Shares",
+        "Interest accrued but not due on borrowings"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "The final output must present two columns: As at 31 March 2025 and As at 30 June 2025. Group all components related to the 7% CCPC liability component into the line item 'Liability Component of Financial Instruement issued to Related Parties'. The total amount is the sum of all components. Format amounts in Indian Rupee format with commas (₹1,23,456). Show all GL breakdowns preceding the final note."
+}

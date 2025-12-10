@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 18",
+  "note_title": "Lease liabilities",
+  "output_file": "analisa_note_18_lease_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Lease liabilities typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the balance sheet as a liability.",
+  "categories": [
+    "Lease liabilities"
+  ],
+  "output_format": [
+    {
+      "label": "**Lease liabilities**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Lease liabilities",
+      "ind_as_minor": "Lease liabilities"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Lease liabilities'. Convert credit balances to positive values for presentation. This represents the present value of future lease payments as per Ind AS 116 for right-of-use assets."
+}

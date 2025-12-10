@@ -1,0 +1,132 @@
+{
+  "note_number": "NOTE 31",
+  "note_title": "Other Expenses",
+  "output_file": "cpc_diagnostics_india_note_31_other_expenses.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Expense categories typically have debit balances (positive in the trial balance). Display as positive values in the final notes.",
+  "categories": [
+    "Travelling and conveyance expenses",
+    "Advertising and sales promotion",
+    "Freight charges",
+    "Sales commission",
+    "Repairs and maintenance - Buildings",
+    "Repairs and maintenance - Others",
+    "Legal and professional fees (refer note (i) below)",
+    "Rent (refer note 41.1)",
+    "Rates and taxes",
+    "Stores, spares and packing materials consumed",
+    "Power, fuel and water",
+    "Insurance",
+    "Communication expenses",
+    "Printing and stationery",
+    "Directors' sitting fees (refer note 38)",
+    "Bank charges",
+    "Corporate social responsibility expenses (refer note (ii) below)",
+    "Foreign exchange loss (net)",
+    "Loss on sale/ discard of property, plant and equipment (net)",
+    "Provision for warranty (net)",
+    "Allowance for doubtful debts, loans and advances (net)",
+    "Bad debts written off",
+    "Miscellaneous expenses"
+  ],
+  "output_format": [
+    {
+      "label": "Travelling and conveyance expenses",
+      "ind_as_minor": "Travelling and conveyance expenses"
+    },
+    {
+      "label": "Advertising and sales promotion",
+      "ind_as_minor": "Advertising and sales promotion"
+    },
+    {
+      "label": "Freight charges",
+      "ind_as_minor": "Freight charges"
+    },
+    {
+      "label": "Sales commission",
+      "ind_as_minor": "Sales commission"
+    },
+    {
+      "label": "Repairs and maintenance",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "  - Buildings",
+      "ind_as_minor": "Repairs and maintenance - Buildings"
+    },
+    {
+      "label": "  - Others",
+      "ind_as_minor": "Repairs and maintenance - Others"
+    },
+    {
+      "label": "Legal and professional fees (refer note (i) below)",
+      "ind_as_minor": "Legal and professional fees (refer note (i) below)"
+    },
+    {
+      "label": "Rent (refer note 41.1)",
+      "ind_as_minor": "Rent (refer note 41.1)"
+    },
+    {
+      "label": "Rates and taxes",
+      "ind_as_minor": "Rates and taxes"
+    },
+    {
+      "label": "Stores, spares and packing materials consumed",
+      "ind_as_minor": "Stores, spares and packing materials consumed"
+    },
+    {
+      "label": "Power, fuel and water",
+      "ind_as_minor": "Power, fuel and water"
+    },
+    {
+      "label": "Insurance",
+      "ind_as_minor": "Insurance"
+    },
+    {
+      "label": "Communication expenses",
+      "ind_as_minor": "Communication expenses"
+    },
+    {
+      "label": "Printing and stationery",
+      "ind_as_minor": "Printing and stationery"
+    },
+    {
+      "label": "Directors' sitting fees (refer note 38)",
+      "ind_as_minor": "Directors' sitting fees (refer note 38)"
+    },
+    {
+      "label": "Bank charges",
+      "ind_as_minor": "Bank charges"
+    },
+    {
+      "label": "Corporate social responsibility expenses (refer note (ii) below)",
+      "ind_as_minor": "Corporate social responsibility expenses (refer note (ii) below)"
+    },
+    {
+      "label": "Foreign exchange loss (net)",
+      "ind_as_minor": "Foreign exchange loss (net)"
+    },
+    {
+      "label": "Loss on sale/ discard of property, plant and equipment (net)",
+      "ind_as_minor": "Loss on sale/ discard of property, plant and equipment (net)"
+    },
+    {
+      "label": "Provision for warranty (net)",
+      "ind_as_minor": "Provision for warranty (net)"
+    },
+    {
+      "label": "Allowance for doubtful debts, loans and advances (net)",
+      "ind_as_minor": "Allowance for doubtful debts, loans and advances (net)"
+    },
+    {
+      "label": "Bad debts written off",
+      "ind_as_minor": "Bad debts written off"
+    },
+    {
+      "label": "Miscellaneous expenses",
+      "ind_as_minor": "Miscellaneous expenses"
+    }
+  ],
+  "additional_instructions": "Note: Other expenses include various operating expenses. Repairs and maintenance is shown with sub-categories for Buildings and Others. Note references are included for Legal and professional fees, Rent, Directors' sitting fees, and CSR expenses. Handle the formatting accordingly to maintain Schedule III compliance."
+}

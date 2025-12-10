@@ -1,0 +1,66 @@
+{
+  "note_number": "NOTE 9",
+  "note_title": "Trade receivables",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. For 'Unsecured, considered good', take positive debit balance. For 'Unsecured, considered impaired', take value from 'Allowance for bad and doubtful debts' with SIGN FLIPPED (if negative, make positive). For 'Less: Allowance...', take the same 'Allowance for bad and doubtful debts' value and display with -(parentheses) as deduction.",
+  "categories": [
+    "Trade receivables- Unsecured, considered good",
+    "Allowance for bad and doubtful debts"
+  ],
+  "output_format": [
+    {
+      "label": "Trade receivables",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Unsecured, considered good",
+      "ind_as_minor": [
+        "Trade receivables- Unsecured, considered good"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "label": "Unsecured, considered impaired",
+      "ind_as_minor": [
+        "Allowance for bad and doubtful debts"
+      ],
+      "aggregation": "sum",
+      "sign_flip": true,
+      "note": "Take the value from 'Allowance for bad and doubtful debts' and flip the sign. If allowance is -3,63,306 (credit), show as +3,63,306 (positive)."
+    },
+    {
+      "label": "SUBTOTAL_TRADE_RECEIVABLES",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "sum_of": [
+        "Unsecured, considered good",
+        "Unsecured, considered impaired"
+      ],
+      "show_line": true
+    },
+    {
+      "label": "Impairment allowance",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Less: Allowance against expected credit loss",
+      "ind_as_minor": [
+        "Allowance for bad and doubtful debts"
+      ],
+      "is_deduction": true,
+      "aggregation": "sum",
+      "display_format": "-(value)",
+      "note": "Take the value from 'Allowance for bad and doubtful debts', flip sign if negative, and display with -(parentheses). If allowance is -3,63,306 (credit), show as -(3,63,306) or (3,63,306)."
+    },
+    {
+      "label": "TOTAL_TRADE_RECEIVABLES",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "SUBTOTAL_TRADE_RECEIVABLES - [Less: Allowance against expected credit loss]",
+      "show_line": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n1. Show 'Trade receivables' as header (no amount)\n2. 'Unsecured, considered good' - from category 'Trade receivables- Unsecured, considered good'\n3. 'Unsecured, considered impaired' - from category 'Allowance for bad and doubtful debts' with SIGN FLIPPED (if -3,63,306 in TB, show as +3,63,306)\n4. Show subtotal of good + impaired receivables (e.g., 3,19,16,339 + 3,63,306 = 3,19,79,645)\n5. Show 'Impairment allowance' as header (no amount)\n6. 'Less: Allowance against expected credit loss' - SAME category 'Allowance for bad and doubtful debts' but displayed as -(3,63,306) or (3,63,306)\n7. Show final total = Subtotal - Allowance (e.g., 3,19,79,645 - 3,63,306 = 3,13,16,339)\n8. Key Logic: Both 'Unsecured, considered impaired' and 'Less: Allowance...' use the SAME source data but with OPPOSITE signs\n10. Format all amounts in Indian numbering system without \u20b9 symbol."
+}

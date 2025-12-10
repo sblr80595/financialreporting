@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 21",
+  "note_title": "Other current liabilities",
+  "output_file": "analisa_note_21_other_current_liabilities.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Current liabilities typically have credit balances (negative in the trial balance). Convert these to positive values for presentation in the balance sheet as a liability.",
+  "categories": [
+    "Other Payables (OCL)"
+  ],
+  "output_format": [
+    {
+      "label": "**Other current liabilities**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Other payables",
+      "ind_as_minor": "Other Payables (OCL)"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Other Payables (OCL)'. Convert credit balances to positive values for presentation. This includes statutory dues, advances from customers, and other miscellaneous current liabilities."
+}

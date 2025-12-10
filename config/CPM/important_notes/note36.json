@@ -1,0 +1,129 @@
+{
+  "note_number": "NOTE 36",
+  "note_title": "Earnings Per Share",
+  "statement_type": "important-notes",
+  "csv_file": "data/cpm/input/notes-input/Trialbalance/CPM.csv",
+  "multi_source_integration": true,
+  "prerequisites": {
+    "required_outputs": [
+      {
+
+        "label": "Final Profit & Loss Statement (Numerator)", 
+        "file_path": "data/cpm/output/financial_statements/PL",
+        "file_name_pattern": "PL_Statement_*.xlsx", 
+        "error_message": "The compiled Profit & Loss Statement must be generated first (for the Numerator: Profit). The required file pattern is reports/cpm/PL_Statement_*.xlsx."
+      }
+    ]
+  },
+  "auxiliary_files": [
+    {
+      "label": "PL_Statement_XLSX", 
+      "file_path": "data/cpm/output/financial_statements/PL",
+      "file_name": "PL_Statement_*.xlsx",
+      "description": "Compiled Profit & Loss Statement XLSX (Source for Net Profit)"
+    }
+  ],
+  "periods": [
+    {
+      "period_name": "Mar'25",
+      "period_column": "Total Mar'25"
+    }
+  ],
+  "primary_source": "trial_balance/CPM/CPM.csv",
+  "multi_source_rule": "The Numerator (Profit) must be extracted from the 'PL_Statement_XLSX' auxiliary. The Denominator (Shares) must be calculated solely from the GLs found in the primary trial balance, filtered for Share Capital/Reserves components.",
+  "summation_rule": "Apply standard EPS calculation: Profit / Weighted Average Shares. Use algebraic summation for capital GLs. Preserve signs throughout calculations. Final EPS figures must be rounded to 2 decimal places.",
+  "period_handling": "Generate all sections for BOTH Mar'25 and Jun'25. If June earnings data is missing, use prior year's June figure as a placeholder and include a footnote as specified.",
+  "categories": [
+    "Paid-up Equity Share Capital",
+    "Share Application Money Pending Allotment",
+    "Convertibles - Debt/Equity",
+    "Convertibles - Warrants/Options",
+    "Reserves and surplus"
+  ],
+  "output_format": {
+    "gl_breakdown": [
+      {
+        "section": "NOTE 36: EARNINGS PER SHARE \u2013 BREAKDOWN (Capital Structure GLs)",
+        "categories": [
+          "Paid-up Equity Share Capital",
+          "Share Application Money Pending Allotment",
+          "Reserves and surplus"
+        ],
+        "format": "GL [code]: [description] \u2192 \u20b9[signed_amount]",
+        "show_subtotal": true,
+        "subtotal_label": "Total Capital (for Basic Shares)"
+      },
+      {
+        "section": "Potential Dilutive Equity Shares (GLs)",
+        "categories": [
+          "Convertibles - Debt/Equity",
+          "Convertibles - Warrants/Options"
+        ],
+        "format": "GL [code]: [description] \u2192 \u20b9[signed_amount]",
+        "show_subtotal": true,
+        "subtotal_label": "Total Dilutive Potential"
+      }
+    ],
+    "summary_table": [
+      {
+        "label": "**A. Earnings (Numerator)**",
+        "is_bold": true
+      },
+      {
+        "label": "Profit attributable to equity holders (\u20b9)",
+        "source": "PL_Statement_XLSX",
+        "calculation": "Extract profit attributable to equity holders (Line V/Net Profit) from the auxiliary XLSX. Use placeholder/prior year figure for Jun'25 if current data is unavailable.",
+        "period_specific": true
+      },
+      {
+        "label": "**B. Shares (Denominator)**",
+        "is_bold": true
+      },
+      {
+        "label": "Weighted Avg. Equity Shares \u2013 Basic",
+        "source": "calculated_from_gls",
+        "calculation": "Calculated from GLs under Share Capital/Reserves (Total Capital GLs / assumed face value, e.g., \u20b910 per share).",
+        "period_specific": true
+      },
+      {
+        "label": "Add: Dilutive potential equity shares",
+        "source": "calculated_from_gls",
+        "calculation": "Calculate from Dilutive GLs.",
+        "period_specific": true
+      },
+      {
+        "label": "Weighted Avg. Equity Shares \u2013 Diluted",
+        "source": "calculated",
+        "calculation": "Basic + Dilutive potential shares.",
+        "period_specific": true
+      },
+      {
+        "label": "**C. Earnings Per Share (\u20b9)**",
+        "is_bold": true
+      },
+      {
+        "label": "Basic EPS",
+        "source": "calculated",
+        "calculation": "Profit / Weighted Avg. Equity Shares \u2013 Basic. Round to 2 decimals.",
+        "is_total": true,
+        "period_specific": true
+      },
+      {
+        "label": "Diluted EPS",
+        "source": "calculated",
+        "calculation": "Profit / Weighted Avg. Equity Shares \u2013 Diluted. Round to 2 decimals.",
+        "is_total": true,
+        "period_specific": true
+      }
+    ],
+    "reconciliation": [
+      {
+        "label": "Footnote:",
+        "source": "static",
+        "calculation": "If June earnings are assumed: 'The profit for the quarter ended 30 June 2025 is assumed to be the prior year's figure due to unavailability of current data.'",
+        "is_bold": true
+      }
+    ]
+  },
+  "additional_instructions": "## Calculation Steps:\n\n**For each period (Mar'25 and Jun'25):**\n\n1. **Filter Trial Balance GLs:** Use 'Ind AS Minor' categories for Paid-up Equity Share Capital, Reserves and Surplus, and Convertibles for the GL breakdown.\n2. **Calculate Numerator:** Extract Profit attributable to equity holders from the 'PL_Statement_XLSX' auxiliary.\n3. **Calculate Denominator (Basic Shares):** Use the sum of Basic Capital GLs (Share Capital + Reserves) and convert to number of shares (assume Face Value of \u20b910 per share).\n4. **Calculate Denominator (Dilutive Shares):** Convert Dilutive Potential GLs into a number of shares.\n5. **Compute EPS:** Basic EPS = Numerator / Basic Shares; Diluted EPS = Numerator / Diluted Shares.\n\n---\n\n## Arithmetic Rules:\n- Perform algebraic summation: respect positive and negative signs.\n- Round final EPS figures (only) to 2 decimals.\n\n---\n\n## Output Requirements:\n1. **Detailed GL Breakdown** - Show two distinct sections for Capital and Dilutive items.\n2. **Summary Table** - Show the final EPS calculation for BOTH Mar'25 and Jun'25.\n3. Include the **Footnote** if the June earnings figure is unavailable and a placeholder is used.\n4. Ensure all amounts are formatted correctly in Indian Rupee style (\u20b91,23,456 or \u20b9-1,23,456)."
+}

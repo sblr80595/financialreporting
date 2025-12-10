@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 32",
+  "note_title": "Income Tax",
+  "output_file": "analisa_note_32_income_tax.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Tax expenses typically have debit balances (positive in the trial balance). Present these as positive values in the final notes.",
+  "categories": [
+    "Current Tax"
+  ],
+  "output_format": [
+    {
+      "label": "**Income Tax**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Current tax",
+      "ind_as_minor": "Current Tax"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Current Tax'. Present the amount as positive value. This represents the current period's income tax expense based on taxable income."
+}

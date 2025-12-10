@@ -1,0 +1,22 @@
+{
+  "note_number": "NOTE 14",
+  "note_title": "Equity share capital",
+  "output_file": "analisa_note_14_equity_share_capital.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Equity share capital typically has credit balance (negative in the trial balance). Convert to positive values for presentation in the balance sheet under equity section.",
+  "categories": [
+    "Issued, subscribed and fully paid up"
+  ],
+  "output_format": [
+    {
+      "label": "**Equity share capital**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Issued, subscribed and fully paid up",
+      "ind_as_minor": "Issued, subscribed and fully paid up"
+    }
+  ],
+  "additional_instructions": "Sum all accounts with Ind AS Minor 'Issued, subscribed and fully paid up'. Convert credit balances to positive values for presentation. This represents the total equity share capital issued, subscribed and fully paid up by the shareholders."
+}

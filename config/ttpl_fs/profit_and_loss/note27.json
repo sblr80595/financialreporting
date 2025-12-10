@@ -1,0 +1,58 @@
+{
+  "note_number": "NOTE 27",
+  "note_title": "Changes in Inventories of Finished Goods",
+  "output_file": "ttps_fs_note_27_changes_in_inventories.txt",
+  "statement_type": "profit-loss",
+  "summation_rule": "Calculate net change as: Opening Inventories (beginning) minus Closing Inventories (end). Closing inventories are assets with debit balances (positive). Opening inventories are set to zero for current period. Final change = Opening - Closing.",
+  "categories": [
+    "Stock-in-trade",
+    "Work-in-progress",
+    "Finished goods"
+  ],
+  "output_format": [
+    {
+      "label": "**Inventories at the end of the period**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "ind_as_minor": "Stock-in-trade",
+      "is_header": false
+    },
+    {
+      "label": "Work-in-progress",
+      "ind_as_minor": "Work-in-progress",
+      "is_header": false
+    },
+    {
+      "label": "Finished goods",
+      "ind_as_minor": "Finished goods",
+      "is_header": false
+    },
+    {
+      "label": "**Inventories at the beginning of the period**",
+      "ind_as_minor": null,
+      "is_header": true
+    },
+    {
+      "label": "Traded goods",
+      "ind_as_minor": null,
+      "is_header": false,
+      "default_value": 0
+    },
+    {
+      "label": "Work-in-progress",
+      "ind_as_minor": null,
+      "is_header": false,
+      "default_value": 0
+    },
+    {
+      "label": "Finished goods",
+      "ind_as_minor": null,
+      "is_header": false,
+      "default_value": 0
+    }
+  ],
+  "additional_instructions": "This note shows changes in inventory levels. Closing inventories (end of period) are fetched from trial balance by mapping to respective minor categories and aggregated algebraically. Opening inventories (beginning of period) are shown as zero (0) as no prior period data is available. Calculate subtotals for both sections and show net change. Always generate this note."
+}

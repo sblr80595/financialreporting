@@ -1,0 +1,228 @@
+{
+  "note_number": "NOTE 3",
+  "note_title": "Property, Plant and Equipment",
+  "output_file": "cpc_note_3_property_plant_and_equipment.txt",
+  "statement_type": "balance-sheet",
+  "summation_rule": "Extract closing balance values from the period column. Gross carrying amounts (cost) should be positive (debit). Accumulated depreciation (credit) should be flipped to positive and presented as a deduction in parentheses.",
+  "categories": [
+    "Land",
+    "Building",
+    "Temporary partition",
+    "Plant & Machinery",
+    "Plant & Machinery_MFG",
+    "Furniture & Fixtures",
+    "Office equipment",
+    "Computers",
+    "Vehicles",
+    "Accumulated Depreciation_Building",
+    "Accumulated Depreciation_Temparory partition",
+    "Accumulated Depreciation_Plant & Machinery",
+    "Accumulated Depreciation_Plant & Machinery_MFG",
+    "Accumulated Depreciation_Furniture & Fixtures",
+    "Accumulated Depreciation_Office equipment",
+    "Accumulated Depreciation_Computers",
+    "Accumulated Depreciation_Vehicles"
+  ],
+  "output_format": [
+    {
+      "label": "Gross carrying amount (Cost)",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Land",
+      "ind_as_minor": [
+        "Land"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Building",
+      "ind_as_minor": [
+        "Building"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Temporary partition",
+      "ind_as_minor": [
+        "Temporary partition"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Plant and Machinery",
+      "ind_as_minor": [
+        "Plant & Machinery",
+        "Plant & Machinery_MFG"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Computers",
+      "ind_as_minor": [
+        "Computers"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Furniture and fixtures",
+      "ind_as_minor": [
+        "Furniture & Fixtures"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Office equipment",
+      "ind_as_minor": [
+        "Office equipment"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "   Vehicles",
+      "ind_as_minor": [
+        "Vehicles"
+      ],
+      "aggregation": "sum",
+      "sign_flip": false
+    },
+    {
+      "label": "Total Gross carrying amount",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Land",
+        "   Building",
+        "   Temporary partition",
+        "   Plant and Machinery",
+        "   Computers",
+        "   Furniture and fixtures",
+        "   Office equipment",
+        "   Vehicles"
+      ],
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Less: Accumulated depreciation",
+      "ind_as_minor": null,
+      "is_header": true,
+      "bold": true
+    },
+    {
+      "label": "   Building",
+      "ind_as_minor": [
+        "Accumulated Depreciation_Building"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Temporary partition",
+      "ind_as_minor": [
+        "Accumulated Depreciation_Temparory partition"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Plant and Machinery",
+      "ind_as_minor": [
+        "Accumulated Depreciation_Plant & Machinery",
+        "Accumulated Depreciation_Plant & Machinery_MFG"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Computers",
+      "ind_as_minor": [
+        "Accumulated Depreciation_Computers"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Furniture and fixtures",
+      "ind_as_minor": [
+        "Accumulated Depreciation_Furniture & Fixtures"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Office equipment",
+      "ind_as_minor": [
+        "Accumulated Depreciation_Office equipment"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "   Vehicles",
+      "ind_as_minor": [
+        "Accumulated Depreciation_Vehicles"
+      ],
+      "aggregation": "sum",
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "sign_flip": true
+    },
+    {
+      "label": "Total Accumulated depreciation",
+      "ind_as_minor": null,
+      "is_subtotal": true,
+      "calculation": "sum",
+      "sum_of": [
+        "   Building",
+        "   Temporary partition",
+        "   Plant and Machinery",
+        "   Computers",
+        "   Furniture and fixtures",
+        "   Office equipment",
+        "   Vehicles"
+      ],
+      "is_deduction": true,
+      "display_format": "-(value)",
+      "bold": true,
+      "show_line": true
+    },
+    {
+      "label": "Net carrying amount",
+      "ind_as_minor": null,
+      "is_total": true,
+      "calculation": "subtract",
+      "sum_of": [
+        "Total Gross carrying amount"
+      ],
+      "subtract": [
+        "Total Accumulated depreciation"
+      ],
+      "show_line": true,
+      "bold": true
+    }
+  ],
+  "additional_instructions": "Output Structure:\n\n**NOTE 3: PROPERTY, PLANT AND EQUIPMENT**\n\nPresentation Requirements:\n1.  **Gross carrying amount (Cost)** (Header): Followed by a sum of cost GLs for each asset class.\n    * `Land`: Sum of 'Land'\n    * `Building`: Sum of 'Building'\n    * `Temporary partition`: Sum of 'Temporary partition'\n    * `Plant and Machinery`: Sum of 'Plant & Machinery' and 'Plant & Machinery_MFG'\n    * `Computers`: Sum of 'Computers'\n    * `Furniture and fixtures`: Sum of 'Furniture & Fixtures'\n    * `Office equipment`: Sum of 'Office equipment'\n    * `Vehicles`: Sum of 'Vehicles'\n    * `Total Gross carrying amount`: Sub-total of all gross amounts above.\n\n2.  **Less: Accumulated depreciation** (Header): Followed by a sum of AD GLs for each asset class, presented as deductions.\n    * `Building`: Sum of 'Accumulated Depreciation_Building'\n    * `Temporary partition`: Sum of 'Accumulated Depreciation_Temparory partition'\n    * `Plant and Machinery`: Sum of 'Accumulated Depreciation_Plant & Machinery' and 'Accumulated Depreciation_Plant & Machinery_MFG'\n    * `Computers`: Sum of 'Accumulated Depreciation_Computers'\n    * `Furniture and fixtures`: Sum of 'Accumulated Depreciation_Furniture & Fixtures'\n    * `Office equipment`: Sum of 'Accumulated Depreciation_Office equipment'\n    * `Vehicles`: Sum of 'Accumulated Depreciation_Vehicles'\n    * `Total Accumulated depreciation`: Sub-total of all AD amounts above, shown as a deduction.\n\n3.  **Net carrying amount** (Total): Calculated as `Total Gross carrying amount` - `Total Accumulated depreciation`.\n\nFormatting:\n-   Format all amounts in the Indian numbering system (e.g., 1,23,456).\n-   Show all 'Accumulated depreciation' lines as deductions (e.g., (1,23,456)).\n-   The final 'Net carrying amount' should be bold."
+}
