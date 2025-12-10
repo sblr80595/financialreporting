@@ -5,23 +5,32 @@ import logging
 import os
 import traceback
 import uuid
+import time
 from datetime import datetime
 from typing import Dict, List, Optional
 
 import pandas as pd
-from fastapi import BackgroundTasks, FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import BackgroundTasks, FastAPI, File, Form, HTTPException, UploadFile, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.exceptions import RequestValidationError
 
 from backend.config.entities import EntityConfig, get_entities_list
 from backend.config.period_config import period_config
 from backend.config.settings import settings
 from backend.models.response_models import FileUploadResponse, ProcessingStatus
+from backend.models.responses import HealthCheckResponse, ErrorResponse
+from backend.exceptions import (
+    FinancialReportingException,
+    EntityNotFoundException,
+    FileNotFoundException,
+    ValidationException
+)
+from backend.middleware.error_handlers import register_exception_handlers
+from backend.services.audit_service import audit_logger
 from backend.routes import api_router
 from backend.routes.pl_statement_routes import router as pl_router
-
 from backend.routes.bs_statement_routes import router as bs_router
-
 from backend.routes.period_routes import router as period_router
 
 # Import Trial Balance services
@@ -57,19 +66,20 @@ from backend.routes.statement_viewer_routes import router as statement_viewer_ro
 LOGS_DIR = Path("logs")
 LOGS_DIR.mkdir(exist_ok=True)
 
-# Configure MINIMAL logging - detailed logging happens per note generation
+# Configure logging with enhanced format for better debugging and audit trails
 logging.basicConfig(
-    level=logging.WARNING,  # Only show warnings and errors in console
-    format='%(message)s'  # Simpler format for console
+    level=logging.INFO,
+    format='%(asctime)s | %(name)s | %(levelname)s | %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
 )
 
 # Silence noisy libraries
 logging.getLogger('urllib3').setLevel(logging.ERROR)
 logging.getLogger('httpx').setLevel(logging.ERROR)
 logging.getLogger('httpcore').setLevel(logging.ERROR)
-logging.getLogger('google').setLevel(logging.ERROR)  # Silence Google SDK logs
+logging.getLogger('google').setLevel(logging.ERROR)
 
-# Create a main application logger (for startup only)
+# Create a main application logger
 logger = logging.getLogger(__name__)
 
 # ============================================================================
@@ -79,9 +89,14 @@ logger = logging.getLogger(__name__)
 # Initialize FastAPI app
 app = FastAPI(
     title="Financial Automation Platform API",
-    description="Unified backend for trial balance processing and financial note generation with JWT authentication",
-    version="2.0.0"
+    description="Professional-grade financial reporting and automation platform with comprehensive error handling and audit trails",
+    version="2.0.0",
+    docs_url="/api/docs",
+    redoc_url="/api/redoc"
 )
+
+# Register exception handlers for comprehensive error handling
+register_exception_handlers(app)
 
 # CORS middleware
 app.add_middleware(
@@ -97,6 +112,9 @@ app.add_middleware(
 file_service = FileService()
 validation_service = ValidationService()
 mapping_service = MappingService()
+
+# Application startup timestamp for monitoring and health checks
+app_start_time = time.time()
 
 # In-memory storage for processing status (in production, use Redis or database)
 processing_status: Dict[str, ProcessingStatus] = {}
@@ -138,6 +156,17 @@ app.include_router(sap_router, prefix="/api", tags=["SAP Integration"])
 app.include_router(note_excel_generator, prefix="/api/notes", tags=["Note Excel generation"])
 app.include_router(statement_viewer_router, prefix="/api", tags=["Statement Viewer"])
 
+
+@app.middleware("http")
+async def add_process_time_header(request: Request, call_next):
+    """Middleware to track request processing time"""
+    start_time = time.time()
+    response = await call_next(request)
+    process_time = time.time() - start_time
+    response.headers["X-Process-Time"] = str(process_time)
+    return response
+
+
 @app.get("/")
 async def root():
     """Root endpoint with API information"""
@@ -149,7 +178,9 @@ async def root():
             "trial_balance_processing": "Available",
             "note_generation": "Available",
             "authentication": "JWT Bearer Token",
-            "bs_finalyzer": "Available"
+            "bs_finalyzer": "Available",
+            "audit_logging": "Enabled",
+            "error_tracking": "Enabled"
         },
         "endpoints": {
             "auth": "/auth/login, /auth/refresh, /auth/me",
@@ -158,7 +189,7 @@ async def root():
             "trial_balance": "/api/upload/trial-balance, /api/process/adjustments",
             "bs_finalyzer": "/api/generate-bs-finalyzer",
             "health": "/api/health",
-            "commit": "amitcommit"
+            "docs": "/api/docs"
         }
     }
 
@@ -173,26 +204,39 @@ async def test_upload():
     }
 
 
-@app.get("/api/health")
+@app.get("/api/health", response_model=HealthCheckResponse)
 async def health_check():
-    """Detailed health check"""
-    companies = CompanyService.discover_companies()
-    return {
-        "status": "healthy",
-        "timestamp": datetime.now().isoformat(),
-        "authentication": "enabled",
-        "config_dir_exists": settings.CONFIG_DIR.exists(),
-        "companies_available": len(companies),
-        "services": {
-            "ai_orchestrator": "available",
-            "file_service": "available",
-            "validation_service": "available",
-            "mapping_service": "available",
-            "note_generation": "available",
-            "bs_finalyzer": "available",
-            "authentication": "available"
-        }
-    }
+    """Detailed health check with response model validation"""
+    try:
+        companies = CompanyService.discover_companies()
+
+        is_valid, error_msg = settings.validate_llm_config()
+        llm_status = "healthy" if is_valid else f"error: {error_msg}"
+
+        uptime = time.time() - app_start_time
+
+        return HealthCheckResponse(
+            status="healthy",
+            version="2.0.0",
+            services={
+                "api": "healthy",
+                "llm": llm_status,
+                "file_system": "healthy",
+                "companies_discovered": str(len(companies))
+            },
+            uptime_seconds=uptime
+        )
+    except Exception as e:
+        logger.error(f"Health check failed: {str(e)}")
+        return JSONResponse(
+            status_code=503,
+            content={
+                "status": "unhealthy",
+                "version": "2.0.0",
+                "error": str(e),
+                "timestamp": datetime.utcnow().isoformat()
+            }
+        )
 
 
 # Startup event

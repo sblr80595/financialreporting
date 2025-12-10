@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Toaster } from 'react-hot-toast';
 import { EntityProvider } from './contexts/EntityContext';
+import ErrorBoundary from './components/ErrorBoundary';
 import Layout from './components/Layout';
 import Header from './components/Header';
 import UnifiedDashboard from './pages/UnifiedDashboard';
@@ -53,55 +54,56 @@ const CurrencyProviderWrapper: React.FC<{ children: React.ReactNode }> = ({ chil
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <EntityProvider>
-        <PeriodProvider>
-        <Router>
-          <CurrencyProviderWrapper>
-            <div className="min-h-screen bg-gray-50">
-              <Header title="Financial Close & Reporting Platform" />
-              <Layout>
-                <Routes>
-                  <Route path="/" element={<Navigate to="/dashboard" replace />} />
-                  <Route path="/dashboard" element={<UnifiedDashboard />} />
-                  <Route path="/step1" element={<Step1UploadTB />} />
-                  <Route path="/step2" element={<Step2UploadAdjustments />} />
-                  <Route path="/step3" element={<Step3ApplyAdjustments />} />
-                  <Route path="/step4" element={<Step4MapCategories />} />
-                  <Route path="/step4-category-mapping" element={<Step4CategoryMapping />} />
-                  <Route path="/step5" element={<Step5ValidateRules />} />
-                  <Route path="/step5-updated" element={<Step5ValidateRulesUpdated />} />
-                  <Route path="/step6" element={<Step6GenerateNotes />} />
-                  <Route path="/step6-tabular" element={<Step6GenerateNotesTabular />} />
-                  <Route path="/step7" element={<Step7GeneratePandL />} />
-                  {/* <Route path="/step8" element={<Step8GenerateBSNotes />} /> */}
-                  <Route path="/step8" element={<Step8GenerateBalanceSheet />} />
-                  <Route path="/step9" element={<Step9GenerateCashFlow />} />
-                  <Route path="/finalyzer-reports" element={<FinAnalyzerReportsPage />} />
-                  <Route path="/adjustments-preview" element={<AdjustmentsPreview />} />
-                  <Route path="/view-statements" element={<ViewStatementsPage />} />
-                  <Route path="/view-statements/pnl" element={<ViewPLStatementPage />} />
-                  <Route path="/view-statements/balancesheet" element={<ViewBalanceSheetPage />} />
-                  <Route path="/view-statements/cashflow" element={<ViewCashFlowPage />} />
-                  <Route path="/feedback" element={<Feedback />} />
-              </Routes>
-            </Layout>
-            <Toaster 
-              position="top-right"
-              toastOptions={{
-                duration: 4000,
-                style: {
-                  background: '#8b0010',
-                  color: '#fff',
-                },
-              }}
-            />
-          </div>
-          </CurrencyProviderWrapper>
-        </Router>
-        </PeriodProvider>
-      </EntityProvider>
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <EntityProvider>
+          <PeriodProvider>
+            <Router>
+              <CurrencyProviderWrapper>
+                <div className="min-h-screen bg-gray-50">
+                  <Header title="Financial Close & Reporting Platform" />
+                  <Layout>
+                    <Routes>
+                      <Route path="/" element={<Navigate to="/dashboard" replace />} />
+                      <Route path="/dashboard" element={<UnifiedDashboard />} />
+                      <Route path="/step1" element={<Step1UploadTB />} />
+                      <Route path="/step2" element={<Step2UploadAdjustments />} />
+                      <Route path="/step3" element={<Step3ApplyAdjustments />} />
+                      <Route path="/step4" element={<Step4MapCategories />} />
+                      <Route path="/step4-category-mapping" element={<Step4CategoryMapping />} />
+                      <Route path="/step5" element={<Step5ValidateRules />} />
+                      <Route path="/step5-updated" element={<Step5ValidateRulesUpdated />} />
+                      <Route path="/step6" element={<Step6GenerateNotes />} />
+                      <Route path="/step6-tabular" element={<Step6GenerateNotesTabular />} />
+                      <Route path="/step7" element={<Step7GeneratePandL />} />
+                      <Route path="/step8" element={<Step8GenerateBalanceSheet />} />
+                      <Route path="/step9" element={<Step9GenerateCashFlow />} />
+                      <Route path="/finalyzer-reports" element={<FinAnalyzerReportsPage />} />
+                      <Route path="/adjustments-preview" element={<AdjustmentsPreview />} />
+                      <Route path="/view-statements" element={<ViewStatementsPage />} />
+                      <Route path="/view-statements/pnl" element={<ViewPLStatementPage />} />
+                      <Route path="/view-statements/balancesheet" element={<ViewBalanceSheetPage />} />
+                      <Route path="/view-statements/cashflow" element={<ViewCashFlowPage />} />
+                      <Route path="/feedback" element={<Feedback />} />
+                    </Routes>
+                  </Layout>
+                  <Toaster
+                    position="top-right"
+                    toastOptions={{
+                      duration: 4000,
+                      style: {
+                        background: '#fff',
+                        color: '#333',
+                      },
+                    }}
+                  />
+                </div>
+              </CurrencyProviderWrapper>
+            </Router>
+          </PeriodProvider>
+        </EntityProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 }
 
